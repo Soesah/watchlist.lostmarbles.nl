@@ -1,0 +1,28 @@
+<form class="form" ng-submit="addItem()">
+  <h2>Add</h2>
+  <p>Add a movie, documentary or series to the watchlist</p>
+  <div class="form-item">
+    <label>Type</label><select ng-model="item.type" ng-options="type.type as type.name for type in types"></select>
+    <svg class="select-arrow" width="100px" height="63px" viewBox="0 0 100 63" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="25.2873563 0 0 0 50 0 74.7126437 0 50 31.8333333"></polygon>
+    </svg>
+  </div>
+  <div class="form-item">
+    <label>Name</label><input type="text" ng-required="true" placeholder="Name" ng-model="item.name"/>
+  </div>
+  <div class="form-item" ng-if="!isSeries()">
+    <label>Year</label><input type="text" integer ng-required="true" placeholder="2016" class="year" ng-model="item.year" />
+  </div>
+  <ul class="series-list" ng-if="isSeries()">
+    <li ng-repeat="season in item.seasons">
+      <div class="form-item">
+        <label>Season <span ng-bind="$index + 1"></span> year</label><input type="text" integer ng-required="true" placeholder="{{2016 + $index}}" class="year" ng-model="season.year" />
+        <button class="add-button" type="button" ng-click="addSeason()"><i class="icon icon-plus"></i></button>
+      </div>
+    </li>
+  </ul>
+  <div class="buttons">
+    <button type="submit">Add</button>
+    <button type="cancel" ng-click="back()">Cancel</button>
+  </div>
+</form>

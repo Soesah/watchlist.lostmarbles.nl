@@ -1,0 +1,32 @@
+@import "common/variables.less";
+@import "common/fonts.less";
+@import "common/reset.less";
+@import "common/colors.less";
+@import "common/utilities.less";
+
+@import "icons.less";
+@import "message.less";
+@import "forms.less";
+@import "list.less";
+@import "add.less";
+
+
+body {
+  padding: @size-default;
+  .font-default();
+  font-size: 13px;
+}
+
+a {
+  color: @blue;
+
+  &:hover {
+    color: @blue-light;
+  }
+}
+
+@media screen and (max-width:400px) {
+  body {
+    padding: @size-small;
+  }
+}

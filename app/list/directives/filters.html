@@ -1,0 +1,21 @@
+<div class="filter">
+  <label>Filter by type</label>
+  <ul>
+    <li ng-repeat="type in types">
+      <a href="javascript:void(0)" 
+        ng-bind="type.name"
+        ng-class="{'active': itemType === type.type}" 
+        ng-click="setItemType(type.type);"></a>
+    </a></li>
+  </ul>
+  <br/>
+  <label>Watched</label>
+  <ul>
+    <li ng-repeat="state in states">
+      <a href="javascript:void(0)" 
+        ng-bind="state.name"
+        ng-class="{'active': itemState === state.state}" 
+        ng-click="setItemState(state.state);"></a>
+    </a></li>
+  </ul>
+</div>

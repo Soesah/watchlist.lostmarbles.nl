@@ -1,0 +1,41 @@
+body,
+html {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+button {
+  font-smoothing: antialiased;
+    -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500');
+
+.font-light {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+}
+.font-default {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+.font-bold {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+}
+
+.light {
+  .font-light();
+}
+.normal {
+  .font-default();
+}
+.bold {
+  .font-bold();
+}

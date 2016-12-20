@@ -1,0 +1,134 @@
+.form {
+  h2,
+  .buttons {
+    margin: @size-default 0 @size-small @size-large;
+  }
+
+  p,
+  h3 {
+    margin: 0 0 @size-small @size-large;
+  }
+}
+
+.form-item {
+  margin: 0 0 @size-small 0;
+  position: relative;
+
+  label {
+    display: inline-block;
+    width: @size-large;
+    .font-light();
+    text-align: right;
+    padding-right: @size-default;
+  }
+
+  .select-arrow {
+    width: 18px;
+    position: absolute;
+    left: 420px;
+    top: -3px;
+    fill: @gray-light;
+  }
+
+  &:hover {
+    .select-arrow {
+      fill: @gray;
+    }
+  }
+}
+
+input,
+select,
+textarea {
+  padding: @size-small;
+  border: solid 1px @gray-light;
+  border-radius: @border-radius-default;
+  background-color: @yellow;
+  color: @black;
+  -webkit-appearance: none;
+  width: @size-larger;
+  outline: none;
+  .font-bold();
+  font-size: inherit;
+
+  &:focus {
+    border-color: @black;
+  }
+
+  &:hover {
+    border-color: @gray;
+  }
+
+  &.year {
+    width: 70px;
+    text-align: center;
+  }
+}
+
+button {
+  padding: @size-small;
+  border: none;
+  border-radius: @border-radius-default;
+  min-width: 158px;
+  outline: none;
+  .font-bold();
+  font-size: inherit;
+  color: white;
+  background-color: @blue;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @blue-light
+  }
+
+  &[type=cancel] {
+    background-color: @gray-light;
+
+    &:hover {
+      background-color: @gray-lighter;
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .form {
+    h3,
+    p {
+      margin-left: 0;
+    }
+
+    h2,
+    .buttons {
+      margin: @size-small 0 @size-smaller 0;
+    }
+  }
+  .form-item {
+    margin-bottom: @size-smaller / 2;
+    label {
+      display: block;
+      text-align: left;
+      padding:@size-smaller / 2 0;
+    }
+    .select-arrow {
+      left: auto;
+      top: 12px;
+      right: 10px;
+    }
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: @size-smaller;
+  }
+  button {
+    padding: @size-smaller;
+  }
+}
+@media screen and (max-width:360px) {
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: @size-smaller / 2;
+  }
+}

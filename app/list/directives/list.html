@@ -1,0 +1,11 @@
+<filters></filters>
+
+<ul class="list">
+  <li class="add">
+    <p><a href="javascript:void(0)" ng-click="add()">Add something to watch</a></p>
+  </li>
+  <item ng-repeat="item in filtered = (list|listFilter:itemType:itemState)|orderBy:'name' track by $index"></item>
+  <li class="message warning" ng-show="!filtered.length">
+    <p><i class="icon icon-warning"></i> Adjust the filters to see results</p>
+  </li>
+</ul>

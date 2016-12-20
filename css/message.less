@@ -1,0 +1,59 @@
+.messages {
+  &.general {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 0 @size-default;
+
+    .message {
+      display: block;
+      margin: @size-smaller / 2 0;
+
+      &.done {
+        top: -100px;
+      }
+    }
+  }
+}
+
+.message {
+  position: relative;
+  top: 0;
+  transition: top 0.5s;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  color: #2c2c2c;
+
+  &.info {
+    background-color: @blue-info;
+    border: solid 1px darken(@blue-info, 20%);
+
+    .icon {
+      color: darken(@blue-info, 25%);
+    }
+  }
+
+  &.warning {
+    background-color: @yellow-warning;
+    border: solid 1px darken(@yellow-warning, 20%);
+
+    .icon {
+      color: darken(@yellow-warning, 25%);
+    }
+  }
+
+  &.error {
+    background-color: @red-error;
+    border: solid 1px darken(@red-error, 20%);
+
+    .icon {
+      color: darken(@red-error, 25%);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
