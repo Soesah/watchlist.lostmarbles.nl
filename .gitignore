@@ -1,3 +1,5 @@
 node_modules
 css/*.css
 config.codekit3
+.ftppass
+node_modules
