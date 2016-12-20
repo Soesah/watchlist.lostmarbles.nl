@@ -7,22 +7,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-closure-compiler');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-ftp-deploy');
   grunt.loadNpmTasks('grunt-http');
   grunt.loadNpmTasks('grunt-html2js');
 
   grunt.initConfig({
-    eslint: {
-      target: 'app/**/*.js',
-      options: {
-        configFile: '.eslintrc'
-      }
-    },
     html2js: {
       options: {
         rename: function (moduleName) {
@@ -41,7 +33,9 @@ module.exports = function(grunt) {
       dist: {
         src: [
           'build/tmp/templates.js',
-          'app/watchlist.js',
+          'app/watchlist-app.js',
+          'app/app-router.js',
+          'app/main-controller.js',
           'app/**/*.js'
           ],
         dest: 'build/tmp/watchlist.js'
@@ -98,9 +92,10 @@ module.exports = function(grunt) {
       {
         command: [
           'rm -rf build/tmp',
+          'rm -rf build/css/common',
+          'rm build/css/icons.css',
           'rm build/css/watchlist.css',
-          'rm build/css/*.less',
-          'rm build/js/watchlist.min.' + settings.version + '.js.report.txt'
+          'rm build/css/*.less'
         ].join('&&')
       },
       removebuild:
@@ -109,18 +104,6 @@ module.exports = function(grunt) {
       },
       list: {
         command: ['git add data/list.json', 'git commit -m "Updated list"'].join('&&')
-      }
-    },
-    'closure-compiler': {
-      compile: {
-        closurePath: '/Library/WebServer/Documents/closure-compiler/',
-        js: 'build/tmp/watchlist.js',
-        jsOutputFile: 'build/js/watchlist.min.<%=settings.version%>.js',
-        maxBuffer: 500,
-        options: {
-          compilation_level: 'WHITESPACE_ONLY',
-          language_in: 'ECMASCRIPT6_STRICT'
-        }
       }
     },
     replace: {
@@ -173,7 +156,7 @@ module.exports = function(grunt) {
       },
       'update-list': {
         options: {
-          uri: 'http://ksp.lostmarbles.nl/data/list.json',
+          uri: 'http://watchlist.lostmarbles.nl/data/list.json',
           json: false,
           callback: function(error, response, body) {
             if (response.statusCode === 200) {
@@ -221,25 +204,25 @@ module.exports = function(grunt) {
     grunt.config.merge({
       cssmin: {build: {ext: '.min.' + version + '.css'}},
       shell: {
-        cleanbuild: {command: ['rm -rf build/tmp',
-          'rm build/css/ksp.css',
+        cleanbuild: {command: [
+          'cp build/tmp/watchlist.js build/js/watchlist.' + version + '.js',
+          'rm -rf build/tmp',
+          'rm build/css/watchlist.css',
           'rm build/css/*.less',
-          'rm build/js/ksp.min.' + version + '.js.report.txt'].join('&&')},
+          'rm build/js/watchlist.min.' + version + '.js.report.txt'].join('&&')},
         version: {command: ['git add settings.json',
           'git commit -m "Version ' + version + '"'].join('&&')},
         tag: {command: 'git tag v' + version}
       },
-      'closure-compiler': {compile: {jsOutputFile: 'build/js/ksp.min.' + version + '.js'}},
       replace: {version: {replacements: [
         {from: '<title>Watchlist</title>', to: '<title>Watchlist - ' + version + '</title>'},
-        {from: 'watchlist.js',to: 'watchlist.min.' + version + '.js'},
+        {from: 'watchlist.js',to: 'watchlist.' + version + '.js'},
         {from: 'css/watchlist.css',to: 'css/watchlist.min.' + version + '.css'}
       ]}}
     });
   });
 
   grunt.registerTask('deploy-version', 'Update version, commit, tag and deploy', function() {
-    grunt.task.run('eslint');
     grunt.task.run('merge-config');
     settings.version = grunt.config.get('version');
     grunt.log.write('Bumped version to ', settings.version);
@@ -249,14 +232,13 @@ module.exports = function(grunt) {
     grunt.task.run('deploy');
   });
 
-  grunt.registerTask('deploy', 'Deploy ksp.lostmarbles.nl', function() {
+  grunt.registerTask('deploy', 'Deploy watchlist.lostmarbles.nl', function() {
     grunt.log.subhead('Deploying ' + settings.name + '. v' + settings.version);
     grunt.config.set('version', settings.version);
     grunt.task.run('merge-config');
     grunt.task.run('shell:setupbuild');
     grunt.task.run('html2js'); // compile templates
     grunt.task.run('concat'); // concatenate js to temp
-    grunt.task.run('closure-compiler:compile'); // minify js and copy to build
     grunt.task.run('copy:build'); // copy files to build
     grunt.task.run('less:prod'); // compile and copy css to build
     grunt.task.run('cssmin:build'); // compile and copy css to build
@@ -265,22 +247,16 @@ module.exports = function(grunt) {
     grunt.task.run('shell:cleanbuild');
     grunt.task.run('ftp-deploy:deploy'); // ftp build to deploy
     grunt.task.run('shell:removebuild');
-    grunt.task.run('http:clean'); // clean up previous version css and js files
-  });
-
-  grunt.registerTask('source', 'Run ESLint on source code', function() {
-    grunt.task.run('eslint');
+    //grunt.task.run('http:clean'); // clean up previous version css and js files
   });
 
   grunt.registerTask('test-build', 'Test building of source code', function() {
     grunt.log.subhead('Test build for version ', settings.version);
     grunt.config.set('version', settings.version);
     grunt.task.run('merge-config');
-    grunt.task.run('eslint');
     grunt.task.run('shell:setupbuild');
     grunt.task.run('html2js'); // compile templates
     grunt.task.run('concat'); // concatenate js to temp
-    grunt.task.run('closure-compiler:compile'); // minify js and copy to build
     grunt.task.run('copy:build'); // copy templates, js, and css to build
     grunt.task.run('cssmin:build'); // compile and copy css to build
     grunt.task.run('replace:version');  // update file and version reference
@@ -288,7 +264,7 @@ module.exports = function(grunt) {
     grunt.task.run('shell:cleanbuild');
   });
 
-  grunt.registerTask('css-test', 'Compile CSS for ksp.lostmarbles.nl for debugging', function() {
+  grunt.registerTask('css-test', 'Compile CSS for watchlist.lostmarbles.nl for debugging', function() {
     grunt.task.run('cssmin:build'); // compile and copy css to build
   });
 };

@@ -3,3 +3,4 @@ css/*.css
 config.codekit3
 .ftppass
 node_modules
+js/watchlist.js

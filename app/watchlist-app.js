@@ -1,4 +1,4 @@
-angular.module('watchlistApp', ['ngRoute', 'templates']);
+angular.module('watchlistApp', ['ngRoute', 'templates-main']);
 
 // set up lodash
 angular.module('watchlistApp').factory('_', ['$window',
