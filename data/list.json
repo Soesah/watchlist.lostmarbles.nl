@@ -33,5 +33,12 @@
         "year": 2015,
         "score": 4,
         "watched": true
+    },
+    {
+        "type": 0,
+        "name": "Zootopia",
+        "year": 2016,
+        "score": null,
+        "watched": false
     }
 ]
