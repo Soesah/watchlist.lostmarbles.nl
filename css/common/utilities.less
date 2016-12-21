@@ -1,3 +1,33 @@
+
+.hidden {
+  display: none;
+}
+
+.clickable() {
+  cursor: pointer;
+}
+
+.clickable {
+  .clickable();
+}
+
+.unselectable() {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.unselectable {
+  .unselectable();
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+
 .bracketed {
   &:before {
     content: ' (';
@@ -5,4 +35,8 @@
   &:after {
     content: ')';
   }
+}
+
+.dashed:before {
+  content: ' \2013 ';
 }

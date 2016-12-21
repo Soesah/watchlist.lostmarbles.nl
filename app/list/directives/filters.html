@@ -1,13 +1,13 @@
 <div class="filter">
   <label>Filter by type</label>
-  <ul>
+  <ul class="unselectable">
     <li ng-repeat="type in types">
       <a href="javascript:void(0)" 
         ng-bind="type.name"
         ng-class="{'active': itemType === type.type}" 
         ng-click="setItemType(type.type);"></a>
     </a></li>
-  </ul>
+  </ul class="unselectable">
   <br/>
   <label>Watched</label>
   <ul>
