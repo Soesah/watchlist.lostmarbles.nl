@@ -7,7 +7,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-ftp-deploy');
@@ -40,9 +39,6 @@ module.exports = function(grunt) {
           ],
         dest: 'build/tmp/watchlist.js'
       }
-    },
-    usemin: {
-      html: ['build/index.html']
     },
     copy:
     {
@@ -102,8 +98,14 @@ module.exports = function(grunt) {
       {
         command: 'rm -rf build'
       },
+      master: {
+        command: ['git checkout master'].join('&&')
+      },
+      'merge-develop': {
+        command: ['git merge --squash develop'].join('&&')
+      },
       list: {
-        command: ['git add data/list.json', 'git commit -m "Updated list"'].join('&&')
+        command: ['git add data/list.json'].join('&&')
       }
     },
     replace: {
@@ -210,9 +212,14 @@ module.exports = function(grunt) {
           'rm build/css/watchlist.css',
           'rm build/css/*.less',
           'rm build/js/watchlist.min.' + version + '.js.report.txt'].join('&&')},
-        version: {command: ['git add settings.json',
-          'git commit -m "Version ' + version + '"'].join('&&')},
-        tag: {command: 'git tag v' + version}
+        version: {command: ['git add settings.json'].join('&&')},
+        tag: {command: 'git tag v' + version},
+        commit: {command: 'git commit -F commit_message'},
+        'push-master': {command:['git push', 'git checkout develop'].join('&&')},
+        compose: {command:[
+          'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline > commit_message',
+          'echo "Version '+ version + '\n\n"|cat - commit_message > tmp && mv tmp commit_message'
+        ].join('&&')}
       },
       replace: {version: {replacements: [
         {from: '<title>Watchlist</title>', to: '<title>Watchlist - ' + version + '</title>'},
@@ -223,13 +230,23 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('deploy-version', 'Update version, commit, tag and deploy', function() {
+    // deploy versions on master
+    grunt.task.run('shell:master');
+    // squash merge develop
+    grunt.task.run('shell:merge-develop');
+    // add the list
+    grunt.task.run('shell:list');
+    // merge configs with new version
     grunt.task.run('merge-config');
     settings.version = grunt.config.get('version');
     grunt.log.write('Bumped version to ', settings.version);
     grunt.file.write('settings.json', JSON.stringify(settings, undefined, 2), function() {});
     grunt.task.run('shell:version');
     grunt.task.run('shell:tag');
+    // commit everything
+    grunt.task.run('shell:commit');
     grunt.task.run('deploy');
+    grunt.task.run('shell:push-master');
   });
 
   grunt.registerTask('deploy', 'Deploy watchlist.lostmarbles.nl', function() {
@@ -243,7 +260,6 @@ module.exports = function(grunt) {
     grunt.task.run('less:prod'); // compile and copy css to build
     grunt.task.run('cssmin:build'); // compile and copy css to build
     grunt.task.run('replace:version');  // update file and version reference
-    grunt.task.run('usemin'); // fix js reference
     grunt.task.run('shell:cleanbuild');
     grunt.task.run('ftp-deploy:deploy'); // ftp build to deploy
     grunt.task.run('shell:removebuild');
@@ -260,7 +276,6 @@ module.exports = function(grunt) {
     grunt.task.run('copy:build'); // copy templates, js, and css to build
     grunt.task.run('cssmin:build'); // compile and copy css to build
     grunt.task.run('replace:version');  // update file and version reference
-    grunt.task.run('usemin'); // fix js reference
     grunt.task.run('shell:cleanbuild');
   });
 
