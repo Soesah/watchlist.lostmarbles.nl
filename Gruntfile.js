@@ -214,8 +214,12 @@ module.exports = function(grunt) {
           'rm build/js/watchlist.min.' + version + '.js.report.txt'].join('&&')},
         version: {command: ['git add settings.json'].join('&&')},
         tag: {command: 'git tag v' + version},
-        commit: {command: 'git commit'},
-        'push-master': {command:['git push', 'git checkout develop'].join('&&')}
+        commit: {command: 'git commit -F commit_message'},
+        'push-master': {command:['git push', 'git checkout develop'].join('&&')},
+        compose: {command:[
+          'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline > commit_message',
+          'echo "Version '+ version + '\n\n"|cat - commit_message > tmp && mv tmp commit_message'
+        ].join('&&')}
       },
       replace: {version: {replacements: [
         {from: '<title>Watchlist</title>', to: '<title>Watchlist - ' + version + '</title>'},
