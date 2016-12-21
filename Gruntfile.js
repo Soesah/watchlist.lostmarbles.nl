@@ -106,6 +106,9 @@ module.exports = function(grunt) {
       },
       list: {
         command: ['git add data/list.json'].join('&&')
+      },
+      compose:{
+        command:'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline > commit_message'
       }
     },
     replace: {
@@ -216,10 +219,7 @@ module.exports = function(grunt) {
         tag: {command: 'git tag v' + version},
         commit: {command: 'git commit -F commit_message'},
         'push-master': {command:['git push', 'git checkout develop'].join('&&')},
-        compose: {command:[
-          'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline > commit_message',
-          'echo "Version '+ version + '\n\n"|cat - commit_message > tmp && mv tmp commit_message'
-        ].join('&&')}
+        compose: {command:'echo "Version '+ version + '\n\n"|cat - commit_message > tmp && mv tmp commit_message'}
       },
       replace: {version: {replacements: [
         {from: '<title>Watchlist</title>', to: '<title>Watchlist - ' + version + '</title>'},
@@ -231,6 +231,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('deploy-version', 'Update version, commit, tag and deploy', function() {
     // deploy versions on master
+    grunt.task.run('shell:compose');
     grunt.task.run('shell:master');
     // squash merge develop
     grunt.task.run('shell:merge-develop');
@@ -244,6 +245,7 @@ module.exports = function(grunt) {
     grunt.task.run('shell:version');
     grunt.task.run('shell:tag');
     // commit everything
+    grunt.task.run('shell:compose');
     grunt.task.run('shell:commit');
     grunt.task.run('deploy');
     grunt.task.run('shell:push-master');
