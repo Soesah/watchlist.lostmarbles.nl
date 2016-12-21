@@ -1,5 +1,5 @@
-angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie', 'Series', 'Documentary',
-  function(BaseFactory, Movie, Series, Documentary) {
+angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie', 'Series', 'Documentary', '_',
+  function(BaseFactory, Movie, Series, Documentary, _) {
 
   class ListDataFactory extends BaseFactory{
     constructor() {
@@ -26,6 +26,12 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
         if (data.type === _this.DOCUMENTARY) {
           return new Documentary(data);
         }
+      });
+    }
+
+    find(name) {
+      return _.filter(this.data, function(item) {
+        return item.name.toLowerCase().indexOf(name.toLowerCase()) !== -1;
       });
     }
 
