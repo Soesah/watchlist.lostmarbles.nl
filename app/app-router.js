@@ -5,7 +5,7 @@ angular.module('watchlistApp').config(['$routeProvider',
       controllerAs: 'ctrl',
       controller: 'ListController'
     }).when('/add', {
-      templateUrl: 'app/list/directives/add.html',
+      templateUrl: 'app/add/directives/add.html',
       controller: 'AddController'
     }).otherwise('/'); // always go back to the list
   }

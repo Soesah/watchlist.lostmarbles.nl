@@ -1,11 +1,15 @@
 angular.module('watchlistApp').filter('listFilter', ['_', 'ListDataFactory',
   function(_, ListDataFactory) {
     'use strict';
-    return function(list, itemType, itemState) {
+    return function(list, itemType, itemState, filter) {
       return _.filter(list, function(obj) {
         let show = true;
 
-        if (itemType !== ListDataFactory.ALL) {
+        if (filter) {
+          show = obj.name.toLowerCase().indexOf(filter.toLowerCase()) !== -1;
+        }
+
+        if (show && itemType !== ListDataFactory.ALL) {
           show = obj.type === itemType;
         }
 

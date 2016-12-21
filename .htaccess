@@ -4,7 +4,7 @@ RewriteEngine On
 # root
 RewriteRule ^$ index.html
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule (.*) backend.php [L,QSA]
+# RewriteRule (.*) backend.php [L,QSA]
 
 # compress text, HTML, JavaScript, CSS, and XML
 AddOutputFilterByType DEFLATE text/plain

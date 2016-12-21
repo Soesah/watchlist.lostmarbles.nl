@@ -32,8 +32,9 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
       $scope.list.push($scope.item);
       $scope.$root.$emit('message', {
         name: 'general',
-        type: 'info',
-        message: 'Saving...'
+        type: 'warning',
+        message: 'Saving...',
+        time: 2000
       });
 
       ListDataFactory.save($scope.list).then(function() {

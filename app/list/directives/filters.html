@@ -1,6 +1,9 @@
-<div class="filter">
+<div class="filters">
+  <label>Filter by name</label>
+  <input type="text" placeholder="Filter" ng-model="filter"/>
+  <br/>
   <label>Filter by type</label>
-  <ul>
+  <ul class="unselectable">
     <li ng-repeat="type in types">
       <a href="javascript:void(0)" 
         ng-bind="type.name"
@@ -10,7 +13,7 @@
   </ul>
   <br/>
   <label>Watched</label>
-  <ul>
+  <ul class="unselectable">
     <li ng-repeat="state in states">
       <a href="javascript:void(0)" 
         ng-bind="state.name"
