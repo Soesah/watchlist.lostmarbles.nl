@@ -1,6 +1,7 @@
 angular.module('watchlistApp').controller('ListController', ['$scope', 'ListDataFactory', '$location',
   function($scope, ListDataFactory, $location) {
 
+    $scope.filter = '';
     $scope.types = ListDataFactory.getFilterList();
     $scope.itemType = ListDataFactory.ALL;
     $scope.states = ListDataFactory.getFilterStates();
