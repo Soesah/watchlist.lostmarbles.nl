@@ -11,3 +11,4 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - score
 - edit item
 - make more sense of seasons watched
+- only commit versions on master?
