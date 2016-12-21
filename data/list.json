@@ -1,44 +1,142 @@
 [
-    {
-        "type": 0,
-        "name": "Lemony Snicket",
-        "year": 2004,
+  {
+    "type": 0,
+    "name": "Lemony Snicket",
+    "year": 2004,
+    "score": null,
+    "watched": false
+  },
+  {
+    "type": 0,
+    "name": "Arrival",
+    "year": 2016,
+    "score": null,
+    "watched": false
+  },
+  {
+    "type": 0,
+    "name": "Rogue One",
+    "year": 2016,
+    "score": null,
+    "watched": false
+  },
+  {
+    "type": 0,
+    "name": "Passengers",
+    "year": 2016,
+    "score": null,
+    "watched": false
+  },
+  {
+    "type": 0,
+    "name": "The Martian",
+    "year": 2015,
+    "score": 4,
+    "watched": true
+  },
+  {
+    "type": 0,
+    "name": "Zootopia",
+    "year": 2016,
+    "score": null,
+    "watched": true
+  },
+  {
+    "type": 0,
+    "name": "Space Cowboys",
+    "year": 2000,
+    "score": null,
+    "watched": false
+  },
+  {
+    "type": 2,
+    "name": "Under The Sun",
+    "year": 2015,
+    "score": null,
+    "watched": false
+  },
+  {
+    "type": 1,
+    "name": "Game of Thrones",
+    "seasons": [
+      {
+        "year": 2011,
         "score": null,
         "watched": false
-    },
-    {
-        "type": 0,
-        "name": "Arrival",
-        "year": 2016,
+      },
+      {
+        "year": 2012,
         "score": null,
         "watched": false
-    },
-    {
-        "type": 0,
-        "name": "Rogue One",
-        "year": 2016,
+      },
+      {
+        "year": 2013,
         "score": null,
         "watched": false
-    },
-    {
-        "type": 0,
-        "name": "Passengers",
-        "year": 2016,
+      },
+      {
+        "year": 2014,
         "score": null,
         "watched": false
-    },
-    {
-        "type": 0,
-        "name": "The Martian",
+      },
+      {
         "year": 2015,
-        "score": 4,
-        "watched": true
-    },
-    {
-        "type": 0,
-        "name": "Zootopia",
+        "score": null,
+        "watched": false
+      },
+      {
         "year": 2016,
         "score": null,
         "watched": false
-    }
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "name": "The man in the high castle",
+    "seasons": [
+      {
+        "year": 2015,
+        "score": null,
+        "watched": false
+      },
+      {
+        "year": 2016,
+        "score": null,
+        "watched": false
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "name": "Mr Robot",
+    "seasons": [
+      {
+        "year": 2015,
+        "score": null,
+        "watched": false
+      },
+      {
+        "year": 2016,
+        "score": null,
+        "watched": false
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "name": "Poldark",
+    "seasons": [
+      {
+        "year": 2015,
+        "score": null,
+        "watched": false
+      },
+      {
+        "year": 2016,
+        "score": null,
+        "watched": false
+      }
+    ]
+  }
 ]
