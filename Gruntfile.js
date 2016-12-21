@@ -236,7 +236,7 @@ module.exports = function(grunt) {
     // squash merge develop
     grunt.task.run('shell:merge-develop');
     // add the list
-    grunt.task.run('shell:list');
+    grunt.task.run('http:update-list');
     // merge configs with new version
     grunt.task.run('merge-config');
     settings.version = grunt.config.get('version');
