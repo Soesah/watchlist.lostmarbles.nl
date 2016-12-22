@@ -1,7 +1,7 @@
 <li class="item series" ng-class="{'movie-watched': item.watched}">
   <h4 ng-bind="item.name"></h4>
   <i class="icon icon-series"></i>
-  <span class="bracketed"><span ng-bind="item.year"></span>,
+  <span class="bracketed"><span ng-bind="item.year"></span> - <span ng-bind="item.lastYear"></span>,
     <span ng-bind="item.seasons.length"></span>
     <span> season<span ng-show="item.seasons.length > 1">s</span></span></span>
 </li>
