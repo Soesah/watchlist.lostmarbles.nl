@@ -3,7 +3,9 @@
   padding: 0;
 
   .item {
-    margin: 8px 0;
+    margin: 0px 0 @size-smaller / 2 @size-small;
+    position: relative;
+    line-height: 20px;
 
     h4 {
       display: inline;
@@ -29,6 +31,8 @@
 
     &:before {
       content: '\2013 ';
+      position: absolute;
+      left: -@size-small;
     }
   }
 }
