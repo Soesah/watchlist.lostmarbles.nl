@@ -10,9 +10,11 @@ angular.module('watchlistApp').directive('message', ['$timeout',
         var time;
         switch (scope.message.type) {
           case 'error':
+            scope.message.closable = true;
             break;
           case 'warning':
           case 'info':
+            scope.message.closable = false;
             time = scope.message.type === 'info' ? 2000 : 5000;
             if (scope.message.time) {
               time = scope.message.time;
@@ -28,6 +30,16 @@ angular.module('watchlistApp').directive('message', ['$timeout',
             scope.closeMessage(null, $el, scope.message);
           }
         });
+
+        scope.cancelAction = function(evt) {
+          if (evt) {
+            if (scope.message.cancel) {
+              scope.message.cancel.action();
+            }
+            scope.closeMessage(evt, $el, scope.message);
+            evt.stopPropagation();
+          }
+        };
 
         $timeout(function() {
           $el.removeClass('done');

@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataFactory', '$location',
-  function($scope, ListDataFactory, $location) {
+angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataFactory', 'OMDbApi', '$location',
+  function($scope, ListDataFactory, OMDbApi, $location) {
 
     $scope.item = ListDataFactory.new(ListDataFactory.MOVIE);
 
@@ -30,6 +30,8 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
 
     $scope.addItem = function() {
       $scope.list.push($scope.item);
+      // clear messages
+      $scope.$root.$emit('messages:clear', 'general');
       $scope.$root.$emit('message', {
         name: 'general',
         type: 'warning',
@@ -38,12 +40,22 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
       });
 
       ListDataFactory.save($scope.list).then(function() {
-        $location.path('/');
         $scope.$root.$emit('message', {
           name: 'general',
           type: 'info',
           message: 'Saving was successful'
         });
+        // clear messages
+        $scope.$root.$emit('messages:clear', 'general');
+        $location.path('/');
+      }, function() {
+        $scope.$root.$emit('message', {
+          name: 'general',
+          type: 'error',
+          message: 'Saving failed'
+        });
+        // remove the item from the list, since we stay on the add page
+        $scope.list.splice($scope.list.indexOf($scope.item, 1))
       });
     };
 

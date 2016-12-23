@@ -16,7 +16,7 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
 
     parseData(data) {
       let _this = this;
-      return data.map(function(data) {
+      return data.data.map(function(data) {
         if (data.type === _this.MOVIE) {
           return new Movie(data);
         }
