@@ -1,5 +1,5 @@
-angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie', 'Series', 'Documentary', '_',
-  function(BaseFactory, Movie, Series, Documentary, _) {
+angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie', 'Series', 'Documentary', 'Game', '_',
+  function(BaseFactory, Movie, Series, Documentary, Game, _) {
 
   class ListDataFactory extends BaseFactory{
     constructor() {
@@ -26,6 +26,9 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
         if (data.type === _this.DOCUMENTARY) {
           return new Documentary(data);
         }
+        if (data.type === _this.GAME) {
+          return new Game(data);
+        }
       });
     }
 
@@ -51,8 +54,12 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
       return 2;
     }
 
+    get GAME() {
+      return 3;
+    }
+
     get TYPES() {
-      return [this.SERIES, this.MOVIE, this.DOCUMENTARY];
+      return [this.SERIES, this.MOVIE, this.DOCUMENTARY, this.GAME];
     }
 
     new(type) {
@@ -63,6 +70,8 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
           return new Series({});
         case this.DOCUMENTARY:
           return new Documentary({});
+        case this.GAME:
+          return new Game({});
       }
     }
 
@@ -101,6 +110,9 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
         }, {
           type: this.SERIES,
           name: 'Series'
+        }, {
+          type: this.GAME,
+          name: 'Game'
         }
       ]
     }

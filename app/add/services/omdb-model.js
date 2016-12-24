@@ -23,7 +23,29 @@ angular.module('watchlistApp').factory('OMDbObject', [
         this.imdbvotes = imdbVotes;
         this.imdbid = imdbID;
         this.type = Type;
+      }
 
+      isMovie() {
+        return this.type === 'movie';
+      }
+
+      isSeries() {
+        return this.type === 'series';
+      }
+
+      isGame() {
+        return this.type === 'game';
+      }
+
+      getInternalType() {
+        var type = 0;
+        if (this.isSeries()) {
+          type = 1;
+        }
+        if (this.isGame()) {
+          type = 2;
+        }
+        return type;
       }
     }
 

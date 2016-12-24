@@ -30,6 +30,9 @@ angular.module('watchlistApp').controller('ListController', ['$scope', 'ListData
       if ($scope.item.type === ListDataFactory.DOCUMENTARY) {
         return 'app/list/directives/documentary.html';
       }
+      if ($scope.item.type === ListDataFactory.GAME) {
+        return 'app/list/directives/game.html';
+      }
     };
 
     $scope.add = function() {
