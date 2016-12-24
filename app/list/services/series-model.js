@@ -2,13 +2,14 @@ angular.module('watchlistApp').factory('Series', ['_', 'Season',
   function(_, Season) {
 
   class Series {
-    constructor({imdbId = null, name = null, seasons = []}) {
+    constructor({imdbId = null, name = null, seasons = [], actors = []}) {
       this.type = 1;
       this.imdbId = imdbId;
       this.name = name;
       this.seasons = seasons.map(function(data) {
         return new Season(data);
       });
+      this.actors = actors;
     }
 
     addSeason(year = null) {
