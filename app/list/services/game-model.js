@@ -18,6 +18,10 @@ angular.module('watchlistApp').factory('Game', [
     set watched(watched) {
       this.played = watched;
     }
+
+    isComplete() {
+      return this.imdbId && this.name && this.year;
+    }
   }
 
   return Game;

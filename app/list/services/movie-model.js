@@ -11,6 +11,10 @@ angular.module('watchlistApp').factory('Movie', [
       this.actors = actors;
       this.watched = watched;
     }
+
+    isComplete() {
+      return this.imdbId && this.name && this.year && this.actors.length;
+    }
   }
 
   return Movie;

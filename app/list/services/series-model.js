@@ -12,6 +12,10 @@ angular.module('watchlistApp').factory('Series', ['_', 'Season',
       this.actors = actors;
     }
 
+    isComplete() {
+      return this.imdbId && this.name && this.seasons.length && this.actors.length;
+    }
+
     addSeason(year = null) {
       this.seasons.push(new Season({year: year}));
     }
