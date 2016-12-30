@@ -1,0 +1,44 @@
+button {
+  padding: @size-smaller;
+  border: none;
+  border-radius: @border-radius-default;
+  width: 100%;
+  outline: none;
+  .font-bold();
+  font-size: inherit;
+  color: white;
+  cursor: pointer;
+
+  &.action,
+  &[type=submit] {
+    background-color: @orange;
+
+    &:hover {
+      background-color: @orange-dark
+    }
+  }
+
+  &.option,
+  &[type=cancel] {
+    background-color: @beige;
+
+    &:hover {
+      background-color: @beige-dark;
+    }
+  }
+
+  &[disabled],
+  &[disabled]:hover {
+    background-color: lighten(@gray, 55%);
+    color: lighten(@gray, 65%);
+    cursor: default;
+  }
+}
+
+@media screen and (max-width:360px) {
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: @size-smaller / 2;
+  }
+}

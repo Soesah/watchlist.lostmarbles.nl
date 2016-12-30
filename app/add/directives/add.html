@@ -1,28 +1,45 @@
-<form class="form" ng-submit="addItem()">
+<form name="itemForm" class="form" ng-submit="addItem()">
   <h2>Add</h2>
   <p>Add a movie, documentary or series to the watchlist</p>
-  <div class="form-item">
-    <label>Type</label><select ng-model="item.type" ng-options="type.type as type.name for type in types"></select>
+  <div class="form-item form-item-required">
+    <label>Type</label><select ng-model="itemType" ng-options="type.type as type.name for type in types"></select>
     <svg class="select-arrow" width="100px" height="63px" viewBox="0 0 100 63" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <polygon points="25.2873563 0 0 0 50 0 74.7126437 0 50 31.8333333"></polygon>
     </svg>
   </div>
-  <div class="form-item" auto-focus>
-    <label>Name</label><input type="text" ng-required="true" placeholder="Name" ng-model="item.name"/>
+  <div class="form-item form-item-required form-item-name" auto-focus>
+    <label>Name</label><div class="form-input-group"><input type="text" name="name" ng-required="true" placeholder="Name" ng-model="item.name"/><button class="search-button action" type="button" ng-click="search()" ng-disabled="loading || !item.name">
+        <i class="icon icon-search" ng-hide="loading"></i>
+      </button>
+      <i class="icon icon-spinner" ng-show="loading"></i>
+      <ul class="suggestions" ng-show="suggestions.length">
+        <li ng-repeat="suggestion in suggestions">
+          <a href="javascript:void(0)" ng-click="choose(suggestion)">
+            <i class="icon icon-{{suggestion.Type}}"></i>
+            <span ng-bind="suggestion.Title + '(' + suggestion.Year + ')'"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="form-item" ng-if="!isSeries()">
+  <div class="form-item form-item-required" ng-if="!isSeries()">
     <label>Year</label><input type="text" integer ng-required="true" placeholder="2016" class="year" ng-model="item.year" />
   </div>
   <ul class="series-list" ng-if="isSeries()">
     <li ng-repeat="season in item.seasons">
-      <div class="form-item">
+      <div class="form-item form-item-required">
         <label>Season <span ng-bind="$index + 1"></span> year</label><input type="text" integer ng-required="true" placeholder="{{2016 + $index}}" class="year" ng-model="season.year" />
-        <button class="add-button" type="button" ng-click="addSeason()"><i class="icon icon-plus"></i></button>
+        <button class="add-button option" type="button" ng-click="addSeason()"><i class="icon icon-plus"></i></button>
       </div>
     </li>
   </ul>
+  <div class="form-item" ng-if="!isDocumentary() && !isGame()">
+    <label>Actors</label><input type="text" placeholder="Actor, actor" ng-model="item.actors" />
+  </div>
   <div class="buttons">
-    <button type="submit">Add</button>
+    <div class="button-container">
+      <button type="submit">Add</button>
+    </div>
     <button type="cancel" ng-click="back()">Cancel</button>
   </div>
 </form>

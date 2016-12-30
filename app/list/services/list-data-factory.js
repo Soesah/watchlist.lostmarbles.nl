@@ -1,5 +1,5 @@
-angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie', 'Series', 'Documentary', 'Game', '_',
-  function(BaseFactory, Movie, Series, Documentary, Game, _) {
+angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 'Movie', 'Series', 'Documentary', 'Game', '_',
+  function($q, BaseFactory, Movie, Series, Documentary, Game, _) {
 
   class ListDataFactory extends BaseFactory{
     constructor() {
@@ -59,7 +59,7 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
     }
 
     get TYPES() {
-      return [this.SERIES, this.MOVIE, this.DOCUMENTARY, this.GAME];
+      return [this.DOCUMENTARY, this.GAME, this.SERIES, this.MOVIE];
     }
 
     new(type) {
@@ -73,6 +73,34 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
         case this.GAME:
           return new Game({});
       }
+    }
+
+    change(item, type) {
+      let _this = this,
+          newItem = this.new(type),
+          promise = $q(function(resolve) {
+
+            if (item) {
+              let name = item.name,
+                  year = item.year,
+                  actors = item.actors;
+
+              newItem.name = name;
+              if (newItem.hasOwnProperty('actors')) {
+                newItem.actors = actors ? actors : [];
+              }
+
+              if (type === _this.SERIES) {
+                newItem.addSeason(year ? year : item.year ? item.year + 1 : null);
+              } else {
+                newItem.year = year;
+              }
+            }
+
+            resolve(newItem);
+          });
+
+      return promise;
     }
 
     getFilterStates() {
@@ -105,14 +133,14 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
           type: this.DOCUMENTARY,
           name: 'Documentary'
         }, {
+          type: this.GAME,
+          name: 'Game'
+        }, {
           type: this.MOVIE,
           name: 'Movie'
         }, {
           type: this.SERIES,
           name: 'Series'
-        }, {
-          type: this.GAME,
-          name: 'Game'
         }
       ]
     }
