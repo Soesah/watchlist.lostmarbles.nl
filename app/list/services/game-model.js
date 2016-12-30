@@ -20,7 +20,7 @@ angular.module('watchlistApp').factory('Game', [
     }
 
     isComplete() {
-      return this.imdbId && this.name && this.year;
+      return this.name && this.year;
     }
   }
 

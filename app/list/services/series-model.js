@@ -13,7 +13,7 @@ angular.module('watchlistApp').factory('Series', ['_', 'Season',
     }
 
     isComplete() {
-      return this.imdbId && this.name && this.seasons.length && this.actors.length;
+      return this.name && this.seasons.length;
     }
 
     addSeason(year = null) {

@@ -13,7 +13,7 @@ angular.module('watchlistApp').factory('Movie', [
     }
 
     isComplete() {
-      return this.imdbId && this.name && this.year && this.actors.length;
+      return this.name && this.year;
     }
   }
 
