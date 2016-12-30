@@ -18,12 +18,27 @@ angular.module('watchlistApp').factory('OMDbApi', ['$q', '$http', 'OMDbResults',
         });
       }
 
-      search(name) {
-        return this.request(this.url + '?s=' + name, OMDbResults);
+      search(name, year) {
+        return this.request(this.url + '?s=' + name + (year ? '&y=' + year : ''), OMDbResults);
       }
 
-      find(name) {
+      lucky(name) {
         return this.request(this.url + '?t=' + name + '&y=&plot=short&r=json', OMDbObject);
+      }
+
+      get(id) {
+        return this.request(this.url + '?i=' + id + '&r=json', OMDbObject);
+      }
+
+      getInternalType(type) {
+        switch(type) {
+          case 'movie':
+            return 0;
+          case 'series':
+            return 1;
+          case 'game':
+            return 3;
+        }
       }
     }
 
