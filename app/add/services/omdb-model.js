@@ -2,7 +2,7 @@ angular.module('watchlistApp').factory('OMDbObject', [
   function() {
 
     class OMDbObject {
-      constructor({Title = null, Year = null, Rated = null, Released = null, Runtime = null, Genre = null, Director = null, Writer = null, Actors = null, Plot = null, Language = null, Country = null, Awards = null, Poster = null, Metascore = null, imdbRating = null, imdbVotes = null, imdbID = null, Type = null}) {
+      constructor({Title = null, Year = null, Rated = null, Released = null, Runtime = null, Genre = null, Director = null, Writer = null, Actors = null, totalSeasons = null, Plot = null, Language = null, Country = null, Awards = null, Poster = null, Metascore = null, imdbRating = null, imdbVotes = null, imdbID = null, Type = null}) {
 
         this.title = Title;
         this.year = Year;
@@ -13,6 +13,7 @@ angular.module('watchlistApp').factory('OMDbObject', [
         this.director = Director;
         this.writer = Writer;
         this.actors = Actors;
+        this.seasons = parseInt(totalSeasons);
         this.plot = Plot;
         this.language = Language;
         this.country = Country;
@@ -21,7 +22,7 @@ angular.module('watchlistApp').factory('OMDbObject', [
         this.metascore = Metascore;
         this.imdbrating = imdbRating;
         this.imdbvotes = imdbVotes;
-        this.imdbid = imdbID;
+        this.imdbId = imdbID;
         this.type = Type;
       }
 
@@ -43,7 +44,7 @@ angular.module('watchlistApp').factory('OMDbObject', [
           type = 1;
         }
         if (this.isGame()) {
-          type = 2;
+          type = 3;
         }
         return type;
       }
