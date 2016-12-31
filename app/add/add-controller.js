@@ -35,30 +35,10 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
       }
 
       $scope.list.push($scope.item);
-      // clear messages
-      $scope.$root.$emit('messages:clear', 'general');
-      $scope.$root.$emit('message', {
-        name: 'general',
-        type: 'warning',
-        message: 'Saving...',
-        time: 1000
-      });
 
-      ListDataFactory.save($scope.list).then(function() {
-        $scope.$root.$emit('message', {
-          name: 'general',
-          type: 'info',
-          message: 'Saving was successful'
-        });
-        // clear messages
-        $scope.$root.$emit('messages:clear', 'general');
+      $scope.save().then(function() {
         $location.path('/');
       }, function() {
-        $scope.$root.$emit('message', {
-          name: 'general',
-          type: 'error',
-          message: 'Saving failed'
-        });
         // remove the item from the list, since we stay on the add page
         $scope.list.splice($scope.list.indexOf($scope.item, 1))
       });

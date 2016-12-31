@@ -15,6 +15,10 @@ angular.module('watchlistApp').factory('Movie', [
     isComplete() {
       return this.name && this.year;
     }
+
+    toggleWatched() {
+      this.watched = !this.watched;
+    }
   }
 
   return Movie;

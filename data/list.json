@@ -1,51 +1,65 @@
 [
     {
         "type": 0,
+        "imdbId": null,
         "name": "Lemony Snicket",
         "year": 2004,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Arrival",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Rogue One",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Passengers",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The Martian",
         "year": 2015,
         "score": 4,
+        "actors": [],
         "watched": true
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Zootopia",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": true
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Space Cowboys",
         "year": 2000,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
@@ -57,354 +71,442 @@
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Game of Thrones",
         "seasons": [
             {
                 "year": 2011,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2012,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "The man in the high castle",
         "seasons": [
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Mr Robot",
         "seasons": [
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Poldark",
         "seasons": [
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "When Harry met Sally",
         "year": 1989,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Rick and Morty",
         "seasons": [
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "The west wing",
         "seasons": [
             {
                 "year": 2000,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2001,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2002,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2003,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2004,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2005,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2006,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Homeland",
         "seasons": [
             {
                 "year": 2011,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2012,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Star Wars Rebels",
         "seasons": [
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Ghostbusters",
         "year": 1984,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Ghostbusters",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Groundhog day",
         "year": 1993,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Guardians of the galaxy",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "True detective",
         "seasons": [
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "The Americans",
         "seasons": [
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The man from U.N.C.L.E",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Lucy",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Cop car",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "John Carter",
         "year": 2012,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Monty Python and the Holy Grail",
         "year": 1975,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Monty Python's life of Brian",
         "year": 1979,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Star Wars Episode VII - The force awakens",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The Danish girl",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Macbeth",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "10 Cloverfield lane",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Cloud Atlas",
         "year": 2012,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
@@ -416,923 +518,1198 @@
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Star Trek Beyond",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Warcraft",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Scott Pilgrim vs. The World",
         "year": 2010,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Interstellar",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "La La land",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The triplets of Belleville",
         "year": 2003,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The secret life of pets",
         "year": 2016,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Ronja R\u00f6vardotter",
         "year": 1984,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Robin Hood",
         "year": 2010,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Big Hero 6",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Carol",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Chappie",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Brooklyn",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Daredevil",
         "seasons": [
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Dear white people",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "House of cards",
         "seasons": [
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Jupiter Ascending",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Paddington",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Point break",
         "year": 1991,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Predator",
         "year": 1987,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Selma",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Still Alice",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "The walking dead",
         "seasons": [
             {
                 "year": 2010,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2011,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2012,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "What's eating Gilbert Grape",
         "year": 1993,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Wild",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The 100 year old man who climbed out the window and disappeared",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Avengers - Age of Ultron",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Home",
         "year": 2015,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Arrow",
         "seasons": [
             {
                 "year": 2012,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Black Swan",
         "year": 2011,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Rango",
         "year": 2011,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The iron lady",
         "year": 2012,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The Avengers",
         "year": 2012,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Prometheus",
         "year": 2012,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Django Unchained",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Kon-Tiki",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Star Trek Into Darkness",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Gravity",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "About time",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The secret life of Walter Mitty",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "All is lost",
         "year": 2014,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "12 Angry Men",
         "year": 1957,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Pulp Fiction",
         "year": 1994,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Fight club",
         "year": 1999,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Forest Gump",
         "year": 1994,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Seven samurai",
         "year": 1954,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Se7en",
         "year": 1995,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Life is beautiful",
         "year": 1997,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Spirited away",
         "year": 2001,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The pianist",
         "year": 2002,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Back to the future",
         "year": 1985,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "WALL\u00b7E",
         "year": 2008,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Princess Mononoke",
         "year": 1997,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Requiem for a dream",
         "year": 2000,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Inglorious bastards",
         "year": 2009,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Good Will Hunting",
         "year": 1997,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Up",
         "year": 2009,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Blade runner",
         "year": 1982,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "V for Vendetta",
         "year": 2005,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Fargo",
         "year": 1996,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "No country for old men",
         "year": 2007,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "12 years a slave",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The Truman show",
         "year": 1998,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Donnie Darko",
         "year": 2001,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Monsters Inc.",
         "year": 2001,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The help",
         "year": 2011,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Twelve monkeys",
         "year": 1995,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Schindler's list",
         "year": 1993,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The lord of the rings - The fellowship of the ring",
         "year": 2001,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The lord of the rings - The two towers",
         "year": 2002,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The lord of the rings - The return of the king",
         "year": 2003,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The hobbit - An unexpected journey",
         "year": 2012,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The hobbit - The desolation of Smaug",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The hobbit - The battle of the five armies",
         "year": 2004,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "Star Trek",
         "year": 2009,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Star Trek - The next generation",
         "seasons": [
             {
                 "year": 1987,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1988,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1989,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1990,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1991,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1992,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1993,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Star Trek - Voyager",
         "seasons": [
             {
                 "year": 1995,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1996,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1997,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1998,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1999,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2000,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2001,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Star Trek - Deep Space Nine",
         "seasons": [
             {
                 "year": 1993,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1994,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1995,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1996,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1997,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1998,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1999,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Star Wars Clone Wars",
         "seasons": [
             {
                 "year": 2009,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2010,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2011,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2012,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Family Guy",
         "seasons": [
             {
                 "year": 1999,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 1999,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2001,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2005,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2006,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2006,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2007,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2008,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2009,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2010,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2011,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2012,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2013,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             },
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "The illusionist",
         "year": 2006,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "A bug's life",
         "year": 1998,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 0,
+        "imdbId": null,
         "name": "World War Z",
         "year": 2013,
         "score": null,
+        "actors": [],
         "watched": false
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Narcos",
         "seasons": [
             {
                 "year": 2014,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Made in America",
         "seasons": [
             {
                 "year": 2015,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Marseille",
         "seasons": [
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
     },
     {
         "type": 1,
+        "imdbId": null,
         "name": "Luke Cage",
         "seasons": [
             {
                 "year": 2016,
                 "score": null,
+                "episodes": [],
                 "watched": false
             }
-        ]
+        ],
+        "actors": []
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0790724",
+        "name": "Jack Reacher",
+        "year": "2012",
+        "score": null,
+        "actors": "Tom Cruise, Rosamund Pike, Richard Jenkins, David Oyelowo",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3393786",
+        "name": "Jack Reacher: Never Go Back",
+        "year": "2016",
+        "score": null,
+        "actors": "Tom Cruise, Cobie Smulders, Aldis Hodge, Danika Yarosh",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1318514",
+        "name": "Rise of the Planet of the Apes",
+        "year": "2011",
+        "score": null,
+        "actors": "Andy Serkis, Karin Konoval, Terry Notary, Richard Ridings",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2103281",
+        "name": "Dawn of the Planet of the Apes",
+        "year": "2014",
+        "score": null,
+        "actors": "Andy Serkis, Jason Clarke, Gary Oldman, Keri Russell",
+        "watched": false
     }
 ]

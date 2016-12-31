@@ -16,6 +16,10 @@ angular.module('watchlistApp').factory('Series', ['_', 'Season',
       return this.name && this.seasons.length;
     }
 
+    toggleWatched() {
+      // do something with seasons;
+    }
+
     addSeason(year = null) {
       this.seasons.push(new Season({year: year}));
     }
