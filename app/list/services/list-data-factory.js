@@ -1,5 +1,5 @@
-angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie', 'Series', 'Documentary', '_',
-  function(BaseFactory, Movie, Series, Documentary, _) {
+angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 'Movie', 'Series', 'Documentary', 'Game', '_',
+  function($q, BaseFactory, Movie, Series, Documentary, Game, _) {
 
   class ListDataFactory extends BaseFactory{
     constructor() {
@@ -16,7 +16,7 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
 
     parseData(data) {
       let _this = this;
-      return data.map(function(data) {
+      return data.data.map(function(data) {
         if (data.type === _this.MOVIE) {
           return new Movie(data);
         }
@@ -25,6 +25,9 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
         }
         if (data.type === _this.DOCUMENTARY) {
           return new Documentary(data);
+        }
+        if (data.type === _this.GAME) {
+          return new Game(data);
         }
       });
     }
@@ -51,8 +54,12 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
       return 2;
     }
 
+    get GAME() {
+      return 3;
+    }
+
     get TYPES() {
-      return [this.SERIES, this.MOVIE, this.DOCUMENTARY];
+      return [this.DOCUMENTARY, this.GAME, this.SERIES, this.MOVIE];
     }
 
     new(type) {
@@ -63,7 +70,37 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
           return new Series({});
         case this.DOCUMENTARY:
           return new Documentary({});
+        case this.GAME:
+          return new Game({});
       }
+    }
+
+    change(item, type) {
+      let _this = this,
+          newItem = this.new(type),
+          promise = $q(function(resolve) {
+
+            if (item) {
+              let name = item.name,
+                  year = item.year,
+                  actors = item.actors;
+
+              newItem.name = name;
+              if (newItem.hasOwnProperty('actors')) {
+                newItem.actors = actors ? actors : [];
+              }
+
+              if (type === _this.SERIES) {
+                newItem.addSeason(year ? year : item.year ? item.year + 1 : null);
+              } else {
+                newItem.year = year;
+              }
+            }
+
+            resolve(newItem);
+          });
+
+      return promise;
     }
 
     getFilterStates() {
@@ -95,6 +132,9 @@ angular.module('watchlistApp').factory('ListDataFactory', ['BaseFactory', 'Movie
         {
           type: this.DOCUMENTARY,
           name: 'Documentary'
+        }, {
+          type: this.GAME,
+          name: 'Game'
         }, {
           type: this.MOVIE,
           name: 'Movie'

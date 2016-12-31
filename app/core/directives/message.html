@@ -1,1 +1,7 @@
-<p class="message {{message.type}}"><i class="icon icon-{{message.type}}"></i> {{message.message}}</p>
+<p class="message {{message.type}}">
+  <i class="icon icon-{{message.type}}"></i>
+  {{message.message}}
+  <button type="button" ng-if="message.closable" ng-click="cancelAction($event)">
+    <i class="icon icon-delete"></i>
+  </button>
+</p>

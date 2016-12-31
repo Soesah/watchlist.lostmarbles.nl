@@ -15,11 +15,6 @@ angular.module('watchlistApp').controller('ListController', ['$scope', 'ListData
       $scope.itemState = state;
     };
 
-    ListDataFactory.load().then(function(data) {
-      // not so nice...
-      $scope.$parent.list = data;
-    });
-
     $scope.getItemTemplate = function() {
       if ($scope.item.type === ListDataFactory.MOVIE) {
         return 'app/list/directives/movie.html';
@@ -29,6 +24,9 @@ angular.module('watchlistApp').controller('ListController', ['$scope', 'ListData
       }
       if ($scope.item.type === ListDataFactory.DOCUMENTARY) {
         return 'app/list/directives/documentary.html';
+      }
+      if ($scope.item.type === ListDataFactory.GAME) {
+        return 'app/list/directives/game.html';
       }
     };
 

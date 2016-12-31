@@ -9,6 +9,10 @@ angular.module('watchlistApp').factory('Documentary', [
       this.score = score;
       this.watched = watched;
     }
+
+    isComplete() {
+      return this.name && this.year;
+    }
   }
 
   return Documentary;

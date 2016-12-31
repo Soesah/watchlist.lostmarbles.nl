@@ -108,7 +108,7 @@ module.exports = function(grunt) {
         command: ['git add data/list.json'].join('&&')
       },
       compose:{
-        command:'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline > commit_message'
+        command:'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline|awk \'/Version/ {exit} {print}\' > commit_message'
       }
     },
     replace: {
@@ -231,7 +231,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('deploy-version', 'Update version, commit, tag and deploy', function() {
     // deploy versions on master
-    grunt.task.run('shell:compose');
+    grunt.task.run('shell:compose'); // this is unaware of last tag
     grunt.task.run('shell:master');
     // squash merge develop
     grunt.task.run('shell:merge-develop');

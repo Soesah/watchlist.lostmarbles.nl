@@ -26,12 +26,33 @@
   border-radius: 4px;
   color: #2c2c2c;
 
+  p {
+    margin: 0;
+  }
+
+  button {
+    color: white;
+    padding: 4px 6px;
+    min-width: auto;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    .icon {
+      color: white !important;
+      font-size: 10px;
+    }
+  }
+
   &.info {
     background-color: @blue-info;
     border: solid 1px darken(@blue-info, 20%);
 
     .icon {
       color: darken(@blue-info, 25%);
+    }
+    button {
+      background-color: darken(@blue-info, 25%);
     }
   }
 
@@ -42,6 +63,9 @@
     .icon {
       color: darken(@yellow-warning, 25%);
     }
+    button {
+      background-color: darken(@yellow-warning, 25%);
+    }
   }
 
   &.error {
@@ -51,11 +75,11 @@
     .icon {
       color: darken(@red-error, 25%);
     }
+    button {
+      background-color: darken(@red-error, 25%);
+    }
   }
 
-  p {
-    margin: 0;
-  }
 }
 
 @media screen and (max-width:400px) {
