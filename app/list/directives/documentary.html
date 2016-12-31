@@ -1,5 +1,5 @@
 <li class="item documentary" ng-class="{'documentary-watched': item.watched}">
   <h4 ng-bind="item.name"></h4>
-  <i class="icon icon-documentary"></i>
+  <i class="icon icon-documentary" ng-click="toggleWatched(item)"></i>
   <span class="bracketed" ng-bind="item.year"></span>
 </li>

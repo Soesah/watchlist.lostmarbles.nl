@@ -11,12 +11,12 @@ angular.module('watchlistApp').factory('Game', [
       this.played = played;
     }
 
-    get watched() {
-      return this.played;
+    togglePlayed() {
+      this.played = !this.played;
     }
 
-    set watched(watched) {
-      this.played = watched;
+    toggleWatched() {
+      this.togglePlayed();
     }
 
     isComplete() {

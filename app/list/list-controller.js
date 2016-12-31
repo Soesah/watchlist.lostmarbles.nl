@@ -30,6 +30,13 @@ angular.module('watchlistApp').controller('ListController', ['$scope', 'ListData
       }
     };
 
+    $scope.toggleWatched = function(item) {
+      item.toggleWatched();
+      $scope.save().then(function() {}, function() {
+        item.toggleWatched();
+      });
+    };
+
     $scope.add = function() {
       $location.path('/add');
     };
