@@ -8,11 +8,14 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
     $scope.types = ListDataFactory.getTypeList();
 
     // change the item when type changes
-    $scope.$watch('itemType', function(value) {
-      ListDataFactory.change($scope.item, value).then(function(item) {
-        $scope.item = item;
-      });
-    });
+    let itemTypeChangeHandler = function(newValue, oldValue) {
+          if (newValue !== oldValue) {
+            ListDataFactory.change($scope.item, newValue).then(function(item) {
+              $scope.item = item;
+            });
+          }
+        },
+        itemTypeWatcher = $scope.$watch('itemType', itemTypeChangeHandler);
 
     $scope.isSeries = function() {
       return $scope.item.type === ListDataFactory.SERIES;
@@ -68,6 +71,9 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
       let imdbId = suggestion.imdbID;
       $scope.loading = true;
       $scope.suggestions = [];
+
+      itemTypeWatcher(); // disable the watcher
+
       // first use the omdb api to get the full data for the movie, series or game
       OMDbApi.get(imdbId).then(function(data) {
         $scope.loading = false;
@@ -89,7 +95,10 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
             item.year = data.year;
           }
           $scope.item = item;
-        });
+        }).then(function() {
+          // re-initialize the itemType watcher
+          itemTypeWatcher = $scope.$watch('itemType', itemTypeChangeHandler);
+        }) ;
 
       });
     };
