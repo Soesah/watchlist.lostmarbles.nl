@@ -48,6 +48,7 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
     };
     $scope.loading = false;
     $scope.suggestions = [];
+    $scope.totalSuggestions = 0;
 
     // search the omdb api using the name
     $scope.search = function() {
@@ -57,6 +58,7 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
         OMDbApi.search($scope.item.name, $scope.item.year).then(function(data) {
           $scope.loading = false;
           $scope.suggestions = data.results;
+          $scope.totalSuggestions = data.count;
         }, function() {
           $scope.loading = false;
         });

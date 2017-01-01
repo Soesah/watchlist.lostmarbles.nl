@@ -12,6 +12,8 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - <s>mark items as watched</s>
 - be able to score items
 - edit item (fix titles, add season)
+- remove item (doubles)
+- add a check (search by name as you type) to prevent doubles from being added
 - make more sense of seasons watched on the main overview
     - perhaps by showing something like 2/3 with the year, or greyed out the years you have watched
 - <s>only deploy from and commit versions on master
@@ -25,7 +27,6 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - git checkout develop</s>
     - sed  '1,10 w commit_message2' commit_message  (move lines from one file to the next)
 - add # episodes to season? or add an actual list... with titles?
-- add a check (search by name as you type) to prevent doubles from being added
 - can you do something to group movies, or to make movies a _sequel_?
     - would items need an ID in that case?
 - <s>use https://www.omdbapi.com/ to quickly find the year
@@ -41,7 +42,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - add base class to provide name without strange characters, or provide simplified names in some cases?
 - better layout for filters
     - remove all, and make multiple items active at once, turning them off and on
-- see a total number of items, also when filtered
+- <s>see a total number of items, also when filtered</s>
 - add loading/saving indicator
 - show total count on search results, can you use `yield` to fetch more (next())
 - disable form while saving
