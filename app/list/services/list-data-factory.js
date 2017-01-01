@@ -82,12 +82,16 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
 
             if (item) {
               let name = item.name,
+                  imdbId = item.imdbId,
                   year = item.year,
                   actors = item.actors;
 
               newItem.name = name;
               if (newItem.hasOwnProperty('actors')) {
                 newItem.actors = actors ? actors : [];
+              }
+              if (newItem.hasOwnProperty('imdbId')) {
+                newItem.imdbId = imdbId ? imdbId : null;
               }
 
               if (type === _this.SERIES) {
