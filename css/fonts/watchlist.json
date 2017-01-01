@@ -98,13 +98,21 @@
           "tempChar": ""
         },
         {
+          "order": 60,
+          "id": 15,
+          "name": "checkmark",
+          "prevSize": 32,
+          "code": 59648,
+          "tempChar": ""
+        },
+        {
           "ligatures": "checkbox-checked, checkbox",
           "name": "checkbox-checked",
           "id": 9,
           "order": 55,
           "prevSize": 32,
           "code": 59986,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "checkbox-unchecked, checkbox2",
@@ -113,7 +121,7 @@
           "order": 56,
           "prevSize": 32,
           "code": 59987,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "spinner2, loading3",
@@ -122,7 +130,7 @@
           "order": 57,
           "prevSize": 32,
           "code": 59771,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "search, magnifier",
@@ -131,14 +139,18 @@
           "order": 58,
           "prevSize": 32,
           "code": 59782,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 1,
       "metadata": {
         "name": "watchlist",
         "designer": "Icomoon",
-        "license": ""
+        "license": "",
+        "importSize": {
+          "width": 320,
+          "height": 256
+        }
       },
       "height": 1024,
       "prevSize": 32,
@@ -314,6 +326,22 @@
           ],
           "defaultCode": 59919,
           "grid": 16
+        },
+        {
+          "id": 15,
+          "paths": [
+            "M1280.001 128l-832 896-448-576 164-140 284 296 704-604z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "width": 1280,
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 16,
+          "tags": [
+            "checkmark"
+          ]
         },
         {
           "id": 9,

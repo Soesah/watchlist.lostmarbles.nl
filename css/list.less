@@ -19,9 +19,23 @@
       color: @gray-light;
       cursor: pointer;
 
+      .icon-checkmark {
+        position: absolute;
+        top: 7px;
+        right: 2px;
+        color: @black;
+        font-size: 5px;
+        display: none;
+      }
+
       &:hover {
         color: @black;
+
+        .icon-checkmark {
+          display: block;
+        }
       }
+
     }
 
     &.movie-watched,
