@@ -46,7 +46,7 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
         $scope.list.splice($scope.list.indexOf($scope.item, 1))
       });
     };
-    $scope.loading = false;
+    $scope.searching = false;
     $scope.suggestions = [];
     $scope.totalSuggestions = 0;
 
@@ -54,13 +54,13 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
     $scope.search = function() {
       // don't find without a name
       if ($scope.item.name) {
-        $scope.loading = true;
+        $scope.searching = true;
         OMDbApi.search($scope.item.name, $scope.item.year).then(function(data) {
-          $scope.loading = false;
+          $scope.searching = false;
           $scope.suggestions = data.results;
           $scope.totalSuggestions = data.count;
         }, function() {
-          $scope.loading = false;
+          $scope.searching = false;
         });
       }
     };
@@ -71,14 +71,14 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
     // choose a suggestions
     $scope.choose = function(suggestion) {
       let imdbId = suggestion.imdbID;
-      $scope.loading = true;
+      $scope.searching = true;
       $scope.suggestions = [];
 
       itemTypeWatcher(); // disable the watcher
 
       // first use the omdb api to get the full data for the movie, series or game
       OMDbApi.get(imdbId).then(function(data) {
-        $scope.loading = false;
+        $scope.searching = false;
         ListDataFactory.change(null, data.getInternalType()).then(function(item) {
           $scope.itemType = item.type;
           item.imdbId = data.imdbId;
