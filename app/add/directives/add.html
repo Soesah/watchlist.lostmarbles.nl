@@ -8,10 +8,10 @@
     </svg>
   </div>
   <div class="form-item form-item-required form-item-name" auto-focus>
-    <label>Name</label><div class="form-input-group"><input type="text" name="name" ng-required="true" placeholder="Name" ng-model="item.name"/><button class="search-button action" type="button" ng-click="search()" ng-disabled="loading || !item.name">
-        <i class="icon icon-search" ng-hide="loading"></i>
+    <label>Name</label><div class="form-input-group"><input type="text" name="name" ng-required="true" placeholder="Name" ng-model="item.name"/><button class="search-button action" type="button" ng-click="search()" ng-disabled="searching || !item.name">
+        <i class="icon icon-search" ng-hide="searching"></i>
       </button>
-      <i class="icon icon-spinner" ng-show="loading"></i>
+      <i class="icon icon-spinner" ng-show="searching"></i>
       <ul class="suggestions" ng-show="suggestions.length">
         <li ng-repeat="suggestion in suggestions">
           <a href="javascript:void(0)" ng-click="choose(suggestion)">
@@ -19,6 +19,7 @@
             <span ng-bind="suggestion.Title + '(' + suggestion.Year + ')'"></span>
           </a>
         </li>
+        <li class="suggestions-count">There are <span ng-bind="totalSuggestions"></span> results</li>
       </ul>
     </div>
   </div>

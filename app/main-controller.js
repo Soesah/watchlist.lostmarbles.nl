@@ -2,14 +2,16 @@ angular.module('watchlistApp').controller('MainController', ['$scope', '$q', 'Li
   function($scope, $q, ListDataFactory) {
 
     $scope.list = [];
+    $scope.loading = true;
 
     ListDataFactory.load().then(function(data) {
       $scope.list = data;
+      $scope.loading = false;
     });
 
     $scope.save = function() {
       // clear messages
-      $scope.$root.$emit('messages:clear', 'general');
+      // $scope.$root.$emit('messages:clear', 'general');
       $scope.$root.$emit('message', {
         name: 'general',
         type: 'warning',
