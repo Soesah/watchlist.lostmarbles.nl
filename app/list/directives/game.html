@@ -1,7 +1,9 @@
 <li class="item game" ng-class="{'game-played': item.played}">
-  <h4 ng-bind="item.name"></h4>
-  <i class="icon icon-game" ng-click="toggleWatched(item)">
-    <i class="icon-checkmark" ng-show="item.imdbId"></i>    
-  </i>
-  <span class="bracketed" ng-bind="item.year"></span>
+  <a href="#/{{item.url}}" ng-click="void(0)">
+    <h4 ng-bind="item.name"></h4>
+    <span class="bracketed" ng-bind="item.year"></span>
+    <i class="icon icon-game" ng-click="toggleWatched($event, item)">
+      <i class="icon-checkmark" ng-show="item.imdbId"></i>
+    </i>
+  </a>
 </li>

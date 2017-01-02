@@ -38,13 +38,21 @@
 
     }
 
-    &.movie-watched,
-    &.series-watched,
-    &.documentary-watched {
-      .font-light();
+    &.movie-watched a,
+    &.series-watched a,
+    &.documentary-watched a{
       color: @gray;
       h4 {
-        .font-light();        
+        .font-light();
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: @black;
+
+      &:hover {
+        color: @orange;
       }
     }
 

@@ -11,7 +11,7 @@ angular.module('watchlistApp').controller('MainController', ['$scope', '$q', 'Li
 
     $scope.save = function() {
       // clear messages
-      $scope.$root.$emit('messages:clear', 'general');
+      // $scope.$root.$emit('messages:clear', 'general');
       $scope.$root.$emit('message', {
         name: 'general',
         type: 'warning',
