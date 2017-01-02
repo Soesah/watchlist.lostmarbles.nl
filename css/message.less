@@ -24,7 +24,7 @@
   display: inline-block;
   padding: 8px;
   border-radius: 4px;
-  color: #2c2c2c;
+  color: @black;
 
   p {
     margin: 0;
@@ -33,6 +33,7 @@
   button {
     color: white;
     padding: 4px 6px;
+    width: auto;
     min-width: auto;
     position: absolute;
     top: 4px;
@@ -70,13 +71,13 @@
 
   &.error {
     background-color: @red-error;
-    border: solid 1px darken(@red-error, 20%);
+    border: solid 1px desaturate(darken(@red-error, 30%), 20%);
 
     .icon {
-      color: darken(@red-error, 25%);
+      color: desaturate(darken(@red-error, 30%), 20%);
     }
     button {
-      background-color: darken(@red-error, 25%);
+      background-color: desaturate(darken(@red-error, 30%), 20%);
     }
   }
 
