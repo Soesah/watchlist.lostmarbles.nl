@@ -1,8 +1,9 @@
-angular.module('watchlistApp').factory('Series', ['_', 'Season',
-  function(_, Season) {
+angular.module('watchlistApp').factory('Series', ['BaseModel', '_', 'Season',
+  function(BaseModel, _, Season) {
 
-  class Series {
+  class Series extends BaseModel{
     constructor({imdbId = null, name = null, seasons = [], actors = []}) {
+      super();
       this.type = 1;
       this.imdbId = imdbId;
       this.name = name;

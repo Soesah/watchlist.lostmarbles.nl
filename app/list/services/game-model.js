@@ -1,8 +1,9 @@
-angular.module('watchlistApp').factory('Game', [
-  function() {
+angular.module('watchlistApp').factory('Game', ['BaseModel',
+  function(BaseModel) {
 
-  class Game {
+  class Game extends BaseModel{
     constructor({imdbId = null, name = null, year = null, score = null, played = false}) {
+      super();
       this.type = 3;
       this.imdbId = imdbId;
       this.name = name;
@@ -17,10 +18,6 @@ angular.module('watchlistApp').factory('Game', [
 
     toggleWatched() {
       this.togglePlayed();
-    }
-
-    isComplete() {
-      return this.name && this.year;
     }
   }
 

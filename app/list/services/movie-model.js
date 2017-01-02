@@ -1,8 +1,9 @@
-angular.module('watchlistApp').factory('Movie', [
-  function() {
+angular.module('watchlistApp').factory('Movie', ['BaseModel',
+  function(BaseModel) {
 
-  class Movie {
+  class Movie extends BaseModel {
     constructor({imdbId = null, name = null, year = null, score = null, actors = [], watched = false}) {
+      super();
       this.type = 0;
       this.imdbId = imdbId;
       this.name = name;
@@ -10,14 +11,6 @@ angular.module('watchlistApp').factory('Movie', [
       this.score = score;
       this.actors = actors;
       this.watched = watched;
-    }
-
-    isComplete() {
-      return this.name && this.year;
-    }
-
-    toggleWatched() {
-      this.watched = !this.watched;
     }
   }
 
