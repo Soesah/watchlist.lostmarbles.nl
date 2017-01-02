@@ -217,7 +217,8 @@ module.exports = function(grunt) {
           'rm build/js/watchlist.min.' + version + '.js.report.txt'].join('&&')},
         version: {command: ['git add settings.json'].join('&&')},
         tag: {command: 'git tag v' + version},
-        commit: {command: ['git commit -F commit_message', 'rm commit_message']},
+        commit: {command: 'git commit -F commit_message'},
+        'clean-message': {command: 'rm commit_message'},
         'push-master': {command:['git push', 'git checkout develop'].join('&&')},
         compose: {command:'echo "Version '+ version + '\n\n"|cat - commit_message > tmp && mv tmp commit_message'}
       },
@@ -247,6 +248,7 @@ module.exports = function(grunt) {
     // commit everything
     grunt.task.run('shell:compose');
     grunt.task.run('shell:commit');
+    grunt.task.run('shell:clean-message');
     grunt.task.run('deploy');
     grunt.task.run('shell:push-master');
   });
