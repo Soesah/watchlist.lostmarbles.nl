@@ -6,7 +6,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 
 ##To do
 
-- add a favicon
+- <s>add a favicon</s>
 - <s>autofocus add form</s>
 - restyle add button
 - <s>mark items as watched</s>
@@ -29,6 +29,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - add # episodes to season? or add an actual list... with titles?
 - can you do something to group movies, or to make movies a _sequel_?
     - would items need an ID in that case?
+    - would make it easier to order them by date
 - <s>use https://www.omdbapi.com/ to quickly find the year
     - can be used to retrieve episode names for series
     - provide imdbId, a nice addition and useful for tracking sequels/groups of movies
@@ -43,7 +44,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - better layout for filters
     - remove all, and make multiple items active at once, turning them off and on
 - <s>see a total number of items, also when filtered</s>
-- add loading/saving indicator
+- add <s>loading</s>/saving indicator
 - show total count on search results, can you use `yield` to fetch more (next())
 - disable form while saving
 - button focus style
