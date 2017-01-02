@@ -19,6 +19,10 @@ angular.module('watchlistApp').factory('Game', ['BaseModel',
     toggleWatched() {
       this.togglePlayed();
     }
+
+    get watched() {
+      return this.played;
+    }
   }
 
   return Game;
