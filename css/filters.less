@@ -14,6 +14,20 @@
     margin-bottom: @size-smaller;
   }
 
+  .clear {
+    position: relative;
+    left: -27px;
+    font-size: 8px;
+    color: white;
+    background-color: darken(@beige, 10%);
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: darken(@beige, 30%);
+    }
+  }
+
   ul {
     display: inline-flex;
     list-style-type: none;
