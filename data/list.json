@@ -498,7 +498,7 @@
         "year": 2016,
         "score": null,
         "actors": [],
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -3591,7 +3591,7 @@
         "year": "2004",
         "score": null,
         "actors": "Paul Giamatti, Thomas Haden Church, Virginia Madsen, Sandra Oh",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -3600,7 +3600,7 @@
         "year": "2005",
         "score": null,
         "actors": "Heath Ledger, Jake Gyllenhaal, Randy Quaid, Valerie Planche",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -3609,7 +3609,7 @@
         "year": "2000",
         "score": null,
         "actors": "Julia Roberts, David Brisbin, Dawn Didawick, Albert Finney",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -3618,7 +3618,7 @@
         "year": "1998",
         "score": null,
         "actors": "Tom Hanks, Tom Sizemore, Edward Burns, Barry Pepper",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -3627,7 +3627,7 @@
         "year": "1997",
         "score": null,
         "actors": "Jack Nicholson, Helen Hunt, Greg Kinnear, Cuba Gooding Jr.",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -3636,7 +3636,7 @@
         "year": "1996",
         "score": null,
         "actors": "Ralph Fiennes, Juliette Binoche, Willem Dafoe, Kristin Scott Thomas",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -3645,6 +3645,326 @@
         "year": "1989",
         "score": null,
         "actors": "Robin Williams, Robert Sean Leonard, Ethan Hawke, Josh Charles",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0108052",
+        "name": "Schindler's List",
+        "year": "1993",
+        "score": null,
+        "actors": "Liam Neeson, Ben Kingsley, Ralph Fiennes, Caroline Goodall",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0111161",
+        "name": "The Shawshank Redemption",
+        "year": "1994",
+        "score": null,
+        "actors": "Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0110413",
+        "name": "L\u00e9on: The Professional",
+        "year": "1994",
+        "score": null,
+        "actors": "Jean Reno, Gary Oldman, Natalie Portman, Danny Aiello",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0114814",
+        "name": "The Usual Suspects",
+        "year": "1995",
+        "score": null,
+        "actors": "Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1675434",
+        "name": "The Intouchables",
+        "year": "2011",
+        "score": null,
+        "actors": "Fran\u00e7ois Cluzet, Omar Sy, Anne Le Ny, Audrey Fleurot",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0112573",
+        "name": "Braveheart",
+        "year": "1995",
+        "score": null,
+        "actors": "James Robinson, Sean Lawlor, Sandy Nelson, James Cosmo",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0180093",
+        "name": "Requiem for a Dream",
+        "year": "2000",
+        "score": null,
+        "actors": "Ellen Burstyn, Jared Leto, Jennifer Connelly, Marlon Wayans",
+        "watched": true
+    },
+    {
+        "type": 1,
+        "imdbId": "tt0244365",
+        "name": "Star Trek: Enterprise",
+        "seasons": [
+            {
+                "year": 2001,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            },
+            {
+                "year": 2002,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            },
+            {
+                "year": 2003,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            },
+            {
+                "year": 2004,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            }
+        ],
+        "actors": "Scott Bakula, John Billingsley, Jolene Blalock, Dominic Keating"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1250777",
+        "name": "Kick-Ass",
+        "year": "2010",
+        "score": null,
+        "actors": "Aaron Taylor-Johnson, Garrett M. Brown, Evan Peters, Deborah Twiss",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1386697",
+        "name": "Suicide Squad",
+        "year": "2016",
+        "score": null,
+        "actors": "Will Smith, Jaime FitzSimons, Ike Barinholtz, Margot Robbie",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0169547",
+        "name": "American Beauty",
+        "year": "1999",
+        "score": null,
+        "actors": "Kevin Spacey, Annette Bening, Thora Birch, Wes Bentley",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0268978",
+        "name": "A Beautiful Mind",
+        "year": "2001",
+        "score": null,
+        "actors": "Russell Crowe, Ed Harris, Jennifer Connelly, Christopher Plummer",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0375679",
+        "name": "Crash",
+        "year": "2004",
+        "score": null,
+        "actors": "Karina Arroyave, Dato Bakhtadze, Sandra Bullock, Don Cheadle",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0117951",
+        "name": "Trainspotting",
+        "year": "1996",
+        "score": null,
+        "actors": "Ewan McGregor, Ewen Bremner, Jonny Lee Miller, Kevin McKidd",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1895587",
+        "name": "Spotlight",
+        "year": "2015",
+        "score": null,
+        "actors": "Mark Ruffalo, Michael Keaton, Rachel McAdams, Liev Schreiber",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1065073",
+        "name": "Boyhood",
+        "year": "2014",
+        "score": null,
+        "actors": "Ellar Coltrane, Patricia Arquette, Elijah Smith, Lorelei Linklater",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0075860",
+        "name": "Close Encounters of the Third Kind",
+        "year": "1977",
+        "score": null,
+        "actors": "Richard Dreyfuss, Fran\u00e7ois Truffaut, Teri Garr, Melinda Dillon",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0181689",
+        "name": "Minority Report",
+        "year": "2002",
+        "score": null,
+        "actors": "Tom Cruise, Max von Sydow, Steve Harris, Neal McDonough",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0119177",
+        "name": "Gattaca",
+        "year": "1997",
+        "score": null,
+        "actors": "Ethan Hawke, Uma Thurman, Gore Vidal, Xander Berkeley",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0114746",
+        "name": "Twelve Monkeys",
+        "year": "1995",
+        "score": null,
+        "actors": "Joseph Melito, Bruce Willis, Jon Seda, Michael Chance",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3040964",
+        "name": "The Jungle Book",
+        "year": "2016",
+        "score": null,
+        "actors": "Neel Sethi, Bill Murray, Ben Kingsley, Idris Elba",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1182345",
+        "name": "Moon",
+        "year": "2009",
+        "score": null,
+        "actors": "Sam Rockwell, Kevin Spacey, Dominique McElligott, Rosie Shaw",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1276104",
+        "name": "Looper",
+        "year": "2012",
+        "score": null,
+        "actors": "Joseph Gordon-Levitt, Bruce Willis, Emily Blunt, Paul Dano",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0119116",
+        "name": "The Fifth Element",
+        "year": "1997",
+        "score": null,
+        "actors": "Bruce Willis, Gary Oldman, Ian Holm, Milla Jovovich",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0100802",
+        "name": "Total Recall",
+        "year": "1990",
+        "score": null,
+        "actors": "Arnold Schwarzenegger, Rachel Ticotin, Sharon Stone, Ronny Cox",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1386703",
+        "name": "Total Recall",
+        "year": "2012",
+        "score": null,
+        "actors": "Colin Farrell, Kate Beckinsale, Jessica Biel, Bryan Cranston",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0302886",
+        "name": "Old School",
+        "year": "2003",
+        "score": null,
+        "actors": "Luke Wilson, Will Ferrell, Vince Vaughn, Jeremy Piven",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0332379",
+        "name": "School of Rock",
+        "year": "2003",
+        "score": null,
+        "actors": "Jack Black, Adam Pascal, Lucas Papaelias, Chris Stack",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0091042",
+        "name": "Ferris Bueller's Day Off",
+        "year": "1986",
+        "score": null,
+        "actors": "Matthew Broderick, Alan Ruck, Mia Sara, Jeffrey Jones",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1282140",
+        "name": "Easy A",
+        "year": "2010",
+        "score": null,
+        "actors": "Emma Stone, Penn Badgley, Amanda Bynes, Dan Byrd",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0081506",
+        "name": "Shogun Assassin",
+        "year": "1980",
+        "score": null,
+        "actors": "Tomisabur\u00f4 Wakayama, Kayo Matsuo, Minoru \u00d4ki, Sh\u00f4gen Nitta",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2106476",
+        "name": "Jagten",
+        "year": "2012",
+        "score": null,
+        "actors": "Mads Mikkelsen, Thomas Bo Larsen, Annika Wedderkopp, Lasse Fogelstr\u00f8m",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0268695",
+        "name": "The Time Machine",
+        "year": "2002",
+        "score": null,
+        "actors": "Guy Pearce, Mark Addy, Phyllida Law, Sienna Guillory",
         "watched": false
     }
 ]
