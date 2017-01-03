@@ -2,7 +2,9 @@
   <div class="filter">
     <label>Filter by name</label>
     <input type="text" placeholder="Filter" ng-model="filter"/>
-    <i class="icon icon-delete clear" ng-click="filter = ''" ng-show="filter"></i>
+    <button class="clear" ng-click="filter = ''" ng-show="filter">
+      <i class="icon icon-delete"></i>
+    </button>
   </div>
   <div class="filter">
     <label>Filter by type</label>
