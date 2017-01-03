@@ -2,6 +2,7 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
   function($scope, ListDataFactory, OMDbApi, $location) {
 
     $scope.item = ListDataFactory.new(ListDataFactory.MOVIE);
+    $scope.doubles = [];
 
     // proxy the type, so that we can safely switch between models
     $scope.itemType = $scope.item.type;
@@ -16,6 +17,18 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
           }
         },
         itemTypeWatcher = $scope.$watch('itemType', itemTypeChangeHandler);
+
+    $scope.$watch('item.name', function(value) {
+      if (value && value.length > 2) {
+        $scope.doubles = ListDataFactory.find(value).splice(0,3);
+      } else {
+        $scope.doubles = [];
+      }
+    });
+
+    $scope.getTypeName = function(item) {
+      return ListDataFactory.getTypeName(item);
+    };
 
     $scope.isSeries = function() {
       return $scope.item.type === ListDataFactory.SERIES;
