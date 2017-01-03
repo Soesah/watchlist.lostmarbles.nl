@@ -144,6 +144,10 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
         }
       ]
     }
+
+    getTypeName(item) {
+      return _.find(this.getTypeList(), {type: item.type}).name;
+    }
   }
 
   return new ListDataFactory();

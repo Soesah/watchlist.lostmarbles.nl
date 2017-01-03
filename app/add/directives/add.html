@@ -37,6 +37,19 @@
   <div class="form-item" ng-if="!isDocumentary() && !isGame()">
     <label>Actors</label><input type="text" placeholder="Actor, actor" ng-model="item.actors" />
   </div>
+  <div class="message form-message warning" ng-show="doubles.length">
+    <i class="icon icon-warning"></i>
+    <div class="message-content">
+      <p>Did you mean the following?</p>
+      <ul>
+        <li ng-repeat="double in doubles">
+          <span ng-bind="double.name"></span>
+          <span class="bracketed" ng-bind="double.year"></span>,
+          <span ng-bind="getTypeName(double)"></span>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="buttons">
     <div class="button-container">
       <button type="submit">Add</button>
