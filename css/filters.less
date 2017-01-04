@@ -14,6 +14,30 @@
     margin-bottom: @size-smaller;
   }
 
+  .clear {
+    position: relative;
+    top: -2px;
+    left: -27px;
+    font-size: 8px;
+    color: white;
+    background-color: darken(@beige, 10%);
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+
+    &:focus,
+    &:hover {
+      background-color: darken(@beige, 30%);
+    }
+
+    .icon {
+      position: relative;
+      top: 2px;
+    }
+  }
+
   ul {
     display: inline-flex;
     list-style-type: none;

@@ -27,6 +27,14 @@ button {
     }
   }
 
+  &.danger {
+    background-color: @red;
+
+    &:hover {
+      background-color: @red-dark;
+    }
+  }
+
   &[disabled],
   &[disabled]:hover {
     background-color: lighten(@gray, 55%);

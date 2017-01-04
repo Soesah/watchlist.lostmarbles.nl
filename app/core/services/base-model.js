@@ -5,7 +5,7 @@ angular.module('watchlistApp').factory('BaseModel', [
     constructor() {
     }
 
-    get url() {
+    get path() {
       return this.name.replace(/\W+/g, '-').replace('--', '').toLowerCase() + '-' + this.year;
     }
 
@@ -15,6 +15,10 @@ angular.module('watchlistApp').factory('BaseModel', [
 
     toggleWatched() {
       this.watched = !this.watched;
+    }
+
+    clone() {
+      return Object.assign(Object.create(this), this);
     }
   }
 

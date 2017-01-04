@@ -40,6 +40,10 @@ angular.module('watchlistApp').controller('MainController', ['$scope', '$q', 'Li
       });
 
       return promise;
-    }
+    };
+
+    $scope.getTypeName = function(item) {
+      return ListDataFactory.getTypeName(item);
+    };
   }
 ]);

@@ -38,6 +38,12 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       });
     }
 
+    getByPath(path) {
+      return _.find(this.data, function(item) {
+        return item.path === path;
+      });
+    }
+
     get ALL() {
       return true;
     }

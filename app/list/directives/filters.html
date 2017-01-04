@@ -1,24 +1,31 @@
 <div class="filters">
-  <label>Filter by name</label>
-  <input type="text" placeholder="Filter" ng-model="filter"/>
-  <br/>
-  <label>Filter by type</label>
-  <ul class="unselectable">
-    <li ng-repeat="type in types">
-      <a href="javascript:void(0)" 
-        ng-bind="type.name"
-        ng-class="{'active': itemType === type.type}" 
-        ng-click="setItemType(type.type);"></a>
-    </a></li>
-  </ul>
-  <br/>
-  <label>Watched</label>
-  <ul class="unselectable">
-    <li ng-repeat="state in states">
-      <a href="javascript:void(0)" 
-        ng-bind="state.name"
-        ng-class="{'active': itemState === state.state}" 
-        ng-click="setItemState(state.state);"></a>
-    </a></li>
-  </ul>
+  <div class="filter">
+    <label>Filter by name</label>
+    <input type="text" placeholder="Filter" ng-model="filter"/>
+    <button class="clear" ng-click="filter = ''" ng-show="filter">
+      <i class="icon icon-delete"></i>
+    </button>
+  </div>
+  <div class="filter">
+    <label>Filter by type</label>
+    <ul class="unselectable">
+      <li ng-repeat="type in types">
+        <a href="javascript:void(0)"
+          ng-bind="type.name"
+          ng-class="{'active': itemType === type.type}"
+          ng-click="setItemType(type.type);"></a>
+      </a></li>
+    </ul>
+  </div>
+  <div class="filter">
+    <label>Watched</label>
+    <ul class="unselectable">
+      <li ng-repeat="state in states">
+        <a href="javascript:void(0)"
+          ng-bind="state.name"
+          ng-class="{'active': itemState === state.state}"
+          ng-click="setItemState(state.state);"></a>
+      </a></li>
+    </ul>
+  </div>
 </div>
