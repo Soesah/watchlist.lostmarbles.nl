@@ -11,9 +11,9 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - restyle add button
 - <s>mark items as watched</s>
 - be able to score items
-- edit item (fix titles, add season)
-- remove item (doubles)
-- add a check (search by name as you type) to prevent doubles from being added
+- <s>edit item (fix titles, add season)</s>
+- <s>remove item (doubles)</s>
+- <s>add a check (search by name as you type) to prevent doubles from being added</s>
 - make more sense of seasons watched on the main overview
     - perhaps by showing something like 2/3 with the year, or greyed out the years you have watched
 - <s>only deploy from and commit versions on master
@@ -45,6 +45,9 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - remove all, and make multiple items active at once, turning them off and on
 - <s>see a total number of items, also when filtered</s>
 - add <s>loading</s>/saving indicator
-- show total count on search results, can you use `yield` to fetch more (next())
+- <s>show total count on search results</s>, can you use `yield` to fetch more (next())
 - disable form while saving
 - button focus style
+- add a date-added property, so you can see recently added movies?
+- also filter on actors when searching?
+- use checkbox icons on hover over item type icon

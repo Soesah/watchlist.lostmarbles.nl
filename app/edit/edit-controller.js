@@ -24,6 +24,20 @@ angular.module('watchlistApp').controller('EditController', ['$scope', '_', 'Lis
       });
     };
 
+    $scope.delete = function() {
+      let item = _.find($scope.list, {path: $routeParams.path}),
+          index = $scope.list.indexOf(item);
+
+      $scope.list.splice(index, 1);
+
+      $scope.save().then(function() {
+        $location.path('/');
+      }, function() {
+        // re-add item?
+        $scope.list.push(item);
+      });
+    };
+
     $scope.back = function() {
       $location.path('/');
     };
