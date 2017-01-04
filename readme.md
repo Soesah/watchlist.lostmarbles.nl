@@ -13,6 +13,10 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - be able to score items
 - <s>edit item (fix titles, add season)</s>
 - <s>remove item (doubles)</s>
+- Make editing/deleting work with imdbId?
+- <s>scroll to/near item after edit/delete</s>
+- fix year being integer
+- fix actors being array
 - <s>add a check (search by name as you type) to prevent doubles from being added</s>
 - make more sense of seasons watched on the main overview
     - perhaps by showing something like 2/3 with the year, or greyed out the years you have watched
@@ -51,3 +55,6 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - add a date-added property, so you can see recently added movies?
 - also filter on actors when searching?
 - use checkbox icons on hover over item type icon
+- you can load all seasons for a series
+- show a nicer (message) progress indicator when searching, finding, getting...
+- loading spinner doesn't always show...
