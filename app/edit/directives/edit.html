@@ -1,0 +1,14 @@
+<form name="itemForm" class="form" ng-submit="editItem()">
+  <h2>Edit</h2>
+  <p>Update and complete the information for this <span class="lowercase" ng-bind="getTypeName(item)"></span></p>
+
+  <form-fields></form-fields>
+
+  <div class="buttons">
+    <div class="button-container">
+      <button type="submit">Edit</button>
+    </div>
+    <!-- <button type="button" ng-click="delete()">delete</button> -->
+    <button type="cancel" ng-click="back()">Cancel</button>
+  </div>
+</form>

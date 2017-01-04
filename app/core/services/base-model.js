@@ -5,7 +5,7 @@ angular.module('watchlistApp').factory('BaseModel', [
     constructor() {
     }
 
-    get url() {
+    get path() {
       return this.name.replace(/\W+/g, '-').replace('--', '').toLowerCase() + '-' + this.year;
     }
 
