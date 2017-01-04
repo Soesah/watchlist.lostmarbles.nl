@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('MainController', ['$scope', '$q', 'ListDataFactory',
-  function($scope, $q, ListDataFactory) {
+angular.module('watchlistApp').controller('MainController', ['$scope', '$rootScope', '$document', '$location', '$timeout', '$q', 'ListDataFactory',
+  function($scope, $rootScope, $document, $location, $timeout, $q, ListDataFactory) {
 
     $scope.list = [];
     $scope.loading = true;
@@ -45,5 +45,17 @@ angular.module('watchlistApp').controller('MainController', ['$scope', '$q', 'Li
     $scope.getTypeName = function(item) {
       return ListDataFactory.getTypeName(item);
     };
+
+    let listLocation = 0;
+
+    $rootScope.$on('$routeChangeStart', function () {
+      if ($location.$$path !== '/') {
+        listLocation = $document[0].body.scrollTop
+      } else {
+        $timeout(function() {
+          $document[0].body.scrollTop = listLocation;
+        }, 100);
+      }
+    });
   }
 ]);
