@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('FormFieldsController', ['$scope', 'ListDataFactory', 'OMDbApi',
-  function($scope, ListDataFactory,  OMDbApi) {
+angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_', 'ListDataFactory', 'OMDbApi',
+  function($scope, _, ListDataFactory,  OMDbApi) {
 
     // proxy the type, so that we can safely switch between models
     $scope.itemType = $scope.item.type;
@@ -21,11 +21,18 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', 'Li
 
     // show a warning if you can find items in the list with similar names
     $scope.$watch('item.name', function(value) {
+      let doubles = [];
       if (value && value.length > 2) {
-        $scope.doubles = ListDataFactory.find(value).splice(0,3);
-      } else {
-        $scope.doubles = [];
+        doubles = ListDataFactory.find(value).splice(0,3);
+
+        if ($scope.editing && doubles&& $scope.item.path) {
+          let item = _.find(doubles, {path: $scope.item.path }),
+              index = doubles.indexOf(item);
+
+          doubles.splice(index, 1);
+        }
       }
+      $scope.doubles = doubles;
     });
 
     $scope.isSeries = function() {

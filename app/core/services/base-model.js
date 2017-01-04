@@ -16,6 +16,10 @@ angular.module('watchlistApp').factory('BaseModel', [
     toggleWatched() {
       this.watched = !this.watched;
     }
+
+    clone() {
+      return Object.assign(Object.create(this), this);
+    }
   }
 
   return BaseModel;

@@ -1,7 +1,8 @@
 angular.module('watchlistApp').controller('EditController', ['$scope', '_', 'ListDataFactory', '$location', '$routeParams',
   function($scope, _, ListDataFactory, $location, $routeParams) {
 
-    $scope.item = ListDataFactory.getByPath($routeParams.path);
+    $scope.item = ListDataFactory.getByPath($routeParams.path).clone();
+    $scope.editing = true;
 
     // edit the item to the list
     $scope.editItem = function() {
@@ -10,7 +11,7 @@ angular.module('watchlistApp').controller('EditController', ['$scope', '_', 'Lis
         return;
       }
 
-      let item = _.find($scope.list, {path: $routeParams.path})
+      let item = _.find($scope.list, {path: $routeParams.path});
 
       if (!item) {
         throw new Error('Cannot find item to update');
