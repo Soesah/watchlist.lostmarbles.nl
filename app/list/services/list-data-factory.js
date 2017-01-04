@@ -89,9 +89,12 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
             if (item) {
               let name = item.name,
                   year = item.year,
-                  actors = item.actors;
+                  actors = item.actors,
+                  watched = item.watched;
 
               newItem.name = name;
+              newItem.watched = watched;
+
               if (newItem.hasOwnProperty('actors')) {
                 newItem.actors = actors ? actors : [];
               }

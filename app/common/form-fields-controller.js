@@ -87,6 +87,7 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
           item.imdbId = data.imdbId;
           item.name = data.title;
           item.actors = data.actors;
+          item.watched = data.watched;
           if (item.type === ListDataFactory.SERIES) {
             // add a season for the first year
             // parse year, since values can be '2016-'
