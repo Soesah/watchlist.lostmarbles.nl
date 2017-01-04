@@ -1,5 +1,5 @@
 <li class="item documentary" ng-class="{'documentary-watched': item.watched}">
-  <a href="#/{{item.path}}" ng-click="void(0)">
+  <a href="#/edit/{{item.path}}" ng-click="void(0)">
     <h4 ng-bind="item.name"></h4>
     <span class="bracketed" ng-bind="item.year"></span>
     <i class="icon icon-documentary" ng-click="toggleWatched($event, item)"></i>
