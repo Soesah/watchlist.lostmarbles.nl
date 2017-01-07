@@ -53,8 +53,14 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - disable form while saving
 - button focus style
 - add a date-added property, so you can see recently added movies?
-- also filter on actors when searching?
+- <s>also filter on actors when searching?</s> Not until you can see the name
+- add a filter highlighter?
 - use checkbox icons on hover over item type icon
-- you can load all seasons for a series
+- you should load all seasons for a series (again, use yield to load season by season)
 - show a nicer (message) progress indicator when searching, finding, getting...
-- loading spinner doesn't always show...
+    - searching omdb
+    - completing data
+    - fetching season 1 episodes
+- loading spinner doesn't always show... (is this because things are still loading, or because the list is rendering?)
+- filter multiple types
+- add link to imdb somewhere (to verify)
