@@ -1,6 +1,6 @@
 <li class="item movie" ng-class="{'movie-watched': item.watched}">
   <a href="#/edit/{{item.path}}">
-    <h4 ng-bind="item.name"></h4>
+    <h4 ng-bind-html="item.name|highlight:filter"></h4>
     <span class="bracketed" ng-bind="item.year"></span>
     <i class="icon icon-movie" ng-click="toggleWatched($event, item)">
       <i class="icon-checkmark" ng-show="item.imdbId"></i>
