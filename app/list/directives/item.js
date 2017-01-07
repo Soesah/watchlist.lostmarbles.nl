@@ -5,7 +5,7 @@ angular.module('watchlistApp').directive('item', [
       restrict: 'E',
       replace: true,
       template: '<ng-include src="getItemTemplate()"/>',
-      controller: 'ListController'
+      controller: 'ItemController'
     };
   }
 ]);
