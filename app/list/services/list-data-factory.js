@@ -17,6 +17,19 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
     parseData(data) {
       let _this = this;
       return data.data.map(function(data) {
+
+        // fix actors (temp code)
+        if (data.actors && typeof data.actors === 'string') {
+          data.actors = data.actors.split(',').map(function(item) {
+            return item.trim();
+          });
+        }
+
+        // fix year (temp code)
+        if (data.year && typeof data.year === 'string') {
+          data.year = parseInt(data.year);
+        }
+
         if (data.type === _this.MOVIE) {
           return new Movie(data);
         }

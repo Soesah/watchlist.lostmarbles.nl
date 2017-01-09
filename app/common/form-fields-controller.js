@@ -83,22 +83,25 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
       OMDbApi.get(imdbId).then(function(data) {
         $scope.searching = false;
         ListDataFactory.change(null, data.getInternalType()).then(function(item) {
+          let year = parseInt(data.year);
+
           $scope.itemType = item.type;
           item.imdbId = data.imdbId;
           item.name = data.title;
-          item.actors = data.actors;
+          item.actors = data.actors.split(',').map(function(item) {
+            return item.trim();
+          });
           item.watched = data.watched;
           if (item.type === ListDataFactory.SERIES) {
             // add a season for the first year
             // parse year, since values can be '2016-'
-            let year = parseInt(data.year);
             item.addSeason(year);
             // try adding seasons for subsequent years
             // while (item.seasons.length < data.seasons) {
             //   item.addSeason(year + item.seasons.length);
             // }
           } else {
-            item.year = data.year;
+            item.year = year;
           }
           $scope.item = item;
         }).then(function() {
