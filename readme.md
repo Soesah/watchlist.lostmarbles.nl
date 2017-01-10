@@ -15,9 +15,15 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - <s>remove item (doubles)</s>
 - Make editing/deleting work with imdbId?
 - <s>scroll to/near item after edit/delete</s>
-- fix year being integer
-- fix actors being array
+- <s>fix year being integer</s>
+- <s>fix actors being array</s>
+- 'fix' display of actors in edit
 - <s>add a check (search by name as you type) to prevent doubles from being added</s>
+- <s>implement 'view' view</s>
+    - movies have sequels, prequels?
+    - series have seasons, episodes
+    - documentaries have nothing? urls?
+    - games have publishers, genre
 - make more sense of seasons watched on the main overview
     - perhaps by showing something like 2/3 with the year, or greyed out the years you have watched
 - <s>only deploy from and commit versions on master
@@ -34,6 +40,8 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - can you do something to group movies, or to make movies a _sequel_?
     - would items need an ID in that case?
     - would make it easier to order them by date
+    - if you use a new class Sequel, would you also need to use Prequel? (typename can still be movie)
+    - implement drag for ordering movies in their sequence
 - <s>use https://www.omdbapi.com/ to quickly find the year
     - can be used to retrieve episode names for series
     - provide imdbId, a nice addition and useful for tracking sequels/groups of movies
@@ -53,8 +61,15 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - disable form while saving
 - button focus style
 - add a date-added property, so you can see recently added movies?
-- also filter on actors when searching?
+- <s>also filter on actors when searching?</s> Not until you can see the name
+- add a filter highlighter? It slows things down, considerably
 - use checkbox icons on hover over item type icon
-- you can load all seasons for a series
+- you should load all seasons for a series (again, use yield to load season by season)
 - show a nicer (message) progress indicator when searching, finding, getting...
-- loading spinner doesn't always show...
+    - searching omdb
+    - completing data
+    - fetching season 1 episodes
+- loading spinner doesn't always show... (is this because things are still loading, or because the list is rendering?)
+- filter multiple types
+- <s>add 'view' view</s>
+    - <s>add link to imdb somewhere (to verify)</s>

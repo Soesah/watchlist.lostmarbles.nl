@@ -29,17 +29,7 @@
       margin: 0 0 @size-smaller 0;
     }
     ul {
-      list-style-type: none;
-      padding-left: 1em;
-
-      li {
-        line-height: 1.5em;
-        &:before {
-          content: '\2013 ';
-          position: relative;
-          left: -@size-smaller;
-        }
-      }
+      .ul();
     }
   }
 }
@@ -178,6 +168,7 @@ textarea {
   border-radius: 4px;
   width: 100%;
   top: 32px;
+  left: 0;
   background: #f1e9e0;
   z-index: 1;
   padding: 0;
