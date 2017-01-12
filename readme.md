@@ -50,6 +50,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - one: when a title has been entered, and add is pressed, perform a search to complete the data, if it is not complete. (show that a request is being made, show data being completed, and correct: you need to confirm this)
     - two: enter a (half) title and do a search, show request, choose from a list, complete data with imdbId request, and press add
     - three enter all data on your own, show request, no data found.</s>
+- automatically choose a single result when searching
 - add filter by year, svg slider?
 - <s>add filter by name</s>
     - add base class to provide name without strange characters, or provide simplified names in some cases?

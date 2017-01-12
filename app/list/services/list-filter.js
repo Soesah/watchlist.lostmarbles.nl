@@ -10,7 +10,7 @@ angular.module('watchlistApp').filter('listFilter', ['_', 'ListDataFactory',
         }
 
         if (show && itemType !== ListDataFactory.ALL) {
-          show = obj.type === itemType;
+          show = itemType.indexOf(obj.type) !== -1;
         }
 
         if (show && itemState !== null) {

@@ -4,17 +4,17 @@ angular.module('watchlistApp').controller('ViewController', ['$scope', 'ListData
     $scope.item = ListDataFactory.getByPath($routeParams.path);
 
     $scope.getItemViewTemplate = function() {
-      if ($scope.item.type === ListDataFactory.MOVIE) {
-        return 'app/view/directives/movie-view.html';
-      }
-      if ($scope.item.type === ListDataFactory.SERIES) {
-        return 'app/view/directives/series-view.html';
-      }
-      if ($scope.item.type === ListDataFactory.DOCUMENTARY) {
-        return 'app/view/directives/documentary-view.html';
-      }
-      if ($scope.item.type === ListDataFactory.GAME) {
-        return 'app/view/directives/game-view.html';
+      switch($scope.item.type) {
+        case ListDataFactory.MOVIE:
+        case ListDataFactory.SEQUEL:
+        case ListDataFactory.PREQUEL:
+          return 'app/view/directives/movie-view.html';
+        case ListDataFactory.SERIES:
+          return 'app/view/directives/series-view.html';
+        case ListDataFactory.DOCUMENTARY:
+          return 'app/view/directives/documentary-view.html';
+        case ListDataFactory.GAME:
+          return 'app/view/directives/game-view.html';
       }
     };
 

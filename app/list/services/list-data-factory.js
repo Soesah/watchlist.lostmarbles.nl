@@ -1,5 +1,5 @@
-angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 'Movie', 'Series', 'Documentary', 'Game', '_',
-  function($q, BaseFactory, Movie, Series, Documentary, Game, _) {
+angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 'Movie', 'Sequel', 'Prequel', 'Series', 'Documentary', 'Game', '_',
+  function($q, BaseFactory, Movie, Sequel, Prequel, Series, Documentary, Game, _) {
 
   class ListDataFactory extends BaseFactory{
     constructor() {
@@ -30,17 +30,19 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
           data.year = parseInt(data.year);
         }
 
-        if (data.type === _this.MOVIE) {
-          return new Movie(data);
-        }
-        if (data.type === _this.SERIES) {
-          return new Series(data);
-        }
-        if (data.type === _this.DOCUMENTARY) {
-          return new Documentary(data);
-        }
-        if (data.type === _this.GAME) {
-          return new Game(data);
+        switch (data.type) {
+          case _this.MOVIE:
+            return new Movie(data);
+          case _this.SEQUEL:
+            return new Sequel(data);
+          case _this.PREQUEL:
+            return new Prequel(data);
+          case _this.SERIES:
+            return new Series(data);
+          case _this.DOCUMENTARY:
+            return new Documentary(data);
+          case _this.GAME:
+            return new Game(data);
         }
       });
     }
@@ -65,6 +67,14 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       return 0;
     }
 
+    get SEQUEL() {
+      return 4;
+    }
+
+    get PREQUEL() {
+      return 5;
+    }
+
     get SERIES() {
       return 1;
     }
@@ -77,14 +87,14 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       return 3;
     }
 
-    get TYPES() {
-      return [this.DOCUMENTARY, this.GAME, this.SERIES, this.MOVIE];
-    }
-
     new(type) {
       switch(type) {
         case this.MOVIE:
           return new Movie({});
+        case this.SEQUEL:
+          return new Sequel({});
+        case this.PREQUEL:
+          return new Prequel({});
         case this.SERIES:
           return new Series({});
         case this.DOCUMENTARY:
@@ -144,12 +154,21 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
     }
 
     getFilterList() {
+      let _this = this,
+          types = this.getTypeList().map(function(item) {
+            if (item.type === _this.MOVIE) {
+              item.type = [item.type, _this.SEQUEL, _this.PREQUEL];
+            } else {
+              item.type = [item.type];
+            }
+            return item;
+          });
       return [
         {
           type: this.ALL,
           name: 'All'
         }
-      ].concat(this.getTypeList());
+      ].concat(types);
     }
 
     getTypeList() {
@@ -170,8 +189,20 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       ]
     }
 
+    getFullTypeList() {
+      return [
+        {
+          type: this.SEQUEL,
+          name: 'Movie'
+        }, {
+          type: this.PREQUEL,
+          name: 'Movie'
+        }
+      ].concat(this.getTypeList());
+    }
+
     getTypeName(item) {
-      return _.find(this.getTypeList(), {type: item.type}).name;
+      return _.find(this.getFullTypeList(), {type: item.type}).name;
     }
   }
 
