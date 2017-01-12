@@ -1,6 +1,14 @@
 .list {
   .ul();
 
+
+  li.message {
+    padding-left: 8px;
+    &:before {
+      content: '';
+    }
+  }
+
   .item {
     margin: 0px 0 @size-smaller / 2 0;
     line-height: 20px;
