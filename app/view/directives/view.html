@@ -2,7 +2,7 @@
   <h2 ng-bind="item.name"></h2>
 
   <h3>
-    <span ng-bind="item.year"></span>
+    <span ng-bind="item.year"></span><span ng-show="item.lastYear"> – <span ng-bind="item.lastYear"></span></span>
     <span ng-bind="getTypeName(item)"></span>
     <span ng-show="item.imdbId" class="dashed"><a href="http://www.imdb.com/title/{{item.imdbId}}/" target="_new">IMDB</a></span>
   </h3>
@@ -13,6 +13,7 @@
       <li ng-repeat="actor in item.actors|orderBy:actor" ng-bind="actor"></li>
     </ul>
   </div>
+
   <ng-include src="getItemViewTemplate()"></ng-include>
 
   <div class="links">
