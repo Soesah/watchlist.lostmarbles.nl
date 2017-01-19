@@ -48,9 +48,27 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
     }
 
     find(name) {
-      return _.filter(this.data, function(item) {
+      let suggestions = _.filter(this.data, function(item) {
         return item.name.toLowerCase().indexOf(name.toLowerCase()) !== -1;
       });
+
+      suggestions.sort(function(a, b) {
+        if (a.name.toLowerCase().indexOf(name) === b.name.toLowerCase().indexOf(name)) {
+          return a.name.length < b.name.length ? -1 : 1;
+        } else if (a.name.toLowerCase().indexOf(name) === 0) {
+          return -1;
+        } else if (b.name.toLowerCase().indexOf(name) === 0) {
+          return 1;
+        } else {
+          return a.year < b.year ? -1 : 1;
+        }
+      });
+
+      return suggestions;
+    }
+
+    getRelated(item) {
+      return _.filter(this.data, {parent: item.imdbId});;
     }
 
     getByPath(path) {

@@ -42,6 +42,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - would make it easier to order them by date
     - if you use a new class Sequel, would you also need to use Prequel? (typename can still be movie)
     - implement drag for ordering movies in their sequence
+    - filter on movies when searching for sequels, filter out _this_ movie
 - <s>use https://www.omdbapi.com/ to quickly find the year
     - can be used to retrieve episode names for series
     - provide imdbId, a nice addition and useful for tracking sequels/groups of movies
@@ -59,6 +60,14 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - <s>see a total number of items, also when filtered</s>
 - add <s>loading</s>/saving indicator
 - <s>show total count on search results</s>, can you use `yield` to fetch more (next())
+    ```function *tens() {
+         let list = [1,2,3,4,5,6,7,8,9,10],
+             index = 0;
+         while (list.slice(index, index + 2).length) {
+           yield list.slice(index, index + 2).toString();
+           index = index + 2;
+         }
+        }```
 - disable form while saving
 - button focus style
 - add a date-added property, so you can see recently added movies?

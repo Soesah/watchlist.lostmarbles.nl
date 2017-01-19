@@ -4,11 +4,13 @@
 
   <form-fields></form-fields>
 
+  <related-movies ng-show="isMovie()"></related-movies>
+
   <div class="buttons">
     <div class="button-container">
       <button type="submit">Edit</button>
     </div>
-    <button type="button" class="danger" ng-click="delete()">delete</button>
+    <button type="button" class="danger" ng-click="delete()">Delete</button>
     <button type="cancel" ng-click="back()">Cancel</button>
   </div>
 </form>

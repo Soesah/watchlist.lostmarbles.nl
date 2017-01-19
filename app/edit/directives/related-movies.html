@@ -1,0 +1,21 @@
+<div class="form-section related-section">
+  <h3>Sequels and Prequels</h3>
+  <div class="form-item">
+    <label>Search</label><div class="form-input-group"><input type="text" placeholder="Name" ng-model="search" onkeydown="return (event.keyCode !== 13);" />
+      <ul class="suggestions" ng-show="suggestions.length">
+        <li ng-repeat="suggestion in suggestions" ng-class="{'suggestion-highlighted': $index === index}" ng-click="select(suggestion)">
+          <a href="javascript:void(0)">
+            <i class="icon icon-{{getTypeName(suggestion)}}"></i>
+            <span ng-bind="suggestion.name + '(' + suggestion.year + ')'"></span>
+          </a>
+        </li>
+        <li class="suggestions-count">There are <span ng-bind="totalSuggestions"></span> results</li>
+      </ul>
+    </div>
+  </div>
+  <div class="form-message" ng-show="related.length">
+    <ul class="list">
+      <item ng-repeat="item in related | orderBy:item.year"></item>
+    </ul>
+  </div>
+</div>
