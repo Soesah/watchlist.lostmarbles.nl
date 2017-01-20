@@ -16,6 +16,10 @@ angular.module('watchlistApp').config(['$routeProvider',
       templateUrl: 'app/view/directives/view.html',
       controllerAs: 'ctrl',
       controller: 'ViewController'
+    }).when('/admin', {
+      templateUrl: 'app/admin/directives/admin.html',
+      controllerAs: 'ctrl',
+      controller: 'AdminController'
     }).otherwise('/'); // always go back to the list
   }
 ]);
