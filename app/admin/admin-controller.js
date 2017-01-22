@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('AdminController', ['$scope', '$sce',
-  function($scope, $sce) {
+angular.module('watchlistApp').controller('AdminController', ['$scope', '$sce', '$location',
+  function($scope, $sce, $location) {
 
 /*
   Available and used from omdb: 
