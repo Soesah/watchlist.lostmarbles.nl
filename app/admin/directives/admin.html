@@ -2,10 +2,12 @@
 <p>Perform bulk actions</p>
 
 <section>
-  <h4>Update movies</h4>
   <div class="form">
+    <h4>Update movies</h4>
+    <p ng-bind-html="action"></p>
     <div class="buttons">
-      <button type="button" class="option">Update</button>
+      <button type="button" class="action">Update</button>
+      <button type="button" class="option" ng-click="back()">Back</button>
     </div>
   </div>
 </section>

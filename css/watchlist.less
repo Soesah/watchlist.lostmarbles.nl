@@ -12,6 +12,7 @@
 @import "list.less";
 @import "add.less";
 @import "view.less";
+@import "admin.less";
 
 
 body {
@@ -26,6 +27,14 @@ a {
   &:hover {
     color: @orange-dark;
   }
+}
+
+code {
+  border-radius: 4px;
+  border: solid 1px @gray-lighter;
+  background-color: lighten(@gray-lighter, 18%);
+  color: @gray;
+  padding: 1px 2px;
 }
 
 @media screen and (max-width:400px) {
