@@ -21,8 +21,8 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$sce', 
     imdbRating
     imdbVotes
 */
-    let text = 'Press the button to update items with an <code>imbdId</code> with <ul class="additions">',
-        additions = [{
+    let text = 'Press the button to update items with an <code>imbdId</code> with <ul class="list additions">',
+        movie_additions = [{
             from: 'Runtime',
             to: 'length'
           },{
@@ -33,13 +33,17 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$sce', 
             to: 'director'
           }];
 
-    $scope.action = $sce.trustAsHtml(text + additions.map(function(item, index) {
-      return '<li><code class="from">' 
-        + item.from 
-        + '</code> as <code class="to">' 
-        + item.to 
-        + '</code></li>';
-    }).join('') + '</ul>');
+    $scope.movie_action = movie_additions.length
+      ? $sce.trustAsHtml(text + movie_additions.map(function(item, index) {
+        return '<li><code class="from">' 
+          + item.from 
+          + '</code> as <code class="to">' 
+          + item.to 
+          + '</code></li>';
+        }).join('') + '</ul>')
+      : false;
+
+    $scope.series_action = $sce.trustAsHtml("Update series with episode data for all seasons.");
 
     $scope.update = function() {
       // get a list of items with imdbId
