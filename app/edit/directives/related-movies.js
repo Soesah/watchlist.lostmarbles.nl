@@ -1,5 +1,5 @@
-angular.module('watchlistApp').directive('relatedMovies', ['ListDataFactory', 'KeyUtil',
-  function(ListDataFactory, KeyUtil) {
+angular.module('watchlistApp').directive('relatedMovies', ['ListDataFactory', 'KeyUtil', '_',
+  function(ListDataFactory, KeyUtil, _) {
     'use strict';
     return {
       restrict: 'E',
@@ -49,12 +49,16 @@ angular.module('watchlistApp').directive('relatedMovies', ['ListDataFactory', 'K
             scope.$apply(function() {
               scope.index--;
             });
-          } else {          
+          } else {
             scope.$apply(function() {
               if (!value) {
                 scope.suggestions = [];
               } else {
-                scope.suggestions = ListDataFactory.find(value).slice(0, 10);
+                let alreadyListed = scope.related.concat(scope.item);
+                // limit suggestion to 10 and don't list already listed items
+                scope.suggestions = _.filter(ListDataFactory.find(value), function(item) {
+                  return _.filter(alreadyListed, {imdbId: item.imdbId}).length === 0;
+                }).slice(0, 10);
               }
             });
           }

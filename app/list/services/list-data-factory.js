@@ -68,7 +68,7 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
     }
 
     getRelated(item) {
-      return _.filter(this.data, {parent: item.imdbId});;
+      return _.filter(this.data, {parent: item.imdbId});
     }
 
     getByPath(path) {
