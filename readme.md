@@ -41,8 +41,9 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - would items need an ID in that case?
     - would make it easier to order them by date
     - if you use a new class Sequel, would you also need to use Prequel? (typename can still be movie)
-    - implement drag for ordering movies in their sequence
-    - filter on movies when searching for sequels, filter out _this_ movie
+    - implement drag for ordering movies in their sequence (use order prop)
+    - filter on movies when searching for sequels, filter out _this_ movie, and already related movies
+    - implement yielding more results?
 - <s>use https://www.omdbapi.com/ to quickly find the year
     - can be used to retrieve episode names for series
     - provide imdbId, a nice addition and useful for tracking sequels/groups of movies
@@ -83,3 +84,4 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - filter multiple types
 - <s>add 'view' view</s>
     - <s>add link to imdb somewhere (to verify)</s>
+- add admin panel, to bulk update items (length, director, plot)
