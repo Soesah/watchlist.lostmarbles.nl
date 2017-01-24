@@ -5,8 +5,8 @@
       <ul class="suggestions" ng-show="suggestions.length">
         <li ng-repeat="suggestion in suggestions" ng-class="{'suggestion-highlighted': $index === index}" ng-click="select(suggestion)">
           <a href="javascript:void(0)">
-            <i class="icon icon-{{getTypeName(suggestion)}}"></i>
-            <span ng-bind="suggestion.name + '(' + suggestion.year + ')'"></span>
+            <i class="icon icon-{{getTypeName(suggestion.item)}}"></i>
+            <span ng-bind="suggestion.item.name + '(' + suggestion.item.year + ')'"></span>
           </a>
         </li>
         <li class="suggestions-count">There are <span ng-bind="totalSuggestions"></span> results</li>

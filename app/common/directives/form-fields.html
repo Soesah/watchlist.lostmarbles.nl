@@ -43,9 +43,9 @@
       <p>Did you mean the following?</p>
       <ul>
         <li ng-repeat="double in doubles">
-          <span ng-bind="double.name"></span>
-          <span class="bracketed" ng-bind="double.year"></span>,
-          <span ng-bind="getTypeName(double)"></span>
+          <span ng-bind="double.item.name"></span>
+          <span class="bracketed" ng-bind="double.item.year"></span>,
+          <span ng-bind="getTypeName(double.item)"></span>
         </li>
       </ul>
     </div>

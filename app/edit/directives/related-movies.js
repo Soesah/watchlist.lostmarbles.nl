@@ -56,8 +56,8 @@ angular.module('watchlistApp').directive('relatedMovies', ['ListDataFactory', 'K
               } else {
                 let alreadyListed = scope.related.concat(scope.item);
                 // limit suggestion to 10 and don't list already listed items
-                scope.suggestions = _.filter(ListDataFactory.find(value), function(item) {
-                  return _.filter(alreadyListed, {imdbId: item.imdbId}).length === 0;
+                scope.suggestions = _.filter(ListDataFactory.find(value), function(result) {
+                  return _.filter(alreadyListed, {imdbId: result.item.imdbId}).length === 0;
                 }).slice(0, 10);
               }
             });

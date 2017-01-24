@@ -1,5 +1,5 @@
-angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 'Movie', 'Sequel', 'Prequel', 'Series', 'Documentary', 'Game', '_',
-  function($q, BaseFactory, Movie, Sequel, Prequel, Series, Documentary, Game, _) {
+angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 'Movie', 'Sequel', 'Prequel', 'Series', 'Documentary', 'Game', 'Result', '_',
+  function($q, BaseFactory, Movie, Sequel, Prequel, Series, Documentary, Game, Result,  _) {
 
   class ListDataFactory extends BaseFactory{
     constructor() {
@@ -47,24 +47,19 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       });
     }
 
-    find(name) {
-      let suggestions = _.filter(this.data, function(item) {
-        return item.name.toLowerCase().indexOf(name.toLowerCase()) !== -1;
+    find(value) {
+      let results = _.map(this.data, function(item) {
+        let result = new Result(item, value);
+        return result;
       });
 
-      suggestions.sort(function(a, b) {
-        if (a.name.toLowerCase().indexOf(name) === b.name.toLowerCase().indexOf(name)) {
-          return a.name.length < b.name.length ? -1 : 1;
-        } else if (a.name.toLowerCase().indexOf(name) === 0) {
-          return -1;
-        } else if (b.name.toLowerCase().indexOf(name) === 0) {
-          return 1;
-        } else {
-          return a.year < b.year ? -1 : 1;
-        }
-      });
+      // filter out things that don't match
+      results = _.filter(results, {matches: true});
 
-      return suggestions;
+      // sort and reverse
+      results = _.reverse(_.sortBy(results, 'score'));
+
+      return results;
     }
 
     getRelated(item) {

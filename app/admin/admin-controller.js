@@ -34,7 +34,7 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$sce', 
           }];
 
     $scope.movie_action = movie_additions.length
-      ? $sce.trustAsHtml(text + movie_additions.map(function(item, index) {
+      ? $sce.trustAsHtml(text + movie_additions.map(function(item) {
         return '<li><code class="from">' 
           + item.from 
           + '</code> as <code class="to">' 
