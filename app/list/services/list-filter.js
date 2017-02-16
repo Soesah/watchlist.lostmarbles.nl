@@ -1,7 +1,7 @@
 angular.module('watchlistApp').filter('listFilter', ['_', 'ListDataFactory',
   function(_, ListDataFactory) {
     'use strict';
-    return function(list, itemType, itemState, filter) {
+    return function(list, itemType, itemState, itemVerified, filter) {
       return _.filter(list, function(obj) {
         let show = true;
 
@@ -15,6 +15,10 @@ angular.module('watchlistApp').filter('listFilter', ['_', 'ListDataFactory',
 
         if (show && itemState !== null) {
           show = obj.watched === itemState;
+        }
+
+        if (show && itemVerified !== null) {
+          show = itemVerified ? obj.imdbId !== null : obj.imdbId === null;
         }
 
         return show;

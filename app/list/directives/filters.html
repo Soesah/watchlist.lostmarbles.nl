@@ -5,8 +5,9 @@
     <button class="clear" ng-click="filter = ''" ng-show="filter">
       <i class="icon icon-delete"></i>
     </button>
+    <button type="button" class="advanced option icon-only" ng-class="{'active': showMore}" ng-click="showMore = !showMore;"><i class="icon icon-cogs"></i></button>
   </div>
-  <div class="filter">
+  <div class="filter" ng-show="showMore">
     <label>Filter by type</label>
     <ul class="unselectable">
       <li ng-repeat="type in types">
@@ -17,7 +18,7 @@
       </a></li>
     </ul>
   </div>
-  <div class="filter">
+  <div class="filter" ng-show="showMore">
     <label>Watched</label>
     <ul class="unselectable">
       <li ng-repeat="state in states">
@@ -25,6 +26,17 @@
           ng-bind="state.name"
           ng-class="{'active': itemState === state.state}"
           ng-click="setItemState(state.state);"></a>
+      </a></li>
+    </ul>
+  </div>
+  <div class="filter" ng-show="showMore">
+    <label>IMDB Verified</label>
+    <ul class="unselectable">
+      <li ng-repeat="state in states">
+        <a href="javascript:void(0)"
+          ng-bind="state.name"
+          ng-class="{'active': itemState === state.state}"
+          ng-click="setItemIMDBVerified(state.state);"></a>
       </a></li>
     </ul>
   </div>
