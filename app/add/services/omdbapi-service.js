@@ -8,12 +8,15 @@ angular.module('watchlistApp').factory('OMDbApi', ['$q', '$http', 'OMDbResults',
 
       request(url, Model) {
         return $q(function(resolve, reject) {
-          $http.get(url).success(function(data) {
-            if (data.Response === "True") {
+          $http.get(url).then(function(response) {
+            let data = response.data;
+            if (data.Response === 'True') {
               resolve(new Model(data));
             } else {
               reject(data);
             }
+          }, function(response) {
+             reject(response);
           });
         });
       }

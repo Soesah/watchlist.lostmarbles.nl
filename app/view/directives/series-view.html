@@ -1,5 +1,9 @@
 <div class="series">
   
-  
+  <ul class="seasons">
+    <li ng-repeat="season in item.seasons">
+      <p class="season-title">Season <span ng-bind="$index + 1"></span><span class="season-year bracketed" ng-bind="season.year"></span></p>
+    </li>
+  </ul>
 
 </div>

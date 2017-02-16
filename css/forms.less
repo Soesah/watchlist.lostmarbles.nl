@@ -17,7 +17,8 @@
   }
 
   p,
-  h3 {
+  h3,
+  h4 {
     margin: 0 0 @size-small @size-large;
   }
 
@@ -32,6 +33,10 @@
       .ul();
     }
   }
+}
+
+.form-section {
+  padding: 20px 0;
 }
 
 .form-item {
@@ -185,9 +190,10 @@ textarea {
       display: block;
       text-decoration: none;
 
-      &:hover {
-        background: darken(#f1e9e0, 10%);
-      }
+    }
+    &.suggestion-highlighted,
+    &:hover {
+      background: desaturate(darken(#f1e9e0, 10%), 10%);
     }
 
     &:last-child {

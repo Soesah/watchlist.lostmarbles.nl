@@ -41,7 +41,9 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - would items need an ID in that case?
     - would make it easier to order them by date
     - if you use a new class Sequel, would you also need to use Prequel? (typename can still be movie)
-    - implement drag for ordering movies in their sequence
+    - implement drag for ordering movies in their sequence (use order prop)
+    - filter on movies when searching for sequels, filter out _this_ movie, and already related movies
+    - implement yielding more results?
 - <s>use https://www.omdbapi.com/ to quickly find the year
     - can be used to retrieve episode names for series
     - provide imdbId, a nice addition and useful for tracking sequels/groups of movies
@@ -50,6 +52,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - one: when a title has been entered, and add is pressed, perform a search to complete the data, if it is not complete. (show that a request is being made, show data being completed, and correct: you need to confirm this)
     - two: enter a (half) title and do a search, show request, choose from a list, complete data with imdbId request, and press add
     - three enter all data on your own, show request, no data found.</s>
+- automatically choose a single result when searching
 - add filter by year, svg slider?
 - <s>add filter by name</s>
     - add base class to provide name without strange characters, or provide simplified names in some cases?
@@ -58,6 +61,14 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - <s>see a total number of items, also when filtered</s>
 - add <s>loading</s>/saving indicator
 - <s>show total count on search results</s>, can you use `yield` to fetch more (next())
+    ```function *tens() {
+         let list = [1,2,3,4,5,6,7,8,9,10],
+             index = 0;
+         while (list.slice(index, index + 2).length) {
+           yield list.slice(index, index + 2).toString();
+           index = index + 2;
+         }
+        }```
 - disable form while saving
 - button focus style
 - add a date-added property, so you can see recently added movies?
@@ -73,3 +84,4 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - filter multiple types
 - <s>add 'view' view</s>
     - <s>add link to imdb somewhere (to verify)</s>
+- add admin panel, to bulk update items (length, director, plot)

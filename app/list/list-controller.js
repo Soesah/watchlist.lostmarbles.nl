@@ -6,6 +6,7 @@ angular.module('watchlistApp').controller('ListController', ['$scope', 'ListData
     $scope.itemType = ListDataFactory.ALL;
     $scope.states = ListDataFactory.getFilterStates();
     $scope.itemState = null;
+    $scope.itemVerified = null;
 
     $scope.setItemType = function(type) {
       $scope.itemType = type;
@@ -13,6 +14,10 @@ angular.module('watchlistApp').controller('ListController', ['$scope', 'ListData
 
     $scope.setItemState = function(state) {
       $scope.itemState = state;
+    };
+
+    $scope.setItemIMDBVerified = function(verified) {
+      $scope.itemVerified = verified;
     };
 
     $scope.toggleWatched = function(evt, item) {

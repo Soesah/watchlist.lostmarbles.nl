@@ -1,5 +1,5 @@
 <li class="item game" ng-class="{'game-played': item.played}">
-  <a href="#/view/{{item.path}}" ng-click="void(0)">
+  <a href="#!/view/{{item.path}}" ng-click="void(0)">
     <h4 ng-bind="item.name"></h4>
     <span class="bracketed" ng-bind="item.year"></span>
     <i class="icon icon-game" ng-click="toggleWatched($event, item)">

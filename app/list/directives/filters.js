@@ -3,6 +3,9 @@ angular.module('watchlistApp').directive('filters', function() {
   return {
     restrict: 'E',
     replace: true,
-    templateUrl: 'app/list/directives/filters.html'
+    templateUrl: 'app/list/directives/filters.html',
+    link: function(scope) {
+      scope.showMore = false;
+    }
   };
 });

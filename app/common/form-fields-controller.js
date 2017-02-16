@@ -35,6 +35,9 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
       $scope.doubles = doubles;
     });
 
+    $scope.isMovie = function() {
+      return $scope.item.type === ListDataFactory.MOVIE;
+    };
     $scope.isSeries = function() {
       return $scope.item.type === ListDataFactory.SERIES;
     };

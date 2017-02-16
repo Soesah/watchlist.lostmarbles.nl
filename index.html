@@ -7,18 +7,22 @@
   <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-  <h1>Watch list</h1>
-  <p>A list of movies, series, documentaries and games I want to watch and play.</p>
 
-  <message-log name="general"></message-log>
-
-  <div ng-controller="MainController">
+  <header>
+    <h1>Watch list</h1>
+    <message-log name="general"></message-log>
+  </header>
+  <main ng-controller="MainController">
+    <p>A list of movies, series, documentaries and games I want to watch and play.</p>
     <ng-view></ng-view>
-  </div>
+  </main>
+  <footer>
+    Carl Giesberts - 2017
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
   <script src="js/watchlist.js"></script>
 
 </body>
