@@ -138,12 +138,33 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
           promise = $q(function(resolve) {
 
             if (item) {
-              let name = item.name,
+              let imdbId = item.imdbId,
+                  name = item.name,
                   year = item.year,
                   actors = item.actors,
+                  plot = item.plot,
+                  director = item.director,
+                  length = item.length,
                   watched = item.watched;
 
+
+              if (newItem.hasOwnProperty('imdbId')) {
+                newItem.imdbId = imdbId;
+              }
+
               newItem.name = name;
+
+              if (type !== _this.DOCUMENTARY && plot) {
+                newItem.plot == plot;
+              }
+
+              if (newItem.hasOwnProperty('director') && director) {
+                newItem.director = director;
+              }
+
+              if (newItem.hasOwnProperty('length') && length) {
+                newItem.length = length;
+              }
 
               if (newItem.hasOwnProperty('watched')) {
                 newItem.watched = watched;
