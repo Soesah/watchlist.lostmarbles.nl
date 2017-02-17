@@ -11,6 +11,13 @@ angular.module('watchlistApp').controller('EditController', ['$scope', '_', 'Lis
         return;
       }
 
+      // update actors if necessary
+      if ($scope.item.actors && typeof $scope.item.actors === 'string') {
+        $scope.item.actors = $scope.item.actors.split(',').map(function(item) {
+          return item.trim();
+        });
+      }
+
       let item = _.find($scope.list, {path: $routeParams.path});
 
       if (!item) {
