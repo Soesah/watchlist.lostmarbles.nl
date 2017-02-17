@@ -274,7 +274,7 @@
         "type": 1,
         "imdbId": "tt2861424",
         "name": "Rick and Morty",
-        "plot": null,
+        "plot": "An animated series that follows the exploits of a super scientist and his not so bright grandson.",
         "seasons": [
             {
                 "year": 2013,
@@ -300,7 +300,7 @@
         "type": 1,
         "imdbId": "tt0200276",
         "name": "The West Wing",
-        "plot": null,
+        "plot": "Inside the lives of staffers in the West Wing of the White House.",
         "seasons": [
             {
                 "year": 1999,
@@ -349,7 +349,13 @@
             "Allison Janney",
             "John Spencer",
             "Bradley Whitford",
-            "Martin Sheen"
+            "Martin Sheen",
+            "Richard Shiff",
+            "John Spencer",
+            "Joshua Malina",
+            "Dul\u00e9 Hill",
+            "Rob Lowe",
+            "Janel Moloney"
         ]
     },
     {
@@ -1315,7 +1321,7 @@
         "type": 1,
         "imdbId": "tt2193021",
         "name": "Arrow",
-        "plot": null,
+        "plot": "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.",
         "seasons": [
             {
                 "year": 2012,
@@ -8970,23 +8976,6 @@
     },
     {
         "type": 0,
-        "imdbId": "tt1637725",
-        "name": "Ted",
-        "year": 2012,
-        "score": null,
-        "actors": [
-            "Mark Wahlberg",
-            "Mila Kunis",
-            "Seth MacFarlane",
-            "Joel McHale"
-        ],
-        "length": "106 min",
-        "plot": "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear or his girlfriend, Lori.",
-        "director": "Seth MacFarlane",
-        "watched": true
-    },
-    {
-        "type": 0,
         "imdbId": "tt0427327",
         "name": "Hairspray",
         "year": 2007,
@@ -11833,25 +11822,6 @@
         "watched": true
     },
     {
-        "type": 4,
-        "imdbId": null,
-        "name": "28 Weeks Later",
-        "year": 2007,
-        "score": null,
-        "actors": [
-            "Robert Carlyle",
-            "Rose Byrne",
-            "Jeremy Renner",
-            "Harold Perrineau"
-        ],
-        "length": null,
-        "plot": null,
-        "director": null,
-        "watched": false,
-        "parent": "tt0289043",
-        "order": 0
-    },
-    {
         "type": 3,
         "imdbId": "tt0203441",
         "name": "Day of the Tentacle",
@@ -13198,6 +13168,108 @@
         ],
         "length": "114 min",
         "plot": "After her last encounter, Ripley crash-lands on Fiorina Fury 161, a maximum security prison. When a series of strange and deadly events occur shortly after her arrival, Ripley realizes that she brought along an unwelcome visitor.",
-        "director": "David Fincher"
+        "director": "David Fincher",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0990407",
+        "name": "The Green Hornet",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Seth Rogen",
+            "Jay Chou",
+            "Cameron Diaz",
+            "Tom Wilkinson"
+        ],
+        "length": "119 min",
+        "plot": "Following the death of his father, Britt Reid, heir to his father's large company, teams up with his late dad's assistant Kato to become a masked crime fighting team.",
+        "director": "Michel Gondry",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2059255",
+        "name": "No",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Gael Garc\u00eda Bernal",
+            "Alfredo Castro",
+            "Luis Gnecco",
+            "N\u00e9stor Cantillana"
+        ],
+        "length": "118 min",
+        "plot": "An ad executive comes up with a campaign to defeat Augusto Pinochet in Chile's 1988 referendum.",
+        "director": "Pablo Larra\u00edn",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0217505",
+        "name": "Gangs of New York",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Leonardo DiCaprio",
+            "Daniel Day-Lewis",
+            "Cameron Diaz",
+            "Jim Broadbent"
+        ],
+        "length": "167 min",
+        "plot": "In 1863, Amsterdam Vallon returns to the Five Points area of New York City seeking revenge against Bill the Butcher, his father's killer.",
+        "director": "Martin Scorsese",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3731562",
+        "name": "Kong: Skull Island",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Tom Hiddleston",
+            "Corey Hawkins",
+            "Brie Larson",
+            "Samuel L. Jackson"
+        ],
+        "length": "120 min",
+        "plot": "A team of explorers and soldiers travel to an uncharted island in the Pacific, unaware that they are crossing into the domain of monsters, including the mythic Kong.",
+        "director": "Jordan Vogt-Roberts",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3045616",
+        "name": "Mortdecai",
+        "year": 2015,
+        "score": null,
+        "actors": [
+            "Johnny Depp",
+            "Gwyneth Paltrow",
+            "Paul Bettany",
+            "Ewan McGregor"
+        ],
+        "length": "107 min",
+        "plot": "Juggling angry Russians, the British Mi5, and an international terrorist, debonair art dealer and part time rogue Charlie Mortdecai races to recover a stolen painting rumored to contain a code that leads to lost gold.",
+        "director": "David Koepp",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0463854",
+        "name": "28 Weeks Later",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Robert Carlyle",
+            "Rose Byrne",
+            "Jeremy Renner",
+            "Harold Perrineau"
+        ],
+        "length": "100 min",
+        "plot": "Six months after the rage virus was inflicted on the population of Great Britain, the US Army helps to secure a small area of London for the survivors to repopulate and start again. But not everything goes to plan.",
+        "director": "Juan Carlos Fresnadillo"
     }
 ]
