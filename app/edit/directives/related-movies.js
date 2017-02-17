@@ -15,8 +15,14 @@ angular.module('watchlistApp').directive('relatedMovies', ['ListDataFactory', 'K
         $el = $el.find('input');
 
         scope.select = function(item) {
+
+          if (!item.imdbId) {
+            throw new Error('Cannot update a movie as sequel if it has no imdbId');
+            return;
+          }
+
           let parent = scope.item.imdbId,
-              index = scope.list.indexOf(item);
+              index = _.findIndex(scope.list, {imdbId: item.imdbId});
 
           ListDataFactory.change(item, ListDataFactory.SEQUEL).then(function(newItem) {
             
