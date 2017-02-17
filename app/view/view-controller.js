@@ -1,7 +1,9 @@
 angular.module('watchlistApp').controller('ViewController', ['$scope', 'ListDataFactory', '$routeParams', '$location',
   function($scope, ListDataFactory, $routeParams, $location) {
 
-    $scope.item = ListDataFactory.getByPath($routeParams.path);
+    ListDataFactory.load().then(function() {
+      $scope.item = ListDataFactory.getByPath($routeParams.path);
+    });
 
     $scope.getItemViewTemplate = function() {
       switch($scope.item.type) {
