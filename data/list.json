@@ -79,9 +79,9 @@
             "Kristen Wiig",
             "Jeff Daniels"
         ],
-        "length": null,
-        "plot": null,
-        "director": null,
+        "length": "144 min",
+        "plot": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
+        "director": "Ridley Scott",
         "watched": true
     },
     {
@@ -96,9 +96,9 @@
             "Idris Elba",
             "Jenny Slate"
         ],
-        "length": null,
-        "plot": null,
-        "director": null,
+        "length": "108 min",
+        "plot": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
+        "director": "Byron Howard, Rich Moore, Jared Bush",
         "watched": true
     },
     {
@@ -113,9 +113,9 @@
             "Donald Sutherland",
             "James Garner"
         ],
-        "length": null,
-        "plot": null,
-        "director": null,
+        "length": "130 min",
+        "plot": "When a retired engineer is called upon to rescue a failing satellite, he insists that his equally old teammates accompany him into space.",
+        "director": "Clint Eastwood",
         "watched": true
     },
     {
@@ -7173,9 +7173,9 @@
             "Rita Wilson",
             "Victor Garber"
         ],
-        "length": null,
-        "plot": null,
-        "director": null,
+        "length": "105 min",
+        "plot": "A recently widowed man's son calls a radio talk-show in an attempt to find his father a partner.",
+        "director": "Nora Ephron",
         "watched": true
     },
     {
@@ -11778,8 +11778,8 @@
         "watched": true
     },
     {
-        "type": 0,
-        "imdbId": "tt0463854",
+        "type": 4,
+        "imdbId": null,
         "name": "28 Weeks Later",
         "year": 2007,
         "score": null,
@@ -11789,10 +11789,12 @@
             "Jeremy Renner",
             "Harold Perrineau"
         ],
-        "length": "100 min",
-        "plot": "Six months after the rage virus was inflicted on the population of Great Britain, the US Army helps to secure a small area of London for the survivors to repopulate and start again. But not everything goes to plan.",
-        "director": "Juan Carlos Fresnadillo",
-        "watched": false
+        "length": null,
+        "plot": null,
+        "director": null,
+        "watched": false,
+        "parent": "tt0289043",
+        "order": 0
     },
     {
         "type": 3,
