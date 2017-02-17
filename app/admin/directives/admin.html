@@ -1,18 +1,25 @@
 <h2>Admin</h2>
 <p>Perform bulk actions</p>
 
-<section class="admin-update" ng-show="movie_action">
-  <h4>Update movies</h4>
-  <p ng-bind-html="movie_action"></p>
+<section class="admin-update" ng-show="movie_actions.length">
+  <h3>Update movies</h3>
+  <p>Press the button to update the movies with an <code>imbdId</code> with the following properties:</p>
+  <ul class="additions">
+    <li ng-repeat="action in movie_actions">
+      <code class="from" ng-bind="action.from"></code> to <code class="to" ng-bind="action.to"></code>
+    </li>
+  </ul>
   <div class="buttons">
-    <button type="button" class="action">Update</button>
+    <button type="button" class="action" ng-click="updateMovies()">Update</button>
+    <progress-bar ng-model="movie_progress"></progress-bar>
   </div>
 </section>
 
-<section class="admin-update" ng-show="series_action">
-  <h4>Update series</h4>
+<!-- <section class="admin-update" ng-show="series_action">
+  <h3>Update series</h3>
   <p ng-bind-html="series_action"></p>
   <div class="buttons">
-    <button type="button" class="action">Update</button>
+    <button type="button" class="action" ng-click="updateSeries()">Update</button>
+    <progress-bar ng-model="series_progress"></progress-bar>
   </div>
-</section>
+</section> -->

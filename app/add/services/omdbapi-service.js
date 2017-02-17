@@ -33,6 +33,22 @@ angular.module('watchlistApp').factory('OMDbApi', ['$q', '$http', 'OMDbResults',
         return this.request(this.url + '?i=' + id + '&r=json', OMDbObject);
       }
 
+      update(item, props) {
+        return this.get(item.imdbId).then(function(obj){
+          props.forEach(function(prop) {
+            item[prop.to] = obj[prop.from];
+          });
+        });
+      }
+
+      isUpdated(item, props) {
+        let updated = true;
+        props.forEach(function(prop) {
+          updated = item[prop.to] !== null && updated;
+        });
+        return updated;
+      }
+
       getInternalType(type) {
         switch(type) {
           case 'movie':

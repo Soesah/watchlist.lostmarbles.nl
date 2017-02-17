@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('AdminController', ['$scope', '$sce', '$location',
-  function($scope, $sce, $location) {
+angular.module('watchlistApp').controller('AdminController', ['$scope', '$location', 'ListDataFactory', 'OMDbApi',
+  function($scope, $location, ListDataFactory, OMDbApi) {
 
 /*
   Available and used from omdb: 
@@ -21,37 +21,61 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$sce', 
     imdbRating
     imdbVotes
 */
-    let text = 'Press the button to update items with an <code>imbdId</code> with <ul class="list additions">',
-        movie_additions = [{
-            from: 'Runtime',
-            to: 'length'
-          },{
-            from: 'plot',
-            to: 'plot'
-          },{
-            from: 'Director',
-            to: 'director'
-          }];
+    let movie_additions = [{
+      from: 'runtime',
+      to: 'length'
+    },{
+      from: 'plot',
+      to: 'plot'
+    },{
+      from: 'director',
+      to: 'director'
+    }];
 
-    $scope.movie_action = movie_additions.length
-      ? $sce.trustAsHtml(text + movie_additions.map(function(item, index) {
-        return '<li><code class="from">' 
-          + item.from 
-          + '</code> as <code class="to">' 
-          + item.to 
-          + '</code></li>';
-        }).join('') + '</ul>')
-      : false;
+    $scope.movie_actions = movie_additions;
+    $scope.movie_progress = {min: 0, max: 0, progress: 0};
 
-    $scope.series_action = $sce.trustAsHtml("Update series with episode data for all seasons.");
-
-    $scope.update = function() {
+    $scope.updateMovies = function() {
       // get a list of items with imdbId
-      // keep count
-      // build promises
-      // start making requests, but space them out with time?
-      // update the item
-      // update a loading bar
+      let items = ListDataFactory.getMovies();
+
+      $scope.movie_progress.max = items.length;
+
+      function *updater(items) {
+        let index = 0;
+
+        while(items[index]) {
+          let item = items[index];
+
+          if (!OMDbApi.isUpdated(item, movie_additions)) {
+            // you want to do one request to update the item with the properties
+            yield OMDbApi.update(item, movie_additions).then(function() {
+              // and then it finishes, do the next
+              if (u.next().done) {
+                $scope.save();
+              }
+            }, function() {
+              if (u.next().done) {
+                $scope.save();
+              }              
+            });
+          } else {
+            if (u.next().done) {
+              $scope.save();
+            }
+            yield null;
+          }
+
+          index++;
+          // update the progress bar
+          $scope.movie_progress.progress = index;
+        }
+      }
+
+      let u = updater(items);
+
+      u.next();
+
     }
 
 
