@@ -18,7 +18,6 @@ angular.module('watchlistApp').directive('relatedMovies', ['ListDataFactory', 'K
 
           if (!item.imdbId) {
             throw new Error('Cannot update a movie as sequel if it has no imdbId');
-            return;
           }
 
           let parent = scope.item.imdbId,

@@ -142,6 +142,9 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
           itemTypeWatcher = $scope.$watch('itemType', itemTypeChangeHandler);
         });
 
+      }, function() {
+        $scope.searching = false;
+        itemTypeWatcher = $scope.$watch('itemType', itemTypeChangeHandler);
       });
     };
   }
