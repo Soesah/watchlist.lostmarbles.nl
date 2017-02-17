@@ -36,7 +36,6 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - git push master
     - git checkout develop</s>
     - sed  '1,10 w commit_message2' commit_message  (move lines from one file to the next)
-- add # episodes to season? or add an actual list... with titles?
 - can you do something to group movies, or to make movies a _sequel_?
     - would items need an ID in that case?
     - would make it easier to order them by date
@@ -84,4 +83,4 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - filter multiple types
 - <s>add 'view' view</s>
     - <s>add link to imdb somewhere (to verify)</s>
-- add admin panel, to bulk update items (length, director, plot)
+-<s>add admin panel, to bulk update items (length, director, plot)</s>

@@ -1,5 +1,16 @@
 <div class="movie">
-  
-  
+
+  <div ng-show="item.director">
+    <h4>Director</h4>
+    <p ng-bind="item.director"></p>
+  </div>
+  <div ng-show="item.length">
+    <h4>Runtime</h4>
+    <p ng-bind="item.length"></p>
+  </div>
+  <div ng-show="item.plot">
+    <h4>Plot</h4>
+    <p ng-bind="item.plot"></p>
+  </div>
 
 </div>
