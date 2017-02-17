@@ -1,12 +1,12 @@
 <div ng-controller="FormFieldsController">
   <div class="form-item form-item-required">
-    <label>Type</label><select ng-model="itemType" ng-options="type.type as type.name for type in types"></select>
+    <label>Type</label><select ng-model="itemType" ng-options="type.type as type.name disable when type.disabled for type in types"></select>
     <svg class="select-arrow" width="100px" height="63px" viewBox="0 0 100 63" version="1.1" xmlns="http://www.w3.org/2000/svg">
       <polygon points="25.2873563 0 0 0 50 0 74.7126437 0 50 31.8333333"></polygon>
     </svg>
   </div>
   <div class="form-item form-item-required form-item-name" auto-focus>
-    <label>Name</label><div class="form-input-group"><input type="text" name="name" ng-required="true" placeholder="Name" ng-model="item.name"/><button class="search-button action" type="button" ng-click="search()" ng-disabled="searching || !item.name">
+    <label>Name</label><div class="form-input-group"><input type="text" name="name" ng-required="true" placeholder="Name" ng-model="item.name"/><button class="search-button action" type="button" ng-click="search($event)" ng-disabled="searching || !item.name">
         <i class="icon icon-search" ng-hide="searching"></i>
       </button>
       <i class="icon icon-spinner" ng-show="searching"></i>

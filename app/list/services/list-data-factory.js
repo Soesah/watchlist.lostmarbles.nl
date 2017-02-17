@@ -155,7 +155,7 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
               newItem.name = name;
 
               if (type !== _this.DOCUMENTARY && plot) {
-                newItem.plot == plot;
+                newItem.plot = plot;
               }
 
               if (newItem.hasOwnProperty('director') && director) {
@@ -242,10 +242,12 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       return [
         {
           type: this.SEQUEL,
-          name: 'Movie'
+          name: 'Sequel',
+          disabled: true
         }, {
           type: this.PREQUEL,
-          name: 'Movie'
+          name: 'Prequel',
+          disabled: true
         }
       ].concat(this.getTypeList());
     }

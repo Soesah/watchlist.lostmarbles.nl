@@ -36,7 +36,7 @@ angular.module('watchlistApp').directive('relatedMovies', ['ListDataFactory', 'K
             scope.search = '';
             scope.suggestions = [];
             // re-check for related movies
-            scope.related = ListDataFactory.getRelated(scope.item);
+            scope.related = _.filter(scope.list, {parent: scope.item.imdbId});
           });
         };
 

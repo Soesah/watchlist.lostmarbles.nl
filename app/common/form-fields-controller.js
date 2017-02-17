@@ -9,6 +9,10 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
     $scope.totalSuggestions = 0;
     $scope.doubles = [];
 
+    if (!_.find($scope.types, {type: $scope.itemType})) {
+      $scope.types = ListDataFactory.getFullTypeList();
+    }
+
     // change the item when type changes
     let itemTypeChangeHandler = function(newValue, oldValue) {
           if (newValue !== oldValue) {
