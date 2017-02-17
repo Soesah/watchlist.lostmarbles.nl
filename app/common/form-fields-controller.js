@@ -35,17 +35,35 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
       $scope.doubles = doubles;
     });
 
+    function isMovie(item) {
+      return item.type === ListDataFactory.MOVIE ||
+             item.type === ListDataFactory.SEQUEL ||
+             item.type === ListDataFactory.PREQUEL;
+    }
+    function isSeries(item) {
+      return item.type === ListDataFactory.SERIES;
+    }
+    function isGame(item) {
+      return item.type === ListDataFactory.GAME;
+    }
+    function isDocumentary(item) {
+      return item.type === ListDataFactory.DOCUMENTARY;
+    }
+
     $scope.isMovie = function() {
-      return $scope.item.type === ListDataFactory.MOVIE;
+      return isMovie($scope.item);
     };
     $scope.isSeries = function() {
-      return $scope.item.type === ListDataFactory.SERIES;
+      return isSeries($scope.item);
+    };
+    $scope.isGame = function() {
+      return isGame($scope.item);
     };
     $scope.addSeason = function() {
       $scope.item.addSeason($scope.item.lastYear ? $scope.item.lastYear + 1 : null);
     };
     $scope.isDocumentary = function() {
-      return $scope.item.type === ListDataFactory.DOCUMENTARY;
+      return isDocumentary($scope.item);
     };
 
     // search the omdb api using the name
@@ -95,7 +113,15 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
             return item.trim();
           });
           item.watched = data.watched;
-          if (item.type === ListDataFactory.SERIES) {
+          if (isMovie(item)) {
+            item.plot = data.plot;
+            item.director = data.director;
+            item.length = data.runtime;
+          } else if (isGame(item)) {
+            item.plot = data.plot;
+          }
+          if (isSeries(item)) {
+            item.plot = data.plot;
             // add a season for the first year
             // parse year, since values can be '2016-'
             item.addSeason(year);

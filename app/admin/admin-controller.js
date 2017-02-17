@@ -21,16 +21,7 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$locati
     imdbRating
     imdbVotes
 */
-    let movie_additions = [{
-      from: 'runtime',
-      to: 'length'
-    },{
-      from: 'plot',
-      to: 'plot'
-    },{
-      from: 'director',
-      to: 'director'
-    }];
+    let movie_additions = [];
 
     $scope.movie_actions = movie_additions;
     $scope.movie_progress = {min: 0, max: 0, progress: 0};
@@ -80,6 +71,10 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$locati
 
     }
 
+    let series_additions = [];
+
+    $scope.series_actions = series_additions;
+    $scope.series_progress = {min: 0, max: 0, progress: 0};
 
     $scope.back = function() {
       $location.path('/');

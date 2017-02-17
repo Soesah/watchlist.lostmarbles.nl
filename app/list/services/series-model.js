@@ -2,11 +2,12 @@ angular.module('watchlistApp').factory('Series', ['BaseModel', '_', 'Season',
   function(BaseModel, _, Season) {
 
   class Series extends BaseModel{
-    constructor({imdbId = null, name = null, seasons = [], actors = []}) {
+    constructor({imdbId = null, name = null, seasons = [], plot = null, actors = []}) {
       super();
       this.type = 1;
       this.imdbId = imdbId;
       this.name = name;
+      this.plot = plot;
       this.seasons = seasons.map(function(data) {
         return new Season(data);
       });
