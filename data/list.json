@@ -106,7 +106,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt0944947",
         "name": "Game of Thrones",
         "seasons": [
             {
@@ -146,7 +146,12 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Peter Dinklage",
+            "Lena Headey",
+            "Emilia Clarke",
+            "Kit Harington"
+        ]
     },
     {
         "type": 1,
@@ -175,8 +180,8 @@
     },
     {
         "type": 1,
-        "imdbId": null,
-        "name": "Mr Robot",
+        "imdbId": "tt4158110",
+        "name": "Mr. Robot",
         "seasons": [
             {
                 "year": 2015,
@@ -191,11 +196,16 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Rami Malek",
+            "Christian Slater",
+            "Carly Chaikin",
+            "Portia Doubleday"
+        ]
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt3636060",
         "name": "Poldark",
         "seasons": [
             {
@@ -211,7 +221,12 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Aidan Turner",
+            "Eleanor Tomlinson",
+            "Jack Farthing",
+            "Heida Reed"
+        ]
     },
     {
         "type": 0,
@@ -309,7 +324,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt1796960",
         "name": "Homeland",
         "seasons": [
             {
@@ -343,17 +358,22 @@
                 "watched": false
             },
             {
-                "year": 2016,
+                "year": 2017,
                 "score": null,
                 "episodes": [],
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Claire Danes",
+            "Mandy Patinkin",
+            "Rupert Friend",
+            "F. Murray Abraham"
+        ]
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt2930604",
         "name": "Star Wars Rebels",
         "seasons": [
             {
@@ -375,7 +395,12 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Taylor Gray",
+            "Freddie Prinze Jr.",
+            "Vanessa Marshall",
+            "Tiya Sircar"
+        ]
     },
     {
         "type": 0,
@@ -460,7 +485,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt2149175",
         "name": "The Americans",
         "seasons": [
             {
@@ -488,7 +513,12 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Keri Russell",
+            "Matthew Rhys",
+            "Keidrich Sellati",
+            "Holly Taylor"
+        ]
     },
     {
         "type": 0,
@@ -793,11 +823,16 @@
     },
     {
         "type": 0,
-        "imdbId": null,
+        "imdbId": "tt2402927",
         "name": "Carol",
         "year": 2015,
         "score": null,
-        "actors": [],
+        "actors": [
+            "Cate Blanchett",
+            "Rooney Mara",
+            "Kyle Chandler",
+            "Sarah Paulson"
+        ],
         "watched": true
     },
     {
@@ -830,7 +865,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt3322312",
         "name": "Daredevil",
         "seasons": [
             {
@@ -844,9 +879,20 @@
                 "score": null,
                 "episodes": [],
                 "watched": false
+            },
+            {
+                "year": 2017,
+                "score": null,
+                "episodes": [],
+                "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Charlie Cox",
+            "Deborah Ann Woll",
+            "Elden Henson",
+            "Vincent D'Onofrio"
+        ]
     },
     {
         "type": 0,
@@ -943,11 +989,16 @@
     },
     {
         "type": 0,
-        "imdbId": null,
+        "imdbId": "tt0093773",
         "name": "Predator",
         "year": 1987,
         "score": null,
-        "actors": [],
+        "actors": [
+            "Arnold Schwarzenegger",
+            "Carl Weathers",
+            "Elpidia Carrillo",
+            "Bill Duke"
+        ],
         "watched": true
     },
     {
@@ -1049,11 +1100,16 @@
     },
     {
         "type": 0,
-        "imdbId": null,
+        "imdbId": "tt2305051",
         "name": "Wild",
         "year": 2014,
         "score": null,
-        "actors": [],
+        "actors": [
+            "Reese Witherspoon",
+            "Laura Dern",
+            "Thomas Sadoski",
+            "Keene McRae"
+        ],
         "watched": true
     },
     {
@@ -1364,11 +1420,16 @@
     },
     {
         "type": 0,
-        "imdbId": null,
-        "name": "Life is beautiful",
+        "imdbId": "tt0118799",
+        "name": "Life Is Beautiful",
         "year": 1997,
         "score": null,
-        "actors": [],
+        "actors": [
+            "Roberto Benigni",
+            "Nicoletta Braschi",
+            "Giorgio Cantarini",
+            "Giustino Durano"
+        ],
         "watched": true
     },
     {
@@ -1832,9 +1893,15 @@
     },
     {
         "type": 1,
-        "imdbId": null,
-        "name": "Star Wars Clone Wars",
+        "imdbId": "tt0458290",
+        "name": "Star Wars: The Clone Wars",
         "seasons": [
+            {
+                "year": 2008,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            },
             {
                 "year": 2009,
                 "score": null,
@@ -1860,23 +1927,22 @@
                 "watched": false
             },
             {
-                "year": 2013,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            },
-            {
                 "year": 2014,
                 "score": null,
                 "episodes": [],
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Tom Kane",
+            "Dee Bradley Baker",
+            "Matt Lanter",
+            "James Arnold Taylor"
+        ]
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt0182576",
         "name": "Family Guy",
         "seasons": [
             {
@@ -1899,12 +1965,6 @@
             },
             {
                 "year": 2005,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            },
-            {
-                "year": 2006,
                 "score": null,
                 "episodes": [],
                 "watched": false
@@ -1974,9 +2034,20 @@
                 "score": null,
                 "episodes": [],
                 "watched": false
+            },
+            {
+                "year": 2016,
+                "score": null,
+                "episodes": [],
+                "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Seth MacFarlane",
+            "Alex Borstein",
+            "Seth Green",
+            "Mila Kunis"
+        ]
     },
     {
         "type": 0,
@@ -2022,35 +2093,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
-        "name": "Narcos",
-        "seasons": [
-            {
-                "year": 2014,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            }
-        ],
-        "actors": []
-    },
-    {
-        "type": 1,
-        "imdbId": null,
-        "name": "Made in America",
-        "seasons": [
-            {
-                "year": 2015,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            }
-        ],
-        "actors": []
-    },
-    {
-        "type": 1,
-        "imdbId": null,
+        "imdbId": "tt4003966",
         "name": "Marseille",
         "seasons": [
             {
@@ -2060,11 +2103,16 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "G\u00e9rard Depardieu",
+            "Beno\u00eet Magimel",
+            "G\u00e9raldine Pailhas",
+            "Nadia Far\u00e8s"
+        ]
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt3322314",
         "name": "Luke Cage",
         "seasons": [
             {
@@ -2074,7 +2122,12 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Mike Colter",
+            "Simone Missick",
+            "Theo Rossi",
+            "Alfre Woodard"
+        ]
     },
     {
         "type": 0,
@@ -4317,7 +4370,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt0407362",
         "name": "Battlestar Galactica",
         "seasons": [
             {
@@ -4392,7 +4445,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt1606375",
         "name": "Downton Abbey",
         "seasons": [
             {
@@ -4441,7 +4494,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt0142032",
         "name": "Dune",
         "seasons": [
             {
@@ -4460,7 +4513,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt0287839",
         "name": "Children of Dune",
         "seasons": [
             {
@@ -4479,7 +4532,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt0112130",
         "name": "Pride and Prejudice",
         "seasons": [
             {
@@ -4498,7 +4551,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt0898266",
         "name": "The Big Bang Theory",
         "seasons": [
             {
@@ -4571,7 +4624,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt1870479",
         "name": "The Newsroom",
         "seasons": [
             {
@@ -10836,17 +10889,22 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt5114356",
         "name": "Legion",
         "seasons": [
             {
-                "year": 2016,
+                "year": 2017,
                 "score": null,
                 "episodes": [],
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Dan Stevens",
+            "Mackenzie Gray",
+            "Scott Lawrence",
+            "Katie Aselton"
+        ]
     },
     {
         "type": 0,
@@ -10878,7 +10936,7 @@
     },
     {
         "type": 1,
-        "imdbId": null,
+        "imdbId": "tt3322310",
         "name": "Iron Fist",
         "seasons": [
             {
@@ -10888,16 +10946,24 @@
                 "watched": false
             }
         ],
-        "actors": []
+        "actors": [
+            "Jessica Henwick",
+            "Finn Jones",
+            "Jessica Stroup",
+            "Lewis Tan"
+        ]
     },
     {
         "type": 0,
-        "imdbId": null,
+        "imdbId": "tt0490215",
         "name": "Silence",
         "year": 2016,
         "score": null,
         "actors": [
-            "Adam Driver"
+            "Andrew Garfield",
+            "Adam Driver",
+            "Liam Neeson",
+            "Tadanobu Asano"
         ],
         "watched": false
     },
@@ -10954,7 +11020,8 @@
             "Felicity Jones",
             "Tom Prior",
             "Sophie Perry"
-        ]
+        ],
+        "watched": false
     },
     {
         "type": 0,
@@ -10967,13 +11034,65 @@
             "Richard Pyros",
             "Jacob Warner",
             "Milo Gibson"
-        ]
+        ],
+        "watched": false
     },
     {
         "type": 1,
-        "imdbId": "tt5296406",
-        "name": "Designated Survivor",
+        "imdbId": "tt2707408",
+        "name": "Narcos",
         "seasons": [
+            {
+                "year": 2015,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            }
+        ],
+        "actors": [
+            "Wagner Moura",
+            "Boyd Holbrook",
+            "Pedro Pascal",
+            "Paulina Gaitan"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0096320",
+        "name": "Twins",
+        "year": 1988,
+        "score": null,
+        "actors": [
+            "Arnold Schwarzenegger",
+            "Danny DeVito",
+            "Kelly Preston",
+            "Chloe Webb"
+        ],
+        "watched": true
+    },
+    {
+        "type": 1,
+        "imdbId": "tt2306299",
+        "name": "Vikings",
+        "seasons": [
+            {
+                "year": 2013,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            },
+            {
+                "year": 2014,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            },
+            {
+                "year": 2015,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            },
             {
                 "year": 2016,
                 "score": null,
@@ -10982,47 +11101,10 @@
             }
         ],
         "actors": [
-            "Kiefer Sutherland",
-            "Natascha McElhone",
-            "Adan Canto",
-            "Italia Ricci"
-        ]
-    },
-    {
-        "type": 1,
-        "imdbId": "tt0285331",
-        "name": "24",
-        "seasons": [
-            {
-                "year": 2001,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            },
-            {
-                "year": 2002,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            },
-            {
-                "year": 2003,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            },
-            {
-                "year": 2004,
-                "score": null,
-                "episodes": [],
-                "watched": false
-            }
-        ],
-        "actors": [
-            "Kiefer Sutherland",
-            "Mary Lynn Rajskub",
-            "Carlos Bernard",
-            "Dennis Haysbert"
+            "Gustaf Skarsg\u00e5rd",
+            "Katheryn Winnick",
+            "Alexander Ludwig",
+            "Travis Fimmel"
         ]
     }
 ]

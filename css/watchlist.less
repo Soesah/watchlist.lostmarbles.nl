@@ -3,6 +3,7 @@
 @import "common/reset.less";
 @import "common/colors.less";
 @import "common/utilities.less";
+@import "common/progress-bar.less";
 
 @import "icons.less";
 @import "message.less";
@@ -36,10 +37,12 @@ a {
 
 code {
   border-radius: 4px;
-  border: solid 1px @gray-lighter;
-  background-color: lighten(@gray-lighter, 18%);
-  color: @gray;
-  padding: 1px 2px;
+  border: solid 1px desaturate(darken(@yellow-dark, 10%), 10%);
+  background-color: @yellow;
+  padding: 2px 4px;
+  min-width: 80px;
+  text-align: center;
+  display: inline-block;
 }
 
 @media screen and (max-width:400px) {

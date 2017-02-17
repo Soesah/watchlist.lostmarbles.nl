@@ -77,6 +77,16 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       });
     }
 
+    getMovies() { // with an imdbId
+      let _this = this;
+      return _.filter(this.data, function(item) {
+        return item.imdbId &&
+          (item.type === _this.MOVIE ||
+           item.type === _this.SEQUEL ||
+           item.type === _this.PREQUEL);
+      });
+    }
+
     get ALL() {
       return true;
     }
