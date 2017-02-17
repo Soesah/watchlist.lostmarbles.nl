@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('AdminController', ['$scope', '$location', 'ListDataFactory', 'OMDbApi',
-  function($scope, $location, ListDataFactory, OMDbApi) {
+angular.module('watchlistApp').controller('AdminController', ['$scope', '$location', 'ListDataFactory', 'OMDbApi', '$timeout',
+  function($scope, $location, ListDataFactory, OMDbApi, $timeout) {
 
 /*
   Available and used from omdb: 
@@ -60,10 +60,12 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$locati
               }              
             });
           } else {
-            if (u.next().done) {
-              $scope.save();
-            }
-            yield null;
+            yield $timeout(function() {            
+              if (u.next().done) {
+                $scope.save();
+              }
+            });
+            
           }
 
           index++;
