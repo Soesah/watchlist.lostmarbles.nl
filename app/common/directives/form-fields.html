@@ -24,13 +24,13 @@
   <div class="form-item form-item-required" ng-if="!isSeries()">
     <label>Year</label><input type="text" integer ng-required="true" placeholder="2016" class="year" ng-model="item.year" />
   </div>
-  <div class="form-item form-item-required" ng-if="isMovie() || isSeries() || isGame()">
+  <div class="form-item" ng-if="isMovie() || isSeries() || isGame()">
     <label>Plot</label><textarea placeholder="Plot" ng-model="item.plot"></textarea>
   </div>
-  <div class="form-item form-item-required" ng-if="isMovie()">
+  <div class="form-item" ng-if="isMovie()">
     <label>Director</label><input type="text" placeholder="Name" ng-model="item.director" />
   </div>
-  <div class="form-item form-item-required" ng-if="isMovie()">
+  <div class="form-item" ng-if="isMovie()">
     <label>Runtime</label><input type="text" placeholder="100 min" class="length" ng-model="item.length" />
   </div>
   <ul class="series-list" ng-if="isSeries()">
