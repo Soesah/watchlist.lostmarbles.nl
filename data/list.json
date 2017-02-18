@@ -2543,7 +2543,7 @@
         "watched": true
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0090605",
         "name": "Aliens",
         "year": 1986,
@@ -2557,10 +2557,12 @@
         "length": "137 min",
         "plot": "The moon from Alien (1979) has been colonized, but contact is lost. This time, the rescue team has impressive firepower, but will it be enough?",
         "director": "James Cameron",
-        "watched": true
+        "watched": true,
+        "parent": "tt0078748",
+        "order": 0
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0118583",
         "name": "Alien: Resurrection",
         "year": 1997,
@@ -2574,7 +2576,9 @@
         "length": "109 min",
         "plot": "Two centuries after her death, Ellen Ripley is revived as a powerful human\/alien hybrid clone who must continue her war against the aliens.",
         "director": "Jean-Pierre Jeunet",
-        "watched": true
+        "watched": true,
+        "parent": "tt0078748",
+        "order": 0
     },
     {
         "type": 0,
@@ -2679,7 +2683,7 @@
         "watched": true
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0096874",
         "name": "Back to the Future Part II",
         "year": 1989,
@@ -2693,10 +2697,12 @@
         "length": "108 min",
         "plot": "After visiting 2015, Marty McFly must repeat his visit to 1955 to prevent disastrous changes to 1985...without interfering with his first trip.",
         "director": "Robert Zemeckis",
-        "watched": true
+        "watched": true,
+        "parent": "tt0088763",
+        "order": 0
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0099088",
         "name": "Back to the Future Part III",
         "year": 1990,
@@ -2710,7 +2716,9 @@
         "length": "118 min",
         "plot": "Enjoying a peaceable existence in 1885, Doctor Emmet Brown is about to be killed by Buford \"Mad Dog\" Tannen. Marty McFly travels back in time to save his friend.",
         "director": "Robert Zemeckis",
-        "watched": true
+        "watched": true,
+        "parent": "tt0088763",
+        "order": 0
     },
     {
         "type": 0,
@@ -3732,7 +3740,7 @@
         "watched": true
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt1302011",
         "name": "Kung Fu Panda 2",
         "year": 2011,
@@ -3746,10 +3754,12 @@
         "length": "90 min",
         "plot": "Po and his friends fight to stop a peacock villain from conquering China with a deadly new weapon, but first the Dragon Warrior must come to terms with his past.",
         "director": "Jennifer Yuh Nelson",
-        "watched": true
+        "watched": true,
+        "parent": "tt0441773",
+        "order": 0
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt2267968",
         "name": "Kung Fu Panda 3",
         "year": 2016,
@@ -3763,7 +3773,9 @@
         "length": "95 min",
         "plot": "Continuing his \"legendary adventures of awesomeness\", Po must face two hugely epic, but different threats: one supernatural and the other a little closer to his home.",
         "director": "Alessandro Carloni, Jennifer Yuh Nelson",
-        "watched": true
+        "watched": true,
+        "parent": "tt0441773",
+        "order": 0
     },
     {
         "type": 0,
@@ -3868,7 +3880,7 @@
         "watched": true
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0337978",
         "name": "Live Free or Die Hard",
         "year": 2007,
@@ -3882,7 +3894,9 @@
         "length": "128 min",
         "plot": "John McClane and a young hacker join forces to take down master cyber-terrorist Thomas Gabriel in Washington D.C.",
         "director": "Len Wiseman",
-        "watched": true
+        "watched": true,
+        "parent": "tt0095016",
+        "order": 0
     },
     {
         "type": 0,
@@ -7547,7 +7561,7 @@
         "watched": true
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt2277860",
         "name": "Finding Dory",
         "year": 2016,
@@ -7561,7 +7575,9 @@
         "length": "97 min",
         "plot": "The friendly but forgetful blue tang fish begins a search for her long-lost parents, and everyone learns a few things about the real meaning of family along the way.",
         "director": "Andrew Stanton, Angus MacLane",
-        "watched": true
+        "watched": true,
+        "parent": "tt0266543",
+        "order": 0
     },
     {
         "type": 0,
@@ -10987,7 +11003,7 @@
         "watched": true
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0112864",
         "name": "Die Hard with a Vengeance",
         "year": 1995,
@@ -11001,10 +11017,12 @@
         "length": "128 min",
         "plot": "John McClane and a Harlem store owner are targeted by German terrorist Simon Gruber in New York City, where he plans to rob the Federal Reserve Building.",
         "director": "John McTiernan",
-        "watched": true
+        "watched": true,
+        "parent": "tt0095016",
+        "order": 0
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0099423",
         "name": "Die Hard 2",
         "year": 1990,
@@ -11018,10 +11036,12 @@
         "length": "124 min",
         "plot": "John McClane attempts to avert disaster as rogue military operatives seize control of Dulles International Airport in Washington, D.C.",
         "director": "Renny Harlin",
-        "watched": true
+        "watched": true,
+        "parent": "tt0095016",
+        "order": 0
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt1606378",
         "name": "A Good Day to Die Hard",
         "year": 2013,
@@ -11035,7 +11055,9 @@
         "length": "98 min",
         "plot": "John McClane travels to Russia to help out his seemingly wayward son, Jack, only to discover that Jack is a CIA operative working undercover, causing the father and son to team up against underworld forces.",
         "director": "John Moore",
-        "watched": true
+        "watched": true,
+        "parent": "tt0095016",
+        "order": 0
     },
     {
         "type": 0,
@@ -13077,7 +13099,7 @@
         "length": "139 min",
         "plot": "WWII American Army Medic Desmond T. Doss, who served during the Battle of Okinawa, refuses to kill people, and becomes the first man in American history to receive the Medal of Honor without firing a shot.",
         "director": "Mel Gibson",
-        "watched": false
+        "watched": true
     },
     {
         "type": 1,
@@ -13155,7 +13177,7 @@
         ]
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0103644",
         "name": "Alien 3",
         "year": 1992,
@@ -13169,7 +13191,9 @@
         "length": "114 min",
         "plot": "After her last encounter, Ripley crash-lands on Fiorina Fury 161, a maximum security prison. When a series of strange and deadly events occur shortly after her arrival, Ripley realizes that she brought along an unwelcome visitor.",
         "director": "David Fincher",
-        "watched": true
+        "watched": true,
+        "parent": "tt0078748",
+        "order": 0
     },
     {
         "type": 0,
@@ -13257,7 +13281,7 @@
         "watched": false
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0463854",
         "name": "28 Weeks Later",
         "year": 2007,
@@ -13270,6 +13294,185 @@
         ],
         "length": "100 min",
         "plot": "Six months after the rage virus was inflicted on the population of Great Britain, the US Army helps to secure a small area of London for the survivors to repopulate and start again. But not everything goes to plan.",
-        "director": "Juan Carlos Fresnadillo"
+        "director": "Juan Carlos Fresnadillo",
+        "watched": true,
+        "parent": "tt0289043",
+        "order": 0
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0114709",
+        "name": "Toy Story",
+        "year": 1995,
+        "score": null,
+        "actors": [
+            "Tom Hanks",
+            "Tim Allen",
+            "Don Rickles",
+            "Jim Varney"
+        ],
+        "length": "81 min",
+        "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
+        "director": "John Lasseter"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120363",
+        "name": "Toy Story 2",
+        "year": 1999,
+        "score": null,
+        "actors": [
+            "Tom Hanks",
+            "Tim Allen",
+            "Joan Cusack",
+            "Kelsey Grammer"
+        ],
+        "length": "92 min",
+        "plot": "When Woody is stolen by a toy collector, Buzz and his friends vow to rescue him, but Woody finds the idea of immortality in a museum tempting.",
+        "director": "John Lasseter, Ash Brannon, Lee Unkrich"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0435761",
+        "name": "Toy Story 3",
+        "year": 2010,
+        "score": null,
+        "actors": [
+            "Tom Hanks",
+            "Tim Allen",
+            "Joan Cusack",
+            "Ned Beatty"
+        ],
+        "length": "103 min",
+        "plot": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home.",
+        "director": "Lee Unkrich"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1049413",
+        "name": "Up",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Edward Asner",
+            "Christopher Plummer",
+            "Jordan Nagai",
+            "Bob Peterson"
+        ],
+        "length": "96 min",
+        "plot": "Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.",
+        "director": "Pete Docter, Bob Peterson"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1453405",
+        "name": "Monsters University",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Billy Crystal",
+            "John Goodman",
+            "Steve Buscemi",
+            "Helen Mirren"
+        ],
+        "length": "104 min",
+        "plot": "A look at the relationship between Mike and Sulley during their days at Monsters University -- when they weren't necessarily the best of friends.",
+        "director": "Dan Scanlon"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1979388",
+        "name": "The Good Dinosaur",
+        "year": 2015,
+        "score": null,
+        "actors": [
+            "Jeffrey Wright",
+            "Frances McDormand",
+            "Maleah Nipay-Padilla",
+            "Ryan Teeple"
+        ],
+        "length": "93 min",
+        "plot": "In a world where dinosaurs and humans live side-by-side, an Apatosaurus named Arlo makes an unlikely human friend.",
+        "director": "Peter Sohn"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120587",
+        "name": "Antz",
+        "year": 1998,
+        "score": null,
+        "actors": [
+            "Woody Allen",
+            "Dan Aykroyd",
+            "Anne Bancroft",
+            "Jane Curtin"
+        ],
+        "length": "83 min",
+        "plot": "A rather neurotic ant tries to break from his totalitarian society while trying to win the affection of the princess he loves.",
+        "director": "Eric Darnell, Tim Johnson"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1679335",
+        "name": "Trolls",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Anna Kendrick",
+            "Justin Timberlake",
+            "Zooey Deschanel",
+            "Christopher Mintz-Plasse"
+        ],
+        "length": "92 min",
+        "plot": "After the Bergens invade Troll Village, Poppy, the happiest Troll ever born, and the curmudgeonly Branch set off on a journey to rescue her friends.",
+        "director": "Walt Dohrn, Mike Mitchell"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0892782",
+        "name": "Monsters vs. Aliens",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Reese Witherspoon",
+            "Seth Rogen",
+            "Hugh Laurie",
+            "Will Arnett"
+        ],
+        "length": "94 min",
+        "plot": "A woman transformed into a giant after she is struck by a meteorite on her wedding day becomes part of a team of monsters sent in by the U.S. government to defeat an alien mastermind trying to take over Earth.",
+        "director": "Rob Letterman, Conrad Vernon"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0126029",
+        "name": "Shrek",
+        "year": 2001,
+        "score": null,
+        "actors": [
+            "Mike Myers",
+            "Eddie Murphy",
+            "Cameron Diaz",
+            "John Lithgow"
+        ],
+        "length": "90 min",
+        "plot": "After his swamp is filled with magical creatures, Shrek agrees to rescue Princess Fiona for a villainous lord in order to get his land back.",
+        "director": "Andrew Adamson, Vicky Jenson"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0298148",
+        "name": "Shrek 2",
+        "year": 2004,
+        "score": null,
+        "actors": [
+            "Mike Myers",
+            "Eddie Murphy",
+            "Cameron Diaz",
+            "Julie Andrews"
+        ],
+        "length": "93 min",
+        "plot": "Princess Fiona's parents invite her and Shrek to dinner to celebrate her marriage. If only they knew the newlyweds were both ogres.",
+        "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon"
     }
 ]
