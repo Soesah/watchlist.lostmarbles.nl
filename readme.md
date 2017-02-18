@@ -14,6 +14,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - <s>edit item (fix titles, add season)</s>
 - <s>remove item (doubles)</s>
 - Make editing/deleting work with imdbId?
+    - give items without imdbId a tempId, which is recognizable as a temporary id (typename + nr)
 - <s>scroll to/near item after edit/delete</s>
 - <s>fix year being integer</s>
 - <s>fix actors being array</s>
@@ -84,3 +85,4 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - <s>add 'view' view</s>
     - <s>add link to imdb somewhere (to verify)</s>
 -<s>add admin panel, to bulk update items (length, director, plot)</s>
+-Show failures in request (search, get info, update?)

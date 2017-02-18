@@ -102,6 +102,8 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
       $scope.searching = true;
       $scope.suggestions = [];
 
+      $scope.item.name = suggestion.name;
+
       itemTypeWatcher(); // disable the watcher
 
       // first use the omdb api to get the full data for the movie, series or game
