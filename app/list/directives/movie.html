@@ -2,8 +2,6 @@
   <a href="#!/view/{{item.path}}">
     <h4 ng-bind="item.name"></h4>
     <span class="bracketed" ng-bind="item.year"></span>
-    <i class="icon icon-movie" ng-click="toggleWatched($event, item)">
-      <i class="icon-checkmark" ng-show="item.imdbId"></i>
-    </i>
+    <i class="icon icon-movie" ng-click="toggleWatched($event, item)"></i>
   </a>
 </li>
