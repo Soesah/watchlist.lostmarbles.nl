@@ -102,7 +102,7 @@ angular.module('watchlistApp').controller('FormFieldsController', ['$scope', '_'
       $scope.searching = true;
       $scope.suggestions = [];
 
-      $scope.item.name = suggestion.name;
+      $scope.item.name = suggestion.Title;
 
       itemTypeWatcher(); // disable the watcher
 
