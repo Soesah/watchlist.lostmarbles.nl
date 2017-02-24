@@ -44,6 +44,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - implement drag for ordering movies in their sequence (use order prop)
     - filter on movies when searching for sequels, filter out _this_ movie, and already related movies
     - implement yielding more results?
+    - Would it be easier to determine a franchise, this would allow you to add any kind of items to the list. It would be a list of ids and its order. You would have to re-classify the items. That code is complicated and not very helpful
 - <s>use https://www.omdbapi.com/ to quickly find the year
     - can be used to retrieve episode names for series
     - provide imdbId, a nice addition and useful for tracking sequels/groups of movies

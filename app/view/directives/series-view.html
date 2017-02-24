@@ -1,5 +1,10 @@
 <div class="series">
   
+  <div ng-show="item.plot">
+    <h4>Plot</h4>
+    <p ng-bind="item.plot"></p>
+  </div>
+
   <ul class="seasons">
     <li ng-repeat="season in item.seasons">
       <p class="season-title">Season <span ng-bind="$index + 1"></span><span class="season-year bracketed" ng-bind="season.year"></span></p>
