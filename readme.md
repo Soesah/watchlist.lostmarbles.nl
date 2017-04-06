@@ -11,6 +11,9 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - restyle add button
 - <s>mark items as watched</s>
 - be able to score items
+    - You could use 1-5 stars, but always get a bit confused on what they mean.
+        - this always kinda puts you in mind to score one movie against another, wanting to give a star more because it was slightly better. This makes little sense as a scale.
+    - Perhaps saying something like "Likeable, Good, Awesome, Forgettable" would be more meaningful. Showing this label with 0 - 3 stars, blocks, or a color coded scale, would be nice.
 - <s>edit item (fix titles, add season)</s>
 - <s>remove item (doubles)</s>
 - Make editing/deleting work with imdbId?
