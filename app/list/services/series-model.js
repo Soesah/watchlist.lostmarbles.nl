@@ -2,12 +2,13 @@ angular.module('watchlistApp').factory('Series', ['BaseModel', '_', 'Season',
   function(BaseModel, _, Season) {
 
   class Series extends BaseModel{
-    constructor({imdbId = null, name = null, seasons = [], plot = null, actors = []}) {
+    constructor({imdbId = null, name = null, seasons = [], plot = null, actors = [], finished = false}) {
       super();
       this.type = 1;
       this.imdbId = imdbId;
       this.name = name;
       this.plot = plot;
+      this.finished = finished;
       this.seasons = seasons.map(function(data) {
         return new Season(data);
       });
@@ -16,6 +17,10 @@ angular.module('watchlistApp').factory('Series', ['BaseModel', '_', 'Season',
 
     isComplete() {
       return this.name && this.seasons.length;
+    }
+
+    isFinished() {
+      return this.finished;
     }
 
     toggleWatched() {

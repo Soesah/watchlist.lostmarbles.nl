@@ -38,11 +38,14 @@
       <div class="form-item form-item-required">
         <label>Season <span ng-bind="$index + 1"></span> year</label><div class="form-input-group">
           <input type="text" integer ng-required="true" placeholder="{{2017 + $index}}" class="year" ng-model="season.year" />
-          <button class="add-button option" type="button" ng-click="addSeason()"><i class="icon icon-plus"></i></button>
+          <button class="add-button option" type="button" ng-click="addSeason()" ng-if="!item.finished"><i class="icon icon-plus"></i></button>
         </div>
       </div>
     </li>
   </ul>
+  <div class="form-item form-item-checkbox"  ng-if="isSeries()">
+    <input type="checkbox" id="item.finished" ng-model="item.finished" /><label for="item.finished">Finished</label>
+  </div>
   <div class="form-item" ng-if="!isDocumentary()">
     <label>Actors</label><input type="text" placeholder="Actor, actor" ng-model="item.actors" />
   </div>

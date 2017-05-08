@@ -63,6 +63,45 @@
     color: @gray-light;
   }
 
+  &.form-item-checkbox {
+    padding-left: 128px;
+
+    input[type="checkbox"] {
+      display: none;
+
+      & + label {
+        top: 0;
+        padding: 0;
+        width: auto;
+        padding-left: 30px;
+        margin: 2px 0 6px;
+        cursor: pointer;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: solid 1px @gray-light;
+          border-radius: @border-radius-default;
+          background-color: @yellow;
+          position: absolute;
+          top: -4px;
+          left: 0;
+        }
+      }
+
+      &:checked + label:after {
+        content: @icon-checkmark;
+        font-family: 'watchlist';
+        font-size: 10px;
+        position: absolute;
+        top: 3px;
+        left: 5px;
+      }
+    }
+  }
+
   .select-arrow {
     width: 18px;
     position: absolute;
