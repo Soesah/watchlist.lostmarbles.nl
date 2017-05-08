@@ -32,7 +32,7 @@ angular.module('watchlistApp').factory('Series', ['BaseModel', '_', 'Season',
     }
 
     get watched() {
-      return _.filter(this.seasons, {watched: false}).length === 0;
+      return this.seasons.length > 0 && _.filter(this.seasons, {watched: false}).length === 0;
     }
 
     get year() {

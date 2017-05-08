@@ -1,13 +1,16 @@
-angular.module('watchlistApp').factory('Season', ['Episode',
-  function(Episode) {
+angular.module('watchlistApp').factory('Season', ['Episode', '_',
+  function(Episode, _) {
 
   class Season {
-    constructor({year = null, watched = false, episodes = []}) {
+    constructor({year = null, episodes = []}) {
       this.year = year;
       this.episodes = episodes.map(function(data) {
         return new Episode(data);
       });
-      this.watched = watched;
+    }
+
+    get watched() {
+      return this.episodes.length > 0 && _.filter(this.episodes, {watched: false}).length === 0;
     }
   }
 
