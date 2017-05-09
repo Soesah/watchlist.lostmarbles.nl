@@ -472,7 +472,7 @@
         "length": "116 min",
         "plot": "Following a ghost invasion of Manhattan, paranormal enthusiasts Erin Gilbert and Abby Yates, nuclear engineer Jillian Holtzmann, and subway worker Patty Tolan band together to stop the otherworldly threat.",
         "director": "Paul Feig",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -1768,23 +1768,6 @@
     },
     {
         "type": 0,
-        "imdbId": "tt1049413",
-        "name": "Up",
-        "year": 2009,
-        "score": null,
-        "actors": [
-            "Edward Asner",
-            "Christopher Plummer",
-            "Jordan Nagai",
-            "Bob Peterson"
-        ],
-        "length": "96 min",
-        "plot": "Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.",
-        "director": "Pete Docter, Bob Peterson",
-        "watched": true
-    },
-    {
-        "type": 0,
         "imdbId": "tt0083658",
         "name": "Blade Runner",
         "year": 1982,
@@ -2407,7 +2390,7 @@
         "type": 1,
         "imdbId": "tt3322314",
         "name": "Luke Cage",
-        "plot": null,
+        "plot": "Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.",
         "seasons": [
             {
                 "year": 2016,
@@ -8546,7 +8529,7 @@
         "length": "133 min",
         "plot": "The adventures of writer Newt Scamander in New York's secret community of witches and wizards seventy years before Harry Potter reads his book in school.",
         "director": "David Yates",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -10198,7 +10181,7 @@
         "length": "88 min",
         "plot": "When human forces discover the existence of the Vampire and Lycan clans, a war to eradicate both species commences. The vampire warrior Selene leads the battle against humankind.",
         "director": "M\u00e5ns M\u00e5rlind, Bj\u00f6rn Stein",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -10334,7 +10317,7 @@
         "length": "91 min",
         "plot": "Vampire death dealer, Selene (Kate Beckinsale) fights to end the eternal war between the Lycan clan and the Vampire faction that betrayed her.",
         "director": "Anna Foerster",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -10351,7 +10334,7 @@
         "length": "92 min",
         "plot": "Lady Susan Vernon takes up temporary residence at her in-laws' estate and, while there, is determined to be a matchmaker for her daughter Frederica -- and herself too, naturally.",
         "director": "Whit Stillman",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -11108,7 +11091,7 @@
         "length": "95 min",
         "plot": "In a violent, futuristic city where the police have the authority to act as judge, jury and executioner, a cop teams with a trainee to take down a gang that deals the reality-altering drug, SLO-MO.",
         "director": "Pete Travis",
-        "watched": false
+        "watched": true
     },
     {
         "type": 1,
@@ -11531,7 +11514,7 @@
         "length": "118 min",
         "plot": "A five-year-old Indian boy gets lost on the streets of Calcutta, thousands of kilometers from home. He survives many challenges before being adopted by a couple in Australia; 25 years later, he sets out to find his lost family.",
         "director": "Garth Davis",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -11548,7 +11531,7 @@
         "length": "103 min",
         "plot": "European mercenaries searching for black powder become embroiled in the defense of the Great Wall of China against a horde of monstrous creatures.",
         "director": "Yimou Zhang",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -11650,7 +11633,7 @@
         "length": "139 min",
         "plot": "In late 1950s New York, Tom Ripley, a young underachiever, is sent to Italy to retrieve Dickie Greenleaf, a rich and spoiled millionaire playboy. But when the errand fails, Ripley takes extreme measures.",
         "director": "Anthony Minghella",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -11944,7 +11927,7 @@
         "length": "102 min",
         "plot": "When Hiccup and Toothless discover an ice cave that is home to hundreds of new wild dragons and the mysterious Dragon Rider, the two friends find themselves at the center of a battle to protect the peace.",
         "director": "Dean DeBlois",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -11978,7 +11961,7 @@
         "length": "98 min",
         "plot": "A New York socialite, deeply troubled and in denial, arrives in San Francisco to impose upon her sister. She looks a million, but isn't bringing money, peace, or love...",
         "director": "Woody Allen",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -11995,7 +11978,7 @@
         "length": "126 min",
         "plot": "Set in a future where a failed climate-change experiment kills all life on the planet except for a lucky few who boarded the Snowpiercer, a train that travels around the globe, where a class system emerges.",
         "director": "Joon-ho Bong",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -12403,7 +12386,7 @@
         "length": "115 min",
         "plot": "A former neurosurgeon embarks on a journey of healing only to be drawn into the world of the mystic arts.",
         "director": "Scott Derrickson",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -12420,7 +12403,7 @@
         "length": "118 min",
         "plot": "In the forests of the Pacific Northwest, a father devoted to raising his six kids with a rigorous physical and intellectual education is forced to leave his paradise and enter the world, challenging his idea of what it means to be a parent.",
         "director": "Matt Ross",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -12488,7 +12471,7 @@
         "length": "117 min",
         "plot": "When Louis Bloom, a driven man desperate for work, muscles into the world of L.A. crime journalism, he blurs the line between observer and participant to become the star of his own story. Aiding him in his effort is Nina, a TV-news veteran.",
         "director": "Dan Gilroy",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -12977,7 +12960,7 @@
         "length": "114 min",
         "plot": "In Roman-ruled Britain, a young Roman soldier endeavors to honor his father's memory by finding his lost legion's golden emblem.",
         "director": "Kevin Macdonald",
-        "watched": false
+        "watched": true
     },
     {
         "type": 1,
@@ -13014,7 +12997,7 @@
         "length": "161 min",
         "plot": "Two priests travel to Japan in an attempt to locate their mentor and propagate Catholicism.",
         "director": "Martin Scorsese",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -13048,7 +13031,7 @@
         "length": "123 min",
         "plot": "The story of Richard and Mildred Loving, an interracial couple, whose challenge of their anti-miscegenation arrest for their marriage in Virginia led to a legal battle that would end at the US Supreme Court.",
         "director": "Jeff Nichols",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -13210,7 +13193,7 @@
         "length": "119 min",
         "plot": "Following the death of his father, Britt Reid, heir to his father's large company, teams up with his late dad's assistant Kato to become a masked crime fighting team.",
         "director": "Michel Gondry",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -13313,7 +13296,8 @@
         ],
         "length": "81 min",
         "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
-        "director": "John Lasseter"
+        "director": "John Lasseter",
+        "watched": true
     },
     {
         "type": 0,
@@ -13329,7 +13313,8 @@
         ],
         "length": "92 min",
         "plot": "When Woody is stolen by a toy collector, Buzz and his friends vow to rescue him, but Woody finds the idea of immortality in a museum tempting.",
-        "director": "John Lasseter, Ash Brannon, Lee Unkrich"
+        "director": "John Lasseter, Ash Brannon, Lee Unkrich",
+        "watched": true
     },
     {
         "type": 0,
@@ -13345,7 +13330,8 @@
         ],
         "length": "103 min",
         "plot": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home.",
-        "director": "Lee Unkrich"
+        "director": "Lee Unkrich",
+        "watched": true
     },
     {
         "type": 0,
@@ -13361,7 +13347,8 @@
         ],
         "length": "96 min",
         "plot": "Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.",
-        "director": "Pete Docter, Bob Peterson"
+        "director": "Pete Docter, Bob Peterson",
+        "watched": true
     },
     {
         "type": 0,
@@ -13377,7 +13364,8 @@
         ],
         "length": "104 min",
         "plot": "A look at the relationship between Mike and Sulley during their days at Monsters University -- when they weren't necessarily the best of friends.",
-        "director": "Dan Scanlon"
+        "director": "Dan Scanlon",
+        "watched": true
     },
     {
         "type": 0,
@@ -13393,7 +13381,8 @@
         ],
         "length": "93 min",
         "plot": "In a world where dinosaurs and humans live side-by-side, an Apatosaurus named Arlo makes an unlikely human friend.",
-        "director": "Peter Sohn"
+        "director": "Peter Sohn",
+        "watched": true
     },
     {
         "type": 0,
@@ -13409,7 +13398,8 @@
         ],
         "length": "83 min",
         "plot": "A rather neurotic ant tries to break from his totalitarian society while trying to win the affection of the princess he loves.",
-        "director": "Eric Darnell, Tim Johnson"
+        "director": "Eric Darnell, Tim Johnson",
+        "watched": true
     },
     {
         "type": 0,
@@ -13425,7 +13415,8 @@
         ],
         "length": "92 min",
         "plot": "After the Bergens invade Troll Village, Poppy, the happiest Troll ever born, and the curmudgeonly Branch set off on a journey to rescue her friends.",
-        "director": "Walt Dohrn, Mike Mitchell"
+        "director": "Walt Dohrn, Mike Mitchell",
+        "watched": true
     },
     {
         "type": 0,
@@ -13441,7 +13432,8 @@
         ],
         "length": "94 min",
         "plot": "A woman transformed into a giant after she is struck by a meteorite on her wedding day becomes part of a team of monsters sent in by the U.S. government to defeat an alien mastermind trying to take over Earth.",
-        "director": "Rob Letterman, Conrad Vernon"
+        "director": "Rob Letterman, Conrad Vernon",
+        "watched": true
     },
     {
         "type": 0,
@@ -13457,10 +13449,11 @@
         ],
         "length": "90 min",
         "plot": "After his swamp is filled with magical creatures, Shrek agrees to rescue Princess Fiona for a villainous lord in order to get his land back.",
-        "director": "Andrew Adamson, Vicky Jenson"
+        "director": "Andrew Adamson, Vicky Jenson",
+        "watched": true
     },
     {
-        "type": 0,
+        "type": 4,
         "imdbId": "tt0298148",
         "name": "Shrek 2",
         "year": 2004,
@@ -13473,6 +13466,1202 @@
         ],
         "length": "93 min",
         "plot": "Princess Fiona's parents invite her and Shrek to dinner to celebrate her marriage. If only they knew the newlyweds were both ogres.",
-        "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon"
+        "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon",
+        "watched": true,
+        "parent": "tt0126029",
+        "order": 0
+    },
+    {
+        "type": 4,
+        "imdbId": "tt0413267",
+        "name": "Shrek the Third",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Mike Myers",
+            "Eddie Murphy",
+            "Cameron Diaz",
+            "Antonio Banderas"
+        ],
+        "length": "93 min",
+        "plot": "When his new father-in-law, King Harold falls ill, Shrek is looked at as the heir to the land of Far, Far Away. Not one to give up his beloved swamp, Shrek recruits his friends Donkey and Puss in Boots to install the rebellious Artie as the new king. Princess Fiona, however, rallies a band of royal girlfriends to fend off a coup d'etat by the jilted Prince Charming.",
+        "director": "Chris Miller, Raman Hui",
+        "watched": true,
+        "parent": "tt0126029",
+        "order": 0
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0094012",
+        "name": "Spaceballs",
+        "year": 1987,
+        "score": null,
+        "actors": [
+            "Mel Brooks",
+            "John Candy",
+            "Rick Moranis",
+            "Bill Pullman"
+        ],
+        "length": "96 min",
+        "plot": "Planet Spaceballs' President Skroob sends Lord Dark Helmet to steal planet Druidia's abundant supply of air to replenish their own, and only Lone Starr can stop them.",
+        "director": "Mel Brooks",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0073195",
+        "name": "Jaws",
+        "year": 1975,
+        "score": null,
+        "actors": [
+            "Roy Scheider",
+            "Robert Shaw",
+            "Richard Dreyfuss",
+            "Lorraine Gary"
+        ],
+        "length": "124 min",
+        "plot": "A giant great white shark arrives on the shores of a New England beach resort and wreaks havoc with bloody attacks on swimmers, until a part-time sheriff teams up with a marine biologist and an old seafarer to hunt the monster down.",
+        "director": "Steven Spielberg",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1623205",
+        "name": "Oz the Great and Powerful",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "James Franco",
+            "Mila Kunis",
+            "Rachel Weisz",
+            "Michelle Williams"
+        ],
+        "length": "130 min",
+        "plot": "A frustrated circus magician from Kansas is transported to a magical land called Oz, where he will have to fulfill a prophecy to become the king, and release the land from the Wicked Witches using his great (but fake) powers.",
+        "director": "Sam Raimi",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1568911",
+        "name": "War Horse",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Jeremy Irvine",
+            "Peter Mullan",
+            "Emily Watson",
+            "Niels Arestrup"
+        ],
+        "length": "146 min",
+        "plot": "Young Albert enlists to serve in World War I after his beloved horse is sold to the cavalry. Albert's hopeful journey takes him out of England and to the front lines as the war rages on.",
+        "director": "Steven Spielberg",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0096945",
+        "name": "Blind Fury",
+        "year": 1989,
+        "score": null,
+        "actors": [
+            "Rutger Hauer",
+            "Terry O'Quinn",
+            "Brandon Call",
+            "Noble Willingham"
+        ],
+        "length": "86 min",
+        "plot": "A blind Vietnam vet, trained as a swordfighter, comes to America and helps to rescue the son of a fellow soldier.",
+        "director": "Phillip Noyce",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3387266",
+        "name": "A United Kingdom",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "David Oyelowo",
+            "Rosamund Pike",
+            "Jack Davenport",
+            "Tom Felton"
+        ],
+        "length": "111 min",
+        "plot": "Prince Seretse Khama of Botswana causes an international stir when he marries a white woman from London in the late 1940s.",
+        "director": "Amma Asante",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2692904",
+        "name": "Locke",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Tom Hardy",
+            "Olivia Colman",
+            "Ruth Wilson",
+            "Andrew Scott"
+        ],
+        "length": "85 min",
+        "plot": "Ivan Locke, a dedicated family man and successful construction manager, receives a phone call on the eve of the biggest challenge of his career that sets in motion a series of events that threaten his carefully cultivated existence.",
+        "director": "Steven Knight",
+        "watched": false
+    },
+    {
+        "type": 1,
+        "imdbId": "tt1399664",
+        "name": "The Night Manager",
+        "plot": "The night manager of a Cairo hotel is recruited to infiltrate an arms dealer's inner circle.",
+        "seasons": [
+            {
+                "year": 2016,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            }
+        ],
+        "actors": [
+            "Tom Hiddleston",
+            "Hugh Laurie",
+            "Elizabeth Debicki",
+            "Olivia Colman"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1809398",
+        "name": "Unbroken",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Jack O'Connell",
+            "Domhnall Gleeson",
+            "Garrett Hedlund",
+            "Miyavi"
+        ],
+        "length": "137 min",
+        "plot": "After a near-fatal plane crash in WWII, Olympian Louis Zamperini spends a harrowing 47 days in a raft with two fellow crewmen before he's caught by the Japanese navy and sent to a prisoner-of-war camp.",
+        "director": "Angelina Jolie",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0092099",
+        "name": "Top Gun",
+        "year": 1986,
+        "score": null,
+        "actors": [
+            "Tom Cruise",
+            "Kelly McGillis",
+            "Val Kilmer",
+            "Anthony Edwards"
+        ],
+        "length": "110 min",
+        "plot": "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.",
+        "director": "Tony Scott",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0431197",
+        "name": "The Kingdom",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Jamie Foxx",
+            "Chris Cooper",
+            "Jennifer Garner",
+            "Jason Bateman"
+        ],
+        "length": "110 min",
+        "plot": "A team of U.S. government agents is sent to investigate the bombing of an American facility in the Middle East.",
+        "director": "Peter Berg",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1428538",
+        "name": "Hansel & Gretel: Witch Hunters",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Jeremy Renner",
+            "Gemma Arterton",
+            "Famke Janssen",
+            "Pihla Viitala"
+        ],
+        "length": "88 min",
+        "plot": "Hansel & Gretel are bounty hunters who track and kill witches all over the world. As the fabled Blood Moon approaches, the siblings encounter a new form of evil that might hold a secret to their past.",
+        "director": "Tommy Wirkola",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1175709",
+        "name": "All Good Things",
+        "year": 2010,
+        "score": null,
+        "actors": [
+            "Ryan Gosling",
+            "Kirsten Dunst",
+            "Frank Langella",
+            "Lily Rabe"
+        ],
+        "length": "101 min",
+        "plot": "Mr. David Marks was suspected but never tried for killing his wife Katie who disappeared in 1982, but the truth is eventually revealed.",
+        "director": "Andrew Jarecki",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2473794",
+        "name": "Mr. Turner",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Timothy Spall",
+            "Paul Jesson",
+            "Dorothy Atkinson",
+            "Marion Bailey"
+        ],
+        "length": "150 min",
+        "plot": "An exploration of the last quarter century of the great, if eccentric, British painter J.M.W. Turner's life.",
+        "director": "Mike Leigh",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2316204",
+        "name": "Alien: Covenant",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Michael Fassbender",
+            "Katherine Waterston",
+            "James Franco",
+            "Noomi Rapace"
+        ],
+        "length": "N\/A",
+        "plot": "The crew of the colony ship Covenant, bound for a remote planet on the far side of the galaxy, discover what they think is an uncharted paradise, but is actually a dark, dangerous world. When they uncover a threat beyond their imagination, they must attempt a harrowing escape.",
+        "director": "Ridley Scott",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1790885",
+        "name": "Zero Dark Thirty",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Jason Clarke",
+            "Reda Kateb",
+            "Jessica Chastain",
+            "Kyle Chandler"
+        ],
+        "length": "157 min",
+        "plot": "A chronicle of the decade-long hunt for al-Qaeda terrorist leader Osama bin Laden after the September 2001 attacks, and his death at the hands of the Navy S.E.A.L.s Team 6 in May 2011.",
+        "director": "Kathryn Bigelow",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2268458",
+        "name": "These Final Hours",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Jessica De Gouw",
+            "Nathan Phillips",
+            "David Field",
+            "Lauren Cleary"
+        ],
+        "length": "87 min",
+        "plot": "A self-obsessed young man makes his way to the party-to-end-all-parties on the last day on Earth, but ends up saving the life of a little girl searching for her father. Their relationship ultimately leads him on the path to redemption.",
+        "director": "Zak Hilditch",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1748122",
+        "name": "Moonrise Kingdom",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Bruce Willis",
+            "Edward Norton",
+            "Bill Murray",
+            "Frances McDormand"
+        ],
+        "length": "94 min",
+        "plot": "A pair of young lovers flee their New England town, which causes a local search party to fan out to find them.",
+        "director": "Wes Anderson",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120685",
+        "name": "Godzilla",
+        "year": 1998,
+        "score": null,
+        "actors": [
+            "Matthew Broderick",
+            "Jean Reno",
+            "Maria Pitillo",
+            "Hank Azaria"
+        ],
+        "length": "139 min",
+        "plot": "A giant, reptilian monster surfaces, leaving destruction in its wake. To stop the monster (and its babies), an earthworm scientist, his reporter ex-girlfriend, and other unlikely heroes team up to save their city.",
+        "director": "Roland Emmerich",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0499448",
+        "name": "The Chronicles of Narnia: Prince Caspian",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Ben Barnes",
+            "Georgie Henley",
+            "Skandar Keynes",
+            "William Moseley"
+        ],
+        "length": "150 min",
+        "plot": "The Pevensie siblings return to Narnia, where they are enlisted to once again help ward off an evil king and restore the rightful heir to the land's throne, Prince Caspian.",
+        "director": "Andrew Adamson",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0980970",
+        "name": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
+        "year": 2010,
+        "score": null,
+        "actors": [
+            "Georgie Henley",
+            "Skandar Keynes",
+            "Ben Barnes",
+            "Will Poulter"
+        ],
+        "length": "113 min",
+        "plot": "Lucy and Edmund Pevensie return to Narnia with their cousin Eustace where they meet up with Prince Caspian for a trip across the sea aboard the royal ship The Dawn Treader. Along the way they encounter dragons, dwarves, merfolk, and a band of lost warriors before reaching the edge of the world.",
+        "director": "Michael Apted",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0116136",
+        "name": "DragonHeart",
+        "year": 1996,
+        "score": null,
+        "actors": [
+            "Dennis Quaid",
+            "David Thewlis",
+            "Pete Postlethwaite",
+            "Dina Meyer"
+        ],
+        "length": "103 min",
+        "plot": "The last dragon and a disillusioned dragonslaying knight must cooperate to stop an evil king who was given partial immortality.",
+        "director": "Rob Cohen",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0297884",
+        "name": "Far from Heaven",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Julianne Moore",
+            "Dennis Quaid",
+            "Dennis Haysbert",
+            "Patricia Clarkson"
+        ],
+        "length": "107 min",
+        "plot": "In 1950s Connecticut, a housewife faces a marital crisis and mounting racial tensions in the outside world.",
+        "director": "Todd Haynes",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120873",
+        "name": "U.S. Marshals",
+        "year": 1998,
+        "score": null,
+        "actors": [
+            "Tommy Lee Jones",
+            "Wesley Snipes",
+            "Robert Downey Jr.",
+            "Joe Pantoliano"
+        ],
+        "length": "131 min",
+        "plot": "U.S. Marshal Samuel Gerard (Jones) and his team of Marshals are assigned to track down Sheridan (Snipes), who has been accused of a double-murder.",
+        "director": "Stuart Baird",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1219342",
+        "name": "Legend of the Guardians: The Owls of Ga'Hoole",
+        "year": 2010,
+        "score": null,
+        "actors": [
+            "Emily Barclay",
+            "Abbie Cornish",
+            "Essie Davis",
+            "Adrienne DeFaria"
+        ],
+        "length": "97 min",
+        "plot": "When a young owl is abducted by an evil Owl army, he must escape with new-found friends and seek the legendary Guardians to stop the menace.",
+        "director": "Zack Snyder",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0406816",
+        "name": "The Guardian",
+        "year": 2006,
+        "score": null,
+        "actors": [
+            "Kevin Costner",
+            "Ashton Kutcher",
+            "Sela Ward",
+            "Melissa Sagemiller"
+        ],
+        "length": "139 min",
+        "plot": "A high school swim champion with a troubled past enrolls in the U.S. Coast Guard's \"A\" School, where legendary rescue swimmer Ben Randall teaches him some hard lessons about loss, love, and self-sacrifice.",
+        "director": "Andrew Davis",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2241351",
+        "name": "Money Monster",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "George Clooney",
+            "Julia Roberts",
+            "Jack O'Connell",
+            "Dominic West"
+        ],
+        "length": "98 min",
+        "plot": "Financial TV host Lee Gates and his producer Patty are put in an extreme situation when an irate investor takes over their studio.",
+        "director": "Jodie Foster",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0118884",
+        "name": "Contact",
+        "year": 1997,
+        "score": null,
+        "actors": [
+            "Jena Malone",
+            "David Morse",
+            "Jodie Foster",
+            "Geoffrey Blake"
+        ],
+        "length": "150 min",
+        "plot": "Dr. Ellie Arroway, after years of searching, finds conclusive radio proof of intelligent aliens, who send plans for a mysterious machine.",
+        "director": "Robert Zemeckis",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0075314",
+        "name": "Taxi Driver",
+        "year": 1976,
+        "score": null,
+        "actors": [
+            "Diahnne Abbott",
+            "Frank Adu",
+            "Victor Argo",
+            "Gino Ardito"
+        ],
+        "length": "113 min",
+        "plot": "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.",
+        "director": "Martin Scorsese",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0102926",
+        "name": "The Silence of the Lambs",
+        "year": 1991,
+        "score": null,
+        "actors": [
+            "Jodie Foster",
+            "Lawrence A. Bonney",
+            "Kasi Lemmons",
+            "Lawrence T. Wrentz"
+        ],
+        "length": "118 min",
+        "plot": "A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer who skins his victims.",
+        "director": "Jonathan Demme",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4846340",
+        "name": "Hidden Figures",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Taraji P. Henson",
+            "Octavia Spencer",
+            "Janelle Mon\u00e1e",
+            "Kevin Costner"
+        ],
+        "length": "127 min",
+        "plot": "The story of a team of African-American women mathematicians who served a vital role in NASA during the early years of the US space program.",
+        "director": "Theodore Melfi",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3521164",
+        "name": "Moana",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Auli'i Cravalho",
+            "Dwayne Johnson",
+            "Rachel House",
+            "Temuera Morrison"
+        ],
+        "length": "107 min",
+        "plot": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+        "director": "Ron Clements, Don Hall, John Musker, Chris Williams",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0096754",
+        "name": "The Abyss",
+        "year": 1989,
+        "score": null,
+        "actors": [
+            "Ed Harris",
+            "Mary Elizabeth Mastrantonio",
+            "Michael Biehn",
+            "Leo Burmester"
+        ],
+        "length": "145 min",
+        "plot": "A civilian diving team is enlisted to search for a lost nuclear submarine and face danger while encountering an alien aquatic species.",
+        "director": "James Cameron",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1217613",
+        "name": "Battle Los Angeles",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Aaron Eckhart",
+            "Ramon Rodriguez",
+            "Will Rothhaar",
+            "Cory Hardrict"
+        ],
+        "length": "116 min",
+        "plot": "A squadron of U.S. Marines becomes the last line of defense against a global invasion.",
+        "director": "Jonathan Liebesman",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1714915",
+        "name": "Only Lovers Left Alive",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Tilda Swinton",
+            "Tom Hiddleston",
+            "Anton Yelchin",
+            "Mia Wasikowska"
+        ],
+        "length": "123 min",
+        "plot": "A depressed musician reunites with his lover, though their romance - which has already endured several centuries - is disrupted by the arrival of her uncontrollable younger sister.",
+        "director": "Jim Jarmusch",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1197624",
+        "name": "Law Abiding Citizen",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Jamie Foxx",
+            "Gerard Butler",
+            "Colm Meaney",
+            "Bruce McGill"
+        ],
+        "length": "109 min",
+        "plot": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
+        "director": "F. Gary Gray",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1781922",
+        "name": "No Escape",
+        "year": 2015,
+        "score": null,
+        "actors": [
+            "Owen Wilson",
+            "Lake Bell",
+            "Sterling Jerins",
+            "Claire Geare"
+        ],
+        "length": "103 min",
+        "plot": "In their new overseas home, an American family soon finds themselves caught in the middle of a coup, and they frantically look for a safe escape from an environment where foreigners are being immediately executed.",
+        "director": "John Erick Dowdle",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0245844",
+        "name": "The Count of Monte Cristo",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Jim Caviezel",
+            "Guy Pearce",
+            "Richard Harris",
+            "James Frain"
+        ],
+        "length": "131 min",
+        "plot": "A young man, falsely imprisoned by his jealous \"friend,\" escapes and uses a hidden treasure to exact his revenge.",
+        "director": "Kevin Reynolds",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1650062",
+        "name": "Super 8",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Joel Courtney",
+            "Jessica Tuck",
+            "Joel McKinnon Miller",
+            "Ryan Lee"
+        ],
+        "length": "112 min",
+        "plot": "During the summer of 1979, a group of friends witness a train crash and investigate subsequent unexplained events in their small town.",
+        "director": "J.J. Abrams",
+        "watched": true
+    },
+    {
+        "type": 1,
+        "imdbId": "tt5296406",
+        "name": "Designated Survivor",
+        "plot": "A low-level Cabinet member becomes President of the United States after a catastrophic attack kills everyone above him in the Presidential line of succession.",
+        "seasons": [
+            {
+                "year": 2016,
+                "score": null,
+                "episodes": [],
+                "watched": false
+            }
+        ],
+        "actors": [
+            "Kiefer Sutherland",
+            "Natascha McElhone",
+            "Adan Canto",
+            "Italia Ricci"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0102266",
+        "name": "The Last Boy Scout",
+        "year": 1991,
+        "score": null,
+        "actors": [
+            "Bruce Willis",
+            "Damon Wayans",
+            "Chelsea Field",
+            "Noble Willingham"
+        ],
+        "length": "105 min",
+        "plot": "A down and out cynical detective teams up with a down and out ex-quarterback to try and solve a murder case involving a pro football team and a politician.",
+        "director": "Tony Scott",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0303933",
+        "name": "Drumline",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Nick Cannon",
+            "Zoe Saldana",
+            "Orlando Jones",
+            "Leonard Roberts"
+        ],
+        "length": "118 min",
+        "plot": "A band director recruits a Harlem street drummer to play at a Southern university.",
+        "director": "Charles Stone III",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4680182",
+        "name": "Colossal",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Dan Stevens",
+            "Anne Hathaway",
+            "Jason Sudeikis",
+            "Tim Blake Nelson"
+        ],
+        "length": "110 min",
+        "plot": "A woman discovers that severe catastrophic events are somehow connected to the mental breakdown from which she's suffering.",
+        "director": "Nacho Vigalondo",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4651520",
+        "name": "Bad Moms",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Mila Kunis",
+            "Kathryn Hahn",
+            "Kristen Bell",
+            "Christina Applegate"
+        ],
+        "length": "100 min",
+        "plot": "When three overworked and under-appreciated moms are pushed beyond their limits, they ditch their conventional responsibilities for a jolt of long overdue freedom, fun, and comedic self-indulgence.",
+        "director": "Jon Lucas, Scott Moore",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0368447",
+        "name": "The Village",
+        "year": 2004,
+        "score": null,
+        "actors": [
+            "Bryce Dallas Howard",
+            "Joaquin Phoenix",
+            "Adrien Brody",
+            "William Hurt"
+        ],
+        "length": "108 min",
+        "plot": "A series of events tests the beliefs of a small isolated countryside village.",
+        "director": "M. Night Shyamalan",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0949731",
+        "name": "The Happening",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Mark Wahlberg",
+            "Zooey Deschanel",
+            "John Leguizamo",
+            "Ashlyn Sanchez"
+        ],
+        "length": "91 min",
+        "plot": "A science teacher, his wife, and a young girl struggle to survive a plague that causes those infected to commit suicide.",
+        "director": "M. Night Shyamalan",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0167404",
+        "name": "The Sixth Sense",
+        "year": 1999,
+        "score": null,
+        "actors": [
+            "Bruce Willis",
+            "Haley Joel Osment",
+            "Toni Collette",
+            "Olivia Williams"
+        ],
+        "length": "107 min",
+        "plot": "A boy who communicates with spirits that don't know they're dead seeks the help of a disheartened child psychologist.",
+        "director": "M. Night Shyamalan",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0286106",
+        "name": "Signs",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Mel Gibson",
+            "Joaquin Phoenix",
+            "Rory Culkin",
+            "Abigail Breslin"
+        ],
+        "length": "106 min",
+        "plot": "A family living on a farm finds mysterious crop circles in their fields which suggests something more frightening to come.",
+        "director": "M. Night Shyamalan",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0945513",
+        "name": "Source Code",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Jake Gyllenhaal",
+            "Michelle Monaghan",
+            "Vera Farmiga",
+            "Jeffrey Wright"
+        ],
+        "length": "93 min",
+        "plot": "A soldier wakes up in someone else's body and discovers he's part of an experimental government program to find the bomber of a commuter train. A mission he has only 8 minutes to complete.",
+        "director": "Duncan Jones",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1410063",
+        "name": "The Flowers of War",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Christian Bale",
+            "Ni Ni",
+            "Xinyi Zhang",
+            "Tianyuan Huang"
+        ],
+        "length": "146 min",
+        "plot": "A Westerner finds refuge with a group of women in a church during Japan's rape of Nanking in 1937. Posing as a priest, he attempts to lead the women to safety.",
+        "director": "Yimou Zhang",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1800302",
+        "name": "Gold",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Matthew McConaughey",
+            "Edgar Ram\u00edrez",
+            "Bryce Dallas Howard",
+            "Corey Stoll"
+        ],
+        "length": "120 min",
+        "plot": "Kenny Wells, a prospector desperate for a lucky break, teams up with a similarly eager geologist and sets off on a journey to find gold in the uncharted jungle of Indonesia.",
+        "director": "Stephen Gaghan",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0253556",
+        "name": "Reign of Fire",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Christian Bale",
+            "Matthew McConaughey",
+            "Izabella Scorupco",
+            "Gerard Butler"
+        ],
+        "length": "101 min",
+        "plot": "A brood of fire-breathing dragons emerges from the earth and begins setting everything ablaze, establishing dominance over the planet.",
+        "director": "Rob Bowman",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0401792",
+        "name": "Sin City",
+        "year": 2005,
+        "score": null,
+        "actors": [
+            "Jessica Alba",
+            "Devon Aoki",
+            "Alexis Bledel",
+            "Powers Boothe"
+        ],
+        "length": "124 min",
+        "plot": "A film that explores the dark and miserable town, Basin City, and tells the story of three different people, all caught up in violent corruption.",
+        "director": "Frank Miller, Robert Rodriguez, Quentin Tarantino",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0399201",
+        "name": "The Island",
+        "year": 2005,
+        "score": null,
+        "actors": [
+            "Ewan McGregor",
+            "Scarlett Johansson",
+            "Djimon Hounsou",
+            "Sean Bean"
+        ],
+        "length": "136 min",
+        "plot": "Lincoln Six Echo is just like everyone else - he's waiting to go to the Island, the only place left in the world to actually live a life. Thousands of people stay at a facility waiting to ...",
+        "director": "Michael Bay",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0286499",
+        "name": "Bend It Like Beckham",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Parminder Nagra",
+            "Keira Knightley",
+            "Jonathan Rhys Meyers",
+            "Anupam Kher"
+        ],
+        "length": "112 min",
+        "plot": "The daughter of orthodox Sikh rebels against her parents' traditionalism and joins a football team.",
+        "director": "Gurinder Chadha",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1212428",
+        "name": "The Lost City of Z",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Charlie Hunnam",
+            "Sienna Miller",
+            "Tom Holland",
+            "Robert Pattinson"
+        ],
+        "length": "141 min",
+        "plot": "A true-life drama, centering on British explorer Col. Percival Fawcett, who disappeared while searching for a mysterious city in the Amazon in the 1920s.",
+        "director": "James Gray",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3026488",
+        "name": "Alone in Berlin",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Emma Thompson",
+            "Daniel Br\u00fchl",
+            "Brendan Gleeson",
+            "Mikael Persbrandt"
+        ],
+        "length": "103 min",
+        "plot": "Berlin, 1940. Working class couple Otto and Anna Quangel receive the news that their only son has lost his life in the battlefield and decide to resist the Nazi regime in their very own way. Soon the Gestapo is hunting \"the threat\".",
+        "director": "Vincent Perez",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4572514",
+        "name": "Patriots Day",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Mark Wahlberg",
+            "Dicky Eklund Jr.",
+            "Michael Marchand",
+            "Rhet Kidd"
+        ],
+        "length": "133 min",
+        "plot": "The story of the 2013 Boston Marathon bombing and the aftermath, which includes the city-wide manhunt to find the terrorists responsible.",
+        "director": "Peter Berg",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3759416",
+        "name": "Asterix and Obelix: Mansion of the Gods",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Roger Carel",
+            "Lor\u00e0nt Deutsch",
+            "Laurent Lafitte",
+            "Alexandre Astier"
+        ],
+        "length": "85 min",
+        "plot": "In order to wipe out the Gaulish village by any means necessary, Caesar plans to absorb the villagers into Roman culture by having an estate built next to the village to start a new Roman colony.",
+        "director": "Louis Clichy, Alexandre Astier",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1667353",
+        "name": "Mirror Mirror",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Julia Roberts",
+            "Lily Collins",
+            "Armie Hammer",
+            "Nathan Lane"
+        ],
+        "length": "106 min",
+        "plot": "An evil queen steals control of a kingdom and an exiled princess enlists the help of seven resourceful rebels to win back her birthright.",
+        "director": "Tarsem Singh",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1253864",
+        "name": "Immortals",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Henry Cavill",
+            "Mickey Rourke",
+            "Stephen Dorff",
+            "Freida Pinto"
+        ],
+        "length": "110 min",
+        "plot": "Theseus is a mortal man chosen by Zeus to lead the fight against the ruthless King Hyperion, who is on a rampage across Greece to obtain a weapon that can destroy humanity.",
+        "director": "Tarsem Singh",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0209958",
+        "name": "The Cell",
+        "year": 2000,
+        "score": null,
+        "actors": [
+            "Jennifer Lopez",
+            "Colton James",
+            "Dylan Baker",
+            "Marianne Jean-Baptiste"
+        ],
+        "length": "107 min",
+        "plot": "An FBI agent persuades a social worker, who is adept with a new experimental technology, to enter the mind of a comatose serial killer in order to learn where he has hidden his latest kidnap victim.",
+        "director": "Tarsem Singh",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0159273",
+        "name": "Behind Enemy Lines",
+        "year": 2001,
+        "score": null,
+        "actors": [
+            "Owen Wilson",
+            "Gene Hackman",
+            "Gabriel Macht",
+            "Charles Malik Whitfield"
+        ],
+        "length": "106 min",
+        "plot": "A Navy navigator is shot down over enemy territory and is ruthlessly pursued by a secret police enforcer and the opposing troops. Meanwhile his commanding officer goes against orders in an attempt to rescue him.",
+        "director": "John Moore",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0110478",
+        "name": "Maverick",
+        "year": 1994,
+        "score": null,
+        "actors": [
+            "Mel Gibson",
+            "Jodie Foster",
+            "James Garner",
+            "Graham Greene"
+        ],
+        "length": "127 min",
+        "plot": "Bret Maverick, needing money for a poker tournament, faces various comic mishaps and challenges, including a charming woman thief.",
+        "director": "Richard Donner",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0371552",
+        "name": "Asterix and the Vikings",
+        "year": 2006,
+        "score": null,
+        "actors": [
+            "Roger Carel",
+            "Lor\u00e0nt Deutsch",
+            "Sara Forestier",
+            "Jacques Frantz"
+        ],
+        "length": "78 min",
+        "plot": "After another raid in an empty village, the chief of the Vikings Timandahaf misunderstands the explanation of his druid Cryptograf that \"fear gives wings to the dwellers\" and believes that ...",
+        "director": "Stefan Fjeldmark, Jesper M\u00f8ller",
+        "watched": true
+    },
+    {
+        "type": 3,
+        "imdbId": "tt2993508",
+        "name": "The Witcher 3: Wild Hunt",
+        "year": 2015,
+        "score": null,
+        "plot": "Geralt of Rivia, a monster hunter for hire, embarks on an epic journey to find his former apprentice, Ciri, before The Wild Hunt can capture her and bring the destruction of the world.",
+        "actors": [
+            "Doug Cockle",
+            "Denise Gough",
+            "Jo Wyatt",
+            "Jaimi Barbakoff"
+        ],
+        "played": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2334879",
+        "name": "White House Down",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Channing Tatum",
+            "Jamie Foxx",
+            "Maggie Gyllenhaal",
+            "Jason Clarke"
+        ],
+        "length": "131 min",
+        "plot": "While on a tour of the White House with his young daughter, a Capitol policeman springs into action to save his child and protect the president from a heavily armed group of paramilitary invaders.",
+        "director": "Roland Emmerich",
+        "watched": false
+    },
+    {
+        "type": 3,
+        "imdbId": "tt0153067",
+        "name": "Star Wars: TIE Fighter",
+        "year": 1994,
+        "score": null,
+        "plot": "You play an up and coming combat pilot serving the Galactic Empire.",
+        "actors": [
+            "Guy Siner",
+            "Scott Lawrence",
+            "Denny Delk",
+            "Nick Jameson"
+        ],
+        "played": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1856101",
+        "name": "Blade Runner 2049",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Ana de Armas",
+            "Ryan Gosling",
+            "Robin Wright",
+            "Jared Leto"
+        ],
+        "length": "N\/A",
+        "plot": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K (Ryan Gosling), unearths a long-buried secret that has the potential to plunge what's left of society ...",
+        "director": "Denis Villeneuve"
     }
 ]
