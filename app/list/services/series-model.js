@@ -28,7 +28,15 @@ angular.module('watchlistApp').factory('Series', ['BaseModel', '_', 'Season',
     }
 
     addSeason(year = null) {
-      this.seasons.push(new Season({year: year}));
+      let season = new Season({year: year});
+      this.seasons.push(season);
+      return season;
+    }
+
+    // this is a little inaccurate
+    // need to update to _.find when seasons have nrs
+    getSeason(nr) {
+      return this.seasons[nr - 1];
     }
 
     get watched() {

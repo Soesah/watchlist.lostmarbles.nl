@@ -75,6 +75,14 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
       });
     }
 
+    getSeries() { // with an imdbId
+      let _this = this;
+      return _.filter(this.data, function(item) {
+        return item.imdbId &&
+          (item.type === _this.SERIES);
+      });
+    }
+
     get ALL() {
       return true;
     }
@@ -241,7 +249,7 @@ angular.module('watchlistApp').factory('ListDataFactory', ['$q', 'BaseFactory', 
     }
 
     getTypeName(item) {
-      return _.find(this.getFullTypeList(), {type: item.type}).name;
+      return item ? _.find(this.getFullTypeList(), {type: item.type}).name : 'Unknown';
     }
   }
 

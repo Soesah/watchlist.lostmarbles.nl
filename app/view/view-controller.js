@@ -6,17 +6,19 @@ angular.module('watchlistApp').controller('ViewController', ['$scope', 'ListData
     });
 
     $scope.getItemViewTemplate = function() {
-      switch($scope.item.type) {
-        case ListDataFactory.MOVIE:
-        case ListDataFactory.SEQUEL:
-        case ListDataFactory.PREQUEL:
-          return 'app/view/directives/movie-view.html';
-        case ListDataFactory.SERIES:
-          return 'app/view/directives/series-view.html';
-        case ListDataFactory.DOCUMENTARY:
-          return 'app/view/directives/documentary-view.html';
-        case ListDataFactory.GAME:
-          return 'app/view/directives/game-view.html';
+      if ($scope.item) {
+        switch($scope.item.type) {
+          case ListDataFactory.MOVIE:
+          case ListDataFactory.SEQUEL:
+          case ListDataFactory.PREQUEL:
+            return 'app/view/directives/movie-view.html';
+          case ListDataFactory.SERIES:
+            return 'app/view/directives/series-view.html';
+          case ListDataFactory.DOCUMENTARY:
+            return 'app/view/directives/documentary-view.html';
+          case ListDataFactory.GAME:
+            return 'app/view/directives/game-view.html';
+        }
       }
     };
 

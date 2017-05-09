@@ -2,7 +2,7 @@ angular.module('watchlistApp').factory('OMDbObject', [
   function() {
 
     class OMDbObject {
-      constructor({Title = null, Year = null, Rated = null, Released = null, Runtime = null, Genre = null, Director = null, Writer = null, Actors = null, totalSeasons = null, Plot = null, Language = null, Country = null, Awards = null, Poster = null, Metascore = null, imdbRating = null, imdbVotes = null, imdbID = null, Type = null}) {
+      constructor({Title = null, Year = null, Rated = null, Released = null, Runtime = null, Genre = null, Director = null, Writer = null, Actors = null, totalSeasons = null, Plot = null, Language = null, Country = null, Awards = null, Poster = null, Metascore = null, imdbRating = null, imdbVotes = null, imdbID = null, Type = null, Episodes = null}) {
 
         this.title = Title;
         this.year = Year;
@@ -24,6 +24,8 @@ angular.module('watchlistApp').factory('OMDbObject', [
         this.imdbvotes = imdbVotes;
         this.imdbId = imdbID;
         this.type = Type;
+        // Season specific
+        this.episodes = Episodes;
       }
 
       isMovie() {
