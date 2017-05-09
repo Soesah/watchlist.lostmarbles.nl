@@ -25,7 +25,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
 - <s>add a check (search by name as you type) to prevent doubles from being added</s>
 - <s>implement 'view' view</s>
     - movies have sequels, prequels?
-    - series have seasons, episodes
+    - <s>series have seasons, episodes</s>
     - documentaries have nothing? urls?
     - games have publishers, genre
 - make more sense of seasons watched on the main overview
