@@ -16,6 +16,12 @@ angular.module('watchlistApp').factory('Season', ['Episode', '_',
       });
     }
 
+    getEpisodeByNr(nr) {
+      return _.find(this.episodes, function(item) {
+        return item.nr === nr;
+      });
+    }
+
     createEpisode(imdbId, nr, title) {
       return new Episode({
         imdbId: imdbId,
@@ -24,8 +30,17 @@ angular.module('watchlistApp').factory('Season', ['Episode', '_',
       });
     }
 
+    insertEpisode(nr, episode) {
+      let index = _.findIndex(this.episodes, {nr: nr});
+      this.episodes.splice(index + 1, 0, episode);
+    }
+
     get watched() {
       return this.episodes.length > 0 && _.filter(this.episodes, {watched: false}).length === 0;
+    }
+
+    clone() {
+      return Object.assign(Object.create(this), this);
     }
   }
 

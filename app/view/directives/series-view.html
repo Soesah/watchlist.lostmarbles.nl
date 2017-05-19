@@ -6,7 +6,11 @@
   </div>
   <ul class="seasons">
     <li ng-repeat="season in item.seasons">
-      <p class="season-title">Season <span ng-bind="season.nr"></span><span class="season-year bracketed" ng-bind="season.year"></span></p>
+      <p class="season-title">
+        Season <span ng-bind="season.nr"></span>
+        <span class="season-year bracketed" ng-bind="season.year"></span>
+        <a href="javascript:void(0)" ng-click="editSeason(season)">Edit</a>
+      </p>
       <ul>
         <li ng-repeat="episode in season.episodes">
           <p class="episode-title" ng-class="{'episode-watched': episode.watched}">

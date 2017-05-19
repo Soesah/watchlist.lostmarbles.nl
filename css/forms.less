@@ -138,11 +138,11 @@ textarea {
   font-size: inherit;
 
 
-  &:focus {
+  &:not([disabled]):focus {
     border-color: @black;
   }
 
-  &:hover {
+  &:not([disabled]):hover {
     border-color: @gray;
   }
 
@@ -151,12 +151,20 @@ textarea {
   //   border-color:red;
   // }
 
+  &[disabled] {
+    border-color: @gray-lighter;
+    color: @gray-light;
+    background-color: desaturate(@yellow, 25%);
+  }
+
   &.year {
     width: 70px;
     text-align: center;
+    height: 33px;
   }
   &.length {
     width: 90px;
+    height: 33px;
   }
 
 }

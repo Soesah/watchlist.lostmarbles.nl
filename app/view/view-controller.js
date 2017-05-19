@@ -26,6 +26,10 @@ angular.module('watchlistApp').controller('ViewController', ['$scope', 'ListData
       $location.path('/edit/' + $scope.item.path);
     };
 
+    $scope.editSeason = function(season) {
+      $location.path('/edit/' + $scope.item.path + '/season/' + season.nr);
+    };
+
     $scope.back = function() {
       $location.path('/');
     };

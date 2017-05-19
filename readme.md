@@ -28,7 +28,7 @@ Just for fun, written in es6, using Angular and a little php to maintain a movie
     - movies have sequels, prequels?
     - documentaries have nothing? urls?
     - games have publishers, genre
-    - omdb is oddly not complete on episodes, so you'll need to manual editing there.
+    - omdb is oddly not complete on episodes, so you'll need to manual editing there. Add an edit button on the view screen for each season, and add season editing where you can add episodes, and change their titles. Episodes added in this way should have a fake IMDB id, which should be recognizable as fake, so that the `updateSeason` function can fix that if the data every comes available.
 - make more sense of seasons watched on the main overview
     - perhaps by showing something like 2/3 with the year, or greyed out the years you have watched
 - <s>only deploy from and commit versions on master

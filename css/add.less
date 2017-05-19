@@ -4,8 +4,11 @@
   .form-item-name {
     .search-button {
       margin-left: @size-smaller;
-      width: 33px;
-      min-width: 33px;
+      width: 31px;
+      height: 31px;
+      min-width: 31px;
+      position: relative;
+      top: 1px;
     }
     .icon-spinner {
       width: 20px;
@@ -21,11 +24,13 @@
 
   .update-button {
     padding: 8px;
-    min-width: 20px;
-    width: 33px;
+    min-width: 31px;
+    width: 31px;
+    height: 31px;
     margin-left: 8px;
     font-weight: bold;
     position: relative;
+    top: 1px;
 
     .icon-spinner {
       position: absolute;
@@ -38,16 +43,20 @@
   }
   .add-button {
     padding: 8px;
-    min-width: 20px;
-    width: 33px;
+    min-width: 31px;
+    width: 31px;
+    height: 31px;
     margin-left: 8px;
     font-weight: bold;
     display: none;
+    position: relative;
+    top: 1px;
 
     .icon {
       position: relative;
-      left: -1px;
-      font-size: 11px;
+      left: 0px;
+      top: 1px;
+      font-size: 12px;
     }
   }
   .season-episode-count {
@@ -63,6 +72,18 @@
       .add-button {
         display: inline-block;
       }
+    }
+  }
+  .episode-list {
+    list-style-type: none;
+    padding: 0;
+
+    input + input {
+      margin-left: 10px;
+    }
+
+    .add-button {
+      display: block;
     }
   }
 }
