@@ -30,5 +30,15 @@ angular.module('watchlistApp').controller('ViewController', ['$scope', 'ListData
       $location.path('/');
     };
 
+    $scope.toggleWatched = function(evt, item) {
+      evt.stopPropagation();
+      evt.preventDefault();
+
+      item.toggleWatched();
+      $scope.save().then(function() {}, function() {
+        item.toggleWatched();
+      });
+    };
+
   }
 ]);

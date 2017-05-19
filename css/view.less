@@ -22,13 +22,23 @@
     list-style-type: none;
     padding: 0;
 
-    .season-title {
+    .season-title,
+    .episode-title {
       margin: 8px 0 4px;
       .font-bold();
 
-      .episode-name,
+      &.episode-watched,
       .season-year {
         .font-light();
+      }
+    }
+
+    .icon-series {
+      color: @gray-light;
+
+      &:hover {
+        color: @black;
+        cursor: pointer;
       }
     }
   }

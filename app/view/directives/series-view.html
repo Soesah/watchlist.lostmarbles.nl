@@ -4,13 +4,16 @@
     <h4>Plot</h4>
     <p ng-bind="item.plot"></p>
   </div>
-
   <ul class="seasons">
     <li ng-repeat="season in item.seasons">
       <p class="season-title">Season <span ng-bind="season.nr"></span><span class="season-year bracketed" ng-bind="season.year"></span></p>
       <ul>
         <li ng-repeat="episode in season.episodes">
-          <p class="season-title"><span ng-bind="episode.nr"></span> <span class="episode-name" ng-bind="episode.title"></span></p>
+          <p class="episode-title" ng-class="{'episode-watched': episode.watched}">
+            <span ng-bind="episode.nr"></span>
+            <span class="episode-name"ng-bind="episode.title"></span>
+            <i class="icon icon-series" ng-click="toggleWatched($event, episode)"></i>
+          </p>
         </li>
       </ul>
     </li>
