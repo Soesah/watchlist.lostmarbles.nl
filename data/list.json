@@ -16574,19 +16574,19 @@
                         "imdbId": "tt1262235",
                         "nr": 1,
                         "title": "Episode #1.1",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1262236",
                         "nr": 2,
                         "title": "Episode #1.2",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1262237",
                         "nr": 3,
                         "title": "Episode #1.3",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             }
