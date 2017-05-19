@@ -143,7 +143,7 @@ angular.module('watchlistApp').controller('AdminController', ['$scope', '$q', '$
           while(items[index]) {
             let item = items[index];
 
-            yield OMDbApi.updateSeason(series, item).then(function() {
+            yield OMDbApi.updateSeason(series, item.nr).then(function() {
 
               // and then it finishes, do the next
               if (u.next().done) {

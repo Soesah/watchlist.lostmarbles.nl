@@ -28,7 +28,7 @@ angular.module('watchlistApp').factory('Series', ['BaseModel', '_', 'Season',
     }
 
     addSeason(year = null) {
-      let season = new Season({year: year});
+      let season = new Season({year: year, nr: this.seasons.length + 1});
       this.seasons.push(season);
       return season;
     }

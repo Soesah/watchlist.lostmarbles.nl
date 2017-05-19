@@ -73,17 +73,17 @@ angular.module('watchlistApp').factory('OMDbApi', ['$q', '$http', 'OMDbResults',
         });
       }
 
-      updateSeason(series, item) {
+      updateSeason(series, nr) {
         let _this = this,
-            season = series.getSeason(item.nr);
+            season = series.getSeason(nr);
 
         if (!season) {
           season = series.addSeason();
         }
-        season.nr = item.nr;
+        season.nr = nr;
 
         return $q(function(resolve, reject) {
-          _this.getSeason(series.imdbId, item.nr).then(function(obj){
+          _this.getSeason(series.imdbId, nr).then(function(obj){
             if (obj.title) {
               // update existing episodes, or create new ones
 
@@ -95,11 +95,13 @@ angular.module('watchlistApp').factory('OMDbApi', ['$q', '$http', 'OMDbResults',
                   season.year = parseInt(ep.Released);
                 }
 
+                // update the episode
                 if (episode) {
                   episode.imdbId = ep.imdbID;
                   episode.nr = parseInt(ep.Episode);
                   episode.title = ep.Title;
                 } else {
+                  // or create a new one
                   episode = season.createEpisode(ep.imdbID, parseInt(ep.Episode), ep.Title);
                 }
                 return episode;

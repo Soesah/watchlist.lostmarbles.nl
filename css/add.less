@@ -8,10 +8,6 @@
       min-width: 33px;
     }
     .icon-spinner {
-      -webkit-animation:spin 4s linear infinite;
-      animation:spin 4s linear infinite;
-      animation: spin 4s linear infinite;
-      transform-origin: 10px;
       width: 20px;
       height: 20px;
       text-align: center;
@@ -23,10 +19,27 @@
     }
   }
 
+  .update-button {
+    padding: 8px;
+    min-width: 20px;
+    width: 33px;
+    margin-left: 8px;
+    font-weight: bold;
+    position: relative;
+
+    .icon-spinner {
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
   .add-button {
     padding: 8px;
     min-width: 20px;
-    width: 31px;
+    width: 33px;
     margin-left: 8px;
     font-weight: bold;
     display: none;
@@ -36,6 +49,10 @@
       left: -1px;
       font-size: 11px;
     }
+  }
+  .season-episode-count {
+    padding: 10px;
+    .font-light();
   }
 
   .series-list {
@@ -48,6 +65,14 @@
       }
     }
   }
+}
+
+.icon-spinner {
+  -webkit-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+  transform-origin: 10px;
+  text-align: center;
 }
 
 @-webkit-keyframes spin { 100%

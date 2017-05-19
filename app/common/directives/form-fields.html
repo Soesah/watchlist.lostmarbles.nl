@@ -38,7 +38,14 @@
       <div class="form-item form-item-required">
         <label>Season <span ng-bind="$index + 1"></span> year</label><div class="form-input-group">
           <input type="text" integer ng-required="true" placeholder="{{2017 + $index}}" class="year" ng-model="season.year" />
-          <button class="add-button option" type="button" ng-click="addSeason()" ng-if="!item.finished"><i class="icon icon-plus"></i></button>
+          <button class="update-button option" type="button" ng-click="updateSeason(item, season.nr)">
+            <i class="icon icon-series" ng-hide="updating"></i>
+            <i class="icon icon-spinner" ng-show="updating"></i>
+          </button>
+          <button class="add-button option" type="button" ng-click="addSeason()" ng-if="!item.finished">
+            <i class="icon icon-plus"></i>
+          </button>
+          <span class="bracketed season-episode-count" ng-show="season.episodes.length"><span ng-bind="season.episodes.length"></span> episodes</span>
         </div>
       </div>
     </li>
