@@ -35,6 +35,12 @@ angular.module('watchlistApp').factory('Season', ['Episode', '_',
       this.episodes.splice(index + 1, 0, episode);
     }
 
+    toggleWatched() {
+      _.each(this.episodes, function(episode) {
+        episode.toggleWatched();
+      });
+    }
+
     get watched() {
       return this.episodes.length > 0 && _.filter(this.episodes, {watched: false}).length === 0;
     }

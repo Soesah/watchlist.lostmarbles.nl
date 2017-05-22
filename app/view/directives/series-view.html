@@ -9,6 +9,7 @@
       <p class="season-title">
         Season <span ng-bind="season.nr"></span>
         <span class="season-year bracketed" ng-bind="season.year"></span>
+        <i class="icon icon-series" ng-click="toggleWatched($event, season)"></i>
         <a href="javascript:void(0)" ng-click="editSeason(season)">Edit</a>
       </p>
       <ul class="episodes">
