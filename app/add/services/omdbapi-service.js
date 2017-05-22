@@ -4,6 +4,7 @@ angular.module('watchlistApp').factory('OMDbApi', ['$q', '$http', 'OMDbResults',
     class OMDbApi {
       constructor() {
         this.url = 'http://www.omdbapi.com/';
+        this.apiKey = '3e5351f0'; // this isn't very nice, might be nicer to do these request on the server to protect the api key.
       }
 
       request(url, Model) {
@@ -20,21 +21,20 @@ angular.module('watchlistApp').factory('OMDbApi', ['$q', '$http', 'OMDbResults',
           });
         });
       }
-
       search(name, year) {
-        return this.request(this.url + '?s=' + name + (year ? '&y=' + year : ''), OMDbResults);
+        return this.request(this.url + '?s=' + name + (year ? '&y=' + year : '') + '&apikey=' + this.apiKey, OMDbResults);
       }
 
       lucky(name) {
-        return this.request(this.url + '?t=' + name + '&y=&plot=short&r=json', OMDbObject);
+        return this.request(this.url + '?t=' + name + '&y=&plot=short&r=json&apikey=' + this.apiKey, OMDbObject);
       }
 
       get(id) {
-        return this.request(this.url + '?i=' + id + '&r=json', OMDbObject);
+        return this.request(this.url + '?i=' + id + '&r=json&apikey=' + this.apiKey, OMDbObject);
       }
 
       getSeason(id, nr) {
-        return this.request(this.url + '?i=' + id + '&Season=' + nr + '&r=json', OMDbObject);
+        return this.request(this.url + '?i=' + id + '&Season=' + nr + '&r=json&apikey=' + this.apiKey, OMDbObject);
       }
 
       updateMovie(item, props) {
