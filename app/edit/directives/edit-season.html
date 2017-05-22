@@ -12,6 +12,16 @@
 
   <h3>Episodes</h3>
   <ul class="episode-list">
+    <li ng-if="season.episodes[0].nr !== 1">
+      <div class="form-item">
+        <label></label>
+        <div class="form-input-group form-input-group-right">
+          <button class="add-button option" type="button" ng-click="addEpisode(null)">
+            <i class="icon icon-plus"></i>
+          </button>
+        </div>
+      </div>
+    </li>
     <li ng-repeat="episode in season.episodes">
       <div class="form-item">
         <label>Episode <span ng-bind="episode.nr"></span></label><div class="form-input-group">

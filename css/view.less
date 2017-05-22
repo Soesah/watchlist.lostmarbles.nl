@@ -10,10 +10,37 @@
     }
   }
 
-  .seasons,
+  .seasons {
+    .episodes {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        .well();
+        width: 40%;
+        display: block;
+        margin-right: @size-smaller;
+        margin-bottom: @size-smaller;
+        padding-left: 50px;
+        position: relative;
+      }
+
+      .episode-nr {
+        position: absolute;
+        width: 40px;
+        top: 0;
+        left: 0;
+        height: 100%;
+        text-align: center;
+        padding: @size-small 0;
+        border-right: solid 1px @gray-lighter;
+        .font-light();
+      }
+    }
+  }
   .actors {
     ul {
-      .ul();
+      .ul()
     }
   }
 

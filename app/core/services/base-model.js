@@ -18,7 +18,7 @@ angular.module('watchlistApp').factory('BaseModel', [
     }
 
     clone() {
-      return Object.assign(Object.create(this), this);
+      return Object.assign(Object.create(this), JSON.parse(JSON.stringify(this)));
     }
   }
 

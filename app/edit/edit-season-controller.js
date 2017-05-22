@@ -13,6 +13,14 @@ angular.module('watchlistApp').controller('EditSeasonController', ['$scope', '_'
 
       _.merge($scope.originalSeason, $scope.season);
 
+      let item = _.find($scope.list, {path: $routeParams.path});
+
+      if (!item) {
+        throw new Error('Cannot find item to update');
+      } else {
+        _.merge(item, $scope.item);
+      }
+
       $scope.save().then(function() {
         $location.path('/view/' + $routeParams.path);
       });
@@ -23,10 +31,10 @@ angular.module('watchlistApp').controller('EditSeasonController', ['$scope', '_'
     };
 
     $scope.addEpisode = function(episode) {
-      let nr = episode.nr + 1,
+      let nr = episode ? episode.nr + 1 : 1,
           newEpisode = $scope.season.createEpisode('NON-IMDB-ID-' + $scope.season.year + '-' + $scope.season.nr + '-' + nr , nr, '');
 
-      $scope.season.insertEpisode(episode.nr, newEpisode);
+      $scope.season.insertEpisode(nr - 1, newEpisode);
     };
 
     $scope.isInSequence = function(episode) {
