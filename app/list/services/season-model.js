@@ -46,7 +46,7 @@ angular.module('watchlistApp').factory('Season', ['Episode', '_',
     }
 
     clone() {
-      return Object.assign(Object.create(this), JSON.parse(JSON.stringify(this)));
+      return new this.constructor(JSON.parse(JSON.stringify(this)));
     }
   }
 
