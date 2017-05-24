@@ -13,7 +13,7 @@ angular.module('watchlistApp').controller('EditSeasonController', ['$scope', '_'
 
       _.merge($scope.originalSeason, $scope.season);
 
-      let item = _.find($scope.list, {path: $routeParams.path});
+      let item = _.find($scope.list, {path: $scope.item.path});
 
       if (!item) {
         throw new Error('Cannot find item to update');
@@ -22,7 +22,7 @@ angular.module('watchlistApp').controller('EditSeasonController', ['$scope', '_'
       }
 
       $scope.save().then(function() {
-        $location.path('/view/' + $routeParams.path);
+        $location.path('/view/' + item.path);
       });
     };
 

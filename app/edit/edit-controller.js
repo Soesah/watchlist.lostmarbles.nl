@@ -27,7 +27,7 @@ angular.module('watchlistApp').controller('EditController', ['$scope', '_', 'Lis
       }
 
       $scope.save().then(function() {
-        $location.path('/view/' + $routeParams.path);
+        $location.path('/view/' + item.path);
       });
     };
 
