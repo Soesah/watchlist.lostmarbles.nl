@@ -1,8 +1,8 @@
 <div class="filters">
   <div class="filter">
     <label>Filter by name</label>
-    <input type="text" placeholder="Filter" ng-model="filter"/>
-    <button class="clear" ng-click="filter = ''" ng-show="filter">
+    <input type="text" placeholder="Filter" ng-model="filter.search"/>
+    <button class="clear" ng-click="filter.search = ''" ng-show="filter.search">
       <i class="icon icon-delete"></i>
     </button>
     <button type="button" class="advanced option icon-only" ng-class="{'active': showMore}" ng-click="showMore = !showMore;"><i class="icon icon-cogs"></i></button>
@@ -13,7 +13,7 @@
       <li ng-repeat="type in types">
         <a href="javascript:void(0)"
           ng-bind="type.name"
-          ng-class="{'active': itemType === type.type}"
+          ng-class="{'active': isActive(type)}"
           ng-click="setItemType(type.type);"></a>
       </a></li>
     </ul>
@@ -24,19 +24,8 @@
       <li ng-repeat="state in states">
         <a href="javascript:void(0)"
           ng-bind="state.name"
-          ng-class="{'active': itemState === state.state}"
+          ng-class="{'active': filter.itemState === state.state}"
           ng-click="setItemState(state.state);"></a>
-      </a></li>
-    </ul>
-  </div>
-  <div class="filter" ng-show="showMore">
-    <label>IMDB Verified</label>
-    <ul class="unselectable">
-      <li ng-repeat="state in states">
-        <a href="javascript:void(0)"
-          ng-bind="state.name"
-          ng-class="{'active': itemState === state.state}"
-          ng-click="setItemIMDBVerified(state.state);"></a>
       </a></li>
     </ul>
   </div>

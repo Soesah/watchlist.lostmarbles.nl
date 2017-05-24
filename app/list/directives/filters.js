@@ -1,4 +1,4 @@
-angular.module('watchlistApp').directive('filters', function() {
+angular.module('watchlistApp').directive('filters', ['_', function(_) {
   'use strict';
   return {
     restrict: 'E',
@@ -6,6 +6,10 @@ angular.module('watchlistApp').directive('filters', function() {
     templateUrl: 'app/list/directives/filters.html',
     link: function(scope) {
       scope.showMore = false;
+
+      scope.isActive = function(type) {
+        return _.isEqual(scope.filter.itemType, type.type);
+      }
     }
   };
-});
+}]);

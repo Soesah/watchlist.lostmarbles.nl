@@ -10,7 +10,7 @@
   <p>Showing <b ng-bind="filtered.length"></b> movies, series, games and documentaries. <a href="javascript:void(0)" ng-click="add()">Add something to watch</a></p>
 
   <ul class="list">
-    <item ng-repeat="item in filtered = (list|listFilter:itemType:itemState:itemVerified:filter)|orderBy:'name' track by $index"></item>
+    <item ng-repeat="item in filtered = (list|listFilter:filter)|orderBy:'name' track by $index"></item>
     <li class="message warning ng-hide" ng-show="!filtered.length && !loading">
       <p><i class="icon icon-warning"></i> Adjust the filters to see results</p>
     </li>

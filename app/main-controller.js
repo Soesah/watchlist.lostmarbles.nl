@@ -3,6 +3,12 @@ angular.module('watchlistApp').controller('MainController', ['$scope', '$rootSco
 
     $scope.list = [];
     $scope.loading = true;
+    $scope.filter = {
+      search: '',
+      itemType: ListDataFactory.ALL,
+      itemState: null,
+      itemVerified: null
+    };
 
     ListDataFactory.load().then(function(data) {
       $scope.list = data;

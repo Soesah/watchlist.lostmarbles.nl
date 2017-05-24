@@ -1,24 +1,20 @@
 angular.module('watchlistApp').filter('listFilter', ['_', 'ListDataFactory',
   function(_, ListDataFactory) {
     'use strict';
-    return function(list, itemType, itemState, itemVerified, filter) {
+    return function(list, filter) {
       return _.filter(list, function(obj) {
         let show = true;
 
-        if (filter) {
-          show = obj.name.toLowerCase().indexOf(filter.toLowerCase()) !== -1;
+        if (filter.search) {
+          show = obj.name.toLowerCase().indexOf(filter.search.toLowerCase()) !== -1;
         }
 
-        if (show && itemType !== ListDataFactory.ALL) {
-          show = itemType.indexOf(obj.type) !== -1;
+        if (show && filter.itemType !== ListDataFactory.ALL) {
+          show = filter.itemType.indexOf(obj.type) !== -1;
         }
 
-        if (show && itemState !== null) {
-          show = obj.watched === itemState;
-        }
-
-        if (show && itemVerified !== null) {
-          show = itemVerified ? obj.imdbId !== null : obj.imdbId === null;
+        if (show && filter.itemState !== null) {
+          show = obj.watched === filter.itemState;
         }
 
         return show;
