@@ -21,9 +21,7 @@ angular.module('watchlistApp').controller('ListController', ['$scope', 'ListData
       evt.preventDefault();
 
       item.toggleWatched();
-      $scope.save().then(function() {}, function() {
-        item.toggleWatched();
-      });
+      $scope.save();
     };
 
     $scope.add = function() {
