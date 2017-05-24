@@ -16169,7 +16169,7 @@
                         "imdbId": "tt2909762",
                         "nr": 1,
                         "title": "Hunted",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2909774",
@@ -16832,37 +16832,37 @@
                         "imdbId": "tt1263532",
                         "nr": 1,
                         "title": "Episode #1.1",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1263533",
                         "nr": 2,
                         "title": "Episode #1.2",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1263534",
                         "nr": 3,
                         "title": "Episode #1.3",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1263535",
                         "nr": 4,
                         "title": "Episode #1.4",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1263536",
                         "nr": 5,
                         "title": "Episode #1.5",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1263537",
                         "nr": 6,
                         "title": "Episode #1.6",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             }
@@ -30235,5 +30235,162 @@
         "plot": "Abraham Lincoln, the 16th President of the United States, discovers vampires are planning to take over the United States. He makes it his mission to eliminate them.",
         "director": "Timur Bekmambetov",
         "watched": false
+    },
+    {
+        "type": 1,
+        "imdbId": "tt3230454",
+        "name": "The Last Man on Earth",
+        "plot": "Almost two years after a virus wiped out most of the human race, Phil Miller only wishes for some company, but soon gets more than he bargained for when that company shows up in the form of other survivors.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2015,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Will Forte",
+            "Kristen Schaal",
+            "January Jones",
+            "Mel Rodriguez"
+        ]
+    },
+    {
+        "type": 1,
+        "imdbId": "tt4374208",
+        "name": "Catastrophe",
+        "plot": "American boy Rob gets Irish girl Sharon pregnant while they hook up for a week while on a business trip to London.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2015,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Sharon Horgan",
+            "Rob Delaney",
+            "Mark Bonnar",
+            "Daniel Lapaine"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0316654",
+        "name": "Spider-Man 2",
+        "year": 2004,
+        "score": null,
+        "actors": [
+            "Tobey Maguire",
+            "Kirsten Dunst",
+            "James Franco",
+            "Alfred Molina"
+        ],
+        "length": "127 min",
+        "plot": "Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius.",
+        "director": "Sam Raimi",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0145487",
+        "name": "Spider-Man",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Tobey Maguire",
+            "Willem Dafoe",
+            "Kirsten Dunst",
+            "James Franco"
+        ],
+        "length": "121 min",
+        "plot": "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.",
+        "director": "Sam Raimi",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0413300",
+        "name": "Spider-Man 3",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Tobey Maguire",
+            "Kirsten Dunst",
+            "James Franco",
+            "Thomas Haden Church"
+        ],
+        "length": "139 min",
+        "plot": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
+        "director": "Sam Raimi",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0948470",
+        "name": "The Amazing Spider-Man",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Andrew Garfield",
+            "Emma Stone",
+            "Rhys Ifans",
+            "Denis Leary"
+        ],
+        "length": "136 min",
+        "plot": "After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to solve the mystery of his parent's mysterious death.",
+        "director": "Marc Webb",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1872181",
+        "name": "The Amazing Spider-Man 2",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Andrew Garfield",
+            "Emma Stone",
+            "Jamie Foxx",
+            "Dane DeHaan"
+        ],
+        "length": "142 min",
+        "plot": "When New York is put under siege by Oscorp, it is up to Spider-Man to save the city he swore to protect as well as his loved ones.",
+        "director": "Marc Webb",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2250912",
+        "name": "Spider-Man: Homecoming",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Robert Downey Jr.",
+            "Tom Holland",
+            "Marisa Tomei",
+            "Michael Keaton"
+        ],
+        "length": "N\/A",
+        "plot": "Following the events of Captain America: Civil War (2016), Peter Parker attempts to balance his life in high school with his career as the web-slinging superhero Spider-Man.",
+        "director": "Jon Watts"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1477834",
+        "name": "Aquaman",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Jason Momoa",
+            "Amber Heard",
+            "Patrick Wilson",
+            "Willem Dafoe"
+        ],
+        "length": "N\/A",
+        "plot": "Arthur Curry learns that he is the heir to the underwater kingdom of Atlantis, and must step forward to lead his people and to be a hero to the world.",
+        "director": "James Wan"
     }
 ]
