@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataFactory', '$location',
-  function($scope, ListDataFactory, $location) {
+angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataFactory',  'OMDbApi', '$location',
+  function($scope, ListDataFactory, OMDbApi, $location) {
 
     $scope.item = ListDataFactory.new(ListDataFactory.MOVIE);
 
@@ -24,5 +24,12 @@ angular.module('watchlistApp').controller('AddController', ['$scope', 'ListDataF
       $location.path('/');
     };
 
+    $scope.updating = false;
+    $scope.updateSeason = function(series, nr) {
+      $scope.updating = true;
+      OMDbApi.updateSeason(series, nr).then(function() {
+        $scope.updating = false;
+      });
+    };
   }
 ]);

@@ -2,6 +2,12 @@
 <h2>Edit <i class="spaced" ng-bind="item.name"></i>season<span class="spaced" ng-bind="season.nr"></span></h2>
   <p>Update and complete the information for this season</p>
 
+  <button class="update-season-button option" type="button" tooltip="'Update season episodes'|top"  ng-click="updateSeason(item, season.nr)">
+    <i class="icon icon-series" ng-hide="updating"></i>
+    <i class="icon icon-spinner" ng-show="updating"></i>
+    Update season
+  </button>  
+
   <div class="form-item form-item-required">
     <label>Number</label><input type="text" integer disabled ng-required="true" placeholder="1" class="year" ng-model="season.nr" />
   </div>
