@@ -1,0 +1,129 @@
+/* tooltip */
+
+.tooltip
+{
+  position: absolute;
+  z-index: 10000;
+
+  .tooltip-text
+  {
+    position: relative;
+    min-width: 160px;
+    max-width: 240px;
+    border-radius: 4px;
+    background-color: black;
+    background-color: fade(@black, 70%);
+    .font-light();
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    padding: 8px;
+    text-align: left;
+    -webkit-font-smoothing: auto;
+
+    &:before
+    {
+      content: '';
+      position: absolute;
+      border: solid 10px transparent;
+    }
+  }
+}
+
+.tooltip-bottom
+{
+  top: 100%;
+  left:-12px;
+
+  .tooltip-text
+  {
+    top: 11px;
+
+    &:before
+    {
+      border-bottom-color: fade(@black, 70%);
+      top:-30px;
+      left: 10px;
+      width: 0px;
+      height: 10px;
+    }
+  }
+}
+
+.tooltip-top
+{
+  bottom: 100%;
+  left:-12px;
+
+  .tooltip-text
+  {
+    bottom: 11px;
+
+    &:before
+    {
+      border-top-color: fade(@black, 70%);
+      bottom:-30px;
+      left: 10px;
+      width: 0px;
+      height: 10px;
+    }
+  }
+}
+
+.tooltip-left
+{
+  top: -0.75em;
+  right: 100%;
+  .tooltip-text
+  {
+    left:-11px;
+
+    &:before
+    {
+      border-left-color: fade(@black, 70%);
+      top: 1em;
+      right:-30px;
+      width: 10px;
+      height: 0px;
+    }
+  }
+}
+
+.tooltip-right
+{
+  top: -0.75em;
+  left: 100%;
+  .tooltip-text
+  {
+    right:-11px;
+
+    &:before
+    {
+      border-right-color: fade(@black, 70%);
+      top: 1em;
+      left:-30px;
+      width: 10px;
+      height: 0px;
+    }
+  }
+}
+
+.tooltip-top-center
+{
+  bottom: 100%;
+  left:-12px;
+
+  .tooltip-text
+  {
+    bottom: 11px;
+
+    &:before
+    {
+      border-top-color: fade(@black, 70%);
+      bottom:-30px;
+      left: 10px;
+      width: 0px;
+      height: 10px;
+    }
+  }
+}
