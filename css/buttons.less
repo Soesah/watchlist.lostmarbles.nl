@@ -47,6 +47,17 @@ button {
     cursor: default;
   }
 }
+@media screen and (max-width:400px) {
+ 
+    button {
+      padding: @size-smaller / 2;
+    }
+
+    button.icon-only {
+      font-size: 13px;
+    }
+
+}
 
 @media screen and (max-width:360px) {
   button {
@@ -55,3 +66,4 @@ button {
     margin-bottom: 0;
   }
 }
+

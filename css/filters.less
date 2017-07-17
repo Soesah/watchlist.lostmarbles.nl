@@ -14,8 +14,13 @@
     }
   }
 
+  .filter-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
   input {
-    padding: @size-smaller;
     margin-bottom: @size-smaller;
   }
 
@@ -47,6 +52,7 @@
     width: auto;
     position: relative;
     top: 4px;
+    margin-left: 8px;
 
     &.active {
       background-color: @beige-dark;
@@ -89,10 +95,6 @@
       display: block;
     }
 
-    input {
-      padding: @size-smaller / 2;
-    }
-
     ul {
       flex-wrap: wrap;
 
@@ -102,6 +104,9 @@
 
         }
       }
+    }
+    .advanced {
+      top: 1px;
     }
   }
 }

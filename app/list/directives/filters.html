@@ -1,11 +1,13 @@
 <div class="filters">
   <div class="filter">
     <label>Filter by name</label>
-    <input type="text" placeholder="Filter" ng-model="filter.search"/>
-    <button class="clear" ng-click="filter.search = ''" ng-show="filter.search">
-      <i class="icon icon-delete"></i>
-    </button>
-    <button type="button" class="advanced option icon-only" ng-class="{'active': showMore}" ng-click="showMore = !showMore;"><i class="icon icon-cogs"></i></button>
+    <div class="filter-row">
+      <input type="text" placeholder="Filter" ng-model="filter.search"/>
+      <button class="clear" ng-click="filter.search = ''" ng-show="filter.search">
+        <i class="icon icon-delete"></i>
+      </button>
+      <button type="button" class="advanced option icon-only" ng-class="{'active': showMore}" ng-click="showMore = !showMore;"><i class="icon icon-cogs"></i></button>
+    </div>
   </div>
   <div class="filter" ng-show="showMore">
     <label>Filter by type</label>
