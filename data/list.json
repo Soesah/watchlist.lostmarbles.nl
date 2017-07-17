@@ -629,55 +629,55 @@
                         "imdbId": "tt4518590",
                         "nr": 1,
                         "title": "The New World",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4603034",
                         "nr": 2,
                         "title": "Sunrise",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4666956",
                         "nr": 3,
                         "title": "The Illustrated Woman",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4723648",
                         "nr": 4,
                         "title": "Revelations",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4747886",
                         "nr": 5,
                         "title": "The New Normal",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4767922",
                         "nr": 6,
                         "title": "Three Monkeys",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4560066",
                         "nr": 7,
                         "title": "Truth",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4845296",
                         "nr": 8,
                         "title": "End of the World",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4883792",
                         "nr": 9,
                         "title": "Kindness",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4919842",
@@ -695,31 +695,31 @@
                         "imdbId": "tt5282594",
                         "nr": 1,
                         "title": "The Tiger's Cave",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt5599932",
                         "nr": 2,
                         "title": "The Road Less Traveled",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt5646866",
                         "nr": 3,
                         "title": "Travelers",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt5673892",
                         "nr": 4,
                         "title": "Escalation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt5833860",
                         "nr": 5,
                         "title": "Duck and Cover",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt5880462",
@@ -1060,9 +1060,33 @@
                 ]
             },
             {
-                "year": null,
+                "year": 2017,
                 "nr": 3,
                 "episodes": [
+                    {
+                        "imdbId": "tt5863364",
+                        "nr": 1,
+                        "title": "Episode #3.1",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5863366",
+                        "nr": 2,
+                        "title": "Episode #3.2",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5863374",
+                        "nr": 4,
+                        "title": "Episode #3.4",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5863372",
+                        "nr": 5,
+                        "title": "Episode #3.5",
+                        "watched": false
+                    },
                     {
                         "imdbId": "tt5863378",
                         "nr": 6,
@@ -2875,9 +2899,27 @@
                         "watched": false
                     },
                     {
+                        "imdbId": "NON-IMDB-ID-2016-3-18",
+                        "nr": 18,
+                        "title": "Double Agent Droid",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2016-3-19",
+                        "nr": 19,
+                        "title": "Twin Suns",
+                        "watched": false
+                    },
+                    {
                         "imdbId": "tt6518616",
                         "nr": 20,
                         "title": "Zero Hour: Part 1",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2016-3-21",
+                        "nr": 21,
+                        "title": "Zero Hour: Part 2",
                         "watched": false
                     }
                 ]
@@ -16783,7 +16825,7 @@
         "imdbId": "tt0287839",
         "name": "Children of Dune",
         "plot": "The twins of Paul \"Muad'dib\" Atreides become embroiled in the political landscape of Arrakis (\"Dune\") and the rest of the universe.",
-        "finished": false,
+        "finished": true,
         "seasons": [
             {
                 "year": 2003,
@@ -16793,19 +16835,19 @@
                         "imdbId": "tt1439621",
                         "nr": 1,
                         "title": "Episode #1.1",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1684390",
                         "nr": 2,
                         "title": "Episode #1.2",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1684391",
                         "nr": 3,
                         "title": "Episode #1.3",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             }
@@ -16889,109 +16931,109 @@
                         "imdbId": "tt2176186",
                         "nr": 0,
                         "title": "Unaired Pilot",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0775431",
                         "nr": 1,
                         "title": "Pilot",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1091289",
                         "nr": 2,
                         "title": "The Big Bran Hypothesis",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1091290",
                         "nr": 3,
                         "title": "The Fuzzy Boots Corollary",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1091291",
                         "nr": 4,
                         "title": "The Luminous Fish Effect",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1091292",
                         "nr": 5,
                         "title": "The Hamburger Postulate",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1091293",
                         "nr": 6,
                         "title": "The Middle Earth Paradigm",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1136041",
                         "nr": 7,
                         "title": "The Dumpling Paradox",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127389",
                         "nr": 8,
                         "title": "The Grasshopper Experiment",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127390",
                         "nr": 9,
                         "title": "The Cooper-Hofstadter Polarization",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127384",
                         "nr": 10,
                         "title": "The Loobenfeld Decay",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127385",
                         "nr": 11,
                         "title": "The Pancake Batter Anomaly",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127386",
                         "nr": 12,
                         "title": "The Jerusalem Duality",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127387",
                         "nr": 13,
                         "title": "The Bat Jar Conjecture",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127905",
                         "nr": 14,
                         "title": "The Nerdvana Annihilation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127906",
                         "nr": 15,
                         "title": "The Pork Chop Indeterminacy",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127907",
                         "nr": 16,
                         "title": "The Peanut Reaction",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127908",
                         "nr": 17,
                         "title": "The Tangerine Factor",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             },
@@ -17003,139 +17045,139 @@
                         "imdbId": "tt1256599",
                         "nr": 1,
                         "title": "The Bad Fish Paradigm",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256030",
                         "nr": 2,
                         "title": "The Codpiece Topology",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256034",
                         "nr": 3,
                         "title": "The Barbarian Sublimation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256035",
                         "nr": 4,
                         "title": "The Griffin Equivalency",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256036",
                         "nr": 5,
                         "title": "The Euclid Alternative",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256037",
                         "nr": 6,
                         "title": "The Cooper-Nowitzki Theorem",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256038",
                         "nr": 7,
                         "title": "The Panty Pi\u00f1ata Polarization",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256039",
                         "nr": 8,
                         "title": "The Lizard-Spock Expansion",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256040",
                         "nr": 9,
                         "title": "The White Asparagus Triangulation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256020",
                         "nr": 10,
                         "title": "The Vartabedian Conundrum",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256021",
                         "nr": 11,
                         "title": "The Bath Item Gift Hypothesis",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256022",
                         "nr": 12,
                         "title": "The Killer Robot Instability",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256023",
                         "nr": 13,
                         "title": "The Friendship Algorithm",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256024",
                         "nr": 14,
                         "title": "The Financial Permeability",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256025",
                         "nr": 15,
                         "title": "The Maternal Capacitance",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256026",
                         "nr": 16,
                         "title": "The Cushion Saturation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256027",
                         "nr": 17,
                         "title": "The Terminator Decoupling",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256028",
                         "nr": 18,
                         "title": "The Work Song Nanocluster",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256029",
                         "nr": 19,
                         "title": "The Dead Hooker Juxtaposition",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256031",
                         "nr": 20,
                         "title": "The Hofstadter Isotope",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256032",
                         "nr": 21,
                         "title": "The Vegas Renormalization",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1256033",
                         "nr": 22,
                         "title": "The Classified Materials Turbulence",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1426233",
                         "nr": 23,
                         "title": "The Monopolar Expedition",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             },
@@ -17147,139 +17189,139 @@
                         "imdbId": "tt1487706",
                         "nr": 1,
                         "title": "The Electric Can Opener Fluctuation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1495238",
                         "nr": 2,
                         "title": "The Jiminy Conjecture",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1494210",
                         "nr": 3,
                         "title": "The Gothowitz Deviation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1523181",
                         "nr": 4,
                         "title": "The Pirate Solution",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1528188",
                         "nr": 5,
                         "title": "The Creepy Candy Coating Corollary",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1523180",
                         "nr": 6,
                         "title": "The Cornhusker Vortex",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1535334",
                         "nr": 7,
                         "title": "The Guitarist Amplification",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1536922",
                         "nr": 8,
                         "title": "The Adhesive Duck Deficiency",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1544819",
                         "nr": 9,
                         "title": "The Vengeance Formulation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1558529",
                         "nr": 10,
                         "title": "The Gorilla Experiment",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1558530",
                         "nr": 11,
                         "title": "The Maternal Congruence",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1567073",
                         "nr": 12,
                         "title": "The Psychic Vortex",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1570312",
                         "nr": 13,
                         "title": "The Bozeman Reaction",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1588684",
                         "nr": 14,
                         "title": "The Einstein Approximation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1589887",
                         "nr": 15,
                         "title": "The Large Hadron Collision",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1592080",
                         "nr": 16,
                         "title": "The Excelsior Acquisition",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1607974",
                         "nr": 17,
                         "title": "The Precious Fragmentation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1609715",
                         "nr": 18,
                         "title": "The Pants Alternative",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1609410",
                         "nr": 19,
                         "title": "The Wheaton Recurrence",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1628617",
                         "nr": 20,
                         "title": "The Spaghetti Catalyst",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1648755",
                         "nr": 21,
                         "title": "The Plimpton Stimulation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1648756",
                         "nr": 22,
                         "title": "The Staircase Implementation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1627740",
                         "nr": 23,
                         "title": "The Lunar Excitation",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             },
@@ -17291,145 +17333,145 @@
                         "imdbId": "tt1632224",
                         "nr": 1,
                         "title": "The Robotic Manipulation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632235",
                         "nr": 2,
                         "title": "The Cruciferous Vegetable Amplification",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632240",
                         "nr": 3,
                         "title": "The Zazzy Substitution",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632241",
                         "nr": 4,
                         "title": "The Hot Troll Deviation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632242",
                         "nr": 5,
                         "title": "The Desperation Emanation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632243",
                         "nr": 6,
                         "title": "The Irish Pub Formulation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632244",
                         "nr": 7,
                         "title": "The Apology Insufficiency",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632245",
                         "nr": 8,
                         "title": "The 21-Second Excitation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632246",
                         "nr": 9,
                         "title": "The Boyfriend Complexity",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632225",
                         "nr": 10,
                         "title": "The Alien Parasite Hypothesis",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632226",
                         "nr": 11,
                         "title": "The Justice League Recombination",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632227",
                         "nr": 12,
                         "title": "The Bus Pants Utilization",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632228",
                         "nr": 13,
                         "title": "The Love Car Displacement",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632229",
                         "nr": 14,
                         "title": "The Thespian Catalyst",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632230",
                         "nr": 15,
                         "title": "The Benefactor Factor",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632231",
                         "nr": 16,
                         "title": "The Cohabitation Formulation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632232",
                         "nr": 17,
                         "title": "The Toast Derivation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632233",
                         "nr": 18,
                         "title": "The Prestidigitation Approximation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632234",
                         "nr": 19,
                         "title": "The Zarnecki Incursion",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632236",
                         "nr": 20,
                         "title": "The Herb Garden Germination",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632237",
                         "nr": 21,
                         "title": "The Agreement Dissection",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632238",
                         "nr": 22,
                         "title": "The Wildebeest Implementation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1632239",
                         "nr": 23,
                         "title": "The Engagement Reaction",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1918407",
                         "nr": 24,
                         "title": "The Roommate Transmogrification",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             },
@@ -17441,145 +17483,145 @@
                         "imdbId": "tt1980710",
                         "nr": 1,
                         "title": "The Skank Reflex Analysis",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2033019",
                         "nr": 2,
                         "title": "The Infestation Hypothesis",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2057241",
                         "nr": 3,
                         "title": "The Pulled Groin Extrapolation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2058495",
                         "nr": 4,
                         "title": "The Wiggly Finger Catalyst",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2063481",
                         "nr": 5,
                         "title": "The Russian Rocket Reaction",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2079337",
                         "nr": 6,
                         "title": "The Rhinitis Revelation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2082016",
                         "nr": 7,
                         "title": "The Good Guy Fluctuation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2092310",
                         "nr": 8,
                         "title": "The Isolation Permutation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2100287",
                         "nr": 9,
                         "title": "The Ornithophobia Diffusion",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2105978",
                         "nr": 10,
                         "title": "The Flaming Spittoon Acquisition",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2119890",
                         "nr": 11,
                         "title": "The Speckerman Recurrence",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2136314",
                         "nr": 12,
                         "title": "The Shiny Trinket Maneuver",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2139151",
                         "nr": 13,
                         "title": "The Recombination Hypothesis",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2181587",
                         "nr": 14,
                         "title": "The Beta Test Initiation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2192687",
                         "nr": 15,
                         "title": "The Friendship Contraction",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2209665",
                         "nr": 16,
                         "title": "The Vacation Solution",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2220955",
                         "nr": 17,
                         "title": "The Rothman Disintegration",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2238153",
                         "nr": 18,
                         "title": "The Werewolf Transformation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2275203",
                         "nr": 19,
                         "title": "The Weekend Vortex",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2275201",
                         "nr": 20,
                         "title": "The Transporter Malfunction",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2300453",
                         "nr": 21,
                         "title": "The Hawking Excitation",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2332311",
                         "nr": 22,
                         "title": "The Stag Convergence",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2372043",
                         "nr": 23,
                         "title": "The Launch Acceleration",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt2379487",
                         "nr": 24,
                         "title": "The Countdown Reflection",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             },
@@ -21948,14 +21990,14 @@
         "score": null,
         "actors": [
             "Hugh Jackman",
-            "Boyd Holbrook",
             "Patrick Stewart",
-            "Doris Morgado"
+            "Dafne Keen",
+            "Boyd Holbrook"
         ],
-        "length": "135 min",
-        "plot": "In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan's attempts to hide from the world and his legacy are up-ended when a young mutant arrives, being pursued by dark forces.",
+        "length": "137 min",
+        "plot": "In the near future, a weary Logan cares for an ailing Professor X somewhere on the Mexican border. However, Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
         "director": "James Mangold",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -24368,7 +24410,7 @@
         "length": "86 min",
         "plot": "When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.",
         "director": "Hayao Miyazaki",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -25546,7 +25588,7 @@
         "length": "132 min",
         "plot": "In the high-stakes world of political power-brokers, Elizabeth Sloane is the most sought after and formidable lobbyist in D.C. But when taking on the most powerful opponent of her career, she finds winning may come at too high a price.",
         "director": "John Madden",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -25905,127 +25947,127 @@
                         "imdbId": "tt5827942",
                         "nr": 0,
                         "title": "Avatar: The Last Airbender",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0801470",
                         "nr": 1,
                         "title": "The Boy in the Iceberg",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0772328",
                         "nr": 2,
                         "title": "The Avatar Returns",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0805800",
                         "nr": 3,
                         "title": "The Southern Air Temple",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516776",
                         "nr": 4,
                         "title": "The Warriors of Kyoshi",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0760062",
                         "nr": 5,
                         "title": "The King of Omashu",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516774",
                         "nr": 6,
                         "title": "Imprisoned",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0805801",
                         "nr": 7,
                         "title": "The Spirit World: Winter Solstice, Part 1",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0800734",
                         "nr": 8,
                         "title": "Avatar Roku: Winter Solstice, Part 2",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0822879",
                         "nr": 9,
                         "title": "The Waterbending Scroll",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516775",
                         "nr": 10,
                         "title": "Jet",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0827262",
                         "nr": 11,
                         "title": "The Great Divide",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0829522",
                         "nr": 12,
                         "title": "The Storm",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0824795",
                         "nr": 13,
                         "title": "The Blue Spirit",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516778",
                         "nr": 14,
                         "title": "The Fortuneteller",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0758992",
                         "nr": 15,
                         "title": "Bato of the Water Tribe",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516777",
                         "nr": 16,
                         "title": "The Deserter",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516779",
                         "nr": 17,
                         "title": "The Northern Air Temple",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516782",
                         "nr": 18,
                         "title": "The Waterbending Master",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516780",
                         "nr": 19,
                         "title": "The Siege of the North: Part 1",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516781",
                         "nr": 20,
                         "title": "The Siege of the North: Part 2",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             },
@@ -26037,121 +26079,121 @@
                         "imdbId": "tt0762600",
                         "nr": 1,
                         "title": "The Avatar State",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0766472",
                         "nr": 2,
                         "title": "The Cave of Two Lovers",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0784201",
                         "nr": 3,
                         "title": "Return to Omashu",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0762601",
                         "nr": 4,
                         "title": "The Swamp",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516772",
                         "nr": 5,
                         "title": "Avatar Day",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0789294",
                         "nr": 6,
                         "title": "The Blind Bandit",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516783",
                         "nr": 7,
                         "title": "Zuko Alone",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0805799",
                         "nr": 8,
                         "title": "The Chase",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0789293",
                         "nr": 9,
                         "title": "Bitter Work",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0829521",
                         "nr": 10,
                         "title": "The Library",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0829520",
                         "nr": 11,
                         "title": "The Desert",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0827261",
                         "nr": 12,
                         "title": "The Serpent's Pass",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0831940",
                         "nr": 13,
                         "title": "The Drill",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0516773",
                         "nr": 14,
                         "title": "City of Walls and Secrets",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0775583",
                         "nr": 15,
                         "title": "The Tales of Ba Sing Se",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0794679",
                         "nr": 16,
                         "title": "Appa's Lost Days",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0887307",
                         "nr": 17,
                         "title": "Lake Laogai",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0876938",
                         "nr": 18,
                         "title": "The Earth King",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0831941",
                         "nr": 19,
                         "title": "The Guru",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0822878",
                         "nr": 20,
                         "title": "The Crossroads of Destiny",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             },
@@ -26163,127 +26205,127 @@
                         "imdbId": "tt0967584",
                         "nr": 1,
                         "title": "The Awakening",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0966647",
                         "nr": 2,
                         "title": "The Headband",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0888742",
                         "nr": 3,
                         "title": "The Painted Lady",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0888741",
                         "nr": 4,
                         "title": "Sokka's Master",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0888739",
                         "nr": 5,
                         "title": "The Beach",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1117701",
                         "nr": 6,
                         "title": "The Avatar and the Firelord",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0888740",
                         "nr": 7,
                         "title": "The Runaway",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt0900434",
                         "nr": 8,
                         "title": "The Puppetmaster",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1127369",
                         "nr": 9,
                         "title": "Nightmares and Daydreams",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1133641",
                         "nr": 10,
                         "title": "The Day of Black Sun: Part 1 - The Invasion",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1132642",
                         "nr": 11,
                         "title": "The Day of Black Sun: Part 2 - The Eclipse",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1136036",
                         "nr": 12,
                         "title": "The Western Air Temple",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1166830",
                         "nr": 13,
                         "title": "The Firebending Masters",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1176477",
                         "nr": 14,
                         "title": "The Boiling Rock: Part 1",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1194313",
                         "nr": 15,
                         "title": "The Boiling Rock: Part 2",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1193652",
                         "nr": 16,
                         "title": "The Southern Raiders",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1204261",
                         "nr": 17,
                         "title": "The Ember Island Players",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1204262",
                         "nr": 18,
                         "title": "Sozin's Comet: Part 1 - The Phoenix King",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1204263",
                         "nr": 19,
                         "title": "Sozin's Comet: Part 2 - The Old Masters",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1204264",
                         "nr": 20,
                         "title": "Sozin's Comet: Part 3 - Into the Inferno",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt1204265",
                         "nr": 21,
                         "title": "Sozin's Comet: Part 4 - Avatar Aang",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             }
@@ -26786,7 +26828,7 @@
         "length": "N\/A",
         "plot": "An Amazon princess leaves her island home to explore the world and, in doing so, becomes one of the world's greatest heroes.",
         "director": "Patty Jenkins",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -27451,7 +27493,7 @@
         "length": "107 min",
         "plot": "Follows the key people at an investment bank, over a 24-hour period, during the early stages of the 2008 financial crisis.",
         "director": "J.C. Chandor",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -29969,7 +30011,7 @@
             "Jo Wyatt",
             "Jaimi Barbakoff"
         ],
-        "played": false
+        "played": true
     },
     {
         "type": 0,
@@ -30001,7 +30043,7 @@
             "Denny Delk",
             "Nick Jameson"
         ],
-        "played": false
+        "played": true
     },
     {
         "type": 0,
@@ -30154,7 +30196,7 @@
         "length": "125 min",
         "plot": "Having thought that monogamy was never possible, a commitment-phobic career woman may have to face her fears when she meets a good guy.",
         "director": "Judd Apatow",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -30787,7 +30829,7 @@
         "length": "142 min",
         "plot": "When New York is put under siege by Oscorp, it is up to Spider-Man to save the city he swore to protect as well as his loved ones.",
         "director": "Marc Webb",
-        "watched": true
+        "watched": false
     },
     {
         "type": 0,
@@ -30821,6 +30863,895 @@
         "length": "N\/A",
         "plot": "Arthur Curry learns that he is the heir to the underwater kingdom of Atlantis, and must step forward to lead his people and to be a hero to the world.",
         "director": "James Wan",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1790809",
+        "name": "Pirates of the Caribbean: Dead Men Tell No Tales",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Johnny Depp",
+            "Keira Knightley",
+            "Kaya Scodelario",
+            "David Wenham"
+        ],
+        "length": "N\/A",
+        "plot": "Captain Jack Sparrow searches for the trident of Poseidon.",
+        "director": "Joachim R\u00f8nning, Espen Sandberg",
+        "watched": false
+    },
+    {
+        "type": 1,
+        "imdbId": "tt2357547",
+        "name": "Jessica Jones",
+        "plot": "A former superhero decides to reboot her life by becoming a private investigator.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2015,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt4162058",
+                        "nr": 1,
+                        "title": "AKA Ladies Night",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162062",
+                        "nr": 2,
+                        "title": "AKA Crush Syndrome",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162064",
+                        "nr": 3,
+                        "title": "AKA It's Called Whiskey",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162066",
+                        "nr": 4,
+                        "title": "AKA 99 Friends",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162072",
+                        "nr": 5,
+                        "title": "AKA The Sandwich Saved Me",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162076",
+                        "nr": 6,
+                        "title": "AKA You're a Winner!",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162080",
+                        "nr": 7,
+                        "title": "AKA Top Shelf Perverts",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162078",
+                        "nr": 8,
+                        "title": "AKA WWJD?",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162086",
+                        "nr": 9,
+                        "title": "AKA Sin Bin",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162088",
+                        "nr": 10,
+                        "title": "AKA 1,000 Cuts",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162092",
+                        "nr": 11,
+                        "title": "AKA I've Got the Blues",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162094",
+                        "nr": 12,
+                        "title": "AKA Take a Bloody Number",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4162096",
+                        "nr": 13,
+                        "title": "AKA Smile",
+                        "watched": false
+                    }
+                ]
+            },
+            {
+                "year": 2017,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt5349278",
+                        "nr": 1,
+                        "title": "Episode #2.1",
+                        "watched": false
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Krysten Ritter",
+            "Rachael Taylor",
+            "Eka Darville",
+            "David Tennant"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0468489",
+        "name": "Half Nelson",
+        "year": 2006,
+        "score": null,
+        "actors": [
+            "Ryan Gosling",
+            "Jeff Lima",
+            "Shareeka Epps",
+            "Nathan Corbett"
+        ],
+        "length": "106 min",
+        "plot": "An inner-city junior high school teacher with a drug habit forms an unlikely friendship with one of his students after she discovers his secret.",
+        "director": "Ryan Fleck",
+        "watched": false
+    },
+    {
+        "type": 3,
+        "imdbId": "tt0281361",
+        "name": "Warcraft: Orcs & Humans",
+        "year": 1994,
+        "score": null,
+        "plot": "The Orcish Hordes came through a dimensional rift to the land of Azeroth. You control either humans or orcs in their war against each other.",
+        "actors": [
+            "Bill Roper"
+        ],
+        "played": true
+    },
+    {
+        "type": 3,
+        "imdbId": "tt0259104",
+        "name": "Warcraft III: Reign of Chaos",
+        "year": 2002,
+        "score": null,
+        "plot": "Years after the fall of the Orcish Horde to the human Alliance of Lordaeron, the remaining humans and orcs find themselves facing a common enemy: the demons of the Burning Legion and their armies of undead monsters.",
+        "actors": [
+            "Michael Barken",
+            "Milton James",
+            "Michael Bradberry",
+            "William Bassett"
+        ],
+        "played": true
+    },
+    {
+        "type": 3,
+        "imdbId": "tt0259103",
+        "name": "Warcraft II: Tides of Darkness",
+        "year": 1995,
+        "score": null,
+        "plot": "The land of Azeroth is being attacked by evil orcs coming from the Dark Portal. Humans will have to fight for their country.",
+        "actors": [
+            "Bill Roper",
+            "Glenn Stafford",
+            "Chris Metzen",
+            "Ron Millar"
+        ],
+        "played": true
+    },
+    {
+        "type": 3,
+        "imdbId": "tt1037854",
+        "name": "StarCraft II: Wings of Liberty",
+        "year": 2010,
+        "score": null,
+        "plot": "Four years after the events of StarCraft: Brood War, Jim Raynor fights against the Dominion and begins a search for artifacts when at the same time zerg attack once again.",
+        "actors": [
+            "James Harper",
+            "Dave Fennoy",
+            "Robert Clotworthy",
+            "Brian Bloom"
+        ],
+        "played": true
+    },
+    {
+        "type": 3,
+        "imdbId": "tt1201133",
+        "name": "Assassin's Creed II",
+        "year": 2009,
+        "score": null,
+        "plot": "Desmond Miles is trained to become a modern-day Assassin through the resurrected memories of ancestor Ezio Auditore da Firenze, who uncovers a massive Templar conspiracy in Renaissance Italy leading to the new Pope.",
+        "actors": [
+            "Roger Craig Smith",
+            "Kristen Bell",
+            "Nolan North",
+            "Fred Tatasciore"
+        ],
+        "played": true
+    },
+    {
+        "type": 3,
+        "imdbId": "tt2175563",
+        "name": "Assassin's Creed III",
+        "year": 2012,
+        "score": null,
+        "plot": "The American Colonies, 1775. It's a time of civil unrest and political upheaval in the Americas. As a Native American fights to protect his land and his people, he will ignite the flames of a young nation's revolution.",
+        "actors": [
+            "Noah Watts",
+            "Neil Napier",
+            "Robin Atkin Downes",
+            "Adrian Hough"
+        ],
+        "played": true
+    },
+    {
+        "type": 3,
+        "imdbId": "tt2011970",
+        "name": "Minecraft",
+        "year": 2009,
+        "score": null,
+        "plot": "Welcome to the world of minecraft, you can build, brew potions, enchant your armor and tools, adventure other biomes. Visit the nether, or even defeat the enderdragon in the end.",
+        "actors": [
+            "N\/A"
+        ],
+        "played": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1690953",
+        "name": "Despicable Me 2",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Steve Carell",
+            "Kristen Wiig",
+            "Benjamin Bratt",
+            "Miranda Cosgrove"
+        ],
+        "length": "98 min",
+        "plot": "When Gru, the world's most super-bad turned super-dad has been recruited by a team of officials to stop lethal muscle and a host of Gru's own, He has to fight back with new gadgetry, cars, and more minion madness.",
+        "director": "Pierre Coffin, Chris Renaud",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3469046",
+        "name": "Despicable Me 3",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Jenny Slate",
+            "Kristen Wiig",
+            "Steve Carell",
+            "Steve Coogan"
+        ],
+        "length": "N\/A",
+        "plot": "Balthazar Bratt, a child star from the 1980's, hatches a scheme for world domination.",
+        "director": "Kyle Balda, Pierre Coffin, Eric Guillon",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1648190",
+        "name": "The Dark Tower",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Matthew McConaughey",
+            "Katheryn Winnick",
+            "Idris Elba",
+            "Abbey Lee"
+        ],
+        "length": "N\/A",
+        "plot": "The Gunslinger, Roland Deschain, roams an Old West-like landscape where \"the world has moved on\" in pursuit of the man in black. Also searching for the fabled Dark Tower, in the hopes that reaching it will preserve his dying world.",
+        "director": "Nikolaj Arcel",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4425200",
+        "name": "John Wick: Chapter 2",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Keanu Reeves",
+            "Riccardo Scamarcio",
+            "Ian McShane",
+            "Ruby Rose"
+        ],
+        "length": "122 min",
+        "plot": "After returning to the criminal underworld to repay a debt, John Wick discovers that a large bounty has been put on his life.",
+        "director": "Chad Stahelski",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2239822",
+        "name": "Valerian and the City of a Thousand Planets",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Cara Delevingne",
+            "Dane DeHaan",
+            "Ethan Hawke",
+            "John Goodman"
+        ],
+        "length": "129 min",
+        "plot": "A dark force threatens Alpha, a vast metropolis and home to species from a thousand planets. Special operatives Valerian and Laureline must race to identify the marauding menace and safeguard not just Alpha, but the future of the universe.",
+        "director": "Luc Besson",
+        "watched": false
+    },
+    {
+        "type": 1,
+        "imdbId": "tt4508902",
+        "name": "One Punch Man",
+        "plot": "The story of Saitama, a hero who is a hero just for fun & can defeat his enemies with a single punch.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2015,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt4569062",
+                        "nr": 1,
+                        "title": "Saiky\u00f4 no otoko",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5109276",
+                        "nr": 2,
+                        "title": "The Lone Cyborg",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5109278",
+                        "nr": 3,
+                        "title": "The Obsessive Scientist",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5152430",
+                        "nr": 4,
+                        "title": "The Modern Ninja",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5169658",
+                        "nr": 5,
+                        "title": "The Ultimate Mentor",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5173426",
+                        "nr": 6,
+                        "title": "The Terrifying City",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5203540",
+                        "nr": 7,
+                        "title": "The Ultimate Disciple",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5220908",
+                        "nr": 8,
+                        "title": "The Deep Sea King",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5236798",
+                        "nr": 9,
+                        "title": "Unyielding Justice",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5252356",
+                        "nr": 10,
+                        "title": "Unparalled Peril",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5257562",
+                        "nr": 11,
+                        "title": "The Dominator of the Universe",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt5271822",
+                        "nr": 12,
+                        "title": "The Strongest Hero",
+                        "watched": true
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Makoto Furukawa",
+            "Max Mittelman",
+            "Kaito Ishikawa",
+            "Zach Aguilar"
+        ]
+    },
+    {
+        "type": 1,
+        "imdbId": "tt0278238",
+        "name": "Samurai Jack",
+        "plot": "A samurai sent through time fights to return home and save the world.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2001,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt0768684",
+                        "nr": 1,
+                        "title": "The Beginning",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt0834491",
+                        "nr": 2,
+                        "title": "The Samurai Called Jack",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt0834490",
+                        "nr": 3,
+                        "title": "The First Fight",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt0693973",
+                        "nr": 4,
+                        "title": "Jack, the Woolies, and the Chritchellites",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt0834488",
+                        "nr": 5,
+                        "title": "Jack in Space",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt0834489",
+                        "nr": 8,
+                        "title": "Jack Versus Mad Jack",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt0693968",
+                        "nr": 9,
+                        "title": "Jack Under the Sea",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt0834484",
+                        "nr": 10,
+                        "title": "Jack and the Lava Monster",
+                        "watched": true
+                    }
+                ]
+            },
+            {
+                "year": 2002,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt0837448",
+                        "nr": 1,
+                        "title": "Jack Learns to Jump Good",
+                        "watched": false
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Phil LaMarr"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1535109",
+        "name": "Captain Phillips",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Tom Hanks",
+            "Catherine Keener",
+            "Barkhad Abdi",
+            "Barkhad Abdirahman"
+        ],
+        "length": "134 min",
+        "plot": "The true story of Captain Richard Phillips and the 2009 hijacking by Somali pirates of the U.S.-flagged MV Maersk Alabama, the first American cargo ship to be hijacked in two hundred years.",
+        "director": "Paul Greengrass",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1781769",
+        "name": "Anna Karenina",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Keira Knightley",
+            "Jude Law",
+            "Matthew Macfadyen",
+            "Eric MacLennan",
+            "Kelly Macdonald",
+            "Theo Morrissey"
+        ],
+        "length": "129 min",
+        "plot": "In late-19th-century Russian high society, St. Petersburg aristocrat Anna Karenina enters into a life-changing affair with the dashing Count Alexei Vronsky.",
+        "director": "Joe Wright",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1552224",
+        "name": "Outcast",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Alexandre Bailly",
+            "Bozhao Wang",
+            "Nicolas Cage",
+            "Kahina Carina"
+        ],
+        "length": "99 min",
+        "plot": "A mysterious warrior teams up with the daughter and son of a deposed Chinese Emperor to defeat their cruel brother, who seeks their deaths.",
+        "director": "Nick Powell",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2109248",
+        "name": "Transformers: Age of Extinction",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Mark Wahlberg",
+            "Stanley Tucci",
+            "Kelsey Grammer",
+            "Nicola Peltz"
+        ],
+        "length": "165 min",
+        "plot": "Autobots must escape sight from a bounty hunter who has taken control of the human serendipity: Unexpectedly, Optimus Prime and his remaining gang turn to a mechanic, his daughter, and her back street racing boyfriend for help.",
+        "director": "Michael Bay",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3892434",
+        "name": "That Sugar Film",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Damon Gameau",
+            "Hugh Jackman",
+            "Milla Bakaitis",
+            "Richard Davies"
+        ],
+        "length": "90 min",
+        "plot": "Damon Gameau embarks on an experiment to document the effects of a high sugar diet on a healthy body.",
+        "director": "Damon Gameau",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120738",
+        "name": "Lost in Space",
+        "year": 1998,
+        "score": null,
+        "actors": [
+            "William Hurt",
+            "Mimi Rogers",
+            "Heather Graham",
+            "Lacey Chabert"
+        ],
+        "length": "130 min",
+        "plot": "The Robinson family was going into space to fight for a chance for humanity. Now they are fighting to live long enough to find a way home.",
+        "director": "Stephen Hopkins",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0104431",
+        "name": "Home Alone 2: Lost in New York",
+        "year": 1992,
+        "score": null,
+        "actors": [
+            "Macaulay Culkin",
+            "Joe Pesci",
+            "Daniel Stern",
+            "Catherine O'Hara"
+        ],
+        "length": "120 min",
+        "plot": "One year after Kevin was left home alone and had to defeat a pair of bumbling burglars, he accidentally finds himself in New York City, and the same criminals are not far behind.",
+        "director": "Chris Columbus",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0099785",
+        "name": "Home Alone",
+        "year": 1990,
+        "score": null,
+        "actors": [
+            "Macaulay Culkin",
+            "Joe Pesci",
+            "Daniel Stern",
+            "John Heard"
+        ],
+        "length": "103 min",
+        "plot": "An eight-year-old trouble-maker must protect his home from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.",
+        "director": "Chris Columbus",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0252076",
+        "name": "Maid in Manhattan",
+        "year": 2002,
+        "score": null,
+        "actors": [
+            "Jennifer Lopez",
+            "Ralph Fiennes",
+            "Natasha Richardson",
+            "Stanley Tucci"
+        ],
+        "length": "105 min",
+        "plot": "A senatorial candidate falls for a hotel maid, thinking she is a socialite when he sees her trying on a wealthy woman's dress.",
+        "director": "Wayne Wang",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0105417",
+        "name": "Sister Act",
+        "year": 1992,
+        "score": null,
+        "actors": [
+            "Whoopi Goldberg",
+            "Maggie Smith",
+            "Kathy Najimy",
+            "Wendy Makkena"
+        ],
+        "length": "100 min",
+        "plot": "When a worldly singer witnesses a mob crime, the police hide her as a nun in a traditional convent where she has trouble fitting in.",
+        "director": "Emile Ardolino",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0087538",
+        "name": "The Karate Kid",
+        "year": 1984,
+        "score": null,
+        "actors": [
+            "Ralph Macchio",
+            "Pat Morita",
+            "Elisabeth Shue",
+            "Martin Kove"
+        ],
+        "length": "126 min",
+        "plot": "A martial arts master agrees to teach karate to a bullied teenager.",
+        "director": "John G. Avildsen",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1374989",
+        "name": "Pride and Prejudice and Zombies",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Lily James",
+            "Sam Riley",
+            "Bella Heathcote",
+            "Ellie Bamber"
+        ],
+        "length": "108 min",
+        "plot": "Five sisters in 19th century England must cope with the pressures to marry while protecting themselves from a growing population of zombies.",
+        "director": "Burr Steers",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0322589",
+        "name": "Honey",
+        "year": 2003,
+        "score": null,
+        "actors": [
+            "Jessica Alba",
+            "Mekhi Phifer",
+            "Romeo Miller",
+            "Joy Bryant"
+        ],
+        "length": "94 min",
+        "plot": "Honey is a sexy, tough music video choreographer who shakes up her life after her mentor gives her an ultimatum: sleep with him or be blacklisted within their industry.",
+        "director": "Bille Woodruff",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1657507",
+        "name": "Colombiana",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Zoe Saldana",
+            "Jordi Moll\u00e0",
+            "Lennie James",
+            "Amandla Stenberg"
+        ],
+        "length": "108 min",
+        "plot": "A young woman, after witnessing her parents' murder as a child in Bogota, grows up to be a stone-cold assassin.",
+        "director": "Olivier Megaton",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1817273",
+        "name": "The Place Beyond the Pines",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Ryan Gosling",
+            "Craig Van Hook",
+            "Eva Mendes",
+            "Olga Merediz"
+        ],
+        "length": "140 min",
+        "plot": "A motorcycle stunt rider turns to robbing banks as a way to provide for his lover and their newborn child, a decision that puts him on a collision course with an ambitious rookie cop navigating a department ruled by a corrupt detective.",
+        "director": "Derek Cianfrance",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1972591",
+        "name": "King Arthur: Legend of the Sword",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Charlie Hunnam",
+            "Astrid Berg\u00e8s-Frisbey",
+            "Jude Law",
+            "Djimon Hounsou"
+        ],
+        "length": "126 min",
+        "plot": "Robbed of his birthright, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, he is forced to acknowledge his true legacy - whether he likes it or not.",
+        "director": "Guy Ritchie",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3890160",
+        "name": "Baby Driver",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Ansel Elgort",
+            "Jon Bernthal",
+            "Jon Hamm",
+            "Eiza Gonz\u00e1lez"
+        ],
+        "length": "113 min",
+        "plot": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
+        "director": "Edgar Wright",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1219827",
+        "name": "Ghost in the Shell",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Scarlett Johansson",
+            "Pilou Asb\u00e6k",
+            "Takeshi Kitano",
+            "Juliette Binoche"
+        ],
+        "length": "107 min",
+        "plot": "In the near future, Major is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.",
+        "director": "Rupert Sanders",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0838221",
+        "name": "The Darjeeling Limited",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Owen Wilson",
+            "Adrien Brody",
+            "Jason Schwartzman",
+            "Amara Karan"
+        ],
+        "length": "91 min",
+        "plot": "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
+        "director": "Wes Anderson",
+        "watched": false
+    },
+    {
+        "type": 1,
+        "imdbId": "tt2699128",
+        "name": "The Leftovers",
+        "plot": "Three years after the disappearance of 2% of the global population, a group of people from New York struggle to continue their lives, while they cope with the tragedy of the unexplained nature of the event.",
+        "finished": true,
+        "seasons": [
+            {
+                "year": 2014,
+                "nr": 1,
+                "episodes": []
+            },
+            {
+                "year": 2015,
+                "nr": 2,
+                "episodes": []
+            },
+            {
+                "year": 2016,
+                "nr": 3,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Justin Theroux",
+            "Amy Brenneman",
+            "Christopher Eccleston",
+            "Chris Zylka"
+        ]
+    },
+    {
+        "type": 1,
+        "imdbId": "tt6517102",
+        "name": "Castlevania",
+        "plot": "Inspired by the classic video game series, Castlevania is a dark medieval fantasy following the last surviving member of the disgraced Belmont clan, trying to save Eastern Europe from extinction at the hand of Vlad Dracula Tepe himself.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "N\/A"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0080455",
+        "name": "The Blues Brothers",
+        "year": 1980,
+        "score": null,
+        "actors": [
+            "John Belushi",
+            "Dan Aykroyd",
+            "James Brown",
+            "Cab Calloway"
+        ],
+        "length": "133 min",
+        "plot": "Jake Blues, just out from prison, puts together his old band to save the Catholic home where he and brother Elwood were raised.",
+        "director": "John Landis",
         "watched": false
     }
 ]
