@@ -15,6 +15,10 @@ angular.module('watchlistApp').factory('Movie', ['BaseModel',
       this.director = director;
       this.watched = watched;
     }
+
+    isComplete() {
+      return this.name && this.year && this.length !== 'N\/A';
+    }
   }
 
   return Movie;
