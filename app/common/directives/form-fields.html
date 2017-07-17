@@ -6,7 +6,7 @@
     </svg>
   </div>
   <div class="form-item form-item-required form-item-name" auto-focus>
-    <label>Name</label><div class="form-input-group"><input type="text" name="name" ng-required="true" placeholder="Name" ng-model="item.name"/><button class="search-button action" type="button" ng-click="search($event)" ng-disabled="searching || !item.name">
+    <label>Name</label><div class="form-input-group"><input type="text" name="name" ng-required="true" placeholder="Name" ng-model="item.name"/><button class="search-button action" type="button" tooltip="'Search'|top" ng-click="search($event)" ng-disabled="searching || !item.name">
         <i class="icon icon-search" ng-hide="searching"></i>
       </button>
       <i class="icon icon-spinner" ng-show="searching"></i>
@@ -38,11 +38,11 @@
       <div class="form-item form-item-required">
         <label>Season <span ng-bind="$index + 1"></span> year</label><div class="form-input-group">
           <input type="text" integer ng-required="true" placeholder="{{2017 + $index}}" class="year" ng-model="season.year" />
-          <button class="update-button option" type="button" ng-click="updateSeason(item, season.nr)">
+          <button class="update-button option" type="button" tooltip="'Update season episodes'|top"  ng-click="updateSeason(item, season.nr)">
             <i class="icon icon-series" ng-hide="updating"></i>
             <i class="icon icon-spinner" ng-show="updating"></i>
           </button>
-          <button class="add-button option" type="button" ng-click="addSeason()" ng-if="!item.finished">
+          <button class="add-button option" type="button"  tooltip="'Add a season'|top"ng-click="addSeason()" ng-if="!item.finished">
             <i class="icon icon-plus"></i>
           </button>
           <span class="bracketed season-episode-count" ng-show="season.episodes.length"><span ng-bind="season.episodes.length"></span> episodes</span>

@@ -1,5 +1,5 @@
-angular.module('watchlistApp').controller('EditSeasonController', ['$scope', '_', 'ListDataFactory', '$location', '$routeParams',
-  function($scope, _, ListDataFactory, $location, $routeParams) {
+angular.module('watchlistApp').controller('EditSeasonController', ['$scope', '_', 'ListDataFactory', 'OMDbApi', '$location', '$routeParams',
+  function($scope, _, ListDataFactory, OMDbApi, $location, $routeParams) {
 
 
     $scope.item = ListDataFactory.getByPath($routeParams.path);
@@ -42,6 +42,19 @@ angular.module('watchlistApp').controller('EditSeasonController', ['$scope', '_'
           next = $scope.season.getEpisodeByNr(nr + 1);
 
       return !next;
+    };
+
+    $scope.updating = false;
+    $scope.updateSeason = function(series, nr) {
+      $scope.updating = true;
+      OMDbApi.updateSeason(series, nr).then(function() {
+        $scope.updating = false;
+        $scope.item = ListDataFactory.getByPath($routeParams.path);
+        let nr = parseInt($routeParams.nr);
+        $scope.originalSeason = $scope.item.getSeason(nr);
+        $scope.season = $scope.originalSeason.clone();
+        $scope.editing = true;
+      });
     };
 
   }
