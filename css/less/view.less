@@ -16,24 +16,14 @@
       padding: 0;
 
       li {
-        .well();
         width: 40%;
         display: block;
-        margin-right: @size-smaller;
-        margin-bottom: @size-smaller;
-        padding-left: 50px;
-        position: relative;
       }
 
       .episode-nr {
-        position: absolute;
-        width: 40px;
-        top: 0;
-        left: 0;
-        height: 100%;
+        display: inline-block;
+        width: 20px;
         text-align: center;
-        padding: @size-small 0;
-        border-right: solid 1px @gray-lighter;
         .font-light();
       }
     }
@@ -49,15 +39,13 @@
     list-style-type: none;
     padding: 0;
 
-    .season-title,
+    .season-title {
+      margin-top: @size-small;
+      .font-default();
+    }
     .episode-title {
-      margin: 8px 0 4px;
-      .font-bold();
-
-      &.episode-watched,
-      .season-year {
-        .font-light();
-      }
+      margin: 4px 0 4px;
+      .font-default();
     }
 
     .icon-series {

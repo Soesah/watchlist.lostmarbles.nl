@@ -7,6 +7,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-ftp-deploy');
@@ -56,14 +57,18 @@ module.exports = function(grunt) {
       }
     },
     less: {
-      dev: {
-        files: {'css/watchlist.css': 'css/watchlist.less'}
-      },
       prod: {
         options: {
+          cleancss: true,
           compress: true
         },
-        files: {'css/watchlist.css': 'css/watchlist.less'}
+        files: {'css/watchlist.css': 'css/less/watchlist.less'}
+      }
+    },
+    watch: {
+      scripts: {
+        files: ['css/less/*.less', 'css/less/common/*.less'],
+        tasks: ['less']
       }
     },
     cssmin: {
