@@ -1,7 +1,5 @@
-node_modules
 css/*.css
-config.codekit3
 .ftppass
+node_classloader
 node_modules
-js/watchlist.js
 commit_message

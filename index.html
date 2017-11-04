@@ -9,22 +9,25 @@
 </head>
 <body>
 
-  <header>
-    <h1>Watch list</h1>
-    <message-log name="general"></message-log>
-  </header>
-  <main ng-controller="MainController">
-    <p>A list of movies, series, documentaries and games I want to watch and play.</p>
-    <ng-view></ng-view>
-  </main>
-  <footer>
-    Carl Giesberts - 2017
-  </footer>
+  <div id="watchlist-app">
+    <header>
+      <h1>Watchlist</h1>
+    </header>
+    <main>
+      <p>A list of movies, series, documentaries and games I want to watch and play.</p>
+      <router-view></router-view>
+    <footer>
+      Carl Giesberts - 2017
+    </footer>
+  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
-  <script src="js/watchlist.js"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/vuex"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/lodash@4.17.4/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="node-classloader/classloader.php?WatchlistApp"></script>
 
 </body>
 </html>
