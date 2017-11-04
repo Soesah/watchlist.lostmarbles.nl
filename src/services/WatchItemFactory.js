@@ -5,68 +5,48 @@ import Series from 'models/SeriesModel';
 import Game from 'models/GameModel';
 import Documentary from 'models/DocumentaryModel';
 
+const ALL = true;
+const MOVIE = 0;
+const SEQUEL = 4;
+const PREQUEL = 5;
+const SERIES = 1;
+const DOCUMENTARY = 2;
+const GAME = 3;
+
 class WatchItemFactory {
 
   create (item) {
     switch (item.type) {
-      case this.MOVIE:
+      case MOVIE:
         return new Movie(item);
-      case this.SEQUEL:
+      case SEQUEL:
         return new Sequel(item);
-      case this.PREQUEL:
+      case PREQUEL:
         return new Prequel(item);
-      case this.SERIES:
+      case SERIES:
         return new Series(item);
-      case this.DOCUMENTARY:
+      case DOCUMENTARY:
         return new Documentary(item);
-      case this.GAME:
+      case GAME:
         return new Game(item);
     }
   }
 
   new (type) {
     switch(type) {
-      case this.MOVIE:
+      case MOVIE:
         return new Movie({});
-      case this.SEQUEL:
+      case SEQUEL:
         return new Sequel({});
-      case this.PREQUEL:
+      case PREQUEL:
         return new Prequel({});
-      case this.SERIES:
+      case SERIES:
         return new Series({});
-      case this.DOCUMENTARY:
+      case DOCUMENTARY:
         return new Documentary({});
-      case this.GAME:
+      case GAME:
         return new Game({});
     }
-  }
-
-  get ALL () {
-    return true;
-  }
-
-  get MOVIE () {
-    return 0;
-  }
-
-  get SEQUEL () {
-    return 4;
-  }
-
-  get PREQUEL () {
-    return 5;
-  }
-
-  get SERIES () {
-    return 1;
-  }
-
-  get DOCUMENTARY () {
-    return 2;
-  }
-
-  get GAME () {
-    return 3;
   }
 
   static getFilterStates() {
@@ -86,8 +66,8 @@ class WatchItemFactory {
 
   static getFilterTypes() {
     let types = this.getTypeList().map(item => {
-          if (item.type === this.MOVIE) {
-            item.type = [item.type, this.SEQUEL, this.PREQUEL];
+          if (item.type === MOVIE) {
+            item.type = [item.type, SEQUEL, PREQUEL];
           } else {
             item.type = [item.type];
           }
@@ -95,7 +75,7 @@ class WatchItemFactory {
         });
     return [
       {
-        type: this.ALL,
+        type: ALL,
         name: 'All'
       }
     ].concat(types);
@@ -104,16 +84,16 @@ class WatchItemFactory {
   static getTypeList() {
     return [
       {
-        type: this.DOCUMENTARY,
+        type: DOCUMENTARY,
         name: 'Documentary'
       }, {
-        type: this.GAME,
+        type: GAME,
         name: 'Game'
       }, {
-        type: this.MOVIE,
+        type: MOVIE,
         name: 'Movie'
       }, {
-        type: this.SERIES,
+        type: SERIES,
         name: 'Series'
       }
     ]
@@ -122,11 +102,11 @@ class WatchItemFactory {
   static getFullTypeList() {
     return [
       {
-        type: this.SEQUEL,
+        type: SEQUEL,
         name: 'Sequel',
         disabled: true
       }, {
-        type: this.PREQUEL,
+        type: PREQUEL,
         name: 'Prequel',
         disabled: true
       }
@@ -134,7 +114,7 @@ class WatchItemFactory {
   }
 
   static getTypeName(item) {
-    return item && item.type ? _.find(WatchItemFactory.getFullTypeList(), {type: item.type}).name : 'Unknown';
+    return (item && item.type !== undefined) ? _.find(WatchItemFactory.getFullTypeList(), type => type.type === item.type).name : 'Unknown';
   }
 
 }
