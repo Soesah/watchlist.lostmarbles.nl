@@ -17,8 +17,42 @@ let WatchItemView = Vue.component('watch-item-view', {
                 </ul>
               </div>
 
-              <!--ng-include v-show="item" src="getItemViewTemplate()"></ng-include-->
+              <div v-show="item.director">
+                <h4>Director</h4>
+                <p v-text="item.director"></p>
+              </div>
+              <div v-show="item.length">
+                <h4>Runtime</h4>
+                <p v-text="item.length"></p>
+              </div>
+              <div v-show="item.plot">
+                <h4>Plot</h4>
+                <p v-text="item.plot"></p>
+              </div>
 
+
+              <div v-if="item.seasons && item.seasons.length">
+                <h4>Seasons</h4>
+                <ul class="seasons">
+                  <li v-for="season in item.seasons">
+                    <h5 class="season-title">
+                      Season <span v-text="season.nr"></span>
+                      <span class="season-year bracketed" v-text="season.year"></span>
+                      <i class="icon icon-series" Xclick="toggleWatched($event, season)"></i>
+                      <a href="javascript:void(0)" Xclick="editSeason(season)">Edit</a>
+                    </h5>
+                    <ul class="episodes">
+                      <li v-for="episode in season.episodes">
+                        <p class="episode-title" :class="{'episode-watched': episode.watched}">
+                          <span v-text="episode.nr" class="episode-nr"></span>
+                          <span class="episode-name"v-text="episode.title"></span>
+                          <i class="icon icon-series" Xclick="toggleWatched($event, episode)"></i>
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
 
               <div class="links">
                 <router-link :to="'/edit/' + item.path">Edit</router-link> / 
