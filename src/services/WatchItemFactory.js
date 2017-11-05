@@ -15,7 +15,7 @@ const GAME = 3;
 
 class WatchItemFactory {
 
-  create (item) {
+  static create (item) {
     switch (item.type) {
       case MOVIE:
         return new Movie(item);

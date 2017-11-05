@@ -7,8 +7,6 @@ class WatchlistService extends BaseService {
     super();
     this.items = [];
     this.file = 'list.json';
-
-    this.factory = new WatchItemFactory();
   }
 
   load () {
@@ -18,7 +16,7 @@ class WatchlistService extends BaseService {
         } else {      
           this.$http.get('data/' + this.file)
             .then(response => {
-              this.items = response.data.map(item => this.factory.create(item));
+              this.items = response.data.map(item => WatchItemFactory.create(item));
               resolve(this.items);
             })
             .catch(error => reject(error));
