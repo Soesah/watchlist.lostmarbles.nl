@@ -32,7 +32,7 @@ class WatchItemFactory {
     }
   }
 
-  new (type) {
+  static new (type) {
     switch(type) {
       case MOVIE:
         return new Movie({});
@@ -46,6 +46,8 @@ class WatchItemFactory {
         return new Documentary({});
       case GAME:
         return new Game({});
+      default:
+        return new Movie({});
     }
   }
 

@@ -1,5 +1,5 @@
 css/*.css
 .ftppass
-node_classloader
+node-classloader
 node_modules
 commit_message
