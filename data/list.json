@@ -22728,7 +22728,7 @@
         "length": "117 min",
         "plot": "A girl named Sophie encounters the Big Friendly Giant who, despite his intimidating appearance, turns out to be a kind-hearted soul who is considered an outcast by the other giants because, unlike them, he refuses to eat children.",
         "director": "Steven Spielberg",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -25772,7 +25772,7 @@
     },
     {
         "type": 3,
-        "imdbId": "NON-IMDB-ID-2016-1-5",
+        "imdbId": null,
         "name": "Overcooked",
         "year": 2016,
         "score": null,
@@ -25793,7 +25793,7 @@
         "length": "N\/A",
         "plot": "Cambodian author and human rights activist Loung Ung recounts the horrors she suffered under the rule of the deadly Khmer Rouge.",
         "director": "Angelina Jolie",
-        "watched": false
+        "watched": true
     },
     {
         "type": 3,
@@ -25874,7 +25874,7 @@
     },
     {
         "type": 3,
-        "imdbId": "NON-IMDB-ID-2016-2-5",
+        "imdbId": null,
         "name": "Hyper Light Drifter",
         "year": 2016,
         "score": null,
@@ -26896,7 +26896,7 @@
         "length": "113 min",
         "plot": "Alice returns to the whimsical world of Wonderland and travels back in time to help the Mad Hatter.",
         "director": "James Bobin",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -28821,7 +28821,7 @@
         "length": "111 min",
         "plot": "Prince Seretse Khama of Botswana causes an international stir when he marries a white woman from London in the late 1940s.",
         "director": "Amma Asante",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -28855,37 +28855,37 @@
                         "imdbId": "tt4426876",
                         "nr": 1,
                         "title": "Episode #1.1",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4426890",
                         "nr": 2,
                         "title": "Episode #1.2",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4426894",
                         "nr": 3,
                         "title": "Episode #1.3",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4426898",
                         "nr": 4,
                         "title": "Episode #1.4",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4426900",
                         "nr": 5,
                         "title": "Episode #1.5",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt4426880",
                         "nr": 6,
                         "title": "Episode #1.6",
-                        "watched": false
+                        "watched": true
                     }
                 ]
             }
@@ -29014,7 +29014,7 @@
         "length": "N\/A",
         "plot": "The crew of the colony ship Covenant, bound for a remote planet on the far side of the galaxy, discover what they think is an uncharted paradise, but is actually a dark, dangerous world. When they uncover a threat beyond their imagination, they must attempt a harrowing escape.",
         "director": "Ridley Scott",
-        "watched": false,
+        "watched": true,
         "parent": "tt0078748",
         "order": 0
     },
@@ -30128,7 +30128,7 @@
         "length": "136 min",
         "plot": "Set to the backdrop of Awesome Mixtape #2, 'Guardians of the Galaxy Vol. 2' continues the team's adventures as they unravel the mystery of Peter Quill's true parentage.",
         "director": "James Gunn",
-        "watched": false
+        "watched": true
     },
     {
         "type": 1,
@@ -30230,7 +30230,7 @@
         "length": "98 min",
         "plot": "A world-weary political journalist picks up the story of a woman's search for her son, who was taken away from her decades ago after she became pregnant and was forced to live in a convent.",
         "director": "Stephen Frears",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -30846,7 +30846,7 @@
         "length": "N\/A",
         "plot": "Following the events of Captain America: Civil War (2016), Peter Parker attempts to balance his life in high school with his career as the web-slinging superhero Spider-Man.",
         "director": "Jon Watts",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -31192,7 +31192,7 @@
         "length": "129 min",
         "plot": "A dark force threatens Alpha, a vast metropolis and home to species from a thousand planets. Special operatives Valerian and Laureline must race to identify the marauding menace and safeguard not just Alpha, but the future of the universe.",
         "director": "Luc Besson",
-        "watched": false
+        "watched": true
     },
     {
         "type": 1,
@@ -31654,7 +31654,7 @@
         "length": "113 min",
         "plot": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
         "director": "Edgar Wright",
-        "watched": false
+        "watched": true
     },
     {
         "type": 0,
@@ -31683,12 +31683,13 @@
             "Owen Wilson",
             "Adrien Brody",
             "Jason Schwartzman",
+            "Bill Murray",
             "Amara Karan"
         ],
         "length": "91 min",
         "plot": "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
         "director": "Wes Anderson",
-        "watched": false
+        "watched": true
     },
     {
         "type": 1,
@@ -31730,7 +31731,32 @@
             {
                 "year": 2017,
                 "nr": 1,
-                "episodes": []
+                "episodes": [
+                    {
+                        "imdbId": "tt6942612",
+                        "nr": 1,
+                        "title": "Episode #1.1",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-2",
+                        "nr": 2,
+                        "title": "Episode #1.2",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-3",
+                        "nr": 3,
+                        "title": "Episode #1.3",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-4",
+                        "nr": 4,
+                        "title": "Episode #1.4",
+                        "watched": true
+                    }
+                ]
             }
         ],
         "actors": [
@@ -31752,6 +31778,564 @@
         "length": "133 min",
         "plot": "Jake Blues, just out from prison, puts together his old band to save the Catholic home where he and brother Elwood were raised.",
         "director": "John Landis",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0081375",
+        "name": "Private Benjamin",
+        "year": 1980,
+        "score": null,
+        "actors": [
+            "Goldie Hawn",
+            "Eileen Brennan",
+            "Armand Assante",
+            "Robert Webber"
+        ],
+        "length": "109 min",
+        "plot": "A sheltered young high society woman joins the United States Army on a whim and finds herself in a more difficult situation than she ever expected.",
+        "director": "Howard Zieff",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2452042",
+        "name": "The Peanuts Movie",
+        "year": 2015,
+        "score": null,
+        "actors": [
+            "Trombone Shorty",
+            "Rebecca Bloom",
+            "Anastasia Bredikhina",
+            "Francesca Capaldi"
+        ],
+        "length": "88 min",
+        "plot": "Snoopy embarks upon his greatest mission as he and his team take to the skies to pursue their arch-nemesis, while his best pal Charlie Brown begins his own epic quest back home to win the love of his life.",
+        "director": "Steve Martino",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2338151",
+        "name": "PK",
+        "year": 2014,
+        "score": null,
+        "actors": [
+            "Aamir Khan",
+            "Anushka Sharma",
+            "Sanjay Dutt",
+            "Boman Irani"
+        ],
+        "length": "153 min",
+        "plot": "A stranger in the city asks questions no one has asked before. His childlike curiosity will take him on a journey of love, laughter, and letting go.",
+        "director": "Rajkumar Hirani",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4832640",
+        "name": "Sultan",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Salman Khan",
+            "Anushka Sharma",
+            "Marko Zaror",
+            "Randeep Hooda"
+        ],
+        "length": "170 min",
+        "plot": "Sultan is a classic underdog tale about a wrestler's journey, looking for a comeback by defeating all odds. Will he emerge victorious?",
+        "director": "Ali Abbas Zafar",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0469494",
+        "name": "There Will Be Blood",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Daniel Day-Lewis",
+            "Martin Stringer",
+            "Matthew Braden Stringer",
+            "Jacob Stringer"
+        ],
+        "length": "158 min",
+        "plot": "A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business.",
+        "director": "Paul Thomas Anderson",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0066769",
+        "name": "The Andromeda Strain",
+        "year": 1971,
+        "score": null,
+        "actors": [
+            "Arthur Hill",
+            "David Wayne",
+            "James Olson",
+            "Kate Reid"
+        ],
+        "length": "131 min",
+        "plot": "A group of scientists investigate a deadly new alien virus before it can spread.",
+        "director": "Robert Wise",
+        "watched": false
+    },
+    {
+        "type": 1,
+        "imdbId": "tt5834204",
+        "name": "The Handmaid's Tale",
+        "plot": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt5931646",
+                        "nr": 1,
+                        "title": "Offred",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5931648",
+                        "nr": 2,
+                        "title": "Birth Day",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5931652",
+                        "nr": 3,
+                        "title": "Late",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5937294",
+                        "nr": 4,
+                        "title": "Nolite Te Bastardes Carborundorum",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5941434",
+                        "nr": 5,
+                        "title": "Faithful",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5943926",
+                        "nr": 6,
+                        "title": "A Woman's Place",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5943928",
+                        "nr": 7,
+                        "title": "The Other Side",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5943930",
+                        "nr": 8,
+                        "title": "Jezebels",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5943932",
+                        "nr": 9,
+                        "title": "The Bridge",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5931656",
+                        "nr": 10,
+                        "title": "Night",
+                        "watched": false
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Elisabeth Moss",
+            "Yvonne Strahovski",
+            "Max Minghella",
+            "Amanda Brugel"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4943322",
+        "name": "The Ottoman Lieutenant",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Michiel Huisman",
+            "Hera Hilmar",
+            "Josh Hartnett",
+            "Ben Kingsley"
+        ],
+        "length": "106 min",
+        "plot": "The Ottoman Lieutenant is a love story between an idealistic American nurse and a Turkish officer in World War I.",
+        "director": "Joseph Ruben",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4776998",
+        "name": "The Promise",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Oscar Isaac",
+            "Charlotte Le Bon",
+            "Christian Bale",
+            "Daniel Gim\u00e9nez Cacho"
+        ],
+        "length": "133 min",
+        "plot": "Set during the last days of the Ottoman Empire, The Promise follows a love triangle between Michael, a brilliant medical student, the beautiful and sophisticated Ana, and Chris - a renowned American journalist based in Paris.",
+        "director": "Terry George",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4807830",
+        "name": "Lipstick Under My Burkha",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Aahana Kumra",
+            "Ratna Pathak Shah",
+            "Konkona Sen Sharma",
+            "Plabita Borthakur"
+        ],
+        "length": "117 min",
+        "plot": "Set in the crowded by-lanes of small town India, Lipstick Under My Burkha chronicles the secret lives of four women in search of a little freedom. Though stifled and trapped in their worlds...",
+        "director": "Alankrita Shrivastava",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1598778",
+        "name": "Contagion",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Gwyneth Paltrow",
+            "Tien You Chui",
+            "Josie Ho",
+            "Daria Strokous"
+        ],
+        "length": "106 min",
+        "plot": "Healthcare professionals, government officials and everyday people find themselves in the midst of a worldwide epidemic as the CDC works to find a cure.",
+        "director": "Steven Soderbergh",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0095705",
+        "name": "The Naked Gun: From the Files of Police Squad!",
+        "year": 1988,
+        "score": null,
+        "actors": [
+            "Leslie Nielsen",
+            "Priscilla Presley",
+            "Ricardo Montalban",
+            "George Kennedy"
+        ],
+        "length": "85 min",
+        "plot": "Incompetent police detective Frank Drebin must foil an attempt to assassinate Queen Elizabeth II.",
+        "director": "David Zucker",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0102510",
+        "name": "The Naked Gun 2\u00bd: The Smell of Fear",
+        "year": 1991,
+        "score": null,
+        "actors": [
+            "Leslie Nielsen",
+            "Priscilla Presley",
+            "George Kennedy",
+            "O.J. Simpson"
+        ],
+        "length": "85 min",
+        "plot": "Lieutenant Drebin discovers that his ex-girlfriend's new beau is involved in a plot to kidnap a scientist who advocates solar energy.",
+        "director": "David Zucker",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0110622",
+        "name": "Naked Gun 33 1\/3: The Final Insult",
+        "year": 1994,
+        "score": null,
+        "actors": [
+            "Leslie Nielsen",
+            "Priscilla Presley",
+            "George Kennedy",
+            "O.J. Simpson"
+        ],
+        "length": "83 min",
+        "plot": "Frank Drebin comes out of retirement to help Police Squad infiltrate a gang of terrorists planning to detonate a bomb at the Academy Awards.",
+        "director": "Peter Segal",
+        "watched": true
+    },
+    {
+        "type": 1,
+        "imdbId": "tt4230076",
+        "name": "The Defenders",
+        "plot": "Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to fight crime in New York City.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt4270062",
+                        "nr": 1,
+                        "title": "Episode #1.1",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4270066",
+                        "nr": 2,
+                        "title": "Episode #1.2",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4270076",
+                        "nr": 3,
+                        "title": "Worst Behaviour",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4270082",
+                        "nr": 4,
+                        "title": "Episode #1.4",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4270086",
+                        "nr": 5,
+                        "title": "Episode #1.5",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4270094",
+                        "nr": 6,
+                        "title": "Episode #1.6",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4270098",
+                        "nr": 7,
+                        "title": "Fish in the Jailhouse",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4270102",
+                        "nr": 8,
+                        "title": "Episode #1.8",
+                        "watched": false
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Finn Jones",
+            "Mike Colter",
+            "Charlie Cox",
+            "Jessica Henwick"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0864761",
+        "name": "The Duchess",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Keira Knightley",
+            "Ralph Fiennes",
+            "Charlotte Rampling",
+            "Dominic Cooper"
+        ],
+        "length": "110 min",
+        "plot": "A chronicle of the life of 18th century aristocrat Georgiana, Duchess of Devonshire, who was reviled for her extravagant political and personal life.",
+        "director": "Saul Dibb",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3874544",
+        "name": "The Boss Baby",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Alec Baldwin",
+            "Steve Buscemi",
+            "Jimmy Kimmel",
+            "Lisa Kudrow"
+        ],
+        "length": "97 min",
+        "plot": "A suit-wearing, briefcase-carrying baby pairs up with his 7-year old brother to stop the dastardly plot of the CEO of Puppy Co.",
+        "director": "Tom McGrath",
+        "watched": true
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1821593",
+        "name": "Rundskop",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Matthias Schoenaerts",
+            "Jeroen Perceval",
+            "Jeanne Dandoy",
+            "Barbara Sarafian"
+        ],
+        "length": "129 min",
+        "plot": "Sint-Truiden, Belgium. Jacky, a young cattle farmer who is constantly pumped on steroids and hormones, is approached by a veterinarian to make a deal with a notorious beef trader.",
+        "director": "Micha\u00ebl R. Roskam",
+        "watched": false
+    },
+    {
+        "type": 1,
+        "imdbId": "tt3214310",
+        "name": "Tut",
+        "plot": "A miniseries concentrating on the youngest Pharaoh to rule Ancient Egypt.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2015,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt4283372",
+                        "nr": 1,
+                        "title": "Part One: Power",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4283390",
+                        "nr": 2,
+                        "title": "Part Two: Betrayal",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt4283394",
+                        "nr": 3,
+                        "title": "Part Three: Destiny",
+                        "watched": false
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Ben Kingsley",
+            "Avan Jogia",
+            "Sibylla Deen",
+            "Alexander Siddig"
+        ]
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0103074",
+        "name": "Thelma & Louise",
+        "year": 1991,
+        "score": null,
+        "actors": [
+            "Susan Sarandon",
+            "Geena Davis",
+            "Harvey Keitel",
+            "Michael Madsen"
+        ],
+        "length": "130 min",
+        "plot": "Two best friends set out on an adventure but it soon turns around to a terrifying escape from being hunted by the American police as these two girls escape for the crimes they committed.",
+        "director": "Ridley Scott",
+        "watched": true
+    },
+    {
+        "type": 1,
+        "imdbId": "tt5171438",
+        "name": "Star Trek: Discovery",
+        "plot": "Ten years before Kirk, Spock and the Enterprise, the USS Discovery discovers new worlds and lifeforms as one Starfleet officer learns to understand all things alien.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt5509372",
+                        "nr": 1,
+                        "title": "Pilot",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5835712",
+                        "nr": 2,
+                        "title": "Battle at the Binary Stars",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "tt5890578",
+                        "nr": 9,
+                        "title": "Episode #1.9",
+                        "watched": false
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Jason Isaacs",
+            "Doug Jones",
+            "Shazad Latif",
+            "Sonequa Martin-Green"
+        ]
+    },
+    {
+        "type": 2,
+        "name": "The Vietnam War",
+        "year": 2017,
+        "score": null,
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0093565",
+        "name": "Moonstruck",
+        "year": 1987,
+        "score": null,
+        "actors": [
+            "Cher",
+            "Nicolas Cage",
+            "Vincent Gardenia",
+            "Olympia Dukakis"
+        ],
+        "length": "102 min",
+        "plot": "Loretta Castorini, a book keeper from Brooklyn, New York, finds herself in a difficult situation when she falls for the brother of the man she has agreed to marry.",
+        "director": "Norman Jewison",
+        "watched": false
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0343737",
+        "name": "The Good Shepherd",
+        "year": 2006,
+        "score": null,
+        "actors": [
+            "Matt Damon",
+            "Angelina Jolie",
+            "Alec Baldwin",
+            "Tammy Blanchard"
+        ],
+        "length": "167 min",
+        "plot": "The tumultuous early history of the Central Intelligence Agency is viewed through the prism of one man's life.",
+        "director": "Robert De Niro",
         "watched": false
     }
 ]
