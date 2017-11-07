@@ -40,7 +40,7 @@ let ItemFields = Vue.component('item-fields', {
                 <label>Plot</label>
                 <textarea placeholder="Plot" v-model="item.plot"></textarea>
               </div>
-              <div class="form-item" v-if="isMovie(item)">
+              <div class="form-item" v-if="isMovie(item) || isDocumentary(item)">
                 <label>Director</label>
                 <input type="text" placeholder="Name" v-model="item.director" />
               </div>
