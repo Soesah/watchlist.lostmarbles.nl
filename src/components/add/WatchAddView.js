@@ -17,7 +17,7 @@ let WatchAddView = Vue.component('watch-add-view', {
             </form>`,
   data() {
     return {
-      item: WatchItemFactory.new(),
+      item: WatchItemFactory.new()
     }
   },
   created () {
