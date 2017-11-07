@@ -30,7 +30,6 @@ let WatchItemView = Vue.component('watch-item-view', {
                 <p v-text="item.plot"></p>
               </div>
 
-
               <div v-if="item.seasons && item.seasons.length">
                 <h4>Seasons</h4>
                 <ul class="seasons">
@@ -53,11 +52,6 @@ let WatchItemView = Vue.component('watch-item-view', {
                   </li>
                 </ul>
               </div>
-
-              <div class="links">
-                <router-link :to="'/edit/' + item.path">Edit</router-link> / 
-                <a href="#" @click="back">Back</a>
-              </div>
             </section>`,
   computed: {
     item() {
@@ -68,7 +62,15 @@ let WatchItemView = Vue.component('watch-item-view', {
     }
   },
   created () {
-    this.$store.dispatch('getItemByName', this.$route.params.path);
+    this.$store.dispatch('getItemByName', this.$route.params.path).then(item => {
+      this.$store.commit('addNav', {
+        name: 'Edit ' + item.name,
+        to: '/edit/' + item.path
+      });
+    });
+  },
+  destroyed () {
+    this.$store.commit('removeNav', '/edit/' + this.item.path);
   },
   methods: {
     back(evt) {

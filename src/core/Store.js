@@ -10,7 +10,8 @@ const store = new Vuex.Store({
       search: '',
       itemState: null,
       itemType: true
-    }
+    },
+    navigation: []
   },
   mutations: {
     setItems (state, items) {
@@ -44,6 +45,13 @@ const store = new Vuex.Store({
     dismiss (state, id) {
       var message = _.find(state.messages, {id, id});
       state.messages.splice(state.messages.indexOf(message), 1);
+    },
+    addNav (state, nav) {
+      state.navigation.push(nav);
+    },
+    removeNav (state, to) {
+      var nav = _.find(state.navs, {to, to});
+      state.navigation.splice(state.navigation.indexOf(nav), 1);
     }
   },
   actions: {
