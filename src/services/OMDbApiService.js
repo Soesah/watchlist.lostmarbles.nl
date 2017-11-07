@@ -1,22 +1,24 @@
+import BaseService from 'core/services/BaseService';
 import OMDbObject from 'models/OMDbObjectModel';
 import OMDbResults from 'models/OMDbResultsModel';
 
-class OMDbApiService {
+class OMDbApiService extends BaseService {
   constructor() {
+    super();
     this.url = 'http://www.omdbapi.com/';
     this.apiKey = '3e5351f0'; // this isn't very nice, might be nicer to do these request on the server to protect the api key.
   }
 
   request(url, Model) {
-    return $q(function(resolve, reject) {
-      $http.get(url).then(function(response) {
+    return new Promise((resolve, reject) => {
+      this.$http.get(url).then(response => {
         let data = response.data;
         if (data.Response === 'True') {
           resolve(new Model(data));
         } else {
           reject(data);
         }
-      }, function(response) {
+      }, response => {
          reject(response);
       });
     });
@@ -55,7 +57,7 @@ class OMDbApiService {
 
   updateSeries(item) {
     let _this = this;
-    return $q(function(resolve, reject) {
+    return new Promise(function(resolve, reject) {
       _this.get(item.imdbId).then(function(obj){
         if (obj.imdbId) {
           item.imdbId = obj.imdbId
@@ -82,7 +84,7 @@ class OMDbApiService {
     }
     season.nr = nr;
 
-    return $q(function(resolve, reject) {
+    return new Promise(function(resolve, reject) {
       _this.getSeason(series.imdbId, nr).then(function(obj){
         if (obj.title) {
           // update existing episodes, or create new ones
@@ -125,3 +127,5 @@ class OMDbApiService {
     }
   }
 }
+
+const omdbApiService = new OMDbApiService();

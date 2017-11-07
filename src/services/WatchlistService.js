@@ -26,8 +26,11 @@ class WatchlistService extends BaseService {
 
   save (items) {
     return new Promise((resolve, reject) => {
-      this.$http.post('data/save.php?f=' + this.file, items.map(item => item.data()))
-        .then(response => resolve(items))
+      this.$http.post('backend.php?f=' + this.file, items)
+        .then(response => {
+          this.items = items;
+          resolve(items);
+        })
         .catch(error => reject(error));
     });
   }

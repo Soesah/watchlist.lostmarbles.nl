@@ -32,6 +32,55 @@ class WatchItemFactory {
     }
   }
 
+static change (item, type) {
+  let newItem = this.new(type)
+
+    if (item) {
+      let imdbId = item.imdbId,
+          name = item.name,
+          year = item.year,
+          actors = item.actors,
+          plot = item.plot,
+          director = item.director,
+          length = item.length,
+          watched = item.watched;
+
+      if (newItem.hasOwnProperty('imdbId')) {
+        newItem.imdbId = imdbId;
+      }
+
+      newItem.name = name;
+
+      if (type !== DOCUMENTARY && plot) {
+        newItem.plot = plot;
+      }
+
+      if (newItem.hasOwnProperty('director') && director) {
+        newItem.director = director;
+      }
+
+      if (newItem.hasOwnProperty('length') && length) {
+        newItem.length = length;
+      }
+
+      if (newItem.hasOwnProperty('watched')) {
+        newItem.watched = watched;
+      }
+
+      if (newItem.hasOwnProperty('actors')) {
+        newItem.actors = actors ? actors : [];
+      }
+
+      if (type === SERIES) {
+        newItem.addSeason(year ? year : item.year ? item.year + 1 : null);
+      } else {
+        newItem.year = year;
+      }
+    }
+
+    return newItem;
+  }
+
   static new (type) {
     switch(type) {
       case MOVIE:
@@ -51,7 +100,61 @@ class WatchItemFactory {
     }
   }
 
-  static getFilterStates() {
+  static change (item, type) {
+    let newItem = WatchItemFactory.new(type),
+        promise = new Promise(resolve => {
+
+          if (item) {
+            let imdbId = item.imdbId,
+                name = item.name,
+                year = item.year,
+                actors = item.actors,
+                plot = item.plot,
+                director = item.director,
+                length = item.length,
+                watched = item.watched;
+
+
+            if (newItem.hasOwnProperty('imdbId')) {
+              newItem.imdbId = imdbId;
+            }
+
+            newItem.name = name;
+
+            if (type !== DOCUMENTARY && plot) {
+              newItem.plot = plot;
+            }
+
+            if (newItem.hasOwnProperty('director') && director) {
+              newItem.director = director;
+            }
+
+            if (newItem.hasOwnProperty('length') && length) {
+              newItem.length = length;
+            }
+
+            if (newItem.hasOwnProperty('watched')) {
+              newItem.watched = watched;
+            }
+
+            if (newItem.hasOwnProperty('actors')) {
+              newItem.actors = actors ? actors : [];
+            }
+
+            if (type === SERIES) {
+              newItem.addSeason(year ? year : item.year ? item.year + 1 : null);
+            } else {
+              newItem.year = year;
+            }
+          }
+
+          resolve(newItem);
+        });
+
+    return promise;
+  }
+
+  static getFilterStates () {
     return [
       {
         state: null,
@@ -66,7 +169,7 @@ class WatchItemFactory {
     ];
   }
 
-  static getFilterTypes() {
+  static getFilterTypes () {
     let types = this.getTypeList().map(item => {
           if (item.type === MOVIE) {
             item.type = [item.type, SEQUEL, PREQUEL];
@@ -83,7 +186,7 @@ class WatchItemFactory {
     ].concat(types);
   }
 
-  static getTypeList() {
+  static getTypeList () {
     return [
       {
         type: DOCUMENTARY,
@@ -101,7 +204,7 @@ class WatchItemFactory {
     ]
   }
 
-  static getFullTypeList() {
+  static getFullTypeList () {
     return [
       {
         type: SEQUEL,
@@ -115,8 +218,30 @@ class WatchItemFactory {
     ].concat(this.getTypeList());
   }
 
-  static getTypeName(item) {
+  static getTypeName (item) {
     return (item && item.type !== undefined) ? _.find(WatchItemFactory.getFullTypeList(), type => type.type === item.type).name : 'Unknown';
+  }
+
+  static get ALL () {
+    return ALL;
+  }
+  static get MOVIE () {
+    return MOVIE;
+  }
+  static get SEQUEL () {
+    return SEQUEL;
+  }
+  static get PREQUEL () {
+    return PREQUEL;
+  }
+  static get SERIES () {
+    return SERIES;
+  }
+  static get DOCUMENTARY () {
+    return DOCUMENTARY;
+  }
+  static get GAME () {
+    return GAME;
   }
 
 }

@@ -5,7 +5,7 @@ const store = new Vuex.Store({
   state: {
     item: {},
     items: [],
-    notifications: [],
+    messages: [],
     filter: {
       search: '',
       itemState: null,
@@ -19,29 +19,52 @@ const store = new Vuex.Store({
     setItem (state, item) {
       state.item = item;
     },
-    notify (state, notification) {
-      let index = state.notifications.length
-      state.notifications.push(notification);
-      switch(notification.type) {
+    addItem (state, item) {
+      state.items.push(item);
+    },
+    message (state, message) {
+      let index = state.messages.length
+      message.id = message.type + '_' + message.text;
+      state.messages.push(message);
+      switch(message.type) {
         case 'info':
-          this.dispatch('dismiss', {delay: 1000, index: index});
+          this.dispatch('dismiss', {delay: 1700, id: message.id});
           break;
         case 'success':
-          this.dispatch('dismiss', {delay: 1500, index: index});
+          this.dispatch('dismiss', {delay: 2000, id: message.id});
           break;
         case 'warning':
-          this.dispatch('dismiss', {delay: 2500, index: index});
+          this.dispatch('dismiss', {delay: 2500, id: message.id});
           break;
         case 'error':
-          this.dispatch('dismiss', {delay: 5500, index: index});
+          // make the user dismiss the error
           break;
       }
     },
-    dismiss (state, index = 0) {
-      state.notifications.splice(index, 1);
+    dismiss (state, id) {
+      var message = _.find(state.messages, {id, id});
+      state.messages.splice(state.messages.indexOf(message), 1);
     }
   },
   actions: {
+    addItem({commit, state}, item) {
+      commit('addItem', item);
+      return this.dispatch('save')
+    },
+    save ({commit, state}) {
+      commit('message', {
+        type: 'info',
+        text: 'Saving...'
+      });
+      return watchlistService.save(state.items).then(items => {
+        commit('setItems', items);
+        commit('message', {
+          type: 'success',
+          text: 'Watchlist saved succesfully.'
+        });
+        return items;
+      });
+    },
     getWatchList ({commit, state}) {
       return watchlistService.load().then(items => commit('setItems', items));
     },
@@ -55,7 +78,7 @@ const store = new Vuex.Store({
     },
     dismiss ({commit, state}, data) {
       window.setTimeout(() => {
-        commit('dismiss', state.notifications.length <= data.index ? data.index - 1 : data.index);
+        commit('dismiss', data.id);
       }, data.delay)
     }
   },

@@ -47,6 +47,18 @@
     }
   }
 
+  &.success {
+    background-color: @green-info;
+    border: solid 1px darken(@green-info, 20%);
+
+    .icon {
+      color: darken(@green-info, 25%);
+    }
+    button {
+      background-color: darken(@green-info, 25%);
+    }
+  }
+
   &.info {
     background-color: @blue-info;
     border: solid 1px darken(@blue-info, 20%);
