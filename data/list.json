@@ -122,6 +122,7 @@
         "type": 2,
         "name": "Under The Sun",
         "year": 2015,
+        "director": null,
         "score": null,
         "watched": false
     },
@@ -3767,6 +3768,7 @@
         "type": 2,
         "name": "The forgotten space",
         "year": 2012,
+        "director": null,
         "score": null,
         "watched": false
     },
@@ -32301,6 +32303,7 @@
         "type": 2,
         "name": "The Vietnam War",
         "year": 2017,
+        "director": null,
         "score": null,
         "watched": false
     },

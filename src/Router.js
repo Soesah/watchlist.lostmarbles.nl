@@ -2,6 +2,7 @@ import VueRouter from 'VueRouter';
 import WatchList from 'components/list/WatchList';
 import WatchItemView from 'components/view/WatchItemView';
 import WatchAddView from 'components/add/WatchAddView';
+import WatchEditView from 'components/edit/WatchEditView';
 
 const router = new VueRouter({
   routes: [
@@ -14,9 +15,9 @@ const router = new VueRouter({
     },{
       path: '/view/:path',
       component: WatchItemView
-    // },{
-    //   path: '/edit/:path',
-    //   component: ItemEdit
+    },{
+      path: '/edit/:path',
+      component: WatchEditView
     }
   ]
 });

@@ -23,6 +23,11 @@ const store = new Vuex.Store({
     addItem (state, item) {
       state.items.push(item);
     },
+    editItem (state, item) {
+      // assume imdbId doesn't change
+      let index = _.findIndex(state.items, {imdbId: item.imdbId});
+      state.items.splice(index, 1, item);
+    },
     message (state, message) {
       let index = state.messages.length
       message.id = message.type + '_' + message.text;
@@ -43,21 +48,25 @@ const store = new Vuex.Store({
       }
     },
     dismiss (state, id) {
-      var message = _.find(state.messages, {id, id});
-      state.messages.splice(state.messages.indexOf(message), 1);
+      let index = _.findIndex(state.messages, {id, id});
+      state.messages.splice(index, 1);
     },
     addNav (state, nav) {
       state.navigation.push(nav);
     },
     removeNav (state, to) {
-      var nav = _.find(state.navs, {to, to});
-      state.navigation.splice(state.navigation.indexOf(nav), 1);
+      let index = _.findIndex(state.navs, {to, to});
+      state.navigation.splice(index, 1);
     }
   },
   actions: {
     addItem({commit, state}, item) {
       commit('addItem', item);
-      return this.dispatch('save')
+      return this.dispatch('save');
+    },
+    editItem({commit, state}, item) {
+      commit('editItem', item);
+      return this.dispatch('save');
     },
     save ({commit, state}) {
       commit('message', {
