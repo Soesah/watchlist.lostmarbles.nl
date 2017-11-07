@@ -38,8 +38,13 @@ let WatchEditView = Vue.component('watch-edit-view', {
         .then(items => this.$router.go(-1));
       evt.preventDefault();
     },
-    remove () {
-
+    remove (evt) {
+      this.$store.dispatch('removeItem', this.item)
+        .then(items => {
+          this.$destroy();
+          this.$router.push('/');
+        });
+      evt.preventDefault();
     },
     back (evt) {
       this.$router.go(-1);

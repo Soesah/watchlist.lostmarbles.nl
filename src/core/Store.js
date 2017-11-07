@@ -28,6 +28,11 @@ const store = new Vuex.Store({
       let index = _.findIndex(state.items, {imdbId: item.imdbId});
       state.items.splice(index, 1, item);
     },
+    removeItem (state, item) {
+      // assume imdbId doesn't change
+      let index = _.findIndex(state.items, {imdbId: item.imdbId});
+      state.items.splice(index, 1);
+    },
     message (state, message) {
       let index = state.messages.length
       message.id = message.type + '_' + message.text;
@@ -66,6 +71,10 @@ const store = new Vuex.Store({
     },
     editItem({commit, state}, item) {
       commit('editItem', item);
+      return this.dispatch('save');
+    },
+    removeItem({commit, state}, item) {
+      commit('removeItem', item);
       return this.dispatch('save');
     },
     save ({commit, state}) {
