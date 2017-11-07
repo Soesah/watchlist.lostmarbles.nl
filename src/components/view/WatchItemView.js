@@ -1,7 +1,7 @@
 import WatchItemFactory from 'services/WatchItemFactory';
 
 let WatchItemView = Vue.component('watch-item-view', {
-  template:`<div class="view">
+  template:`<section class="view">
               <h2 v-text="item.name"></h2>
 
               <h3>
@@ -58,7 +58,7 @@ let WatchItemView = Vue.component('watch-item-view', {
                 <router-link :to="'/edit/' + item.path">Edit</router-link> / 
                 <a href="#" @click="back">Back</a>
               </div>
-            </div>`,
+            </section>`,
   computed: {
     item() {
       return this.$store.state.item
