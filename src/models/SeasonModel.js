@@ -36,9 +36,11 @@ class Season {
   }
 
   toggleWatched () {
-    _.each(this.episodes, function(episode) {
-      episode.toggleWatched();
-    });
+    this.episodes.forEach(episode => this.toggleEpisodeWatched(episode));
+  }
+
+  toggleEpisodeWatched (episode) {
+    episode.toggleWatched();
   }
 
   get watched () {

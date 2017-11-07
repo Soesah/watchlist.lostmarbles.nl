@@ -36,6 +36,12 @@ const store = new Vuex.Store({
     toggleWatched (state, item) {
       item.toggleWatched();
     },
+    toggleSeasonWatched (state, options) {
+      options.item.toggleSeasonWatched(options.season);
+    },
+    toggleEpisodeWatched (state, options) {
+      options.item.toggleEpisodeWatched(options.season, options.episode);
+    },
     message (state, message) {
       let index = state.messages.length
       message.id = message.type + '_' + message.text;
@@ -82,6 +88,14 @@ const store = new Vuex.Store({
     },
     toggleWatched({commit, state}, item) {
       commit('toggleWatched', item);
+      return this.dispatch('save');
+    },
+    toggleSeasonWatched({commit, state}, options) {
+      commit('toggleSeasonWatched', options);
+      return this.dispatch('save');
+    },
+    toggleEpisodeWatched({commit, state}, options) {
+      commit('toggleEpisodeWatched', options);
       return this.dispatch('save');
     },
     save ({commit, state}) {

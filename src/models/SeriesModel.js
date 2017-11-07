@@ -24,7 +24,15 @@ class Series extends BaseModel{
   }
 
   toggleWatched () {
-    // do something with seasons;
+    this.seasons.forEach(season => this.toggleSeasonWatched(season));
+  }
+
+  toggleSeasonWatched (season) {
+    season.toggleWatched();
+  }
+
+  toggleEpisodeWatched (season, episode) {
+    season.toggleEpisodeWatched(episode);
   }
 
   addSeason (year = null) {

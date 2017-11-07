@@ -37,7 +37,7 @@ let WatchItemView = Vue.component('watch-item-view', {
                     <h5 class="season-title">
                       Season <span v-text="season.nr"></span>
                       <span class="season-year bracketed" v-text="season.year"></span>
-                      <i class="icon icon-series" Xclick="toggleWatched($event, season)"></i>
+                      <i class="icon icon-series" @click="toggleSeasonWatched(season)"></i>
                       <a href="javascript:void(0)" Xclick="editSeason(season)">Edit</a>
                     </h5>
                     <ul class="episodes">
@@ -45,7 +45,7 @@ let WatchItemView = Vue.component('watch-item-view', {
                         <p class="episode-title" :class="{'episode-watched': episode.watched}">
                           <span v-text="episode.nr" class="episode-nr"></span>
                           <span class="episode-name"v-text="episode.title"></span>
-                          <i class="icon icon-series" Xclick="toggleWatched($event, episode)"></i>
+                          <i class="icon icon-series" @click="toggleEpisodeWatched(season, episode)"></i>
                         </p>
                       </li>
                     </ul>
@@ -54,10 +54,10 @@ let WatchItemView = Vue.component('watch-item-view', {
               </div>
             </section>`,
   computed: {
-    item() {
+    item () {
       return this.$store.state.item
     },
-    typeName() {
+    typeName () {
       return WatchItemFactory.getTypeName(this.item);
     }
   },
@@ -73,7 +73,20 @@ let WatchItemView = Vue.component('watch-item-view', {
     this.$store.commit('removeNav', '/edit/' + this.item.path);
   },
   methods: {
-    back(evt) {
+    toggleSeasonWatched (season) {
+      this.$store.dispatch('toggleSeasonWatched', {
+        item: this.item,
+        season: season
+      });
+    },
+    toggleEpisodeWatched (season, episode) {
+      this.$store.dispatch('toggleEpisodeWatched', {
+        item: this.item,
+        season: season,
+        episode: episode
+      });
+    },
+    back (evt) {
       this.$router.go(-1);
       evt.preventDefault();
     }
