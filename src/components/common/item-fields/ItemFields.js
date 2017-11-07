@@ -48,6 +48,14 @@ let ItemFields = Vue.component('item-fields', {
                 <label>Runtime</label>
                 <input type="text" placeholder="100 min" class="length" v-model="item.length" />
               </div>
+              <div class="form-item" v-if="isGame(item)">
+                <label>Genre</label>
+                <input type="text" placeholder="FPS" v-model="item.genre" />
+              </div>
+              <div class="form-item" v-if="isGame(item)">
+                <label>Publisher</label>
+                <input type="text" placeholder="..." v-model="item.publisher" />
+              </div>
               <ul class="series-list" v-if="isSeries(item)">
                 <li v-for="(season, index) in item.seasons">
                   <div class="form-item form-item-required">
