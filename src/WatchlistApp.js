@@ -1,7 +1,7 @@
 import Vue from 'Vue';
 import Vuex from 'Vuex';
 import router from 'Router';
-import store from 'core/Store';
+import store from 'Store';
 import MessageLog from 'components/common/message-log/MessageLog';
 import Toolbar from 'components/common/toolbar/Toolbar';
 

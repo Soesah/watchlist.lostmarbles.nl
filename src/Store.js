@@ -33,6 +33,9 @@ const store = new Vuex.Store({
       let index = _.findIndex(state.items, {imdbId: item.imdbId});
       state.items.splice(index, 1);
     },
+    toggleWatched (state, item) {
+      item.toggleWatched();
+    },
     message (state, message) {
       let index = state.messages.length
       message.id = message.type + '_' + message.text;
@@ -75,6 +78,10 @@ const store = new Vuex.Store({
     },
     removeItem({commit, state}, item) {
       commit('removeItem', item);
+      return this.dispatch('save');
+    },
+    toggleWatched({commit, state}, item) {
+      commit('toggleWatched', item);
       return this.dispatch('save');
     },
     save ({commit, state}) {

@@ -5,7 +5,7 @@ let WatchListItem = Vue.component('watch-list-item', {
               <router-link :to="'/view/' + item.path">
                 <h6 v-text="item.name"></h6>
                 <span class="bracketed" v-text="item.year"></span>
-                <i :class="'icon icon-' + icon" ng-click="toggleWatched($event, item)"></i>
+                <i :class="'icon icon-' + icon" @click="toggleWatched"></i>
               </router-link>
             </li>`,
   props: {
@@ -16,6 +16,13 @@ let WatchListItem = Vue.component('watch-list-item', {
   computed: {
     icon() {
       return WatchItemFactory.getTypeName(this.item).toLowerCase();
+    }
+  },
+  methods: {
+    toggleWatched (evt) {
+      this.$store.dispatch('toggleWatched', this.item);
+      evt.preventDefault();
+      evt.stopPropagation();
     }
   }
 });
