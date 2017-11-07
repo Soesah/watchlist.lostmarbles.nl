@@ -1,3 +1,4 @@
+import Focus from 'directives/Focus';
 import WatchItemFactory from 'services/WatchItemFactory';
 import watchlistService from 'services/WatchlistService';
 import omdbApiService from 'services/OMDbApiService';
@@ -13,10 +14,10 @@ let ItemFields = Vue.component('item-fields', {
                   <polygon points="25.2873563 0 0 0 50 0 74.7126437 0 50 31.8333333"></polygon>
                 </svg>
               </div>
-              <div class="form-item form-item-required form-item-name" auto-focus>
+              <div class="form-item form-item-required form-item-name">
                 <label>Name</label>
                 <div class="form-input-group">
-                    <input type="text" name="name" required autocomplete="off" placeholder="Name" v-model="item.name"/>
+                    <input type="text" name="name" required autocomplete="off" v-focus placeholder="Name" v-model="item.name"/>
                     <button class="search-button action" type="button" tooltip="'Search'|top" @click="search($event)" :disabled="searching || !item.name">
                       <i class="icon icon-search" v-show="!searching"></i>
                       <i class="icon icon-spinner" v-show="searching"></i>
