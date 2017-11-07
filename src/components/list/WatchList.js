@@ -4,8 +4,9 @@ import WatchListItem from 'components/list/WatchListItem';
 
 let WatchList = Vue.component('watch-list', {
   template:`<section class="watch-list">
+              <p>A list of movies, series, documentaries and games I want to watch and play.</p>
               <list-filter></list-filter>
-              <!p>Showing <strong>{{items.length}}</strong> movies, series, games and documentaries. <router-link to="/add">Add something to watch</router-link></p>
+              <!p>Showing <strong>{{items.length}}</strong> movies, series, games and documentaries.</p>
 
               <ul class="list">
                 <watch-list-item v-for="item in items" :item="item" :key="item.imdbId"></watch-list-item>
