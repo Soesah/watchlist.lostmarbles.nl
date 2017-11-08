@@ -108,7 +108,8 @@ class OMDbApiService extends BaseService {
             }
             return episode;
           });
-          resolve();
+
+          resolve(season);
         } else {
           reject();
         }

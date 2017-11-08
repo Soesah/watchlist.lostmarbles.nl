@@ -29,6 +29,14 @@ let WatchItemView = Vue.component('watch-item-view', {
                 <h4>Plot</h4>
                 <p v-text="item.plot"></p>
               </div>
+              <div v-show="item.genre">
+                <h4>Genre</h4>
+                <p v-text="item.genre"></p>
+              </div>
+              <div v-show="item.publisher">
+                <h4>Publisher</h4>
+                <p v-text="item.publisher"></p>
+              </div>
 
               <div v-if="item.seasons && item.seasons.length">
                 <h4>Seasons</h4>
@@ -38,7 +46,7 @@ let WatchItemView = Vue.component('watch-item-view', {
                       Season <span v-text="season.nr"></span>
                       <span class="season-year bracketed" v-text="season.year"></span>
                       <i class="icon icon-series" @click="toggleSeasonWatched(season)"></i>
-                      <a href="javascript:void(0)" Xclick="editSeason(season)">Edit</a>
+                      <router-link :to="'/edit/' + item.path + '/season/' + season.nr">Edit</router-link>
                     </h5>
                     <ul class="episodes">
                       <li v-for="episode in season.episodes">

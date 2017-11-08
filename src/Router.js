@@ -3,6 +3,7 @@ import WatchList from 'components/list/WatchList';
 import WatchItemView from 'components/view/WatchItemView';
 import WatchAddView from 'components/add/WatchAddView';
 import WatchEditView from 'components/edit/WatchEditView';
+import WatchEditSeasonView from 'components/edit/WatchEditSeasonView';
 
 const router = new VueRouter({
   routes: [
@@ -18,6 +19,9 @@ const router = new VueRouter({
     },{
       path: '/edit/:path',
       component: WatchEditView
+    },{
+      path: '/edit/:path/season/:nr',
+      component: WatchEditSeasonView
     }
   ]
 });
