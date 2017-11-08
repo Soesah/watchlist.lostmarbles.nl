@@ -1,7 +1,7 @@
 /* global module */
 module.exports = function(grunt) {
   'use strict';
-  var settings = grunt.file.readJSON('settings.json');
+  var settings = grunt.file.readJSON('package.json');
 
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
           {expand: true, src: ['.htaccess'], dest: 'build/'},
           {expand: true, src: ['*.php'], dest: 'build/'},
           {expand: true, src: ['data/*.json'], dest: 'build/'},
-          {expand: true, src: ['settings.json'], dest: 'build/'}
+          {expand: true, src: ['package.json'], dest: 'build/'}
         ]
       }
     },
@@ -220,7 +220,7 @@ module.exports = function(grunt) {
           'rm build/css/watchlist.css',
           'rm build/css/*.less',
           'rm build/js/watchlist.min.' + version + '.js.report.txt'].join('&&')},
-        version: {command: ['git add settings.json'].join('&&')},
+        version: {command: ['git add package.json'].join('&&')},
         tag: {command: 'git tag v' + version},
         commit: {command: 'git commit -F commit_message'},
         'clean-message': {command: 'rm commit_message'},
@@ -247,7 +247,7 @@ module.exports = function(grunt) {
     grunt.task.run('merge-config');
     settings.version = grunt.config.get('version');
     grunt.log.write('Bumped version to ', settings.version);
-    grunt.file.write('settings.json', JSON.stringify(settings, undefined, 2), function() {});
+    grunt.file.write('package.json', JSON.stringify(settings, undefined, 2), function() {});
     grunt.task.run('shell:version');
     grunt.task.run('shell:tag');
     // commit everything
