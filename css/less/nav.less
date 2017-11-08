@@ -35,15 +35,28 @@ nav {
       text-decoration: none;
       color: @white;
 
-      &:hover {
+      &:not(.active):hover {
         color: @white;
         text-decoration: underline;
       }
 
       &.active {
         font-weight: bold;
+        cursor: default;
+
+        &:hover {
+          color: @white;
+        }
       }
     }
+  }
+
+  .version {
+    font-size: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: darken(@orange, 20%);
   }
 }
 

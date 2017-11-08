@@ -1,3 +1,4 @@
+import Version from 'components/common/version/Version'
 
 let Toolbar = Vue.component('toolbar', {
   template: `<nav class="toolbar">
@@ -9,11 +10,15 @@ let Toolbar = Vue.component('toolbar', {
                     <router-link :to="nav.to" active-class="active" v-text="nav.name"></router-link>
                   </li>
                 </ul>
+                <version></version>
               </nav>`,
   computed: {
     navigation () {
       return this.$store.state.navigation;
     }
+  },
+  components: {
+    Version
   }
 });
 
