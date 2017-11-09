@@ -2,7 +2,7 @@ import Season from 'models/SeasonModel';
 
 class Series extends BaseModel{
 
-  constructor ({imdbId = null, name = null, seasons = [], plot = null, actors = [], finished = false}) {
+  constructor ({imdbId = null, name = null, seasons = [], plot = null, actors = [], finished = false, date_added = null}) {
     super();
     this.type = 1;
     this.imdbId = imdbId;
@@ -13,6 +13,7 @@ class Series extends BaseModel{
       return new Season(data);
     });
     this.actors = actors;
+    this.date_added = date_added;
   }
 
   isComplete () {

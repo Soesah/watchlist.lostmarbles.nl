@@ -4,6 +4,7 @@ import Prequel from 'models/PrequelModel';
 import Series from 'models/SeriesModel';
 import Game from 'models/GameModel';
 import Documentary from 'models/DocumentaryModel';
+import moment from 'Moment';
 
 const ALL = true;
 const MOVIE = 0;
@@ -33,7 +34,7 @@ class WatchItemFactory {
   }
 
 static change (item, type) {
-  let newItem = this.new(type)
+  let newItem = this.new(type, false)
 
     if (item) {
       let imdbId = item.imdbId,
@@ -81,27 +82,30 @@ static change (item, type) {
     return newItem;
   }
 
-  static new (type) {
+  static new (type, add_date = true) {
+    let date = new moment().format('YYYY-MM-DD'),
+        data = add_date ? { date_added: date } : {};
+
     switch(type) {
       case MOVIE:
-        return new Movie({});
+        return new Movie(data);
       case SEQUEL:
         return new Sequel({});
       case PREQUEL:
         return new Prequel({});
       case SERIES:
-        return new Series({});
+        return new Series(data);
       case DOCUMENTARY:
-        return new Documentary({});
+        return new Documentary(data);
       case GAME:
-        return new Game({});
+        return new Game(data);
       default:
-        return new Movie({});
+        return new Movie(data);
     }
   }
 
   static change (item, type) {
-    let newItem = WatchItemFactory.new(type),
+    let newItem = WatchItemFactory.new(type, false),
         promise = new Promise(resolve => {
 
           if (item) {
@@ -112,7 +116,8 @@ static change (item, type) {
                 plot = item.plot,
                 director = item.director,
                 length = item.length,
-                watched = item.watched;
+                watched = item.watched,
+                date_added = item.date_added;
 
 
             if (newItem.hasOwnProperty('imdbId')) {
@@ -120,6 +125,7 @@ static change (item, type) {
             }
 
             newItem.name = name;
+            newItem.date_added = date_added;
 
             if (type !== DOCUMENTARY && plot) {
               newItem.plot = plot;
