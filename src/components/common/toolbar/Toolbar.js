@@ -1,4 +1,4 @@
-import Version from 'components/common/version/Version'
+import Version from 'components/common/version/Version';
 
 let Toolbar = Vue.component('toolbar', {
   template: `<nav class="toolbar">
