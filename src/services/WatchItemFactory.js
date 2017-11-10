@@ -33,55 +33,6 @@ class WatchItemFactory {
     }
   }
 
-static change (item, type) {
-  let newItem = this.new(type, false)
-
-    if (item) {
-      let imdbId = item.imdbId,
-          name = item.name,
-          year = item.year,
-          actors = item.actors,
-          plot = item.plot,
-          director = item.director,
-          length = item.length,
-          watched = item.watched;
-
-      if (newItem.hasOwnProperty('imdbId')) {
-        newItem.imdbId = imdbId;
-      }
-
-      newItem.name = name;
-
-      if (type !== DOCUMENTARY && plot) {
-        newItem.plot = plot;
-      }
-
-      if (newItem.hasOwnProperty('director') && director) {
-        newItem.director = director;
-      }
-
-      if (newItem.hasOwnProperty('length') && length) {
-        newItem.length = length;
-      }
-
-      if (newItem.hasOwnProperty('watched')) {
-        newItem.watched = watched;
-      }
-
-      if (newItem.hasOwnProperty('actors')) {
-        newItem.actors = actors ? actors : [];
-      }
-
-      if (type === SERIES) {
-        newItem.addSeason(year ? year : item.year ? item.year + 1 : null);
-      } else {
-        newItem.year = year;
-      }
-    }
-
-    return newItem;
-  }
-
   static new (type, add_date = true) {
     let date = new moment().format('YYYY-MM-DD'),
         data = add_date ? { date_added: date } : {};
