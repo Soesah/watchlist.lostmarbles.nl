@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   var settings = grunt.file.readJSON('package.json');
 
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-closure-compiler');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -12,42 +12,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-ftp-deploy');
   grunt.loadNpmTasks('grunt-http');
-  grunt.loadNpmTasks('grunt-html2js');
 
   grunt.initConfig({
-    html2js: {
-      options: {
-        rename: function (moduleName) {
-          return moduleName.replace('../', '');
-        }
-      },
-      main: {
-        src: ['app/**/*.html'],
-        dest: 'build/tmp/templates.js'
-      }
-    },
-    concat: {
-      options: {
-        separator: ';'
-      },
-      dist: {
-        src: [
-          'build/tmp/templates.js',
-          'app/watchlist-app.js',
-          'app/app-router.js',
-          'app/main-controller.js',
-          'app/**/*.js'
-          ],
-        dest: 'build/tmp/watchlist.js'
-      }
-    },
     copy:
     {
       build:
       {
         files: [
-          {expand: true, src: ['css/**'], dest: 'build/'},
-          {expand: true, src: ['svg//**'], dest: 'build/'},
+          {expand: true, src: ['css/*.css'], dest: 'build/'},
+          {expand: true, src: ['css/fonts//**'], dest: 'build/'},
+          {expand: true, src: ['css/svg//**'], dest: 'build/'},
           {expand: true, src: ['index.html'], dest: 'build/'},
           {expand: true, src: ['.htaccess'], dest: 'build/'},
           {expand: true, src: ['*.php'], dest: 'build/'},
@@ -81,26 +55,19 @@ module.exports = function(grunt) {
       }
     },
     shell: {
-      setupbuild:
-      {
+      setupbuild: {
         command: [
           'mkdir build',
           'mkdir build/js',
           'mkdir build/tmp'
         ].join('&&')
       },
-      cleanbuild:
-      {
+      build: {
         command: [
-          'rm -rf build/tmp',
-          'rm -rf build/css/common',
-          'rm build/css/icons.css',
-          'rm build/css/watchlist.css',
-          'rm build/css/*.less'
-        ].join('&&')
+          'node node-classloader/Classloader.js src WatchlistApp >> build/tmp/watchlist.js'
+        ].join("&&")
       },
-      removebuild:
-      {
+      removebuild: {
         command: 'rm -rf build'
       },
       master: {
@@ -116,6 +83,18 @@ module.exports = function(grunt) {
         command:'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline|awk \'/Version/ {exit} {print}\' > commit_message'
       }
     },
+    'closure-compiler': {
+      compile: {
+        closurePath: '/Library/WebServer/Documents/closure-compiler/',
+        js: 'build/tmp/watchlist.js',
+        jsOutputFile: 'build/js/watchlist.min.<%=settings.version%>.js',
+        maxBuffer: 500,
+        options: {
+          compilation_level: 'SIMPLE_OPTIMIZATIONS',
+          language_in: 'ECMASCRIPT6_STRICT'
+        }
+      }
+    },
     replace: {
       version: {
         src: ['build/index.html'],
@@ -123,14 +102,34 @@ module.exports = function(grunt) {
         replacements: [{
           from: '<title>Watchlist</title>',
           to: '<title>Watchlist - ' + settings.version + '</title>'
-        },
-        {
-          from: 'watchlist.js',
-          to: 'watchlist.min.' + settings.version + '.js'
-        },
-        {
+        },{
+          from: 'node-classloader/classloader.php?WatchlistApp',
+          to: 'js/watchlist.min.' + settings.version + '.js'
+        },{
           from: 'css/watchlist.css',
           to: 'css/watchlist.min.' + settings.version + '.css'
+        }]
+      },
+      resources: {
+        src: ['build/index.html'],
+        overwrite: true,
+        replacements: [{
+          from: 'https://unpkg.com/vuex"',
+          to: 'https://unpkg.com/vuex@3.0.1/dist/vuex.min.js"'
+        },{
+          from: 'https://unpkg.com/vue-router"',
+          to: 'https://unpkg.com/vue-router@3.0.1/dist/vue-router.min.js"'
+        },{
+          from: 'https://unpkg.com/vue"',
+          to: 'https://unpkg.com/vue@2.5.3/dist/vue.min.js"'
+        }]
+      },
+      'app-version': {
+        src: ['build/tmp/watchlist.js'],
+        overwrite: true,
+        replacements: [{
+          from: 'return \'x.x.x\';',
+          to: 'return \'' + settings.version + '\';'
         }]
       }
     },
@@ -209,7 +208,7 @@ module.exports = function(grunt) {
     grunt.task.run('deploy-version');
   });
 
-  grunt.registerTask('merge-config', 'Mergin version into configuration', function() {
+  grunt.registerTask('merge-config', 'Merging version into configuration', function() {
     var version = grunt.config.get('version');
     grunt.config.merge({
       cssmin: {build: {ext: '.min.' + version + '.css'}},
@@ -227,11 +226,15 @@ module.exports = function(grunt) {
         'push-master': {command:['git push', 'git checkout develop'].join('&&')},
         compose: {command:'echo "Version '+ version + '\n\n"|cat - commit_message > tmp && mv tmp commit_message'}
       },
-      replace: {version: {replacements: [
-        {from: '<title>Watchlist</title>', to: '<title>Watchlist - ' + version + '</title>'},
-        {from: 'watchlist.js',to: 'watchlist.' + version + '.js'},
-        {from: 'css/watchlist.css',to: 'css/watchlist.min.' + version + '.css'}
-      ]}}
+      'closure-compiler':{compile:{jsOutputFile: 'build/js/watchlist.min.'+version+'.js'}},
+      replace: {
+        version: {replacements: [
+          {from: '<title>Watchlist</title>', to: '<title>Watchlist - ' + version + '</title>'},
+          {from: 'node-classloader/classloader.php?WatchlistApp',to: 'js/watchlist.min.' + version + '.js'},
+          {from: 'css/watchlist.css',to: 'css/watchlist.min.' + version + '.css'}
+        ]},
+        'app-version': {replacements: [{from: 'return \'x.x.x\';', to: 'return \'' + version + '\';'}]}
+      }
     });
   });
 
@@ -263,13 +266,14 @@ module.exports = function(grunt) {
     grunt.config.set('version', settings.version);
     grunt.task.run('merge-config');
     grunt.task.run('shell:setupbuild');
-    grunt.task.run('html2js'); // compile templates
-    grunt.task.run('concat'); // concatenate js to temp
-    grunt.task.run('copy:build'); // copy files to build
+    grunt.task.run('copy:build');
+    grunt.task.run('shell:build');
+    grunt.task.run('replace:app-version');
+    grunt.task.run('closure-compiler:compile');
     grunt.task.run('less:prod'); // compile and copy css to build
     grunt.task.run('cssmin:build'); // compile and copy css to build
     grunt.task.run('replace:version');  // update file and version reference
-    grunt.task.run('shell:cleanbuild');
+    grunt.task.run('replace:resources');
     grunt.task.run('ftp-deploy:deploy'); // ftp build to deploy
     grunt.task.run('shell:removebuild');
     //grunt.task.run('http:clean'); // clean up previous version css and js files
@@ -280,12 +284,13 @@ module.exports = function(grunt) {
     grunt.config.set('version', settings.version);
     grunt.task.run('merge-config');
     grunt.task.run('shell:setupbuild');
-    grunt.task.run('html2js'); // compile templates
-    grunt.task.run('concat'); // concatenate js to temp
-    grunt.task.run('copy:build'); // copy templates, js, and css to build
+    grunt.task.run('copy:build');
+    grunt.task.run('shell:build');
+    grunt.task.run('replace:app-version');
+    grunt.task.run('closure-compiler:compile');
     grunt.task.run('cssmin:build'); // compile and copy css to build
     grunt.task.run('replace:version');  // update file and version reference
-    grunt.task.run('shell:cleanbuild');
+    grunt.task.run('replace:resources');
   });
 
   grunt.registerTask('css-test', 'Compile CSS for watchlist.lostmarbles.nl for debugging', function() {
