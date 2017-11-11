@@ -62,14 +62,14 @@ const store = new Vuex.Store({
       }
     },
     dismiss (state, id) {
-      let index = _.findIndex(state.messages, {id, id});
+      let index = _.findIndex(state.messages, {id: id});
       state.messages.splice(index, 1);
     },
     addNav (state, nav) {
       state.navigation.push(nav);
     },
     removeNav (state, to) {
-      let index = _.findIndex(state.navs, {to, to});
+      let index = _.findIndex(state.navs, {to: to});
       state.navigation.splice(index, 1);
     }
   },
