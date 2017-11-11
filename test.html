@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<div id="vue">
+  <child v-model="stuff"></child>
+  {{stuff}}
+  <hr>
+  <name-fields v-model="item"></name-fields>
+  <address-fields v-model="item.address"></address-fields>
+  {{item}}
+</div>
+
+<script src="vue.js"></script>
+<script type="text/javascript">
+
+class Address {
+  constructor({street = null, street_number = null, city = null}) {
+    this.street = street;
+    this.street_number = street_number;
+    this.city = city;
+  }
+}
+
+class Item {
+  constructor({first_name = null, last_name = null, address = null}) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.address = new Address(address);
+  }
+}
+
+class Data {
+  constructor({stuff = null, item = null}) {
+    this.stuff = stuff;
+    this.item = new Item(item);
+  }
+}
+  new Vue({
+  el: '#vue',
+  data() {
+    return new Data({
+      stuff: 'Hello Vue!',
+      item: {
+        first_name: 'Simon',
+        last_name: 'Herteby',
+        address: {
+            street: 'Highstreet',
+            street_number: '81',
+            city: 'Londen'
+        }
+      }
+    })
+  },
+  components: {
+    child: {
+      props: ['value'],
+      template: `<input v-model="interface">`,
+      computed: {
+        interface: {
+          get() {
+              return this.value
+            },
+            set(val) {
+              this.$emit('input', val)
+            }
+        }
+      }
+    },
+    nameFields: {
+      props: {
+        value: {
+          type: Object,
+          default: {
+            first_name: '',
+            last_name: ''
+          }
+        }
+      },
+      template: `
+        <div>
+          <input v-model="buffer.first_name" @input="$emit('input', buffer)">
+          <input v-model="buffer.last_name" @input="$emit('input', buffer)">
+        </div>`,
+      data() {
+        return {
+          buffer:new Item(this.value) //object.assign only works for shallow objects. for nested objects, use something like _.cloneDeep
+        }
+      },
+      watch: {
+        value: {
+          handler() {
+            this.buffer =new Item(this.value)
+          },
+          deep: true
+        }
+      }
+    },
+    addressFields: {
+      props: {
+        value: {
+          type: Object,
+          default: {
+            street: '',
+            street_number: '',
+            city: ''
+          }
+        }
+      },
+      template: `
+        <div>
+          <input v-model="address.street" @input="update">
+          <input v-model="address.street_number" @input="update"><br/>
+          <input v-model="address.city" @input="update">
+        </div>`,
+      data() {
+        return {
+          address: new Address(this.value) //object.assign only works for shallow objects. for nested objects, use something like _.cloneDeep
+        }
+      },
+      watch: {
+        value: {
+          handler() {
+            this.address = new Address(this.value)
+          },
+          deep: true
+        }
+      },
+      methods: {
+        update() {
+          this.$emit('input', this.address);
+        }
+      }
+    }
+  }
+})
+
+</script>
+</body>
+</html>

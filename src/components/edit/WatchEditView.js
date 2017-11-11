@@ -6,7 +6,7 @@ let WatchEditView = Vue.component('watch-edit-view', {
               <h2>Edit</h2>
               <p>Update and complete the information for this <span v-text="getTypeName(item)"></span></p>
 
-              <item-fields v-model="item"></item-fields>
+              <item-fields :state-item="stateItem" v-model="item"></item-fields>
 
               <div class="buttons">
                 <div class="button-container">
@@ -16,9 +16,21 @@ let WatchEditView = Vue.component('watch-edit-view', {
                 <button type="cancel" @click="back">Cancel</button>
               </div>
             </form>`,
+  data() {
+    return {
+      item: WatchItemFactory.new()
+    }
+  },
   computed: {
-    item() {
-      return this.$store.state.item.name ? this.$store.state.item.clone() : WatchItemFactory.new();
+    // needed to listen to state's item
+    stateItem() {
+      let item = WatchItemFactory.new();
+      if (this.$store.state.item.name) {
+        item = this.$store.state.item.clone();
+        // set this item as the data item, to allow mutation
+        this.item = item;
+      }
+      return item;
     }
   },
   created () {
