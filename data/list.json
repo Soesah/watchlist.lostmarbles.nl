@@ -33305,5 +33305,69 @@
         "director": "Robert De Niro",
         "watched": false,
         "date_added": null
+    },
+    {
+        "type": 1,
+        "imdbId": "tt5691552",
+        "name": "The Orville",
+        "plot": "Follows the crew of the not-so-functional exploratory ship in the Earth's interstellar fleet, 400 years in the future.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt5773550",
+                        "nr": 1,
+                        "title": "Old Wounds",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt6408626",
+                        "nr": 2,
+                        "title": "Command Performance",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt6483038",
+                        "nr": 3,
+                        "title": "About a Girl",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt6483046",
+                        "nr": 4,
+                        "title": "If the Stars Should Appear",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt6483048",
+                        "nr": 5,
+                        "title": "Pria",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt6723482",
+                        "nr": 6,
+                        "title": "Krill",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "tt6850950",
+                        "nr": 8,
+                        "title": "Into the Fold",
+                        "watched": true
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Seth MacFarlane",
+            "Adrianne Palicki",
+            "Penny Johnson Jerald",
+            "Scott Grimes"
+        ],
+        "date_added": "2017-11-11"
     }
 ]
