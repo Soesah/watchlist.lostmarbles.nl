@@ -76,32 +76,32 @@ const store = new Vuex.Store({
   actions: {
     addItem({commit, state}, item) {
       commit('addItem', item);
-      return this.dispatch('save');
+      return this.dispatch('save', 'Saving ' + item.name);
     },
     editItem({commit, state}, item) {
       commit('editItem', item);
-      return this.dispatch('save');
+      return this.dispatch('save', 'Saving changes to ' + item.name);
     },
     removeItem({commit, state}, item) {
       commit('removeItem', item);
-      return this.dispatch('save');
+      return this.dispatch('save', 'Removing ' + item.name);
     },
     toggleWatched({commit, state}, item) {
       commit('toggleWatched', item);
-      return this.dispatch('save');
+      return this.dispatch('save', 'Setting ' + item.name + ' to ' + (item.watched ? 'watched' : 'not watched'));
     },
     toggleSeasonWatched({commit, state}, options) {
       commit('toggleSeasonWatched', options);
-      return this.dispatch('save');
+      return this.dispatch('save', 'Setting ' + options.item.name + ' Season ' + options.season.nr+ ' to ' + (options.item.watched ? 'watched' : 'not watched'));
     },
     toggleEpisodeWatched({commit, state}, options) {
       commit('toggleEpisodeWatched', options);
-      return this.dispatch('save');
+      return this.dispatch('save', 'Setting ' + options.item.name + ' Season ' + options.season.nr+ ' Episode ' + options.episode.nr +' to ' + (options.item.watched ? 'watched' : 'not watched'));
     },
-    save ({commit, state}) {
+    save ({commit, state}, message) {
       commit('message', {
         type: 'info',
-        text: 'Saving...'
+        text: message ? message : 'Saving...'
       });
       return watchlistService.save(state.items).then(items => {
         commit('setItems', items);

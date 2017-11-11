@@ -76,6 +76,9 @@ let WatchAddView = Vue.component('watch-add-view', {
     back(evt) {
       this.$router.go(-1);
       evt.preventDefault();
+    },
+    getTypeName(item) {
+      return WatchItemFactory.getTypeName(item);
     }
   },
   components: {

@@ -199,10 +199,12 @@ let ItemFields = Vue.component('item-fields', {
       this.updating = true;
       omdbApiService.updateSeason(this.item, nr).then(response => {
         this.updating = false;
+        this.update();
       });
     },
     addSeason(year) {
       this.item.addSeason(year ? parseInt(year) + 1 : null);
+      this.update();
     },
     getTypeName(item) {
       return WatchItemFactory.getTypeName(item);
