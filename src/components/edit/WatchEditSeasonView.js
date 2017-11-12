@@ -1,3 +1,4 @@
+import omdbApiService from 'services/OMDbApiService';
 import WatchItemFactory from 'services/WatchItemFactory';
 
 let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
@@ -5,7 +6,7 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
               <h2>Edit <i class="spaced" v-text="item.name"></i><span class="dashed">season<span class="spaced" v-text="season.nr"></span></span></h2>
               <p>Update and complete the information for this season</p>
 
-              <button class="update-season-button option" type="button" tooltip="'Update season episodes'|top"  ng-click="updateSeason(item, season.nr)">
+              <button class="update-season-button option" type="button" tooltip="'Update season episodes'|top"  @click="updateSeason(item, season.nr)">
                 <i class="icon icon-series" v-show="!updating"></i>
                 <i class="icon icon-spinner" v-show="updating"></i>
                 Update season
@@ -107,11 +108,10 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
     },
     updateSeason (series, nr) {
       this.updating = true;
-      OMDbApi.updateSeason(series, nr).then(response => {
+      omdbApiService.updateSeason(series, nr).then(response => {
         this.updating = false;
-        let nr = parseInt($routeParams.nr);
-        this.originalSeason = this.item.getSeason(nr);
-        this.season = this.originalSeason.clone();
+        let nr = parseInt(this.$route.params.nr);
+        this.season = this.item.getSeason(nr);
       });
     },
     back (evt) {
