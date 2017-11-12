@@ -1,0 +1,61 @@
+@import "common/variables.less";
+@import "common/fonts.less";
+@import "common/reset.less";
+@import "common/colors.less";
+@import "common/utilities.less";
+@import "common/progress-bar.less";
+
+@import "icons.less";
+@import "message.less";
+@import "nav.less";
+@import "forms.less";
+@import "buttons.less";
+@import "tooltip.less";
+@import "filters.less";
+@import "list.less";
+@import "add.less";
+@import "view.less";
+@import "admin.less";
+
+
+body {
+  padding: @size-small @size-default;
+  .font-default();
+  font-size: 13px;
+}
+
+header {
+  svg {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+footer {
+  color: @gray-lighter;
+  padding: 40px 0;
+}
+
+a {
+  color: @orange;
+
+  &:hover {
+    color: @orange-dark;
+  }
+}
+
+code {
+  border-radius: 4px;
+  border: solid 1px desaturate(darken(@yellow-dark, 10%), 10%);
+  background-color: @yellow;
+  padding: 2px 4px;
+  min-width: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (max-width:400px) {
+  body {
+    padding: @size-small;
+  }
+}

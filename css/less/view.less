@@ -1,0 +1,76 @@
+.view {
+
+
+  .buttons {
+    display: flex;
+    width: 400px;
+
+    button + button {
+      margin-left: @size-smaller;
+    }
+  }
+
+  .seasons {
+    .episodes {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        width: 40%;
+        display: block;
+      }
+
+      .episode-nr {
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+        .font-light();
+      }
+    }
+  }
+  .actors {
+    ul {
+      .ul()
+    }
+  }
+
+
+  .seasons {
+    list-style-type: none;
+    padding: 0;
+
+    .season-title {
+      margin-top: @size-small;
+      .font-default();
+    }
+    .episode-title {
+      margin: 4px 0 4px;
+      .font-default();
+    }
+    .episode-watched.episode-title {
+      .font-light();
+    }
+
+    .icon-series {
+      color: @gray-light;
+
+      &:hover {
+        color: @black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .view {
+
+    .seasons {
+      .episodes {
+        li {
+          width: auto;
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
   if ($saved) {
     echo json_encode($data, JSON_PRETTY_PRINT);
   } else {
-    header('HTTP/1.1 500');
+    header('HTTP/1.1 403');
     echo 'An error occured, data could not be saved.';
   }
 

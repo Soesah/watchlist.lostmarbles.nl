@@ -1,15 +1,21 @@
 {
+  "name": "Watchlist",
+  "description": "Just another movie/series watch list app",
+  "version": "2.0.0",
+  "author": {
+    "name": "Carl Giesberts"
+  },
   "private": true,
   "devDependencies": {
     "eslint": "^1.8.0",
     "eslint-plugin-nodeca": "^1.0.3",
     "grunt": "^0.4.5",
-    "grunt-contrib-concat": "^0.5.1",
+    "grunt-closure-compiler": "0.0.21",
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-cssmin": "^0.9.0",
     "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-ftp-deploy": "^0.1.10",
-    "grunt-html2js": "^0.3.5",
     "grunt-http": "^1.6.0",
     "grunt-shell": "^0.6.4",
     "grunt-text-replace": "^0.3.12"

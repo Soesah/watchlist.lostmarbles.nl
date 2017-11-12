@@ -11,7 +11,7 @@
           "ligatures": "film, video2",
           "name": "movie",
           "id": 0,
-          "order": 79,
+          "order": 97,
           "prevSize": 32,
           "code": 59667,
           "tempChar": ""
@@ -20,7 +20,7 @@
           "ligatures": "video-camera, video3",
           "name": "documentary",
           "id": 1,
-          "order": 80,
+          "order": 98,
           "prevSize": 32,
           "code": 59668,
           "tempChar": ""
@@ -29,7 +29,7 @@
           "ligatures": "tv, television",
           "name": "series",
           "id": 3,
-          "order": 81,
+          "order": 99,
           "prevSize": 32,
           "code": 59739,
           "tempChar": ""
@@ -38,126 +38,135 @@
           "ligatures": "steam, brand36",
           "name": "game",
           "id": 14,
-          "order": 82,
+          "order": 100,
           "prevSize": 32,
           "code": 60076,
           "tempChar": ""
         },
         {
-          "ligatures": "bullhorn, megaphone",
+          "ligatures": "warning, sign",
           "name": "warning",
-          "id": 2,
-          "order": 83,
+          "id": 18,
+          "order": 101,
           "prevSize": 32,
-          "code": 59674,
+          "code": 59911,
           "tempChar": ""
         },
         {
-          "ligatures": "bubble, comment",
+          "ligatures": "bullhorn, megaphone",
           "name": "info",
+          "id": 2,
+          "order": 102,
+          "prevSize": 32,
+          "code": 59674,
+          "tempChar": ""
+        },
+        {
+          "ligatures": "bubble, comment",
+          "name": "success",
           "id": 4,
-          "order": 84,
+          "order": 103,
           "prevSize": 32,
           "code": 59755,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "fire, flame",
           "name": "error",
           "id": 5,
-          "order": 85,
+          "order": 104,
           "prevSize": 32,
           "code": 59817,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "cloud-download, cloud2",
           "name": "saving",
           "id": 6,
-          "order": 86,
+          "order": 105,
           "prevSize": 32,
           "code": 59842,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "plus, add",
           "name": "plus",
           "id": 7,
-          "order": 87,
+          "order": 106,
           "prevSize": 32,
           "code": 59914,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "cross, cancel",
           "name": "delete",
           "id": 8,
-          "order": 88,
+          "order": 107,
           "prevSize": 32,
           "code": 59919,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
-          "order": 89,
+          "order": 108,
           "id": 15,
           "name": "checkmark",
           "prevSize": 32,
           "code": 59648,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "checkbox-checked, checkbox",
           "name": "checkbox-checked",
           "id": 9,
-          "order": 90,
+          "order": 109,
           "prevSize": 32,
           "code": 59986,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "checkbox-unchecked, checkbox2",
           "name": "checkbox",
           "id": 10,
-          "order": 91,
+          "order": 110,
           "prevSize": 32,
           "code": 59987,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "spinner2, loading3",
           "name": "spinner",
           "id": 11,
-          "order": 92,
+          "order": 111,
           "prevSize": 32,
           "code": 59771,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "spinner11, loading12",
           "name": "spinner11",
           "id": 17,
-          "order": 93,
+          "order": 112,
           "prevSize": 32,
           "code": 59780,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "search, magnifier",
           "name": "search",
           "id": 12,
-          "order": 94,
+          "order": 113,
           "prevSize": 32,
           "code": 59782,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "cogs, gears",
           "name": "cogs",
           "id": 16,
-          "order": 95,
+          "order": 114,
           "prevSize": 32,
           "code": 59797,
-          "tempChar": ""
+          "tempChar": ""
         }
       ],
       "id": 1,
@@ -240,6 +249,23 @@
             "game"
           ],
           "defaultCode": 60076,
+          "grid": 16
+        },
+        {
+          "id": 18,
+          "paths": [
+            "M512 92.774l429.102 855.226h-858.206l429.104-855.226zM512 0c-22.070 0-44.14 14.882-60.884 44.648l-437.074 871.112c-33.486 59.532-5 108.24 63.304 108.24h869.308c68.3 0 96.792-48.708 63.3-108.24h0.002l-437.074-871.112c-16.742-29.766-38.812-44.648-60.882-44.648v0z",
+            "M576 832c0 35.346-28.654 64-64 64s-64-28.654-64-64c0-35.346 28.654-64 64-64s64 28.654 64 64z",
+            "M512 704c-35.346 0-64-28.654-64-64v-192c0-35.346 28.654-64 64-64s64 28.654 64 64v192c0 35.346-28.654 64-64 64z"
+          ],
+          "attrs": [],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "warning",
+            "sign"
+          ],
+          "defaultCode": 59911,
           "grid": 16
         },
         {

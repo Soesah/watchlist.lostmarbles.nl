@@ -1,0 +1,104 @@
+.messages {
+  &.general {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding: 0 @size-default;
+    z-index: 2;
+
+    .message {
+      display: block;
+      margin: @size-smaller / 2 0;
+      box-shadow: 5px 3px 8px #444444;
+
+      &.done {
+        top: -100px;
+      }
+    }
+  }
+}
+
+.message {
+  position: relative;
+  top: 0;
+  transition: top 0.5s;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  color: @black;
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    color: white;
+    padding: 4px 6px;
+    width: auto;
+    min-width: auto;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    .icon {
+      color: white !important;
+      font-size: 10px;
+    }
+  }
+
+  &.success {
+    background-color: @green-info;
+    border: solid 1px darken(@green-info, 20%);
+
+    .icon {
+      color: darken(@green-info, 25%);
+    }
+    button {
+      background-color: darken(@green-info, 25%);
+    }
+  }
+
+  &.info {
+    background-color: @blue-info;
+    border: solid 1px darken(@blue-info, 20%);
+
+    .icon {
+      color: darken(@blue-info, 25%);
+    }
+    button {
+      background-color: darken(@blue-info, 25%);
+    }
+  }
+
+  &.warning {
+    background-color: @yellow-warning;
+    border: solid 1px darken(@yellow-warning, 25%);
+
+    .icon {
+      color: darken(@yellow-warning, 30%);
+    }
+    button {
+      background-color: darken(@yellow-warning, 30%);
+    }
+  }
+
+  &.error {
+    background-color: @red-error;
+    border: solid 1px desaturate(darken(@red-error, 30%), 20%);
+
+    .icon {
+      color: desaturate(darken(@red-error, 30%), 20%);
+    }
+    button {
+      background-color: desaturate(darken(@red-error, 30%), 20%);
+    }
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  .messages.general {
+    padding: 0 @size-small;    
+  }
+}

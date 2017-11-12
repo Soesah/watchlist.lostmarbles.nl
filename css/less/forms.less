@@ -1,0 +1,286 @@
+.form {
+  h2,
+  .form-message,
+  .buttons {
+    display:flex;
+    margin: @size-small 0 @size-small @size-large;
+    width: 320px;
+    .button-container + button,
+    button + button {
+      margin-left: @size-smaller;
+    }
+  }
+
+  .button-container {
+    width: 100%;
+    display: inline-block;
+  }
+
+  p,
+  h3,
+  h4 {
+    margin: 0 0 @size-small @size-large;
+  }
+
+  .form-message {
+    .message-content {
+      margin-left: @size-smaller;
+    }
+    p {
+      margin: 0 0 @size-smaller 0;
+    }
+    ul {
+      .ul();
+    }
+  }
+}
+
+.form-section {
+  padding: 20px 0;
+}
+
+.form-item {
+  margin: 0 0 @size-smaller 0;
+  position: relative;
+  display: flex; /* prevent spaces from causing layout issues*/
+
+  label {
+    display: inline-block;
+    width: @size-large;
+    .font-light();
+    text-align: right;
+    padding-right: @size-default;
+    position: relative;
+    top: 8px;
+    vertical-align: top;
+  }
+
+  &.form-item-required label:after {
+    content: '*';
+    position: absolute;
+    top: 0;
+    right: @size-default - 8;
+    font-size: 11px;
+    color: @gray-light;
+  }
+
+  &.form-item-checkbox {
+    padding-left: 128px;
+
+    input[type="checkbox"] {
+      display: none;
+
+      & + label {
+        top: 0;
+        padding: 0;
+        width: auto;
+        padding-left: 30px;
+        margin: 2px 0 6px;
+        cursor: pointer;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: solid 1px @gray-light;
+          border-radius: @border-radius-default;
+          background-color: @yellow;
+          position: absolute;
+          top: -4px;
+          left: 0;
+        }
+      }
+
+      &:checked + label:after {
+        content: @icon-checkmark;
+        font-family: 'watchlist';
+        font-size: 10px;
+        position: absolute;
+        top: 3px;
+        left: 5px;
+      }
+    }
+  }
+
+  .select-arrow {
+    width: 18px;
+    position: absolute;
+    left: 425px;
+    top: -10px;
+    fill: @gray-light;
+  }
+
+  &:hover {
+    .select-arrow {
+      fill: @gray;
+    }
+  }
+
+  .form-input-group {
+    width: 320px;
+    display: inline-flex;
+    position: relative;
+
+    &.form-input-group-right {
+      justify-content: flex-end;
+    }
+  }
+}
+
+input,
+select,
+textarea {
+  padding: @size-smaller;
+  border: solid 1px @gray-light;
+  border-radius: @border-radius-default;
+  background-color: @yellow;
+  color: @black;
+  -webkit-appearance: none;
+  width: @size-larger;
+  outline: none;
+  .font-bold();
+  font-size: inherit;
+
+
+  &:not([disabled]):focus {
+    border-color: @black;
+  }
+
+  &:not([disabled]):hover {
+    border-color: @gray;
+  }
+
+  // &.ng-touched.ng-invalid,
+  // &.ng-touched.ng-invalid:hover, {
+  //   border-color:red;
+  // }
+
+  &[disabled] {
+    border-color: @gray-lighter;
+    color: @gray-light;
+    background-color: desaturate(@yellow, 25%);
+  }
+
+  &.year {
+    width: 70px;
+    text-align: center;
+    height: 33px;
+  }
+  &.length {
+    width: 90px;
+    height: 33px;
+  }
+
+}
+textarea {
+  height: 80px;
+}
+
+@media screen and (max-width:600px) {
+  .form {
+    h3,
+    p {
+      margin-left: 0;
+    }
+
+    h2,
+    .buttons,
+    .form-message {
+      width: 100%;
+      margin: @size-small 0 @size-smaller 0;
+    }
+  }
+  .form-item {
+    margin-bottom: @size-smaller / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    label {
+      display: block;
+      text-align: left;
+      padding:@size-smaller / 2 0;
+      width: auto;
+      top: 0;
+    }
+    &.form-item-required label:after {
+      top: 3px;
+      right: -6px;
+    }
+    .select-arrow {
+      left: auto;
+      top: 12px;
+      right: 10px;
+    }
+    .form-input-group {
+      width: 100%;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: @size-smaller;
+  }
+  button {
+    padding: @size-smaller;
+  }
+}
+
+.suggestions {
+  position: absolute;
+  border: solid 1px #c3beb8;
+  border-radius: 4px;
+  width: 100%;
+  top: 32px;
+  left: 0;
+  background: #f1e9e0;
+  z-index: 1;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  color: #2a2a2a;
+  box-shadow: 2px 2px 4px silver;
+
+  li {
+    a {
+      color: #2a2a2a;
+      padding: 7px 8px;
+      border-bottom: solid 1px #c3beb8;
+      display: block;
+      text-decoration: none;
+
+    }
+    &.suggestion-highlighted,
+    &:hover {
+      background: desaturate(darken(#f1e9e0, 10%), 10%);
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    .icon {
+      position: relative;
+      top: 1px;
+      font-size: 12px;
+      color: @gray-light;
+    }
+  }
+
+  .suggestions-count {
+    text-align: center;
+    padding: 4px;
+    color: #c3beb8;
+  }
+}
+
+@media screen and (max-width:400px) {
+ 
+    input {
+      padding: @size-smaller / 2;
+    }
+
+}

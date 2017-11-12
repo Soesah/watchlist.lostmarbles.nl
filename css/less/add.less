@@ -1,0 +1,123 @@
+.form {
+
+
+  .form-item-name {
+    .search-button {
+      margin-left: @size-smaller;
+      width: 31px;
+      height: 31px;
+      min-width: 31px;
+      position: relative;
+      top: 1px;
+    }
+    .icon-spinner {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      position: absolute;
+      top: 6px;
+      right: 6px;
+    }
+  }
+
+  .update-button {
+    padding: 8px;
+    min-width: 31px;
+    width: 31px;
+    height: 31px;
+    margin-left: 8px;
+    font-weight: bold;
+    position: relative;
+    top: 1px;
+
+    .icon-spinner {
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .add-button {
+    padding: 8px;
+    min-width: 31px;
+    width: 31px;
+    height: 31px;
+    margin-left: 8px;
+    font-weight: bold;
+    display: none;
+    position: relative;
+    top: 1px;
+
+    .icon {
+      position: relative;
+      left: 0px;
+      top: 1px;
+      font-size: 12px;
+    }
+  }
+  .update-season-button {
+    max-width: 320px;
+    margin: 10px;
+    margin-left: 130px;
+  }
+  .season-episode-count {
+    padding: 10px;
+    .font-light();
+  }
+
+  .series-list {
+    list-style-type: none;
+    padding: 0;
+
+    li:last-child {
+      .add-button {
+        display: inline-block;
+      }
+    }
+  }
+  .episode-list {
+    list-style-type: none;
+    padding: 0;
+
+    input + input {
+      margin-left: 10px;
+    }
+
+    .add-button {
+      display: block;
+    }
+
+    .form-input-group-right .add-button {
+      left: -4px;
+    }
+  }
+}
+
+.icon-spinner {
+  -webkit-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+  transform-origin: 10px;
+  text-align: center;
+}
+
+@-webkit-keyframes spin { 100%
+  {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin { 100%
+  {
+  -webkit-transform: rotate(360deg);
+  transform:rotate(360deg);
+  }
+}
+@media screen and (max-width:400px) {
+  .form .update-season-button {
+    margin-left: 0;
+  }
+}
