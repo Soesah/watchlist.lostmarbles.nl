@@ -39,11 +39,11 @@ let WatchItemView = Vue.component('watch-item-view', {
               </div>
 
               <div v-if="item.seasons && item.seasons.length">
-                <h4>Seasons</h4>
+                <h4 v-show="item.seasons.length > 1">Seasons</h4>
                 <ul class="seasons">
                   <li v-for="season in item.seasons">
                     <h5 class="season-title">
-                      Season <span v-text="season.nr"></span>
+                      <span v-show="item.seasons.length > 1">Season <span v-text="season.nr"></span></span>
                       <span class="season-year bracketed" v-text="season.year"></span>
                       <i class="icon icon-series" @click="toggleSeasonWatched(season)"></i>
                       <router-link :to="'/edit/' + item.path + '/season/' + season.nr">Edit</router-link>
