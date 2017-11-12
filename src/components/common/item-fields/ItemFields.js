@@ -35,7 +35,7 @@ let ItemFields = Vue.component('item-fields', {
               </div>
               <div class="form-item form-item-required" v-if="!isSeries(item)">
                 <label>Year</label>
-                <input type="text" integer required="true" placeholder="2017" class="year" v-model="item.year" @input="update"/>
+                <input type="number" required="true" placeholder="2017" class="year" v-model.number="item.year" @input="update"/>
               </div>
               <div class="form-item" v-if="isMovie(item) || isSeries(item) || isGame(item)">
                 <label>Plot</label>
@@ -62,7 +62,7 @@ let ItemFields = Vue.component('item-fields', {
                   <div class="form-item form-item-required">
                     <label>Season <span v-text="index + 1"></span> year</label>
                     <div class="form-input-group">
-                      <input type="text" integer required="true" :placeholder="2017 + index" class="year" v-model="season.year" />
+                      <input type="number" required="true" :placeholder="2017 + index" class="year" v-model.number="season.year" />
                       <button class="update-button option" type="button" tooltip="'Update season episodes'|top"  @click="updateSeason(item, season.nr)">
                         <i class="icon icon-series" v-show="!updating"></i>
                         <i class="icon icon-spinner" v-show="updating"></i>

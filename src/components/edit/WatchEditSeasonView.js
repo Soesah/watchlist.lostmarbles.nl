@@ -12,11 +12,11 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
               </button>  
 
               <div class="form-item form-item-required">
-                <label>Number</label><input type="text" integer disabled required placeholder="1" class="year" v-model="season.nr" />
+                <label>Number</label><input type="number" disabled required placeholder="1" class="year" v-model.number="season.nr" />
               </div>
 
               <div class="form-item form-item-required">
-                <label>Year</label><input type="text" integer required placeholder="2017" class="year" v-model="season.year" />
+                <label>Year</label><input type="number" required placeholder="2017" class="year" v-model.number="season.year" />
               </div>
 
               <h3>Episodes</h3>
@@ -34,7 +34,7 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
                 <li v-if="season.episodes" v-for="episode in season.episodes">
                   <div class="form-item">
                     <label>Episode <span v-text="episode.nr"></span></label><div class="form-input-group">
-                      <input type="text" integer required class="year" v-model="episode.nr" />
+                      <input type="number" required class="year" v-model.number="episode.nr" />
                       <input type="text" required v-model="episode.title" />
                       <button class="add-button option" type="button" @click="addEpisode(episode)" v-show="isInSequence(episode)">
                         <i class="icon icon-plus"></i>
