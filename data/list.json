@@ -16478,7 +16478,7 @@
         "finished": true,
         "seasons": [
             {
-                "year": 2013,
+                "year": "2013",
                 "nr": 1,
                 "episodes": [
                     {
@@ -33369,5 +33369,23 @@
             "Scott Grimes"
         ],
         "date_added": "2017-11-11"
+    },
+    {
+        "type": 3,
+        "imdbId": "tt3391176",
+        "name": "Game of Thrones: A Telltale Games Series",
+        "year": 2014,
+        "score": null,
+        "plot": "During the War of the Five Kings, House Forrester finds themselves embroiled in a web of deceit and corruption.",
+        "actors": [
+            "Lena Headey",
+            "Natalie Dormer",
+            "Peter Dinklage",
+            "Iwan Rheon"
+        ],
+        "publisher": null,
+        "genre": "RPG",
+        "played": false,
+        "date_added": "2017-11-12"
     }
 ]
