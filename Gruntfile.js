@@ -80,7 +80,7 @@ module.exports = function(grunt) {
         command: ['git add data/list.json'].join('&&')
       },
       compose:{
-        command:'git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline|awk \'/Version/ {exit} {print}\' > commit_message'
+        command:"git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline|awk '/Version/ {exit} {print}' > commit_message"
       }
     },
     'closure-compiler': {
