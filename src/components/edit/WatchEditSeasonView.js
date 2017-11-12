@@ -1,7 +1,7 @@
 import WatchItemFactory from 'services/WatchItemFactory';
 
 let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
-  template:`<form name="itemForm" class="form" ng-submit="editItem()">
+  template:`<form name="itemForm" class="form" @submit="edit" :state-item="stateItem">
               <h2>Edit <i class="spaced" v-text="item.name"></i><span class="dashed">season<span class="spaced" v-text="season.nr"></span></span></h2>
               <p>Update and complete the information for this season</p>
 
@@ -53,15 +53,22 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
             </form>`,
   data() {
     return {
+      item: {},
+      season: {},
       updating: false
     }
   },
   computed: {
-    item() {
-      return this.$store.state.item.name ? this.$store.state.item.clone() : {};
-    },
-    season() {
-      return this.item.name ? this.item.getSeason(this.$route.params.nr) : {};
+    // needed to listen to state's item
+    stateItem() {
+      let item = WatchItemFactory.new();
+      if (this.$store.state.item.name) {
+        item = this.$store.state.item.clone();
+        // set this item as the data item, to allow mutation
+        this.item = item;
+        this.season = item.getSeason(this.$route.params.nr);
+      }
+      return item;
     }
   },
   created () {
