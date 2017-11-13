@@ -45,15 +45,6 @@
 
     }
 
-    &.movie-watched a,
-    &.series-watched a,
-    &.documentary-watched a,
-    &.game-played a{
-      color: @gray;
-      h4 {
-        .font-light();
-      }
-    }
 
     a {
       text-decoration: none;
@@ -61,6 +52,16 @@
 
       &:hover {
         color: @orange;
+      }
+    }
+
+    &.movie-watched a,
+    &.series-watched a,
+    &.documentary-watched a,
+    &.game-played a {
+      color:@gray-light;
+      h4 {
+        .font-light();
       }
     }
   }
