@@ -9,6 +9,7 @@ const MOVIE = 0;
 const SERIES = 1;
 const DOCUMENTARY = 2;
 const GAME = 3;
+const Franchise = 4
 
 class WatchItemFactory {
 
