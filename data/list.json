@@ -30957,7 +30957,7 @@
         "length": "131 min",
         "plot": "While on a tour of the White House with his young daughter, a Capitol policeman springs into action to save his child and protect the president from a heavily armed group of paramilitary invaders.",
         "director": "Roland Emmerich",
-        "watched": false,
+        "watched": true,
         "date_added": null
     },
     {
@@ -31181,12 +31181,12 @@
         "year": 2017,
         "score": null,
         "actors": [
-            "Judy Greer",
-            "Woody Harrelson",
             "Andy Serkis",
-            "Steve Zahn"
+            "Woody Harrelson",
+            "Steve Zahn",
+            "Karin Konoval"
         ],
-        "length": "N\/A",
+        "length": "140 min",
         "plot": "After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.",
         "director": "Matt Reeves",
         "watched": false,
@@ -33302,18 +33302,60 @@
                         "imdbId": "tt5509372",
                         "nr": 1,
                         "title": "Pilot",
-                        "watched": false
+                        "watched": true
                     },
                     {
                         "imdbId": "tt5835712",
                         "nr": 2,
                         "title": "Battle at the Binary Stars",
-                        "watched": false
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-3",
+                        "nr": 3,
+                        "title": "Context Is for Kings",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-4",
+                        "nr": 4,
+                        "title": "The Butcher's Knife Cares Not for the Lamb's Cry",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-5",
+                        "nr": 5,
+                        "title": "Choose Your Pain",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-6",
+                        "nr": 6,
+                        "title": "Lethe",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-7",
+                        "nr": 7,
+                        "title": "Magic to Make the Sanest Man Go Mad",
+                        "watched": true
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-8",
+                        "nr": 8,
+                        "title": "Si Vis Pacem, Para Bellum",
+                        "watched": true
                     },
                     {
                         "imdbId": "tt5890578",
                         "nr": 9,
-                        "title": "Episode #1.9",
+                        "title": "Into the Forest I Go",
+                        "watched": false
+                    },
+                    {
+                        "imdbId": "NON-IMDB-ID-2017-1-10",
+                        "nr": 10,
+                        "title": "Despite Yourself",
                         "watched": false
                     }
                 ]
