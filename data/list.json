@@ -13286,7 +13286,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0090605",
         "name": "Aliens",
         "year": 1986,
@@ -13306,7 +13306,7 @@
         "order": 0
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0118583",
         "name": "Alien: Resurrection",
         "year": 1997,
@@ -13434,7 +13434,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0096874",
         "name": "Back to the Future Part II",
         "year": 1989,
@@ -13454,7 +13454,7 @@
         "order": 0
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0099088",
         "name": "Back to the Future Part III",
         "year": 1990,
@@ -14553,7 +14553,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt1302011",
         "name": "Kung Fu Panda 2",
         "year": 2011,
@@ -14573,7 +14573,7 @@
         "order": 0
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt2267968",
         "name": "Kung Fu Panda 3",
         "year": 2016,
@@ -14701,7 +14701,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0337978",
         "name": "Live Free or Die Hard",
         "year": 2007,
@@ -22039,7 +22039,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt2277860",
         "name": "Finding Dory",
         "year": 2016,
@@ -25729,7 +25729,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0112864",
         "name": "Die Hard with a Vengeance",
         "year": 1995,
@@ -25749,7 +25749,7 @@
         "order": 0
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0099423",
         "name": "Die Hard 2",
         "year": 1990,
@@ -25769,7 +25769,7 @@
         "order": 0
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt1606378",
         "name": "A Good Day to Die Hard",
         "year": 2013,
@@ -29233,7 +29233,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0103644",
         "name": "Alien 3",
         "year": 1992,
@@ -29343,7 +29343,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0463854",
         "name": "28 Weeks Later",
         "year": 2007,
@@ -29543,7 +29543,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0298148",
         "name": "Shrek 2",
         "year": 2004,
@@ -29563,7 +29563,7 @@
         "order": 0
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt0413267",
         "name": "Shrek the Third",
         "year": 2007,
@@ -29875,7 +29875,7 @@
         "date_added": null
     },
     {
-        "type": 4,
+        "type": 0,
         "imdbId": "tt2316204",
         "name": "Alien: Covenant",
         "year": 2017,

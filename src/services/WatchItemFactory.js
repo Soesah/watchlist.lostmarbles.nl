@@ -1,6 +1,4 @@
 import Movie from 'models/MovieModel';
-import Sequel from 'models/SequelModel';
-import Prequel from 'models/PrequelModel';
 import Series from 'models/SeriesModel';
 import Game from 'models/GameModel';
 import Documentary from 'models/DocumentaryModel';
@@ -8,8 +6,6 @@ import moment from 'Moment';
 
 const ALL = true;
 const MOVIE = 0;
-const SEQUEL = 4;
-const PREQUEL = 5;
 const SERIES = 1;
 const DOCUMENTARY = 2;
 const GAME = 3;
@@ -20,10 +16,6 @@ class WatchItemFactory {
     switch (item.type) {
       case MOVIE:
         return new Movie(item);
-      case SEQUEL:
-        return new Sequel(item);
-      case PREQUEL:
-        return new Prequel(item);
       case SERIES:
         return new Series(item);
       case DOCUMENTARY:
@@ -40,10 +32,6 @@ class WatchItemFactory {
     switch(type) {
       case MOVIE:
         return new Movie(data);
-      case SEQUEL:
-        return new Sequel({});
-      case PREQUEL:
-        return new Prequel({});
       case SERIES:
         return new Series(data);
       case DOCUMENTARY:
@@ -161,22 +149,8 @@ class WatchItemFactory {
     ]
   }
 
-  static getFullTypeList () {
-    return [
-      {
-        type: SEQUEL,
-        name: 'Sequel',
-        disabled: true
-      }, {
-        type: PREQUEL,
-        name: 'Prequel',
-        disabled: true
-      }
-    ].concat(this.getTypeList());
-  }
-
   static getTypeName (item) {
-    return (item && item.type !== undefined) ? _.find(WatchItemFactory.getFullTypeList(), type => type.type === item.type).name : 'Unknown';
+    return (item && item.type !== undefined) ? _.find(WatchItemFactory.getTypeList(), type => type.type === item.type).name : 'Unknown';
   }
 
   static get ALL () {
@@ -184,12 +158,6 @@ class WatchItemFactory {
   }
   static get MOVIE () {
     return MOVIE;
-  }
-  static get SEQUEL () {
-    return SEQUEL;
-  }
-  static get PREQUEL () {
-    return PREQUEL;
   }
   static get SERIES () {
     return SERIES;
