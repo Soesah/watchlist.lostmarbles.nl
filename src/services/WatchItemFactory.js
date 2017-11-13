@@ -2,6 +2,7 @@ import Movie from 'models/MovieModel';
 import Series from 'models/SeriesModel';
 import Game from 'models/GameModel';
 import Documentary from 'models/DocumentaryModel';
+import Franchise from 'models/FranchiseModel';
 import moment from 'Moment';
 
 const ALL = true;
@@ -9,7 +10,7 @@ const MOVIE = 0;
 const SERIES = 1;
 const DOCUMENTARY = 2;
 const GAME = 3;
-const Franchise = 4
+const FRANCHISE = 4
 
 class WatchItemFactory {
 
@@ -39,6 +40,8 @@ class WatchItemFactory {
         return new Documentary(data);
       case GAME:
         return new Game(data);
+      case FRANCHISE:
+        return new Franchise(data);
       default:
         return new Movie(data);
     }
@@ -168,6 +171,9 @@ class WatchItemFactory {
   }
   static get GAME () {
     return GAME;
+  }
+  static get FRANCHISE () {
+    return FRANCHISE;
   }
 
 }

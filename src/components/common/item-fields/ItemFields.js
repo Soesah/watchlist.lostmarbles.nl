@@ -17,11 +17,11 @@ let ItemFields = Vue.component('item-fields', {
               <div class="form-item form-item-required form-item-name">
                 <label>Name</label>
                 <div class="form-input-group">
-                    <input type="text" name="name" required autocomplete="off" v-focus placeholder="Name" v-model="item.name" @input="update"/>
-                    <button class="search-button action" type="button" tooltip="'Search'|top" @click="search($event)" :disabled="searching || !item.name">
-                      <i class="icon icon-search" v-show="!searching"></i>
-                      <i class="icon icon-spinner" v-show="searching"></i>
-                    </button>
+                  <input type="text" name="name" required autocomplete="off" v-focus placeholder="Name" v-model="item.name" @input="update"/>
+                  <button class="search-button action" type="button" @click="search($event)" :disabled="searching || !item.name">
+                    <i class="icon icon-search" v-show="!searching"></i>
+                    <i class="icon icon-spinner" v-show="searching"></i>
+                  </button>
                   <ul class="suggestions" v-show="suggestions.length">
                     <li v-for="suggestion in suggestions">
                       <a href="javascript:void(0)" @click="choose(suggestion)">

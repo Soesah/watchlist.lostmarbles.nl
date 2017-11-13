@@ -130,6 +130,11 @@ const store = new Vuex.Store({
     }
   },
   getters: {
+    searchItems: (state, getters) => (search) => {
+      return _.filter(state.items, item => {
+        return item.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
+      });
+    },
     filteredItems: (state, getters) => () => {
       let filtered = _.filter(state.items, item => {
         let show = true;

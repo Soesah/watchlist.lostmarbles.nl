@@ -4,6 +4,8 @@ import WatchItemView from 'components/view/WatchItemView';
 import WatchAddView from 'components/add/WatchAddView';
 import WatchEditView from 'components/edit/WatchEditView';
 import WatchEditSeasonView from 'components/edit/WatchEditSeasonView';
+import FranchisesView from 'components/franchises/FranchisesView';
+import AddFranchiseView from 'components/franchises/AddFranchiseView';
 
 const router = new VueRouter({
   routes: [
@@ -22,6 +24,12 @@ const router = new VueRouter({
     },{
       path: '/edit/:path/season/:nr',
       component: WatchEditSeasonView
+    },{
+      path: '/franchises',
+      component: FranchisesView
+    },{
+      path: '/franchises/add',
+      component: AddFranchiseView
     }
   ]
 });
