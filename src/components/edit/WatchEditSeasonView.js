@@ -40,6 +40,9 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
                       <button class="add-button option" type="button" @click="addEpisode(episode)" v-show="isInSequence(episode)">
                         <i class="icon icon-plus"></i>
                       </button>
+                      <button class="add-button danger" type="button" @click="removeEpisode(episode)">
+                        <i class="icon icon-delete"></i>
+                      </button>
                     </div>
                   </div>
                 </li>
@@ -115,6 +118,9 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
           newEpisode = this.season.createEpisode('NON-IMDB-ID-' + this.season.year + '-' + this.season.nr + '-' + nr , nr, '');
 
       this.season.insertEpisode(nr - 1, newEpisode);
+    },
+    removeEpisode (episode) {
+      this.season.removeEpisode(episode);
     },
     updateSeason (series, nr) {
       this.updating = true;
