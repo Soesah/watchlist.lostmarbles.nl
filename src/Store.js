@@ -34,7 +34,6 @@ const store = new Vuex.Store({
       state.items.splice(index, 1);
     },
     removeSeason (state, {item, season}) {
-      debugger;
       item.removeSeason(season);
     },
     toggleWatched (state, item) {
