@@ -21,12 +21,12 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
               </div>
 
               <h3>Episodes</h3>
-              <ul class="episode-list">
+              <ul class="episode-list" v-if="season.episodes">
                 <li v-if="season.episodes && season.episodes[0].nr !== 1">
                   <div class="form-item">
                     <label></label>
                     <div class="form-input-group form-input-group-right">
-                      <button class="add-button option" type="button" ng-click="addEpisode(null)">
+                      <button class="add-button option" type="button" @click="addEpisode(null)">
                         <i class="icon icon-plus"></i>
                       </button>
                     </div>
@@ -46,10 +46,9 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
               </ul>
 
               <div class="buttons">
-                <div class="button-container">
-                  <button type="submit">Edit</button>
-                </div>
-                <button type="cancel" ng-click="back()">Cancel</button>
+                <button type="submit">Edit</button>
+                <button type="button" class="danger" @click="remove">Delete</button>
+                <button type="cancel" @click="back">Cancel</button>
               </div>
             </form>`,
   data() {
@@ -65,9 +64,10 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
       let item = WatchItemFactory.new();
       if (this.$store.state.item.name) {
         item = this.$store.state.item.clone();
+        let season = item.getSeason(this.$route.params.nr);
         // set this item as the data item, to allow mutation
         this.item = item;
-        this.season = item.getSeason(this.$route.params.nr);
+        this.season = season ? season : {};
       }
       return item;
     }
@@ -92,6 +92,16 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
     edit (evt) {
       this.$store.dispatch('editItem', this.item)
         .then(items => this.$router.go(-1));
+      evt.preventDefault();
+    },
+    remove (evt) {
+      this.$store.dispatch('removeSeason', {
+        item: this.$store.state.item,
+        season: this.$store.state.item.getSeason(this.$route.params.nr)
+      }).then(items => {
+          this.$destroy();
+          this.$router.go(-1);
+        });
       evt.preventDefault();
     },
     isInSequence (episode) {

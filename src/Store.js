@@ -33,14 +33,18 @@ const store = new Vuex.Store({
       let index = _.findIndex(state.items, {imdbId: item.imdbId});
       state.items.splice(index, 1);
     },
+    removeSeason (state, {item, season}) {
+      debugger;
+      item.removeSeason(season);
+    },
     toggleWatched (state, item) {
       item.toggleWatched();
     },
-    toggleSeasonWatched (state, options) {
-      options.item.toggleSeasonWatched(options.season);
+    toggleSeasonWatched (state, {item, season}) {
+      item.toggleSeasonWatched(season);
     },
-    toggleEpisodeWatched (state, options) {
-      options.item.toggleEpisodeWatched(options.season, options.episode);
+    toggleEpisodeWatched (state, {item, season, episode}) {
+      item.toggleEpisodeWatched(season, episode);
     },
     message (state, message) {
       let index = state.messages.length
@@ -74,11 +78,11 @@ const store = new Vuex.Store({
     }
   },
   actions: {
-    addItem({commit, state}, item) {
+    addItem ({commit, state}, item) {
       commit('addItem', item);
       return this.dispatch('save', 'Saving ' + item.name);
     },
-    editItem({commit, state}, item) {
+    editItem ({commit, state}, item) {
       commit('editItem', item);
       return this.dispatch('save', 'Saving changes to ' + item.name);
     },
@@ -86,17 +90,21 @@ const store = new Vuex.Store({
       commit('removeItem', item);
       return this.dispatch('save', 'Removing ' + item.name);
     },
-    toggleWatched({commit, state}, item) {
+    removeSeason ({commit, state}, {item, season}) {
+      commit('removeSeason', {item, season});
+      return this.dispatch('save', 'Removing ' + item.name);
+    },
+    toggleWatched ({commit, state}, item) {
       commit('toggleWatched', item);
       return this.dispatch('save', 'Setting ' + item.name + ' to ' + (item.watched ? 'watched' : 'not watched'));
     },
-    toggleSeasonWatched({commit, state}, options) {
-      commit('toggleSeasonWatched', options);
-      return this.dispatch('save', 'Setting ' + options.item.name + ' Season ' + options.season.nr+ ' to ' + (options.item.watched ? 'watched' : 'not watched'));
+    toggleSeasonWatched ({commit, state}, {item, season}) {
+      commit('toggleSeasonWatched', {item, season});
+      return this.dispatch('save', 'Setting ' + item.name + ' Season ' + season.nr+ ' to ' + (item.watched ? 'watched' : 'not watched'));
     },
-    toggleEpisodeWatched({commit, state}, options) {
-      commit('toggleEpisodeWatched', options);
-      return this.dispatch('save', 'Setting ' + options.item.name + ' Season ' + options.season.nr+ ' Episode ' + options.episode.nr +' to ' + (options.item.watched ? 'watched' : 'not watched'));
+    toggleEpisodeWatched ({commit, state}, {item, season, episode}) {
+      commit('toggleEpisodeWatched', {item, season, episode});
+      return this.dispatch('save', 'Setting ' + item.name + ' Season ' + season.nr+ ' Episode ' + episode.nr +' to ' + (item.watched ? 'watched' : 'not watched'));
     },
     save ({commit, state}, message) {
       commit('message', {
@@ -123,10 +131,10 @@ const store = new Vuex.Store({
         return item;
       });
     },
-    dismiss ({commit, state}, data) {
+    dismiss ({commit, state}, {id, delay}) {
       window.setTimeout(() => {
-        commit('dismiss', data.id);
-      }, data.delay)
+        commit('dismiss', id);
+      }, delay)
     }
   },
   getters: {

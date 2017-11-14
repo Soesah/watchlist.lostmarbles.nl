@@ -42,6 +42,11 @@ class Series extends BaseModel{
     return season;
   }
 
+  removeSeason (season) {
+    let index = this.seasons.indexOf(season);
+    this.seasons.splice(index, 1);
+  }
+
   // this is a little inaccurate
   // need to update to _.find when seasons have nrs
   getSeason (nr) {

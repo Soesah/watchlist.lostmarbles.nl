@@ -9,9 +9,7 @@ let WatchEditView = Vue.component('watch-edit-view', {
               <item-fields :state-item="stateItem" v-model="item"></item-fields>
 
               <div class="buttons">
-                <div class="button-container">
-                  <button type="submit">Edit</button>
-                </div>
+                <button type="submit">Edit</button>
                 <button type="button" class="danger" @click="remove">Delete</button>
                 <button type="cancel" @click="back">Cancel</button>
               </div>
