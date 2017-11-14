@@ -91,7 +91,7 @@ const store = new Vuex.Store({
     },
     removeSeason ({commit, state}, {item, season}) {
       commit('removeSeason', {item, season});
-      return this.dispatch('save', 'Removing ' + item.name);
+      return this.dispatch('save', 'Removing ' + item.name + ' Season ' + season.nr);
     },
     toggleWatched ({commit, state}, item) {
       commit('toggleWatched', item);
