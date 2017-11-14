@@ -120,11 +120,7 @@ class WatchItemFactory {
 
   static getFilterTypes () {
     let types = this.getTypeList().map(item => {
-          if (item.type === MOVIE) {
-            item.type = [item.type, SEQUEL, PREQUEL];
-          } else {
-            item.type = [item.type];
-          }
+          item.type = [item.type];
           return item;
         });
     return [
