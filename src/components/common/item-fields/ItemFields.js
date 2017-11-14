@@ -1,4 +1,5 @@
 import Focus from 'directives/Focus';
+import Choice from 'components/common/choice/Choice';
 import WatchItemFactory from 'services/WatchItemFactory';
 import watchlistService from 'services/WatchlistService';
 import omdbApiService from 'services/OMDbApiService';
@@ -7,9 +8,7 @@ let ItemFields = Vue.component('item-fields', {
   template:`<section class="item-fields">
               <div class="form-item form-item-required">
                 <label>Type</label>
-                <select v-model="item.type">
-                  <option v-for="type in types" :value="type.type" v-text="type.name"></option>
-                </select>
+                <choice v-model="item.type" :items="types"></choice>
                 <svg class="select-arrow" width="100px" height="63px" viewBox="0 0 100 63" version="1.1" xmlns="http://www.w3.org/2000/svg">
                   <polygon points="25.2873563 0 0 0 50 0 74.7126437 0 50 31.8333333"></polygon>
                 </svg>
@@ -209,5 +208,8 @@ let ItemFields = Vue.component('item-fields', {
     getTypeName(item) {
       return WatchItemFactory.getTypeName(item);
     }    
+  },
+  components: {
+    Choice
   }
 });
