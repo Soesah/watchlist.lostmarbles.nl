@@ -1,8 +1,9 @@
 import BaseModel from 'core/models/BaseModel';
+import DateTimeUtil from 'core/services/DateTimeUtil';
 
-class Game extends BaseModel{
+class Game extends BaseModel {
 
-  constructor ({imdbId = null, name = null, year = null, score = null, plot = null, actors = [], publisher = null, genre = null, played = false, date_added = null}) {
+  constructor ({imdbId = null, name = null, year = null, score = null, plot = null, actors = [], publisher = null, genre = null, played = false, date_played = null, date_added = null}) {
     super();
     this.type = 3;
     this.imdbId = imdbId;
@@ -14,11 +15,13 @@ class Game extends BaseModel{
     this.publisher = publisher;
     this.genre = genre;
     this.played = played;
+    this.date_played = date_played;
     this.date_added = date_added;
   }
 
   togglePlayed () {
     this.played = !this.played;
+    this.date_played = this.played ? DateTimeUtil.now() : null;
   }
 
   toggleWatched () {
@@ -27,6 +30,10 @@ class Game extends BaseModel{
 
   get watched () {
     return this.played;
+  }
+
+  get date_watched () {
+    return this.date_played;
   }
 
 }

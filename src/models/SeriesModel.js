@@ -1,6 +1,6 @@
 import Season from 'models/SeasonModel';
 
-class Series extends BaseModel{
+class Series extends BaseModel {
 
   constructor ({imdbId = null, name = null, seasons = [], plot = null, actors = [], finished = false, date_added = null}) {
     super();

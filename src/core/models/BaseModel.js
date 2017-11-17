@@ -1,3 +1,5 @@
+import DateTimeUtil from 'core/services/DateTimeUtil';
+
 class BaseModel {
 
   get path () {
@@ -10,6 +12,7 @@ class BaseModel {
 
   toggleWatched () {
     this.watched = !this.watched;
+    this.date_watched = this.watched ? DateTimeUtil.now() : null;
   }
 
   clone () {
