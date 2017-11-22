@@ -137,10 +137,18 @@ const store = new Vuex.Store({
     }
   },
   getters: {
-    searchItems: (state, getters) => (search) => {
+    searchItems: (state, getters) => (search, items) => {
       return _.filter(state.items, item => {
         return item.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
+          && !~items.indexOf(item.imdbId);
       });
+    },
+    franchiseItems: (state, getters) => (items) => {
+      let franchiseItems = [];
+      items.forEach(imdbId => {
+        franchiseItems.push(state.items.find(item => item.imdbId === imdbId));
+      });
+      return franchiseItems;
     },
     filteredItems: (state, getters) => () => {
       let filtered = _.filter(state.items, item => {

@@ -105,6 +105,48 @@
   text-align: center;
 }
 
+.franchise-items {
+  margin-top: 8px;
+
+  li {
+    padding: @size-smaller;
+    border: solid 1px @gray-lighter;
+    border-radius: @border-radius-default;
+    background-color: @yellow;
+    width: 320px;
+
+    p {
+      margin-bottom: 0px;
+
+      .icon {
+        position: relative;
+        top: 1px;
+        font-size: 12px;
+        color: @gray-light;
+      }
+    }
+
+    &:before {
+      content: none;
+    }
+  }
+
+  li + li {
+    border-top: none;
+    border-radius: 0px;
+  }
+
+  li:first-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  li:last-child {
+    border-bottom-left-radius: @border-radius-default;
+    border-bottom-right-radius: @border-radius-default;
+  }
+}
+
 @-webkit-keyframes spin { 100%
   {
     -webkit-transform: rotate(360deg);

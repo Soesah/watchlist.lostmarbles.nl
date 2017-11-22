@@ -20,9 +20,9 @@
     display: inline-block;
   }
 
-  p,
-  h3,
-  h4 {
+  & > p,
+  & > h3,
+  & > h4 {
     margin: 0 0 @size-small @size-large;
   }
 
@@ -265,6 +265,14 @@ input[type=number]::-webkit-outer-spin-button {
     &.suggestion-highlighted,
     &:hover {
       background: desaturate(darken(#f1e9e0, 10%), 10%);
+    }
+
+    &.suggestions-button {
+      padding: 8px;
+
+      &:hover {
+        background: #f1e9e0;
+      }
     }
 
     &:last-child {

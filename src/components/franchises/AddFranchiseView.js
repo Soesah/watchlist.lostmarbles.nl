@@ -14,7 +14,7 @@ let AddFranchiseView = Vue.component('add-franchise-view', {
                 <div class="form-input-group">
                   <input type="text" v-if="choice" name="name" readonly v-model="choice.name"/>
                   <input type="text" v-if="!choice" name="name" required autocomplete="off" v-focus placeholder="Search" v-model="search" @input="searchItem"/>
-                  <button class="search-button action" type="button" @click="addItem($event)" :disabled="!search">
+                  <button class="search-button action" type="button" @click="addItem($event)" :disabled="!choice">
                     <i class="icon icon-plus"></i>
                   </button>
                   <ul class="suggestions" v-show="suggestions.length && !choice">
@@ -24,26 +24,27 @@ let AddFranchiseView = Vue.component('add-franchise-view', {
                         <span v-text="suggestion.name + '(' + suggestion.year + ')'"></span>
                       </a>
                     </li>
+                    <li class="suggestions-button">
+                      <button type="button" class="action" @click="chooseAll">
+                        Add all
+                      </button>
+                    </li>
                   </ul>
                 </div> 
               </div>
-
-                <ul>
-                  <li v-for="item in franchise.items">
-                    <p class="episode-title" :class="{'episode-watched': episode.watched}">
-                      <span v-text="episode.nr" class="episode-nr"></span>
-                      <span class="episode-name"v-text="episode.title"></span>
-                      <i class="icon icon-series" @click="toggleEpisodeWatched(season, episode)"></i>
+              <div class="form-item">
+                <label>Items</label>
+                <ul class="franchise-items list">
+                  <li v-for="item in items">
+                    <p>
+                      <i :class="'icon icon-' + getTypeName(item)"></i> <span v-text="item.name"></span>
                     </p>
                   </li>
                 </ul>
               </div>
 
-
               <div class="buttons">
-                <div class="button-container">
-                  <button type="submit">Add</button>
-                </div>
+                <button type="submit">Add</button>
                 <button type="cancel" @click="back">Cancel</button>
               </div>
             </form>`,
@@ -53,6 +54,11 @@ let AddFranchiseView = Vue.component('add-franchise-view', {
       franchise: WatchItemFactory.new(WatchItemFactory.FRANCHISE),
       suggestions: [],
       choice: null
+    }
+  },
+  computed: {
+    items: function() {
+      return this.$store.getters.franchiseItems(this.franchise.items);
     }
   },
   created () {
@@ -69,14 +75,26 @@ let AddFranchiseView = Vue.component('add-franchise-view', {
     searchItem () {
       // don't find without a name
       if (this.search) {
-        this.suggestions = this.$store.getters.searchItems(this.search);
+        this.suggestions = this.$store.getters.searchItems(this.search, this.franchise.items);
+      } else {
+        this.suggestions = [];
       }
     },
     chooseItem (item) {
       this.choice = item;
     },
+    chooseAll (evt) {
+      this.suggestions.forEach(suggestion => {
+        this.franchise.items.push(suggestion.imdbId);
+      });
+      this.search = '';
+      this.searchItem();
+      evt.preventDefault();
+    },
     addItem () {
-
+      this.franchise.items.push(this.choice.imdbId);
+      this.searchItem();
+      this.choice = null;
     },
     add (evt) {
       evt.preventDefault();
