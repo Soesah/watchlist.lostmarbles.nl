@@ -7,7 +7,7 @@ let WatchItemView = Vue.component('watch-item-view', {
               <h3>
                 <span v-text="item.year"></span><span v-show="item.lastYear && item.lastYear !== item.year"> – <span v-text="item.lastYear"></span></span><span v-show="item.finished" class="bracketed">Finished</span>
                 <span v-text="typeName"></span>
-                <span v-show="item.imdbId" class="dashed"><a :href="'http://www.imdb.com/title/' + item.imdbId" target="_new">IMDB</a></span>
+                <span v-show="item.imdbId && !~item.imdbId.indexOf('NON')" class="dashed"><a :href="'http://www.imdb.com/title/' + item.imdbId" target="_new">IMDB</a></span>
               </h3>
 
               <div class="actors" v-show="item.actors && item.actors.length">
@@ -93,10 +93,6 @@ let WatchItemView = Vue.component('watch-item-view', {
         season: season,
         episode: episode
       });
-    },
-    back (evt) {
-      this.$router.go(-1);
-      evt.preventDefault();
     }
   }
 });
