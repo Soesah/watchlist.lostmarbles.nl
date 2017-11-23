@@ -11,7 +11,7 @@
           "ligatures": "film, video2",
           "name": "movie",
           "id": 0,
-          "order": 97,
+          "order": 116,
           "prevSize": 32,
           "code": 59667,
           "tempChar": ""
@@ -20,7 +20,7 @@
           "ligatures": "video-camera, video3",
           "name": "documentary",
           "id": 1,
-          "order": 98,
+          "order": 117,
           "prevSize": 32,
           "code": 59668,
           "tempChar": ""
@@ -29,7 +29,7 @@
           "ligatures": "tv, television",
           "name": "series",
           "id": 3,
-          "order": 99,
+          "order": 118,
           "prevSize": 32,
           "code": 59739,
           "tempChar": ""
@@ -38,7 +38,7 @@
           "ligatures": "steam, brand36",
           "name": "game",
           "id": 14,
-          "order": 100,
+          "order": 119,
           "prevSize": 32,
           "code": 60076,
           "tempChar": ""
@@ -47,7 +47,7 @@
           "ligatures": "warning, sign",
           "name": "warning",
           "id": 18,
-          "order": 101,
+          "order": 120,
           "prevSize": 32,
           "code": 59911,
           "tempChar": ""
@@ -56,7 +56,7 @@
           "ligatures": "bullhorn, megaphone",
           "name": "info",
           "id": 2,
-          "order": 102,
+          "order": 121,
           "prevSize": 32,
           "code": 59674,
           "tempChar": ""
@@ -65,7 +65,7 @@
           "ligatures": "bubble, comment",
           "name": "success",
           "id": 4,
-          "order": 103,
+          "order": 122,
           "prevSize": 32,
           "code": 59755,
           "tempChar": ""
@@ -74,7 +74,7 @@
           "ligatures": "fire, flame",
           "name": "error",
           "id": 5,
-          "order": 104,
+          "order": 130,
           "prevSize": 32,
           "code": 59817,
           "tempChar": ""
@@ -83,7 +83,7 @@
           "ligatures": "cloud-download, cloud2",
           "name": "saving",
           "id": 6,
-          "order": 105,
+          "order": 131,
           "prevSize": 32,
           "code": 59842,
           "tempChar": ""
@@ -92,7 +92,7 @@
           "ligatures": "plus, add",
           "name": "plus",
           "id": 7,
-          "order": 106,
+          "order": 132,
           "prevSize": 32,
           "code": 59914,
           "tempChar": ""
@@ -101,13 +101,13 @@
           "ligatures": "cross, cancel",
           "name": "delete",
           "id": 8,
-          "order": 107,
+          "order": 135,
           "prevSize": 32,
           "code": 59919,
           "tempChar": ""
         },
         {
-          "order": 108,
+          "order": 134,
           "id": 15,
           "name": "checkmark",
           "prevSize": 32,
@@ -118,7 +118,7 @@
           "ligatures": "checkbox-checked, checkbox",
           "name": "checkbox-checked",
           "id": 9,
-          "order": 109,
+          "order": 123,
           "prevSize": 32,
           "code": 59986,
           "tempChar": ""
@@ -127,7 +127,7 @@
           "ligatures": "checkbox-unchecked, checkbox2",
           "name": "checkbox",
           "id": 10,
-          "order": 110,
+          "order": 124,
           "prevSize": 32,
           "code": 59987,
           "tempChar": ""
@@ -136,7 +136,7 @@
           "ligatures": "spinner2, loading3",
           "name": "spinner",
           "id": 11,
-          "order": 111,
+          "order": 125,
           "prevSize": 32,
           "code": 59771,
           "tempChar": ""
@@ -145,7 +145,7 @@
           "ligatures": "spinner11, loading12",
           "name": "spinner11",
           "id": 17,
-          "order": 112,
+          "order": 126,
           "prevSize": 32,
           "code": 59780,
           "tempChar": ""
@@ -154,7 +154,7 @@
           "ligatures": "search, magnifier",
           "name": "search",
           "id": 12,
-          "order": 113,
+          "order": 127,
           "prevSize": 32,
           "code": 59782,
           "tempChar": ""
@@ -163,10 +163,18 @@
           "ligatures": "cogs, gears",
           "name": "cogs",
           "id": 16,
-          "order": 114,
+          "order": 128,
           "prevSize": 32,
           "code": 59797,
           "tempChar": ""
+        },
+        {
+          "order": 129,
+          "id": 19,
+          "name": "drag",
+          "prevSize": 24,
+          "code": 59649,
+          "tempChar": ""
         }
       ],
       "id": 1,
@@ -498,6 +506,21 @@
           ],
           "defaultCode": 59797,
           "grid": 16
+        },
+        {
+          "id": 19,
+          "paths": [
+            "M170 640v-86h684v86h-684zM854 384v86h-684v-86h684z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "tags": [
+            "drag_handle"
+          ],
+          "grid": 24
         }
       ],
       "colorThemes": [],
