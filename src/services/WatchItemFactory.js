@@ -24,6 +24,8 @@ class WatchItemFactory {
         return new Documentary(item);
       case GAME:
         return new Game(item);
+      case FRANCHISE:
+        return new Franchise(item);
     }
   }
 
@@ -145,6 +147,9 @@ class WatchItemFactory {
       }, {
         type: SERIES,
         name: 'Series'
+      }, {
+        type: FRANCHISE,
+        name: 'Franchise'
       }
     ]
   }

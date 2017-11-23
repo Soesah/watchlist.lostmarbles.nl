@@ -98,7 +98,7 @@ let ItemFields = Vue.component('item-fields', {
   },
   computed: {
     types() {
-      return WatchItemFactory.getTypeList();
+      return WatchItemFactory.getTypeList().filter(item => item.type !== WatchItemFactory.FRANCHISE);
     }
   },
   watch: {
