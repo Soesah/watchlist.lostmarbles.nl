@@ -19,4 +19,8 @@ class Franchise {
   get path () {
     return this.name.replace(/\W+/g, '-').replace('--', '').toLowerCase();
   }
+
+  clone () {
+    return new this.constructor(JSON.parse(JSON.stringify(this)));
+  }
 }

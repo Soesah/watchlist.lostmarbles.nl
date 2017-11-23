@@ -1,5 +1,6 @@
 import _ from 'Lodash';
 import watchlistService from 'services/WatchlistService';
+import WatchItemFactory from 'services/WatchItemFactory';
 
 const store = new Vuex.Store({
   state: {
@@ -142,6 +143,9 @@ const store = new Vuex.Store({
         return item.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
           && !~items.indexOf(item.imdbId);
       });
+    },
+    franchises: (state, getters) => () => {
+      return state.items.filter(item => item.type === WatchItemFactory.FRANCHISE)
     },
     franchiseItems: (state, getters) => (items) => {
       let franchiseItems = [];
