@@ -141,6 +141,7 @@ const store = new Vuex.Store({
     searchItems: (state, getters) => (search, items) => {
       return _.filter(state.items, item => {
         return item.name.toLowerCase().indexOf(search.toLowerCase()) !== -1
+          && item.type !== WatchItemFactory.FRANCHISE
           && !~items.indexOf(item.imdbId);
       });
     },
