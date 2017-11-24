@@ -5,7 +5,7 @@ let FranchiseItemFields = Vue.component('franchise-item-fields', {
   template:`<section class="item-fields">
               <div class="form-item form-item-required">
                 <label>Name</label>
-                <input type="text" required="true" v-focus placeholder="Name" v-model="franchise.name"/>
+                <input type="text" required="true" v-focus placeholder="Name" v-model="franchise.name" @input="update"/>
               </div>
               <div class="form-item form-item-name">
                 <label>Search</label>
@@ -30,7 +30,7 @@ let FranchiseItemFields = Vue.component('franchise-item-fields', {
                   </ul>
                 </div> 
               </div>
-              <div class="form-item">
+              <div class="form-item" v-show="items.length">
                 <label>Items</label>
                 <ul class="franchise-items list">
                   <li v-for="item in items">
@@ -72,7 +72,7 @@ let FranchiseItemFields = Vue.component('franchise-item-fields', {
   methods: {
     // update parent component item
     update() {
-      this.$emit('input', this.item);
+      this.$emit('input', this.franchise);
     },
     searchItem () {
       // don't find without a name
@@ -90,12 +90,14 @@ let FranchiseItemFields = Vue.component('franchise-item-fields', {
       this.suggestions.forEach(suggestion => {
         this.franchise.addItem(suggestion);
       });
+      this.update();
       this.search = '';
       this.searchItem();
       evt.preventDefault();
     },
     addItem () {
       this.franchise.addItem(this.choice);
+      this.update();
       this.searchItem();
       this.choice = null;
     },
