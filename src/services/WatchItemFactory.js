@@ -4,6 +4,7 @@ import Game from 'models/GameModel';
 import Documentary from 'models/DocumentaryModel';
 import Franchise from 'models/FranchiseModel';
 import moment from 'Moment';
+import UUIDUtil from 'core/services/UUIDUtil';
 
 const ALL = true;
 const MOVIE = 0;
@@ -32,6 +33,11 @@ class WatchItemFactory {
   static new (type, add_date = true) {
     let date = new moment().format('YYYY-MM-DD'),
         data = add_date ? { date_added: date } : {};
+
+    // ensure an imbdId
+    data.imdbId = 'NON-IMDB-ID-'
+      + WatchItemFactory.getTypeNameByType(type).toUpperCase()
+      + '-' + UUIDUtil.uuid4();
 
     switch(type) {
       case MOVIE:
@@ -154,8 +160,12 @@ class WatchItemFactory {
     ]
   }
 
+  static getTypeNameByType (type) {
+    return _.find(WatchItemFactory.getTypeList(), item => item.type === type).name;
+  }
+
   static getTypeName (item) {
-    return (item && item.type !== undefined) ? _.find(WatchItemFactory.getTypeList(), type => type.type === item.type).name : 'Unknown';
+    return (item && item.type !== undefined) ? WatchItemFactory.getTypeNameByType(item.type) : 'Unknown'
   }
 
   static get ALL () {
