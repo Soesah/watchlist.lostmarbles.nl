@@ -115,7 +115,7 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
     },
     addEpisode (episode) {
       let nr = episode ? episode.nr + 1 : 1,
-          newEpisode = this.season.createEpisode('NON-IMDB-ID-' + this.season.year + '-' + this.season.nr + '-' + nr , nr, '');
+          newEpisode = this.season.createEpisode('NON-IMDB-EPISODE-ID-' + this.item.imdbId + '-' + this.season.nr + '-' + nr , nr, '');
 
       this.season.insertEpisode(nr - 1, newEpisode);
     },
