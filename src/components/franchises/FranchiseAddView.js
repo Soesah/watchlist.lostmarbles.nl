@@ -1,7 +1,7 @@
 import WatchItemFactory from 'services/WatchItemFactory';
 import FranchiseItemFields from 'components/common/item-fields/FranchiseItemFields';
 
-let AddFranchiseView = Vue.component('add-franchise-view', {
+let FranchiseAddView = Vue.component('franchise-add-view', {
   template:`<form class="form add-franchise" @submit="add">
               <h2>Add a franchise</h2>
               <p>Add a franchise to group movies, series and other.</p>
