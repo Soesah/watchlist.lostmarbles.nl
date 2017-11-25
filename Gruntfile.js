@@ -121,7 +121,7 @@ module.exports = function(grunt) {
           to: 'https://unpkg.com/vue-router@3.0.1/dist/vue-router.min.js"'
         },{
           from: 'https://unpkg.com/vue"',
-          to: 'https://unpkg.com/vue@2.5.3/dist/vue.min.js"'
+          to: 'https://unpkg.com/vue@2.5.8/dist/vue.min.js"'
         }]
       },
       'app-version': {
@@ -238,10 +238,14 @@ module.exports = function(grunt) {
     });
   });
 
-  grunt.registerTask('deploy-version', 'Update version, commit, tag and deploy', function() {
-    // deploy versions on master
+  grunt.registerTask('prepare-version', 'Update version, commit, tag and deploy', function() {
+    // create commit message
     grunt.task.run('shell:compose');
+    // deploy versions on master
     grunt.task.run('shell:master');
+  });
+
+  grunt.registerTask('deploy-version', 'Update version, commit, tag and deploy', function() {
     // squash merge develop
     grunt.task.run('shell:merge-develop');
     // add the list
@@ -260,6 +264,7 @@ module.exports = function(grunt) {
     grunt.task.run('deploy');
     grunt.task.run('shell:push-master');
   });
+
 
   grunt.registerTask('deploy', 'Deploy watchlist.lostmarbles.nl', function() {
     grunt.log.subhead('Deploying ' + settings.name + '. v' + settings.version);
