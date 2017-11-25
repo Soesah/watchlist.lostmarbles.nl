@@ -1,10 +1,5 @@
 
 let Version = Vue.component('version', {
-  template: `<div class="version" v-text="version"></div>`,
-  computed: {
-    version () {
-      return 'x.x.x';
-    }
-  }
+  template: `<div v-once class="version">x.x.x</div>`
 });
 

@@ -128,8 +128,8 @@ module.exports = function(grunt) {
         src: ['build/tmp/watchlist.js'],
         overwrite: true,
         replacements: [{
-          from: 'return \'x.x.x\';',
-          to: 'return \'' + settings.version + '\';'
+          from: 'x.x.x',
+          to: settings.version
         }]
       }
     },
@@ -233,7 +233,7 @@ module.exports = function(grunt) {
           {from: 'node-classloader/classloader.php?WatchlistApp',to: 'js/watchlist.min.' + version + '.js'},
           {from: 'css/watchlist.css',to: 'css/watchlist.min.' + version + '.css'}
         ]},
-        'app-version': {replacements: [{from: 'return \'x.x.x\';', to: 'return \'' + version + '\';'}]}
+        'app-version': {replacements: [{from: 'x.x.x',to: settings.version}]}
       }
     });
   });
