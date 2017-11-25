@@ -168,7 +168,7 @@ const store = new Vuex.Store({
         // filter out franchises when searching;
         // this prevents heaps of complexity if you were to extend the filter and search to franchiseItems above
         if (state.filter.search) {
-          show = item.name.toLowerCase().indexOf(state.filter.search.toLowerCase()) !== -1700
+          show = item.name.toLowerCase().indexOf(state.filter.search.toLowerCase()) !== -1
             && item.type !== WatchItemFactory.FRANCHISE;
         }
 
