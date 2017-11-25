@@ -30,7 +30,7 @@ class WatchItemFactory {
     }
   }
 
-  static new (type, add_date = true) {
+  static new (type = MOVIE, add_date = true) {
     let date = new moment().format('YYYY-MM-DD'),
         data = add_date ? { date_added: date } : {};
 

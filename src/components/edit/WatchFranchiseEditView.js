@@ -15,13 +15,13 @@ let WatchFranchiseEditView = Vue.component('watch-franchise-edit-view', {
             </form>`,
   data() {
     return {
-      item: WatchItemFactory.new()
+      item: WatchItemFactory.new(WatchItemFactory.FRANCHISE)
     }
   },
   computed: {
     // needed to listen to state's item
     stateItem() {
-      let item = WatchItemFactory.new();
+      let item = WatchItemFactory.new(WatchItemFactory.FRANCHISE);
       if (this.$store.state.item.name) {
         item = this.$store.state.item.clone();
         // set this item as the data item, to allow mutation
