@@ -20,6 +20,10 @@ class Franchise {
     return this.name.replace(/\W+/g, '-').replace('--', '').toLowerCase();
   }
 
+  get count () {
+    return this.items.length;
+  }
+
   clone () {
     return new this.constructor(JSON.parse(JSON.stringify(this)));
   }
