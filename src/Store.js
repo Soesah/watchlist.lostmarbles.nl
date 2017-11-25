@@ -148,6 +148,9 @@ const store = new Vuex.Store({
     franchises: (state, getters) => () => {
       return state.items.filter(item => item.type === WatchItemFactory.FRANCHISE)
     },
+    getItemFranchise: (state, getters) => (item) => {
+      return getters.franchises().find(franchise => !!~franchise.items.indexOf(item.imdbId))
+    },
     franchiseItems: (state, getters) => (items) => {
       let franchiseItems = [];
       items.forEach(imdbId => {
@@ -159,8 +162,14 @@ const store = new Vuex.Store({
       let filtered = _.filter(state.items, item => {
         let show = true;
 
+        // filter out franchised items by default
+        show = !getters.getItemFranchise(item);
+
+        // filter out franchises when searching;
+        // this prevents heaps of complexity if you were to extend the filter and search to franchiseItems above
         if (state.filter.search) {
-          show = item.name.toLowerCase().indexOf(state.filter.search.toLowerCase()) !== -1;
+          show = item.name.toLowerCase().indexOf(state.filter.search.toLowerCase()) !== -1700
+            && item.type !== WatchItemFactory.FRANCHISE;
         }
 
         if (show && state.filter.itemType !== true) {

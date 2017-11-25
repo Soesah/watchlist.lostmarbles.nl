@@ -8,7 +8,7 @@ let WatchList = Vue.component('watch-list', {
   template:`<section class="watch-list">
               <p>A list of movies, series, documentaries and games I want to watch and play.</p>
               <list-filter></list-filter>
-              <!p>Showing <strong>{{items.length}}</strong> movies, series, games and documentaries.</p>
+              <!p>Showing <strong>{{count}}</strong> movies, series, games and documentaries.</p>
 
               <ul class="list">
                 <component :is="componentType(item)" v-for="item in items" :item="item" :key="item.imdbId"></component>
@@ -17,6 +17,9 @@ let WatchList = Vue.component('watch-list', {
   computed: {
     items () {
       return _.orderBy(this.$store.getters.filteredItems(), 'name', 'asc');
+    },
+    count () {
+      return _.sumBy(this.items, item => item.count)
     }
   },
   created () {

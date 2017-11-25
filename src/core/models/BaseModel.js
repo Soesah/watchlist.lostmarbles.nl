@@ -2,8 +2,13 @@ import DateTimeUtil from 'core/services/DateTimeUtil';
 
 class BaseModel {
 
+
   get path () {
     return this.name.replace(/\W+/g, '-').replace('--', '').toLowerCase() + '-' + this.year;
+  }
+
+  get count () {
+    return 1;
   }
 
   isComplete () {
