@@ -5,9 +5,9 @@ let WatchItemView = Vue.component('watch-item-view', {
               <h2 v-text="item.name"></h2>
 
               <h3>
-                <span v-text="item.year"></span><span v-show="item.lastYear"> – <span v-text="item.lastYear"></span></span><span v-show="item.finished" class="bracketed">Finished</span>
+                <span v-text="item.year"></span><span v-show="item.lastYear && item.lastYear !== item.year"> – <span v-text="item.lastYear"></span></span><span v-show="item.finished" class="bracketed">Finished</span>
                 <span v-text="typeName"></span>
-                <span v-show="item.imdbId" class="dashed"><a :href="'http://www.imdb.com/title/' + item.imdbId" target="_new">IMDB</a></span>
+                <span v-show="item.imdbId && !~item.imdbId.indexOf('NON')" class="dashed"><a :href="'http://www.imdb.com/title/' + item.imdbId" target="_new">IMDB</a></span>
               </h3>
 
               <div class="actors" v-show="item.actors && item.actors.length">
@@ -39,11 +39,11 @@ let WatchItemView = Vue.component('watch-item-view', {
               </div>
 
               <div v-if="item.seasons && item.seasons.length">
-                <h4>Seasons</h4>
+                <h4 v-show="item.seasons.length > 1">Seasons</h4>
                 <ul class="seasons">
                   <li v-for="season in item.seasons">
                     <h5 class="season-title">
-                      Season <span v-text="season.nr"></span>
+                      <span v-show="item.seasons.length > 1">Season <span v-text="season.nr"></span></span>
                       <span class="season-year bracketed" v-text="season.year"></span>
                       <i class="icon icon-series" @click="toggleSeasonWatched(season)"></i>
                       <router-link :to="'/edit/' + item.path + '/season/' + season.nr">Edit</router-link>
@@ -93,10 +93,6 @@ let WatchItemView = Vue.component('watch-item-view', {
         season: season,
         episode: episode
       });
-    },
-    back (evt) {
-      this.$router.go(-1);
-      evt.preventDefault();
     }
   }
 });

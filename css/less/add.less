@@ -60,7 +60,7 @@
     }
   }
   .update-season-button {
-    max-width: 320px;
+    width: auto;
     margin: 10px;
     margin-left: 130px;
   }
@@ -103,6 +103,57 @@
   animation: spin 4s linear infinite;
   transform-origin: 10px;
   text-align: center;
+}
+
+.franchise-items {
+  margin-top: 8px;
+
+  li {
+    padding: @size-smaller;
+    border: solid 1px @gray-lighter;
+    border-radius: @border-radius-default;
+    background-color: @yellow;
+    width: 320px;
+
+    p {
+      margin-bottom: 0px;
+
+      .icon {
+        position: relative;
+        top: 1px;
+        font-size: 12px;
+        color: @gray-light;
+      }
+    }
+
+    &:before {
+      content: none;
+    }
+
+    .icon-drag {
+      position: absolute;
+      top: 1px;
+      right: 0;
+      padding: 8px;
+      font-size: 14px;
+      color: @black;
+    }
+  }
+
+  li + li {
+    border-top: none;
+    border-radius: 0px;
+  }
+
+  li:first-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  li:last-child {
+    border-bottom-left-radius: @border-radius-default;
+    border-bottom-right-radius: @border-radius-default;
+  }
 }
 
 @-webkit-keyframes spin { 100%

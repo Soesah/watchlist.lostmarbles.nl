@@ -35,6 +35,11 @@ class Season {
     this.episodes.splice(index + 1, 0, episode);
   }
 
+  removeEpisode (episode) {
+    let index = this.episodes.indexOf(episode);
+    this.episodes.splice(index, 1);
+  }
+
   toggleWatched () {
     this.episodes.forEach(episode => this.toggleEpisodeWatched(episode));
   }

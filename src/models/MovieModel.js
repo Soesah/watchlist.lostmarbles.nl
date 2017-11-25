@@ -2,7 +2,7 @@ import BaseModel from 'core/models/BaseModel';
 
 class Movie extends BaseModel {
 
-  constructor ({imdbId = null, name = null, year = null, score = null, actors = [], length = null, plot = null, director = null, watched = false, date_added = null}) {
+  constructor ({imdbId = null, name = null, year = null, score = null, actors = [], length = null, plot = null, director = null, watched = false, date_watched = null, date_added = null}) {
     super();
     this.type = 0;
     this.imdbId = imdbId;
@@ -14,6 +14,7 @@ class Movie extends BaseModel {
     this.plot = plot;
     this.director = director;
     this.watched = watched;
+    this.date_watched = date_watched;
     this.date_added = date_added;
   }
 

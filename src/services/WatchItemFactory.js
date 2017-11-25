@@ -1,18 +1,17 @@
 import Movie from 'models/MovieModel';
-import Sequel from 'models/SequelModel';
-import Prequel from 'models/PrequelModel';
 import Series from 'models/SeriesModel';
 import Game from 'models/GameModel';
 import Documentary from 'models/DocumentaryModel';
+import Franchise from 'models/FranchiseModel';
 import moment from 'Moment';
+import UUIDUtil from 'core/services/UUIDUtil';
 
 const ALL = true;
 const MOVIE = 0;
-const SEQUEL = 4;
-const PREQUEL = 5;
 const SERIES = 1;
 const DOCUMENTARY = 2;
 const GAME = 3;
+const FRANCHISE = 4
 
 class WatchItemFactory {
 
@@ -20,36 +19,37 @@ class WatchItemFactory {
     switch (item.type) {
       case MOVIE:
         return new Movie(item);
-      case SEQUEL:
-        return new Sequel(item);
-      case PREQUEL:
-        return new Prequel(item);
       case SERIES:
         return new Series(item);
       case DOCUMENTARY:
         return new Documentary(item);
       case GAME:
         return new Game(item);
+      case FRANCHISE:
+        return new Franchise(item);
     }
   }
 
-  static new (type, add_date = true) {
+  static new (type = MOVIE, add_date = true) {
     let date = new moment().format('YYYY-MM-DD'),
         data = add_date ? { date_added: date } : {};
+
+    // ensure an imbdId
+    data.imdbId = 'NON-IMDB-ID-'
+      + WatchItemFactory.getTypeNameByType(type).toUpperCase()
+      + '-' + UUIDUtil.uuid4();
 
     switch(type) {
       case MOVIE:
         return new Movie(data);
-      case SEQUEL:
-        return new Sequel({});
-      case PREQUEL:
-        return new Prequel({});
       case SERIES:
         return new Series(data);
       case DOCUMENTARY:
         return new Documentary(data);
       case GAME:
         return new Game(data);
+      case FRANCHISE:
+        return new Franchise(data);
       default:
         return new Movie(data);
     }
@@ -128,11 +128,7 @@ class WatchItemFactory {
 
   static getFilterTypes () {
     let types = this.getTypeList().map(item => {
-          if (item.type === MOVIE) {
-            item.type = [item.type, SEQUEL, PREQUEL];
-          } else {
-            item.type = [item.type];
-          }
+          item.type = [item.type];
           return item;
         });
     return [
@@ -157,26 +153,19 @@ class WatchItemFactory {
       }, {
         type: SERIES,
         name: 'Series'
+      }, {
+        type: FRANCHISE,
+        name: 'Franchise'
       }
     ]
   }
 
-  static getFullTypeList () {
-    return [
-      {
-        type: SEQUEL,
-        name: 'Sequel',
-        disabled: true
-      }, {
-        type: PREQUEL,
-        name: 'Prequel',
-        disabled: true
-      }
-    ].concat(this.getTypeList());
+  static getTypeNameByType (type) {
+    return _.find(WatchItemFactory.getTypeList(), item => item.type === type).name;
   }
 
   static getTypeName (item) {
-    return (item && item.type !== undefined) ? _.find(WatchItemFactory.getFullTypeList(), type => type.type === item.type).name : 'Unknown';
+    return (item && item.type !== undefined) ? WatchItemFactory.getTypeNameByType(item.type) : 'Unknown'
   }
 
   static get ALL () {
@@ -184,12 +173,6 @@ class WatchItemFactory {
   }
   static get MOVIE () {
     return MOVIE;
-  }
-  static get SEQUEL () {
-    return SEQUEL;
-  }
-  static get PREQUEL () {
-    return PREQUEL;
   }
   static get SERIES () {
     return SERIES;
@@ -199,6 +182,9 @@ class WatchItemFactory {
   }
   static get GAME () {
     return GAME;
+  }
+  static get FRANCHISE () {
+    return FRANCHISE;
   }
 
 }

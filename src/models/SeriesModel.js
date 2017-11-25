@@ -1,6 +1,6 @@
 import Season from 'models/SeasonModel';
 
-class Series extends BaseModel{
+class Series extends BaseModel {
 
   constructor ({imdbId = null, name = null, seasons = [], plot = null, actors = [], finished = false, date_added = null}) {
     super();
@@ -40,6 +40,11 @@ class Series extends BaseModel{
     let season = new Season({year: year, nr: this.seasons.length + 1});
     this.seasons.push(season);
     return season;
+  }
+
+  removeSeason (season) {
+    let index = this.seasons.indexOf(season);
+    this.seasons.splice(index, 1);
   }
 
   // this is a little inaccurate

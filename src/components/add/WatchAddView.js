@@ -23,9 +23,7 @@ let WatchAddView = Vue.component('watch-add-view', {
               </div>
 
               <div class="buttons">
-                <div class="button-container">
-                  <button type="submit">Add</button>
-                </div>
+                <button type="submit">Add</button>
                 <button type="cancel" @click="back">Cancel</button>
               </div>
             </form>`,

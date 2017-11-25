@@ -1,3 +1,4 @@
+import omdbApiService from 'services/OMDbApiService';
 import WatchItemFactory from 'services/WatchItemFactory';
 
 let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
@@ -5,7 +6,7 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
               <h2>Edit <i class="spaced" v-text="item.name"></i><span class="dashed">season<span class="spaced" v-text="season.nr"></span></span></h2>
               <p>Update and complete the information for this season</p>
 
-              <button class="update-season-button option" type="button" tooltip="'Update season episodes'|top"  ng-click="updateSeason(item, season.nr)">
+              <button class="update-season-button option" type="button" tooltip="'Update season episodes'|top"  @click="updateSeason(item, season.nr)">
                 <i class="icon icon-series" v-show="!updating"></i>
                 <i class="icon icon-spinner" v-show="updating"></i>
                 Update season
@@ -20,12 +21,12 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
               </div>
 
               <h3>Episodes</h3>
-              <ul class="episode-list">
+              <ul class="episode-list" v-if="season.episodes">
                 <li v-if="season.episodes && season.episodes[0].nr !== 1">
                   <div class="form-item">
                     <label></label>
                     <div class="form-input-group form-input-group-right">
-                      <button class="add-button option" type="button" ng-click="addEpisode(null)">
+                      <button class="add-button option" type="button" @click="addEpisode(null)">
                         <i class="icon icon-plus"></i>
                       </button>
                     </div>
@@ -39,16 +40,18 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
                       <button class="add-button option" type="button" @click="addEpisode(episode)" v-show="isInSequence(episode)">
                         <i class="icon icon-plus"></i>
                       </button>
+                      <button class="add-button danger" type="button" @click="removeEpisode(episode)">
+                        <i class="icon icon-delete"></i>
+                      </button>
                     </div>
                   </div>
                 </li>
               </ul>
 
               <div class="buttons">
-                <div class="button-container">
-                  <button type="submit">Edit</button>
-                </div>
-                <button type="cancel" ng-click="back()">Cancel</button>
+                <button type="submit">Edit</button>
+                <button type="button" class="danger" @click="remove">Delete</button>
+                <button type="cancel" @click="back">Cancel</button>
               </div>
             </form>`,
   data() {
@@ -64,9 +67,10 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
       let item = WatchItemFactory.new();
       if (this.$store.state.item.name) {
         item = this.$store.state.item.clone();
+        let season = item.getSeason(this.$route.params.nr);
         // set this item as the data item, to allow mutation
         this.item = item;
-        this.season = item.getSeason(this.$route.params.nr);
+        this.season = season ? season : {};
       }
       return item;
     }
@@ -93,6 +97,16 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
         .then(items => this.$router.go(-1));
       evt.preventDefault();
     },
+    remove (evt) {
+      this.$store.dispatch('removeSeason', {
+        item: this.$store.state.item,
+        season: this.$store.state.item.getSeason(this.$route.params.nr)
+      }).then(items => {
+          this.$destroy();
+          this.$router.go(-1);
+        });
+      evt.preventDefault();
+    },
     isInSequence (episode) {
       let nr = episode.nr,
           next = this.season.getEpisodeByNr(nr + 1);
@@ -101,17 +115,19 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
     },
     addEpisode (episode) {
       let nr = episode ? episode.nr + 1 : 1,
-          newEpisode = this.season.createEpisode('NON-IMDB-ID-' + this.season.year + '-' + this.season.nr + '-' + nr , nr, '');
+          newEpisode = this.season.createEpisode('NON-IMDB-EPISODE-ID-' + this.item.imdbId + '-' + this.season.nr + '-' + nr , nr, '');
 
       this.season.insertEpisode(nr - 1, newEpisode);
     },
+    removeEpisode (episode) {
+      this.season.removeEpisode(episode);
+    },
     updateSeason (series, nr) {
       this.updating = true;
-      OMDbApi.updateSeason(series, nr).then(response => {
+      omdbApiService.updateSeason(series, nr).then(response => {
         this.updating = false;
-        let nr = parseInt($routeParams.nr);
-        this.originalSeason = this.item.getSeason(nr);
-        this.season = this.originalSeason.clone();
+        let nr = parseInt(this.$route.params.nr);
+        this.season = this.item.getSeason(nr);
       });
     },
     back (evt) {
