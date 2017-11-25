@@ -607,91 +607,57 @@
                 ]
             },
             {
-                "year": null,
+                "year": 2017,
                 "nr": 7,
                 "episodes": [
                     {
                         "imdbId": "tt5654088",
                         "nr": 1,
-                        "title": "Episode #7.1",
+                        "title": "Dragonstone",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt5655178",
                         "nr": 2,
-                        "title": "Episode #7.2",
+                        "title": "Stormborn",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt5775840",
                         "nr": 3,
-                        "title": "Episode #7.3",
+                        "title": "The Queen's Justice",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt5775846",
                         "nr": 4,
-                        "title": "Episode #7.4",
+                        "title": "The Spoils of War",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt5775854",
                         "nr": 5,
-                        "title": "Episode #7.5",
+                        "title": "Eastwatch",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt5775864",
                         "nr": 6,
-                        "title": "Episode #7.6",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Beyond the Wall",
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt5775874",
                         "nr": 7,
-                        "title": "Episode #7.7",
-                        "watched": false,
-                        "date_watched": null
-                    }
-                ]
-            },
-            {
-                "year": null,
-                "nr": 8,
-                "episodes": [
-                    {
-                        "imdbId": "tt5924366",
-                        "nr": 1,
-                        "title": "Episode #8.1",
-                        "watched": false,
-                        "date_watched": null
-                    },
-                    {
-                        "imdbId": "tt6027914",
-                        "nr": 4,
-                        "title": "Episode #8.4",
-                        "watched": false,
-                        "date_watched": null
-                    },
-                    {
-                        "imdbId": "tt6027916",
-                        "nr": 5,
-                        "title": "Episode #8.5",
-                        "watched": false,
-                        "date_watched": null
-                    },
-                    {
-                        "imdbId": "tt6027920",
-                        "nr": 6,
-                        "title": "Episode #8.6",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The Dragon and the Wolf",
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     }
                 ]
             }
@@ -3516,57 +3482,57 @@
                         "imdbId": "tt2657398",
                         "nr": 1,
                         "title": "The Long Bright Dark",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt2704380",
                         "nr": 2,
                         "title": "Seeing Things",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt2790184",
                         "nr": 3,
                         "title": "The Locked Room",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt2790174",
                         "nr": 4,
                         "title": "Who Goes There",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt2790196",
                         "nr": 5,
                         "title": "The Secret Fate of All Life",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt2790238",
                         "nr": 6,
                         "title": "Haunted Houses",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt2790240",
                         "nr": 7,
                         "title": "After You've Gone",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     },
                     {
                         "imdbId": "tt2790254",
                         "nr": 8,
                         "title": "Form and Void",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-25"
                     }
                 ]
             },
@@ -35550,8 +35516,8 @@
         "length": "N\/A",
         "plot": "Balthazar Bratt, a child star from the 1980's, hatches a scheme for world domination.",
         "director": "Kyle Balda, Pierre Coffin, Eric Guillon",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-11-25",
         "date_added": null
     },
     {
@@ -37198,8 +37164,8 @@
         "length": "149 min",
         "plot": "Autobots and Decepticons are at war, with humans on the sidelines. Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth.",
         "director": "Michael Bay",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-11-26",
         "date_added": "2017-11-24"
     },
     {
@@ -37336,7 +37302,10 @@
         "name": "Jane Austin",
         "items": [
             "tt0112130",
-            "tt0844794"
+            "tt0844794",
+            "tt0114388",
+            "tt0844330",
+            "tt0116191"
         ],
         "date_added": "2017-11-25"
     },
@@ -37538,5 +37507,319 @@
             "Javier C\u00e1mara"
         ],
         "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-67e24877-386e-4176-89bc-33c9ba6b3f94",
+        "name": "Blade Runner",
+        "items": [
+            "tt0083658",
+            "tt1856101"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-737c5069-f161-4dd2-a0c3-2fd1ac9553c5",
+        "name": "Dune",
+        "items": [
+            "tt0142032",
+            "tt0287839"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-f667c90b-7ad1-4fe7-8e78-3ee1d1891f72",
+        "name": "Game of Thrones",
+        "items": [
+            "tt0944947",
+            "tt3391176"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-e92b2200-aba0-4a3a-81f8-41853b6408fe",
+        "name": "Grand Theft Auto",
+        "items": [
+            "tt2103188",
+            "tt0802999",
+            "tt0277723"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-475a6c1f-056e-4903-8c1a-36eee811ef9c",
+        "name": "Iron Man",
+        "items": [
+            "tt0371746",
+            "tt1228705",
+            "tt1300854"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-ed30447b-7c29-4334-b097-cc934c4ef8dc",
+        "name": "Transformers",
+        "items": [
+            "tt0418279",
+            "tt1055369",
+            "tt1399103",
+            "tt2109248",
+            "tt3371366"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-564c6f6e-da46-4281-84fe-076ab813d70b",
+        "name": "Jurassic Park",
+        "items": [
+            "tt0107290",
+            "tt0119567",
+            "tt0163025",
+            "tt0369610"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-90129917-dfe9-42a7-ae32-623e734f9716",
+        "name": "John Wick",
+        "items": [
+            "tt2911666",
+            "tt4425200"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-10c8a2ed-db88-462d-9090-fed1547a437f",
+        "name": "Spiderman",
+        "items": [
+            "tt0316654",
+            "tt0145487",
+            "tt0413300",
+            "tt0948470",
+            "tt1872181",
+            "tt2250912"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-c2604dbf-fe2a-4f62-a651-d682964c36cc",
+        "name": "Guardians of the Galaxy",
+        "items": [
+            "tt2015381",
+            "tt3896198"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-28a43782-c30b-4249-bee0-2b3edf2c5fd9",
+        "name": "Pirates of the Caribbean",
+        "items": [
+            "tt0325980",
+            "tt0383574",
+            "tt0449088",
+            "tt1298650",
+            "tt1790809"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-a1f8281f-f50f-44f2-b369-e33514cc0b1c",
+        "name": "Mass Effect",
+        "items": [
+            "tt1073668",
+            "tt1540125",
+            "tt1839558"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-a4345564-c00c-4d44-9e63-419052e33271",
+        "name": "Resident Evil",
+        "items": [
+            "tt0120804",
+            "tt0318627",
+            "tt0432021",
+            "tt1220634",
+            "tt1855325"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-a8df5f9c-cd43-46d3-86f1-2039531f40c5",
+        "name": "Shrek",
+        "items": [
+            "tt0126029",
+            "tt0298148",
+            "tt0413267"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-5e9ff893-a8ab-40c3-81d3-f0a850ef7eba",
+        "name": "The Lord of the Rings",
+        "items": [
+            "tt0903624",
+            "tt1170358",
+            "tt2310332",
+            "tt0120737",
+            "tt0167261",
+            "tt0167260"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-39a66916-a30b-4abc-b40c-8d8591a97ff8",
+        "name": "X-Men",
+        "items": [
+            "tt0120903",
+            "tt0290334",
+            "tt0376994",
+            "tt0458525",
+            "tt1270798",
+            "tt1877832",
+            "tt3385516"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-6a93d142-b19a-4111-bb0c-9c8fca906489",
+        "name": "Toy Story",
+        "items": [
+            "tt0114709",
+            "tt0120363",
+            "tt0435761"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0114388",
+        "name": "Sense and Sensibility",
+        "year": 1995,
+        "score": null,
+        "actors": [
+            "James Fleet",
+            "Tom Wilkinson",
+            "Harriet Walter",
+            "Kate Winslet"
+        ],
+        "length": "136 min",
+        "plot": "Rich Mr. Dashwood dies, leaving his second wife and her three daughters poor by the rules of inheritance. The two eldest daughters are the titular opposites.",
+        "director": "Ang Lee",
+        "watched": true,
+        "date_watched": "2017-11-26",
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0116191",
+        "name": "Emma",
+        "year": 1996,
+        "score": null,
+        "actors": [
+            "Gwyneth Paltrow",
+            "James Cosmo",
+            "Greta Scacchi",
+            "Alan Cumming"
+        ],
+        "length": "120 min",
+        "plot": "In rural 1800s England things go bad for a young matchmaker after she finds a man for another woman.",
+        "director": "Douglas McGrath",
+        "watched": true,
+        "date_watched": "2017-11-26",
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-493d05b0-833e-4f27-ba06-a16c1c4412dc",
+        "name": "28 Days",
+        "items": [
+            "tt0289043",
+            "tt0463854"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-12fb8dc3-836d-41df-a271-4c217f6b6c07",
+        "name": "Alice in Wonderland",
+        "items": [
+            "tt1014759",
+            "tt2567026"
+        ],
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0102943",
+        "name": "Slacker",
+        "year": 1991,
+        "score": null,
+        "actors": [
+            "Richard Linklater",
+            "Rudy Basquez",
+            "Jean Caffeine",
+            "Jan Hockey"
+        ],
+        "length": "97 min",
+        "plot": "A day in the life of Austin, Texas as the camera roams from place to place and provides a brief look at the overeducated, the social misfits, the outcasts and the oddballs.",
+        "director": "Richard Linklater",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0106677",
+        "name": "Dazed and Confused",
+        "year": 1993,
+        "score": null,
+        "actors": [
+            "Jason London",
+            "Joey Lauren Adams",
+            "Milla Jovovich",
+            "Shawn Andrews"
+        ],
+        "length": "102 min",
+        "plot": "The adventures of high school and junior high students on the last day of school in May 1976.",
+        "director": "Richard Linklater",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0112471",
+        "name": "Before Sunrise",
+        "year": 1995,
+        "score": null,
+        "actors": [
+            "Ethan Hawke",
+            "Julie Delpy",
+            "Andrea Eckert",
+            "Hanno P\u00f6schl"
+        ],
+        "length": "101 min",
+        "plot": "A young man and woman meet on a train in Europe, and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together.",
+        "director": "Richard Linklater",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-26"
     }
 ]
