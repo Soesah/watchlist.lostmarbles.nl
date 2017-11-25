@@ -1,4 +1,5 @@
 import WatchItemFactory from 'services/WatchItemFactory';
+import ItemFranchiseView from 'components/franchises/ItemFranchiseView';
 
 let WatchItemView = Vue.component('watch-item-view', {
   template:`<section class="view">
@@ -60,6 +61,8 @@ let WatchItemView = Vue.component('watch-item-view', {
                   </li>
                 </ul>
               </div>
+
+              <item-franchise-view :item="item"></item-franchise-view>
             </section>`,
   computed: {
     item () {
