@@ -2,9 +2,10 @@ import BaseModel from 'core/models/BaseModel';
 
 class Documentary extends BaseModel {
 
-  constructor ({name = null, year = null, score = null, director = null, watched = false, date_watched = null, date_added = null}) {
+  constructor ({imdbId = null, name = null, year = null, score = null, director = null, watched = false, date_watched = null, date_added = null}) {
     super();
     this.type = 2;
+    this.imdbId = imdbId;
     this.name = name;
     this.year = year;
     this.director = director;
