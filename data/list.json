@@ -37428,7 +37428,7 @@
     {
         "type": 4,
         "imdbId": "NON-IMDB-ID-FRANCHISE-4d7d2be7-f533-4afb-8be0-0f1964ea2c40",
-        "name": " Despicable Me",
+        "name": "Despicable Me",
         "items": [
             "tt1323594",
             "tt1690953",
@@ -37444,6 +37444,27 @@
             "tt1318514",
             "tt2103281",
             "tt3450958"
+        ],
+        "date_added": "2017-11-25"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt3655448",
+        "name": "The Young Pope",
+        "plot": "The beginning of the pontificate of Lenny Belardo, alias Pius XIII, the first American Pope in history.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2016,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Jude Law",
+            "Diane Keaton",
+            "Silvio Orlando",
+            "Javier C\u00e1mara"
         ],
         "date_added": "2017-11-25"
     }
