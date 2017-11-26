@@ -24,6 +24,10 @@ class Franchise {
     return this.items.length;
   }
 
+  get watched () {
+    return this.items.length > 0 && _.filter(this.items, {watched: false}).length === 0;
+  }
+
   clone () {
     return new this.constructor(JSON.parse(JSON.stringify(this)));
   }
