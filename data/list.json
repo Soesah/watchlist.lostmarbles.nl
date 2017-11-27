@@ -37405,15 +37405,15 @@
                         "imdbId": "tt4897554",
                         "nr": 1,
                         "title": "Episode #1.1",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-26"
                     },
                     {
                         "imdbId": "tt4897556",
                         "nr": 2,
                         "title": "Episode #1.2",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-27"
                     },
                     {
                         "imdbId": "tt4897560",
@@ -37917,7 +37917,8 @@
             "tt0105112",
             "tt0109444",
             "tt0164184",
-            "tt1205537"
+            "tt1205537",
+            "tt5057054"
         ],
         "date_added": "2017-11-26"
     },
@@ -37936,8 +37937,8 @@
         "length": "124 min",
         "plot": "CIA analyst Jack Ryan must stop the plans of a Neo Nazis faction that threatens to induce a catastrophic conflict between the United States and Russia's newly elected president by detonating a nuclear weapon at a football game in Baltimore.",
         "director": "Phil Alden Robinson",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-11-27",
         "date_added": "2017-11-26"
     },
     {
@@ -37972,5 +37973,197 @@
             "tt0242653"
         ],
         "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6322922",
+        "name": "An Inconvenient Sequel: Truth to Power",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Al Gore",
+            "George W. Bush",
+            "John Kerry",
+            "Marco Krapels"
+        ],
+        "length": "98 min",
+        "plot": "A decade after An Inconvenient Truth (2006) brought climate change into the heart of popular culture comes the follow-up that shows just how close we are to a real energy revolution.",
+        "director": "Bonni Cohen, Jon Shenk",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1007028",
+        "name": "Zack and Miri Make a Porno",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Elizabeth Banks",
+            "Seth Rogen",
+            "Craig Robinson",
+            "Gerry Bednob"
+        ],
+        "length": "101 min",
+        "plot": "Lifelong platonic friends Zack and Miri look to solve their respective cash-flow problems by making an adult film together. As the cameras roll, however, the duo begin to sense that they may have more feelings for each other than they previously thought.",
+        "director": "Kevin Smith",
+        "watched": true,
+        "date_watched": "2017-11-27",
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0113071",
+        "name": "First Knight",
+        "year": 1995,
+        "score": null,
+        "actors": [
+            "Sean Connery",
+            "Richard Gere",
+            "Julia Ormond",
+            "Ben Cross"
+        ],
+        "length": "134 min",
+        "plot": "Lancelot falls in love with Guinevere, who is due to be married to King Arthur. Meanwhile, a violent warlord tries to seize power from Arthur and his Knights of the Round Table.",
+        "director": "Jerry Zucker",
+        "watched": true,
+        "date_watched": "2017-11-27",
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0117998",
+        "name": "Twister",
+        "year": 1996,
+        "score": null,
+        "actors": [
+            "Helen Hunt",
+            "Bill Paxton",
+            "Cary Elwes",
+            "Jami Gertz"
+        ],
+        "length": "113 min",
+        "plot": "Bill and Jo Harding, advanced storm chasers on the brink of divorce, must join together to create an advanced weather alert system by putting themselves in the cross-hairs of extremely violent tornadoes.",
+        "director": "Jan de Bont",
+        "watched": true,
+        "date_watched": "2017-11-27",
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2063013",
+        "name": "The Assassins",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Yun-Fat Chow",
+            "Yifei Liu",
+            "Hiroshi Tamaki",
+            "Alec Su"
+        ],
+        "length": "107 min",
+        "plot": "Set in the Three Kingdoms period of Chinese history, the story focuses on Cao Cao in his old age, exploring the areas of military tactics, love, and the relationship between father and son.",
+        "director": "Linshan Zhao",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1235522",
+        "name": "Broken City",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Mark Wahlberg",
+            "Russell Crowe",
+            "Catherine Zeta-Jones",
+            "Jeffrey Wright"
+        ],
+        "length": "109 min",
+        "plot": "In a city rife with injustice, ex-cop Billy Taggart seeks redemption and revenge after being double-crossed and then framed by its most powerful figure: Mayor Nicholas Hostetler.",
+        "director": "Allen Hughes",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt5057054",
+        "name": "Tom Clancy's Jack Ryan",
+        "plot": "Tom Clancy's Jack Ryan follows an up-and-coming CIA analyst thrust into a dangerous field assignment for the first time. The series follows Ryan as he uncovers a pattern in terrorist communication that launches him into the center of a dangerous gambit with a new breed of terrorism that threatens destruction on a global scale.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt5970182",
+                        "nr": 1,
+                        "title": "Episode #1.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5973870",
+                        "nr": 3,
+                        "title": "Episode #1.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5973872",
+                        "nr": 4,
+                        "title": "Episode #1.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5980366",
+                        "nr": 5,
+                        "title": "Episode #1.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5980368",
+                        "nr": 6,
+                        "title": "Episode #1.6",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5982092",
+                        "nr": 7,
+                        "title": "Episode #1.7",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5982096",
+                        "nr": 8,
+                        "title": "Episode #1.8",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5982104",
+                        "nr": 9,
+                        "title": "Episode #1.9",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Ali Suliman",
+            "John Krasinski",
+            "Wendell Pierce",
+            "Karim Zein"
+        ],
+        "date_added": "2017-11-27"
     }
 ]
