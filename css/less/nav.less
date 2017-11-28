@@ -24,10 +24,19 @@ nav {
     color: @white;
     text-decoration: none;
 
-    &:hover {
+    &:not(.active):hover {
       opacity: 0.8;
+      color: @white;
+    }
+
+    &.active {
       color: white;
-    }    
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   ul {
