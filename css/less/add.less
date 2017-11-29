@@ -48,7 +48,6 @@
     height: 31px;
     margin-left: 8px;
     font-weight: bold;
-    display: none;
     position: relative;
     top: 1px;
 
@@ -103,6 +102,17 @@
   animation: spin 4s linear infinite;
   transform-origin: 10px;
   text-align: center;
+}
+
+.list-input-items {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: @size-smaller;
+    width: 320px;
+    display: flex;
+  }
 }
 
 .franchise-items {
