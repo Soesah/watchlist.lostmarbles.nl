@@ -5,7 +5,6 @@
   "author": {
     "name": "Carl Giesberts"
   },
-  "private": true,
   "devDependencies": {
     "eslint": "^1.8.0",
     "eslint-plugin-nodeca": "^1.0.3",
