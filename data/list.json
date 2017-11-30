@@ -1048,57 +1048,57 @@
                         "imdbId": "tt3666112",
                         "nr": 1,
                         "title": "Episode #1.1",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3954166",
                         "nr": 2,
                         "title": "Episode #1.2",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3954168",
                         "nr": 3,
                         "title": "Episode #1.3",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3954170",
                         "nr": 4,
                         "title": "Episode #1.4",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3954180",
                         "nr": 5,
                         "title": "Episode #1.5",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3954182",
                         "nr": 6,
                         "title": "Episode #1.6",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3954184",
                         "nr": 7,
                         "title": "Episode #1.7",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3954190",
                         "nr": 8,
                         "title": "Episode #1.8",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -1197,6 +1197,13 @@
                         "date_watched": null
                     },
                     {
+                        "imdbId": "tt5863370",
+                        "nr": 3,
+                        "title": "Episode #3.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt5863374",
                         "nr": 4,
                         "title": "Episode #3.4",
@@ -1214,6 +1221,13 @@
                         "imdbId": "tt5863378",
                         "nr": 6,
                         "title": "Episode #3.6",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5863386",
+                        "nr": 7,
+                        "title": "Episode #3.7",
                         "watched": false,
                         "date_watched": null
                     },
@@ -1283,78 +1297,78 @@
                         "imdbId": "tt2169080",
                         "nr": 1,
                         "title": "Pilot",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333824",
                         "nr": 2,
                         "title": "Lawnmower Dog",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333828",
                         "nr": 3,
                         "title": "Anatomy Park",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333830",
                         "nr": 4,
                         "title": "M. Night Shaym-Aliens!",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333832",
                         "nr": 5,
                         "title": "Meeseeks and Destroy",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333834",
                         "nr": 6,
                         "title": "Rick Potion #9",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333836",
                         "nr": 7,
                         "title": "Raising Gazorpazorp",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333838",
                         "nr": 8,
                         "title": "Rixty Minutes",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333840",
                         "nr": 9,
                         "title": "Something Ricked This Way Comes",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333846",
                         "nr": 10,
                         "title": "Close Rick-counters of the Rick Kind",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3333854",
                         "nr": 11,
                         "title": "Ricksy Business",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -1366,147 +1380,147 @@
                         "imdbId": "tt4462494",
                         "nr": 1,
                         "title": "A Rickle in Time",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832254",
                         "nr": 2,
                         "title": "Mortynight Run",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832260",
                         "nr": 3,
                         "title": "Auto Erotic Assimilation",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832262",
                         "nr": 4,
                         "title": "Total Rickall",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832266",
                         "nr": 5,
                         "title": "Get Schwifty",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832268",
                         "nr": 6,
                         "title": "The Ricks Must Be Crazy",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832272",
                         "nr": 7,
                         "title": "Big Trouble in Little Sanchez",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832274",
                         "nr": 8,
                         "title": "Interdimensional Cable 2: Tempting Fate",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832276",
                         "nr": 9,
                         "title": "Look Who's Purging Now",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt4832278",
                         "nr": 10,
                         "title": "The Wedding Squanchers",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
             {
-                "year": null,
+                "year": 2017,
                 "nr": 3,
                 "episodes": [
                     {
                         "imdbId": "tt5218228",
                         "nr": 1,
-                        "title": "Episode #3.1",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The Rickshank Rickdemption",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218256",
                         "nr": 2,
-                        "title": "Episode #3.2",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Rickmancing the Stone",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218268",
                         "nr": 3,
-                        "title": "Episode #3.3",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Pickle Rick",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218288",
                         "nr": 4,
-                        "title": "Episode #3.4",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Vindicators 3: The Return of Worldender",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218310",
                         "nr": 5,
-                        "title": "Episode #3.5",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The Whirly Dirly Conspiracy",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218318",
                         "nr": 6,
-                        "title": "Episode #3.6",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Rest and Ricklaxation",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218332",
                         "nr": 7,
-                        "title": "Episode #3.7",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The Ricklantis Mixup",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218350",
                         "nr": 8,
-                        "title": "Episode #3.8",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Morty's Mind Blowers",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218370",
                         "nr": 9,
-                        "title": "Episode #3.9",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The ABC's of Beth",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5218386",
                         "nr": 10,
-                        "title": "Episode #3.10",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The Rickchurian Mortydate",
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             }
@@ -1534,155 +1548,155 @@
                         "imdbId": "tt0745667",
                         "nr": 1,
                         "title": "Pilot",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745669",
                         "nr": 2,
                         "title": "Post Hoc, Ergo Propter Hoc",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745591",
                         "nr": 3,
                         "title": "A Proportional Response",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745620",
                         "nr": 4,
                         "title": "Five Votes Down",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745690",
                         "nr": 5,
                         "title": "The Crackpots and These Women",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745659",
                         "nr": 6,
                         "title": "Mr. Willis of Ohio",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745706",
                         "nr": 7,
                         "title": "The State Dinner",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745615",
                         "nr": 8,
                         "title": "Enemies",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-9",
                         "nr": 9,
                         "title": "The Short List",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745635",
                         "nr": 10,
                         "title": "In Excelsis Deo",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-11",
                         "nr": 11,
                         "title": "Lord John Marbury",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745631",
                         "nr": 12,
                         "title": "He Shall, from Time to Time...",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-13",
                         "nr": 13,
                         "title": "Take Out The Trash Day",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745683",
                         "nr": 14,
                         "title": "Take This Sabbath Day",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745602",
                         "nr": 15,
                         "title": "Celestial Navigation",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-16",
                         "nr": 16,
                         "title": "20 Hours in L.A.",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-17",
                         "nr": 17,
                         "title": "The White House Pro-Am",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745677",
                         "nr": 18,
                         "title": "Six Meetings Before Lunch",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-19",
                         "nr": 19,
                         "title": "Let Bartlet Be Bartlet",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-20",
                         "nr": 20,
                         "title": "Mandatory Minimums",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-21",
                         "nr": 21,
                         "title": "Lies, Damn, Lies and Statistics",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-1999-1-22",
                         "nr": 22,
                         "title": "What Kind of Day Has It Been",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -1694,155 +1708,155 @@
                         "imdbId": "tt0745639",
                         "nr": 1,
                         "title": "In the Shadow of Two Gunmen: Part 1",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-2",
                         "nr": 2,
                         "title": "In the Shadow of Two Gunmen: Part 2",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745700",
                         "nr": 3,
                         "title": "The Midterms",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-4",
                         "nr": 4,
                         "title": "In This White House",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-5",
                         "nr": 5,
                         "title": "And It's Surely to Their Credit",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-6",
                         "nr": 6,
                         "title": "The Lame Duck Congress",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-7",
                         "nr": 7,
                         "title": "The Portland Trip",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-8",
                         "nr": 8,
                         "title": "Shibboleth",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745623",
                         "nr": 9,
                         "title": "Galileo",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745664",
                         "nr": 10,
                         "title": "No\u00ebl",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745698",
                         "nr": 11,
                         "title": "The Leadership Breakfast",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745693",
                         "nr": 12,
                         "title": "The Drop In",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745600",
                         "nr": 13,
                         "title": "Bartlet's Third State of the Union",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-14",
                         "nr": 14,
                         "title": "The War at Home",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-15",
                         "nr": 15,
                         "title": "Ellie",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745679",
                         "nr": 16,
                         "title": "Somebody's Going to Emergency, Somebody's Going to Jail",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-17",
                         "nr": 17,
                         "title": "The Stackhouse Filibuster",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-18",
                         "nr": 18,
                         "title": "17 People",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745598",
                         "nr": 19,
                         "title": "Bad Moon Rising",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-20",
                         "nr": 20,
                         "title": "The Fall's Gonna Kill You",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "NON-IMDB-ID-2000-2-21",
                         "nr": 21,
                         "title": "18th and Potomac",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745721",
                         "nr": 22,
                         "title": "Two Cathedrals",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -1854,78 +1868,78 @@
                         "imdbId": "tt0745644",
                         "nr": 1,
                         "title": "The West Wing: Isaac and Ishmael",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745654",
                         "nr": 3,
                         "title": "Manchester: Part 2",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745725",
                         "nr": 4,
                         "title": "Ways and Means",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745724",
                         "nr": 6,
                         "title": "War Crimes",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745626",
                         "nr": 7,
                         "title": "Gone Quiet",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745696",
                         "nr": 8,
                         "title": "The Indians in the Lobby",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745599",
                         "nr": 10,
                         "title": "Bartlet for America",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745628",
                         "nr": 11,
                         "title": "H. Con-172",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745606",
                         "nr": 16,
                         "title": "Dead Irish Writers",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745711",
                         "nr": 17,
                         "title": "The U.S. Poet Laureate",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745668",
                         "nr": 22,
                         "title": "Posse Comitatus",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -1937,92 +1951,92 @@
                         "imdbId": "tt0745583",
                         "nr": 1,
                         "title": "20 Hours in America: Part I",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745603",
                         "nr": 3,
                         "title": "College Kids",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745703",
                         "nr": 4,
                         "title": "The Red Mass",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745624",
                         "nr": 6,
                         "title": "Game On",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745613",
                         "nr": 7,
                         "title": "Election Night",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745681",
                         "nr": 9,
                         "title": "Swiss Diplomacy",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745597",
                         "nr": 10,
                         "title": "Arctic Radar",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745633",
                         "nr": 11,
                         "title": "Holy Night",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745627",
                         "nr": 12,
                         "title": "Guns Not Butter",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745699",
                         "nr": 13,
                         "title": "The Long Goodbye",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745618",
                         "nr": 20,
                         "title": "Evidence of Things Not Seen",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745650",
                         "nr": 21,
                         "title": "Life on Mars",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745720",
                         "nr": 23,
                         "title": "Twenty Five",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -2034,99 +2048,99 @@
                         "imdbId": "tt0745588",
                         "nr": 1,
                         "title": "7A WF 83429",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745645",
                         "nr": 3,
                         "title": "Jefferson Lives",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745629",
                         "nr": 4,
                         "title": "Han",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745608",
                         "nr": 6,
                         "title": "Disaster Relief",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745674",
                         "nr": 7,
                         "title": "Separation of Powers",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745676",
                         "nr": 8,
                         "title": "Shutdown",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745678",
                         "nr": 12,
                         "title": "Slow News Day",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745714",
                         "nr": 13,
                         "title": "The Warfare of Genghis Khan",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745594",
                         "nr": 14,
                         "title": "An Khe",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745622",
                         "nr": 15,
                         "title": "Full Disclosure",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745617",
                         "nr": 16,
                         "title": "Eppur Si Muove",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745593",
                         "nr": 18,
                         "title": "Access",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745684",
                         "nr": 19,
                         "title": "Talking Points",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745625",
                         "nr": 21,
                         "title": "Gaza",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -2138,43 +2152,43 @@
                         "imdbId": "tt0745660",
                         "nr": 1,
                         "title": "N.S.F. Thurmont",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745651",
                         "nr": 4,
                         "title": "Liftoff",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745646",
                         "nr": 13,
                         "title": "King Corn",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745712",
                         "nr": 14,
                         "title": "The Wake Up Call",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745590",
                         "nr": 17,
                         "title": "A Good Day",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745662",
                         "nr": 19,
                         "title": "Ninety Miles Away",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -2186,155 +2200,155 @@
                         "imdbId": "tt0745709",
                         "nr": 1,
                         "title": "The Ticket",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745701",
                         "nr": 2,
                         "title": "The Mommy Problem",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745657",
                         "nr": 3,
                         "title": "Message of the Week",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745658",
                         "nr": 4,
                         "title": "Mr. Frost",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745632",
                         "nr": 5,
                         "title": "Here Today",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745685",
                         "nr": 6,
                         "title": "The Al Smith Dinner",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745691",
                         "nr": 7,
                         "title": "The Debate",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745723",
                         "nr": 8,
                         "title": "Undecideds",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745715",
                         "nr": 9,
                         "title": "The Wedding",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745673",
                         "nr": 10,
                         "title": "Running Mates",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745643",
                         "nr": 11,
                         "title": "Internal Displacement",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745611",
                         "nr": 12,
                         "title": "Duck and Cover",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745689",
                         "nr": 13,
                         "title": "The Cold",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745722",
                         "nr": 14,
                         "title": "Two Weeks Out",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745727",
                         "nr": 15,
                         "title": "Welcome to Wherever You Are",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0745612",
                         "nr": 16,
                         "title": "Election Day: Part 1",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0779710",
                         "nr": 17,
                         "title": "Election Day: Part 2",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0761559",
                         "nr": 18,
                         "title": "Requiem",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0779711",
                         "nr": 19,
                         "title": "Transition",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0779709",
                         "nr": 20,
                         "title": "The Last Hurrah",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0771575",
                         "nr": 21,
                         "title": "Institutional Memory",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt0771576",
                         "nr": 22,
                         "title": "Tomorrow",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             }
@@ -5411,43 +5425,43 @@
                         "imdbId": "tt1589921",
                         "nr": 1,
                         "title": "Days Gone Bye",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1628064",
                         "nr": 2,
                         "title": "Guts",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1628065",
                         "nr": 3,
                         "title": "Tell It to the Frogs",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1628066",
                         "nr": 4,
                         "title": "Vatos",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1628067",
                         "nr": 5,
                         "title": "Wildfire",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1628068",
                         "nr": 6,
                         "title": "TS-19",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -5459,92 +5473,92 @@
                         "imdbId": "tt1790548",
                         "nr": 1,
                         "title": "What Lies Ahead",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804266",
                         "nr": 2,
                         "title": "Bloodletting",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804267",
                         "nr": 3,
                         "title": "Save the Last One",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804268",
                         "nr": 4,
                         "title": "Cherokee Rose",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804269",
                         "nr": 5,
                         "title": "Chupacabra",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804270",
                         "nr": 6,
                         "title": "Secrets",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804271",
                         "nr": 7,
                         "title": "Pretty Much Dead Already",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804272",
                         "nr": 8,
                         "title": "Nebraska",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804273",
                         "nr": 9,
                         "title": "Triggerfinger",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804262",
                         "nr": 10,
                         "title": "18 Miles Out",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804263",
                         "nr": 11,
                         "title": "Judge, Jury, Executioner",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804264",
                         "nr": 12,
                         "title": "Better Angels",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt1804265",
                         "nr": 13,
                         "title": "Beside the Dying Fire",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -5556,113 +5570,113 @@
                         "imdbId": "tt2107527",
                         "nr": 1,
                         "title": "Seed",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2253598",
                         "nr": 2,
                         "title": "Sick",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2253600",
                         "nr": 3,
                         "title": "Walk with Me",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2253602",
                         "nr": 4,
                         "title": "Killer Within",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2253610",
                         "nr": 5,
                         "title": "Say the Word",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2253604",
                         "nr": 6,
                         "title": "Hounded",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2253606",
                         "nr": 7,
                         "title": "When the Dead Come Knocking",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2253608",
                         "nr": 8,
                         "title": "Made to Suffer",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2269550",
                         "nr": 9,
                         "title": "The Suicide King",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2401094",
                         "nr": 10,
                         "title": "Home",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2521154",
                         "nr": 11,
                         "title": "I Ain't a Judas",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2521158",
                         "nr": 12,
                         "title": "Clear",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2521162",
                         "nr": 13,
                         "title": "Arrow on the Doorpost",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2521168",
                         "nr": 14,
                         "title": "Prey",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2521172",
                         "nr": 15,
                         "title": "This Sorrowful Life",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2521182",
                         "nr": 16,
                         "title": "Welcome to the Tombs",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -6145,7 +6159,63 @@
                     {
                         "imdbId": "tt6156390",
                         "nr": 1,
-                        "title": "Episode #8.1",
+                        "title": "Mercy",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6198638",
+                        "nr": 2,
+                        "title": "The Damned",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6198656",
+                        "nr": 3,
+                        "title": "Monsters",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6198662",
+                        "nr": 4,
+                        "title": "Episode #8.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6198668",
+                        "nr": 5,
+                        "title": "The Big Scary U",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6207930",
+                        "nr": 6,
+                        "title": "Episode #8.6",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6325296",
+                        "nr": 7,
+                        "title": "Episode #8.7",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6327118",
+                        "nr": 8,
+                        "title": "Episode #8.8",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6337078",
+                        "nr": 9,
+                        "title": "Episode #8.9",
                         "watched": false,
                         "date_watched": null
                     }
@@ -6270,162 +6340,162 @@
                         "imdbId": "tt2340185",
                         "nr": 1,
                         "title": "Pilot",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2310910",
                         "nr": 2,
                         "title": "Honor Thy Father",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2310914",
                         "nr": 3,
                         "title": "Lone Gunmen",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2319602",
                         "nr": 4,
                         "title": "An Innocent Man",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2338426",
                         "nr": 5,
                         "title": "Damaged",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2377368",
                         "nr": 6,
                         "title": "Legacies",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2395358",
                         "nr": 7,
                         "title": "Muse of Fire",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2423266",
                         "nr": 8,
                         "title": "Vendetta",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2448164",
                         "nr": 9,
                         "title": "Year's End",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2467064",
                         "nr": 10,
                         "title": "Burned",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2496078",
                         "nr": 11,
                         "title": "Trust But Verify",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2519404",
                         "nr": 12,
                         "title": "Vertigo",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2527342",
                         "nr": 13,
                         "title": "Betrayal",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2561472",
                         "nr": 14,
                         "title": "The Odyssey",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2605292",
                         "nr": 15,
                         "title": "Dodger",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2633630",
                         "nr": 16,
                         "title": "Dead to Rights",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2654070",
                         "nr": 17,
                         "title": "The Huntress Returns",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2698256",
                         "nr": 18,
                         "title": "Salvation",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2712930",
                         "nr": 19,
                         "title": "Unfinished Business",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2761432",
                         "nr": 20,
                         "title": "Home Invasion",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2761428",
                         "nr": 21,
                         "title": "The Undertaking",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2761434",
                         "nr": 22,
                         "title": "Darkness on the Edge of Town",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt2761440",
                         "nr": 23,
                         "title": "Sacrifice",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -6437,162 +6507,162 @@
                         "imdbId": "tt2702698",
                         "nr": 1,
                         "title": "City of Heroes",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3077106",
                         "nr": 2,
                         "title": "Identity",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3126166",
                         "nr": 3,
                         "title": "Broken Dolls",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3126168",
                         "nr": 4,
                         "title": "Crucible",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3128398",
                         "nr": 5,
                         "title": "League of Assassins",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3213782",
                         "nr": 6,
                         "title": "Keep Your Enemies Closer",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3213864",
                         "nr": 7,
                         "title": "State v. Queen",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3229412",
                         "nr": 8,
                         "title": "The Scientist",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3229414",
                         "nr": 9,
                         "title": "Three Ghosts",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3229416",
                         "nr": 10,
                         "title": "Blast Radius",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3263826",
                         "nr": 11,
                         "title": "Blind Spot",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3263824",
                         "nr": 12,
                         "title": "Tremors",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3263832",
                         "nr": 13,
                         "title": "Heir to the Demon",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337656",
                         "nr": 14,
                         "title": "Time of Death",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337658",
                         "nr": 15,
                         "title": "The Promise",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337660",
                         "nr": 16,
                         "title": "Suicide Squad",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337662",
                         "nr": 17,
                         "title": "Birds of Prey",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3535114",
                         "nr": 18,
                         "title": "Deathstroke",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337666",
                         "nr": 19,
                         "title": "The Man Under the Hood",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337668",
                         "nr": 20,
                         "title": "Seeing Red",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337670",
                         "nr": 21,
                         "title": "City of Blood",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337672",
                         "nr": 22,
                         "title": "Streets of Fire",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt3337674",
                         "nr": 23,
                         "title": "Unthinkable",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             },
@@ -7098,13 +7168,69 @@
                 ]
             },
             {
-                "year": null,
+                "year": 2017,
                 "nr": 6,
                 "episodes": [
                     {
                         "imdbId": "tt6403458",
                         "nr": 1,
-                        "title": "Episode #6.1",
+                        "title": "Fallout",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493654",
+                        "nr": 2,
+                        "title": "Tribute",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493656",
+                        "nr": 3,
+                        "title": "Next of Kin",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493658",
+                        "nr": 4,
+                        "title": "Reversal",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493662",
+                        "nr": 5,
+                        "title": "Deathstroke Returns",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493664",
+                        "nr": 6,
+                        "title": "Promises Kept",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493666",
+                        "nr": 7,
+                        "title": "Thanksgiving",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493668",
+                        "nr": 8,
+                        "title": "Crisis on Earth X, Part 2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6493670",
+                        "nr": 9,
+                        "title": "Irreconcilable Differences",
                         "watched": false,
                         "date_watched": null
                     }
@@ -21058,32 +21184,6 @@
                         "nr": 24,
                         "title": "The Long Distance Dissonance",
                         "watched": true,
-                        "date_watched": null
-                    }
-                ]
-            },
-            {
-                "year": null,
-                "nr": 11,
-                "episodes": [
-                    {
-                        "imdbId": "tt6673774",
-                        "nr": 1,
-                        "title": "Episode #11.1",
-                        "watched": false,
-                        "date_watched": null
-                    }
-                ]
-            },
-            {
-                "year": null,
-                "nr": 12,
-                "episodes": [
-                    {
-                        "imdbId": "tt6673778",
-                        "nr": 1,
-                        "title": "Episode #12.1",
-                        "watched": false,
                         "date_watched": null
                     }
                 ]
@@ -36335,71 +36435,71 @@
                         "imdbId": "tt5931646",
                         "nr": 1,
                         "title": "Offred",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5931648",
                         "nr": 2,
                         "title": "Birth Day",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5931652",
                         "nr": 3,
                         "title": "Late",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5937294",
                         "nr": 4,
                         "title": "Nolite Te Bastardes Carborundorum",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5941434",
                         "nr": 5,
                         "title": "Faithful",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5943926",
                         "nr": 6,
                         "title": "A Woman's Place",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5943928",
                         "nr": 7,
                         "title": "The Other Side",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5943930",
                         "nr": 8,
                         "title": "Jezebels",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5943932",
                         "nr": 9,
                         "title": "The Bridge",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     },
                     {
                         "imdbId": "tt5931656",
                         "nr": 10,
                         "title": "Night",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-28"
                     }
                 ]
             }
@@ -36969,8 +37069,8 @@
         ],
         "publisher": null,
         "genre": "RPG",
-        "played": false,
-        "date_played": null,
+        "played": true,
+        "date_played": "2017-11-29",
         "date_added": "2017-11-12"
     },
     {
@@ -37405,15 +37505,15 @@
                         "imdbId": "tt4897554",
                         "nr": 1,
                         "title": "Episode #1.1",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-26"
                     },
                     {
                         "imdbId": "tt4897556",
                         "nr": 2,
                         "title": "Episode #1.2",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2017-11-27"
                     },
                     {
                         "imdbId": "tt4897560",
@@ -37917,7 +38017,8 @@
             "tt0105112",
             "tt0109444",
             "tt0164184",
-            "tt1205537"
+            "tt1205537",
+            "tt5057054"
         ],
         "date_added": "2017-11-26"
     },
@@ -37936,8 +38037,8 @@
         "length": "124 min",
         "plot": "CIA analyst Jack Ryan must stop the plans of a Neo Nazis faction that threatens to induce a catastrophic conflict between the United States and Russia's newly elected president by detonating a nuclear weapon at a football game in Baltimore.",
         "director": "Phil Alden Robinson",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-11-27",
         "date_added": "2017-11-26"
     },
     {
@@ -37972,5 +38073,321 @@
             "tt0242653"
         ],
         "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6322922",
+        "name": "An Inconvenient Sequel: Truth to Power",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Al Gore",
+            "George W. Bush",
+            "John Kerry",
+            "Marco Krapels"
+        ],
+        "length": "98 min",
+        "plot": "A decade after An Inconvenient Truth (2006) brought climate change into the heart of popular culture comes the follow-up that shows just how close we are to a real energy revolution.",
+        "director": "Bonni Cohen, Jon Shenk",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-26"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1007028",
+        "name": "Zack and Miri Make a Porno",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Elizabeth Banks",
+            "Seth Rogen",
+            "Craig Robinson",
+            "Gerry Bednob"
+        ],
+        "length": "101 min",
+        "plot": "Lifelong platonic friends Zack and Miri look to solve their respective cash-flow problems by making an adult film together. As the cameras roll, however, the duo begin to sense that they may have more feelings for each other than they previously thought.",
+        "director": "Kevin Smith",
+        "watched": true,
+        "date_watched": "2017-11-27",
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0113071",
+        "name": "First Knight",
+        "year": 1995,
+        "score": null,
+        "actors": [
+            "Sean Connery",
+            "Richard Gere",
+            "Julia Ormond",
+            "Ben Cross"
+        ],
+        "length": "134 min",
+        "plot": "Lancelot falls in love with Guinevere, who is due to be married to King Arthur. Meanwhile, a violent warlord tries to seize power from Arthur and his Knights of the Round Table.",
+        "director": "Jerry Zucker",
+        "watched": true,
+        "date_watched": "2017-11-27",
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0117998",
+        "name": "Twister",
+        "year": 1996,
+        "score": null,
+        "actors": [
+            "Helen Hunt",
+            "Bill Paxton",
+            "Cary Elwes",
+            "Jami Gertz"
+        ],
+        "length": "113 min",
+        "plot": "Bill and Jo Harding, advanced storm chasers on the brink of divorce, must join together to create an advanced weather alert system by putting themselves in the cross-hairs of extremely violent tornadoes.",
+        "director": "Jan de Bont",
+        "watched": true,
+        "date_watched": "2017-11-27",
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2063013",
+        "name": "The Assassins",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Yun-Fat Chow",
+            "Yifei Liu",
+            "Hiroshi Tamaki",
+            "Alec Su"
+        ],
+        "length": "107 min",
+        "plot": "Set in the Three Kingdoms period of Chinese history, the story focuses on Cao Cao in his old age, exploring the areas of military tactics, love, and the relationship between father and son.",
+        "director": "Linshan Zhao",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1235522",
+        "name": "Broken City",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Mark Wahlberg",
+            "Russell Crowe",
+            "Catherine Zeta-Jones",
+            "Jeffrey Wright"
+        ],
+        "length": "109 min",
+        "plot": "In a city rife with injustice, ex-cop Billy Taggart seeks redemption and revenge after being double-crossed and then framed by its most powerful figure: Mayor Nicholas Hostetler.",
+        "director": "Allen Hughes",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt5057054",
+        "name": "Tom Clancy's Jack Ryan",
+        "plot": "Tom Clancy's Jack Ryan follows an up-and-coming CIA analyst thrust into a dangerous field assignment for the first time. The series follows Ryan as he uncovers a pattern in terrorist communication that launches him into the center of a dangerous gambit with a new breed of terrorism that threatens destruction on a global scale.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt5970182",
+                        "nr": 1,
+                        "title": "Episode #1.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5973870",
+                        "nr": 3,
+                        "title": "Episode #1.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5973872",
+                        "nr": 4,
+                        "title": "Episode #1.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5980366",
+                        "nr": 5,
+                        "title": "Episode #1.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5980368",
+                        "nr": 6,
+                        "title": "Episode #1.6",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5982092",
+                        "nr": 7,
+                        "title": "Episode #1.7",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5982096",
+                        "nr": 8,
+                        "title": "Episode #1.8",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5982104",
+                        "nr": 9,
+                        "title": "Episode #1.9",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Ali Suliman",
+            "John Krasinski",
+            "Wendell Pierce",
+            "Karim Zein"
+        ],
+        "date_added": "2017-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4925292",
+        "name": "Lady Bird",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Saoirse Ronan",
+            "Odeya Rush",
+            "Kathryn Newton",
+            "Timoth\u00e9e Chalamet"
+        ],
+        "length": "93 min",
+        "plot": "The adventures of a young woman living in Northern California for a year.",
+        "director": "Greta Gerwig",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-28"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0097351",
+        "name": "Field of Dreams",
+        "year": 1989,
+        "score": null,
+        "actors": [
+            "Kevin Costner",
+            "Amy Madigan",
+            "Gaby Hoffmann",
+            "Ray Liotta"
+        ],
+        "length": "107 min",
+        "plot": "An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.",
+        "director": "Phil Alden Robinson",
+        "watched": true,
+        "date_watched": "2017-11-28",
+        "date_added": "2017-11-28"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-a54ce391-91a3-4946-bca8-48c2bd5c79de",
+        "name": "Cloverfield",
+        "items": [
+            "tt1179933",
+            "tt1060277"
+        ],
+        "date_added": "2017-11-28"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5109784",
+        "name": "Mother!",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Jennifer Lawrence",
+            "Javier Bardem",
+            "Ed Harris",
+            "Michelle Pfeiffer"
+        ],
+        "length": "121 min",
+        "plot": "A couple's relationship is tested when uninvited guests arrive at their home, disrupting their tranquil existence.",
+        "director": "Darren Aronofsky",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-28"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5715874",
+        "name": "The Killing of a Sacred Deer",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Nicole Kidman",
+            "Alicia Silverstone",
+            "Colin Farrell",
+            "Raffey Cassidy"
+        ],
+        "length": "121 min",
+        "plot": "Steven, a charismatic surgeon, is forced to make an unthinkable sacrifice after his life starts to fall apart, when the behavior of a teenage boy he has taken under his wing turns sinister.",
+        "director": "Yorgos Lanthimos",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-29"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0119395",
+        "name": "The Jackal",
+        "year": 1997,
+        "score": null,
+        "actors": [
+            "Bruce Willis",
+            "Richard Gere",
+            "Sidney Poitier",
+            "Diane Venora"
+        ],
+        "length": "124 min",
+        "plot": "An imprisoned IRA fighter is freed to help stop a brutal, seemingly \"faceless\" assassin from completing his next job.",
+        "director": "Michael Caton-Jones",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-30"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0340163",
+        "name": "Hostage",
+        "year": 2005,
+        "score": null,
+        "actors": [
+            "Bruce Willis",
+            "Kevin Pollak",
+            "Jimmy Bennett",
+            "Michelle Horn"
+        ],
+        "length": "113 min",
+        "plot": "A failed police negotiator turned small-town cop, must save the lives of a family held hostage, which draws him into a much more dangerous situation.",
+        "director": "Florent-Emilio Siri",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-30"
     }
 ]

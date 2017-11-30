@@ -1,5 +1,6 @@
 import Focus from 'directives/Focus';
 import Choice from 'components/common/choice/Choice';
+import ListInput from 'components/common/list-input/ListInput';
 import WatchItemFactory from 'services/WatchItemFactory';
 import watchlistService from 'services/WatchlistService';
 import omdbApiService from 'services/OMDbApiService';
@@ -77,10 +78,7 @@ let ItemFields = Vue.component('item-fields', {
               <div class="form-item form-item-checkbox"  v-if="isSeries(item)">
                 <input type="checkbox" id="item.finished" v-model="item.finished" @input="update"/><label for="item.finished">Finished</label>
               </div>
-              <div class="form-item" v-if="!isDocumentary(item)">
-                <label>Actors</label>
-                <input type="text" placeholder="Actor, actor" v-model="item.actors" @input="update"/>
-              </div>
+              <list-input :label="'Actors'" :placeholder="'Actor'" v-model="item.actors" @input="update"/></list-input>
             </section>`,
   props: {
     value: {
@@ -210,6 +208,7 @@ let ItemFields = Vue.component('item-fields', {
     }    
   },
   components: {
-    Choice
+    Choice,
+    ListInput
   }
 });

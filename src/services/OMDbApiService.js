@@ -5,8 +5,7 @@ import OMDbResults from 'models/OMDbResultsModel';
 class OMDbApiService extends BaseService {
   constructor() {
     super();
-    this.url = 'http://www.omdbapi.com/';
-    this.apiKey = '3e5351f0'; // this isn't very nice, might be nicer to do these request on the server to protect the api key.
+    this.url = 'omdb.php';
   }
 
   request(url, Model) {
@@ -24,19 +23,19 @@ class OMDbApiService extends BaseService {
     });
   }
   search(name, year) {
-    return this.request(this.url + '?s=' + name + (year ? '&y=' + year : '') + '&apikey=' + this.apiKey, OMDbResults);
+    return this.request(this.url + '?s=' + name + (year ? '&y=' + year : ''), OMDbResults);
   }
 
   lucky(name) {
-    return this.request(this.url + '?t=' + name + '&y=&plot=short&r=json&apikey=' + this.apiKey, OMDbObject);
+    return this.request(this.url + '?t=' + name + '&y=&plot=short&r=json', OMDbObject);
   }
 
   get(id) {
-    return this.request(this.url + '?i=' + id + '&r=json&apikey=' + this.apiKey, OMDbObject);
+    return this.request(this.url + '?i=' + id + '&r=json', OMDbObject);
   }
 
   getSeason(id, nr) {
-    return this.request(this.url + '?i=' + id + '&Season=' + nr + '&r=json&apikey=' + this.apiKey, OMDbObject);
+    return this.request(this.url + '?i=' + id + '&Season=' + nr + '&r=json', OMDbObject);
   }
 
   updateMovie(item, props) {
