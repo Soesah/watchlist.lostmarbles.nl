@@ -1,5 +1,6 @@
 import WatchItemFactory from 'services/WatchItemFactory';
 import ItemFields from 'components/common/item-fields/ItemFields';
+import ConfirmDeleteModal from 'components/edit/ConfirmDeleteModal';
 
 let WatchEditView = Vue.component('watch-edit-view', {
   template:`<form class="form" @submit="edit">
@@ -49,12 +50,20 @@ let WatchEditView = Vue.component('watch-edit-view', {
       evt.preventDefault();
     },
     remove (evt) {
+      this.$store.state.event.$emit('showModal', {
+        modal: 'confirm-delete-modal',
+        name: this.item.name,
+        confirm: this.onConfirmDelete
+      });
+
+      evt.preventDefault();
+    },
+    onConfirmDelete () {
       this.$store.dispatch('removeItem', this.item)
         .then(items => {
           this.$destroy();
           this.$router.push('/');
         });
-      evt.preventDefault();
     },
     back (evt) {
       this.$router.go(-1);
@@ -65,6 +74,7 @@ let WatchEditView = Vue.component('watch-edit-view', {
     } 
   },
   components: {
-    ItemFields
+    ItemFields,
+    ConfirmDeleteModal
   }
 });

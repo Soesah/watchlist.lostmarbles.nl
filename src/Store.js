@@ -1,4 +1,6 @@
 import _ from 'Lodash';
+import Vue from 'Vue';
+import Vuex from 'Vuex';
 import watchlistService from 'services/WatchlistService';
 import WatchItemFactory from 'services/WatchItemFactory';
 
@@ -12,7 +14,9 @@ const store = new Vuex.Store({
       itemState: null,
       itemType: true
     },
-    navigation: []
+    navigation: [],
+    // set up a Vue instance as an eventing proxy
+    event: new Vue()
   },
   mutations: {
     setItems (state, items) {

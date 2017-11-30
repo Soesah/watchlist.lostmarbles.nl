@@ -1,5 +1,6 @@
 import omdbApiService from 'services/OMDbApiService';
 import WatchItemFactory from 'services/WatchItemFactory';
+import ConfirmDeleteModal from 'components/edit/ConfirmDeleteModal';
 
 let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
   template:`<form name="itemForm" class="form" @submit="edit" :state-item="stateItem">
@@ -98,6 +99,15 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
       evt.preventDefault();
     },
     remove (evt) {
+      this.$store.state.event.$emit('showModal', {
+        modal: 'confirm-delete-modal',
+        name: this.item.name + ' Season ' + this.$route.params.nr,
+        confirm: this.onConfirmDelete
+      });
+
+      evt.preventDefault();
+    },
+    onConfirmDelete () {
       this.$store.dispatch('removeSeason', {
         item: this.$store.state.item,
         season: this.$store.state.item.getSeason(this.$route.params.nr)
@@ -137,5 +147,8 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
     getTypeName(item) {
       return WatchItemFactory.getTypeName(item).toLowerCase();
     } 
+  },
+  components: {
+    ConfirmDeleteModal
   }
 });
