@@ -38389,5 +38389,49 @@
         "watched": false,
         "date_watched": null,
         "date_added": "2017-11-30"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-a809316d-317e-4190-afec-ca3fb68bc9ac",
+        "name": "Avengers",
+        "items": [
+            "tt0371746",
+            "tt0800080",
+            "tt1228705",
+            "tt0800369",
+            "tt0458339",
+            "tt0848228",
+            "tt1300854",
+            "tt1981115",
+            "tt1843866",
+            "tt2015381",
+            "tt2395427",
+            "tt0478970",
+            "tt3498820",
+            "tt1211837",
+            "tt3896198",
+            "tt2250912",
+            "tt3501632"
+        ],
+        "date_added": "2017-11-30"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3501632",
+        "name": "Thor: Ragnarok",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Chris Hemsworth",
+            "Tom Hiddleston",
+            "Cate Blanchett",
+            "Idris Elba"
+        ],
+        "length": "130 min",
+        "plot": "Imprisoned, the almighty Thor finds himself in a lethal gladiatorial contest against the Hulk, his former ally. Thor must fight for survival and race against time to prevent the all-powerful Hela from destroying his home and the Asgardian civilization.",
+        "director": "Taika Waititi",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-11-30"
     }
 ]
