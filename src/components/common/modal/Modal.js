@@ -7,8 +7,12 @@ let Modal = Vue.component('modal', {
             </div>`,
   data() {
     return {
-      show: false,
       data: null
+    }
+  },
+  computed: {
+    show() {
+      return !!this.data;
     }
   },
   created () {
@@ -18,10 +22,8 @@ let Modal = Vue.component('modal', {
   methods: {
     open (data) {
       this.data = data;
-      this.show = true;
     },
     close () {
-      this.show = false;
       this.data = null;
     }
   }
