@@ -2,7 +2,7 @@
 let Modal = Vue.component('modal', {
   template:`<div class="modal-container" v-if="data">
               <section class="modal" :class="{show: show}">
-                <component :is="data.modal" @confirm="confirm" @cancel="cancel" :data="data"></component>
+                <component :is="data.modal" @close="close" :data="data"></component>
               </section>
             </div>`,
   data() {
@@ -12,7 +12,8 @@ let Modal = Vue.component('modal', {
     }
   },
   created () {
-    this.$store.state.event.$on('showModal', this.open);
+    this.$store.state.event.$on('openModal', this.open);
+    this.$store.state.event.$on('closeModal', this.close);
   },
   methods: {
     open (data) {
@@ -22,16 +23,6 @@ let Modal = Vue.component('modal', {
     close () {
       this.show = false;
       this.data = null;
-    },
-    confirm () {
-      this.data.confirm();
-      this.close();
-    },
-    cancel () {
-      if (this.data.cancel) {
-        this.data.cancel();
-      }
-      this.close();
     }
   }
 });

@@ -99,7 +99,7 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
       evt.preventDefault();
     },
     remove (evt) {
-      this.$store.state.event.$emit('showModal', {
+      this.$store.state.event.$emit('openModal', {
         modal: 'confirm-delete-modal',
         name: this.item.name + ' Season ' + this.$route.params.nr,
         confirm: this.onConfirmDelete
