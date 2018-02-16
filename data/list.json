@@ -4354,7 +4354,7 @@
     {
         "type": 2,
         "imdbId": "NON-IMDB-ID-DOCUMENTARY-82b0efe7-66b8-4aa4-bd7b-577d3b263b4a",
-        "name": "The forgotten space",
+        "name": "The Forgotten Space",
         "year": 2012,
         "director": null,
         "score": null,
@@ -7447,25 +7447,6 @@
         "length": "106 min",
         "plot": "After a collision with a shipping container at sea, a resourceful sailor finds himself, despite all efforts to the contrary, staring his mortality in the face.",
         "director": "J.C. Chandor",
-        "watched": true,
-        "date_watched": null,
-        "date_added": null
-    },
-    {
-        "type": 0,
-        "imdbId": "tt0050083",
-        "name": "12 Angry Men",
-        "year": 1957,
-        "score": null,
-        "actors": [
-            "Martin Balsam",
-            "John Fiedler",
-            "Lee J. Cobb",
-            "E.G. Marshall"
-        ],
-        "length": "96 min",
-        "plot": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
-        "director": "Sidney Lumet",
         "watched": true,
         "date_watched": null,
         "date_added": null
@@ -14990,92 +14971,92 @@
                         "imdbId": "tt4179626",
                         "nr": 1,
                         "title": "Moment of Truth",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179628",
                         "nr": 2,
                         "title": "Code of the Streets",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179634",
                         "nr": 3,
                         "title": "Who's Gonna Take the Weight?",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179636",
                         "nr": 4,
                         "title": "Step in the Arena",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179642",
                         "nr": 5,
                         "title": "Just to Get a Rep",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179686",
                         "nr": 6,
-                        "title": "Episode #1.6",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Suckas Need Bodyguards",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179742",
                         "nr": 7,
                         "title": "Manifest",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179760",
                         "nr": 8,
                         "title": "Blowin' Up the Spot",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179772",
                         "nr": 9,
                         "title": "DWYCK",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179776",
                         "nr": 10,
                         "title": "Take It Personal",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179784",
                         "nr": 11,
                         "title": "Episode #1.11",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179798",
                         "nr": 12,
                         "title": "Soliloquy of Chaos",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4179804",
                         "nr": 13,
                         "title": "You Know My Steez",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     }
                 ]
             },
@@ -27170,8 +27151,8 @@
         "length": "131 min",
         "plot": "Retired Old West gunslinger William Munny reluctantly takes on one last job, with the help of his old partner and a young man.",
         "director": "Clint Eastwood",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-12-10",
         "date_added": null
     },
     {
@@ -27360,8 +27341,8 @@
         "length": "105 min",
         "plot": "Ted Kramer's wife leaves her husband, allowing for a lost bond to be rediscovered between Ted and his son, Billy. But a heated custody battle ensues over the divorced couple's son, deepening the wounds left by the separation.",
         "director": "Robert Benton",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-13",
         "date_added": null
     },
     {
@@ -27987,8 +27968,8 @@
         "length": "103 min",
         "plot": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
         "director": "Hayao Miyazaki",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-12-23",
         "date_added": null
     },
     {
@@ -31212,6 +31193,27 @@
                         "date_watched": null
                     },
                     {
+                        "imdbId": "tt0504189",
+                        "nr": 3,
+                        "title": "Pros and Cons",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504146",
+                        "nr": 4,
+                        "title": "A Small and Deadly War",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504151",
+                        "nr": 5,
+                        "title": "Black Day at Bad Rock",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt0504217",
                         "nr": 6,
                         "title": "The Rabbit Who Ate Las Vegas",
@@ -31219,9 +31221,44 @@
                         "date_watched": null
                     },
                     {
+                        "imdbId": "tt0504216",
+                        "nr": 7,
+                        "title": "The Out-of-Towners",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504171",
+                        "nr": 8,
+                        "title": "Holiday in the Hills",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504237",
+                        "nr": 9,
+                        "title": "West Coast Turnaround",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt0504187",
                         "nr": 10,
                         "title": "One More Time",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504228",
+                        "nr": 11,
+                        "title": "Till Death Do Us Part",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504202",
+                        "nr": 12,
+                        "title": "The Beast from the Belly of a Boeing",
                         "watched": false,
                         "date_watched": null
                     },
@@ -31287,9 +31324,30 @@
                         "date_watched": null
                     },
                     {
+                        "imdbId": "tt0504161",
+                        "nr": 14,
+                        "title": "Cup A' Joe",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504198",
+                        "nr": 17,
+                        "title": "Skins",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt0504178",
                         "nr": 20,
                         "title": "Knights of the Road",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504235",
+                        "nr": 21,
+                        "title": "Waste 'Em!",
                         "watched": false,
                         "date_watched": null
                     }
@@ -31321,6 +31379,13 @@
                         "date_watched": null
                     },
                     {
+                        "imdbId": "tt0504180",
+                        "nr": 4,
+                        "title": "Lease with an Option to Die",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt0504218",
                         "nr": 5,
                         "title": "The Road to Hope",
@@ -31331,6 +31396,13 @@
                         "imdbId": "tt0504152",
                         "nr": 8,
                         "title": "Blood, Sweat, and Cheers",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504200",
+                        "nr": 14,
+                        "title": "The A-Team Is Coming, the A-Team Is Coming",
                         "watched": false,
                         "date_watched": null
                     },
@@ -31362,6 +31434,13 @@
                 "nr": 5,
                 "episodes": [
                     {
+                        "imdbId": "tt0504165",
+                        "nr": 1,
+                        "title": "Dishpan Man",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt0504230",
                         "nr": 2,
                         "title": "Trial by Fire",
@@ -31369,9 +31448,51 @@
                         "date_watched": null
                     },
                     {
+                        "imdbId": "tt0504169",
+                        "nr": 3,
+                        "title": "Firing Line",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504191",
+                        "nr": 4,
+                        "title": "Quarterback Sneak",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504223",
+                        "nr": 5,
+                        "title": "The Theory of Revolution",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504219",
+                        "nr": 6,
+                        "title": "The Say U.N.C.L.E. Affair",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt0504147",
                         "nr": 7,
                         "title": "Alive at Five",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504167",
+                        "nr": 8,
+                        "title": "Family Reunion",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504188",
+                        "nr": 9,
+                        "title": "Point of No Return",
                         "watched": false,
                         "date_watched": null
                     },
@@ -31393,6 +31514,13 @@
                         "imdbId": "tt0504210",
                         "nr": 12,
                         "title": "The Grey Team",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt0504242",
+                        "nr": 13,
+                        "title": "Without Reservations",
                         "watched": false,
                         "date_watched": null
                     }
@@ -33513,8 +33641,8 @@
         "length": "145 min",
         "plot": "A civilian diving team is enlisted to search for a lost nuclear submarine and face danger while encountering an alien aquatic species.",
         "director": "James Cameron",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-13",
         "date_added": null
     },
     {
@@ -33853,8 +33981,8 @@
         "length": "110 min",
         "plot": "A woman discovers that severe catastrophic events are somehow connected to the mental breakdown from which she's suffering.",
         "director": "Nacho Vigalondo",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-13",
         "date_added": null
     },
     {
@@ -34347,8 +34475,8 @@
         "length": "164 min",
         "plot": "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
         "director": "Denis Villeneuve",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-01-08",
         "date_added": null
     },
     {
@@ -34556,8 +34684,8 @@
         "length": "140 min",
         "plot": "After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.",
         "director": "Matt Reeves",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-01-15",
         "date_added": null
     },
     {
@@ -35609,8 +35737,8 @@
         "length": "95 min",
         "plot": "The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O'Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black.",
         "director": "Nikolaj Arcel",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-12-01",
         "date_added": null
     },
     {
@@ -36147,8 +36275,8 @@
         "length": "126 min",
         "plot": "Robbed of his birthright, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword from the stone, he is forced to acknowledge his true legacy - whether he likes it or not.",
         "director": "Guy Ritchie",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-06",
         "date_added": null
     },
     {
@@ -36302,8 +36430,8 @@
         "length": "133 min",
         "plot": "Jake Blues, just out from prison, puts together his old band to save the Catholic home where he and brother Elwood were raised.",
         "director": "John Landis",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-12-13",
         "date_added": null
     },
     {
@@ -36416,8 +36544,8 @@
         "length": "131 min",
         "plot": "A group of scientists investigate a deadly new alien virus before it can spread.",
         "director": "Robert Wise",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-12-01",
         "date_added": null
     },
     {
@@ -36546,8 +36674,8 @@
         "length": "133 min",
         "plot": "Set during the last days of the Ottoman Empire, The Promise follows a love triangle between Michael, a brilliant medical student, the beautiful and sophisticated Ana, and Chris - a renowned American journalist based in Paris.",
         "director": "Terry George",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-03",
         "date_added": null
     },
     {
@@ -36659,58 +36787,58 @@
                     {
                         "imdbId": "tt4270062",
                         "nr": 1,
-                        "title": "Episode #1.1",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The H Word",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4270066",
                         "nr": 2,
-                        "title": "Episode #1.2",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Mean Right Hook",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4270076",
                         "nr": 3,
-                        "title": "Worst Behaviour",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Worst Behavior",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4270082",
                         "nr": 4,
-                        "title": "Episode #1.4",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Royal Dragon",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4270086",
                         "nr": 5,
-                        "title": "Episode #1.5",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Take Shelter",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4270094",
                         "nr": 6,
-                        "title": "Episode #1.6",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "Ashes, Ashes",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4270098",
                         "nr": 7,
                         "title": "Fish in the Jailhouse",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4270102",
                         "nr": 8,
-                        "title": "Episode #1.8",
-                        "watched": false,
-                        "date_watched": null
+                        "title": "The Defenders",
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     }
                 ]
             }
@@ -36856,72 +36984,93 @@
                     {
                         "imdbId": "tt5509372",
                         "nr": 1,
-                        "title": "Pilot",
+                        "title": "The Vulcan Hello",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
                         "imdbId": "tt5835712",
                         "nr": 2,
                         "title": "Battle at the Binary Stars",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
-                        "imdbId": "NON-IMDB-ID-2017-1-3",
+                        "imdbId": "tt5835714",
                         "nr": 3,
-                        "title": "Context Is for Kings",
+                        "title": "Context is for Kings",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
-                        "imdbId": "NON-IMDB-ID-2017-1-4",
+                        "imdbId": "tt5870994",
                         "nr": 4,
                         "title": "The Butcher's Knife Cares Not for the Lamb's Cry",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
-                        "imdbId": "NON-IMDB-ID-2017-1-5",
+                        "imdbId": "tt5870996",
                         "nr": 5,
                         "title": "Choose Your Pain",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
-                        "imdbId": "NON-IMDB-ID-2017-1-6",
+                        "imdbId": "tt5870998",
                         "nr": 6,
                         "title": "Lethe",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
-                        "imdbId": "NON-IMDB-ID-2017-1-7",
+                        "imdbId": "tt5884346",
                         "nr": 7,
                         "title": "Magic to Make the Sanest Man Go Mad",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
-                        "imdbId": "NON-IMDB-ID-2017-1-8",
+                        "imdbId": "tt5888594",
                         "nr": 8,
                         "title": "Si Vis Pacem, Para Bellum",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
                         "imdbId": "tt5890578",
                         "nr": 9,
                         "title": "Into the Forest I Go",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-02-13"
                     },
                     {
-                        "imdbId": "NON-IMDB-ID-2017-1-10",
+                        "imdbId": "tt6011050",
                         "nr": 10,
                         "title": "Despite Yourself",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-02-13"
+                    },
+                    {
+                        "imdbId": "tt6011052",
+                        "nr": 11,
+                        "title": "The Wolf Inside",
+                        "watched": true,
+                        "date_watched": "2018-02-13"
+                    },
+                    {
+                        "imdbId": "tt6011054",
+                        "nr": 12,
+                        "title": "Vaulting Ambition",
+                        "watched": true,
+                        "date_watched": "2018-02-13"
+                    },
+                    {
+                        "imdbId": "tt6011058",
+                        "nr": 13,
+                        "title": "What's Past is Prologue",
+                        "watched": true,
+                        "date_watched": "2018-02-13"
                     }
                 ]
             }
@@ -36999,48 +37148,83 @@
                         "nr": 1,
                         "title": "Old Wounds",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-12-13"
                     },
                     {
                         "imdbId": "tt6408626",
                         "nr": 2,
                         "title": "Command Performance",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-12-13"
                     },
                     {
                         "imdbId": "tt6483038",
                         "nr": 3,
                         "title": "About a Girl",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-12-13"
                     },
                     {
                         "imdbId": "tt6483046",
                         "nr": 4,
                         "title": "If the Stars Should Appear",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-12-13"
                     },
                     {
                         "imdbId": "tt6483048",
                         "nr": 5,
                         "title": "Pria",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-12-13"
                     },
                     {
                         "imdbId": "tt6723482",
                         "nr": 6,
                         "title": "Krill",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2017-12-13"
+                    },
+                    {
+                        "imdbId": "tt6845666",
+                        "nr": 7,
+                        "title": "Majority Rule",
+                        "watched": true,
+                        "date_watched": "2017-12-13"
                     },
                     {
                         "imdbId": "tt6850950",
                         "nr": 8,
                         "title": "Into the Fold",
                         "watched": true,
+                        "date_watched": "2017-12-13"
+                    },
+                    {
+                        "imdbId": "tt6850956",
+                        "nr": 9,
+                        "title": "Cupid's Dagger",
+                        "watched": true,
+                        "date_watched": "2017-12-13"
+                    },
+                    {
+                        "imdbId": "tt6850958",
+                        "nr": 10,
+                        "title": "Firestorm",
+                        "watched": true,
+                        "date_watched": "2017-12-13"
+                    },
+                    {
+                        "imdbId": "tt6850962",
+                        "nr": 11,
+                        "title": "New Dimensions",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5943640",
+                        "nr": 12,
+                        "title": "Mad Idolatry",
+                        "watched": false,
                         "date_watched": null
                     }
                 ]
@@ -37088,8 +37272,8 @@
         "length": "109 min",
         "plot": "When the network of satellites designed to control the global climate start to attack Earth, it's a race against the clock to uncover the real threat before a worldwide geostorm wipes out everything and everyone.",
         "director": "Dean Devlin",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-01-20",
         "date_added": "2017-11-14"
     },
     {
@@ -37183,8 +37367,8 @@
         "length": "150 min",
         "plot": "Having taken her first steps into the larger Jedi world, Rey joins Luke Skywalker on an adventure with Leia, Finn and Poe that unlocks mysteries of the Force and secrets of the past.",
         "director": "Rian Johnson",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-12-22",
         "date_added": "2017-11-22"
     },
     {
@@ -37257,8 +37441,8 @@
         "length": "96 min",
         "plot": "The story of Chesley Sullenberger, an American pilot who became a hero after landing his damaged plane on the Hudson River in order to save the flight's passengers and crew.",
         "director": "Clint Eastwood",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2017-12-03",
         "date_added": "2017-11-24"
     },
     {
@@ -37486,7 +37670,13 @@
         "items": [
             "tt1318514",
             "tt2103281",
-            "tt3450958"
+            "tt3450958",
+            "tt0063442",
+            "tt0065462",
+            "tt0067065",
+            "tt0068408",
+            "tt0069768",
+            "tt0133152"
         ],
         "date_added": "2017-11-25"
     },
@@ -37506,70 +37696,70 @@
                         "nr": 1,
                         "title": "Episode #1.1",
                         "watched": true,
-                        "date_watched": "2017-11-26"
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4897556",
                         "nr": 2,
                         "title": "Episode #1.2",
                         "watched": true,
-                        "date_watched": "2017-11-27"
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4897560",
                         "nr": 3,
                         "title": "Episode #1.3",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4897562",
                         "nr": 4,
                         "title": "Episode #1.4",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4897564",
                         "nr": 5,
                         "title": "Episode #1.5",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4897566",
                         "nr": 6,
                         "title": "Episode #1.6",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4897572",
                         "nr": 7,
                         "title": "Episode #1.7",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt4897574",
                         "nr": 8,
                         "title": "Episode #1.8",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt5980380",
                         "nr": 9,
                         "title": "Episode #1.9",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     },
                     {
                         "imdbId": "tt5980392",
                         "nr": 10,
                         "title": "Episode #1.10",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-01-11"
                     }
                 ]
             }
@@ -38310,7 +38500,8 @@
         "name": "Cloverfield",
         "items": [
             "tt1179933",
-            "tt1060277"
+            "tt1060277",
+            "tt2548396"
         ],
         "date_added": "2017-11-28"
     },
@@ -38430,8 +38621,1604 @@
         "length": "130 min",
         "plot": "Imprisoned, the almighty Thor finds himself in a lethal gladiatorial contest against the Hulk, his former ally. Thor must fight for survival and race against time to prevent the all-powerful Hela from destroying his home and the Asgardian civilization.",
         "director": "Taika Waititi",
+        "watched": true,
+        "date_watched": "2017-12-24",
+        "date_added": "2017-11-30"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0081974",
+        "name": "Absence of Malice",
+        "year": 1981,
+        "score": null,
+        "actors": [
+            "Paul Newman",
+            "Sally Field",
+            "Bob Balaban",
+            "Melinda Dillon"
+        ],
+        "length": "116 min",
+        "plot": "When a prosecutor leaks a false story that a liquor warehouse owner is involved in the murder of an union head, the man's life begins to unravel.",
+        "director": "Sydney Pollack",
         "watched": false,
         "date_watched": null,
-        "date_added": "2017-11-30"
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0139668",
+        "name": "True Crime",
+        "year": 1999,
+        "score": null,
+        "actors": [
+            "Clint Eastwood",
+            "Isaiah Washington",
+            "LisaGay Hamilton",
+            "James Woods"
+        ],
+        "length": "127 min",
+        "plot": "Can an over-the-hill journalist uncover the evidence that can prove a death row inmate's innocence just hours before his execution?",
+        "director": "Clint Eastwood",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0071970",
+        "name": "The Parallax View",
+        "year": 1974,
+        "score": null,
+        "actors": [
+            "Warren Beatty",
+            "Paula Prentiss",
+            "William Daniels",
+            "Walter McGinn"
+        ],
+        "length": "102 min",
+        "plot": "An ambitious reporter gets in way-over-his-head trouble while investigating a senator's assassination which leads to a vast conspiracy involving a multinational corporation behind every event in the world's headlines.",
+        "director": "Alan J. Pakula",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0032484",
+        "name": "Foreign Correspondent",
+        "year": 1940,
+        "score": null,
+        "actors": [
+            "Joel McCrea",
+            "Laraine Day",
+            "Herbert Marshall",
+            "George Sanders"
+        ],
+        "length": "120 min",
+        "plot": "On the eve of World War II, a young American reporter tries to expose enemy agents in London.",
+        "director": "Alfred Hitchcock",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0086617",
+        "name": "The Year of Living Dangerously",
+        "year": 1982,
+        "score": null,
+        "actors": [
+            "Linda Hunt",
+            "Mel Gibson",
+            "Bembol Roco",
+            "Domingo Landicho"
+        ],
+        "length": "115 min",
+        "plot": "A young Australian reporter tries to navigate the political turmoil of Indonesia during the rule of President Sukarno with the help of a diminutive photographer.",
+        "director": "Peter Weir",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120885",
+        "name": "Wag the Dog",
+        "year": 1997,
+        "score": null,
+        "actors": [
+            "Dustin Hoffman",
+            "Robert De Niro",
+            "Anne Heche",
+            "Denis Leary"
+        ],
+        "length": "97 min",
+        "plot": "Shortly before an election, a spin-doctor and a Hollywood producer join efforts to fabricate a war in order to cover up a presidential sex scandal.",
+        "director": "Barry Levinson",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0379725",
+        "name": "Capote",
+        "year": 2005,
+        "score": null,
+        "actors": [
+            "Allie Mickelson",
+            "Kelci Stephenson",
+            "Philip Seymour Hoffman",
+            "Craig Archibald"
+        ],
+        "length": "114 min",
+        "plot": "In 1959, Truman Capote learns of the murder of a Kansas family and decides to write a book about the case. While researching for his novel In Cold Blood, Capote forms a relationship with one of the killers, Perry Smith, who is on death row.",
+        "director": "Bennett Miller",
+        "watched": true,
+        "date_watched": "2018-02-04",
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0473705",
+        "name": "State of Play",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Russell Crowe",
+            "Ben Affleck",
+            "Rachel McAdams",
+            "Helen Mirren"
+        ],
+        "length": "127 min",
+        "plot": "When a congressional aide is killed, a Washington D.C. journalist starts investigating the case involving the congressman, his old college friend.",
+        "director": "Kevin Macdonald",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0387131",
+        "name": "The Constant Gardener",
+        "year": 2005,
+        "score": null,
+        "actors": [
+            "Ralph Fiennes",
+            "Rachel Weisz",
+            "Hubert Kound\u00e9",
+            "Danny Huston"
+        ],
+        "length": "129 min",
+        "plot": "A widower is determined to get to the bottom of a potentially explosive secret involving his wife's murder, big business, and corporate corruption.",
+        "director": "Fernando Meirelles",
+        "watched": true,
+        "date_watched": "2017-12-01",
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0455538",
+        "name": "How to Lose Friends & Alienate People",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Kelan Pannell",
+            "Janette Scott",
+            "Danny Huston",
+            "Simon Pegg"
+        ],
+        "length": "110 min",
+        "plot": "A British writer struggles to fit in at a high-profile magazine in New York City.",
+        "director": "Robert B. Weide",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-01"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1735898",
+        "name": "Snow White and the Huntsman",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Kristen Stewart",
+            "Chris Hemsworth",
+            "Charlize Theron",
+            "Sam Claflin"
+        ],
+        "length": "127 min",
+        "plot": "In a twist to the fairy tale, the Huntsman ordered to take Snow White into the woods to be killed winds up becoming her protector and mentor in a quest to vanquish the Evil Queen.",
+        "director": "Rupert Sanders",
+        "watched": true,
+        "date_watched": "2017-12-04",
+        "date_added": "2017-12-04"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1424381",
+        "name": "Predators",
+        "year": 2010,
+        "score": null,
+        "actors": [
+            "Adrien Brody",
+            "Topher Grace",
+            "Alice Braga",
+            "Walton Goggins"
+        ],
+        "length": "107 min",
+        "plot": "A group of elite warriors parachute into an unfamiliar jungle and are hunted by members of a merciless alien race.",
+        "director": "Nimr\u00f3d Antal",
+        "watched": true,
+        "date_watched": "2017-12-05",
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0370263",
+        "name": "AVP: Alien vs. Predator",
+        "year": 2004,
+        "score": null,
+        "actors": [
+            "Sanaa Lathan",
+            "Raoul Bova",
+            "Lance Henriksen",
+            "Ewen Bremner"
+        ],
+        "length": "101 min",
+        "plot": "During an archaeological expedition on Bouvet\u00f8ya Island in Antarctica, a team of archaeologists and other scientists find themselves caught up in a battle between the two legends. Soon, the team realize that only one species can win.",
+        "director": "Paul W.S. Anderson",
+        "watched": true,
+        "date_watched": "2017-12-05",
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0100403",
+        "name": "Predator 2",
+        "year": 1990,
+        "score": null,
+        "actors": [
+            "Kevin Peter Hall",
+            "Danny Glover",
+            "Gary Busey",
+            "Rub\u00e9n Blades"
+        ],
+        "length": "108 min",
+        "plot": "Amidst a territorial gang war in 1997, a sophisticated alien hunter stalks the citizens of Los Angeles and the only man between him and his prey is veteran L.A.P.D. officer, Lieutenant Mike Harrigan.",
+        "director": "Stephen Hopkins",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0758730",
+        "name": "Aliens vs. Predator: Requiem",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Steven Pasquale",
+            "Reiko Aylesworth",
+            "John Ortiz",
+            "Johnny Lewis"
+        ],
+        "length": "94 min",
+        "plot": "Warring Alien and Predator races descend on a rural Colorado town, where unsuspecting residents must band together for any chance of survival.",
+        "director": "Colin Strause, Greg Strause",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-0e7d097e-f594-4075-9caa-d3a12d7a97bf",
+        "name": "Predator ",
+        "items": [
+            "tt0093773",
+            "tt0100403",
+            "tt0370263",
+            "tt0758730",
+            "tt1424381"
+        ],
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0063442",
+        "name": "Planet of the Apes",
+        "year": 1968,
+        "score": null,
+        "actors": [
+            "Charlton Heston",
+            "Roddy McDowall",
+            "Kim Hunter",
+            "Maurice Evans"
+        ],
+        "length": "112 min",
+        "plot": "An astronaut crew crash-lands on a planet in the distant future where intelligent talking apes are the dominant species, and humans are the oppressed and enslaved.",
+        "director": "Franklin J. Schaffner",
+        "watched": true,
+        "date_watched": "2017-12-05",
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0065462",
+        "name": "Beneath the Planet of the Apes",
+        "year": 1970,
+        "score": null,
+        "actors": [
+            "James Franciscus",
+            "Kim Hunter",
+            "Maurice Evans",
+            "Linda Harrison"
+        ],
+        "length": "95 min",
+        "plot": "The sole survivor of an interplanetary rescue mission searches for the only survivor of the previous expedition. He discovers a planet ruled by apes and an underground city run by telepathic humans.",
+        "director": "Ted Post",
+        "watched": true,
+        "date_watched": "2017-12-05",
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0067065",
+        "name": "Escape from the Planet of the Apes",
+        "year": 1971,
+        "score": null,
+        "actors": [
+            "Roddy McDowall",
+            "Kim Hunter",
+            "Bradford Dillman",
+            "Natalie Trundy"
+        ],
+        "length": "98 min",
+        "plot": "The world is shocked by the appearance of three talking chimpanzees, who arrived mysteriously in a U.S. spacecraft. They become the toast of society, but one man believes them to be a threat to the human race.",
+        "director": "Don Taylor",
+        "watched": true,
+        "date_watched": "2017-12-05",
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0068408",
+        "name": "Conquest of the Planet of the Apes",
+        "year": 1972,
+        "score": null,
+        "actors": [
+            "Roddy McDowall",
+            "Don Murray",
+            "Natalie Trundy",
+            "Hari Rhodes"
+        ],
+        "length": "88 min",
+        "plot": "In a futuristic world that has embraced ape slavery, Caesar, the son of the late simians Cornelius and Zira, surfaces after almost twenty years of hiding out from the authorities, and prepares for a slave revolt against humanity.",
+        "director": "J. Lee Thompson",
+        "watched": true,
+        "date_watched": "2017-12-05",
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0069768",
+        "name": "Battle for the Planet of the Apes",
+        "year": 1973,
+        "score": null,
+        "actors": [
+            "Roddy McDowall",
+            "Claude Akins",
+            "Natalie Trundy",
+            "Severn Darden"
+        ],
+        "length": "93 min",
+        "plot": "One decade after a worldwide series of ape revolutions and a brutal nuclear war among humans, Caesar must protect survivors of both species from an insidious human cult and a militant ape faction alike.",
+        "director": "J. Lee Thompson",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0133152",
+        "name": "Planet of the Apes",
+        "year": 2001,
+        "score": null,
+        "actors": [
+            "Mark Wahlberg",
+            "Tim Roth",
+            "Helena Bonham Carter",
+            "Michael Clarke Duncan"
+        ],
+        "length": "119 min",
+        "plot": "An Air Force astronaut crash lands on a mysterious planet where evolved, talking apes dominate a race of primitive humans.",
+        "director": "Tim Burton",
+        "watched": true,
+        "date_watched": "2017-12-05",
+        "date_added": "2017-12-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0247638",
+        "name": "The Princess Diaries",
+        "year": 2001,
+        "score": null,
+        "actors": [
+            "Julie Andrews",
+            "Anne Hathaway",
+            "Hector Elizondo",
+            "Heather Matarazzo"
+        ],
+        "length": "111 min",
+        "plot": "Mia Thermopolis has just found out that she is the heir apparent to the throne of Genovia. With her friends Lilly and Michael Moscovitz in tow, she tries to navigate through the rest of her sixteenth year.",
+        "director": "Garry Marshall",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-07"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0156934",
+        "name": "Random Hearts",
+        "year": 1999,
+        "score": null,
+        "actors": [
+            "Harrison Ford",
+            "Kristin Scott Thomas",
+            "Charles S. Dutton",
+            "Bonnie Hunt"
+        ],
+        "length": "133 min",
+        "plot": "A police sergeant and a congresswoman both lose their spouses in a plane crash, and they soon discover that their spouses were having an affair with each other.",
+        "director": "Sydney Pollack",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-07"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0095690",
+        "name": "Mystic Pizza",
+        "year": 1988,
+        "score": null,
+        "actors": [
+            "Annabeth Gish",
+            "Julia Roberts",
+            "Lili Taylor",
+            "Vincent D'Onofrio"
+        ],
+        "length": "104 min",
+        "plot": "Three teenage girls come of age while working at a pizza parlor in the Connecticut town of Mystic.",
+        "director": "Donald Petrie",
+        "watched": true,
+        "date_watched": "2017-12-07",
+        "date_added": "2017-12-07"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0124315",
+        "name": "The Cider House Rules",
+        "year": 1999,
+        "score": null,
+        "actors": [
+            "Tobey Maguire",
+            "Charlize Theron",
+            "Delroy Lindo",
+            "Paul Rudd"
+        ],
+        "length": "126 min",
+        "plot": "A compassionate young man, raised in an orphanage and trained to be a doctor there, decides to leave to see the world.",
+        "director": "Lasse Hallstr\u00f6m",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-07"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4649466",
+        "name": "Kingsman: The Golden Circle",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Taron Egerton",
+            "Edward Holcroft",
+            "Gordon Alexander",
+            "Mark Strong"
+        ],
+        "length": "141 min",
+        "plot": "When their headquarters are destroyed and the world is held hostage, the Kingsman's journey leads them to the discovery of an allied spy organization in the US. These two elite secret organizations must band together to defeat a common enemy.",
+        "director": "Matthew Vaughn",
+        "watched": true,
+        "date_watched": "2017-12-07",
+        "date_added": "2017-12-07"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3462710",
+        "name": "Unforgettable",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Rosario Dawson",
+            "Katherine Heigl",
+            "Geoff Stults",
+            "Isabella Kai Rice"
+        ],
+        "length": "100 min",
+        "plot": "A woman sets out to make life a living hell for her ex-husband's new fianc\u00e9e.",
+        "director": "Denise Di Novi",
+        "watched": true,
+        "date_watched": "2017-12-11",
+        "date_added": "2017-12-11"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3014284",
+        "name": "The LEGO Ninjago Movie",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Jackie Chan",
+            "Dave Franco",
+            "Fred Armisen",
+            "Kumail Nanjiani"
+        ],
+        "length": "101 min",
+        "plot": "Shunned by everyone for being the son of an evil warlord, a teenager seeks to defeat him with the help of his fellow ninjas.",
+        "director": "Charlie Bean, Paul Fisher, Bob Logan",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-11"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0389790",
+        "name": "Bee Movie",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Jerry Seinfeld",
+            "Ren\u00e9e Zellweger",
+            "Matthew Broderick",
+            "Patrick Warburton"
+        ],
+        "length": "91 min",
+        "plot": "Barry B. Benson, a bee just graduated from college, is disillusioned at his lone career choice: making honey. On a special trip outside the hive, Barry's life is saved by Vanessa, a florist in New York City. As their relationship blossoms, he discovers humans actually eat honey, and subsequently decides to sue them.",
+        "director": "Simon J. Smith, Steve Hickner",
+        "watched": true,
+        "date_watched": "2018-01-06",
+        "date_added": "2017-12-11"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5580390",
+        "name": "The Shape of Water",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Sally Hawkins",
+            "Michael Shannon",
+            "Richard Jenkins",
+            "Octavia Spencer"
+        ],
+        "length": "123 min",
+        "plot": "In a 1960s research facility, a mute janitor forms a relationship with an aquatic creature.",
+        "director": "Guillermo del Toro",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-11"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0118880",
+        "name": "Con Air",
+        "year": 1997,
+        "score": null,
+        "actors": [
+            "Colm Meaney",
+            "Mykelti Williamson",
+            "Nick Chinlund",
+            "Renoly Santiago"
+        ],
+        "length": "115 min",
+        "plot": "Newly paroled ex-con and former U.S. Ranger Cameron Poe finds himself trapped in a prisoner transport plane when the passengers seize control.",
+        "director": "Simon West",
+        "watched": true,
+        "date_watched": "2017-12-12",
+        "date_added": "2017-12-12"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1027718",
+        "name": "Wall Street: Money Never Sleeps",
+        "year": 2010,
+        "score": null,
+        "actors": [
+            "Richard Stratton",
+            "Harry Kerrigan",
+            "Michael Douglas",
+            "Carey Mulligan"
+        ],
+        "length": "133 min",
+        "plot": "Now out of prison but still disgraced by his peers, Gordon Gekko works his future son-in-law, an idealistic stock broker, when he sees an opportunity to take down a Wall Street enemy and rebuild his empire.",
+        "director": "Oliver Stone",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-12"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0050083",
+        "name": "12 Angry Men",
+        "year": 1957,
+        "score": null,
+        "actors": [
+            "Martin Balsam",
+            "John Fiedler",
+            "Lee J. Cobb",
+            "E.G. Marshall"
+        ],
+        "length": "96 min",
+        "plot": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
+        "director": "Sidney Lumet",
+        "watched": true,
+        "date_watched": "2017-12-12",
+        "date_added": "2017-12-12"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120812",
+        "name": "Rush Hour",
+        "year": 1998,
+        "score": null,
+        "actors": [
+            "Ken Leung",
+            "Jackie Chan",
+            "Tom Wilkinson",
+            "Tzi Ma"
+        ],
+        "length": "98 min",
+        "plot": "A loyal and dedicated Hong Kong inspector teams up with a reckless and loudmouthed LAPD detective to rescue the Chinese Consul's kidnapped daughter, while trying to arrest a dangerous crime lord along the way.",
+        "director": "Brett Ratner",
+        "watched": true,
+        "date_watched": "2017-12-13",
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0266915",
+        "name": "Rush Hour 2",
+        "year": 2001,
+        "score": null,
+        "actors": [
+            "Jackie Chan",
+            "Chris Tucker",
+            "John Lone",
+            "Ziyi Zhang"
+        ],
+        "length": "90 min",
+        "plot": "Carter and Lee head to Hong Kong for vacation, but become embroiled in a counterfeit money scam.",
+        "director": "Brett Ratner",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1340800",
+        "name": "Tinker Tailor Soldier Spy",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Mark Strong",
+            "John Hurt",
+            "Zolt\u00e1n Mucsi",
+            "P\u00e9ter K\u00e1lloy Moln\u00e1r"
+        ],
+        "length": "122 min",
+        "plot": "In the bleak days of the Cold War, espionage veteran George Smiley is forced from semi-retirement to uncover a Soviet Agent within MI6.",
+        "director": "Tomas Alfredson",
+        "watched": true,
+        "date_watched": "2017-12-13",
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0445935",
+        "name": "Bordertown",
+        "year": 2006,
+        "score": null,
+        "actors": [
+            "Maya Zapata",
+            "Irineo Alvarez",
+            "Rene Rivera",
+            "Jennifer Lopez"
+        ],
+        "length": "112 min",
+        "plot": "A journalist investigates a series of murders near American-owned factories on the border of Juarez and El Paso.",
+        "director": "Gregory Nava",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0257076",
+        "name": "S.W.A.T.",
+        "year": 2003,
+        "score": null,
+        "actors": [
+            "Samuel L. Jackson",
+            "Colin Farrell",
+            "Michelle Rodriguez",
+            "LL Cool J"
+        ],
+        "length": "117 min",
+        "plot": "An imprisoned drug kingpin offers a huge cash reward to anyone that can break him out of police custody and only the LAPD's Special Weapons and Tactics team can prevent it.",
+        "director": "Clark Johnson",
+        "watched": true,
+        "date_watched": "2018-02-01",
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0218967",
+        "name": "The Family Man",
+        "year": 2000,
+        "score": null,
+        "actors": [
+            "Nicolas Cage",
+            "T\u00e9a Leoni",
+            "Don Cheadle",
+            "Jeremy Piven"
+        ],
+        "length": "125 min",
+        "plot": "A fast-lane investment broker, offered the opportunity to see how the other half lives, wakes up to find that his sports car and girlfriend have become a mini-van and wife.",
+        "director": "Brett Ratner",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0209475",
+        "name": "The Wedding Planner",
+        "year": 2001,
+        "score": null,
+        "actors": [
+            "Jennifer Lopez",
+            "Matthew McConaughey",
+            "Bridgette Wilson-Sampras",
+            "Justin Chambers"
+        ],
+        "length": "103 min",
+        "plot": "Mary Fiore is San Francisco's most successful supplier of romance and glamor. She knows all the tricks. She knows all the rules. But then she breaks the most important rule of all: she falls in love with the groom.",
+        "director": "Adam Shankman",
+        "watched": true,
+        "date_watched": "2017-12-13",
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0118615",
+        "name": "Anaconda",
+        "year": 1997,
+        "score": null,
+        "actors": [
+            "Jennifer Lopez",
+            "Ice Cube",
+            "Jon Voight",
+            "Eric Stoltz"
+        ],
+        "length": "89 min",
+        "plot": "A \"National Geographic\" film crew is taken hostage by an insane hunter, who takes them along on his quest to capture the world's largest - and deadliest - snake.",
+        "director": "Luis Llosa",
+        "watched": true,
+        "date_watched": "2017-12-13",
+        "date_added": "2017-12-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0425637",
+        "name": "Red Cliff",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Tony Chiu-Wai Leung",
+            "Takeshi Kaneshiro",
+            "Fengyi Zhang",
+            "Chen Chang"
+        ],
+        "length": "148 min",
+        "plot": "The first chapter of a two-part story centered on a battle fought in China's Three Kingdoms period (220-280 A.D.).",
+        "director": "John Woo",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-18"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1326972",
+        "name": "Red Cliff II",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Tony Chiu-Wai Leung",
+            "Takeshi Kaneshiro",
+            "Fengyi Zhang",
+            "Chen Chang"
+        ],
+        "length": "142 min",
+        "plot": "In this sequel to Red Cliff, Chancellor Cao Cao convinces Emperor Xian of the Han to initiate a battle against the two Kingdoms of Shu and Wu, who have become allied forces, against all ...",
+        "director": "John Woo",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-18"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1067106",
+        "name": "A Christmas Carol",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Jim Carrey",
+            "Steve Valentine",
+            "Daryl Sabara",
+            "Sage Ryan"
+        ],
+        "length": "96 min",
+        "plot": "An animated retelling of Charles Dickens' classic novel about a Victorian-era miser taken on a journey of self-redemption, courtesy of several mysterious Christmas apparitions.",
+        "director": "Robert Zemeckis",
+        "watched": true,
+        "date_watched": "2017-12-18",
+        "date_added": "2017-12-18"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0116830",
+        "name": "Last Man Standing",
+        "year": 1996,
+        "score": null,
+        "actors": [
+            "Bruce Willis",
+            "Bruce Dern",
+            "William Sanderson",
+            "Christopher Walken"
+        ],
+        "length": "101 min",
+        "plot": "A drifting gunslinger-for-hire finds himself in the middle of an ongoing war between the Irish and Italian mafia in a Prohibition era ghost town.",
+        "director": "Walter Hill",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-19"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1602613",
+        "name": "Only God Forgives",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Ryan Gosling",
+            "Kristin Scott Thomas",
+            "Vithaya Pansringarm",
+            "Gordon Brown"
+        ],
+        "length": "90 min",
+        "plot": "Julian, a drug-smuggler thriving in Bangkok's criminal underworld, sees his life get even more complicated when his mother compels him to find and kill whoever is responsible for his brother's recent death.",
+        "director": "Nicolas Winding Refn",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-19"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5519340",
+        "name": "Bright",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Will Smith",
+            "Noomi Rapace",
+            "Lucy Fry",
+            "Joel Edgerton"
+        ],
+        "length": "117 min",
+        "plot": "Set in a world where mystical creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for.",
+        "director": "David Ayer",
+        "watched": true,
+        "date_watched": "2018-01-09",
+        "date_added": "2017-12-21"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5294550",
+        "name": "All the Money in the World",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Mark Wahlberg",
+            "Michelle Williams",
+            "Charlie Plummer",
+            "Christopher Plummer"
+        ],
+        "length": "N\/A",
+        "plot": "The story of the kidnapping of 16-year-old John Paul Getty III and the desperate attempt by his devoted mother to convince his billionaire grandfather Jean Paul Getty to pay the ransom.",
+        "director": "Ridley Scott",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-21"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0876563",
+        "name": "Ponyo",
+        "year": 2008,
+        "score": null,
+        "actors": [
+            "Tomoko Yamaguchi",
+            "Kazushige Nagashima",
+            "Y\u00fbki Amami",
+            "George Tokoro"
+        ],
+        "length": "101 min",
+        "plot": "A five year-old boy develops a relationship with Ponyo, a goldfish princess who longs to become a human after falling in love with him.",
+        "director": "Hayao Miyazaki",
+        "watched": true,
+        "date_watched": "2017-12-24",
+        "date_added": "2017-12-24"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-27044087-3674-4b70-958a-4beb7757915d",
+        "name": "Ghibli Movies",
+        "items": [
+            "tt0876563",
+            "tt0245429",
+            "tt0119698",
+            "tt0347149",
+            "tt0096283",
+            "tt0097814",
+            "tt1568921",
+            "tt3666024",
+            "tt0092067",
+            "tt0087544",
+            "tt0495596"
+        ],
+        "date_added": "2017-12-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3666024",
+        "name": "The Red Turtle",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Emmanuel Garijo",
+            "Tom Hudson",
+            "Baptiste Goy",
+            "Axel Devillers"
+        ],
+        "length": "80 min",
+        "plot": "A man is shipwrecked on a deserted island and encounters a red turtle, which changes his life.",
+        "director": "Michael Dudok de Wit",
+        "watched": true,
+        "date_watched": "2017-12-25",
+        "date_added": "2017-12-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0087544",
+        "name": "Nausica\u00e4 of the Valley of the Wind",
+        "year": 1984,
+        "score": null,
+        "actors": [
+            "Sumi Shimamoto",
+            "Mahito Tsujimura",
+            "Hisako Ky\u00f4da",
+            "Gor\u00f4 Naya"
+        ],
+        "length": "117 min",
+        "plot": "Warrior\/pacifist Princess Nausica\u00e4 desperately struggles to prevent two warring nations from destroying themselves and their dying planet.",
+        "director": "Hayao Miyazaki",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0092067",
+        "name": "Castle in the Sky",
+        "year": 1986,
+        "score": null,
+        "actors": [
+            "Anna Paquin",
+            "James Van Der Beek",
+            "Cloris Leachman",
+            "Mark Hamill"
+        ],
+        "length": "125 min",
+        "plot": "A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.",
+        "director": "Hayao Miyazaki",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2017-12-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0495596",
+        "name": "Tales from Earthsea",
+        "year": 2006,
+        "score": null,
+        "actors": [
+            "Jun'ichi Okada",
+            "Aoi Teshima",
+            "Bunta Sugawara",
+            "Y\u00fbko Tanaka"
+        ],
+        "length": "115 min",
+        "plot": "In a mythical land, a man and a young boy investigate a series of unusual occurrences.",
+        "director": "Gor\u00f4 Miyazaki",
+        "watched": true,
+        "date_watched": "2018-01-21",
+        "date_added": "2017-12-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0059742",
+        "name": "The Sound of Music",
+        "year": 1965,
+        "score": null,
+        "actors": [
+            "Julie Andrews",
+            "Christopher Plummer",
+            "Eleanor Parker",
+            "Richard Haydn"
+        ],
+        "length": "174 min",
+        "plot": "A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.",
+        "director": "Robert Wise",
+        "watched": true,
+        "date_watched": "2018-01-04",
+        "date_added": "2018-01-04"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2261287",
+        "name": "Leap!",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Elle Fanning",
+            "Dane DeHaan",
+            "Carly Rae Jepsen",
+            "Maddie Ziegler"
+        ],
+        "length": "89 min",
+        "plot": "An orphan girl dreams of becoming a ballerina and flees her rural Brittany for Paris, where she passes for someone else and accedes to the position of pupil at the Grand Opera house.",
+        "director": "Eric Summer, \u00c9ric Warin, Mimi Maynard, Paulette Victor-Lifton",
+        "watched": true,
+        "date_watched": "2018-01-04",
+        "date_added": "2018-01-04"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120603",
+        "name": "Beloved",
+        "year": 1998,
+        "score": null,
+        "actors": [
+            "Yada Beener",
+            "Emil Pinnock",
+            "Calen Johnson",
+            "Oprah Winfrey"
+        ],
+        "length": "172 min",
+        "plot": "Based on the book by Toni Morrison, in which a slave is visited by the spirit of her deceased daughter.",
+        "director": "Jonathan Demme",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-08"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0929632",
+        "name": "Precious",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Gabourey Sidibe",
+            "Mo'Nique",
+            "Paula Patton",
+            "Mariah Carey"
+        ],
+        "length": "110 min",
+        "plot": "In New York City's Harlem circa 1987, an overweight, abused, illiterate teen who is pregnant with her second child is invited to enroll in an alternative school in hopes that her life can head in a new direction.",
+        "director": "Lee Daniels",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-08"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0427309",
+        "name": "The Great Debaters",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Denzel Washington",
+            "Nate Parker",
+            "Jurnee Smollett-Bell",
+            "Denzel Whitaker"
+        ],
+        "length": "126 min",
+        "plot": "A drama based on the true story of Melvin B. Tolson, a professor at Wiley College Texas. In 1935, he inspired students to form the school's first debate team, which went on to challenge Harvard in the national championship.",
+        "director": "Denzel Washington",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-08"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1327773",
+        "name": "Lee Daniels' The Butler",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Forest Whitaker",
+            "David Banner",
+            "Michael Rainey Jr.",
+            "LaJessie Smith"
+        ],
+        "length": "132 min",
+        "plot": "As Cecil Gaines serves eight presidents during his tenure as a butler at the White House, the civil rights movement, Vietnam, and other major events affect this man's life, family, and American society.",
+        "director": "Lee Daniels",
+        "watched": true,
+        "date_watched": "2018-02-13",
+        "date_added": "2018-01-08"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4555426",
+        "name": "Darkest Hour",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Lily James",
+            "Gary Oldman",
+            "Ben Mendelsohn",
+            "Kristin Scott Thomas"
+        ],
+        "length": "125 min",
+        "plot": "During the early days of World War II, the fate of Western Europe hangs on the newly-appointed British Prime Minister Winston Churchill, who must decide whether to negotiate with Hitler, or fight on against incredible odds.",
+        "director": "Joe Wright",
+        "watched": true,
+        "date_watched": "2018-02-15",
+        "date_added": "2018-01-17"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4701724",
+        "name": "Early Man",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Tom Hiddleston",
+            "Maisie Williams",
+            "Eddie Redmayne",
+            "Miriam Margolyes"
+        ],
+        "length": "N\/A",
+        "plot": "Set at the dawn of time, when prehistoric creatures and woolly mammoths roamed the earth, Early Man tells the story of Dug, along with sidekick Hognob as they unite his tribe against a mighty enemy Lord Nooth and his Bronze Age City to save their home.",
+        "director": "Nick Park",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-17"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4209788",
+        "name": "Molly's Game",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Jessica Chastain",
+            "Idris Elba",
+            "Kevin Costner",
+            "Michael Cera"
+        ],
+        "length": "140 min",
+        "plot": "The true story of Molly Bloom, an Olympic-class skier who ran the world's most exclusive high-stakes poker game and became an FBI target.",
+        "director": "Aaron Sorkin",
+        "watched": true,
+        "date_watched": "2018-01-18",
+        "date_added": "2018-01-17"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-5f56c787-eb07-4fce-9c89-b5bb84e618fd",
+        "name": "Kung Fu Panda",
+        "items": [
+            "tt0441773",
+            "tt1302011",
+            "tt2267968"
+        ],
+        "date_added": "2018-01-23"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5726616",
+        "name": "Call Me by Your Name",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Armie Hammer",
+            "Timoth\u00e9e Chalamet",
+            "Michael Stuhlbarg",
+            "Amira Casar"
+        ],
+        "length": "132 min",
+        "plot": "In Northern Italy in 1983, seventeen year-old Elio begins a relationship with visiting Oliver, his father's research assistant, with whom he bonds over his emerging sexuality, their Jewish heritage, and the beguiling Italian landscape.",
+        "director": "Luca Guadagnino",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1389072",
+        "name": "Downsizing",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Matt Damon",
+            "Christoph Waltz",
+            "Hong Chau",
+            "Kristen Wiig"
+        ],
+        "length": "135 min",
+        "plot": "A social satire in which a man realizes he would have a better life if he were to shrink himself to five inches tall, allowing him to live in wealth and splendor.",
+        "director": "Alexander Payne",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0099582",
+        "name": "Flatliners",
+        "year": 1990,
+        "score": null,
+        "actors": [
+            "Kiefer Sutherland",
+            "Julia Roberts",
+            "Kevin Bacon",
+            "William Baldwin"
+        ],
+        "length": "115 min",
+        "plot": "Five medical students experiment with \"near death\" experiences, until the dark consequences of past tragedies begin to jeopardize their lives.",
+        "director": "Joel Schumacher",
+        "watched": true,
+        "date_watched": "2018-01-25",
+        "date_added": "2018-01-25"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0335119",
+        "name": "Girl with a Pearl Earring",
+        "year": 2003,
+        "score": null,
+        "actors": [
+            "Colin Firth",
+            "Scarlett Johansson",
+            "Tom Wilkinson",
+            "Judy Parfitt"
+        ],
+        "length": "100 min",
+        "plot": "A young peasant maid working in the house of painter Johannes Vermeer becomes his talented assistant and the model for one of his most famous works.",
+        "director": "Peter Webber",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-25"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5442456",
+        "name": "24 Hours to Live",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Paul Anderson",
+            "Ethan Hawke",
+            "Rutger Hauer",
+            "Nathalie Boltt"
+        ],
+        "length": "93 min",
+        "plot": "An assassin seeks redemption after being given a second chance at life.",
+        "director": "Brian Smrz",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-25"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1709143",
+        "name": "The Last Days on Mars",
+        "year": 2013,
+        "score": null,
+        "actors": [
+            "Liev Schreiber",
+            "Elias Koteas",
+            "Romola Garai",
+            "Olivia Williams"
+        ],
+        "length": "98 min",
+        "plot": "A group of astronaut explorers succumb one by one to a mysterious and terrifying force while collecting specimens on Mars.",
+        "director": "Ruairi Robinson",
+        "watched": true,
+        "date_watched": "2018-01-31",
+        "date_added": "2018-01-29"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1855199",
+        "name": "End of Watch",
+        "year": 2012,
+        "score": null,
+        "actors": [
+            "Jake Gyllenhaal",
+            "Michael Pe\u00f1a",
+            "Natalie Martinez",
+            "Anna Kendrick"
+        ],
+        "length": "109 min",
+        "plot": "Shot documentary-style, this film follows the daily grind of two young police officers in LA who are partners and friends, and what happens when they meet criminal forces greater than themselves.",
+        "director": "David Ayer",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-30"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5095030",
+        "name": "Ant-Man and the Wasp",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Hannah John-Kamen",
+            "Michelle Pfeiffer",
+            "Evangeline Lilly",
+            "Michael Douglas"
+        ],
+        "length": "N\/A",
+        "plot": "As Scott Lang balances being both a Super Hero and a father, Hope van Dyne and Dr. Hank Pym present an urgent new mission that finds the Ant-Man fighting alongside The Wasp to uncover secrets from their past.",
+        "director": "Peyton Reed",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-01-30"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6294822",
+        "name": "The Post",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Meryl Streep",
+            "Tom Hanks",
+            "Sarah Paulson",
+            "Bob Odenkirk"
+        ],
+        "length": "116 min",
+        "plot": "A cover-up that spanned four U.S. Presidents pushed the country's first female newspaper publisher and a hard-driving editor to join an unprecedented battle between the press and the government.",
+        "director": "Steven Spielberg",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-03"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0117060",
+        "name": "Mission: Impossible",
+        "year": 1996,
+        "score": null,
+        "actors": [
+            "Tom Cruise",
+            "Jon Voight",
+            "Emmanuelle B\u00e9art",
+            "Henry Czerny"
+        ],
+        "length": "110 min",
+        "plot": "An American agent, under false suspicion of disloyalty, must discover and expose the real spy without the help of his organization.",
+        "director": "Brian De Palma",
+        "watched": true,
+        "date_watched": "2018-02-06",
+        "date_added": "2018-02-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0120755",
+        "name": "Mission: Impossible II",
+        "year": 2000,
+        "score": null,
+        "actors": [
+            "Tom Cruise",
+            "Dougray Scott",
+            "Thandie Newton",
+            "Ving Rhames"
+        ],
+        "length": "123 min",
+        "plot": "A secret agent is sent to Sydney, to find and destroy a genetically modified disease called \"Chimera\".",
+        "director": "John Woo",
+        "watched": true,
+        "date_watched": "2018-02-06",
+        "date_added": "2018-02-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0317919",
+        "name": "Mission: Impossible III",
+        "year": 2006,
+        "score": null,
+        "actors": [
+            "Tom Cruise",
+            "Philip Seymour Hoffman",
+            "Ving Rhames",
+            "Billy Crudup"
+        ],
+        "length": "126 min",
+        "plot": "Agent Ethan Hunt comes into conflict with a dangerous and sadistic arms dealer who threatens his life and his fiance\u00e9 in response .",
+        "director": "J.J. Abrams",
+        "watched": true,
+        "date_watched": "2018-02-06",
+        "date_added": "2018-02-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1229238",
+        "name": "Mission: Impossible - Ghost Protocol",
+        "year": 2011,
+        "score": null,
+        "actors": [
+            "Tom Cruise",
+            "Paula Patton",
+            "Simon Pegg",
+            "Jeremy Renner"
+        ],
+        "length": "132 min",
+        "plot": "The IMF is shut down when it's implicated in the bombing of the Kremlin, causing Ethan Hunt and his new team to go rogue to clear their organization's name.",
+        "director": "Brad Bird",
+        "watched": true,
+        "date_watched": "2018-02-06",
+        "date_added": "2018-02-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2381249",
+        "name": "Mission: Impossible - Rogue Nation",
+        "year": 2015,
+        "score": null,
+        "actors": [
+            "Tom Cruise",
+            "Jeremy Renner",
+            "Simon Pegg",
+            "Rebecca Ferguson"
+        ],
+        "length": "131 min",
+        "plot": "Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization as highly skilled as they are, committed to destroying the IMF.",
+        "director": "Christopher McQuarrie",
+        "watched": true,
+        "date_watched": "2018-02-06",
+        "date_added": "2018-02-05"
+    },
+    {
+        "type": 4,
+        "imdbId": "NON-IMDB-ID-FRANCHISE-cea0160e-4953-4dd1-864a-c0c401e5309e",
+        "name": "Mission: Impossible",
+        "items": [
+            "tt0117060",
+            "tt0120755",
+            "tt0317919",
+            "tt1229238",
+            "tt2381249"
+        ],
+        "date_added": "2018-02-05"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1403177",
+        "name": "Hesher",
+        "year": 2010,
+        "score": null,
+        "actors": [
+            "Joseph Gordon-Levitt",
+            "Devin Brochu",
+            "Rainn Wilson",
+            "Piper Laurie"
+        ],
+        "length": "106 min",
+        "plot": "A young boy has lost his mother and is losing touch with his father and the world around him. Then he meets Hesher who manages to make his life even more chaotic.",
+        "director": "Spencer Susser",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-12"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2548396",
+        "name": "The Cloverfield Paradox",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Gugu Mbatha-Raw",
+            "David Oyelowo",
+            "Daniel Br\u00fchl",
+            "John Ortiz"
+        ],
+        "length": "102 min",
+        "plot": "Orbiting a planet on the brink of war, scientists test a device to solve an energy crisis, and end up face-to-face with a dark alternate reality.",
+        "director": "Julius Onah",
+        "watched": true,
+        "date_watched": "2018-02-13",
+        "date_added": "2018-02-13"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6802308",
+        "name": "The 15:17 to Paris",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Jenna Fischer",
+            "Judy Greer",
+            "Thomas Lennon",
+            "Jaleel White"
+        ],
+        "length": "94 min",
+        "plot": "American soldiers discover a terrorist plot on a Paris-bound train.",
+        "director": "Clint Eastwood",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-15"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6802308",
+        "name": "The 15:17 to Paris",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Jenna Fischer",
+            "Judy Greer",
+            "Thomas Lennon",
+            "Jaleel White"
+        ],
+        "length": "94 min",
+        "plot": "American soldiers discover a terrorist plot on a Paris-bound train.",
+        "director": "Clint Eastwood",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-15"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0080487",
+        "name": "Caddyshack",
+        "year": 1980,
+        "score": null,
+        "actors": [
+            "Chevy Chase",
+            "Rodney Dangerfield",
+            "Ted Knight",
+            "Michael O'Keefe",
+            "Bill Murray"
+        ],
+        "length": "98 min",
+        "plot": "An exclusive golf course has to deal with a brash new member and a destructive dancing gopher.",
+        "director": "Harold Ramis",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-15"
     }
 ]
