@@ -38471,8 +38471,8 @@
         "length": "93 min",
         "plot": "The adventures of a young woman living in Northern California for a year.",
         "director": "Greta Gerwig",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-26",
         "date_added": "2017-11-28"
     },
     {
@@ -38659,8 +38659,8 @@
         "length": "127 min",
         "plot": "Can an over-the-hill journalist uncover the evidence that can prove a death row inmate's innocence just hours before his execution?",
         "director": "Clint Eastwood",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-26",
         "date_added": "2017-12-01"
     },
     {
@@ -40220,5 +40220,63 @@
         "watched": false,
         "date_watched": null,
         "date_added": "2018-02-15"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5027774",
+        "name": "Three Billboards Outside Ebbing, Missouri",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Frances McDormand",
+            "Caleb Landry Jones",
+            "Kerry Condon",
+            "Sam Rockwell"
+        ],
+        "length": "115 min",
+        "plot": "A mother personally challenges the local authorities to solve her daughter's murder when they fail to catch the culprit.",
+        "director": "Martin McDonagh",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-19"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5649144",
+        "name": "The Florida Project",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Brooklynn Prince",
+            "Christopher Rivera",
+            "Aiden Malik",
+            "Josie Olivo",
+            "Willem Dafoe"
+        ],
+        "length": "111 min",
+        "plot": "Set over one summer, the film follows precocious six-year-old Moonee as she courts mischief and adventure with her ragtag playmates and bonds with her rebellious but caring mother, all while living in the shadows of Walt Disney World.",
+        "director": "Sean Baker",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-20"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5580036",
+        "name": "I, Tonya",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Margot Robbie",
+            "Sebastian Stan",
+            "Allison Janney",
+            "Julianne Nicholson"
+        ],
+        "length": "120 min",
+        "plot": "Competitive ice skater Tonya Harding rises amongst the ranks at the U.S. Figure Skating Championships, but her future in the activity is thrown into doubt when her ex-husband intervenes.",
+        "director": "Craig Gillespie",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-21"
     }
 ]
