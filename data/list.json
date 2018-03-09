@@ -40184,25 +40184,6 @@
     },
     {
         "type": 0,
-        "imdbId": "tt6802308",
-        "name": "The 15:17 to Paris",
-        "year": 2018,
-        "score": null,
-        "actors": [
-            "Jenna Fischer",
-            "Judy Greer",
-            "Thomas Lennon",
-            "Jaleel White"
-        ],
-        "length": "94 min",
-        "plot": "American soldiers discover a terrorist plot on a Paris-bound train.",
-        "director": "Clint Eastwood",
-        "watched": false,
-        "date_watched": null,
-        "date_added": "2018-02-15"
-    },
-    {
-        "type": 0,
         "imdbId": "tt0080487",
         "name": "Caddyshack",
         "year": 1980,
@@ -40236,8 +40217,8 @@
         "length": "115 min",
         "plot": "A mother personally challenges the local authorities to solve her daughter's murder when they fail to catch the culprit.",
         "director": "Martin McDonagh",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-02-26",
         "date_added": "2018-02-19"
     },
     {
@@ -40278,5 +40259,180 @@
         "watched": false,
         "date_watched": null,
         "date_added": "2018-02-21"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2380307",
+        "name": "Coco",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Anthony Gonzalez",
+            "Gael Garc\u00eda Bernal",
+            "Benjamin Bratt",
+            "Alanna Ubach"
+        ],
+        "length": "105 min",
+        "plot": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+        "director": "Lee Unkrich, Adrian Molina(co-director)",
+        "watched": true,
+        "date_watched": "2018-02-27",
+        "date_added": "2018-02-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0393162",
+        "name": "Coach Carter",
+        "year": 2005,
+        "score": null,
+        "actors": [
+            "Samuel L. Jackson",
+            "Rob Brown",
+            "Robert Ri'chard",
+            "Rick Gonzalez"
+        ],
+        "length": "136 min",
+        "plot": "Controversy surrounds high school basketball coach Ken Carter after he benches his entire team for breaking their academic contract with him.",
+        "director": "Thomas Carter",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-02-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5776858",
+        "name": "Phantom Thread",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Vicky Krieps",
+            "Daniel Day-Lewis",
+            "Lesley Manville",
+            "Sue Clark"
+        ],
+        "length": "130 min",
+        "plot": "Set in 1950's London, Reynolds Woodcock is a renowned dressmaker whose fastidious life is disrupted by a young, strong-willed woman, Alma, who becomes his muse and lover.",
+        "director": "Paul Thomas Anderson",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-01"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt6983520",
+        "name": "Kantaro: The Sweet Tooth Salaryman",
+        "plot": "A stoic book salesman leads a double life as he plays hooky from work to write his sweets blog. In his journey to attain a glimpse of sweets heaven Kantaro samples various Japanese and Western sweets.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Matsuya Onoe",
+            "Ren Ishikawa",
+            "Sarutoki Minagawa",
+            "Hiroyuki Onoue"
+        ],
+        "date_added": "2018-03-06"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1464763",
+        "name": "Mute",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Alexander Skarsg\u00e5rd",
+            "Paul Rudd",
+            "Justin Theroux",
+            "Seyneb Saleh"
+        ],
+        "length": "126 min",
+        "plot": "A mute bartender goes up against his city's gangsters in an effort to find out what happened to his missing partner.",
+        "director": "Duncan Jones",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-09"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2798920",
+        "name": "Annihilation",
+        "year": 2018,
+        "score": null,
+        "actors": [
+            "Natalie Portman",
+            "Benedict Wong",
+            "Sonoya Mizuno",
+            "David Gyasi"
+        ],
+        "length": "115 min",
+        "plot": "A biologist signs up for a dangerous, secret expedition where the laws of nature don't apply.",
+        "director": "Alex Garland",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-09"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt2261227",
+        "name": "Altered Carbon",
+        "plot": "Set in a future where consciousness is digitized and stored, a prisoner returns to life in a new body and must solve a mind-bending murder to win his freedom.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2018,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Martha Higareda",
+            "Antonio Marziale",
+            "Chris Conner",
+            "Hiro Kanagawa"
+        ],
+        "date_added": "2018-03-09"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0171804",
+        "name": "Boys Don't Cry",
+        "year": 1999,
+        "score": null,
+        "actors": [
+            "Hilary Swank",
+            "Chlo\u00eb Sevigny",
+            "Peter Sarsgaard",
+            "Brendan Sexton III"
+        ],
+        "length": "118 min",
+        "plot": "Female-born Teena Brandon adopts his male identity of Brandon Teena and attempts to find himself and love in Nebraska.",
+        "director": "Kimberly Peirce",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-09"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0079944",
+        "name": "Stalker",
+        "year": 1979,
+        "score": null,
+        "actors": [
+            "Alisa Freyndlikh",
+            "Aleksandr Kaydanovskiy",
+            "Anatoliy Solonitsyn",
+            "Nikolay Grinko"
+        ],
+        "length": "162 min",
+        "plot": "A guide leads two men through an area known as the Zone to find a room that grants wishes.",
+        "director": "Andrei Tarkovsky",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-09"
     }
 ]
