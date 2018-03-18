@@ -3348,49 +3348,70 @@
                     {
                         "imdbId": "tt6603454",
                         "nr": 1,
-                        "title": "Heroes of Mandalore",
+                        "title": "Heroes of Mandalore: Part 1",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-03-12"
                     },
                     {
                         "imdbId": "tt7388410",
                         "nr": 2,
                         "title": "Heroes of Mandalore: Part 2",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-03-12"
                     },
                     {
                         "imdbId": "tt7388414",
                         "nr": 3,
                         "title": "In the Name of the Rebellion: Part 1",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-03-12"
                     },
                     {
                         "imdbId": "tt7388436",
                         "nr": 4,
                         "title": "In the Name of the Rebellion: Part 2",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-03-12"
                     },
                     {
                         "imdbId": "tt7445250",
                         "nr": 5,
                         "title": "The Occupation",
                         "watched": true,
-                        "date_watched": null
+                        "date_watched": "2018-03-12"
                     },
                     {
                         "imdbId": "tt7435126",
                         "nr": 6,
                         "title": "Flight of the Defender",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-03-12"
                     },
                     {
                         "imdbId": "tt7401854",
                         "nr": 8,
                         "title": "Crawler Commandeers",
+                        "watched": true,
+                        "date_watched": "2018-03-12"
+                    },
+                    {
+                        "imdbId": "tt7401858",
+                        "nr": 9,
+                        "title": "Rebel Assault",
+                        "watched": true,
+                        "date_watched": "2018-03-12"
+                    },
+                    {
+                        "imdbId": "tt7616092",
+                        "nr": 12,
+                        "title": "Wolves at the Door",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7616114",
+                        "nr": 13,
+                        "title": "A World Between Worlds",
                         "watched": false,
                         "date_watched": null
                     }
@@ -21668,8 +21689,8 @@
         "length": "106 min",
         "plot": "Allied soldiers from Belgium, the British Empire and France are surrounded by the German Army, and evacuated during a fierce battle in World War II.",
         "director": "Christopher Nolan",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-03-10",
         "date_added": null
     },
     {
@@ -34567,39 +34588,74 @@
                 "nr": 1,
                 "episodes": [
                     {
+                        "imdbId": "tt6040342",
+                        "nr": 1,
+                        "title": "Chapter I",
+                        "watched": true,
+                        "date_watched": "2018-03-11"
+                    },
+                    {
                         "imdbId": "tt6057308",
                         "nr": 2,
                         "title": "Chapter II",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-03-11"
+                    },
+                    {
+                        "imdbId": "tt6063064",
+                        "nr": 3,
+                        "title": "Chapter III",
+                        "watched": true,
+                        "date_watched": "2018-03-11"
+                    },
+                    {
+                        "imdbId": "tt6063066",
+                        "nr": 4,
+                        "title": "Chapter IV",
+                        "watched": true,
+                        "date_watched": "2018-03-12"
+                    },
+                    {
+                        "imdbId": "tt6116364",
+                        "nr": 5,
+                        "title": "Chapter V",
+                        "watched": true,
+                        "date_watched": "2018-03-12"
+                    },
+                    {
+                        "imdbId": "tt6057312",
+                        "nr": 6,
+                        "title": "Chapter VI",
+                        "watched": true,
+                        "date_watched": "2018-03-13"
                     },
                     {
                         "imdbId": "tt6443570",
                         "nr": 7,
                         "title": "Chapter VII",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-03-14"
                     },
                     {
                         "imdbId": "tt6175748",
                         "nr": 8,
                         "title": "Chapter VIII",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-03-15"
                     },
                     {
                         "imdbId": "tt6443568",
                         "nr": 9,
                         "title": "Chapter IX",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-03-15"
                     },
                     {
                         "imdbId": "tt6361938",
                         "nr": 10,
                         "title": "Chapter X",
-                        "watched": false,
-                        "date_watched": null
+                        "watched": true,
+                        "date_watched": "2018-03-15"
                     }
                 ]
             }
@@ -40434,5 +40490,178 @@
         "watched": false,
         "date_watched": null,
         "date_added": "2018-03-09"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0113277",
+        "name": "Heat",
+        "year": 1995,
+        "score": null,
+        "actors": [
+            "Al Pacino",
+            "Robert De Niro",
+            "Val Kilmer",
+            "Jon Voight"
+        ],
+        "length": "170 min",
+        "plot": "A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist, while both sides attempt to find balance between their personal and professional lives.",
+        "director": "Michael Mann",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-10"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1340123",
+        "name": "Samson & Delilah",
+        "year": 2009,
+        "score": null,
+        "actors": [
+            "Rowan McNamara",
+            "Marissa Gibson",
+            "Mitjili Napanangka Gibson",
+            "Scott Thornton"
+        ],
+        "length": "101 min",
+        "plot": "Samson and Delilah's world is small- an isolated community in the Central Australian desert. When tragedy strikes they turn their backs on home and embark on a journey of survival. Lost, ...",
+        "director": "Warwick Thornton",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-14"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6958212",
+        "name": "Sweet Country",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Bryan Brown",
+            "Matt Day",
+            "Tremayne Doolan",
+            "Trevon Doolan"
+        ],
+        "length": "113 min",
+        "plot": "Australian western set on the Northern Territory frontier in the 1920s, where justice itself is put on trial when an aged Aboriginal farmhand shoots a white man in self defense and goes on the run as posse gathers to hunt him down.",
+        "director": "Warwick Thornton",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-14"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6800942",
+        "name": "Verna",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Mahira Khan",
+            "Haroon Shahid",
+            "Zarrar Khan",
+            "Rasheed Naz"
+        ],
+        "length": "158 min",
+        "plot": "A married couple's life falls apart as they face extraordinary circumstances.",
+        "director": "Shoaib Mansoor",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-16"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt6474236",
+        "name": "The Looming Tower",
+        "plot": "Tracing the rising threat of Osama bin Laden and Al-Qaeda, it takes a controversial look at how the rivalry between the CIA and FBI inadvertently might have set the stage for the tragedy of 9\/11 and the war in Iraq.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2018,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Sullivan Jones",
+            "Kelly P. Williams",
+            "Erica Cho",
+            "Katie Flahive"
+        ],
+        "date_added": "2018-03-16"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5362988",
+        "name": "Wind River",
+        "year": 2017,
+        "score": null,
+        "actors": [
+            "Kelsey Asbille",
+            "Jeremy Renner",
+            "Julia Jones",
+            "Teo Briones"
+        ],
+        "length": "107 min",
+        "plot": "A veteran tracker with the Fish and Wildlife Service helps to investigate the murder of a young Native American woman, and uses the case as a means of seeking redemption for an earlier act of irresponsibility which ended in tragedy.",
+        "director": "Taylor Sheridan",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-17"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4547056",
+        "name": "The Girl with All the Gifts",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Sennia Nanua",
+            "Fisayo Akinade",
+            "Dominique Tipper",
+            "Paddy Considine"
+        ],
+        "length": "111 min",
+        "plot": "A scientist and a teacher living in a dystopian future embark on a journey of survival with a special young girl named Melanie.",
+        "director": "Colm McCarthy",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-17"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2321405",
+        "name": "My Life as a Zucchini",
+        "year": 2016,
+        "score": null,
+        "actors": [
+            "Gaspard Schlatter",
+            "Sixtine Murat",
+            "Paulin Jaccoud",
+            "Michel Vuillermoz"
+        ],
+        "length": "70 min",
+        "plot": "After losing his mother, a young boy is sent to a foster home with other orphans his age where he begins to learn the meaning of trust and true love.",
+        "director": "Claude Barras",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-17"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0443706",
+        "name": "Zodiac",
+        "year": 2007,
+        "score": null,
+        "actors": [
+            "Jake Gyllenhaal",
+            "Mark Ruffalo",
+            "Anthony Edwards",
+            "Robert Downey Jr."
+        ],
+        "length": "157 min",
+        "plot": "In the late 1960s\/early 1970s, a San Francisco cartoonist becomes an amateur detective obsessed with tracking down the Zodiac Killer, an unidentified individual who terrorizes Northern California with a killing spree.",
+        "director": "David Fincher",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-03-17"
     }
 ]

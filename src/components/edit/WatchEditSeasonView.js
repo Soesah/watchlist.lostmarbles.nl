@@ -22,8 +22,8 @@ let WatchEditSeasonView = Vue.component('watch-edit-season-view', {
               </div>
 
               <h3>Episodes</h3>
-              <ul class="episode-list" v-if="season.episodes">
-                <li v-if="season.episodes && season.episodes[0].nr !== 1">
+              <ul class="episode-list" v-if="season.episodes && season.episodes.length">
+                <li v-if="season.episodes.length && season.episodes[0].nr !== 1">
                   <div class="form-item">
                     <label></label>
                     <div class="form-input-group form-input-group-right">
