@@ -1,22 +1,44 @@
 {
-  "name": "Watchlist",
-  "description": "Just another movie/series watch list app",
-  "version": "2.0.6",
-  "author": {
-    "name": "Carl Giesberts"
+  "name": "watchlist.lostmarbles.nl",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "store": "gcloud beta emulators datastore start",
+    "app": "$(gcloud beta emulators datastore env-init) && dev_appserver.py dev/app-develop.yaml --automatic_restart=no --support_datastore_emulator=True --port 8182",
+    "update-index": "cp dev/index.yaml ./index.yaml && gcloud datastore create-indexes index.yaml --project watchlist-lost-marbles -q"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "moment": "^2.23.0",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.1",
+    "vuelidate": "^0.7.4",
+    "vuex": "^3.0.1",
+    "vuex-typex": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "^1.8.0",
-    "eslint-plugin-nodeca": "^1.0.3",
-    "grunt": "^0.4.5",
-    "grunt-closure-compiler": "0.0.21",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-contrib-cssmin": "^0.9.0",
-    "grunt-contrib-less": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-ftp-deploy": "^0.1.10",
-    "grunt-http": "^1.6.0",
-    "grunt-shell": "^0.6.4",
-    "grunt-text-replace": "^0.3.12"
+    "@types/jest": "^23.1.4",
+    "@types/moment": "^2.13.0",
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-plugin-typescript": "^3.0.5",
+    "@vue/cli-plugin-unit-jest": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "@vue/eslint-config-typescript": "^3.2.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "ts-jest": "^23.0.0",
+    "typescript": "~3.1.1",
+    "vue-template-compiler": "^2.5.21"
   }
 }
