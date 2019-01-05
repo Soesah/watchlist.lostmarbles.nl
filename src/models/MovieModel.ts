@@ -8,7 +8,7 @@ export interface MovieType {
   score: number;
   actors: string[];
   length: string;
-  plot: number;
+  plot: string;
   director: string;
   watched: boolean;
   date_watched: string | null;
@@ -23,7 +23,7 @@ export class Movie extends BaseModel {
   public score: number;
   public actors: string[];
   public length: string;
-  public plot: number;
+  public plot: string;
   public director: string;
   public watched: boolean;
   public date_watched: string | null;
