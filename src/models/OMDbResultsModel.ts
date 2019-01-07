@@ -1,3 +1,7 @@
+interface OMDbResults {
+  Search: OMDbResult[];
+  totalResults: string;
+}
 interface OMDbResult {
   Title: string;
   Year: string;
@@ -6,17 +10,11 @@ interface OMDbResult {
   Poster: string;
 }
 
-export class OMDbResults {
+export class OMDbSearchResults {
   public results: OMDbResult[];
   public count: number;
 
-  constructor({
-    Search,
-    totalResults
-  }: {
-    Search: OMDbResult[];
-    totalResults: string;
-  }) {
+  constructor({ Search, totalResults }: OMDbResults) {
     this.results = Search;
     this.count = parseInt(totalResults);
   }

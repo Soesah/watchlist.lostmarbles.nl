@@ -9,6 +9,7 @@ import (
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/httpext"
 )
 
+//RootHandler serves the index.html file
 func RootHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 	t, err := template.ParseFiles(config.Get().DistFolder + "/index.html")
@@ -23,6 +24,7 @@ func RootHandler(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, "")
 }
 
+//NotSupportedAPIHandler can be used a placehold when implementing apis
 func NotSupportedAPIHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 

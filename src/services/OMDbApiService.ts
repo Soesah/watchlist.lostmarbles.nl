@@ -1,6 +1,6 @@
 import { BaseService } from '@/core/services/BaseService';
 import { OMDbObject } from '@/models/OMDbObjectModel';
-import { OMDbResults } from '@/models/OMDbResultsModel';
+import { OMDbSearchResults } from '@/models/OMDbResultsModel';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Series } from '@/models/SeriesModel';
 
@@ -44,7 +44,7 @@ class OMDbApiService extends BaseService {
   search(name: string, year: string) {
     return this.request(
       this.url + '?s=' + name + (year ? '&y=' + year : ''),
-      OMDbResults
+      OMDbSearchResults
     );
   }
 

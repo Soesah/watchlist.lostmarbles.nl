@@ -9,7 +9,7 @@ import (
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/httpext"
 )
 
-// ImportData is used to import hours
+// ImportData is used to import a whole watchlist
 func ImportData(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
 	var data []models.WatchlistItem
@@ -30,7 +30,7 @@ func ImportData(w http.ResponseWriter, r *http.Request) {
 	httpext.JSON(w, data)
 }
 
-// RemoveData is used to import hours
+// RemoveData is used to clear the datastore
 func RemoveData(w http.ResponseWriter, r *http.Request) {
 	err := system.ClearAllItems(r)
 
@@ -42,7 +42,7 @@ func RemoveData(w http.ResponseWriter, r *http.Request) {
 	httpext.SuccessAPI(w, "Items removed")
 }
 
-// ExportData is used to import hours
+// ExportData is used to export data from the datastore
 func ExportData(w http.ResponseWriter, r *http.Request) {
 	data, err := system.ExportData(r)
 

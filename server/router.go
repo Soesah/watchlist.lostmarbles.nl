@@ -37,7 +37,25 @@ func Router() *chi.Mux {
 
 	r.Route("/api", func(r chi.Router) {
 
-		r.Get("/list", handlers.NotSupportedAPIHandler)
+		r.Get("/list", handlers.GetList)
+
+		r.Post("/movie", handlers.AddMovie)
+		r.Post("/series", handlers.AddSeries)
+		r.Post("/documentary", handlers.AddDocumentary)
+		r.Post("/game", handlers.AddGame)
+		r.Post("/franchise", handlers.AddFranchise)
+
+		r.Put("/movie", handlers.UpdateMovie)
+		r.Put("/series", handlers.UpdateSeries)
+		r.Put("/documentary", handlers.UpdateDocumentary)
+		r.Put("/game", handlers.UpdateGame)
+		r.Put("/franchise", handlers.UpdateFranchise)
+
+		r.Delete("/movie", handlers.DeleteMovie)
+		r.Delete("/series", handlers.DeleteSeries)
+		r.Delete("/documentary", handlers.DeleteDocumentary)
+		r.Delete("/game", handlers.DeleteGame)
+		r.Delete("/franchise", handlers.DeleteFranchise)
 
 		r.Route("/omdb", func(r chi.Router) {
 			r.Get("/get", handlers.NotSupportedAPIHandler)
