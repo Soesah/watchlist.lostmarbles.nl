@@ -22,3 +22,25 @@ type SeriesData struct {
 	Actors    []string
 	DateAdded string
 }
+
+// GetSeries returns a Series with seasons
+func (seriesData SeriesData) GetSeries(seasons []Season) Series {
+	var seriesSeasons []Season
+
+	for _, season := range seasons {
+		if season.SeriesImdbID == seriesData.ImdbID {
+			seriesSeasons = append(seriesSeasons, season)
+		}
+	}
+
+	return Series{
+		Type:      seriesData.Type,
+		ImdbID:    seriesData.ImdbID,
+		Name:      seriesData.Name,
+		Plot:      seriesData.Plot,
+		Finished:  seriesData.Finished,
+		Seasons:   seriesSeasons,
+		Actors:    seriesData.Actors,
+		DateAdded: seriesData.DateAdded,
+	}
+}

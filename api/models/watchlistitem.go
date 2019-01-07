@@ -69,8 +69,9 @@ func (item WatchlistItem) SeasonsData() []SeasonData {
 
 	for _, season := range item.Seasons {
 		data := SeasonData{
-			Year: season.Year,
-			Nr:   season.Nr,
+			Year:         season.Year,
+			Nr:           season.Nr,
+			SeriesImdbID: item.ImdbID,
 		}
 		seasons = append(seasons, data)
 	}
@@ -85,12 +86,13 @@ func (item WatchlistItem) EpisodesData() []Episode {
 	for _, season := range item.Seasons {
 		for _, ep := range season.Episodes {
 			data := Episode{
-				ImdbID:      ep.ImdbID,
-				SeasonNr:    season.Nr,
-				Nr:          ep.Nr,
-				Title:       ep.Title,
-				Watched:     ep.Watched,
-				DateWatched: ep.DateWatched,
+				ImdbID:       ep.ImdbID,
+				Nr:           ep.Nr,
+				Title:        ep.Title,
+				Watched:      ep.Watched,
+				DateWatched:  ep.DateWatched,
+				SeasonNr:     season.Nr,
+				SeriesImdbID: item.ImdbID,
 			}
 			episodes = append(episodes, data)
 		}
