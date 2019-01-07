@@ -40,41 +40,41 @@ func ItemKey(ctx context.Context) *datastore.Key {
 }
 
 // MovieKey returns a key for Movie -> ItemKey -> WatchlistKey
-func MovieKey(ctx context.Context, movie models.Movie) *datastore.Key {
-	return datastore.NewKey(ctx, MovieKind, movie.ImdbID, 0, ItemKey(ctx))
+func MovieKey(ctx context.Context, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, MovieKind, imdbID, 0, ItemKey(ctx))
 }
 
 // SeriesKey returns a key for Series -> ItemKey -> WatchlistKey
-func SeriesKey(ctx context.Context, series models.Series) *datastore.Key {
-	return datastore.NewKey(ctx, SeriesKind, series.ImdbID, 0, ItemKey(ctx))
+func SeriesKey(ctx context.Context, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, SeriesKind, imdbID, 0, ItemKey(ctx))
 }
 
 // SeriesDataKey returns a key for Series -> ItemKey -> WatchlistKey
-func SeriesDataKey(ctx context.Context, series models.SeriesData) *datastore.Key {
-	return datastore.NewKey(ctx, SeriesKind, series.ImdbID, 0, ItemKey(ctx))
+func SeriesDataKey(ctx context.Context, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, SeriesKind, imdbID, 0, ItemKey(ctx))
 }
 
 // SeasonKey returns a key for Season -> Series -> ItemKey -> WatchlistKey
-func SeasonKey(ctx context.Context, season models.SeasonData, series models.SeriesData) *datastore.Key {
-	return datastore.NewKey(ctx, SeasonKind, "", season.Nr, SeriesDataKey(ctx, series))
+func SeasonKey(ctx context.Context, season models.SeasonData) *datastore.Key {
+	return datastore.NewKey(ctx, SeasonKind, "", season.Nr, SeriesDataKey(ctx, season.SeriesImdbID))
 }
 
 // EpisodeKey returns a key for Episode -> Series -> ItemKey -> WatchlistKey
-func EpisodeKey(ctx context.Context, episode models.Episode, series models.SeriesData) *datastore.Key {
-	return datastore.NewKey(ctx, EpisodeKind, "", episode.Nr, SeriesDataKey(ctx, series))
+func EpisodeKey(ctx context.Context, episode models.Episode) *datastore.Key {
+	return datastore.NewKey(ctx, EpisodeKind, "", episode.Nr, SeriesDataKey(ctx, episode.SeriesImdbID))
 }
 
 // DocumentaryKey returns a key for Documentary -> ItemKey -> WatchlistKey
-func DocumentaryKey(ctx context.Context, documentary models.Documentary) *datastore.Key {
-	return datastore.NewKey(ctx, DocumentaryKind, documentary.ImdbID, 0, ItemKey(ctx))
+func DocumentaryKey(ctx context.Context, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, DocumentaryKind, imdbID, 0, ItemKey(ctx))
 }
 
 // GameKey returns a key for Game -> ItemKey -> WatchlistKey
-func GameKey(ctx context.Context, game models.Game) *datastore.Key {
-	return datastore.NewKey(ctx, GameKind, game.ImdbID, 0, ItemKey(ctx))
+func GameKey(ctx context.Context, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, GameKind, imdbID, 0, ItemKey(ctx))
 }
 
 // FranchiseKey returns a key for Franchise -> ItemKey -> WatchlistKey
-func FranchiseKey(ctx context.Context, franchise models.Franchise) *datastore.Key {
-	return datastore.NewKey(ctx, FranchiseKind, franchise.ImdbID, 0, ItemKey(ctx))
+func FranchiseKey(ctx context.Context, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, FranchiseKind, imdbID, 0, ItemKey(ctx))
 }

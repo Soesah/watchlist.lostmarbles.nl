@@ -36,25 +36,25 @@ func ImportData(items []models.WatchlistItem, r *http.Request) ([]models.Watchli
 		var key *datastore.Key
 
 		if item.IsMovie() {
-			key = api.MovieKey(ctx, item.Movie())
+			key = api.MovieKey(ctx, item.Movie().ImdbID)
 			movieKeys = append(movieKeys, key)
 			movies = append(movies, item.Movie())
 		}
 
 		if item.IsSeries() {
-			key = api.SeriesDataKey(ctx, item.Series())
+			key = api.SeriesDataKey(ctx, item.Series().ImdbID)
 			seriesKeys = append(seriesKeys, key)
 			series = append(series, item.Series())
 			// import seasons with series parent key
 			for _, season := range item.SeasonsData() {
-				key = api.SeasonKey(ctx, season, item.Series())
+				key = api.SeasonKey(ctx, season)
 				seasonKeys = append(seasonKeys, key)
 				seasons = append(seasons, season)
 
 			}
 			// import episodes with season parent key and series parent key
 			for _, episode := range item.EpisodesData() {
-				key = api.EpisodeKey(ctx, episode, item.Series())
+				key = api.EpisodeKey(ctx, episode)
 				episodeKeys = append(episodeKeys, key)
 				episodes = append(episodes, episode)
 
@@ -62,19 +62,19 @@ func ImportData(items []models.WatchlistItem, r *http.Request) ([]models.Watchli
 		}
 
 		if item.IsDocumentary() {
-			key = api.DocumentaryKey(ctx, item.Documentary())
+			key = api.DocumentaryKey(ctx, item.Documentary().ImdbID)
 			documentaryKeys = append(documentaryKeys, key)
 			documentaries = append(documentaries, item.Documentary())
 		}
 
 		if item.IsGame() {
-			key = api.GameKey(ctx, item.Game())
+			key = api.GameKey(ctx, item.Game().ImdbID)
 			gameKeys = append(gameKeys, key)
 			games = append(games, item.Game())
 		}
 
 		if item.IsFranchise() {
-			key = api.FranchiseKey(ctx, item.Franchise())
+			key = api.FranchiseKey(ctx, item.Franchise().ImdbID)
 			franchiseKeys = append(franchiseKeys, key)
 			franchises = append(franchises, item.Franchise())
 		}
