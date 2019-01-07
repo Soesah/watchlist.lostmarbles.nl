@@ -2,9 +2,10 @@ package models
 
 // Episode is a data model
 type Episode struct {
-	ImdbID      string `json:"imdbId,omitempty"`
-	Nr          int    `json:"nr,omitempty"`
-	Title       string `json:"title,omitempty"`
-	Watched     bool   `json:"watched,omitempty"`
-	DateWatched string `json:"date__watched,omitempty"`
+	ImdbID      string `json:"imdbId"`
+	SeasonNr    int64  `json:"-"`
+	Nr          int64  `json:"nr"`
+	Title       string `json:"title"`
+	Watched     bool   `json:"watched"`
+	DateWatched string `json:"date__watched"`
 }

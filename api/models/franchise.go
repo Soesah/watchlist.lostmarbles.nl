@@ -2,18 +2,9 @@ package models
 
 // Franchise is a data model
 type Franchise struct {
-	Type      int      `json:"type,omitempty"`
-	ImdbID    string   `json:"imdbId,omitempty"`
-	Name      string   `json:"name,omitempty"`
-	Items     []string `json:"items,omitempty"`
-	DateAdded string   `json:"date_added,omitempty"`
-}
-
-// FranchiseData is an internal data model
-type FranchiseData struct {
-	Type      int
-	ImdbID    string
-	Name      string
-	Items     string
-	DateAdded string
+	Type      int64    `json:"type"`
+	ImdbID    string   `json:"imdbId"`
+	Name      string   `json:"name"`
+	Items     []string `json:"items"`
+	DateAdded string   `json:"date_added"`
 }

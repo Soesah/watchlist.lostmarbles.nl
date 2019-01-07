@@ -2,32 +2,16 @@ package models
 
 // Game is a data model
 type Game struct {
-	Type       int      `json:"type,omitempty"`
-	ImdbID     string   `json:"imdbId,omitempty"`
-	Name       string   `json:"name,omitempty"`
-	Year       int      `json:"year,omitempty"`
-	Score      int      `json:"score,omitempty"`
-	Plot       string   `json:"plot,omitempty"`
-	Actors     []string `json:"actors,omitempty"`
-	Publisher  string   `json:"publisher,omitempty"`
-	Genre      string   `json:"genre,omitempty"`
-	Played     bool     `json:"played,omitempty"`
-	DatePlayed string   `json:"date_played,omitempty"`
-	DateAdded  string   `json:"date_added,omitempty"`
-}
-
-// GameData is an internal data model
-type GameData struct {
-	Type       int
-	ImdbID     string
-	Name       string
-	Year       int
-	Score      int
-	Plot       string
-	Actors     string
-	Publisher  string
-	Genre      string
-	Played     bool
-	DatePlayed string
-	DateAdded  string
+	Type       int64    `json:"type"`
+	ImdbID     string   `json:"imdbId"`
+	Name       string   `json:"name"`
+	Year       int64    `json:"year"`
+	Score      int64    `json:"score"`
+	Plot       string   `json:"plot"`
+	Actors     []string `json:"actors"`
+	Publisher  string   `json:"publisher"`
+	Genre      string   `json:"genre"`
+	Played     bool     `json:"played"`
+	DatePlayed string   `json:"date_played"`
+	DateAdded  string   `json:"date_added"`
 }
