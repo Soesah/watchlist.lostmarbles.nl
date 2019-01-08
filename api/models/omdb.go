@@ -1,6 +1,21 @@
 package models
 
-//OMDBObject is the result from OMDB
+// OMDbResults holds the search results from OMDB
+type OMDbResults struct {
+	Search       []OMDbResult `json:"search"`
+	TotalResults string       `json:"total_results"`
+}
+
+// OMDbResult holds the search result from OMDB
+type OMDbResult struct {
+	Title  string `json:"title"`
+	Year   string `json:"year"`
+	ImdbID string `json:"imdbId"`
+	Type   string `json:"type"`
+	Poster string `json:"poster"`
+}
+
+//OMDBObject is the item result from OMDB
 type OMDBObject struct {
 	Title        string
 	Year         string

@@ -4,6 +4,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/Soesah/watchlist.lostmarbles.nl/server/config"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/handlers"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/middlewares"
 	"github.com/go-chi/chi"
@@ -13,7 +14,7 @@ import (
 // Router creates a new router with all the routes attached
 func Router() *chi.Mux {
 
-	// config.Init()
+	config.Init()
 
 	r := chi.NewRouter()
 
@@ -59,7 +60,8 @@ func Router() *chi.Mux {
 
 		r.Route("/omdb", func(r chi.Router) {
 			r.Get("/get", handlers.NotSupportedAPIHandler)
-			r.Get("/search", handlers.NotSupportedAPIHandler)
+			r.Get("/search/{search}", handlers.OMDBSearch)
+			r.Get("/search/{search}/{year}", handlers.OMDBSearch)
 		})
 
 		r.Route("/system", func(r chi.Router) {
