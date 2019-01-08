@@ -1012,13 +1012,89 @@
                 ]
             },
             {
-                "year": null,
+                "year": 2017,
                 "nr": 3,
                 "episodes": [
                     {
                         "imdbId": "tt5970530",
                         "nr": 1,
-                        "title": "Episode #3.1",
+                        "title": "eps3.0_power-saver-mode.h",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6633686",
+                        "nr": 2,
+                        "title": "eps3.1_undo.gz",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6633688",
+                        "nr": 3,
+                        "title": "eps3.2_legacy.so",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6633692",
+                        "nr": 4,
+                        "title": "eps3.3_m3tadata.par2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6633696",
+                        "nr": 5,
+                        "title": "eps3.4_runtime-err0r.r00",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6635194",
+                        "nr": 6,
+                        "title": "eps3.5_kill-pr0cess.inc",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6635200",
+                        "nr": 7,
+                        "title": "eps3.6_fredrick+tanya.chk",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6635212",
+                        "nr": 8,
+                        "title": "eps3.7_dont-delete-me.ko",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6635210",
+                        "nr": 9,
+                        "title": "eps3.8_stage3.torrent",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6633682",
+                        "nr": 10,
+                        "title": "shutdown -r",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": null,
+                "nr": 4,
+                "episodes": [
+                    {
+                        "imdbId": "tt8084176",
+                        "nr": 7,
+                        "title": "Episode #4.7",
                         "watched": false,
                         "date_watched": null
                     }
@@ -24526,8 +24602,8 @@
         "length": "97 min",
         "plot": "A prettier, popular teenager can't go out on a date until her ill-tempered older sister does.",
         "director": "Gil Junger",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-12-29",
         "date_added": null
     },
     {
@@ -32708,24 +32784,162 @@
                 ]
             },
             {
-                "year": null,
+                "year": 2017,
                 "nr": 5,
                 "episodes": [
                     {
+                        "imdbId": "tt7688104",
+                        "nr": 0,
+                        "title": "Episode #5.0",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
                         "imdbId": "tt5570894",
                         "nr": 1,
-                        "title": "Episode #5.1",
+                        "title": "The Departed, Part 1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5901734",
+                        "nr": 2,
+                        "title": "The Departed, Part 2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5956216",
+                        "nr": 3,
+                        "title": "Homeland",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5956218",
+                        "nr": 4,
+                        "title": "The Plan",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5973272",
+                        "nr": 5,
+                        "title": "The Prisoner",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5988206",
+                        "nr": 6,
+                        "title": "The Message",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6374338",
+                        "nr": 7,
+                        "title": "Full Moon",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6255000",
+                        "nr": 8,
+                        "title": "The Joke",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6255004",
+                        "nr": 9,
+                        "title": "A Simple Story",
                         "watched": false,
                         "date_watched": null
                     },
                     {
                         "imdbId": "tt5565350",
                         "nr": 10,
-                        "title": "Episode #5.10",
+                        "title": "Moments of Vision",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6374344",
+                        "nr": 11,
+                        "title": "Episode #5.11",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391124",
+                        "nr": 12,
+                        "title": "Episode #5.12",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391128",
+                        "nr": 13,
+                        "title": "Episode #5.13",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391136",
+                        "nr": 14,
+                        "title": "Episode #5.14",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391130",
+                        "nr": 15,
+                        "title": "Episode #5.15",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391148",
+                        "nr": 16,
+                        "title": "Episode #5.16",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391150",
+                        "nr": 17,
+                        "title": "Episode #5.17",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391152",
+                        "nr": 18,
+                        "title": "Episode #5.18",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6391154",
+                        "nr": 19,
+                        "title": "Episode #5.19",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6374342",
+                        "nr": 20,
+                        "title": "Episode #5.20",
                         "watched": false,
                         "date_watched": null
                     }
                 ]
+            },
+            {
+                "year": 2018,
+                "nr": 6,
+                "episodes": []
             }
         ],
         "actors": [
@@ -36461,8 +36675,8 @@
         "length": "94 min",
         "plot": "Honey is a sexy, tough music video choreographer who shakes up her life after her mentor gives her an ultimatum: sleep with him or be blacklisted within their industry.",
         "director": "Bille Woodruff",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-12-09",
         "date_added": null
     },
     {
@@ -36649,6 +36863,54 @@
                         "title": "Episode #1.4",
                         "watched": true,
                         "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2018,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt7119132",
+                        "nr": 1,
+                        "title": "War Council",
+                        "watched": true,
+                        "date_watched": "2018-12-09"
+                    },
+                    {
+                        "imdbId": "tt9149870",
+                        "nr": 2,
+                        "title": "Old Homes",
+                        "watched": true,
+                        "date_watched": "2018-12-09"
+                    },
+                    {
+                        "imdbId": "tt9149876",
+                        "nr": 3,
+                        "title": "Shadow Battles",
+                        "watched": true,
+                        "date_watched": "2018-12-09"
+                    },
+                    {
+                        "imdbId": "tt9153100",
+                        "nr": 4,
+                        "title": "Broken Mast",
+                        "watched": true,
+                        "date_watched": "2018-12-09"
+                    },
+                    {
+                        "imdbId": "tt9150544",
+                        "nr": 6,
+                        "title": "The River",
+                        "watched": true,
+                        "date_watched": "2018-12-09"
+                    },
+                    {
+                        "imdbId": "tt9150560",
+                        "nr": 8,
+                        "title": "End Times",
+                        "watched": true,
+                        "date_watched": "2018-12-09"
                     }
                 ]
             }
@@ -36881,7 +37143,7 @@
                     {
                         "imdbId": "tt6849500",
                         "nr": 1,
-                        "title": "Episode #2.1",
+                        "title": "June",
                         "watched": false,
                         "date_watched": null
                     },
@@ -36924,6 +37186,48 @@
                         "imdbId": "tt7435250",
                         "nr": 7,
                         "title": "Episode #2.7",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7435252",
+                        "nr": 8,
+                        "title": "Women's Work",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7435254",
+                        "nr": 9,
+                        "title": "Smart Power",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7435256",
+                        "nr": 10,
+                        "title": "The Last Ceremony",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7435258",
+                        "nr": 11,
+                        "title": "Holly",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7435260",
+                        "nr": 12,
+                        "title": "Postpartum",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7435264",
+                        "nr": 13,
+                        "title": "The Word",
                         "watched": false,
                         "date_watched": null
                     }
@@ -37946,7 +38250,8 @@
             "tt0932936",
             "tt2739708",
             "tt1201133",
-            "tt2175563"
+            "tt2175563",
+            "tt2094766"
         ],
         "date_added": "2017-11-25"
     },
@@ -39188,8 +39493,8 @@
         "length": "108 min",
         "plot": "Amidst a territorial gang war in 1997, a sophisticated alien hunter stalks the citizens of Los Angeles and the only man between him and his prey is veteran L.A.P.D. officer, Lieutenant Mike Harrigan.",
         "director": "Stephen Hopkins",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-11-29",
         "date_added": "2017-12-05"
     },
     {
@@ -43556,8 +43861,8 @@
         "length": "100 min",
         "plot": "Martin, a mercenary, is sent from Europe by a mysterious biotech company to the Tasmanian wilderness on a hunt for the last Tasmanian tiger.",
         "director": "Daniel Nettheim",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-11-05",
         "date_added": "2018-07-06"
     },
     {
@@ -43923,8 +44228,8 @@
         "length": "114 min",
         "plot": "A woman returns to the community that shunned her for her attraction to a childhood friend. Once back, their passions reignite as they explore the boundaries of faith and sexuality.",
         "director": "Sebasti\u00e1n Lelio",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-12-19",
         "date_added": "2018-07-11"
     },
     {
@@ -44091,8 +44396,8 @@
         "length": "N\/A",
         "plot": "After escaping an attack by what he claims was a 70-foot shark, Jonas Taylor must confront his fears to save those trapped in a sunken submersible.",
         "director": "Jon Turteltaub",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-11-02",
         "date_added": "2018-07-29"
     },
     {
@@ -44110,8 +44415,8 @@
         "length": "132 min",
         "plot": "A man believes he has put his mysterious past behind him and has dedicated himself to beginning a new, quiet life. But when he meets a young girl under the control of ultra-violent Russian gangsters, he can't stand idly by - he has to help her.",
         "director": "Antoine Fuqua",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-11-02",
         "date_added": "2018-07-30"
     },
     {
@@ -44129,8 +44434,8 @@
         "length": "N\/A",
         "plot": "Robert McCall serves an unflinching justice for the exploited and oppressed, but how far will he go when that is someone he loves?",
         "director": "Antoine Fuqua",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-11-02",
         "date_added": "2018-07-30"
     },
     {
@@ -44148,8 +44453,8 @@
         "length": "N\/A",
         "plot": "A story of survival set 20,000 years ago during the last Ice Age.",
         "director": "Albert Hughes",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-10-26",
         "date_added": "2018-07-30"
     },
     {
@@ -44779,8 +45084,8 @@
         "length": "N\/A",
         "plot": "An untested American submarine captain teams with U.S. Navy Seals to rescue the Russian president, who has been kidnapped by a rogue general.",
         "director": "Donovan Marsh",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-12-18",
         "date_added": "2018-08-01"
     },
     {
@@ -45758,8 +46063,8 @@
         "length": "N\/A",
         "plot": "This contemporary romantic comedy, based on a global bestseller, follows native New Yorker Rachel Chu to Singapore to meet her boyfriend's family.",
         "director": "Jon M. Chu",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-12-07",
         "date_added": "2018-08-13"
     },
     {
@@ -46321,8 +46626,8 @@
         "length": "104 min",
         "plot": "A working-class family man, Christopher Robin, encounters his childhood friend Winnie-the-Pooh, who helps him to rediscover the joys of life.",
         "director": "Marc Forster",
-        "watched": false,
-        "date_watched": null,
+        "watched": true,
+        "date_watched": "2018-12-09",
         "date_added": "2018-08-30"
     },
     {
@@ -47153,8 +47458,1833 @@
         "length": "90 min",
         "plot": "With more board configurations than there are atoms in the observable universe, the ancient Chinese game of 'Go' has long been considered a grand challenge for artificial intelligence. On ...",
         "director": "Greg Kohs",
+        "watched": true,
+        "date_watched": "2018-10-26",
+        "date_added": "2018-10-18"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt5137338",
+        "name": "Victoria",
+        "plot": "The early life of Queen Victoria, from her ascension to the throne at the tender age of 18 to her courtship and marriage to Prince Albert.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2017,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt5267180",
+                        "nr": 1,
+                        "title": "Doll 123",
+                        "watched": true,
+                        "date_watched": "2018-10-23"
+                    },
+                    {
+                        "imdbId": "tt5351820",
+                        "nr": 2,
+                        "title": "Ladies in Waiting",
+                        "watched": true,
+                        "date_watched": "2018-11-16"
+                    },
+                    {
+                        "imdbId": "tt5351822",
+                        "nr": 3,
+                        "title": "Brocket Hall",
+                        "watched": true,
+                        "date_watched": "2018-11-16"
+                    },
+                    {
+                        "imdbId": "tt5351826",
+                        "nr": 4,
+                        "title": "The Clockwork Prince",
+                        "watched": true,
+                        "date_watched": "2018-11-16"
+                    },
+                    {
+                        "imdbId": "tt5351824",
+                        "nr": 5,
+                        "title": "An Ordinary Woman",
+                        "watched": true,
+                        "date_watched": "2018-12-15"
+                    },
+                    {
+                        "imdbId": "tt5351830",
+                        "nr": 6,
+                        "title": "The Queen's Husband",
+                        "watched": true,
+                        "date_watched": "2018-12-30"
+                    },
+                    {
+                        "imdbId": "tt5351828",
+                        "nr": 7,
+                        "title": "Engine of Change",
+                        "watched": true,
+                        "date_watched": "2018-12-30"
+                    },
+                    {
+                        "imdbId": "tt5351832",
+                        "nr": 8,
+                        "title": "Young England",
+                        "watched": true,
+                        "date_watched": "2018-12-30"
+                    }
+                ]
+            },
+            {
+                "year": 2018,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt6100074",
+                        "nr": 1,
+                        "title": "A Soldier's Daughter",
+                        "watched": true,
+                        "date_watched": "2019-01-02"
+                    },
+                    {
+                        "imdbId": "tt6327804",
+                        "nr": 2,
+                        "title": "The Green-Eyed Monster",
+                        "watched": true,
+                        "date_watched": "2019-01-02"
+                    },
+                    {
+                        "imdbId": "tt6327806",
+                        "nr": 3,
+                        "title": "Warp and Weft",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6327808",
+                        "nr": 4,
+                        "title": "The Sins of the Father",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6327810",
+                        "nr": 5,
+                        "title": "Entente Cordiale",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6327812",
+                        "nr": 6,
+                        "title": "Faith, Hope & Charity",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6327816",
+                        "nr": 7,
+                        "title": "The King Over the Water",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6327814",
+                        "nr": 8,
+                        "title": "The Luxury of Conscience",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7234250",
+                        "nr": 9,
+                        "title": "Comfort and Joy",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Jenna Coleman",
+            "Adrian Schiller",
+            "Nell Hudson",
+            "Daniela Holtz"
+        ],
+        "date_added": "2018-10-23"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4971344",
+        "name": "The Sisters Brothers",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "John C. Reilly",
+            "Joaquin Phoenix",
+            "Jake Gyllenhaal",
+            "Riz Ahmed"
+        ],
+        "length": "121 min",
+        "plot": "In 1850s Oregon, a gold prospector is chased by the infamous duo of assassins, the Sisters brothers.",
+        "director": "Jacques Audiard",
         "watched": false,
         "date_watched": null,
-        "date_added": "2018-10-18"
+        "date_added": "2018-10-24"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt1865718",
+        "name": "Gravity Falls",
+        "plot": "Twin siblings Dipper and Mabel Pines spend the summer at their uncle's tourist trap in the enigmatic town of Gravity Falls.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2012,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt2152239",
+                        "nr": 1,
+                        "title": "Tourist Trapped",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2168670",
+                        "nr": 2,
+                        "title": "The Legend of the Gobblewonker",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2168676",
+                        "nr": 3,
+                        "title": "Headhunters",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2229194",
+                        "nr": 4,
+                        "title": "The Hand That Rocks the Mabel",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2229196",
+                        "nr": 5,
+                        "title": "The Inconveniencing",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2229192",
+                        "nr": 6,
+                        "title": "Dipper vs. Manliness",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2267658",
+                        "nr": 7,
+                        "title": "Double Dipper",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2267660",
+                        "nr": 8,
+                        "title": "Irrational Treasure",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2310928",
+                        "nr": 9,
+                        "title": "The Time Traveler's Pig",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2340344",
+                        "nr": 10,
+                        "title": "Fight Fighters",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2340350",
+                        "nr": 11,
+                        "title": "Little Dipper",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2439428",
+                        "nr": 12,
+                        "title": "Summerween",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2468818",
+                        "nr": 13,
+                        "title": "Boss Mabel",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2717560",
+                        "nr": 14,
+                        "title": "Bottomless Pit",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2717562",
+                        "nr": 15,
+                        "title": "The Deep End",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2717564",
+                        "nr": 16,
+                        "title": "Carpet Diem",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2813658",
+                        "nr": 17,
+                        "title": "Boyz Crazy",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2973488",
+                        "nr": 18,
+                        "title": "Land Before Swine",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3031772",
+                        "nr": 19,
+                        "title": "Dreamscaperers",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3054596",
+                        "nr": 20,
+                        "title": "Gideon Rises",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2014,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt3780836",
+                        "nr": 1,
+                        "title": "Scary-oke",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3802848",
+                        "nr": 2,
+                        "title": "Into the Bunker",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3918432",
+                        "nr": 3,
+                        "title": "The Golf War",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3918438",
+                        "nr": 4,
+                        "title": "Sock Opera",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4054258",
+                        "nr": 5,
+                        "title": "Soos and the Real Girl",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4082996",
+                        "nr": 6,
+                        "title": "Little Gift Shop of Horrors",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4074470",
+                        "nr": 7,
+                        "title": "Society of the Blind Eye",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4192532",
+                        "nr": 8,
+                        "title": "Blendin's Game",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4192536",
+                        "nr": 9,
+                        "title": "The Love God",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4373958",
+                        "nr": 10,
+                        "title": "Northwest Mansion Mystery",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4460256",
+                        "nr": 11,
+                        "title": "Not What He Seems",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4575574",
+                        "nr": 12,
+                        "title": "A Tale of Two Stans",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4823986",
+                        "nr": 13,
+                        "title": "Dungeons, Dungeons, & More Dungeons",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4843660",
+                        "nr": 14,
+                        "title": "Stanchurian Candidate",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4938792",
+                        "nr": 15,
+                        "title": "The Last Mabelcorn",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4938796",
+                        "nr": 16,
+                        "title": "Roadside Attraction",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5045754",
+                        "nr": 17,
+                        "title": "Dipper & Mabel vs. the Future",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5107700",
+                        "nr": 18,
+                        "title": "Weirdmageddon: Part 1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5153882",
+                        "nr": 19,
+                        "title": "Weirdmageddon 2: Escape from Reality",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5153884",
+                        "nr": 20,
+                        "title": "Weirdmageddon 3: Take Back the Falls",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5201122",
+                        "nr": 21,
+                        "title": "The End of Gravity Falls",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2015,
+                "nr": 3,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Jason Ritter",
+            "Alex Hirsch",
+            "Kristen Schaal",
+            "Linda Cardellini"
+        ],
+        "date_added": "2018-10-29"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0325805",
+        "name": "Matchstick Men",
+        "year": 2003,
+        "score": 0,
+        "actors": [
+            "Nicolas Cage",
+            "Sam Rockwell",
+            "Alison Lohman",
+            "Bruce Altman"
+        ],
+        "length": "116 min",
+        "plot": "A phobic con artist and his prot\u00e9g\u00e9 are on the verge of pulling off a lucrative swindle when the former's teenage daughter arrives unexpectedly.",
+        "director": "Ridley Scott",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-06"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0094947",
+        "name": "Dangerous Liaisons",
+        "year": 1988,
+        "score": 0,
+        "actors": [
+            "Glenn Close",
+            "John Malkovich",
+            "Michelle Pfeiffer",
+            "Swoosie Kurtz"
+        ],
+        "length": "119 min",
+        "plot": "A scheming widow and her manipulative ex-lover make a bet regarding the corruption of a recently married woman.",
+        "director": "Stephen Frears",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-09"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt7569592",
+        "name": "Chilling Adventures of Sabrina",
+        "plot": "As her 16th birthday nears, Sabrina must choose between the witch world of her family and the human world of her friends. Based on the Archie comic.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2018,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt7584356",
+                        "nr": 1,
+                        "title": "Chapter One: October Country",
+                        "watched": true,
+                        "date_watched": "2018-11-26"
+                    },
+                    {
+                        "imdbId": "tt7697916",
+                        "nr": 2,
+                        "title": "Chapter Two: The Dark Baptism",
+                        "watched": true,
+                        "date_watched": "2018-11-28"
+                    },
+                    {
+                        "imdbId": "tt7697918",
+                        "nr": 3,
+                        "title": "Chapter Three: The Trial of Sabrina Spellman",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7697920",
+                        "nr": 4,
+                        "title": "Chapter Four: Witch Academy",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7697934",
+                        "nr": 5,
+                        "title": "Chapter Five: Dreams in a Witch House",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7697926",
+                        "nr": 7,
+                        "title": "Chapter Seven: Feast of Feasts",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7697932",
+                        "nr": 8,
+                        "title": "Chapter Eight: The Burial",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7697930",
+                        "nr": 9,
+                        "title": "Episode #1.9",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt7697928",
+                        "nr": 10,
+                        "title": "Chapter Ten: The Witching Hour",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Kiernan Shipka",
+            "Ross Lynch",
+            "Lucy Davis",
+            "Chance Perdomo"
+        ],
+        "date_added": "2018-11-09"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2837574",
+        "name": "The Old Man & the Gun",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Robert Redford",
+            "Casey Affleck",
+            "Sissy Spacek",
+            "Danny Glover"
+        ],
+        "length": "93 min",
+        "plot": "Based on the true story of Forrest Tucker and his audacious escape from San Quentin at the age of 70 to an unprecedented string of heists that confounded authorities and enchanted the public.",
+        "director": "David Lowery",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-16"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3892172",
+        "name": "Leave No Trace",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Thomasin McKenzie",
+            "Ben Foster",
+            "Jeffery Rifflard",
+            "Derek John Drescher"
+        ],
+        "length": "109 min",
+        "plot": "A father and his thirteen year-old daughter are living an ideal existence in a vast urban park in Portland, Oregon, when a small mistake derails their lives forever.",
+        "director": "Debra Granik",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-16"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6412452",
+        "name": "The Ballad of Buster Scruggs",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Liam Neeson",
+            "James Franco",
+            "David Krumholtz",
+            "Clancy Brown"
+        ],
+        "length": "132 min",
+        "plot": "An anthology film comprised of six stories, each dealing with a different aspect of life in the Old West.",
+        "director": "Ethan Coen, Joel Coen",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-18"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt7801780",
+        "name": "Origin",
+        "plot": "A group of strangers struggle for survival aboard a spaceship heading to a distant planet.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2018,
+                "nr": 1,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Natalia Tena",
+            "Tom Felton",
+            "Sen Mitsuji",
+            "Nora Arnezeder"
+        ],
+        "date_added": "2018-11-18"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1517451",
+        "name": "A Star Is Born",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Lady Gaga",
+            "Bradley Cooper",
+            "Sam Elliott",
+            "Andrew Dice Clay"
+        ],
+        "length": "136 min",
+        "plot": "A musician helps a young singer find fame, even as age and alcoholism send his own career into a downward spiral.",
+        "director": "Bradley Cooper",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-19"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4172430",
+        "name": "13 Hours",
+        "year": 2016,
+        "score": 0,
+        "actors": [
+            "John Krasinski",
+            "James Badge Dale",
+            "Pablo Schreiber",
+            "David Denman"
+        ],
+        "length": "144 min",
+        "plot": "During an attack on a U.S. compound in Libya, a security team struggles to make sense out of the chaos.",
+        "director": "Michael Bay",
+        "watched": true,
+        "date_watched": "2018-11-21",
+        "date_added": "2018-11-21"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt4179452",
+        "name": "The Last Kingdom",
+        "plot": "The year is 872, and many of the separate kingdoms of what we now know as England have fallen to the invading Danes, leaving the great kingdom of Wessex standing alone and defiant under the...",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2015,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt4883704",
+                        "nr": 1,
+                        "title": "Episode #1.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4883706",
+                        "nr": 2,
+                        "title": "Episode #1.2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4883710",
+                        "nr": 3,
+                        "title": "Episode #1.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4883714",
+                        "nr": 4,
+                        "title": "Episode #1.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4883712",
+                        "nr": 5,
+                        "title": "Episode #1.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4883716",
+                        "nr": 6,
+                        "title": "Episode #1.6",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4817240",
+                        "nr": 7,
+                        "title": "Episode #1.7",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4934372",
+                        "nr": 8,
+                        "title": "Episode #1.8",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2017,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt5329910",
+                        "nr": 1,
+                        "title": "Episode #2.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6303088",
+                        "nr": 2,
+                        "title": "Episode #2.2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5671220",
+                        "nr": 3,
+                        "title": "Episode #2.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5671228",
+                        "nr": 4,
+                        "title": "Episode #2.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6110832",
+                        "nr": 5,
+                        "title": "Episode #2.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6110838",
+                        "nr": 6,
+                        "title": "Episode #2.6",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6245576",
+                        "nr": 7,
+                        "title": "Episode #2.7",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6245580",
+                        "nr": 8,
+                        "title": "Episode #2.8",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2018,
+                "nr": 3,
+                "episodes": []
+            }
+        ],
+        "actors": [
+            "Alexander Dreymon",
+            "Eliza Butterworth",
+            "Ian Hart",
+            "David Dawson"
+        ],
+        "date_added": "2018-11-23"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4669788",
+        "name": "On the Basis of Sex",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Justin Theroux",
+            "Armie Hammer",
+            "Felicity Jones",
+            "Kathy Bates"
+        ],
+        "length": "N\/A",
+        "plot": "The story of Ruth Bader Ginsburg, her struggles for equal rights and what she had to overcome in order to become a U.S. Supreme Court Justice.",
+        "director": "Mimi Leder",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0437086",
+        "name": "Alita: Battle Angel",
+        "year": 2019,
+        "score": 0,
+        "actors": [
+            "Jennifer Connelly",
+            "Michelle Rodriguez",
+            "Mahershala Ali",
+            "Eiza Gonz\u00e1lez"
+        ],
+        "length": "N\/A",
+        "plot": "An action-packed story of one young woman's journey to discover the truth of who she is and her fight to change the world.",
+        "director": "Robert Rodriguez",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1979376",
+        "name": "Toy Story 4",
+        "year": 2019,
+        "score": 0,
+        "actors": [
+            "Tom Hanks",
+            "Annie Potts",
+            "Patricia Arquette",
+            "Michael Keaton"
+        ],
+        "length": "N\/A",
+        "plot": "When a new toy called \"Forky\" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
+        "director": "Josh Cooley",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4154916",
+        "name": "Replicas",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Alice Eve",
+            "Keanu Reeves",
+            "Emily Alyn Lind",
+            "Thomas Middleditch"
+        ],
+        "length": "107 min",
+        "plot": "A scientist becomes obsessed with bringing back his family members who died in a traffic accident.",
+        "director": "Jeffrey Nachmanoff",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt6857040",
+        "name": "The Appearance",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Jake Stormoen",
+            "Kristian Nairn",
+            "Adam Johnson",
+            "Michael Flynn"
+        ],
+        "length": "111 min",
+        "plot": "When a medieval monk unexpectedly dies in a horrific way, the Church sends Mateho the Inquisitor, a rational man of science, to investigate the alleged 'witch'. When Mateho himself becomes implicated as more monks die mysteriously, he must learn that science cannot explain the horrors around him, before he is seduced by the evil that haunts this monastery.",
+        "director": "Kurt Knight",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3513498",
+        "name": "The Lego Movie 2: The Second Part",
+        "year": 2019,
+        "score": 0,
+        "actors": [
+            "Margot Robbie",
+            "Jonah Hill",
+            "Alison Brie",
+            "Chris Pratt"
+        ],
+        "length": "N\/A",
+        "plot": "It's been five years since everything was awesome and the citizens are facing a huge new threat: LEGO DUPLO\u00ae invaders from outer space, wrecking everything faster than they can rebuild.",
+        "director": "Mike Mitchell, Trisha Gum(co-director)",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5613402",
+        "name": "Mobile Homes",
+        "year": 2017,
+        "score": 0,
+        "actors": [
+            "Imogen Poots",
+            "Callum Turner",
+            "Callum Keith Rennie",
+            "Roger Barnes"
+        ],
+        "length": "105 min",
+        "plot": "A young mother drifts from one motel to the next with her intoxicated boyfriend, and her 8-year-old son. The makeshift family scrapes by, living one hustle at a time, until the discovery of...",
+        "director": "Vladimir de Fontenay",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-24"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1605782",
+        "name": "Comic-Con Episode IV: A Fan's Hope",
+        "year": 2011,
+        "score": 0,
+        "actors": [
+            "Kevin Smith",
+            "Seth Rogen",
+            "Kenneth Branagh",
+            "Thomas Jane"
+        ],
+        "length": "88 min",
+        "plot": "A behind-the-scenes look at the fans who gather by the thousands each year in San Diego, California to attend Comic-Con, the world's largest comic book convention.",
+        "director": "Morgan Spurlock",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0411477",
+        "name": "Hellboy II: The Golden Army",
+        "year": 2008,
+        "score": 0,
+        "actors": [
+            "Ron Perlman",
+            "Selma Blair",
+            "Doug Jones",
+            "John Alexander"
+        ],
+        "length": "120 min",
+        "plot": "The mythical world starts a rebellion against humanity in order to rule the Earth, so Hellboy and his team must save the world from the rebellious creatures.",
+        "director": "Guillermo del Toro",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-11-27"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt3829266",
+        "name": "The Predator",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Boyd Holbrook",
+            "Trevante Rhodes",
+            "Jacob Tremblay",
+            "Keegan-Michael Key"
+        ],
+        "length": "107 min",
+        "plot": "When a young boy accidentally triggers the universe's most lethal hunters' return to Earth, only a ragtag crew of ex-soldiers and a disgruntled scientist can prevent the end of the human race.",
+        "director": "Shane Black",
+        "watched": true,
+        "date_watched": "2018-11-29",
+        "date_added": "2018-11-28"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0368794",
+        "name": "I'm Not There",
+        "year": 2007,
+        "score": 0,
+        "actors": [
+            "Cate Blanchett",
+            "Ben Whishaw",
+            "Christian Bale",
+            "Richard Gere"
+        ],
+        "length": "135 min",
+        "plot": "Ruminations on the life of Bob Dylan, where six characters embody a different aspect of the musician's life and work.",
+        "director": "Todd Haynes",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-10"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0862467",
+        "name": "Valhalla Rising",
+        "year": 2009,
+        "score": 0,
+        "actors": [
+            "Mads Mikkelsen",
+            "Alexander Morton",
+            "Stewart Porter",
+            "Maarten Stevenson"
+        ],
+        "length": "93 min",
+        "plot": "Forced for some time to be a fighting slave, a pagan warrior escapes his captors with a boy and joins a group of Crusaders on their quest to the Holy Land.",
+        "director": "Nicolas Winding Refn",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-10"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0978762",
+        "name": "Mary and Max",
+        "year": 2009,
+        "score": 0,
+        "actors": [
+            "Toni Collette",
+            "Philip Seymour Hoffman",
+            "Barry Humphries",
+            "Eric Bana"
+        ],
+        "length": "92 min",
+        "plot": "A tale of friendship between two unlikely pen pals: Mary, a lonely, eight-year-old girl living in the suburbs of Melbourne, and Max, a forty-four-year old, severely obese man living in New York.",
+        "director": "Adam Elliot",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-10"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0460791",
+        "name": "The Fall",
+        "year": 2006,
+        "score": 0,
+        "actors": [
+            "Catinca Untaru",
+            "Justine Waddell",
+            "Lee Pace",
+            "Kim Uylenbroek"
+        ],
+        "length": "117 min",
+        "plot": "In a hospital on the outskirts of 1920s Los Angeles, an injured stuntman begins to tell a fellow patient, a little girl with a broken arm, a fantastic story of five mythical heroes. Thanks to his fractured state of mind and her vivid imagination, the line between fiction and reality blurs as the tale advances.",
+        "director": "Tarsem Singh",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-10"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt8075192",
+        "name": "Shoplifters",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Lily Franky",
+            "Sakura And\u00f4",
+            "Mayu Matsuoka",
+            "Jyo Kairi"
+        ],
+        "length": "121 min",
+        "plot": "A family of small-time crooks take in a child they find outside in the cold.",
+        "director": "Hirokazu Koreeda",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-12"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2331143",
+        "name": "Like Father, Like Son",
+        "year": 2013,
+        "score": 0,
+        "actors": [
+            "Masaharu Fukuyama",
+            "Machiko Ono",
+            "Y\u00f4ko Maki",
+            "Lily Franky"
+        ],
+        "length": "121 min",
+        "plot": "Ryota is a successful workaholic businessman. When he learns that his biological son was switched with another boy after birth, he faces the difficult decision to choose his true son or the boy he and his wife have raised as their own.",
+        "director": "Hirokazu Koreeda",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-12"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2094766",
+        "name": "Assassin's Creed",
+        "year": 2016,
+        "score": 0,
+        "actors": [
+            "Michael Fassbender",
+            "Marion Cotillard",
+            "Jeremy Irons",
+            "Brendan Gleeson"
+        ],
+        "length": "115 min",
+        "plot": "Callum Lynch explores the memories of his ancestor Aguilar de Nerha and gains the skills of a Master Assassin, before taking on the secret Templar society.",
+        "director": "Justin Kurzel",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-14"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0415306",
+        "name": "Talladega Nights: The Ballad of Ricky Bobby",
+        "year": 2006,
+        "score": 0,
+        "actors": [
+            "Will Ferrell",
+            "John C. Reilly",
+            "Sacha Baron Cohen",
+            "Gary Cole"
+        ],
+        "length": "108 min",
+        "plot": "Number one NASCAR driver Ricky Bobby stays atop the heap thanks to a pact with his best friend and teammate, Cal Naughton, Jr. But when a French Formula One driver, makes his way up the ladder, Ricky Bobby's talent and devotion are put to the test.",
+        "director": "Adam McKay",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-14"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5929754",
+        "name": "Wildlife",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Jake Gyllenhaal",
+            "Carey Mulligan",
+            "Ed Oxenbould",
+            "Bill Camp"
+        ],
+        "length": "105 min",
+        "plot": "A teenage boy must deal with his mother's complicated responses after his father temporarily abandons them to take a menial and dangerous job.",
+        "director": "Paul Dano",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-19"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5437928",
+        "name": "Colette",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Keira Knightley",
+            "Eleanor Tomlinson",
+            "Dominic West",
+            "Fiona Shaw"
+        ],
+        "length": "111 min",
+        "plot": "Colette is pushed by her husband to write novels under his name. Upon their success, she fights to make her talents known, challenging gender norms.",
+        "director": "Wash Westmoreland",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-19"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt4633694",
+        "name": "Spider-Man: Into the Spider-Verse",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Hailee Steinfeld",
+            "Liev Schreiber",
+            "Nicolas Cage",
+            "Mahershala Ali"
+        ],
+        "length": "N\/A",
+        "plot": "Spider-Man crosses parallel dimensions and teams up with the Spider-Men of those dimensions to stop a threat to all reality.",
+        "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2018-12-19"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt1741273",
+        "name": "Secret in Their Eyes",
+        "year": 2015,
+        "score": 0,
+        "actors": [
+            "Chiwetel Ejiofor",
+            "Nicole Kidman",
+            "Julia Roberts",
+            "Dean Norris"
+        ],
+        "length": "111 min",
+        "plot": "A tight-knit team of rising investigators, along with their supervisor, is suddenly torn apart when they discover that one of their own teenage daughters has been brutally murdered.",
+        "director": "Billy Ray",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2019-01-02"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5083738",
+        "name": "The Favourite",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Olivia Colman",
+            "Rachel Weisz",
+            "Emma Delves",
+            "Faye Daveney"
+        ],
+        "length": "119 min",
+        "plot": "In early 18th century England, a frail Queen Anne (Colman) occupies the throne and her close friend Lady Sarah (Weisz) governs the country in her stead. When a new servant Abigail (Stone) arrives, her charm endears her to Sarah.",
+        "director": "Yorgos Lanthimos",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2019-01-02"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt8185182",
+        "name": "Long Day's Journey Into Night",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Sylvia Chang",
+            "Yongzhong Chen",
+            "Jue Huang",
+            "Hong-Chi Lee"
+        ],
+        "length": "110 min",
+        "plot": "A man went back to Guizhou, found the tracks of a mysterious woman. He recalls the summer he spent with her twenty years ago.",
+        "director": "Gan Bi",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2019-01-02"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt5848272",
+        "name": "Ralph Breaks the Internet",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "John C. Reilly",
+            "Sarah Silverman",
+            "Gal Gadot",
+            "Taraji P. Henson"
+        ],
+        "length": "112 min",
+        "plot": "Six years after the events of \"Wreck-It Ralph,\" Ralph and Vanellope, now friends, discover a wi-fi router in their arcade, leading them into a new adventure.",
+        "director": "Phil Johnston, Rich Moore",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2019-01-03"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt2442560",
+        "name": "Peaky Blinders",
+        "plot": "A gangster family epic set in 1919 Birmingham, England; centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2014,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt2471500",
+                        "nr": 1,
+                        "title": "Episode #1.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2471502",
+                        "nr": 2,
+                        "title": "Episode #1.2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2471506",
+                        "nr": 3,
+                        "title": "Episode #1.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2461634",
+                        "nr": 4,
+                        "title": "Episode #1.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2461632",
+                        "nr": 5,
+                        "title": "Episode #1.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2461638",
+                        "nr": 6,
+                        "title": "Episode #1.6",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2014,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt3655782",
+                        "nr": 1,
+                        "title": "Episode #2.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3683570",
+                        "nr": 2,
+                        "title": "Episode #2.2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3683572",
+                        "nr": 3,
+                        "title": "Episode #2.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3683574",
+                        "nr": 4,
+                        "title": "Episode #2.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3683578",
+                        "nr": 5,
+                        "title": "Episode #2.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3683576",
+                        "nr": 6,
+                        "title": "Episode #2.6",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2016,
+                "nr": 3,
+                "episodes": [
+                    {
+                        "imdbId": "tt4277144",
+                        "nr": 1,
+                        "title": "Episode #3.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4370544",
+                        "nr": 2,
+                        "title": "Episode #3.2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4370546",
+                        "nr": 3,
+                        "title": "Episode #3.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4370550",
+                        "nr": 4,
+                        "title": "Episode #3.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4370554",
+                        "nr": 5,
+                        "title": "Episode #3.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4370552",
+                        "nr": 6,
+                        "title": "Episode #3.6",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2017,
+                "nr": 4,
+                "episodes": [
+                    {
+                        "imdbId": "tt5755998",
+                        "nr": 1,
+                        "title": "The Noose",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6227888",
+                        "nr": 2,
+                        "title": "Episode #4.2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6227890",
+                        "nr": 3,
+                        "title": "Blackbird",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6227892",
+                        "nr": 4,
+                        "title": "Dangerous",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6227900",
+                        "nr": 5,
+                        "title": "The Duel",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6056650",
+                        "nr": 6,
+                        "title": "The Company",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": null,
+                "nr": 5,
+                "episodes": [
+                    {
+                        "imdbId": "tt5756000",
+                        "nr": 1,
+                        "title": "Episode #5.1",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6227902",
+                        "nr": 2,
+                        "title": "Episode #5.2",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6229668",
+                        "nr": 3,
+                        "title": "Episode #5.3",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6229670",
+                        "nr": 4,
+                        "title": "Episode #5.4",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6229672",
+                        "nr": 5,
+                        "title": "Episode #5.5",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt6056652",
+                        "nr": 6,
+                        "title": "Episode #5.6",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Cillian Murphy",
+            "Paul Anderson",
+            "Helen McCrory",
+            "Sophie Rundle"
+        ],
+        "date_added": "2019-01-03"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt0479884",
+        "name": "Crank",
+        "year": 2006,
+        "score": 0,
+        "actors": [
+            "Jason Statham",
+            "Amy Smart",
+            "Jose Pablo Cantillo",
+            "Efren Ramirez"
+        ],
+        "length": "88 min",
+        "plot": "Professional assassin Chev Chelios learns his rival has injected him with a poison that will kill him if his heart rate drops.",
+        "director": "Mark Neveldine, Brian Taylor",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2019-01-03"
+    },
+    {
+        "type": 0,
+        "imdbId": "tt2737304",
+        "name": "Bird Box",
+        "year": 2018,
+        "score": 0,
+        "actors": [
+            "Sandra Bullock",
+            "Trevante Rhodes",
+            "John Malkovich",
+            "Sarah Paulson"
+        ],
+        "length": "124 min",
+        "plot": "A woman and a pair of children are blindfolded and make their way through a dystopian setting.",
+        "director": "Susanne Bier",
+        "watched": false,
+        "date_watched": null,
+        "date_added": "2019-01-07"
+    },
+    {
+        "type": 1,
+        "imdbId": "tt2085059",
+        "name": "Black Mirror",
+        "plot": "An anthology series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.",
+        "finished": false,
+        "seasons": [
+            {
+                "year": 2011,
+                "nr": 1,
+                "episodes": [
+                    {
+                        "imdbId": "tt2089051",
+                        "nr": 1,
+                        "title": "The National Anthem",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2089049",
+                        "nr": 2,
+                        "title": "Fifteen Million Merits",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2089050",
+                        "nr": 3,
+                        "title": "The Entire History of You",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2013,
+                "nr": 2,
+                "episodes": [
+                    {
+                        "imdbId": "tt2290780",
+                        "nr": 1,
+                        "title": "Be Right Back",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2542420",
+                        "nr": 2,
+                        "title": "White Bear",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt2386296",
+                        "nr": 3,
+                        "title": "The Waldo Moment",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt3973198",
+                        "nr": 4,
+                        "title": "White Christmas",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2016,
+                "nr": 3,
+                "episodes": [
+                    {
+                        "imdbId": "tt5497778",
+                        "nr": 1,
+                        "title": "Nosedive",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5709242",
+                        "nr": 2,
+                        "title": "Playtest",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5709230",
+                        "nr": 3,
+                        "title": "Shut Up and Dance",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt4538072",
+                        "nr": 4,
+                        "title": "San Junipero",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5709234",
+                        "nr": 5,
+                        "title": "Men Against Fire",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5709236",
+                        "nr": 6,
+                        "title": "Hated in the Nation",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": 2017,
+                "nr": 4,
+                "episodes": [
+                    {
+                        "imdbId": "tt5710974",
+                        "nr": 1,
+                        "title": "USS Callister",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5709250",
+                        "nr": 2,
+                        "title": "Arkangel",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5710976",
+                        "nr": 3,
+                        "title": "Crocodile",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5710978",
+                        "nr": 4,
+                        "title": "Hang the DJ",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5710984",
+                        "nr": 5,
+                        "title": "Metalhead",
+                        "watched": false,
+                        "date_watched": null
+                    },
+                    {
+                        "imdbId": "tt5058700",
+                        "nr": 6,
+                        "title": "Black Museum",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            },
+            {
+                "year": null,
+                "nr": 5,
+                "episodes": [
+                    {
+                        "imdbId": "tt8503298",
+                        "nr": 1,
+                        "title": "Episode #5.1",
+                        "watched": false,
+                        "date_watched": null
+                    }
+                ]
+            }
+        ],
+        "actors": [
+            "Daniel Lapaine",
+            "Hannah John-Kamen",
+            "Michaela Coel",
+            "Beatrice Robertson-Jones"
+        ],
+        "date_added": "2019-01-07"
     }
 ]
