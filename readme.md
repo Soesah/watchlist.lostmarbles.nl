@@ -2,7 +2,7 @@
 
 Just another watchlist app. For me.
 
-Just for fun, written in es6, using Vue and a little php to maintain a movie/documentary/series/game watchlist.
+Just for fun, written in Typescript, using Vue and a some Golang to maintain a movie/documentary/series/game watchlist.
 
 ## Project setup
 
