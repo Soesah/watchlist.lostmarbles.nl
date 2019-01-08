@@ -7,12 +7,12 @@ import {
 
 export class WatchlistService extends BaseService {
   private items: WatchlistItems[];
-  private file: string;
+  private path: string;
 
   constructor() {
     super();
     this.items = [];
-    this.file = 'list.json';
+    this.path = '/api';
   }
 
   load(): Promise<WatchlistItems[]> {
@@ -21,7 +21,7 @@ export class WatchlistService extends BaseService {
         resolve(this.items);
       } else {
         this.$http
-          .get('data/' + this.file)
+          .get(`${this.path}/list`)
           .then(response => {
             this.items = response.data.map((item: WatchlistItem) =>
               WatchItemFactory.create(item)
@@ -30,18 +30,6 @@ export class WatchlistService extends BaseService {
           })
           .catch(error => reject(error));
       }
-    });
-  }
-
-  save(items: WatchlistItems[]) {
-    return new Promise((resolve, reject) => {
-      this.$http
-        .post('backend.php?f=' + this.file, items)
-        .then(_ => {
-          this.items = items;
-          resolve(items);
-        })
-        .catch(error => reject(error));
     });
   }
 }

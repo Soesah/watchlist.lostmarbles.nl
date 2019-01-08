@@ -13,9 +13,11 @@ export class Season {
   constructor({ year, nr, episodes = [] }: SeasonType) {
     this.year = year;
     this.nr = nr;
-    this.episodes = episodes.map(function(data) {
-      return new Episode(data);
-    });
+    this.episodes = episodes
+      ? episodes.map(function(data) {
+          return new Episode(data);
+        })
+      : [];
   }
 
   getEpisode(imdbId: string): Episode | undefined {

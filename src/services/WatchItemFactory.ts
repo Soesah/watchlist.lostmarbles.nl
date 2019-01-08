@@ -42,17 +42,23 @@ export interface FilterType {
 export class WatchItemFactory {
   static create(item: WatchlistItem): WatchlistItems {
     let created: any;
+
     switch (item.type) {
       case WatchlistType.Movie:
         created = new Movie(<MovieType>item);
+        break;
       case WatchlistType.Series:
         created = new Series(<SeriesType>item);
+        break;
       case WatchlistType.Documentary:
         created = new Documentary(<DocumentaryType>item);
+        break;
       case WatchlistType.Game:
         created = new Game(<GameType>item);
+        break;
       case WatchlistType.Franchise:
         created = new Franchise(<FranchiseType>item);
+        break;
     }
 
     return created;

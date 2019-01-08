@@ -159,14 +159,14 @@ export default new Vuex.Store<WatchlistState>({
         type: 'info',
         text: message ? message : 'Saving...'
       });
-      return watchlistService.save(state.items).then(items => {
-        commit('setItems', items);
-        commit('message', {
-          type: 'success',
-          text: 'Watchlist saved succesfully.'
-        });
-        return items;
-      });
+      // return watchlistService.save(state.items).then(items => {
+      //   commit('setItems', items);
+      //   commit('message', {
+      //     type: 'success',
+      //     text: 'Watchlist saved succesfully.'
+      //   });
+      //   return items;
+      // });
     },
     getWatchList({ commit }) {
       return watchlistService.load().then(items => commit('setItems', items));
@@ -201,12 +201,10 @@ export default new Vuex.Store<WatchlistState>({
           item.type === WatchlistType.Franchise
       );
     },
-    getItemFranchise: (_, getters) => (item: any) => {
+    getItemFranchise: (_, getters) => (item: any): boolean => {
       return getters
         .franchises()
-        .find(
-          (franchise: Franchise) => !!~franchise.items.indexOf(item.imdbId)
-        );
+        .find((franchise: Franchise) => franchise.items.includes(item.imdbId));
     },
     franchiseItems: state => (items: string[]): WatchlistItems => {
       const franchiseItems: any = [];
