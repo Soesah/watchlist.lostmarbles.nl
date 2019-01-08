@@ -24,7 +24,7 @@
     <div class="filter" v-if="showMore">
       <label>Filter by type</label>
       <ul class="unselectable">
-        <li v-for="type in types" :key="type.type">
+        <li v-for="type in types" :key="type.name">
           <a
             href="javascript:void(0)"
             v-text="type.name"
