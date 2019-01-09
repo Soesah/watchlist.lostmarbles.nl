@@ -5,7 +5,7 @@
       <span class="bracketed" v-text="item.items.length"></span>
     </router-link>
     <ul class="list franchise-list">
-      <watch-list-item v-for="subitem in items" :item="subitem" :key="subitem.imdbId"></watch-list-item>
+      <watch-list-item v-for="subitem in items" :item="subitem" :key="subitem.imdbID"></watch-list-item>
     </ul>
   </li>
 </template>

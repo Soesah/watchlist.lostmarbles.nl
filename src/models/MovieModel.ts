@@ -2,7 +2,7 @@ import { BaseModel, WatchlistType } from '@/core/models/BaseModel';
 
 export interface MovieType {
   type: number;
-  imdbId: string;
+  imdbID: string;
   name: string;
   year: number;
   score: number;
@@ -17,7 +17,7 @@ export interface MovieType {
 
 export class Movie extends BaseModel {
   public type: number;
-  public imdbId: string;
+  public imdbID: string;
   public name: string;
   public year: number;
   public score: number;
@@ -30,7 +30,7 @@ export class Movie extends BaseModel {
   public date_added: string | null;
 
   constructor({
-    imdbId,
+    imdbID,
     name,
     year,
     score,
@@ -45,7 +45,7 @@ export class Movie extends BaseModel {
     super({ name, year, watched, date_watched });
 
     this.type = WatchlistType.Movie;
-    this.imdbId = imdbId;
+    this.imdbID = imdbID;
     this.name = name;
     this.year = year;
     this.score = score;

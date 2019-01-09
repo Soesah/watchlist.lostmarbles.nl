@@ -8,7 +8,7 @@
         class="item"
         v-for="franchise in franchises"
         :franchise="franchise"
-        :key="franchise.imdbId"
+        :key="franchise.imdbID"
       >
         <router-link :to="'/view/franchise/' + franchise.path">
           <h6 v-text="franchise.name"></h6>

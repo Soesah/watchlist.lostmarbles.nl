@@ -214,20 +214,20 @@ export default Vue.extend({
       }
     },
     choose(suggestion: { imdbID: string }) {
-      let imdbId = suggestion.imdbID,
+      let imdbID = suggestion.imdbID,
         date_added = this.item.date_added;
       this.searching = true;
       this.suggestions = [];
 
       // first use the omdb api to get the full data for the movie, series or game
-      omdbApiService.get(imdbId).then(
+      omdbApiService.get(imdbID).then(
         (data: OMDbObject) => {
           this.searching = false;
           WatchItemFactory.change(null, data.getInternalType()).then(
             (item: any) => {
               let year = parseInt(data.year);
 
-              item.imdbId = data.imdbId;
+              item.imdbID = data.imdbID;
               item.name = data.title;
               item.date_added = date_added;
               item.actors = data.actors.split(",").map(actor => {

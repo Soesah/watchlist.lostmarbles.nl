@@ -1,21 +1,21 @@
 interface OMDbResults {
-  Search: OMDbResult[];
-  totalResults: string;
+  results: OMDbResult[];
+  count: number;
 }
 interface OMDbResult {
-  Title: string;
-  Year: string;
+  title: string;
+  year: number;
   imdbID: string;
-  Type: string;
-  Poster: string;
+  type: number;
+  poster: string;
 }
 
 export class OMDbSearchResults {
   public results: OMDbResult[];
   public count: number;
 
-  constructor({ Search, totalResults }: OMDbResults) {
-    this.results = Search;
-    this.count = parseInt(totalResults);
+  constructor({ results, count }: OMDbResults) {
+    this.results = results;
+    this.count = count;
   }
 }

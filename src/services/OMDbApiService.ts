@@ -55,19 +55,19 @@ class OMDbApiService extends BaseService {
     );
   }
 
-  get(imdbId: string) {
-    return this.request(this.url + '?i=' + imdbId + '&r=json', OMDbObject);
+  get(imdbID: string) {
+    return this.request(this.url + '?i=' + imdbID + '&r=json', OMDbObject);
   }
 
-  getSeason(imdbId: string, nr: number) {
+  getSeason(imdbID: string, nr: number) {
     return this.request(
-      this.url + '?i=' + imdbId + '&Season=' + nr + '&r=json',
+      this.url + '?i=' + imdbID + '&Season=' + nr + '&r=json',
       OMDbObject
     );
   }
 
   updateMovie(item: any, props: Prop[]) {
-    return this.get(item.imdbId).then((obj: any) => {
+    return this.get(item.imdbID).then((obj: any) => {
       props.forEach(function(prop) {
         item[prop.to] = obj[prop.from];
       });
@@ -84,9 +84,9 @@ class OMDbApiService extends BaseService {
 
   updateSeries(item: Series) {
     return new Promise((resolve, reject) => {
-      this.get(item.imdbId).then((obj: any) => {
-        if (obj.imdbId) {
-          item.imdbId = obj.imdbId;
+      this.get(item.imdbID).then((obj: any) => {
+        if (obj.imdbID) {
+          item.imdbID = obj.imdbID;
           item.name = obj.title;
           item.plot = obj.plot;
           item.actors = obj.actors.split(', ');
@@ -111,12 +111,12 @@ class OMDbApiService extends BaseService {
     season.nr = nr;
 
     return new Promise((resolve, reject) => {
-      this.getSeason(series.imdbId, nr).then((obj: any) => {
+      this.getSeason(series.imdbID, nr).then((obj: any) => {
         if (obj.title) {
           // update existing episodes, or create new ones
 
           season.episodes = obj.episodes.map((ep: any, index: number) => {
-            let episode = season.getEpisode(ep.imdbId);
+            let episode = season.getEpisode(ep.imdbID);
 
             // update season year
             if (index === 0) {
@@ -125,7 +125,7 @@ class OMDbApiService extends BaseService {
 
             // update the episode
             if (episode) {
-              episode.imdbId = ep.imdbID;
+              episode.imdbID = ep.imdbID;
               episode.nr = parseInt(ep.Episode);
               episode.title = ep.Title;
             } else {

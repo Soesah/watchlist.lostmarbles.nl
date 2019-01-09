@@ -3,7 +3,7 @@
     <h2 v-text="franchise.name"></h2>
 
     <ul class="list">
-      <watch-list-item v-for="item in items" :item="item" :key="item.imdbId"></watch-list-item>
+      <watch-list-item v-for="item in items" :item="item" :key="item.imdbID"></watch-list-item>
     </ul>
   </section>
 </template>

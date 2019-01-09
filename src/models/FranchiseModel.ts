@@ -2,7 +2,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 
 export interface FranchiseType {
   type: number;
-  imdbId: string;
+  imdbID: string;
   name: string;
   items: string[];
   date_added: string;
@@ -10,25 +10,25 @@ export interface FranchiseType {
 
 export class Franchise {
   public type: number;
-  public imdbId: string;
+  public imdbID: string;
   public name: string;
   public items: string[];
   public date_added: string;
 
-  constructor({ imdbId, name, items = [], date_added }: FranchiseType) {
+  constructor({ imdbID, name, items = [], date_added }: FranchiseType) {
     this.type = WatchlistType.Franchise;
-    this.imdbId = imdbId;
+    this.imdbID = imdbID;
     this.name = name;
     this.items = items;
     this.date_added = date_added;
   }
 
-  addItem(item: { imdbId: string }) {
-    this.items.push(item.imdbId);
+  addItem(item: { imdbID: string }) {
+    this.items.push(item.imdbID);
   }
 
-  removeItem(item: { imdbId: string }) {
-    let index = this.items.indexOf(item.imdbId);
+  removeItem(item: { imdbID: string }) {
+    let index = this.items.indexOf(item.imdbID);
     this.items.splice(index, 1);
   }
 

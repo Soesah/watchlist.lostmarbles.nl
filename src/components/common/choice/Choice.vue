@@ -41,7 +41,7 @@ import Vue from "vue";
 import { Type } from "@/services/WatchItemFactory";
 
 interface ChoiceState {
-  item: number | null;
+  item: number | string | null;
   open: boolean;
   focussed: number;
 }

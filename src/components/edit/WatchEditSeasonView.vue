@@ -181,7 +181,7 @@ export default Vue.extend({
       let nr = episode ? episode.nr + 1 : 1,
         newEpisode = this.season.createEpisode(
           "NON-IMDB-EPISODE-ID-" +
-            this.item.imdbId +
+            this.item.imdbID +
             "-" +
             this.season.nr +
             "-" +

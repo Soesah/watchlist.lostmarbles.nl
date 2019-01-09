@@ -1,7 +1,7 @@
 import { DateTimeUtil } from '@/core/util/DateTimeUtil';
 
 interface EpisodeType {
-  imdbId: string;
+  imdbID: string;
   nr: number;
   title: string;
   watched: boolean;
@@ -9,20 +9,20 @@ interface EpisodeType {
 }
 
 export class Episode {
-  public imdbId: string;
+  public imdbID: string;
   public nr: number;
   public title: string;
   public watched: boolean;
   public date_watched: string | null;
 
   constructor({
-    imdbId,
+    imdbID,
     nr,
     title,
     watched = false,
     date_watched = null
   }: EpisodeType) {
-    this.imdbId = imdbId;
+    this.imdbID = imdbID;
     this.nr = nr;
     this.title = title;
     this.watched = watched;

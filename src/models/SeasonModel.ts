@@ -20,17 +20,17 @@ export class Season {
       : [];
   }
 
-  getEpisode(imdbId: string): Episode | undefined {
-    return this.episodes.find((item: Episode) => item.imdbId === imdbId);
+  getEpisode(imdbID: string): Episode | undefined {
+    return this.episodes.find((item: Episode) => item.imdbID === imdbID);
   }
 
   getEpisodeByNr(nr: number): Episode | undefined {
     return this.episodes.find((item: Episode) => item.nr === nr);
   }
 
-  createEpisode(imdbId: string, nr: number, title: string): Episode {
+  createEpisode(imdbID: string, nr: number, title: string): Episode {
     return new Episode({
-      imdbId: imdbId,
+      imdbID: imdbID,
       nr: nr,
       title: title,
       watched: false,

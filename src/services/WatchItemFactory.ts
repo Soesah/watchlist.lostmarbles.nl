@@ -20,7 +20,7 @@ export type WatchlistItemsPure = Movie | Series | Documentary | Game;
 export type WatchlistItems = WatchlistItemsPure | Franchise;
 
 interface BaseType {
-  imdbId?: string;
+  imdbID?: string;
   date_added?: string;
 }
 
@@ -69,7 +69,7 @@ export class WatchItemFactory {
     const data: BaseType = add_date ? { date_added: date } : {};
 
     // ensure an imbdId
-    data.imdbId =
+    data.imdbID =
       'NON-IMDB-ID-' +
       WatchItemFactory.getTypeNameByType(type).toUpperCase() +
       '-' +
@@ -95,7 +95,7 @@ export class WatchItemFactory {
     let newItem = <any>WatchItemFactory.new(type, false),
       promise = new Promise(resolve => {
         if (item) {
-          let imdbId = item.imdbId,
+          let imdbID = item.imdbID,
             name = item.name,
             year = item.year,
             actors = item.actors,
@@ -105,8 +105,8 @@ export class WatchItemFactory {
             watched = item.watched,
             date_added = item.date_added;
 
-          if (newItem.hasOwnProperty('imdbId')) {
-            newItem.imdbId = imdbId;
+          if (newItem.hasOwnProperty('imdbID')) {
+            newItem.imdbID = imdbID;
           }
 
           newItem.name = name;

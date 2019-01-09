@@ -5,7 +5,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 
 export interface SeriesType {
   type: number;
-  imdbId: string;
+  imdbID: string;
   name: string;
   plot: string;
   finished: boolean;
@@ -16,7 +16,7 @@ export interface SeriesType {
 
 export class Series {
   public type: number;
-  public imdbId: string;
+  public imdbID: string;
   public name: string;
   public plot: string;
   public finished: boolean;
@@ -25,7 +25,7 @@ export class Series {
   public date_added: string | null;
 
   constructor({
-    imdbId,
+    imdbID,
     name,
     seasons = [],
     plot,
@@ -34,7 +34,7 @@ export class Series {
     date_added = null
   }: SeriesType) {
     this.type = WatchlistType.Series;
-    this.imdbId = imdbId;
+    this.imdbID = imdbID;
     this.name = name;
     this.plot = plot;
     this.finished = finished;

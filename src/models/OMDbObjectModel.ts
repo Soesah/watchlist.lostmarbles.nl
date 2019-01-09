@@ -41,7 +41,7 @@ export class OMDbObject {
   public metascore: string;
   public imdbrating: string;
   public imdbvotes: string;
-  public imdbId: string;
+  public imdbID: string;
   public type: string;
   public episodes: string;
 
@@ -86,7 +86,7 @@ export class OMDbObject {
     this.metascore = Metascore;
     this.imdbrating = imdbRating;
     this.imdbvotes = imdbVotes;
-    this.imdbId = imdbID;
+    this.imdbID = imdbID;
     this.type = Type;
     // Season specific
     this.episodes = Episodes;

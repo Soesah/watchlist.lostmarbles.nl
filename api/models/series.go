@@ -3,7 +3,7 @@ package models
 // Series is a data model
 type Series struct {
 	Type      int64    `json:"type"`
-	ImdbID    string   `json:"imdbId"`
+	ImdbID    string   `json:"imdbID"`
 	Name      string   `json:"name"`
 	Plot      string   `json:"plot"`
 	Finished  bool     `json:"finished"`

@@ -8,7 +8,7 @@
     </p>
 
     <ul class="list">
-      <component :is="componentType(item)" v-for="item in items" :item="item" :key="item.imdbId"></component>
+      <component :is="componentType(item)" v-for="item in items" :item="item" :key="item.imdbID"></component>
     </ul>
   </section>
 </template>

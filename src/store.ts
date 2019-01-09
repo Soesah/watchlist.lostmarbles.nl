@@ -50,13 +50,13 @@ export default new Vuex.Store<WatchlistState>({
       state.items.push(item);
     },
     editItem(state, item) {
-      // assume imdbId doesn't change
-      let index = state.items.findIndex((it: any) => it.imdbId === item.imdbId);
+      // assume imdbID doesn't change
+      let index = state.items.findIndex((it: any) => it.imdbID === item.imdbID);
       state.items.splice(index, 1, item);
     },
     removeItem(state, item) {
-      // assume imdbId doesn't change
-      let index = state.items.findIndex((it: any) => it.imdbId === item.imdbId);
+      // assume imdbID doesn't change
+      let index = state.items.findIndex((it: any) => it.imdbID === item.imdbID);
       state.items.splice(index, 1);
     },
     removeSeason(_, { item, season }) {
@@ -191,7 +191,7 @@ export default new Vuex.Store<WatchlistState>({
         return (
           item.name.toLowerCase().indexOf(search.toLowerCase()) !== -1 &&
           item.type !== WatchlistType.Franchise &&
-          !~items.indexOf(item.imdbId)
+          !~items.indexOf(item.imdbID)
         );
       });
     },
@@ -204,12 +204,12 @@ export default new Vuex.Store<WatchlistState>({
     getItemFranchise: (_, getters) => (item: any): boolean => {
       return getters
         .franchises()
-        .find((franchise: Franchise) => franchise.items.includes(item.imdbId));
+        .find((franchise: Franchise) => franchise.items.includes(item.imdbID));
     },
     franchiseItems: state => (items: string[]): WatchlistItems => {
       const franchiseItems: any = [];
-      items.forEach((imdbId: string) => {
-        franchiseItems.push(state.items.find(item => item.imdbId === imdbId));
+      items.forEach((imdbID: string) => {
+        franchiseItems.push(state.items.find(item => item.imdbID === imdbID));
       });
       return franchiseItems;
     },
