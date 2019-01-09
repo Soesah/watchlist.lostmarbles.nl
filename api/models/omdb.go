@@ -1,6 +1,9 @@
 package models
 
-import "strconv"
+import (
+	"strconv"
+	"strings"
+)
 
 // OMDBSearch holds the search results from OMDB
 type OMDBSearch struct {
@@ -14,12 +17,11 @@ func (res OMDBSearch) Results() Results {
 	var results []Result
 	for _, item := range res.Search {
 		year, _ := strconv.Atoi(item.Year)
-		t := 1
 		results = append(results, Result{
 			Title:  item.Title,
-			Year:   year,
+			Year:   int64(year),
 			ImdbID: item.ImdbID,
-			Type:   t,
+			Type:   getInternalType(item.Type),
 			Poster: item.Poster,
 		})
 	}
@@ -29,12 +31,6 @@ func (res OMDBSearch) Results() Results {
 	}
 }
 
-// Results holds the search results
-type Results struct {
-	Results []Result `json:"results"`
-	Count   int      `json:"count"`
-}
-
 // OMDBResult holds the search result from OMDB
 type OMDBResult struct {
 	Title  string `json:"Title"`
@@ -42,15 +38,6 @@ type OMDBResult struct {
 	ImdbID string `json:"imdbID"`
 	Type   string `json:"Type"`
 	Poster string `json:"Poster"`
-}
-
-// Result holds a search result
-type Result struct {
-	Title  string `json:"title"`
-	Year   int    `json:"year"`
-	ImdbID string `json:"imdbID"`
-	Type   int    `json:"type"`
-	Poster string `json:"poster"`
 }
 
 //OMDBObject is the item result from OMDB
@@ -79,7 +66,34 @@ type OMDBObject struct {
 	Episodes     string `json:"episodes"`
 }
 
-// SetImdbID sets imdbID to a public property
-func (item OMDBObject) SetImdbID() {
-	item.ImdbID = item.imdbID
+// GetResultItem returns a result item from an IMDBObject
+func (item OMDBObject) GetResultItem() ResultItem {
+	year, _ := strconv.Atoi(item.Year)
+	return ResultItem{
+		Title:        item.Title,
+		Year:         int64(year),
+		Released:     item.Released,
+		Runtime:      item.Runtime,
+		Genre:        item.Genre,
+		Director:     item.Director,
+		Writer:       item.Writer,
+		Actors:       strings.Split(item.Actors, ", "),
+		TotalSeasons: item.TotalSeasons,
+		Plot:         item.Plot,
+		Language:     item.Language,
+		Poster:       item.Poster,
+		ImdbID:       item.ImdbID,
+		Type:         getInternalType(item.Type),
+		Episodes:     item.Episodes,
+	}
+}
+
+func getInternalType(t string) int64 {
+	if t == "movie" {
+		return TypeMovie
+	}
+	if t == "series" {
+		return TypeSeries
+	}
+	return -1
 }

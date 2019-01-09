@@ -21,3 +21,17 @@ func OMDBSearch(w http.ResponseWriter, r *http.Request) {
 
 	httpext.JSON(w, results)
 }
+
+// OMDBGet gets a result from the OMDB API
+func OMDBGet(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+
+	item, err := omdb.Get(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	httpext.JSON(w, item)
+}

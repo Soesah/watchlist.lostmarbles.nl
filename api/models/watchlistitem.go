@@ -1,11 +1,16 @@
 package models
 
 const (
-	typeMovie       = 0
-	typeSeries      = 1
-	typeDocumentary = 2
-	typeGame        = 3
-	typeFranchise   = 4
+	//TypeMovie is the internal type nr of a Movie
+	TypeMovie = 0
+	//TypeSeries is the internal type nr of a Series
+	TypeSeries = 1
+	//TypeDocumentary is the internal type nr of a Documentary
+	TypeDocumentary = 2
+	//TypeGame is the internal type nr of a Game
+	TypeGame = 3
+	//TypeFranchise is the internal type nr of a Franchise
+	TypeFranchise = 4
 )
 
 // WatchlistItem is the generic data model
@@ -146,25 +151,25 @@ func (item WatchlistItem) Franchise() Franchise {
 
 // IsMovie returns if the item is a movie
 func (item WatchlistItem) IsMovie() bool {
-	return item.Type == typeMovie
+	return item.Type == TypeMovie
 }
 
 // IsSeries returns if the item is a movie
 func (item WatchlistItem) IsSeries() bool {
-	return item.Type == typeSeries
+	return item.Type == TypeSeries
 }
 
 // IsDocumentary returns if the item is a movie
 func (item WatchlistItem) IsDocumentary() bool {
-	return item.Type == typeDocumentary
+	return item.Type == TypeDocumentary
 }
 
 // IsGame returns if the item is a movie
 func (item WatchlistItem) IsGame() bool {
-	return item.Type == typeGame
+	return item.Type == TypeGame
 }
 
 // IsFranchise returns if the item is a movie
 func (item WatchlistItem) IsFranchise() bool {
-	return item.Type == typeFranchise
+	return item.Type == TypeFranchise
 }

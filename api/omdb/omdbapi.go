@@ -15,8 +15,9 @@ func getURL(params string) string {
 }
 
 // Search returns search results from OMDB
-func Search(search string, year string, r *http.Request) (models.OMDbResults, error) {
-	var results models.OMDbResults
+func Search(search string, year string, r *http.Request) (models.Results, error) {
+	var omdbSearch models.OMDBSearch
+	var results models.Results
 
 	url := getURL("s=" + search)
 
@@ -35,18 +36,38 @@ func Search(search string, year string, r *http.Request) (models.OMDbResults, er
 
 	decoder := json.NewDecoder(resp.Body)
 
-	err = decoder.Decode(&results)
+	err = decoder.Decode(&omdbSearch)
 
 	if err != nil {
 		return results, err
 	}
 
-	return results, nil
+	return omdbSearch.Results(), nil
 }
 
 // Get returns a single item from OMDB
-func Get(r *http.Request) (models.OMDBObject, error) {
+func Get(imdbID string, r *http.Request) (models.ResultItem, error) {
 	var item models.OMDBObject
+	var res models.ResultItem
 
-	return item, nil
+	url := getURL("i=" + imdbID + "&r=json")
+
+	ctx := appengine.NewContext(r)
+
+	client := urlfetch.Client(ctx)
+	resp, err := client.Get(url)
+
+	if err != nil {
+		return res, err
+	}
+
+	decoder := json.NewDecoder(resp.Body)
+
+	err = decoder.Decode(&item)
+
+	if err != nil {
+		return res, err
+	}
+
+	return item.GetResultItem(), nil
 }

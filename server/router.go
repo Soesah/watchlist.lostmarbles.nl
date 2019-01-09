@@ -59,7 +59,7 @@ func Router() *chi.Mux {
 		r.Delete("/franchise", handlers.DeleteFranchise)
 
 		r.Route("/omdb", func(r chi.Router) {
-			r.Get("/get", handlers.NotSupportedAPIHandler)
+			r.Get("/get/{imdbID}", handlers.OMDBGet)
 			r.Get("/search/{search}", handlers.OMDBSearch)
 			r.Get("/search/{search}/{year}", handlers.OMDBSearch)
 		})
