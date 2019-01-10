@@ -10,7 +10,7 @@
       <div class="message-content">
         <p>Did you mean the following?</p>
         <ul>
-          <li v-for="double in doubles" :key="double.name">
+          <li v-for="double in doubles" :key="double.imdbID">
             <span v-text="double.name"></span>
             <span class="bracketed" v-text="double.year"></span>,
             <span v-text="getTypeName(double)"></span>

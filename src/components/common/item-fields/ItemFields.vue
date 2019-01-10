@@ -37,15 +37,15 @@
           <i class="icon icon-spinner" v-show="searching"></i>
         </button>
         <ul class="suggestions" v-show="suggestions.length">
-          <li v-for="suggestion in suggestions" :key="suggestion.Title">
+          <li v-for="suggestion in suggestions" :key="suggestion.title">
             <a href="javascript:void(0)" @click="choose(suggestion)">
-              <i :class="'icon icon-' + suggestion.Type"></i>
-              <span v-text="suggestion.Title + '(' + suggestion.Year + ')'"></span>
+              <i :class="'icon icon-' + getTypeName(suggestion.type)"></i>
+              <span v-text="suggestion.title + '(' + suggestion.year + ')'"></span>
             </a>
           </li>
           <li class="suggestions-count">
             There are
-            <span v-text="totalSuggestions"></span> results
+            <span v-text="count"></span> results
           </li>
         </ul>
       </div>
@@ -134,19 +134,20 @@ import Choice from "@/components/common/choice/Choice.vue";
 import ListInput from "@/components/common/list-input/ListInput.vue";
 import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
 import watchlistService from "@/services/WatchlistService";
-import omdbApiService from "@/services/OMDbApiService";
+import omdbService from "@/services/OMDBService";
 import { WatchlistType } from "@/core/models/BaseModel";
 import { Season } from "@/models/SeasonModel";
 import { DateTimeUtil } from "@/core/util/DateTimeUtil";
 import { Series } from "@/models/SeriesModel";
-import { OMDbObject } from "@/models/OMDbObjectModel";
+import { ResultItem } from "@/models/ResultItemModel";
+import { Results } from "@/models/ResultsModel";
 
 interface ItemFieldsData {
   item: WatchlistItems;
   searching: boolean;
   updating: boolean;
   suggestions: any[];
-  totalSuggestions: number;
+  count: number;
 }
 
 export default Vue.extend({
@@ -162,7 +163,7 @@ export default Vue.extend({
       searching: false,
       updating: false,
       suggestions: [],
-      totalSuggestions: 0
+      count: 0
     };
   },
   computed: {
@@ -201,13 +202,13 @@ export default Vue.extend({
           this.item.type !== WatchlistType.Franchise
             ? this.item.year
             : DateTimeUtil.year();
-        omdbApiService.search(this.item.name, year.toString()).then(
-          (data: any) => {
+        omdbService.search(this.item.name, year ? year : null).then(
+          (res: Results) => {
             this.searching = false;
-            this.suggestions = data.results;
-            this.totalSuggestions = data.count;
+            this.suggestions = res.results;
+            this.count = res.count;
           },
-          (response: any) => {
+          () => {
             this.searching = false;
           }
         );
@@ -220,42 +221,38 @@ export default Vue.extend({
       this.suggestions = [];
 
       // first use the omdb api to get the full data for the movie, series or game
-      omdbApiService.get(imdbID).then(
-        (data: OMDbObject) => {
+      omdbService.get(imdbID).then(
+        (data: ResultItem) => {
           this.searching = false;
-          WatchItemFactory.change(null, data.getInternalType()).then(
-            (item: any) => {
-              let year = parseInt(data.year);
+          WatchItemFactory.change(null, data.type).then((item: any) => {
+            let year = data.year;
 
-              item.imdbID = data.imdbID;
-              item.name = data.title;
-              item.date_added = date_added;
-              item.actors = data.actors.split(",").map(actor => {
-                return actor.trim();
-              });
-              if (this.isMovie(item)) {
-                item.plot = data.plot;
-                item.director = data.director;
-                item.length = data.runtime;
-              } else if (this.isGame(item)) {
-                item.plot = data.plot;
-              }
-              if (this.isSeries(item)) {
-                item.plot = data.plot;
-                // add a season for the first year
-                // parse year, since values can be '2016-'
-                item.addSeason(year);
-                // try adding seasons for subsequent years
-                // while (item.seasons.length < data.seasons) {
-                //   item.addSeason(year + item.seasons.length);
-                // }
-              } else {
-                item.year = year;
-              }
-              this.item = item;
-              this.update();
+            item.imdbID = data.imdbID;
+            item.name = data.title;
+            item.date_added = date_added;
+            item.actors = data.actors;
+            if (this.isMovie(item)) {
+              item.plot = data.plot;
+              item.director = data.director;
+              item.length = data.runtime;
+            } else if (this.isGame(item)) {
+              item.plot = data.plot;
             }
-          );
+            if (this.isSeries(item)) {
+              item.plot = data.plot;
+              // add a season for the first year
+              // parse year, since values can be '2016-'
+              item.addSeason(year);
+              // try adding seasons for subsequent years
+              // while (item.seasons.length < data.seasons) {
+              //   item.addSeason(year + item.seasons.length);
+              // }
+            } else {
+              item.year = year;
+            }
+            this.item = item;
+            this.update();
+          });
         },
         () => {
           this.searching = false;
@@ -276,7 +273,7 @@ export default Vue.extend({
     },
     updateSeason(season: Season, nr: number) {
       this.updating = true;
-      omdbApiService.updateSeason(<Series>this.item, nr).then(_ => {
+      omdbService.updateSeason(<Series>this.item, nr).then(_ => {
         this.updating = false;
         this.update();
       });

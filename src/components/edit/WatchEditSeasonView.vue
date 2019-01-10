@@ -86,7 +86,7 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-import omdbApiService from "@/services/OMDbApiService";
+import omdbService from "@/services/OMDBService";
 import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
 import ConfirmDeleteModal from "@/components/edit/ConfirmDeleteModal.vue";
 import { Season, SeasonType } from "@/models/SeasonModel";
@@ -198,7 +198,7 @@ export default Vue.extend({
     },
     updateSeason(series: Series, nr: number) {
       this.updating = true;
-      omdbApiService.updateSeason(series, nr).then(response => {
+      omdbService.updateSeason(series, nr).then(response => {
         this.updating = false;
         let nr = parseInt(this.$route.params.nr);
         this.season = this.item.getSeason(nr);

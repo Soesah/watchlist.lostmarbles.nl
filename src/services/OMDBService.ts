@@ -1,6 +1,6 @@
 import { BaseService } from '@/core/services/BaseService';
-import { OMDbObject } from '@/models/OMDbObjectModel';
-import { OMDbSearchResults } from '@/models/OMDbResultsModel';
+import { Results } from '@/models/ResultsModel';
+import { ResultItem } from '@/models/ResultItemModel';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Series } from '@/models/SeriesModel';
 
@@ -20,7 +20,7 @@ class OMDbApiService extends BaseService {
 
   constructor() {
     super();
-    this.url = 'omdb.php';
+    this.url = '/api/omdb';
   }
 
   request(url: string, Model: any): any {
@@ -28,11 +28,7 @@ class OMDbApiService extends BaseService {
       this.$http.get(url).then(
         response => {
           let data = response.data;
-          if (data.Response === 'True') {
-            resolve(new Model(data));
-          } else {
-            reject(data);
-          }
+          resolve(new Model(data));
         },
         response => {
           reject(response);
@@ -41,28 +37,28 @@ class OMDbApiService extends BaseService {
     });
   }
 
-  search(name: string, year: string) {
+  search(name: string, year: number | null) {
     return this.request(
-      this.url + '?s=' + name + (year ? '&y=' + year : ''),
-      OMDbSearchResults
+      this.url + '/search/' + name + (year ? '/' + year : ''),
+      Results
     );
   }
 
   lucky(name: string) {
     return this.request(
       this.url + '?t=' + name + '&y=&plot=short&r=json',
-      OMDbObject
+      ResultItem
     );
   }
 
   get(imdbID: string) {
-    return this.request(this.url + '?i=' + imdbID + '&r=json', OMDbObject);
+    return this.request(this.url + '/get/' + imdbID, ResultItem);
   }
 
   getSeason(imdbID: string, nr: number) {
     return this.request(
       this.url + '?i=' + imdbID + '&Season=' + nr + '&r=json',
-      OMDbObject
+      ResultItem
     );
   }
 
