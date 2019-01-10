@@ -52,7 +52,7 @@ interface ChoiceProps {
 
 const props = {
   value: {
-    type: Object
+    type: Number
   },
   items: {
     type: Array as () => Type[]

@@ -116,8 +116,9 @@ export default Vue.extend({
         item = this.$store.state.item.clone();
         let season = item.getSeason(this.$route.params.nr);
         // set this item as the data item, to allow mutation
-        this.item = item;
-        this.season = season ? season : {};
+        // todo causes compile issues "side-effects"
+        // this.item = item;
+        // this.season = season ? season : {};
       }
       return item;
     }
@@ -212,6 +213,7 @@ export default Vue.extend({
     }
   },
   components: {
+    /* eslint-disable vue/no-unused-components */
     ConfirmDeleteModal
   }
 });

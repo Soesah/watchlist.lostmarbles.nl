@@ -23,18 +23,23 @@ interface ListInputData {
   items: string[];
 }
 
+const props = {
+  label: {
+    type: String,
+    default: "Label"
+  },
+  placeholder: {
+    type: String
+  },
+  value: {
+    type: Array,
+    default: []
+  }
+};
+
 export default Vue.extend({
   name: "ListInput",
-  props: {
-    label: {
-      type: String,
-      default: "Label"
-    },
-    placeholder: {
-      type: String
-    },
-    value: []
-  },
+  props,
   data(): ListInputData {
     return {
       items: []
