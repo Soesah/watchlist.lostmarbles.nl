@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"net/http"
+	"net/url"
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/omdb"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/httpext"
@@ -10,7 +11,7 @@ import (
 
 // OMDBSearch gets results from the OMDB API
 func OMDBSearch(w http.ResponseWriter, r *http.Request) {
-	search := chi.URLParam(r, "search")
+	search := url.QueryEscape(chi.URLParam(r, "search"))
 	year := chi.URLParam(r, "year")
 	results, err := omdb.Search(search, year, r)
 
