@@ -126,6 +126,9 @@ export default Vue.extend({
         episode: episode
       });
     }
+  },
+  components: {
+    ItemFranchiseView
   }
 });
 </script>
