@@ -36,3 +36,17 @@ func OMDBGet(w http.ResponseWriter, r *http.Request) {
 
 	httpext.JSON(w, item)
 }
+
+// OMDBGetSeasons gets a result from the OMDB API
+func OMDBGetSeasons(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+
+	item, err := omdb.GetSeasons(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	httpext.JSON(w, item)
+}

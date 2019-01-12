@@ -60,6 +60,7 @@ func Router() *chi.Mux {
 
 		r.Route("/omdb", func(r chi.Router) {
 			r.Get("/get/{imdbID}", handlers.OMDBGet)
+			r.Get("/seasons/{imdbID}", handlers.OMDBGetSeasons)
 			r.Get("/search/{search}", handlers.OMDBSearch)
 			r.Get("/search/{search}/{year}", handlers.OMDBSearch)
 		})

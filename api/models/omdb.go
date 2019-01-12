@@ -3,6 +3,9 @@ package models
 import (
 	"strconv"
 	"strings"
+	"time"
+
+	"github.com/Soesah/watchlist.lostmarbles.nl/api/util"
 )
 
 // OMDBSearch holds the search results from OMDB
@@ -96,4 +99,52 @@ func getInternalType(t string) int64 {
 		return TypeSeries
 	}
 	return -1
+}
+
+// OMDBSeason holds a season from OMDB
+type OMDBSeason struct {
+	Title        string        `json:"Title"`
+	Season       string        `json:"Season"`
+	TotalSeasons string        `json:"totalSeasons"`
+	Episodes     []OMDBEpisode `json:"Episodes"`
+	Response     string        `json:"Response"`
+}
+
+// OMDBEpisode hold an episode from OMDB
+type OMDBEpisode struct {
+	Title      string `json:"Title"`
+	Released   string `json:"Released"`
+	Episode    string `json:"Episode"`
+	ImdbRating string `json:"imdbRating"`
+	ImdbID     string `json:"imdbID"`
+}
+
+// GetSeason returns in internal Season for a OMDB Season
+func (se OMDBSeason) GetSeason(imdbID string) Season {
+	t, _ := time.Parse(util.DateFormat, se.Episodes[0].Released)
+	nr, _ := strconv.Atoi(se.Season)
+
+	var episodes []Episode
+
+	for _, ep := range se.Episodes {
+		epNr, _ := strconv.Atoi(ep.Episode)
+		episodes = append(episodes, Episode{
+			ImdbID:       ep.ImdbID,
+			Nr:           int64(epNr),
+			Title:        ep.Title,
+			Watched:      false,
+			DateWatched:  "",
+			SeriesImdbID: imdbID,
+			SeasonNr:     int64(nr),
+		})
+	}
+
+	season := Season{
+		Year:         int64(t.Year()),
+		Nr:           int64(nr),
+		SeriesImdbID: imdbID,
+		Episodes:     episodes,
+	}
+
+	return season
 }
