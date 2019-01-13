@@ -97,8 +97,8 @@ export class Series {
 
   // this is a little inaccurate
   // need to update to _.find when seasons have nrs
-  getSeason(nr: number): Season {
-    return this.seasons[nr - 1];
+  getSeason(nr: number): Season | undefined {
+    return this.seasons.find((season: Season) => season.nr === nr);
   }
 
   get watched(): boolean {

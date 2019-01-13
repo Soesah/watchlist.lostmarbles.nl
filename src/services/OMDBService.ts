@@ -3,6 +3,7 @@ import { Results } from '@/models/ResultsModel';
 import { ResultItem } from '@/models/ResultItemModel';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Series } from '@/models/SeriesModel';
+import { Season } from '@/models/SeasonModel';
 
 enum OMDbType {
   Movie = 'movie',
@@ -28,7 +29,11 @@ class OMDbApiService extends BaseService {
       this.$http.get(url).then(
         response => {
           let data = response.data;
-          resolve(new Model(data));
+          if (data instanceof Array) {
+            resolve(data.map((item: any) => new Model(item)));
+          } else {
+            resolve(new Model(data));
+          }
         },
         response => {
           reject(response);
@@ -37,7 +42,7 @@ class OMDbApiService extends BaseService {
     });
   }
 
-  search(name: string, year: number | null) {
+  search(name: string, year: number | null): Promise<Results> {
     return this.request(
       this.url + '/search/' + name + (year ? '/' + year : ''),
       Results
@@ -51,15 +56,12 @@ class OMDbApiService extends BaseService {
     );
   }
 
-  get(imdbID: string) {
+  get(imdbID: string): Promise<ResultItem> {
     return this.request(this.url + '/get/' + imdbID, ResultItem);
   }
 
-  getSeason(imdbID: string, nr: number) {
-    return this.request(
-      this.url + '?i=' + imdbID + '&Season=' + nr + '&r=json',
-      ResultItem
-    );
+  getSeasons(imdbID: string): Promise<Season[]> {
+    return this.request(this.url + '/seasons/' + imdbID, Season);
   }
 
   updateMovie(item: any, props: Prop[]) {
@@ -97,49 +99,50 @@ class OMDbApiService extends BaseService {
     });
   }
 
-  updateSeason(series: Series, nr: number) {
-    let season = series.getSeason(nr);
-
-    if (!season) {
-      season = series.addSeason(null);
-    }
-
-    season.nr = nr;
-
+  updateSeasons(series: Series): Promise<Season[]> {
     return new Promise((resolve, reject) => {
-      this.getSeason(series.imdbID, nr).then((obj: any) => {
-        if (obj.title) {
-          // update existing episodes, or create new ones
-
-          season.episodes = obj.episodes.map((ep: any, index: number) => {
-            let episode = season.getEpisode(ep.imdbID);
-
-            // update season year
-            if (index === 0) {
-              season.year = parseInt(ep.Released);
-            }
-
-            // update the episode
-            if (episode) {
-              episode.imdbID = ep.imdbID;
-              episode.nr = parseInt(ep.Episode);
-              episode.title = ep.Title;
-            } else {
-              // or create a new one
-              episode = season.createEpisode(
-                ep.imdbID,
-                parseInt(ep.Episode),
-                ep.Title
-              );
-            }
-            return episode;
-          });
-
-          resolve(season);
+      this.getSeasons(series.imdbID).then((seasons: Season[]) => {
+        if (!series.seasons.length) {
+          series.seasons = seasons;
         } else {
-          reject();
+          for (let i = 0; i < seasons.length; i++) {
+            const se = seasons[i];
+            const season = series.getSeason(se.nr);
+
+            if (season) {
+              season.updateEpisodes(se.episodes);
+            } else {
+              series.seasons.push(se);
+            }
+          }
         }
-      });
+        // // update existing episodes, or create new ones
+        // season.episodes = obj.episodes.map((ep: any, index: number) => {
+        //   let episode = season.getEpisode(ep.imdbID);
+
+        //   // update season year
+        //   if (index === 0) {
+        //     season.year = parseInt(ep.Released);
+        //   }
+
+        //   // update the episode
+        //   if (episode) {
+        //     episode.imdbID = ep.imdbID;
+        //     episode.nr = parseInt(ep.Episode);
+        //     episode.title = ep.Title;
+        //   } else {
+        //     // or create a new one
+        //     episode = season.createEpisode(
+        //       ep.imdbID,
+        //       parseInt(ep.Episode),
+        //       ep.Title
+        //     );
+        //   }
+        //   return episode;
+        // });
+
+        resolve(seasons);
+      }, reject);
     });
   }
 

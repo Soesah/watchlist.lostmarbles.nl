@@ -37,7 +37,7 @@
           <i class="icon icon-spinner" v-show="searching"></i>
         </button>
         <ul class="suggestions" v-show="suggestions.length">
-          <li v-for="suggestion in suggestions" :key="suggestion.title">
+          <li v-for="suggestion in suggestions" :key="`${suggestion.title}-${suggestion.year}`">
             <a href="javascript:void(0)" @click="choose(suggestion)">
               <i :class="'icon icon-' + getTypeName(suggestion.type)"></i>
               <span v-text="suggestion.title + '(' + suggestion.year + ')'"></span>
@@ -100,7 +100,7 @@
               class="update-button option"
               type="button"
               tooltip="'Update season episodes'|top"
-              @click="updateSeason(item, season.nr)"
+              @click="updateSeasons(item)"
             >
               <i class="icon icon-series" v-show="!updating"></i>
               <i class="icon icon-spinner" v-show="updating"></i>
@@ -271,12 +271,12 @@ export default Vue.extend({
     isSeries(item: any): boolean {
       return item.type === WatchlistType.Series;
     },
-    updateSeason(season: Season, nr: number) {
+    async updateSeasons(season: Season, nr: number) {
       this.updating = true;
-      omdbService.updateSeason(<Series>this.item, nr).then(_ => {
-        this.updating = false;
-        this.update();
-      });
+      const seasons = await omdbService.updateSeasons(<Series>this.item);
+      this.updating = false;
+      this.update();
+      (<Series>this.item).seasons = seasons;
     },
     addSeason(year: string) {
       (<Series>this.item).addSeason(year ? parseInt(year) + 1 : null);

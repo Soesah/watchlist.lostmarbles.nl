@@ -14,7 +14,7 @@
       class="update-season-button option"
       type="button"
       tooltip="'Update season episodes'|top"
-      @click="updateSeason(item, season.nr)"
+      @click="updateSeasons(item, season.nr)"
     >
       <i class="icon icon-series" v-show="!updating"></i>
       <i class="icon icon-spinner" v-show="updating"></i>
@@ -196,12 +196,12 @@ export default Vue.extend({
     removeEpisode(episode: Episode) {
       this.season.removeEpisode(episode);
     },
-    updateSeason(series: Series, nr: number) {
+    updateSeasons(series: Series) {
       this.updating = true;
-      omdbService.updateSeason(series, nr).then(response => {
+      omdbService.updateSeasons(series).then(response => {
         this.updating = false;
         let nr = parseInt(this.$route.params.nr);
-        this.season = this.item.getSeason(nr);
+        this.season = <Season>this.item.getSeason(nr);
       });
     },
     back(evt: Event) {

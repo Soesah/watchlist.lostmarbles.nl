@@ -25,7 +25,7 @@ export class Season {
   }
 
   getEpisodeByNr(nr: number): Episode | undefined {
-    return this.episodes.find((item: Episode) => item.nr === nr);
+    return this.episodes.find((episode: Episode) => episode.nr === nr);
   }
 
   createEpisode(imdbID: string, nr: number, title: string): Episode {
@@ -39,13 +39,31 @@ export class Season {
   }
 
   insertEpisode(nr: number, episode: Episode) {
-    const index = this.episodes.findIndex((item: Episode) => item.nr === nr);
-    this.episodes.splice(index + 1, 0, episode);
+    const index = this.episodes.findIndex(
+      (episode: Episode) => episode.nr === nr
+    );
+    if (index === -1) {
+      this.episodes.push(episode);
+    } else {
+      this.episodes.splice(index + 1, 0, episode);
+    }
   }
 
   removeEpisode(episode: Episode) {
     const index = this.episodes.indexOf(episode);
     this.episodes.splice(index, 1);
+  }
+
+  updateEpisodes(episodes: Episode[]) {
+    for (let i = 0; i < episodes.length; i++) {
+      const ep = episodes[i];
+      const episode = this.getEpisode(ep.imdbID);
+      if (episode) {
+        episode.title = ep.title;
+      } else {
+        this.insertEpisode(ep.nr, ep);
+      }
+    }
   }
 
   toggleWatched() {
