@@ -1,7 +1,6 @@
 package omdb
 
 import (
-	"context"
 	"encoding/json"
 	"net/http"
 	"strconv"
@@ -79,8 +78,9 @@ func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
 	var seasons []models.Season
 
 	ctx := appengine.NewContext(r)
+	client := urlfetch.Client(ctx)
 
-	season, err := getSeason(ctx, imdbID, "1", r)
+	season, err := getSeason(client, imdbID, "1", r)
 
 	if err != nil {
 		return seasons, err
@@ -91,7 +91,7 @@ func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
 	seasons = append(seasons, season.GetSeason(imdbID))
 
 	for i := 1; i < totalSeasons; i++ {
-		season, err = getSeason(ctx, imdbID, strconv.Itoa(i+1), r)
+		season, err = getSeason(client, imdbID, strconv.Itoa(i+1), r)
 
 		if err != nil {
 			return seasons, err
@@ -103,12 +103,11 @@ func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
 	return seasons, nil
 }
 
-func getSeason(ctx context.Context, imdbID string, nr string, r *http.Request) (models.OMDBSeason, error) {
+func getSeason(client *http.Client, imdbID string, nr string, r *http.Request) (models.OMDBSeason, error) {
 	var season models.OMDBSeason
 
 	url := getURL("i=" + imdbID + "&Season=" + nr + "&r=json")
 
-	client := urlfetch.Client(ctx)
 	resp, err := client.Get(url)
 
 	if err != nil {
