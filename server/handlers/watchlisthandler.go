@@ -5,6 +5,7 @@ import (
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/watchlist"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/httpext"
+	"github.com/go-chi/chi"
 )
 
 // GetList gets the whole watchlist
@@ -17,6 +18,21 @@ func GetList(w http.ResponseWriter, r *http.Request) {
 	}
 
 	httpext.JSON(w, list)
+}
+
+// ToggleItemWatched toggles an item's watched property
+func ToggleItemWatched(w http.ResponseWriter, r *http.Request) {
+	itemType := chi.URLParam(r, "type")
+	imdbID := chi.URLParam(r, "imdbID")
+
+	item, err := watchlist.ToggleItemWatched(itemType, imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	httpext.JSON(w, item)
 }
 
 // AddMovie is used to add a movie

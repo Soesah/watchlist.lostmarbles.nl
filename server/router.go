@@ -39,6 +39,7 @@ func Router() *chi.Mux {
 	r.Route("/api", func(r chi.Router) {
 
 		r.Get("/list", handlers.GetList)
+		r.Put("/{type}/watched/{imdbID}", handlers.ToggleItemWatched)
 
 		r.Post("/movie", handlers.AddMovie)
 		r.Post("/series", handlers.AddSeries)

@@ -10,6 +10,15 @@ import (
 	"google.golang.org/appengine/datastore"
 )
 
+const (
+	typeMOVIE       = "movie"
+	typeSERIES      = "series"
+	typeDOCUMENTARY = "documentary"
+	typeGAME        = "game"
+	typeFRANCHISE   = "franchise"
+	typeEPISODE     = "episode"
+)
+
 // GetWatchList returns the whole watch list
 func GetWatchList(r *http.Request) ([]interface{}, error) {
 	var list []interface{}
@@ -109,6 +118,76 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 	}
 
 	return list, nil
+}
+
+// ToggleItemWatched adds a movie
+func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interface{}, error) {
+
+	var key *datastore.Key
+	var item interface{}
+	ctx := appengine.NewContext(r)
+
+	if itemType == typeMOVIE {
+		var movie models.Movie
+		key = api.MovieKey(ctx, imdbID)
+		err := datastore.Get(ctx, key, &movie)
+		if err != nil {
+			return item, err
+		}
+		movie.Watched = !movie.Watched
+		_, err = datastore.Put(ctx, key, &movie)
+		if err != nil {
+			return item, err
+		}
+		item = movie
+	}
+	// if itemType == typeSERIES {
+	// 	var series models.Series
+	// 	key = api.SeriesKey(ctx, imdbID)
+	// 	err := datastore.Get(ctx, key, &series)
+	// 	if err != nil {
+	// 		return item, err
+	// 	}
+	// 	series.Watched = !series.Watched
+	// 	_, err = datastore.Put(ctx, key, series)
+	// 	if err != nil {
+	// 		return item, err
+	// 	}
+	// 	item = series
+	// }
+	if itemType == typeDOCUMENTARY {
+		var documentary models.Documentary
+		key = api.DocumentaryKey(ctx, imdbID)
+		err := datastore.Get(ctx, key, &documentary)
+		if err != nil {
+			return item, err
+		}
+		documentary.Watched = !documentary.Watched
+		_, err = datastore.Put(ctx, key, documentary)
+		if err != nil {
+			return item, err
+		}
+		item = documentary
+	}
+	if itemType == typeGAME {
+		var game models.Game
+		key = api.GameKey(ctx, imdbID)
+		err := datastore.Get(ctx, key, &game)
+		if err != nil {
+			return item, err
+		}
+		game.Played = !game.Played
+		_, err = datastore.Put(ctx, key, game)
+		if err != nil {
+			return item, err
+		}
+		item = game
+	}
+	// if itemType == typeEPISODE {
+	// 	key = api.EpisodeKey(ctx, imdbID)
+	// }
+
+	return item, nil
 }
 
 // AddMovie adds a movie
