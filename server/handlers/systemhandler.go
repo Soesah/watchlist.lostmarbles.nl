@@ -20,14 +20,22 @@ func ImportData(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	data, err = system.ImportData(data, r)
+	count, batchcount, err := system.ImportData(data, r)
 
 	if err != nil {
 		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	httpext.JSON(w, data)
+	type Results struct {
+		Count      int `json:"count,omitempty"`
+		BatchCount int `json:"batch_count,omitempty"`
+	}
+
+	httpext.JSON(w, Results{
+		Count:      count,
+		BatchCount: batchcount,
+	})
 }
 
 // RemoveData is used to clear the datastore

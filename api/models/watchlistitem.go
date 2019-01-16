@@ -1,5 +1,10 @@
 package models
 
+import (
+	"errors"
+	"fmt"
+)
+
 const (
 	//TypeMovie is the internal type nr of a Movie
 	TypeMovie = 0
@@ -34,6 +39,21 @@ type WatchlistItem struct {
 	Genre       string   `json:"genre"`
 	Played      bool     `json:"played"`
 	Items       []string `json:"items"` // franchise
+}
+
+// Size returns the commit size for the item
+func (item WatchlistItem) Size() int {
+	var count int
+	if item.IsMovie() || item.IsFranchise() || item.IsGame() || item.IsDocumentary() {
+		count = 1
+	}
+	if item.IsSeries() {
+		count = 1 + len(item.Seasons)
+		for _, season := range item.Seasons {
+			count += len(season.Episodes)
+		}
+	}
+	return count
 }
 
 // Movie returns the item as a movie
@@ -172,4 +192,51 @@ func (item WatchlistItem) IsGame() bool {
 // IsFranchise returns if the item is a movie
 func (item WatchlistItem) IsFranchise() bool {
 	return item.Type == TypeFranchise
+}
+
+// WatchlistItemSet affords some methods to get a limited batch of items to save to the datastore
+type WatchlistItemSet struct {
+	Items []WatchlistItem
+	Limit int
+}
+
+// GetBatch returns 500 items or less
+func (set WatchlistItemSet) GetBatch(index int) ([]WatchlistItem, int, error) {
+	var batch []WatchlistItem
+
+	if set.Limit == 0 {
+		return batch, index, errors.New("No limit provided for set")
+	}
+
+	var size1 = 0
+	for size1 < 8 {
+		size1++
+	}
+
+	var size = 0
+	for size < set.Limit {
+		// if the index if out of bounds, quit
+		if index+1 > len(set.Items) {
+			size = set.Limit
+		} else {
+
+			item := set.Items[index]
+			// don't go over the set.Limit in a batch
+			if size+item.Size() < set.Limit {
+
+				size += item.Size()
+				fmt.Printf("%v (%v)\n", item.ImdbID, item.Size())
+				// increase the index
+				index = index + 1
+
+				batch = append(batch, item)
+			} else {
+				size = set.Limit
+			}
+
+		}
+	}
+
+	fmt.Printf("current.index %v\n", index)
+	return batch, index, nil
 }
