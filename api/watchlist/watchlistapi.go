@@ -2,6 +2,7 @@ package watchlist
 
 import (
 	"context"
+	"errors"
 	"net/http"
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api"
@@ -191,33 +192,95 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 }
 
 // AddMovie adds a movie
-func AddMovie(movie models.Movie, r *http.Request) error {
+func AddMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
+	var created models.Movie
 
-	return nil
+	ctx := appengine.NewContext(r)
+
+	key := api.MovieKey(ctx, movie.ImdbID)
+	_, err := datastore.Put(ctx, key, &movie)
+
+	if err != nil {
+		return created, err
+	}
+
+	created = movie
+
+	return created, nil
 }
 
 // AddSeries adds a series
-func AddSeries(series models.Series, r *http.Request) error {
+func AddSeries(series models.Series, r *http.Request) (models.Series, error) {
+	var created models.Series
 
-	return nil
+	return created, errors.New("Series could not be saved")
+
+	// ctx := appengine.NewContext(r)
+
+	// key := api.SeriesKey(ctx, series.ImdbID)
+	// _, err := datastore.Put(ctx, key, &series)
+
+	// if err != nil {
+	// 	return created, err
+	// }
+
+	// created = series
+
+	// return created, nil
 }
 
 // AddDocumentary adds a documentary
-func AddDocumentary(documentary models.Documentary, r *http.Request) error {
+func AddDocumentary(documentary models.Documentary, r *http.Request) (models.Documentary, error) {
+	var created models.Documentary
 
-	return nil
+	ctx := appengine.NewContext(r)
+
+	key := api.DocumentaryKey(ctx, documentary.ImdbID)
+	_, err := datastore.Put(ctx, key, &documentary)
+
+	if err != nil {
+		return created, err
+	}
+
+	created = documentary
+
+	return created, nil
 }
 
 // AddGame adds a game
-func AddGame(game models.Game, r *http.Request) error {
+func AddGame(game models.Game, r *http.Request) (models.Game, error) {
+	var created models.Game
 
-	return nil
+	ctx := appengine.NewContext(r)
+
+	key := api.GameKey(ctx, game.ImdbID)
+	_, err := datastore.Put(ctx, key, &game)
+
+	if err != nil {
+		return created, err
+	}
+
+	created = game
+
+	return created, nil
 }
 
 // AddFranchise adds a franchise
-func AddFranchise(franchise models.Franchise, r *http.Request) error {
+func AddFranchise(franchise models.Franchise, r *http.Request) (models.Franchise, error) {
+	var created models.Franchise
 
-	return nil
+	ctx := appengine.NewContext(r)
+
+	key := api.FranchiseKey(ctx, franchise.ImdbID)
+	_, err := datastore.Put(ctx, key, &franchise)
+
+	if err != nil {
+		return created, err
+	}
+
+	created = franchise
+
+	return created, nil
 }
 
 // UpdateMovie updates a movie

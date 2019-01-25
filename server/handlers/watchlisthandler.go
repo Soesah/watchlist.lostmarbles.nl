@@ -1,8 +1,10 @@
 package handlers
 
 import (
+	"encoding/json"
 	"net/http"
 
+	"github.com/Soesah/watchlist.lostmarbles.nl/api/models"
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/watchlist"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/httpext"
 	"github.com/go-chi/chi"
@@ -37,32 +39,107 @@ func ToggleItemWatched(w http.ResponseWriter, r *http.Request) {
 
 // AddMovie is used to add a movie
 func AddMovie(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Movie
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Movie added succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	movie, err := watchlist.AddMovie(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Movie added succesfully", movie)
 }
 
 // AddSeries is used to add a series
 func AddSeries(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Series
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Series added succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	series, err := watchlist.AddSeries(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Series added succesfully", series)
 }
 
 // AddDocumentary is used to add a documentary
 func AddDocumentary(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Documentary
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Documentary added succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	documentary, err := watchlist.AddDocumentary(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Documentary added succesfully", documentary)
 }
 
 // AddGame is used to add a game
 func AddGame(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Game
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Game added succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	game, err := watchlist.AddGame(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Game added succesfully", game)
 }
 
 // AddFranchise is used to add a franchise
 func AddFranchise(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Franchise
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Franchise added succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	franchise, err := watchlist.AddFranchise(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Franchise added succesfully", franchise)
 }
 
 // UpdateMovie is used to updated a movie
