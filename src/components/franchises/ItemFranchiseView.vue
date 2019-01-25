@@ -16,7 +16,7 @@ export default Vue.extend({
   props: {
     item: {
       type: Object,
-      default: {}
+      default: () => ({})
     }
   },
   computed: {
