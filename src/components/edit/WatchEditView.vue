@@ -1,5 +1,5 @@
 <template>
-  <form class="form" @submit="edit">
+  <form class="form" @submit.prevent="edit">
     <h2>Edit</h2>
     <p>
       Update and complete the information for this
@@ -42,7 +42,7 @@ export default Vue.extend({
   },
   created() {
     this.$store
-      .dispatch("getItemByName", this.$route.params.path)
+      .dispatch("getItemByPath", this.$route.params.path)
       .then(item => {
         this.$store.commit("addNav", {
           name: "Edit " + item.title,
@@ -55,11 +55,11 @@ export default Vue.extend({
   },
   methods: {
     async edit(evt: Event) {
+      evt.preventDefault();
+
       await this.$store.dispatch("editItem", this.item);
 
       this.$router.go(-1);
-
-      evt.preventDefault();
     },
     remove(evt: Event) {
       this.$store.state.event.$emit("openModal", {

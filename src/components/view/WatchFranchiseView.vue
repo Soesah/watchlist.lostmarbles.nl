@@ -27,7 +27,7 @@ export default Vue.extend({
   },
   created() {
     this.$store
-      .dispatch("getItemByName", this.$route.params.path)
+      .dispatch("getItemByPath", this.$route.params.path)
       .then(item => {
         this.$store.commit("addNav", {
           name: "Edit " + item.name,

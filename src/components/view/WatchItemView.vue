@@ -91,7 +91,7 @@ export default Vue.extend({
   },
   beforeRouteUpdate: function(to, from, next) {
     this.$store.commit("removeNav", "/edit/" + from.params.path);
-    this.$store.dispatch("getItemByName", to.params.path).then(item => {
+    this.$store.dispatch("getItemByPath", to.params.path).then(item => {
       this.$store.commit("addNav", {
         name: "Edit " + item.title,
         to: "/edit/" + item.path
@@ -101,7 +101,7 @@ export default Vue.extend({
   },
   created() {
     this.$store
-      .dispatch("getItemByName", this.$route.params.path)
+      .dispatch("getItemByPath", this.$route.params.path)
       .then(item => {
         this.$store.commit("addNav", {
           name: "Edit " + item.title,

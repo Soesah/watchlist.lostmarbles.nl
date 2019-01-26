@@ -5,6 +5,8 @@ import {
   WatchlistItems
 } from '@/services/WatchItemFactory';
 
+const STATUS_OK = 200;
+
 export class WatchlistService extends BaseService {
   private items: WatchlistItems[];
   private path: string;
@@ -33,16 +35,27 @@ export class WatchlistService extends BaseService {
     });
   }
 
-  async create(type: string, item: WatchlistItems): Promise<WatchlistItems> {
+  async create(
+    type: string,
+    item: WatchlistItems
+  ): Promise<WatchlistItems | string> {
     const response = await this.$http.post(`${this.path}/${type}`, item);
-    return response.data;
+    return response.status === STATUS_OK
+      ? WatchItemFactory.create(response.data.data)
+      : response.statusText;
   }
 
-  async store(type: string, item: WatchlistItems) {
-    const response = await this.$http.put(`${this.path}/${type}`);
-    this.items = response.data.map((item: WatchlistItem) =>
-      WatchItemFactory.create(item)
+  async store(
+    type: string,
+    item: WatchlistItems
+  ): Promise<WatchlistItems | string> {
+    const response = await this.$http.put(
+      `${this.path}/${type}/${item.imdbID}`,
+      item
     );
+    return response.status === STATUS_OK
+      ? WatchItemFactory.create(response.data.data)
+      : response.statusText;
   }
 }
 

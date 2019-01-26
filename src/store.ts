@@ -105,14 +105,22 @@ export default new Vuex.Store<WatchlistState>({
     async addItem({ commit, dispatch }, item: WatchlistItems) {
       const type = WatchItemFactory.getTypeName(item).toLowerCase();
       const stored = await watchlistService.create(type, item);
-      commit('addItem', stored);
-      return dispatch('save', 'Saving ' + stored.title);
+      if (typeof stored === 'string') {
+        return dispatch('error', `Error adding ${item.title}: "${stored}"`);
+      } else {
+        commit('addItem', stored);
+        return dispatch('save', 'Adding ' + stored.title);
+      }
     },
     async editItem({ commit, dispatch }, item) {
       const type = WatchItemFactory.getTypeName(item).toLowerCase();
-      const stored = await watchlistService.create(type, item);
-      commit('editItem', stored);
-      return dispatch('save', 'Saving changes to ' + stored.title);
+      const stored = await watchlistService.store(type, item);
+      if (typeof stored === 'string') {
+        return dispatch('error', `Error saving ${item.title}: "${stored}"`);
+      } else {
+        commit('editItem', stored);
+        return dispatch('save', 'Saving changes to ' + stored.title);
+      }
     },
     removeItem({ commit, dispatch }, item) {
       commit('removeItem', item);
@@ -178,13 +186,12 @@ export default new Vuex.Store<WatchlistState>({
     getWatchList({ commit }) {
       return watchlistService.load().then(items => commit('setItems', items));
     },
-    getItemByName({ commit }, name) {
-      return watchlistService.load().then((items: any) => {
-        commit('setItems', items);
-        let item = items.find((item: any) => item.path === name);
-        commit('setItem', item);
-        return item;
-      });
+    async getItemByPath({ commit }, path) {
+      const items = await watchlistService.load();
+      commit('setItems', items);
+      let item = items.find((item: any) => item.path === path);
+      commit('setItem', item);
+      return item;
     },
     dismiss({ commit }, { id, delay }) {
       window.setTimeout(() => {
