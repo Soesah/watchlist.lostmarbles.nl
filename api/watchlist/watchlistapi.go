@@ -4,9 +4,11 @@ import (
 	"context"
 	"errors"
 	"net/http"
+	"time"
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api"
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/models"
+	"github.com/Soesah/watchlist.lostmarbles.nl/api/util"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/datastore"
 )
@@ -197,6 +199,8 @@ func AddMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
 
 	ctx := appengine.NewContext(r)
 
+	movie.DateAdded = time.Now().Format(util.DateFormat)
+
 	key := api.MovieKey(ctx, movie.ImdbID)
 	_, err := datastore.Put(ctx, key, &movie)
 
@@ -217,6 +221,8 @@ func AddSeries(series models.Series, r *http.Request) (models.Series, error) {
 
 	// ctx := appengine.NewContext(r)
 
+	// series.DateAdded = time.Now().Format(util.DateFormat)
+
 	// key := api.SeriesKey(ctx, series.ImdbID)
 	// _, err := datastore.Put(ctx, key, &series)
 
@@ -234,6 +240,8 @@ func AddDocumentary(documentary models.Documentary, r *http.Request) (models.Doc
 	var created models.Documentary
 
 	ctx := appengine.NewContext(r)
+
+	documentary.DateAdded = time.Now().Format(util.DateFormat)
 
 	key := api.DocumentaryKey(ctx, documentary.ImdbID)
 	_, err := datastore.Put(ctx, key, &documentary)
@@ -253,6 +261,8 @@ func AddGame(game models.Game, r *http.Request) (models.Game, error) {
 
 	ctx := appengine.NewContext(r)
 
+	game.DateAdded = time.Now().Format(util.DateFormat)
+
 	key := api.GameKey(ctx, game.ImdbID)
 	_, err := datastore.Put(ctx, key, &game)
 
@@ -270,6 +280,8 @@ func AddFranchise(franchise models.Franchise, r *http.Request) (models.Franchise
 	var created models.Franchise
 
 	ctx := appengine.NewContext(r)
+
+	franchise.DateAdded = time.Now().Format(util.DateFormat)
 
 	key := api.FranchiseKey(ctx, franchise.ImdbID)
 	_, err := datastore.Put(ctx, key, &franchise)
