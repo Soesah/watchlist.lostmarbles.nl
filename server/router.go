@@ -47,11 +47,11 @@ func Router() *chi.Mux {
 		r.Post("/game", handlers.AddGame)
 		r.Post("/franchise", handlers.AddFranchise)
 
-		r.Put("/movie", handlers.UpdateMovie)
-		r.Put("/series", handlers.UpdateSeries)
-		r.Put("/documentary", handlers.UpdateDocumentary)
-		r.Put("/game", handlers.UpdateGame)
-		r.Put("/franchise", handlers.UpdateFranchise)
+		r.Get("/movie/{imdbID}", handlers.GetMovie)
+		r.Get("/series/{imdbID}", handlers.GetSeries)
+		r.Get("/documentary/{imdbID}", handlers.GetDocumentary)
+		r.Get("/game/{imdbID}", handlers.GetGame)
+		r.Get("/franchise/{imdbID}", handlers.GetFranchise)
 
 		r.Delete("/movie/{imdbID}", handlers.DeleteMovie)
 		r.Delete("/series/{imdbID}", handlers.DeleteSeries)

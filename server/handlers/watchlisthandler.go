@@ -142,6 +142,71 @@ func AddFranchise(w http.ResponseWriter, r *http.Request) {
 	httpext.SuccessDataAPI(w, "Franchise added succesfully", franchise)
 }
 
+// GetMovie returns the Movie
+func GetMovie(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	movie, err := watchlist.GetMovie(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusNotFound)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Movie found", movie)
+}
+
+// GetSeries returns the Series
+func GetSeries(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	series, err := watchlist.GetSeries(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusNotFound)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Series found", series)
+}
+
+// GetDocumentary returns the Documentary
+func GetDocumentary(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	documentary, err := watchlist.GetDocumentary(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusNotFound)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Documentary found", documentary)
+}
+
+// GetGame returns the Game
+func GetGame(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	game, err := watchlist.GetGame(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusNotFound)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Game found", game)
+}
+
+// GetFranchise returns the Franchise
+func GetFranchise(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	franchise, err := watchlist.GetFranchise(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusNotFound)
+		return
+	}
+
+	httpext.SuccessDataAPI(w, "Franchise found", franchise)
+}
+
 // UpdateMovie is used to updated a movie
 func UpdateMovie(w http.ResponseWriter, r *http.Request) {
 

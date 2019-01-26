@@ -295,6 +295,87 @@ func AddFranchise(franchise models.Franchise, r *http.Request) (models.Franchise
 	return created, nil
 }
 
+// GetMovie returns the Movie
+func GetMovie(imdbID string, r *http.Request) (models.Movie, error) {
+	var item models.Movie
+
+	ctx := appengine.NewContext(r)
+
+	key := api.MovieKey(ctx, imdbID)
+	err := datastore.Get(ctx, key, &item)
+
+	if err != nil {
+		return item, err
+	}
+
+	return item, nil
+}
+
+// GetSeries returns the Series
+func GetSeries(imdbID string, r *http.Request) (models.Series, error) {
+	var item models.Series
+
+	return item, errors.New("Series could not be loaded")
+	// ctx := appengine.NewContext(r)
+
+	// key := api.SeriesKey(ctx, imdbID)
+	// err := datastore.Get(ctx, key, &item)
+
+	// if err != nil {
+	// 	return item, err
+	// }
+
+	// return item, nil
+}
+
+// GetDocumentary returns the Documentary
+func GetDocumentary(imdbID string, r *http.Request) (models.Documentary, error) {
+	var item models.Documentary
+
+	ctx := appengine.NewContext(r)
+
+	key := api.DocumentaryKey(ctx, imdbID)
+	err := datastore.Get(ctx, key, &item)
+
+	if err != nil {
+		return item, err
+	}
+
+	return item, nil
+}
+
+// GetGame returns the Game
+func GetGame(imdbID string, r *http.Request) (models.Game, error) {
+	var item models.Game
+
+	ctx := appengine.NewContext(r)
+
+	key := api.GameKey(ctx, imdbID)
+	err := datastore.Get(ctx, key, &item)
+
+	if err != nil {
+		return item, err
+	}
+
+	return item, nil
+}
+
+// GetFranchise returns the Franchise
+func GetFranchise(imdbID string, r *http.Request) (models.Franchise, error) {
+	var item models.Franchise
+
+	ctx := appengine.NewContext(r)
+
+	key := api.FranchiseKey(ctx, imdbID)
+	err := datastore.Get(ctx, key, &item)
+
+	if err != nil {
+		return item, err
+	}
+
+	return item, nil
+}
+
 // UpdateMovie updates a movie
 func UpdateMovie(movie models.Movie, r *http.Request) error {
 
