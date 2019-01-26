@@ -9,20 +9,20 @@ export enum WatchlistType {
 }
 
 interface BaseType {
-  name: string;
+  title: string;
   year: number;
   watched: boolean;
   date_watched: string | null;
 }
 
 export class BaseModel {
-  public name: string;
+  public title: string;
   public year: number;
   public watched: boolean;
   public date_watched: string | null;
 
-  constructor({ name, year, watched, date_watched }: BaseType) {
-    this.name = name;
+  constructor({ title, year, watched, date_watched }: BaseType) {
+    this.title = title;
     this.year = year;
     this.watched = watched;
     this.date_watched = date_watched;
@@ -30,7 +30,7 @@ export class BaseModel {
 
   get path(): string {
     return (
-      this.name
+      this.title
         .replace(/\W+/g, '-')
         .replace('--', '')
         .toLowerCase() +
@@ -44,7 +44,7 @@ export class BaseModel {
   }
 
   isComplete(): boolean {
-    return !!(this.name && this.year);
+    return !!(this.title && this.year);
   }
 
   toggleWatched() {

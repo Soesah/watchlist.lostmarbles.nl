@@ -16,7 +16,7 @@ export class Results {
   public count: number;
 
   constructor({ results = [], count = 0 }: ResultsType) {
-    this.results = results.map((r: ResultType) => new Result(r));
+    this.results = results ? results.map((r: ResultType) => new Result(r)) : [];
     this.count = count;
   }
 }

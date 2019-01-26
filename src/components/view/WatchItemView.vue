@@ -1,6 +1,6 @@
 <template>
   <section class="view">
-    <h2 v-text="item.name"></h2>
+    <h2 v-text="item.title"></h2>
 
     <h3>
       <span v-text="item.year"></span>
@@ -93,7 +93,7 @@ export default Vue.extend({
     this.$store.commit("removeNav", "/edit/" + from.params.path);
     this.$store.dispatch("getItemByName", to.params.path).then(item => {
       this.$store.commit("addNav", {
-        name: "Edit " + item.name,
+        name: "Edit " + item.title,
         to: "/edit/" + item.path
       });
     });
@@ -104,7 +104,7 @@ export default Vue.extend({
       .dispatch("getItemByName", this.$route.params.path)
       .then(item => {
         this.$store.commit("addNav", {
-          name: "Edit " + item.name,
+          name: "Edit " + item.title,
           to: "/edit/" + item.path
         });
       });

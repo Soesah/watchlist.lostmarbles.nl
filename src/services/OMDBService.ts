@@ -85,7 +85,7 @@ class OMDbApiService extends BaseService {
       this.get(item.imdbID).then((obj: any) => {
         if (obj.imdbID) {
           item.imdbID = obj.imdbID;
-          item.name = obj.title;
+          item.title = obj.title;
           item.plot = obj.plot;
           item.actors = obj.actors.split(', ');
           resolve({

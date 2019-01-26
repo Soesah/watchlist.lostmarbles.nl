@@ -32,6 +32,14 @@ export class Franchise {
     this.items.splice(index, 1);
   }
 
+  get title(): string {
+    return this.name;
+  }
+
+  set title(title) {
+    this.name = title;
+  }
+
   get path(): string {
     return this.name
       .replace(/\W+/g, '-')

@@ -3,7 +3,7 @@ import { BaseModel, WatchlistType } from '@/core/models/BaseModel';
 export interface DocumentaryType {
   type: number;
   imdbID: string;
-  name: string;
+  title: string;
   year: number;
   score: number;
   director: string;
@@ -15,7 +15,7 @@ export interface DocumentaryType {
 export class Documentary extends BaseModel {
   public type: number;
   public imdbID: string;
-  public name: string;
+  public title: string;
   public year: number;
   public score: number;
   public director: string;
@@ -25,7 +25,7 @@ export class Documentary extends BaseModel {
 
   constructor({
     imdbID,
-    name,
+    title,
     year,
     score,
     director,
@@ -33,15 +33,19 @@ export class Documentary extends BaseModel {
     date_watched = null,
     date_added = null
   }: DocumentaryType) {
-    super({ name, year, watched, date_watched });
+    super({ title, year, watched, date_watched });
     this.type = WatchlistType.Documentary;
     this.imdbID = imdbID;
-    this.name = name;
+    this.title = title;
     this.year = year;
     this.director = director;
     this.score = score;
     this.watched = watched;
     this.date_watched = date_watched;
     this.date_added = date_added;
+  }
+
+  public clone() {
+    return new Documentary(this);
   }
 }

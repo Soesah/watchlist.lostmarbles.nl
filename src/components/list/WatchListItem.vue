@@ -25,7 +25,7 @@ export default Vue.extend({
             }
           },
           [
-            createElement("h6", item.name),
+            createElement("h6", item.title),
             createElement("span", {
               class: "bracketed",
               domProps: {

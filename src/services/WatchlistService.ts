@@ -32,6 +32,25 @@ export class WatchlistService extends BaseService {
       }
     });
   }
+
+  async create(type: string, item: WatchlistItems): Promise<WatchlistItems> {
+    const response = await this.$http.post(`${this.path}/${type}`, item);
+    return response.data;
+  }
+
+  store(type: string, item: WatchlistItems) {
+    return new Promise((resolve, reject) => {
+      this.$http
+        .put(`${this.path}/${type}`)
+        .then(response => {
+          this.items = response.data.map((item: WatchlistItem) =>
+            WatchItemFactory.create(item)
+          );
+          resolve(this.items);
+        })
+        .catch(error => reject(error));
+    });
+  }
 }
 
 export default new WatchlistService();

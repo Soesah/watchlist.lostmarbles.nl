@@ -32,9 +32,9 @@ export default Vue.extend({
     // needed to listen to state's item
     stateItem(): WatchlistItems {
       let item = WatchItemFactory.new();
-      if (this.$store.state.item.name) {
+      if (this.$store.state.item.title) {
         item = this.$store.state.item.clone();
-        // set this item as the data item, to allow mutation
+        /* eslint-disable vue/no-side-effects-in-computed-properties */
         this.item = item;
       }
       return item;
@@ -45,7 +45,7 @@ export default Vue.extend({
       .dispatch("getItemByName", this.$route.params.path)
       .then(item => {
         this.$store.commit("addNav", {
-          name: "Edit " + item.name,
+          name: "Edit " + item.title,
           to: "/edit/" + item.path
         });
       });
@@ -63,7 +63,7 @@ export default Vue.extend({
     remove(evt: Event) {
       this.$store.state.event.$emit("openModal", {
         modal: "confirm-delete-modal",
-        name: this.item.name,
+        name: this.item.title,
         confirm: this.onConfirmDelete
       });
 
@@ -85,6 +85,7 @@ export default Vue.extend({
   },
   components: {
     ItemFields,
+    /* eslint-disable vue/no-unused-components */
     ConfirmDeleteModal
   }
 });

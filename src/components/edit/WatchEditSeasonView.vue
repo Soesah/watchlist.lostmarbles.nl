@@ -2,7 +2,7 @@
   <form name="itemForm" class="form" @submit="edit" :state-item="stateItem">
     <h2>
       Edit
-      <i class="spaced" v-text="item.name"></i>
+      <i class="spaced" v-text="item.title"></i>
       <span class="dashed">
         season
         <span class="spaced" v-text="season.nr"></span>
@@ -112,7 +112,7 @@ export default Vue.extend({
     // needed to listen to state's item
     stateItem(): any {
       let item = <any>WatchItemFactory.new();
-      if (this.$store.state.item.name) {
+      if (this.$store.state.item.title) {
         item = this.$store.state.item.clone();
         let season = item.getSeason(this.$route.params.nr);
         // set this item as the data item, to allow mutation
@@ -128,11 +128,11 @@ export default Vue.extend({
       .dispatch("getItemByName", this.$route.params.path)
       .then(item => {
         this.$store.commit("addNav", {
-          name: item.name,
+          name: item.title,
           to: "/view/" + item.path
         });
         this.$store.commit("addNav", {
-          name: "Edit " + item.name + " Season " + this.$route.params.nr,
+          name: "Edit " + item.title + " Season " + this.$route.params.nr,
           to: "/edit/" + item.path + "/season/" + this.$route.params.nr
         });
       });
@@ -154,7 +154,7 @@ export default Vue.extend({
     remove(evt: Event) {
       this.$store.state.event.$emit("openModal", {
         modal: "confirm-delete-modal",
-        name: this.item.name + " Season " + this.$route.params.nr,
+        name: this.item.title + " Season " + this.$route.params.nr,
         confirm: this.onConfirmDelete
       });
 

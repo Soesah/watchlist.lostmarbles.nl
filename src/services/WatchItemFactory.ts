@@ -96,7 +96,7 @@ export class WatchItemFactory {
       promise = new Promise(resolve => {
         if (item) {
           let imdbID = item.imdbID,
-            name = item.name,
+            title = item.title,
             year = item.year,
             actors = item.actors,
             plot = item.plot,
@@ -109,7 +109,7 @@ export class WatchItemFactory {
             newItem.imdbID = imdbID;
           }
 
-          newItem.name = name;
+          newItem.title = title;
           newItem.date_added = date_added;
 
           if (type !== WatchlistType.Documentary && plot) {

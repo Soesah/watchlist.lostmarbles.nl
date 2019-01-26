@@ -4,7 +4,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 export interface GameType {
   type: number;
   imdbID: string;
-  name: string;
+  title: string;
   year: number;
   score: number;
   plot: string;
@@ -19,7 +19,7 @@ export interface GameType {
 export class Game {
   public type: number;
   public imdbID: string;
-  public name: string;
+  public title: string;
   public year: number;
   public score: number;
   public plot: string;
@@ -32,7 +32,7 @@ export class Game {
 
   constructor({
     imdbID,
-    name,
+    title,
     year,
     score,
     plot,
@@ -45,7 +45,7 @@ export class Game {
   }: GameType) {
     this.type = WatchlistType.Game;
     this.imdbID = imdbID;
-    this.name = name;
+    this.title = title;
     this.year = year;
     this.score = score;
     this.plot = plot;
@@ -59,7 +59,7 @@ export class Game {
 
   get path(): string {
     return (
-      this.name
+      this.title
         .replace(/\W+/g, '-')
         .replace('--', '')
         .toLowerCase() +
@@ -73,7 +73,7 @@ export class Game {
   }
 
   isComplete(): boolean {
-    return !!(this.name && this.year);
+    return !!(this.title && this.year);
   }
 
   togglePlayed() {
@@ -91,5 +91,9 @@ export class Game {
 
   get date_watched() {
     return this.date_played;
+  }
+
+  public clone() {
+    return new Game(this);
   }
 }

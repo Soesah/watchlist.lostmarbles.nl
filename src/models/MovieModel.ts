@@ -3,7 +3,7 @@ import { BaseModel, WatchlistType } from '@/core/models/BaseModel';
 export interface MovieType {
   type: number;
   imdbID: string;
-  name: string;
+  title: string;
   year: number;
   score: number;
   actors: string[];
@@ -18,7 +18,7 @@ export interface MovieType {
 export class Movie extends BaseModel {
   public type: number;
   public imdbID: string;
-  public name: string;
+  public title: string;
   public year: number;
   public score: number;
   public actors: string[];
@@ -31,7 +31,7 @@ export class Movie extends BaseModel {
 
   constructor({
     imdbID,
-    name,
+    title,
     year,
     score,
     actors = [],
@@ -42,11 +42,11 @@ export class Movie extends BaseModel {
     date_watched,
     date_added
   }: MovieType) {
-    super({ name, year, watched, date_watched });
+    super({ title, year, watched, date_watched });
 
     this.type = WatchlistType.Movie;
     this.imdbID = imdbID;
-    this.name = name;
+    this.title = title;
     this.year = year;
     this.score = score;
     this.actors = actors;
@@ -59,6 +59,10 @@ export class Movie extends BaseModel {
   }
 
   public isComplete(): boolean {
-    return !!(this.name && this.year && this.length !== 'N/A');
+    return !!(this.title && this.year && this.length !== 'N/A');
+  }
+
+  public clone() {
+    return new Movie(this);
   }
 }

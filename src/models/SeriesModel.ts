@@ -6,7 +6,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 export interface SeriesType {
   type: number;
   imdbID: string;
-  name: string;
+  title: string;
   plot: string;
   finished: boolean;
   seasons: Season[];
@@ -17,7 +17,7 @@ export interface SeriesType {
 export class Series {
   public type: number;
   public imdbID: string;
-  public name: string;
+  public title: string;
   public plot: string;
   public finished: boolean;
   public seasons: Season[];
@@ -26,7 +26,7 @@ export class Series {
 
   constructor({
     imdbID,
-    name,
+    title,
     seasons = [],
     plot,
     actors = [],
@@ -35,7 +35,7 @@ export class Series {
   }: SeriesType) {
     this.type = WatchlistType.Series;
     this.imdbID = imdbID;
-    this.name = name;
+    this.title = title;
     this.plot = plot;
     this.finished = finished;
     this.seasons = seasons.map(function(data) {
@@ -47,7 +47,7 @@ export class Series {
 
   get path(): string {
     return (
-      this.name
+      this.title
         .replace(/\W+/g, '-')
         .replace('--', '')
         .toLowerCase() +
@@ -61,7 +61,7 @@ export class Series {
   }
 
   isComplete(): boolean {
-    return !!(this.name && this.seasons.length);
+    return !!(this.title && this.seasons.length);
   }
 
   isFinished(): boolean {
@@ -116,5 +116,9 @@ export class Series {
     return this.seasons.length
       ? this.seasons[this.seasons.length - 1].year
       : -1;
+  }
+
+  public clone() {
+    return new Series(this);
   }
 }

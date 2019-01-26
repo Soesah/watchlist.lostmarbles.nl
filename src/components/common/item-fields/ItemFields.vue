@@ -15,23 +15,23 @@
       </svg>
     </div>
     <div class="form-item form-item-required form-item-name">
-      <label>Name</label>
+      <label>Title</label>
       <div class="form-input-group">
         <input
           type="text"
-          name="name"
+          name="title"
           required
           autocomplete="off"
           v-focus
-          placeholder="Name"
-          v-model="item.name"
+          placeholder="title"
+          v-model="item.title"
           @input="update"
         >
         <button
           class="search-button action"
           type="button"
           @click="search($event)"
-          :disabled="searching || !item.name"
+          :disabled="searching || !item.title"
         >
           <i class="icon icon-search" v-show="!searching"></i>
           <i class="icon icon-spinner" v-show="searching"></i>
@@ -196,13 +196,13 @@ export default Vue.extend({
     search() {
       this.searching = true;
       // don't find without a name
-      if (this.item && this.item.name) {
+      if (this.item && this.item.title) {
         this.searching = true;
         const year =
           this.item.type !== WatchlistType.Franchise
             ? this.item.year
             : DateTimeUtil.year();
-        omdbService.search(this.item.name, year ? year : null).then(
+        omdbService.search(this.item.title, year ? year : null).then(
           (res: Results) => {
             this.searching = false;
             this.suggestions = res.results;
@@ -228,7 +228,7 @@ export default Vue.extend({
             let year = data.year;
 
             item.imdbID = data.imdbID;
-            item.name = data.title;
+            item.title = data.title;
             item.date_added = date_added;
             item.actors = data.actors;
             if (this.isMovie(item)) {

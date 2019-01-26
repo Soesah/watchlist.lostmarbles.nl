@@ -11,7 +11,7 @@
         <p>Did you mean the following?</p>
         <ul>
           <li v-for="double in doubles" :key="double.imdbID">
-            <span v-text="double.name"></span>
+            <span v-text="double.title"></span>
             <span class="bracketed" v-text="double.year"></span>,
             <span v-text="getTypeName(double)"></span>
           </li>
@@ -40,24 +40,24 @@ export default Vue.extend({
     };
   },
   watch: {
-    "item.name": function(name) {
+    "item.title": function(title) {
       this.doubles = [];
       this.suggestions = [];
 
-      if (name.length > 2) {
+      if (title.length > 2) {
         let suggestions = this.$store.state.items.filter((item: any) => {
-          return item.name.toLowerCase().indexOf(name.toLowerCase()) !== -1;
+          return item.title.toLowerCase().indexOf(title.toLowerCase()) !== -1;
         });
 
-        suggestions.sort(function(a: any, b: any) {
+        suggestions.sort((a: any, b: any) => {
           if (
-            a.name.toLowerCase().indexOf(name) ===
-            b.name.toLowerCase().indexOf(name)
+            a.title.toLowerCase().indexOf(title) ===
+            b.title.toLowerCase().indexOf(title)
           ) {
-            return a.name.length < b.name.length ? -1 : 1;
-          } else if (a.name.toLowerCase().indexOf(name) === 0) {
+            return a.title.length < b.title.length ? -1 : 1;
+          } else if (a.title.toLowerCase().indexOf(title) === 0) {
             return -1;
-          } else if (b.name.toLowerCase().indexOf(name) === 0) {
+          } else if (b.title.toLowerCase().indexOf(title) === 0) {
             return 1;
           } else {
             return a.year < b.year ? -1 : 1;
@@ -74,10 +74,11 @@ export default Vue.extend({
     this.$store.dispatch("getWatchList");
   },
   methods: {
-    add(evt: Event) {
-      this.$store
-        .dispatch("addItem", this.item)
-        .then(items => this.$router.go(-1));
+    async add(evt: Event) {
+      await this.$store.dispatch("addItem", this.item);
+
+      this.$router.push(`/view/${this.item.path}`);
+
       evt.preventDefault();
       return false;
     },

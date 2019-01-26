@@ -28,7 +28,7 @@ export default Vue.extend({
       return this.$store.getters
         .filteredItems()
         .sort((a: WatchlistItems, b: WatchlistItems) =>
-          a.name > b.name ? 1 : -1
+          a.title > b.title ? 1 : -1
         );
     },
     count(): number {

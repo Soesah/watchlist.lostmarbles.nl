@@ -4,7 +4,7 @@ import { getStoreBuilder } from 'vuex-typex';
 import watchlistService from '@/services/WatchlistService';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Franchise } from '@/models/FranchiseModel';
-import { WatchlistItems } from './services/WatchItemFactory';
+import { WatchItemFactory, WatchlistItems } from './services/WatchItemFactory';
 
 Vue.use(Vuex);
 
@@ -102,28 +102,33 @@ export default new Vuex.Store<WatchlistState>({
     }
   },
   actions: {
-    addItem({ commit, dispatch }, item) {
-      commit('addItem', item);
-      return dispatch('save', 'Saving ' + item.name);
+    async addItem({ commit, dispatch }, item: WatchlistItems) {
+      const type = WatchItemFactory.getTypeName(item).toLowerCase();
+      const stored = await watchlistService.create(type, item);
+      commit('addItem', stored);
+      return dispatch('save', 'Saving ' + stored.title);
     },
     editItem({ commit, dispatch }, item) {
       commit('editItem', item);
-      return dispatch('save', 'Saving changes to ' + item.name);
+      return dispatch('save', 'Saving changes to ' + item.title);
     },
     removeItem({ commit, dispatch }, item) {
       commit('removeItem', item);
-      return dispatch('save', 'Removing ' + item.name);
+      return dispatch('save', 'Removing ' + item.title);
     },
     removeSeason({ commit, dispatch }, { item, season }) {
       commit('removeSeason', { item, season });
-      return dispatch('save', 'Removing ' + item.name + ' Season ' + season.nr);
+      return dispatch(
+        'save',
+        'Removing ' + item.title + ' Season ' + season.nr
+      );
     },
     toggleWatched({ commit, dispatch }, item) {
       commit('toggleWatched', item);
       return dispatch(
         'save',
         'Setting ' +
-          item.name +
+          item.title +
           ' to ' +
           (item.watched ? 'watched' : 'not watched')
       );
@@ -133,7 +138,7 @@ export default new Vuex.Store<WatchlistState>({
       return dispatch(
         'save',
         'Setting ' +
-          item.name +
+          item.title +
           ' Season ' +
           season.nr +
           ' to ' +
@@ -145,7 +150,7 @@ export default new Vuex.Store<WatchlistState>({
       return dispatch(
         'save',
         'Setting ' +
-          item.name +
+          item.title +
           ' Season ' +
           season.nr +
           ' Episode ' +
@@ -189,7 +194,7 @@ export default new Vuex.Store<WatchlistState>({
     searchItems: state => (search: string, items: any) => {
       return state.items.filter((item: any) => {
         return (
-          item.name.toLowerCase().indexOf(search.toLowerCase()) !== -1 &&
+          item.title.toLowerCase().indexOf(search.toLowerCase()) !== -1 &&
           item.type !== WatchlistType.Franchise &&
           !~items.indexOf(item.imdbID)
         );
@@ -224,7 +229,7 @@ export default new Vuex.Store<WatchlistState>({
         // this prevents heaps of complexity if you were to extend the filter and search to franchiseItems above
         if (state.filter.search) {
           show =
-            item.name
+            item.title
               .toLowerCase()
               .indexOf(state.filter.search.toLowerCase()) !== -1 &&
             item.type !== WatchlistType.Franchise;
