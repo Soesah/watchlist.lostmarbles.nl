@@ -108,9 +108,11 @@ export default new Vuex.Store<WatchlistState>({
       commit('addItem', stored);
       return dispatch('save', 'Saving ' + stored.title);
     },
-    editItem({ commit, dispatch }, item) {
-      commit('editItem', item);
-      return dispatch('save', 'Saving changes to ' + item.title);
+    async editItem({ commit, dispatch }, item) {
+      const type = WatchItemFactory.getTypeName(item).toLowerCase();
+      const stored = await watchlistService.create(type, item);
+      commit('editItem', stored);
+      return dispatch('save', 'Saving changes to ' + stored.title);
     },
     removeItem({ commit, dispatch }, item) {
       commit('removeItem', item);

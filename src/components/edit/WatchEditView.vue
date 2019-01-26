@@ -54,10 +54,11 @@ export default Vue.extend({
     this.$store.commit("removeNav", "/edit/" + this.item.path);
   },
   methods: {
-    edit(evt: Event) {
-      this.$store
-        .dispatch("editItem", this.item)
-        .then(items => this.$router.go(-1));
+    async edit(evt: Event) {
+      await this.$store.dispatch("editItem", this.item);
+
+      this.$router.go(-1);
+
       evt.preventDefault();
     },
     remove(evt: Event) {

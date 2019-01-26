@@ -209,32 +209,102 @@ func GetFranchise(w http.ResponseWriter, r *http.Request) {
 
 // UpdateMovie is used to updated a movie
 func UpdateMovie(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Movie
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Movie update succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	movie, err := watchlist.UpdateMovie(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), 500)
+	}
+
+	httpext.SuccessDataAPI(w, "Movie updated succesfully", movie)
 }
 
 // UpdateSeries is used to updated a series
 func UpdateSeries(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Series
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Series update succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	series, err := watchlist.UpdateSeries(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), 500)
+	}
+
+	httpext.SuccessDataAPI(w, "Series updated succesfully", series)
 }
 
 // UpdateDocumentary is used to updated a documentary
 func UpdateDocumentary(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Documentary
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Documentary update succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	documentary, err := watchlist.UpdateDocumentary(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), 500)
+	}
+
+	httpext.SuccessDataAPI(w, "Documentary updated succesfully", documentary)
 }
 
 // UpdateGame is used to updated a game
 func UpdateGame(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Game
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Game update succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	game, err := watchlist.UpdateGame(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), 500)
+	}
+
+	httpext.SuccessDataAPI(w, "Game updated succesfully", game)
 }
 
 // UpdateFranchise is used to updated a franchise
 func UpdateFranchise(w http.ResponseWriter, r *http.Request) {
+	decoder := json.NewDecoder(r.Body)
+	var data models.Franchise
+	err := decoder.Decode(&data)
 
-	httpext.SuccessAPI(w, "Franchise update succesfully")
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	franchise, err := watchlist.UpdateFranchise(data, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), 500)
+	}
+
+	httpext.SuccessDataAPI(w, "Franchise updated succesfully", franchise)
 }
 
 // DeleteMovie is used to delete a movie

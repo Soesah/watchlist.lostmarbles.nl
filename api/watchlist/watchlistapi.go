@@ -377,33 +377,76 @@ func GetFranchise(imdbID string, r *http.Request) (models.Franchise, error) {
 }
 
 // UpdateMovie updates a movie
-func UpdateMovie(movie models.Movie, r *http.Request) error {
+func UpdateMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
+	ctx := appengine.NewContext(r)
 
-	return nil
+	key := api.MovieKey(ctx, movie.ImdbID)
+	_, err := datastore.Put(ctx, key, &movie)
+
+	if err != nil {
+		return movie, err
+	}
+
+	return movie, nil
 }
 
 // UpdateSeries updates a series
-func UpdateSeries(series models.Series, r *http.Request) error {
+func UpdateSeries(series models.Series, r *http.Request) (models.Series, error) {
 
-	return nil
+	return series, errors.New("Series could not be updated")
+
+	// ctx := appengine.NewContext(r)
+
+	// key := api.SeriesKey(ctx, series.ImdbID)
+	// _, err := datastore.Put(ctx, key, &series)
+
+	// if err != nil {
+	// 	return series, err
+	// }
+
+	// return series, nil
 }
 
 // UpdateDocumentary updates a documentary
-func UpdateDocumentary(documentary models.Documentary, r *http.Request) error {
+func UpdateDocumentary(documentary models.Documentary, r *http.Request) (models.Documentary, error) {
+	ctx := appengine.NewContext(r)
 
-	return nil
+	key := api.DocumentaryKey(ctx, documentary.ImdbID)
+	_, err := datastore.Put(ctx, key, &documentary)
+
+	if err != nil {
+		return documentary, err
+	}
+
+	return documentary, nil
 }
 
 // UpdateGame updates a game
-func UpdateGame(game models.Game, r *http.Request) error {
+func UpdateGame(game models.Game, r *http.Request) (models.Game, error) {
+	ctx := appengine.NewContext(r)
 
-	return nil
+	key := api.GameKey(ctx, game.ImdbID)
+	_, err := datastore.Put(ctx, key, &game)
+
+	if err != nil {
+		return game, err
+	}
+
+	return game, nil
 }
 
 // UpdateFranchise updates a franchise
-func UpdateFranchise(franchise models.Franchise, r *http.Request) error {
+func UpdateFranchise(franchise models.Franchise, r *http.Request) (models.Franchise, error) {
+	ctx := appengine.NewContext(r)
 
-	return nil
+	key := api.FranchiseKey(ctx, franchise.ImdbID)
+	_, err := datastore.Put(ctx, key, &franchise)
+
+	if err != nil {
+		return franchise, err
+	}
+
+	return franchise, nil
 }
 
 // DeleteMovie deletes a movie
