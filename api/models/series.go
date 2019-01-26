@@ -4,7 +4,7 @@ package models
 type Series struct {
 	Type      int64    `json:"type"`
 	ImdbID    string   `json:"imdbID"`
-	Name      string   `json:"name"`
+	Title     string   `json:"title"`
 	Plot      string   `json:"plot"`
 	Finished  bool     `json:"finished"`
 	Seasons   []Season `json:"seasons" datastore:"seasons,noindex"`
@@ -16,7 +16,7 @@ type Series struct {
 type SeriesData struct {
 	Type      int64
 	ImdbID    string
-	Name      string
+	Title     string
 	Plot      string
 	Finished  bool
 	Actors    []string
@@ -36,7 +36,7 @@ func (seriesData SeriesData) GetSeries(seasons []Season) Series {
 	return Series{
 		Type:      seriesData.Type,
 		ImdbID:    seriesData.ImdbID,
-		Name:      seriesData.Name,
+		Title:     seriesData.Title,
 		Plot:      seriesData.Plot,
 		Finished:  seriesData.Finished,
 		Seasons:   seriesSeasons,

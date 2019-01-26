@@ -4,7 +4,7 @@ package models
 type Documentary struct {
 	Type        int64  `json:"type,omitempty"`
 	ImdbID      string `json:"imdb_id,omitempty"`
-	Name        string `json:"name,omitempty"`
+	Title       string `json:"title,omitempty"`
 	Year        int64  `json:"year,omitempty"`
 	Score       int64  `json:"score,omitempty"`
 	Director    string `json:"director,omitempty"`

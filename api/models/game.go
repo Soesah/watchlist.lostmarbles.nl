@@ -4,7 +4,7 @@ package models
 type Game struct {
 	Type       int64    `json:"type"`
 	ImdbID     string   `json:"imdbID"`
-	Name       string   `json:"name"`
+	Title      string   `json:"title"`
 	Year       int64    `json:"year"`
 	Score      int64    `json:"score"`
 	Plot       string   `json:"plot"`

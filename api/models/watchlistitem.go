@@ -61,7 +61,7 @@ func (item WatchlistItem) Movie() Movie {
 	return Movie{
 		Type:        item.Type,
 		ImdbID:      item.ImdbID,
-		Name:        item.Name,
+		Title:       item.Name,
 		Year:        item.Year,
 		Score:       item.Score,
 		Actors:      item.Actors,
@@ -80,7 +80,7 @@ func (item WatchlistItem) Series() SeriesData {
 	return SeriesData{
 		Type:      item.Type,
 		ImdbID:    item.ImdbID,
-		Name:      item.Name,
+		Title:     item.Name,
 		Actors:    item.Actors,
 		Plot:      item.Plot,
 		DateAdded: item.DateAdded,
@@ -130,7 +130,7 @@ func (item WatchlistItem) Documentary() Documentary {
 	return Documentary{
 		Type:        item.Type,
 		ImdbID:      item.ImdbID,
-		Name:        item.Name,
+		Title:       item.Name,
 		Year:        item.Year,
 		Score:       item.Score,
 		Director:    item.Director,
@@ -145,7 +145,7 @@ func (item WatchlistItem) Game() Game {
 	return Game{
 		Type:       item.Type,
 		ImdbID:     item.ImdbID,
-		Name:       item.Name,
+		Title:      item.Name,
 		Year:       item.Year,
 		Score:      item.Score,
 		Plot:       item.Plot,
