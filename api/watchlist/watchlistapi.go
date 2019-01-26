@@ -314,31 +314,77 @@ func UpdateFranchise(franchise models.Franchise, r *http.Request) error {
 }
 
 // DeleteMovie deletes a movie
-func DeleteMovie(movie models.Movie, r *http.Request) error {
+func DeleteMovie(imdbID string, r *http.Request) error {
+
+	ctx := appengine.NewContext(r)
+	key := api.MovieKey(ctx, imdbID)
+
+	err := datastore.Delete(ctx, key)
+
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
 
 // DeleteSeries deletes a series
-func DeleteSeries(series models.Series, r *http.Request) error {
+func DeleteSeries(imdbID string, r *http.Request) error {
 
-	return nil
+	return errors.New("Series could not be deleted")
+
+	// ctx := appengine.NewContext(r)
+	// key := api.SeriesKey(ctx, imdbID)
+
+	// err := datastore.Delete(ctx, key)
+
+	// if err != nil {
+	// 	return err
+	// }
+
+	// return nil
 }
 
 // DeleteDocumentary deletes a documentary
-func DeleteDocumentary(documentary models.Documentary, r *http.Request) error {
+func DeleteDocumentary(imdbID string, r *http.Request) error {
+
+	ctx := appengine.NewContext(r)
+	key := api.DocumentaryKey(ctx, imdbID)
+
+	err := datastore.Delete(ctx, key)
+
+	if err != nil {
+		return err
+	}
 
 	return nil
 }
 
 // DeleteGame deletes a game
-func DeleteGame(game models.Game, r *http.Request) error {
+func DeleteGame(imdbID string, r *http.Request) error {
 
+	ctx := appengine.NewContext(r)
+	key := api.GameKey(ctx, imdbID)
+
+	err := datastore.Delete(ctx, key)
+
+	if err != nil {
+		return err
+	}
 	return nil
 }
 
 // DeleteFranchise deletes a franchise
-func DeleteFranchise(franchise models.Franchise, r *http.Request) error {
+func DeleteFranchise(imdbID string, r *http.Request) error {
+
+	ctx := appengine.NewContext(r)
+	key := api.FranchiseKey(ctx, imdbID)
+
+	err := datastore.Delete(ctx, key)
+
+	if err != nil {
+		return err
+	}
 
 	return nil
 }

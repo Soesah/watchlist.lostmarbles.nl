@@ -174,30 +174,65 @@ func UpdateFranchise(w http.ResponseWriter, r *http.Request) {
 
 // DeleteMovie is used to delete a movie
 func DeleteMovie(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+
+	err := watchlist.DeleteMovie(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, "Deleting Movie failed", 500)
+	}
 
 	httpext.SuccessAPI(w, "Movie deleted succesfully")
 }
 
 // DeleteSeries is used to delete a series
 func DeleteSeries(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+
+	err := watchlist.DeleteSeries(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, "Deleting Series failed", 500)
+	}
 
 	httpext.SuccessAPI(w, "Series deleted succesfully")
 }
 
 // DeleteDocumentary is used to delete a documentary
 func DeleteDocumentary(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+
+	err := watchlist.DeleteDocumentary(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, "Deleting Documentary failed", 500)
+	}
 
 	httpext.SuccessAPI(w, "Documentary deleted succesfully")
 }
 
 // DeleteGame is used to delete a game
 func DeleteGame(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+
+	err := watchlist.DeleteGame(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, "Deleting Game failed", 500)
+	}
 
 	httpext.SuccessAPI(w, "Game deleted succesfully")
 }
 
 // DeleteFranchise is used to delete a franchise
 func DeleteFranchise(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+
+	err := watchlist.DeleteFranchise(imdbID, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, "Deleting Franchise failed", 500)
+	}
 
 	httpext.SuccessAPI(w, "Franchise deleted succesfully")
 }
