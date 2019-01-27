@@ -24,7 +24,7 @@ const (
 
 // GetWatchList returns the whole watch list
 func GetWatchList(r *http.Request) ([]interface{}, error) {
-	var list []interface{}
+	list := make([]interface{}, 0)
 
 	var movies []models.Movie
 	var seriesData []models.SeriesData

@@ -17,7 +17,7 @@ type OMDBSearch struct {
 // Results returns sanetized search results
 func (res OMDBSearch) Results() Results {
 	count, _ := strconv.Atoi(res.TotalResults)
-	var results []Result
+	results := make([]Result, 0)
 	for _, item := range res.Search {
 		year, _ := strconv.Atoi(item.Year)
 		results = append(results, Result{

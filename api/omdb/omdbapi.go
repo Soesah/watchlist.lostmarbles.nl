@@ -75,7 +75,7 @@ func Get(imdbID string, r *http.Request) (models.ResultItem, error) {
 
 // GetSeasons returns all (sensible) seasons for a series
 func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
-	var seasons []models.Season
+	seasons := make([]models.Season, 0)
 
 	ctx := appengine.NewContext(r)
 	client := urlfetch.Client(ctx)
