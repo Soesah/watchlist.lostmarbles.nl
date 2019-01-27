@@ -8,6 +8,7 @@ export interface DocumentaryType {
   score: number;
   director: string;
   watched: boolean;
+  actors: string[];
   date_watched: string | null;
   date_added: string | null;
 }
@@ -19,6 +20,7 @@ export class Documentary extends BaseModel {
   public year: number;
   public score: number;
   public director: string;
+  public actors: string[];
   public watched: boolean;
   public date_watched: string | null;
   public date_added: string | null;
@@ -29,6 +31,7 @@ export class Documentary extends BaseModel {
     year,
     score,
     director,
+    actors = [],
     watched = false,
     date_watched = null,
     date_added = null
@@ -40,6 +43,7 @@ export class Documentary extends BaseModel {
     this.year = year;
     this.director = director;
     this.score = score;
+    this.actors = actors;
     this.watched = watched;
     this.date_watched = date_watched;
     this.date_added = date_added;
