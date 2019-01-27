@@ -30,12 +30,6 @@ func Router() *chi.Mux {
 	// home
 	r.Get("/", handlers.RootHandler)
 
-	// static
-	r.Group(func(r chi.Router) {
-		r.Use(middlewares.Cache(24 * time.Hour))
-		handlers.ServeDir(r, "/static/*", http.Dir("./dist/static"))
-	})
-
 	r.Route("/api", func(r chi.Router) {
 
 		r.Get("/list", handlers.GetList)
@@ -80,8 +74,17 @@ func Router() *chi.Mux {
 
 	})
 
+	// static
 	r.Group(func(r chi.Router) {
-		r.Get("/*", handlers.NotSupportedAPIHandler)
+		r.Use(middlewares.Cache(24 * time.Hour))
+		handlers.ServeDir(r, "/js/*", http.Dir("./dist/js"))
+		handlers.ServeDir(r, "/css/*", http.Dir("./dist/css"))
+		handlers.ServeDir(r, "/fonts/*", http.Dir("./dist/fonts"))
+		handlers.ServeFile(r, "/*", "./dist/index.html")
+	})
+
+	r.Group(func(r chi.Router) {
+		r.Get("/*", handlers.RootHandler)
 	})
 	return r
 }

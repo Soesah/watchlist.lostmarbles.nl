@@ -9,6 +9,7 @@
     "test:unit": "vue-cli-service test:unit",
     "store": "gcloud beta emulators datastore start",
     "app": "$(gcloud beta emulators datastore env-init) && dev_appserver.py dev/app-develop.yaml --automatic_restart=no --support_datastore_emulator=True --port 8182",
+    "deploy": "yarn build && gcloud app deploy app.yaml --project watchlist-lost-marbles -q",
     "update-index": "cp dev/index.yaml ./index.yaml && gcloud datastore create-indexes index.yaml --project watchlist-lost-marbles -q"
   },
   "dependencies": {

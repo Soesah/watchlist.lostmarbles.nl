@@ -5,3 +5,4 @@ node-classloader
 node_modules
 commit_message
 build
+dist/
