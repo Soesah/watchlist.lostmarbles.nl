@@ -8,7 +8,7 @@
         –
         <span v-text="item.lastYear"></span>
       </span>
-      <span v-show="item.finished" class="bracketed">Finished</span>
+      <span v-show="item.finished" class="bracketed">Finished</span>&nbsp;
       <span v-text="typeName"></span>
       <span v-show="item.imdbID && !~item.imdbID.indexOf('NON')" class="dashed">
         <a :href="'http://www.imdb.com/title/' + item.imdbID" target="_new">IMDB</a>
