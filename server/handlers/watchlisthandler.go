@@ -27,14 +27,15 @@ func ToggleItemWatched(w http.ResponseWriter, r *http.Request) {
 	itemType := chi.URLParam(r, "type")
 	imdbID := chi.URLParam(r, "imdbID")
 
-	item, err := watchlist.ToggleItemWatched(itemType, imdbID, r)
+	item, watched, err := watchlist.ToggleItemWatched(itemType, imdbID, r)
 
 	if err != nil {
 		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
+	message := "Toggled " + itemType + " to " + watched
 
-	httpext.JSON(w, item)
+	httpext.SuccessDataAPI(w, message, item)
 }
 
 // AddMovie is used to add a movie

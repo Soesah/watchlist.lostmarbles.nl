@@ -124,10 +124,11 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 }
 
 // ToggleItemWatched adds a movie
-func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interface{}, error) {
+func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interface{}, string, error) {
 
 	var key *datastore.Key
 	var item interface{}
+	var watched string
 	ctx := appengine.NewContext(r)
 
 	if itemType == typeMOVIE {
@@ -135,12 +136,18 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		key = api.MovieKey(ctx, imdbID)
 		err := datastore.Get(ctx, key, &movie)
 		if err != nil {
-			return item, err
+			return item, "", err
 		}
 		movie.Watched = !movie.Watched
+		if movie.Watched {
+			watched = "watched"
+		} else {
+			watched = "not watched"
+		}
+
 		_, err = datastore.Put(ctx, key, &movie)
 		if err != nil {
-			return item, err
+			return item, "", err
 		}
 		item = movie
 	}
@@ -163,12 +170,17 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		key = api.DocumentaryKey(ctx, imdbID)
 		err := datastore.Get(ctx, key, &documentary)
 		if err != nil {
-			return item, err
+			return item, "", err
 		}
 		documentary.Watched = !documentary.Watched
+		if documentary.Watched {
+			watched = "watched"
+		} else {
+			watched = "not watched"
+		}
 		_, err = datastore.Put(ctx, key, documentary)
 		if err != nil {
-			return item, err
+			return item, "", err
 		}
 		item = documentary
 	}
@@ -177,12 +189,18 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		key = api.GameKey(ctx, imdbID)
 		err := datastore.Get(ctx, key, &game)
 		if err != nil {
-			return item, err
+			return item, "", err
 		}
 		game.Played = !game.Played
+		if game.Played {
+			watched = "played"
+		} else {
+			watched = "not played"
+		}
+
 		_, err = datastore.Put(ctx, key, game)
 		if err != nil {
-			return item, err
+			return item, "", err
 		}
 		item = game
 	}
@@ -190,7 +208,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 	// 	key = api.EpisodeKey(ctx, imdbID)
 	// }
 
-	return item, nil
+	return item, watched, nil
 }
 
 // AddMovie adds a movie
