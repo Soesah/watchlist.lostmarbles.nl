@@ -33,10 +33,10 @@
           <i class="icon icon-plus"></i>
         </button>
         <ul class="suggestions" v-show="suggestions.length && !choice">
-          <li v-for="suggestion in suggestions" :key="suggestion.name">
+          <li v-for="suggestion in suggestions" :key="suggestion.title">
             <a href="#" @click="chooseItem($event, suggestion)">
               <i :class="'icon icon-' + getTypeName(suggestion)"></i>
-              <span v-text="suggestion.name + '(' + suggestion.year + ')'"></span>
+              <span v-text="suggestion.title + '(' + suggestion.year + ')'"></span>
             </a>
           </li>
           <li class="suggestions-button">
@@ -48,10 +48,10 @@
     <div class="form-item" v-show="items.length">
       <label>Items</label>
       <ul class="franchise-items list">
-        <li v-for="item in items" :key="item.name">
+        <li v-for="item in items" :key="item.title">
           <p>
             <i :class="'icon icon-' + getTypeName(item)"></i>
-            <span v-text="item.name"></span>
+            <span v-text="item.title"></span>
           </p>
         </li>
       </ul>

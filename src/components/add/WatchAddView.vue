@@ -1,5 +1,5 @@
 <template>
-  <form class="form" @submit="add">
+  <form class="form" @submit.prevent="add">
     <h2>Add</h2>
     <p>Add a movie, documentary or series to the watchlist</p>
 
@@ -21,7 +21,7 @@
 
     <div class="buttons">
       <button type="submit">Add</button>
-      <button type="cancel" @click="back">Cancel</button>
+      <button type="cancel" @click.prevent="back">Cancel</button>
     </div>
   </form>
 </template>
@@ -74,17 +74,12 @@ export default Vue.extend({
     this.$store.dispatch("getWatchList");
   },
   methods: {
-    async add(evt: Event) {
+    async add() {
       await this.$store.dispatch("addItem", this.item);
-
       this.$router.push(`/view/${this.item.path}`);
-
-      evt.preventDefault();
-      return false;
     },
-    back(evt: Event) {
+    back() {
       this.$router.go(-1);
-      evt.preventDefault();
     },
     getTypeName(item: any) {
       return WatchItemFactory.getTypeName(item);

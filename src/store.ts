@@ -4,7 +4,11 @@ import { getStoreBuilder } from 'vuex-typex';
 import watchlistService from '@/services/WatchlistService';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Franchise } from '@/models/FranchiseModel';
-import { WatchItemFactory, WatchlistItems } from './services/WatchItemFactory';
+import {
+  WatchItemFactory,
+  WatchlistItems,
+  FranchiseItems
+} from './services/WatchItemFactory';
 
 Vue.use(Vuex);
 
@@ -220,12 +224,10 @@ export default new Vuex.Store<WatchlistState>({
         .franchises()
         .find((franchise: Franchise) => franchise.items.includes(item.imdbID));
     },
-    franchiseItems: state => (items: string[]): WatchlistItems => {
-      const franchiseItems: any = [];
-      items.forEach((imdbID: string) => {
-        franchiseItems.push(state.items.find(item => item.imdbID === imdbID));
-      });
-      return franchiseItems;
+    franchiseItems: state => (items: string[]): FranchiseItems[] => {
+      return items.map((imdbID: string) =>
+        state.items.find(item => item.imdbID === imdbID)
+      );
     },
     filteredItems: (state, getters) => () => {
       let filtered = state.items.filter((item: any) => {

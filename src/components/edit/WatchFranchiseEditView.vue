@@ -1,5 +1,5 @@
 <template>
-  <form class="form add-franchise" @submit="edit">
+  <form class="form add-franchise" @submit.prevent="edit">
     <h2>Edit a franchise</h2>
     <p>
       Update and complete the information for this
@@ -17,7 +17,7 @@
 <script lang="ts">
 import Vue from "vue";
 import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
-import ItemFields from "@/components/common/item-fields/ItemFields.vue";
+import FranchiseItemFields from "@/components/common/item-fields/FranchiseItemFields.vue";
 import { Franchise } from "@/models/FranchiseModel";
 import { WatchlistType } from "@/core/models/BaseModel";
 
@@ -54,22 +54,20 @@ export default Vue.extend({
     this.$store.commit("removeNav", "/edit/franchise/" + this.item.path);
   },
   methods: {
-    edit(evt: Event) {
+    edit() {
       this.$store
         .dispatch("editItem", this.item)
         .then(items => this.$router.go(-1));
-      evt.preventDefault();
     },
-    back(evt: Event) {
+    back() {
       this.$router.go(-1);
-      evt.preventDefault();
     },
     getTypeName(item: WatchlistItems): string {
       return WatchItemFactory.getTypeName(item).toLowerCase();
     }
   },
   components: {
-    ItemFields
+    FranchiseItemFields
   }
 });
 </script>

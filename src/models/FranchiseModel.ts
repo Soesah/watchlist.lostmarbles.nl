@@ -59,4 +59,8 @@ export class Franchise {
   get watched(): boolean {
     return false;
   }
+
+  public clone() {
+    return new Franchise(this);
+  }
 }

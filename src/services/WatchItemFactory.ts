@@ -18,6 +18,7 @@ export type WatchlistItem =
   | FranchiseType;
 export type WatchlistItemsPure = Movie | Series | Documentary | Game;
 export type WatchlistItems = WatchlistItemsPure | Franchise;
+export type FranchiseItems = WatchlistItems | undefined;
 
 interface BaseType {
   imdbID?: string;
