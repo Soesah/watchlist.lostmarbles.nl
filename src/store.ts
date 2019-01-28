@@ -137,14 +137,13 @@ export default new Vuex.Store<WatchlistState>({
         'Removing ' + item.title + ' Season ' + season.nr
       );
     },
-    toggleWatched({ commit, dispatch }, item) {
+    async toggleWatched({ commit, dispatch }, item) {
       commit('toggleWatched', item);
+      const type = WatchItemFactory.getTypeName(item).toLowerCase();
+      const toggled = await watchlistService.toggle(type, item);
       return dispatch(
         'save',
-        'Setting ' +
-          item.title +
-          ' to ' +
-          (item.watched ? 'watched' : 'not watched')
+        'Setting ' + item.title + ' to ' + (toggled ? 'watched' : 'not watched')
       );
     },
     toggleSeasonWatched({ commit, dispatch }, { item, season }) {

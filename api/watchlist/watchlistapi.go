@@ -178,7 +178,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		} else {
 			watched = "not watched"
 		}
-		_, err = datastore.Put(ctx, key, documentary)
+		_, err = datastore.Put(ctx, key, &documentary)
 		if err != nil {
 			return item, "", err
 		}
@@ -198,7 +198,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 			watched = "not played"
 		}
 
-		_, err = datastore.Put(ctx, key, game)
+		_, err = datastore.Put(ctx, key, &game)
 		if err != nil {
 			return item, "", err
 		}

@@ -57,6 +57,14 @@ export class WatchlistService extends BaseService {
       ? WatchItemFactory.create(response.data.data)
       : response.statusText;
   }
+
+  async toggle(type: string, item: WatchlistItems): Promise<boolean> {
+    const response = await this.$http.put(
+      `${this.path}/${type}/watched/${item.imdbID}`,
+      item
+    );
+    return response.status === STATUS_OK;
+  }
 }
 
 export default new WatchlistService();
