@@ -55,9 +55,9 @@ func ImportData(items []models.WatchlistItem, r *http.Request) (int, int, error)
 			}
 
 			if item.IsSeries() {
-				key = api.SeriesDataKey(ctx, item.Series().ImdbID)
+				key = api.SeriesDataKey(ctx, item.SeriesData().ImdbID)
 				seriesKeys = append(seriesKeys, key)
-				series = append(series, item.Series())
+				series = append(series, item.SeriesData())
 				// import seasons with series parent key
 				for _, season := range item.SeasonsData() {
 					key = api.SeasonKey(ctx, season)

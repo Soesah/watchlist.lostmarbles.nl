@@ -232,25 +232,55 @@ func AddMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
 }
 
 // AddSeries adds a series
-func AddSeries(series models.Series, r *http.Request) (models.Series, error) {
+func AddSeries(series models.WatchlistItem, r *http.Request) (models.Series, error) {
 	var created models.Series
+	var seasonKeys []*datastore.Key
+	var seasons []models.SeasonData
+	var episodeKeys []*datastore.Key
+	var episodes []models.Episode
 
-	return created, errors.New("Series could not be saved")
+	ctx := appengine.NewContext(r)
 
-	// ctx := appengine.NewContext(r)
+	series.DateAdded = time.Now().Format(util.DateFormat)
 
-	// series.DateAdded = time.Now().Format(util.DateFormat)
+	key := api.SeriesDataKey(ctx, series.ImdbID)
+	seriesData := series.SeriesData()
+	_, err := datastore.Put(ctx, key, &seriesData)
 
-	// key := api.SeriesKey(ctx, series.ImdbID)
-	// _, err := datastore.Put(ctx, key, &series)
+	if err != nil {
+		return created, err
+	}
 
-	// if err != nil {
-	// 	return created, err
-	// }
+	// import seasons with series parent key
+	for _, season := range series.SeasonsData() {
+		key = api.SeasonKey(ctx, season)
+		seasonKeys = append(seasonKeys, key)
+		seasons = append(seasons, season)
 
-	// created = series
+	}
+	// import episodes with season parent key and series parent key
+	for _, episode := range series.EpisodesData() {
+		key = api.EpisodeKey(ctx, episode)
+		episodeKeys = append(episodeKeys, key)
+		episodes = append(episodes, episode)
 
-	// return created, nil
+	}
+
+	_, err = datastore.PutMulti(ctx, seasonKeys, seasons)
+
+	if err != nil {
+		return created, errors.New(err.Error() + " when importing seasons")
+	}
+
+	_, err = datastore.PutMulti(ctx, episodeKeys, episodes)
+
+	if err != nil {
+		return created, errors.New(err.Error() + " when importing episodes")
+	}
+
+	created = series.GetSeries()
+
+	return created, nil
 }
 
 // AddDocumentary adds a documentary
@@ -332,16 +362,40 @@ func GetMovie(imdbID string, r *http.Request) (models.Movie, error) {
 // GetSeries returns the Series
 func GetSeries(imdbID string, r *http.Request) (models.Series, error) {
 	var item models.Series
+	var seriesData models.SeriesData
+	var seasonsData []models.SeasonData
+	var episodes []models.Episode
 
-	return item, errors.New("Series could not be loaded")
-	// ctx := appengine.NewContext(r)
+	ctx := appengine.NewContext(r)
+	key := api.SeriesDataKey(ctx, imdbID)
 
-	// key := api.SeriesKey(ctx, imdbID)
-	// err := datastore.Get(ctx, key, &item)
+	err := datastore.Get(ctx, key, &seriesData)
+	if err != nil {
+		return item, err
+	}
 
-	// if err != nil {
-	// 	return item, err
-	// }
+	q := datastore.NewQuery(api.SeasonKind).Ancestor(key)
+	_, err = q.GetAll(ctx, &seasonsData)
+	if err != nil {
+		return item, err
+	}
+
+	q = datastore.NewQuery(api.EpisodeKind).Ancestor(key)
+	_, err = q.GetAll(ctx, &episodes)
+	if err != nil {
+		return item, err
+	}
+
+	// add the episodes to the seasons
+	var seasons []models.Season
+	for _, seasonData := range seasonsData {
+		season := seasonData.GetSeason(episodes)
+		seasons = append(seasons, season)
+	}
+
+	item = seriesData.GetSeries(seasons)
+
+	return item, nil
 
 	// return item, nil
 }
@@ -409,20 +463,13 @@ func UpdateMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
 }
 
 // UpdateSeries updates a series
-func UpdateSeries(series models.Series, r *http.Request) (models.Series, error) {
+func UpdateSeries(series models.WatchlistItem, r *http.Request) (models.Series, error) {
 
-	return series, errors.New("Series could not be updated")
+	// remove current data
+	DeleteSeries(series.ImdbID, r)
 
-	// ctx := appengine.NewContext(r)
-
-	// key := api.SeriesKey(ctx, series.ImdbID)
-	// _, err := datastore.Put(ctx, key, &series)
-
-	// if err != nil {
-	// 	return series, err
-	// }
-
-	// return series, nil
+	// re-add updated data
+	return AddSeries(series, r)
 }
 
 // UpdateDocumentary updates a documentary
@@ -484,19 +531,45 @@ func DeleteMovie(imdbID string, r *http.Request) error {
 
 // DeleteSeries deletes a series
 func DeleteSeries(imdbID string, r *http.Request) error {
+	var seasonsData []models.SeasonData
+	var episodes []models.Episode
 
-	return errors.New("Series could not be deleted")
+	ctx := appengine.NewContext(r)
+	key := api.SeriesKey(ctx, imdbID)
 
-	// ctx := appengine.NewContext(r)
-	// key := api.SeriesKey(ctx, imdbID)
+	err := datastore.Delete(ctx, key)
 
-	// err := datastore.Delete(ctx, key)
+	if err != nil {
+		return err
+	}
 
-	// if err != nil {
-	// 	return err
-	// }
+	q := datastore.NewQuery(api.SeasonKind).Ancestor(key)
+	keys, err := q.GetAll(ctx, &seasonsData)
 
-	// return nil
+	if err != nil {
+		return err
+	}
+
+	err = datastore.DeleteMulti(ctx, keys)
+
+	if err != nil {
+		return err
+	}
+
+	q = datastore.NewQuery(api.EpisodeKind).Ancestor(key)
+	keys, err = q.GetAll(ctx, &episodes)
+
+	if err != nil {
+		return err
+	}
+
+	err = datastore.DeleteMulti(ctx, keys)
+
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
 
 // DeleteDocumentary deletes a documentary

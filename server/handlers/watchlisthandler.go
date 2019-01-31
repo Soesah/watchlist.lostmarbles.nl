@@ -62,7 +62,7 @@ func AddMovie(w http.ResponseWriter, r *http.Request) {
 // AddSeries is used to add a series
 func AddSeries(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
-	var data models.Series
+	var data models.WatchlistItem
 	err := decoder.Decode(&data)
 
 	if err != nil {
@@ -223,6 +223,7 @@ func UpdateMovie(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, err.Error(), 500)
+		return
 	}
 
 	httpext.SuccessDataAPI(w, "Movie updated succesfully", movie)
@@ -231,7 +232,7 @@ func UpdateMovie(w http.ResponseWriter, r *http.Request) {
 // UpdateSeries is used to updated a series
 func UpdateSeries(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
-	var data models.Series
+	var data models.WatchlistItem
 	err := decoder.Decode(&data)
 
 	if err != nil {
@@ -243,6 +244,7 @@ func UpdateSeries(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, err.Error(), 500)
+		return
 	}
 
 	httpext.SuccessDataAPI(w, "Series updated succesfully", series)
@@ -263,6 +265,7 @@ func UpdateDocumentary(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, err.Error(), 500)
+		return
 	}
 
 	httpext.SuccessDataAPI(w, "Documentary updated succesfully", documentary)
@@ -283,6 +286,7 @@ func UpdateGame(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, err.Error(), 500)
+		return
 	}
 
 	httpext.SuccessDataAPI(w, "Game updated succesfully", game)
@@ -303,6 +307,7 @@ func UpdateFranchise(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, err.Error(), 500)
+		return
 	}
 
 	httpext.SuccessDataAPI(w, "Franchise updated succesfully", franchise)
@@ -316,6 +321,7 @@ func DeleteMovie(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, "Deleting Movie failed", 500)
+		return
 	}
 
 	httpext.SuccessAPI(w, "Movie deleted succesfully")
@@ -329,6 +335,7 @@ func DeleteSeries(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, "Deleting Series failed", 500)
+		return
 	}
 
 	httpext.SuccessAPI(w, "Series deleted succesfully")
@@ -342,6 +349,7 @@ func DeleteDocumentary(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, "Deleting Documentary failed", 500)
+		return
 	}
 
 	httpext.SuccessAPI(w, "Documentary deleted succesfully")
@@ -355,6 +363,7 @@ func DeleteGame(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, "Deleting Game failed", 500)
+		return
 	}
 
 	httpext.SuccessAPI(w, "Game deleted succesfully")
@@ -368,6 +377,7 @@ func DeleteFranchise(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		httpext.AbortAPI(w, "Deleting Franchise failed", 500)
+		return
 	}
 
 	httpext.SuccessAPI(w, "Franchise deleted succesfully")

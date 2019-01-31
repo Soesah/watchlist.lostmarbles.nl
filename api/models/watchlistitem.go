@@ -74,8 +74,22 @@ func (item WatchlistItem) Movie() Movie {
 	}
 }
 
-// Series returns the item as a series
-func (item WatchlistItem) Series() SeriesData {
+// GetSeries returns a SeriesData
+func (item WatchlistItem) GetSeries() Series {
+	return Series{
+		Type:      item.Type,
+		ImdbID:    item.ImdbID,
+		Title:     item.Name,
+		Plot:      item.Plot,
+		Finished:  item.Finished,
+		Actors:    item.Actors,
+		Seasons:   item.Seasons,
+		DateAdded: item.DateAdded,
+	}
+}
+
+// SeriesData returns the item as a seriesData
+func (item WatchlistItem) SeriesData() SeriesData {
 
 	return SeriesData{
 		Type:      item.Type,
