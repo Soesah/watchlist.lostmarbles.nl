@@ -3,12 +3,16 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
+	"strconv"
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/models"
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/watchlist"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/httpext"
 	"github.com/go-chi/chi"
 )
+
+// WATCHED is a keyword
+const WATCHED = "watched"
 
 // GetList gets the whole watchlist
 func GetList(w http.ResponseWriter, r *http.Request) {
@@ -36,6 +40,63 @@ func ToggleItemWatched(w http.ResponseWriter, r *http.Request) {
 	message := "Toggled " + itemType + " to " + watched
 
 	httpext.SuccessDataAPI(w, message, item)
+}
+
+// ToggleSeriesWatched toggles an entire series to watched
+func ToggleSeriesWatched(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	set := chi.URLParam(r, "watched") == WATCHED
+
+	series, watched, err := watchlist.ToggleSeriesWatched(imdbID, set, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	message := "Toggled Series to " + watched
+
+	httpext.SuccessDataAPI(w, message, series)
+
+}
+
+// ToggleSeasonWatched toggles an entire season to watched
+func ToggleSeasonWatched(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	nr := chi.URLParam(r, "seasonNr")
+	set := chi.URLParam(r, "watched") == WATCHED
+
+	seasonNr, _ := strconv.Atoi(nr)
+
+	series, watched, err := watchlist.ToggleSeasonWatched(imdbID, int64(seasonNr), set, r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+	message := "Toggled Series to " + watched
+
+	httpext.SuccessDataAPI(w, message, series)
+}
+
+// ToggleEpisodeWatched toggles an episode to watched
+func ToggleEpisodeWatched(w http.ResponseWriter, r *http.Request) {
+	imdbID := chi.URLParam(r, "imdbID")
+	sNr := chi.URLParam(r, "seasonNr")
+	eNr := chi.URLParam(r, "episodeNr")
+
+	seasonNr, _ := strconv.Atoi(sNr)
+	episodeNr, _ := strconv.Atoi(eNr)
+
+	series, watched, err := watchlist.ToggleEpisodeWatched(imdbID, int64(seasonNr), int64(episodeNr), r)
+
+	if err != nil {
+		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	message := "Toggled Series to " + watched
+
+	httpext.SuccessDataAPI(w, message, series)
 }
 
 // AddMovie is used to add a movie

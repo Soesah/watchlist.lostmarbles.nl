@@ -151,20 +151,6 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		}
 		item = movie
 	}
-	// if itemType == typeSERIES {
-	// 	var series models.Series
-	// 	key = api.SeriesKey(ctx, imdbID)
-	// 	err := datastore.Get(ctx, key, &series)
-	// 	if err != nil {
-	// 		return item, err
-	// 	}
-	// 	series.Watched = !series.Watched
-	// 	_, err = datastore.Put(ctx, key, series)
-	// 	if err != nil {
-	// 		return item, err
-	// 	}
-	// 	item = series
-	// }
 	if itemType == typeDOCUMENTARY {
 		var documentary models.Documentary
 		key = api.DocumentaryKey(ctx, imdbID)
@@ -204,11 +190,120 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		}
 		item = game
 	}
-	// if itemType == typeEPISODE {
-	// 	key = api.EpisodeKey(ctx, imdbID)
-	// }
 
 	return item, watched, nil
+}
+
+// ToggleSeriesWatched toggles an entire series to watched/unwatched
+func ToggleSeriesWatched(imdbID string, set bool, r *http.Request) (models.Series, string, error) {
+	var series models.Series
+	var episodes []models.Episode
+	watched := "watched"
+	if !set {
+		watched = "not watched"
+	}
+	ctx := appengine.NewContext(r)
+
+	key := api.SeriesKey(ctx, imdbID)
+
+	q := datastore.NewQuery(api.EpisodeKind).Ancestor(key)
+
+	keys, err := q.GetAll(ctx, &episodes)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	for index := range episodes {
+		episodes[index].Watched = set
+	}
+
+	_, err = datastore.PutMulti(ctx, keys, episodes)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	series, err = GetSeries(imdbID, r)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	return series, watched, nil
+}
+
+// ToggleSeasonWatched toggles an entire season to watched/unwatched
+func ToggleSeasonWatched(imdbID string, seasonNr int64, set bool, r *http.Request) (models.Series, string, error) {
+	var series models.Series
+	var episodes []models.Episode
+	watched := "watched"
+	if !set {
+		watched = "not watched"
+	}
+
+	ctx := appengine.NewContext(r)
+
+	key := api.SeasonKey(ctx, seasonNr, imdbID)
+
+	q := datastore.NewQuery(api.EpisodeKind).Ancestor(key)
+
+	keys, err := q.GetAll(ctx, &episodes)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	for index := range episodes {
+		episodes[index].Watched = set
+	}
+
+	_, err = datastore.PutMulti(ctx, keys, episodes)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	series, err = GetSeries(imdbID, r)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	return series, watched, nil
+}
+
+// ToggleEpisodeWatched toggles an episode to watched/unwatched
+func ToggleEpisodeWatched(imdbID string, seasonNr int64, episodeNr int64, r *http.Request) (models.Series, string, error) {
+	var series models.Series
+	var episode models.Episode
+	watched := "watched"
+
+	ctx := appengine.NewContext(r)
+
+	key := api.EpisodeKey(ctx, episodeNr, seasonNr, imdbID)
+
+	err := datastore.Get(ctx, key, &episode)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	episode.Watched = !episode.Watched
+
+	_, err = datastore.Put(ctx, key, episode)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	series, err = GetSeries(imdbID, r)
+
+	if err != nil {
+		return series, watched, err
+	}
+
+	return series, watched, nil
 }
 
 // AddMovie adds a movie
@@ -253,14 +348,14 @@ func AddSeries(series models.WatchlistItem, r *http.Request) (models.Series, err
 
 	// import seasons with series parent key
 	for _, season := range series.SeasonsData() {
-		key = api.SeasonKey(ctx, season)
+		key = api.SeasonKey(ctx, season.Nr, season.SeriesImdbID)
 		seasonKeys = append(seasonKeys, key)
 		seasons = append(seasons, season)
 
 	}
 	// import episodes with season parent key and series parent key
 	for _, episode := range series.EpisodesData() {
-		key = api.EpisodeKey(ctx, episode)
+		key = api.EpisodeKey(ctx, episode.Nr, episode.SeasonNr, episode.SeriesImdbID)
 		episodeKeys = append(episodeKeys, key)
 		episodes = append(episodes, episode)
 

@@ -1,7 +1,6 @@
 package api
 
 import (
-	"github.com/Soesah/watchlist.lostmarbles.nl/api/models"
 	"golang.org/x/net/context"
 	"google.golang.org/appengine/datastore"
 )
@@ -55,13 +54,13 @@ func SeriesDataKey(ctx context.Context, imdbID string) *datastore.Key {
 }
 
 // SeasonKey returns a key for Season -> Series -> ItemKey -> WatchlistKey
-func SeasonKey(ctx context.Context, season models.SeasonData) *datastore.Key {
-	return datastore.NewKey(ctx, SeasonKind, "", season.Nr, SeriesDataKey(ctx, season.SeriesImdbID))
+func SeasonKey(ctx context.Context, seasonNr int64, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, SeasonKind, "", seasonNr, SeriesDataKey(ctx, imdbID))
 }
 
 // EpisodeKey returns a key for Episode -> Series -> ItemKey -> WatchlistKey
-func EpisodeKey(ctx context.Context, episode models.Episode) *datastore.Key {
-	return datastore.NewKey(ctx, EpisodeKind, "", episode.Nr, SeriesDataKey(ctx, episode.SeriesImdbID))
+func EpisodeKey(ctx context.Context, episodeNr int64, seasonNr int64, imdbID string) *datastore.Key {
+	return datastore.NewKey(ctx, EpisodeKind, "", episodeNr, SeasonKey(ctx, seasonNr, imdbID))
 }
 
 // DocumentaryKey returns a key for Documentary -> ItemKey -> WatchlistKey

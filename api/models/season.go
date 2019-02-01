@@ -21,7 +21,7 @@ func (season SeasonData) GetSeason(episodes []Episode) Season {
 	var seasonEpisodes []Episode
 
 	for _, episode := range episodes {
-		if episode.SeriesImdbID == season.SeriesImdbID {
+		if episode.SeriesImdbID == season.SeriesImdbID && episode.SeasonNr == season.Nr {
 			seasonEpisodes = append(seasonEpisodes, episode)
 		}
 	}
