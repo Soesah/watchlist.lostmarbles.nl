@@ -10,7 +10,8 @@
 
     <div class="buttons">
       <button type="submit">Edit</button>
-      <button type="cancel" @click="back">Cancel</button>
+      <button type="button" class="danger" @click.prevent="remove">Delete</button>
+      <button type="button" class="option" @click="back">Cancel</button>
     </div>
   </form>
 </template>
@@ -35,6 +36,7 @@ export default Vue.extend({
       if (this.$store.state.item.name) {
         item = this.$store.state.item.clone();
         // set this item as the data item, to allow mutation
+        /* eslint-disable vue/no-side-effects-in-computed-properties */
         this.item = item;
       }
       return item;
@@ -55,12 +57,26 @@ export default Vue.extend({
   },
   methods: {
     edit() {
+      debugger;
       this.$store
         .dispatch("editItem", this.item)
         .then(items => this.$router.go(-1));
     },
     back() {
       this.$router.go(-1);
+    },
+    remove() {
+      this.$store.state.event.$emit("openModal", {
+        modal: "confirm-delete-modal",
+        name: this.item.title,
+        confirm: this.onConfirmDelete
+      });
+    },
+    onConfirmDelete() {
+      this.$store.dispatch("removeItem", this.item).then(items => {
+        this.$destroy();
+        this.$router.push("/");
+      });
     },
     getTypeName(item: WatchlistItems): string {
       return WatchItemFactory.getTypeName(item).toLowerCase();

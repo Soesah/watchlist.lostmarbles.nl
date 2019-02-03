@@ -1,21 +1,7 @@
-<template>
-  <section class="modal-content">
-    <h2>Delete</h2>
-    <p>
-      Are you sure you want to delete
-      <span v-text="data.name"></span>
-    </p>
-    <div class="buttons">
-      <button type="button" class="danger" @click="confirm">Ok</button>
-      <button type="button" class="option" @click="cancel">Cancel</button>
-    </div>
-  </section>
-</template>
 <script lang="ts">
-import Vue from "vue";
+import Vue, { VNode } from "vue";
 
 export default Vue.extend({
-  name: "ConfirmDeleteModal",
   props: {
     data: {
       type: Object
@@ -32,6 +18,52 @@ export default Vue.extend({
       }
       this.$emit("close");
     }
+  },
+  render: function(h: Function): VNode {
+    return h(
+      "section",
+      {
+        class: "modal-content"
+      },
+      [
+        h("h2", "Delete"),
+        h("p", ["Are you sure you want to delete ", h("span", this.data.name)]),
+        h(
+          "div",
+          {
+            class: "buttons"
+          },
+          [
+            h(
+              "button",
+              {
+                class: "danger",
+                attrs: {
+                  type: "button"
+                },
+                on: {
+                  click: this.confirm
+                }
+              },
+              [h("span", "Confirm")]
+            ),
+            h(
+              "button",
+              {
+                class: "option",
+                attrs: {
+                  type: "button"
+                },
+                on: {
+                  click: this.cancel
+                }
+              },
+              [h("span", "Cancel")]
+            )
+          ]
+        )
+      ]
+    );
   }
 });
-</script>;
+</script>

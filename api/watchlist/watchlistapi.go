@@ -25,6 +25,7 @@ const (
 // GetWatchList returns the whole watch list
 func GetWatchList(r *http.Request) ([]interface{}, error) {
 	list := make([]interface{}, 0)
+	empty := make([]string, 0)
 
 	var movies []models.Movie
 	var seriesData []models.SeriesData
@@ -49,6 +50,9 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 			return err
 		}
 		for _, movie := range movies {
+			if len(movie.Actors) == 0 {
+				movie.Actors = empty
+			}
 			list = append(list, movie)
 		}
 
@@ -80,6 +84,9 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 		// add the seasons to the series
 		for _, serialData := range seriesData {
 			serial := serialData.GetSeries(seasons)
+			if len(serial.Actors) == 0 {
+				serial.Actors = empty
+			}
 			list = append(list, serial)
 		}
 
@@ -90,6 +97,9 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 			return err
 		}
 		for _, documentary := range documentaries {
+			if len(documentary.Actors) == 0 {
+				documentary.Actors = empty
+			}
 			list = append(list, documentary)
 		}
 
@@ -100,6 +110,9 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 			return err
 		}
 		for _, game := range games {
+			if len(game.Actors) == 0 {
+				game.Actors = empty
+			}
 			list = append(list, game)
 		}
 
@@ -110,6 +123,9 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 			return err
 		}
 		for _, franchise := range franchises {
+			if len(franchise.Items) == 0 {
+				franchise.Items = empty
+			}
 			list = append(list, franchise)
 		}
 

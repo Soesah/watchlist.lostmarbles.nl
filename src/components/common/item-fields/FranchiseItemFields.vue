@@ -14,7 +14,7 @@
     <div class="form-item form-item-name">
       <label>Search</label>
       <div class="form-input-group">
-        <input type="text" v-if="choice" name="name" readonly v-model="choice.name">
+        <input type="text" v-if="choice" name="name" @keydown.escape="clear" v-model="choice.title">
         <input
           type="text"
           v-if="!choice"
@@ -52,6 +52,7 @@
           <p>
             <i :class="'icon icon-' + getTypeName(item)"></i>
             <span v-text="item.title"></span>
+            <a href="#" @click.prevent="removeItem(item)" class="icon icon-delete"></a>
           </p>
         </li>
       </ul>
@@ -115,8 +116,13 @@ export default Vue.extend({
         this.suggestions = [];
       }
     },
+    clear() {
+      this.choice = null;
+      this.suggestions = [];
+    },
     chooseItem(evt: Event, item: any) {
       this.choice = item;
+      this.search = "";
       evt.preventDefault();
     },
     chooseAll(evt: Event) {
@@ -136,6 +142,9 @@ export default Vue.extend({
         this.searchItem();
       }
       this.choice = null;
+    },
+    removeItem(item: any) {
+      this.franchise.removeItem(item);
     },
     getTypeName(item: any) {
       return WatchItemFactory.getTypeName(item);

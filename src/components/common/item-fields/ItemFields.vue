@@ -23,7 +23,7 @@
           required
           autocomplete="off"
           v-focus
-          placeholder="title"
+          placeholder="Title"
           v-model="item.title"
           @input="update"
         >

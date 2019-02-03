@@ -7,7 +7,7 @@
 
     <div class="buttons">
       <button type="submit">Add</button>
-      <button type="cancel" @click="back">Cancel</button>
+      <button type="button" class="option" @click="back">Cancel</button>
     </div>
   </form>
 </template>

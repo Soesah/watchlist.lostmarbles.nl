@@ -80,7 +80,7 @@
     <div class="buttons">
       <button type="submit">Edit</button>
       <button type="button" class="danger" @click="remove">Delete</button>
-      <button type="cancel" @click="back">Cancel</button>
+      <button type="button" class="option" @click="back">Cancel</button>
     </div>
   </form>
 </template>
@@ -88,7 +88,6 @@
 import Vue from "vue";
 import omdbService from "@/services/OMDBService";
 import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
-import ConfirmDeleteModal from "@/components/edit/ConfirmDeleteModal.vue";
 import { Season, SeasonType } from "@/models/SeasonModel";
 import { Episode } from "@/models/EpisodeModel";
 import { Series, SeriesType } from "@/models/SeriesModel";
@@ -211,10 +210,6 @@ export default Vue.extend({
     getTypeName(item: WatchlistItems): string {
       return WatchItemFactory.getTypeName(item).toLowerCase();
     }
-  },
-  components: {
-    /* eslint-disable vue/no-unused-components */
-    ConfirmDeleteModal
   }
 });
 </script>

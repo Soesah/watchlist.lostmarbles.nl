@@ -11,7 +11,7 @@
     <div class="buttons">
       <button type="submit">Edit</button>
       <button type="button" class="danger" @click.prevent="remove">Delete</button>
-      <button type="cancel" @click.prevent="back">Cancel</button>
+      <button type="button" class="option" @click.prevent="back">Cancel</button>
     </div>
   </form>
 </template>
@@ -19,7 +19,6 @@
 import Vue from "vue";
 import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
 import ItemFields from "@/components/common/item-fields/ItemFields.vue";
-import ConfirmDeleteModal from "@/components/edit/ConfirmDeleteModal.vue";
 
 export default Vue.extend({
   name: "WatchEditView",
@@ -80,9 +79,7 @@ export default Vue.extend({
     }
   },
   components: {
-    ItemFields,
-    /* eslint-disable vue/no-unused-components */
-    ConfirmDeleteModal
+    ItemFields
   }
 });
 </script>

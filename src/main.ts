@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import WatchlistApp from './WatchlistApp.vue';
+import ConfirmDeleteModal from '@/components/edit/ConfirmDeleteModal.vue';
 import router from './router';
 import store from './store';
 
@@ -10,6 +11,9 @@ Vue.directive('focus', {
     el.select();
   }
 });
+
+// global components
+Vue.component('confirm-delete-modal', ConfirmDeleteModal);
 
 new Vue({
   router,

@@ -21,7 +21,7 @@
 
     <div class="buttons">
       <button type="submit">Add</button>
-      <button type="cancel" @click.prevent="back">Cancel</button>
+      <button type="button" class="option" @click.prevent="back">Cancel</button>
     </div>
   </form>
 </template>
