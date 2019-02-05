@@ -102,8 +102,7 @@ export default new Vuex.Store<WatchlistState>({
   },
   actions: {
     async addItem({ commit, dispatch }, item: WatchlistItems) {
-      const type = WatchItemFactory.getTypeName(item).toLowerCase();
-      const stored = await watchlistService.create(type, item);
+      const stored = await watchlistService.create(item);
       if (typeof stored === 'string') {
         return dispatch('error', `Error adding ${item.title}: "${stored}"`);
       } else {
@@ -112,8 +111,7 @@ export default new Vuex.Store<WatchlistState>({
       }
     },
     async editItem({ commit, dispatch }, item) {
-      const type = WatchItemFactory.getTypeName(item).toLowerCase();
-      const stored = await watchlistService.store(type, item);
+      const stored = await watchlistService.store(item);
       if (typeof stored === 'string') {
         return dispatch('error', `Error saving ${item.title}: "${stored}"`);
       } else {
@@ -122,8 +120,7 @@ export default new Vuex.Store<WatchlistState>({
       }
     },
     async removeItem({ commit, dispatch }, item) {
-      const type = WatchItemFactory.getTypeName(item).toLowerCase();
-      const removed = await watchlistService.remove(type, item);
+      const message = await watchlistService.remove(item);
       commit('removeItem', item);
       return dispatch('save', `Removing ${item.title}`);
     },
@@ -132,8 +129,7 @@ export default new Vuex.Store<WatchlistState>({
       return dispatch('save', `Removing ${item.title} Season ${season.nr}`);
     },
     async toggleWatched({ commit, dispatch }, item) {
-      const type = WatchItemFactory.getTypeName(item).toLowerCase();
-      const update = await watchlistService.toggle(type, item);
+      const update = await watchlistService.toggle(item);
       if (update) {
         commit('toggleWatched', update);
       } else {

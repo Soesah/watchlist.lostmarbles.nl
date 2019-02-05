@@ -38,20 +38,16 @@ export class WatchlistService extends BaseService {
     });
   }
 
-  async create(
-    type: string,
-    item: WatchlistItems
-  ): Promise<WatchlistItems | string> {
+  async create(item: WatchlistItems): Promise<WatchlistItems | string> {
+    const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.post(`${this.path}/${type}`, item);
     return response.status === STATUS_OK
       ? WatchItemFactory.create(response.data.data)
       : response.statusText;
   }
 
-  async store(
-    type: string,
-    item: WatchlistItems
-  ): Promise<WatchlistItems | string> {
+  async store(item: WatchlistItems): Promise<WatchlistItems | string> {
+    const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.put(
       `${this.path}/${type}/${item.imdbID}`,
       item
@@ -61,7 +57,8 @@ export class WatchlistService extends BaseService {
       : response.statusText;
   }
 
-  async remove(type: string, item: WatchlistItems): Promise<string> {
+  async remove(item: WatchlistItems): Promise<string> {
+    const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.delete(
       `${this.path}/${type}/${item.imdbID}`
     );
@@ -70,16 +67,14 @@ export class WatchlistService extends BaseService {
       : response.statusText;
   }
 
-  async toggle(
-    type: string,
-    item: WatchlistItems
-  ): Promise<WatchlistItems | false> {
+  async toggle(item: WatchlistItems): Promise<WatchlistItems | false> {
     const watched =
       item.type === WatchlistType.Series
         ? item.watched
           ? 'not-watched'
           : 'watched'
         : 'watched';
+    const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.put(
       `${this.path}/${type}/${watched}/${item.imdbID}`,
       item
