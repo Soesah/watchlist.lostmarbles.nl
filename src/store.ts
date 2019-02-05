@@ -66,14 +66,9 @@ export default new Vuex.Store<WatchlistState>({
     removeSeason(_, { item, season }) {
       item.removeSeason(season);
     },
-    toggleWatched(_, item) {
-      item.toggleWatched();
-    },
-    toggleSeasonWatched(_, { item, season }) {
-      item.toggleSeasonWatched(season);
-    },
-    toggleEpisodeWatched(_, { item, season, episode }) {
-      item.toggleEpisodeWatched(season, episode);
+    toggleWatched(state, item) {
+      let index = state.items.findIndex((it: any) => it.imdbID === item.imdbID);
+      state.items.splice(index, 1, item);
     },
     message(state, message) {
       message.id = message.type + '_' + message.text;
@@ -113,7 +108,7 @@ export default new Vuex.Store<WatchlistState>({
         return dispatch('error', `Error adding ${item.title}: "${stored}"`);
       } else {
         commit('addItem', stored);
-        return dispatch('save', 'Adding ' + stored.title);
+        return dispatch('save', `Adding ${stored.title}`);
       }
     },
     async editItem({ commit, dispatch }, item) {
@@ -123,53 +118,68 @@ export default new Vuex.Store<WatchlistState>({
         return dispatch('error', `Error saving ${item.title}: "${stored}"`);
       } else {
         commit('editItem', stored);
-        return dispatch('save', 'Saving changes to ' + stored.title);
+        return dispatch('save', `Saving changes to ${stored.title}`);
       }
     },
     removeItem({ commit, dispatch }, item) {
       commit('removeItem', item);
-      return dispatch('save', 'Removing ' + item.title);
+      return dispatch('save', `Removing ${item.title}`);
     },
     removeSeason({ commit, dispatch }, { item, season }) {
       commit('removeSeason', { item, season });
-      return dispatch(
-        'save',
-        'Removing ' + item.title + ' Season ' + season.nr
-      );
+      return dispatch('save', `Removing ${item.title} Season ${season.nr}`);
     },
     async toggleWatched({ commit, dispatch }, item) {
-      commit('toggleWatched', item);
       const type = WatchItemFactory.getTypeName(item).toLowerCase();
-      const toggled = await watchlistService.toggle(type, item);
+      const update = await watchlistService.toggle(type, item);
+      if (update) {
+        commit('toggleWatched', update);
+      } else {
+        throw new Error('Failed to change item watched status');
+      }
+      const watched = item.type === WatchlistType.Game ? 'played' : 'watched';
       return dispatch(
         'save',
-        'Setting ' + item.title + ' to ' + (toggled ? 'watched' : 'not watched')
+        `Setting ${item.title} to ${
+          update.watched ? watched : 'not ' + watched
+        })}`
       );
     },
-    toggleSeasonWatched({ commit, dispatch }, { item, season }) {
-      commit('toggleSeasonWatched', { item, season });
+    async toggleSeasonWatched({ commit, dispatch }, { item, season }) {
+      const update = await watchlistService.toggleSeason(item, season);
+      if (update) {
+        commit('toggleWatched', update);
+        commit('setItem', update);
+      } else {
+        throw new Error('Failed to change item watched status');
+      }
       return dispatch(
         'save',
-        'Setting ' +
-          item.title +
-          ' Season ' +
-          season.nr +
-          ' to ' +
-          (item.watched ? 'watched' : 'not watched')
+        `Setting ${item.title} Season ${season.nr} to ${
+          !season.watched ? 'watched' : 'not watched'
+        }`
       );
     },
-    toggleEpisodeWatched({ commit, dispatch }, { item, season, episode }) {
-      commit('toggleEpisodeWatched', { item, season, episode });
+    async toggleEpisodeWatched(
+      { commit, dispatch },
+      { item, season, episode }
+    ) {
+      const update = await watchlistService.toggleEpisode(
+        item,
+        season,
+        episode
+      );
+      if (update) {
+        commit('toggleWatched', update);
+        commit('setItem', update);
+      } else {
+        throw new Error('Failed to change item watched status');
+      }
       return dispatch(
         'save',
-        'Setting ' +
-          item.title +
-          ' Season ' +
-          season.nr +
-          ' Episode ' +
-          episode.nr +
-          ' to ' +
-          (item.watched ? 'watched' : 'not watched')
+        `Setting ${item.title} Season ${season.nr} Episode ${episode.nr} to ${
+          !episode.watched ? 'watched' : 'not watched'
+        }`
       );
     },
     save({ commit, state }, message) {

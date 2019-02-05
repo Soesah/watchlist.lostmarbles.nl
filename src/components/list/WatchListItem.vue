@@ -8,16 +8,16 @@ import {
 export default Vue.extend({
   name: "WatchListItem",
   functional: true,
-  render: (createElement, context: any): VNode => {
+  render: (h, context: any): VNode => {
     const item: WatchlistItemsPure = context.props.item;
 
-    return createElement(
+    return h(
       "li",
       {
         class: ["item movie", { "movie-watched": item.watched }]
       },
       [
-        createElement(
+        h(
           "router-link",
           {
             props: {
@@ -25,14 +25,14 @@ export default Vue.extend({
             }
           },
           [
-            createElement("h6", item.title),
-            createElement("span", {
+            h("h6", item.title),
+            h("span", {
               class: "bracketed",
               domProps: {
                 innerHTML: item.year
               }
             }),
-            createElement("i", {
+            h("i", {
               class:
                 "icon icon-" + WatchItemFactory.getTypeName(item).toLowerCase(),
               on: {

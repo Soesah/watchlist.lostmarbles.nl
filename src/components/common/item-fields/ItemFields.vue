@@ -25,6 +25,7 @@
           v-focus
           placeholder="Title"
           v-model="item.title"
+          @keyup.escape="clear"
           @input="update"
         >
         <button
@@ -213,6 +214,10 @@ export default Vue.extend({
           }
         );
       }
+    },
+    clear() {
+      this.suggestions = [];
+      this.count = 0;
     },
     choose(suggestion: { imdbID: string }) {
       let imdbID = suggestion.imdbID,

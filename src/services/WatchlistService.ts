@@ -1,4 +1,7 @@
 import { BaseService } from '@/core/services/BaseService';
+import { Season } from '@/models/SeasonModel';
+import { Episode } from '../models/EpisodeModel';
+import { WatchlistType } from '@/core/models/BaseModel';
 import {
   WatchItemFactory,
   WatchlistItem,
@@ -58,12 +61,54 @@ export class WatchlistService extends BaseService {
       : response.statusText;
   }
 
-  async toggle(type: string, item: WatchlistItems): Promise<boolean> {
+  async toggle(
+    type: string,
+    item: WatchlistItems
+  ): Promise<WatchlistItems | false> {
+    const watched =
+      item.type === WatchlistType.Series
+        ? item.watched
+          ? 'not-watched'
+          : 'watched'
+        : 'watched';
     const response = await this.$http.put(
-      `${this.path}/${type}/watched/${item.imdbID}`,
+      `${this.path}/${type}/${watched}/${item.imdbID}`,
       item
     );
-    return response.status === STATUS_OK;
+    return response.status === STATUS_OK
+      ? WatchItemFactory.create(response.data.data)
+      : false;
+  }
+
+  async toggleSeason(
+    item: WatchlistItems,
+    season: Season
+  ): Promise<WatchlistItems | false> {
+    const watched = season.watched ? 'not-watched' : 'watched';
+    const response = await this.$http.put(
+      `${this.path}/series/${watched}/${item.imdbID}/season/${season.nr}`,
+      null
+    );
+    return response.status === STATUS_OK
+      ? WatchItemFactory.create(response.data.data)
+      : false;
+  }
+
+  async toggleEpisode(
+    item: WatchlistItems,
+    season: Season,
+    episode: Episode
+  ): Promise<WatchlistItems | false> {
+    const watched = episode.watched ? 'not-watched' : 'watched';
+    const response = await this.$http.put(
+      `${this.path}/series/${watched}/${item.imdbID}/season/${
+        season.nr
+      }/episode/${episode.nr}`,
+      null
+    );
+    return response.status === STATUS_OK
+      ? WatchItemFactory.create(response.data.data)
+      : false;
   }
 }
 

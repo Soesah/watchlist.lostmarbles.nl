@@ -156,6 +156,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		}
 		movie.Watched = !movie.Watched
 		if movie.Watched {
+			movie.DateWatched = util.DateNow()
 			watched = "watched"
 		} else {
 			watched = "not watched"
@@ -176,6 +177,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		}
 		documentary.Watched = !documentary.Watched
 		if documentary.Watched {
+			documentary.DateWatched = util.DateNow()
 			watched = "watched"
 		} else {
 			watched = "not watched"
@@ -195,6 +197,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		}
 		game.Played = !game.Played
 		if game.Played {
+			game.DatePlayed = util.DateNow()
 			watched = "played"
 		} else {
 			watched = "not played"
@@ -232,6 +235,9 @@ func ToggleSeriesWatched(imdbID string, set bool, r *http.Request) (models.Serie
 
 	for index := range episodes {
 		episodes[index].Watched = set
+		if set {
+			episodes[index].DateWatched = util.DateNow()
+		}
 	}
 
 	_, err = datastore.PutMulti(ctx, keys, episodes)
@@ -272,6 +278,9 @@ func ToggleSeasonWatched(imdbID string, seasonNr int64, set bool, r *http.Reques
 
 	for index := range episodes {
 		episodes[index].Watched = set
+		if set {
+			episodes[index].DateWatched = util.DateNow()
+		}
 	}
 
 	_, err = datastore.PutMulti(ctx, keys, episodes)
@@ -306,8 +315,11 @@ func ToggleEpisodeWatched(imdbID string, seasonNr int64, episodeNr int64, r *htt
 	}
 
 	episode.Watched = !episode.Watched
+	if episode.Watched {
+		episode.DateWatched = util.DateNow()
+	}
 
-	_, err = datastore.Put(ctx, key, episode)
+	_, err = datastore.Put(ctx, key, &episode)
 
 	if err != nil {
 		return series, watched, err
