@@ -14,7 +14,11 @@
         <a :href="'http://www.imdb.com/title/' + item.imdbID" target="_new">IMDB</a>
       </span>
     </h3>
-
+    <div v-show="item.watched && item.date_watched">
+      <h4 v-show="!isGame">Watched</h4>
+      <h4 v-show="isGame">Played</h4>
+      <p>{{item.date_watched | watchedDate}}</p>
+    </div>
     <div class="actors" v-show="item.actors && item.actors.length">
       <h4>Actors</h4>
       <ul>
@@ -78,6 +82,7 @@ import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
 import ItemFranchiseView from "@/components/franchises/ItemFranchiseView.vue";
 import { Season } from "@/models/SeasonModel";
 import { Episode } from "@/models/EpisodeModel";
+import { WatchlistType } from "@/core/models/BaseModel";
 
 export default Vue.extend({
   name: "WatchItemView",
@@ -87,6 +92,9 @@ export default Vue.extend({
     },
     typeName(): string {
       return WatchItemFactory.getTypeName(this.item);
+    },
+    isGame(): boolean {
+      return this.item.type === WatchlistType.Game;
     }
   },
   beforeRouteUpdate: function(to, from, next) {
@@ -125,6 +133,15 @@ export default Vue.extend({
         season: season,
         episode: episode
       });
+    }
+  },
+  filters: {
+    watchedDate(val: string): string {
+      const d = new Date(val);
+      const day = `${d.getDate()}`.padStart(2, "0");
+      const month = `${d.getMonth() + 1}`.padStart(2, "0");
+
+      return `${day}-${month}-${d.getFullYear()}`;
     }
   },
   components: {
