@@ -61,6 +61,15 @@ export class WatchlistService extends BaseService {
       : response.statusText;
   }
 
+  async remove(type: string, item: WatchlistItems): Promise<string> {
+    const response = await this.$http.delete(
+      `${this.path}/${type}/${item.imdbID}`
+    );
+    return response.status === STATUS_OK
+      ? response.data.message
+      : response.statusText;
+  }
+
   async toggle(
     type: string,
     item: WatchlistItems

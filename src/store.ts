@@ -121,7 +121,9 @@ export default new Vuex.Store<WatchlistState>({
         return dispatch('save', `Saving changes to ${stored.title}`);
       }
     },
-    removeItem({ commit, dispatch }, item) {
+    async removeItem({ commit, dispatch }, item) {
+      const type = WatchItemFactory.getTypeName(item).toLowerCase();
+      const removed = await watchlistService.remove(type, item);
       commit('removeItem', item);
       return dispatch('save', `Removing ${item.title}`);
     },
