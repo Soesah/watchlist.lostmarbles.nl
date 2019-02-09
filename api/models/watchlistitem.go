@@ -21,6 +21,7 @@ const (
 type WatchlistItem struct {
 	Type        int64    `json:"type"`
 	ImdbID      string   `json:"imdbID"`
+	Title       string   `json:"title"`
 	Name        string   `json:"name"`
 	Year        int64    `json:"year"`
 	Score       int64    `json:"score"`
@@ -38,6 +39,14 @@ type WatchlistItem struct {
 	Genre       string   `json:"genre"`
 	Played      bool     `json:"played"`
 	Items       []string `json:"items"` // franchise
+}
+
+// GetTitle checks whether the title is in the name or title property
+func (item WatchlistItem) GetTitle() string {
+	if item.Title != "" {
+		return item.Title
+	}
+	return item.Name
 }
 
 // Size returns the commit size for the item
@@ -60,7 +69,7 @@ func (item WatchlistItem) Movie() Movie {
 	return Movie{
 		Type:        item.Type,
 		ImdbID:      item.ImdbID,
-		Title:       item.Name,
+		Title:       item.GetTitle(),
 		Year:        item.Year,
 		Score:       item.Score,
 		Actors:      item.Actors,
@@ -78,7 +87,7 @@ func (item WatchlistItem) GetSeries() Series {
 	return Series{
 		Type:      item.Type,
 		ImdbID:    item.ImdbID,
-		Title:     item.Name,
+		Title:     item.GetTitle(),
 		Plot:      item.Plot,
 		Finished:  item.Finished,
 		Actors:    item.Actors,
@@ -93,7 +102,7 @@ func (item WatchlistItem) SeriesData() SeriesData {
 	return SeriesData{
 		Type:      item.Type,
 		ImdbID:    item.ImdbID,
-		Title:     item.Name,
+		Title:     item.GetTitle(),
 		Actors:    item.Actors,
 		Plot:      item.Plot,
 		DateAdded: item.DateAdded,
@@ -143,7 +152,7 @@ func (item WatchlistItem) Documentary() Documentary {
 	return Documentary{
 		Type:        item.Type,
 		ImdbID:      item.ImdbID,
-		Title:       item.Name,
+		Title:       item.GetTitle(),
 		Year:        item.Year,
 		Score:       item.Score,
 		Director:    item.Director,
@@ -158,7 +167,7 @@ func (item WatchlistItem) Game() Game {
 	return Game{
 		Type:       item.Type,
 		ImdbID:     item.ImdbID,
-		Title:      item.Name,
+		Title:      item.GetTitle(),
 		Year:       item.Year,
 		Score:      item.Score,
 		Plot:       item.Plot,
@@ -176,7 +185,7 @@ func (item WatchlistItem) Franchise() Franchise {
 	return Franchise{
 		Type:      item.Type,
 		ImdbID:    item.ImdbID,
-		Name:      item.Name,
+		Name:      item.GetTitle(),
 		Items:     item.Items,
 		DateAdded: item.DateAdded,
 	}

@@ -160,3 +160,18 @@ func TestGetBatch2(t *testing.T) {
 	batch, index, _ = set.GetBatch(index)
 	assert.Equal(t, 0, len(batch))
 }
+
+func TestGetTitle(t *testing.T) {
+	var item1 = WatchlistItem{
+		Type:   TypeMovie,
+		Name:   "Test 1",
+		ImdbID: "Item1",
+	}
+	assert.Equal(t, item1.GetTitle(), "Test 1")
+	var item2 = WatchlistItem{
+		Type:   TypeMovie,
+		Title:  "Test 2",
+		ImdbID: "Item2",
+	}
+	assert.Equal(t, item2.GetTitle(), "Test 2")
+}

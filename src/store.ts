@@ -51,7 +51,7 @@ export default new Vuex.Store<WatchlistState>({
       state.item = item;
     },
     addItem(state, item: any) {
-      state.items.push(item);
+      state.items = [...state.items, item];
     },
     editItem(state, item) {
       // assume imdbID doesn't change
