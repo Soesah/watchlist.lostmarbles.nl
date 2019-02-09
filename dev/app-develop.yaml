@@ -9,11 +9,6 @@ automatic_scaling:
   max_idle_instances: automatic
 
 handlers:
-  - url: /css/favicon\.ico
-    static_files: ../dist/static/favicon.ico
-    upload: favicon\.ico
-  - url: /static
-    static_dir: ../dist/static/
   - url: /.*
     script: _go_app
     secure: always

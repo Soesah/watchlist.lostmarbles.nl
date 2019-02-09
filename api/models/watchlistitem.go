@@ -2,7 +2,6 @@ package models
 
 import (
 	"errors"
-	"fmt"
 )
 
 const (
@@ -222,35 +221,34 @@ func (set WatchlistItemSet) GetBatch(index int) ([]WatchlistItem, int, error) {
 		return batch, index, errors.New("No limit provided for set")
 	}
 
-	var size1 = 0
-	for size1 < 8 {
-		size1++
-	}
-
-	var size = 0
-	for size < set.Limit {
+	var batchIndex = 0
+	for batchIndex < set.Limit {
 		// if the index if out of bounds, quit
 		if index+1 > len(set.Items) {
-			size = set.Limit
+			batchIndex = set.Limit
 		} else {
 
 			item := set.Items[index]
+
 			// don't go over the set.Limit in a batch
-			if size+item.Size() < set.Limit {
+			if batchIndex+item.Size() >= set.Limit {
 
-				size += item.Size()
-				fmt.Printf("%v (%v)\n", item.ImdbID, item.Size())
-				// increase the index
-				index = index + 1
+				batchIndex = set.Limit
 
-				batch = append(batch, item)
 			} else {
-				size = set.Limit
+
+				// increase the batchIndex
+				batchIndex += item.Size()
+
+				// increase the index
+				index++
+
+				// append to the batch
+				batch = append(batch, item)
 			}
 
 		}
 	}
 
-	fmt.Printf("current.index %v\n", index)
 	return batch, index, nil
 }

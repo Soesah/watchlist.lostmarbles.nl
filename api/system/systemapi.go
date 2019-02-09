@@ -1,7 +1,9 @@
 package system
 
 import (
+	"context"
 	"errors"
+	"fmt"
 	"net/http"
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api"
@@ -30,110 +32,124 @@ func ImportData(items []models.WatchlistItem, r *http.Request) (int, int, error)
 	// save the batch while there is something in it
 	for len(batch) != 0 {
 
-		var movieKeys []*datastore.Key
-		var movies []models.Movie
-		var seriesKeys []*datastore.Key
-		var series []models.SeriesData
-		var seasonKeys []*datastore.Key
-		var seasons []models.SeasonData
-		var episodeKeys []*datastore.Key
-		var episodes []models.Episode
-		var documentaryKeys []*datastore.Key
-		var documentaries []models.Documentary
-		var gameKeys []*datastore.Key
-		var games []models.Game
-		var franchiseKeys []*datastore.Key
-		var franchises []models.Franchise
+		options := datastore.TransactionOptions{
+			XG: true,
+		}
 
-		for _, item := range items {
-			var key *datastore.Key
+		err := datastore.RunInTransaction(ctx, func(ct context.Context) error {
 
-			if item.IsMovie() {
-				key = api.MovieKey(ctx, item.Movie().ImdbID)
-				movieKeys = append(movieKeys, key)
-				movies = append(movies, item.Movie())
-			}
+			var movieKeys []*datastore.Key
+			var movies []models.Movie
+			var seriesKeys []*datastore.Key
+			var series []models.SeriesData
+			var seasonKeys []*datastore.Key
+			var seasons []models.SeasonData
+			var episodeKeys []*datastore.Key
+			var episodes []models.Episode
+			var documentaryKeys []*datastore.Key
+			var documentaries []models.Documentary
+			var gameKeys []*datastore.Key
+			var games []models.Game
+			var franchiseKeys []*datastore.Key
+			var franchises []models.Franchise
 
-			if item.IsSeries() {
-				key = api.SeriesDataKey(ctx, item.SeriesData().ImdbID)
-				seriesKeys = append(seriesKeys, key)
-				series = append(series, item.SeriesData())
-				// import seasons with series parent key
-				for _, season := range item.SeasonsData() {
-					key = api.SeasonKey(ctx, season.Nr, season.SeriesImdbID)
-					seasonKeys = append(seasonKeys, key)
-					seasons = append(seasons, season)
+			for _, item := range batch {
+				var key *datastore.Key
 
+				if item.IsMovie() {
+					key = api.MovieKey(ctx, item.Movie().ImdbID)
+					movieKeys = append(movieKeys, key)
+					movies = append(movies, item.Movie())
 				}
-				// import episodes with season parent key and series parent key
-				for _, episode := range item.EpisodesData() {
-					key = api.EpisodeKey(ctx, episode.Nr, episode.SeasonNr, episode.SeriesImdbID)
-					episodeKeys = append(episodeKeys, key)
-					episodes = append(episodes, episode)
 
+				if item.IsSeries() {
+					key = api.SeriesDataKey(ctx, item.SeriesData().ImdbID)
+					seriesKeys = append(seriesKeys, key)
+					series = append(series, item.SeriesData())
+					// import seasons with series parent key
+					for _, season := range item.SeasonsData() {
+						key = api.SeasonKey(ctx, season.Nr, season.SeriesImdbID)
+						seasonKeys = append(seasonKeys, key)
+						seasons = append(seasons, season)
+
+					}
+					// import episodes with season parent key and series parent key
+					for _, episode := range item.EpisodesData() {
+						key = api.EpisodeKey(ctx, episode.Nr, episode.SeasonNr, episode.SeriesImdbID)
+						episodeKeys = append(episodeKeys, key)
+						episodes = append(episodes, episode)
+
+					}
 				}
+
+				if item.IsDocumentary() {
+					key = api.DocumentaryKey(ctx, item.Documentary().ImdbID)
+					documentaryKeys = append(documentaryKeys, key)
+					documentaries = append(documentaries, item.Documentary())
+				}
+
+				if item.IsGame() {
+					key = api.GameKey(ctx, item.Game().ImdbID)
+					gameKeys = append(gameKeys, key)
+					games = append(games, item.Game())
+				}
+
+				if item.IsFranchise() {
+					key = api.FranchiseKey(ctx, item.Franchise().ImdbID)
+					franchiseKeys = append(franchiseKeys, key)
+					franchises = append(franchises, item.Franchise())
+				}
+
 			}
 
-			if item.IsDocumentary() {
-				key = api.DocumentaryKey(ctx, item.Documentary().ImdbID)
-				documentaryKeys = append(documentaryKeys, key)
-				documentaries = append(documentaries, item.Documentary())
+			_, err := datastore.PutMulti(ct, movieKeys, movies)
+
+			if err != nil {
+				return errors.New(err.Error() + fmt.Sprintf(" when importing movies, tried %v items", len(movies)))
 			}
 
-			if item.IsGame() {
-				key = api.GameKey(ctx, item.Game().ImdbID)
-				gameKeys = append(gameKeys, key)
-				games = append(games, item.Game())
+			_, err = datastore.PutMulti(ct, seriesKeys, series)
+
+			if err != nil {
+				return errors.New(err.Error() + fmt.Sprintf(" when importing series, tried %v items", len(series)))
 			}
 
-			if item.IsFranchise() {
-				key = api.FranchiseKey(ctx, item.Franchise().ImdbID)
-				franchiseKeys = append(franchiseKeys, key)
-				franchises = append(franchises, item.Franchise())
+			_, err = datastore.PutMulti(ct, seasonKeys, seasons)
+
+			if err != nil {
+				return errors.New(err.Error() + fmt.Sprintf(" when importing seasons, tried %v items", len(seasons)))
 			}
 
-		}
+			_, err = datastore.PutMulti(ct, episodeKeys, episodes)
 
-		_, err := datastore.PutMulti(ctx, movieKeys, movies)
+			if err != nil {
+				return errors.New(err.Error() + fmt.Sprintf(" when importing episodes, tried %v items", len(episodes)))
+			}
 
-		if err != nil {
-			return 0, 0, errors.New(err.Error() + " when importing movies")
-		}
+			_, err = datastore.PutMulti(ct, documentaryKeys, documentaries)
 
-		_, err = datastore.PutMulti(ctx, seriesKeys, series)
+			if err != nil {
+				return errors.New(err.Error() + fmt.Sprintf(" when importing documentaries, tried %v items", len(documentaries)))
+			}
 
-		if err != nil {
-			return 0, 0, errors.New(err.Error() + " when importing series")
-		}
+			_, err = datastore.PutMulti(ct, gameKeys, games)
 
-		_, err = datastore.PutMulti(ctx, seasonKeys, seasons)
+			if err != nil {
+				return errors.New(err.Error() + fmt.Sprintf(" when importing games, tried %v items", len(games)))
+			}
 
-		if err != nil {
-			return 0, 0, errors.New(err.Error() + " when importing seasons")
-		}
+			_, err = datastore.PutMulti(ct, franchiseKeys, franchises)
 
-		_, err = datastore.PutMulti(ctx, episodeKeys, episodes)
+			if err != nil {
+				return errors.New(err.Error() + fmt.Sprintf(" when importing franchises, tried %v items", len(franchises)))
+			}
 
-		if err != nil {
-			return 0, 0, errors.New(err.Error() + " when importing episodes")
-		}
+			return nil
 
-		_, err = datastore.PutMulti(ctx, documentaryKeys, documentaries)
-
-		if err != nil {
-			return 0, 0, errors.New(err.Error() + " when importing documentaries")
-		}
-
-		_, err = datastore.PutMulti(ctx, gameKeys, games)
+		}, &options)
 
 		if err != nil {
-			return 0, 0, errors.New(err.Error() + " when importing games")
-		}
-
-		_, err = datastore.PutMulti(ctx, franchiseKeys, franchises)
-
-		if err != nil {
-			return 0, 0, errors.New(err.Error() + " when importing franchises")
+			return 0, 0, err
 		}
 
 		// get a new batch
