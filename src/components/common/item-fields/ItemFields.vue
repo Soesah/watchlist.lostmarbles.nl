@@ -195,6 +195,7 @@ export default Vue.extend({
       this.$emit("input", this.item);
     },
     search() {
+      const messageId = this.$store.dispatch("info", "Searching OMDB...");
       this.searching = true;
       // don't find without a name
       if (this.item && this.item.title) {
@@ -205,6 +206,7 @@ export default Vue.extend({
             : DateTimeUtil.year();
         omdbService.search(this.item.title, year ? year : null).then(
           (res: Results) => {
+            this.$store.dispatch("dismiss", messageId);
             this.searching = false;
             this.suggestions = res.results;
             this.count = res.count;
@@ -225,6 +227,10 @@ export default Vue.extend({
       this.searching = true;
       this.suggestions = [];
 
+      const messageId = this.$store.dispatch(
+        "info",
+        `Retrieving OMDB data for '${this.item.title}'`
+      );
       // first use the omdb api to get the full data for the movie, series or game
       omdbService.get(imdbID).then(
         (data: ResultItem) => {
@@ -256,6 +262,7 @@ export default Vue.extend({
               item.year = year;
             }
             this.item = item;
+            this.$store.dispatch("dismiss", messageId);
             this.update();
           });
         },

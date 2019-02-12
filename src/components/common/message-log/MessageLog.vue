@@ -1,16 +1,20 @@
 <template>
-  <section :class="'messages ' + name" v-if="messages.length">
-    <p v-for="message in messages" :class="'message ' + message.type" :key="message.id">
-      <i :class="'icon icon-' +message.type"></i>
-      <span v-text="message.text"></span>
+  <section :class="'messages ' + name" v-if="messages && messages.length">
+    <div v-for="message in messages" :class="'message ' + type(message.type)" :key="message.id">
+      <i :class="'icon icon-' + type(message.type)"></i>
+      <p v-text="message.text"></p>
       <button type="button" @click="dismiss(message.id)">
         <i class="icon icon-delete"></i>
       </button>
-    </p>
+    </div>
   </section>
 </template>
 <script lang="ts">
 import Vue from "vue";
+import messageService, {
+  MessageType,
+  Message
+} from "@/services/MessageService";
 
 export default Vue.extend({
   name: "MessageLog",
@@ -19,14 +23,17 @@ export default Vue.extend({
       type: String
     }
   },
-  data() {
-    return {
-      messages: this.$store.state.messages
-    };
+  computed: {
+    messages(): Message[] {
+      return this.$store.state.messages;
+    }
   },
   methods: {
+    type(type: MessageType): string {
+      return MessageType[type].toLowerCase();
+    },
     dismiss(id: number) {
-      this.$store.commit("dismiss", id);
+      this.$store.dispatch("dismiss", id);
     }
   }
 });

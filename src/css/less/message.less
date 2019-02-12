@@ -1,16 +1,16 @@
 .messages {
   &.general {
     position: fixed;
-    top: 0px;
-    left: 0;
+    top: @size-small;
+    right: @size-small;
     width: 100%;
-    padding: 0 @size-default;
+    max-width: 540px;
     z-index: 2;
 
     .message {
-      display: block;
-      margin: @size-smaller / 2 0;
       box-shadow: 5px 3px 8px #444444;
+      align-items: center;
+      justify-content: space-between;
 
       &.done {
         top: -100px;
@@ -23,13 +23,20 @@
   position: relative;
   top: 0;
   transition: top 0.5s;
-  display: inline-block;
+  display: flex;
   padding: 8px;
+  margin: @size-smaller / 2 0;
   border-radius: 4px;
   color: @black;
 
+  .icon {
+    margin-right: 8px;
+    font-size: @size-small;
+  }
+
   p {
     margin: 0;
+    flex: 1;
   }
 
   button {
@@ -37,13 +44,11 @@
     padding: 4px 6px;
     width: auto;
     min-width: auto;
-    position: absolute;
-    top: 4px;
-    right: 4px;
 
     .icon {
       color: white !important;
       font-size: 10px;
+      margin: 0;
     }
   }
 
@@ -94,11 +99,10 @@
       background-color: desaturate(darken(@red-error, 30%), 20%);
     }
   }
-
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .messages.general {
-    padding: 0 @size-small;    
+    padding: 0 @size-small;
   }
 }

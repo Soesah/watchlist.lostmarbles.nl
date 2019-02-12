@@ -117,7 +117,7 @@ func AddMovie(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Movie added succesfully", movie)
+	httpext.SuccessDataAPI(w, "'"+movie.Title+"' added succesfully", movie)
 }
 
 // AddSeries is used to add a series
@@ -138,7 +138,7 @@ func AddSeries(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Series added succesfully", series)
+	httpext.SuccessDataAPI(w, "'"+series.Title+"' added succesfully", series)
 }
 
 // AddDocumentary is used to add a documentary
@@ -159,7 +159,7 @@ func AddDocumentary(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Documentary added succesfully", documentary)
+	httpext.SuccessDataAPI(w, "'"+documentary.Title+"' added succesfully", documentary)
 }
 
 // AddGame is used to add a game
@@ -180,7 +180,7 @@ func AddGame(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Game added succesfully", game)
+	httpext.SuccessDataAPI(w, "'"+game.Title+"' added succesfully", game)
 }
 
 // AddFranchise is used to add a franchise
@@ -201,7 +201,7 @@ func AddFranchise(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Franchise added succesfully", franchise)
+	httpext.SuccessDataAPI(w, "'"+franchise.Name+"' added succesfully", franchise)
 }
 
 // GetMovie returns the Movie
@@ -287,7 +287,7 @@ func UpdateMovie(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Movie updated succesfully", movie)
+	httpext.SuccessDataAPI(w, "'"+movie.Title+"' updated succesfully", movie)
 }
 
 // UpdateSeries is used to updated a series
@@ -308,7 +308,7 @@ func UpdateSeries(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Series updated succesfully", series)
+	httpext.SuccessDataAPI(w, "'"+series.Title+"' updated succesfully", series)
 }
 
 // UpdateDocumentary is used to updated a documentary
@@ -329,7 +329,7 @@ func UpdateDocumentary(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Documentary updated succesfully", documentary)
+	httpext.SuccessDataAPI(w, "'"+documentary.Title+"' updated succesfully", documentary)
 }
 
 // UpdateGame is used to updated a game
@@ -350,7 +350,7 @@ func UpdateGame(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Game updated succesfully", game)
+	httpext.SuccessDataAPI(w, "'"+game.Title+"' updated succesfully", game)
 }
 
 // UpdateFranchise is used to updated a franchise
@@ -371,7 +371,7 @@ func UpdateFranchise(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	httpext.SuccessDataAPI(w, "Franchise updated succesfully", franchise)
+	httpext.SuccessDataAPI(w, "'"+franchise.Name+"' updated succesfully", franchise)
 }
 
 // DeleteMovie is used to delete a movie

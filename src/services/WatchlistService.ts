@@ -10,6 +10,12 @@ import {
 
 const STATUS_OK = 200;
 
+export interface WatchlistResponse {
+  status: boolean;
+  message: string;
+  data: WatchlistItems;
+}
+
 export class WatchlistService extends BaseService {
   private items: WatchlistItems[];
   private path: string;
@@ -38,36 +44,45 @@ export class WatchlistService extends BaseService {
     });
   }
 
-  async create(item: WatchlistItems): Promise<WatchlistItems | string> {
+  async create(item: WatchlistItems): Promise<WatchlistResponse> {
     const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.post(`${this.path}/${type}`, item);
-    return response.status === STATUS_OK
-      ? WatchItemFactory.create(response.data.data)
-      : response.statusText;
+    const status = response.status === STATUS_OK;
+    return {
+      status,
+      message: status ? response.data.message : response.statusText,
+      data: status ? WatchItemFactory.create(response.data.data) : item
+    };
   }
 
-  async store(item: WatchlistItems): Promise<WatchlistItems | string> {
+  async store(item: WatchlistItems): Promise<WatchlistResponse> {
     const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.put(
       `${this.path}/${type}/${item.imdbID}`,
       item
     );
-    return response.status === STATUS_OK
-      ? WatchItemFactory.create(response.data.data)
-      : response.statusText;
+    const status = response.status === STATUS_OK;
+    return {
+      status,
+      message: status ? response.data.message : response.statusText,
+      data: status ? WatchItemFactory.create(response.data.data) : item
+    };
   }
 
-  async remove(item: WatchlistItems): Promise<string> {
+  async remove(item: WatchlistItems): Promise<WatchlistResponse> {
     const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.delete(
       `${this.path}/${type}/${item.imdbID}`
     );
-    return response.status === STATUS_OK
-      ? response.data.message
-      : response.statusText;
+    const status = response.status === STATUS_OK;
+    return {
+      status,
+      message: status ? response.data.message : response.statusText,
+      data: item
+    };
   }
 
-  async toggle(item: WatchlistItems): Promise<WatchlistItems | false> {
+  async toggle(item: WatchlistItems): Promise<WatchlistResponse> {
     const watched =
       item.type === WatchlistType.Series
         ? item.watched
@@ -79,30 +94,36 @@ export class WatchlistService extends BaseService {
       `${this.path}/${type}/${watched}/${item.imdbID}`,
       item
     );
-    return response.status === STATUS_OK
-      ? WatchItemFactory.create(response.data.data)
-      : false;
+    const status = response.status === STATUS_OK;
+    return {
+      status,
+      message: status ? response.data.message : response.statusText,
+      data: status ? WatchItemFactory.create(response.data.data) : item
+    };
   }
 
   async toggleSeason(
     item: WatchlistItems,
     season: Season
-  ): Promise<WatchlistItems | false> {
+  ): Promise<WatchlistResponse> {
     const watched = season.watched ? 'not-watched' : 'watched';
     const response = await this.$http.put(
       `${this.path}/series/${watched}/${item.imdbID}/season/${season.nr}`,
       null
     );
-    return response.status === STATUS_OK
-      ? WatchItemFactory.create(response.data.data)
-      : false;
+    const status = response.status === STATUS_OK;
+    return {
+      status,
+      message: response.statusText,
+      data: status ? WatchItemFactory.create(response.data.data) : item
+    };
   }
 
   async toggleEpisode(
     item: WatchlistItems,
     season: Season,
     episode: Episode
-  ): Promise<WatchlistItems | false> {
+  ): Promise<WatchlistResponse> {
     const watched = episode.watched ? 'not-watched' : 'watched';
     const response = await this.$http.put(
       `${this.path}/series/${watched}/${item.imdbID}/season/${
@@ -110,9 +131,12 @@ export class WatchlistService extends BaseService {
       }/episode/${episode.nr}`,
       null
     );
-    return response.status === STATUS_OK
-      ? WatchItemFactory.create(response.data.data)
-      : false;
+    const status = response.status === STATUS_OK;
+    return {
+      status,
+      message: response.statusText,
+      data: status ? WatchItemFactory.create(response.data.data) : item
+    };
   }
 }
 
