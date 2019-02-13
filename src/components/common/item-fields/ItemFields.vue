@@ -284,6 +284,10 @@ export default Vue.extend({
       return item.type === WatchlistType.Series;
     },
     async updateSeasons(season: Season, nr: number) {
+      this.$store.dispatch(
+        "info",
+        `Updating seasons from OMDB '${this.item.title}'`
+      );
       this.updating = true;
       const seasons = await omdbService.updateSeasons(<Series>this.item);
       this.updating = false;

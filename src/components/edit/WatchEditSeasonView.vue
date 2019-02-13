@@ -130,6 +130,7 @@ export default Vue.extend({
           name: item.title,
           to: "/view/" + item.path
         });
+        this.item = item;
         this.$store.commit("addNav", {
           name: "Edit " + item.title + " Season " + this.$route.params.nr,
           to: "/edit/" + item.path + "/season/" + this.$route.params.nr
@@ -197,6 +198,10 @@ export default Vue.extend({
     },
     updateSeasons(series: Series) {
       this.updating = true;
+      this.$store.dispatch(
+        "info",
+        `Updating seasons from OMDB '${this.item.title}'`
+      );
       omdbService.updateSeasons(series).then(response => {
         this.updating = false;
         let nr = parseInt(this.$route.params.nr);
