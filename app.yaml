@@ -19,6 +19,7 @@ skip_files:
   - node_modules/
   - .vscode/
   - old/
+  - bin/
   - sketch/
   - dev/ #used for development
   - src/
