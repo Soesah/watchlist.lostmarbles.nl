@@ -1,0 +1,21 @@
+{
+  "name": "docs.front-crafter.nl-tools",
+  "version": "1.0.0",
+  "description": "Small scripts and tools",
+  "main": "dist/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "update-version": "ts-node ./update-version.ts",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "tsc": "tsc"
+  },
+  "author": "Carl Giesberts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.11.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.1",
+    "typescript-eslint-parser": "^19.0.2"
+  }
+}
