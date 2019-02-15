@@ -1,12 +1,16 @@
 @import 'icon-variables';
 
 @font-face {
-  font-family: 'watchlist';
-  src: url('/fonts/watchlist.eot?4l4eep');
-  src: url('/fonts/watchlist.eot?4l4eep#iefix') format('embedded-opentype'),
-    url('/fonts/watchlist.ttf?4l4eep') format('truetype'),
-    url('/fonts/watchlist.woff?4l4eep') format('woff'),
-    url('/fonts/watchlist.svg?4l4eep#watchlist') format('svg');
+  font-family: '@{icomoon-font-family}';
+  src: url('@{icomoon-font-path}/@{icomoon-font-family}.eot?e9patz');
+  src: url('@{icomoon-font-path}/@{icomoon-font-family}.eot?e9patz#iefix')
+      format('embedded-opentype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?e9patz')
+      format('truetype'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.woff?e9patz')
+      format('woff'),
+    url('@{icomoon-font-path}/@{icomoon-font-family}.svg?e9patz#@{icomoon-font-family}')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +18,8 @@
 [class^='icon-'],
 [class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'watchlist' !important;
+  font-family: '@{icomoon-font-family}' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,6 +31,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cog {
+  &:before {
+    content: @icon-cog;
+  }
+}
+.icon-gear {
+  &:before {
+    content: @icon-gear;
+  }
+}
+.icon-preferences {
+  &:before {
+    content: @icon-preferences;
+  }
+}
+.icon-settings {
+  &:before {
+    content: @icon-settings;
+  }
+}
+.icon-generate {
+  &:before {
+    content: @icon-generate;
+  }
+}
+.icon-control {
+  &:before {
+    content: @icon-control;
+  }
+}
+.icon-options {
+  &:before {
+    content: @icon-options;
+  }
+}
 .icon-movie {
   &:before {
     content: @icon-movie;

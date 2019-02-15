@@ -9,6 +9,7 @@ import WatchFranchiseEditView from '@/components/edit/WatchFranchiseEditView.vue
 import WatchEditSeasonView from '@/components/edit/WatchEditSeasonView.vue';
 import FranchisesView from '@/components/franchises/FranchisesView.vue';
 import FranchiseAddView from '@/components/franchises/FranchiseAddView.vue';
+import SettingsView from '@/components/settings/SettingsView.vue';
 
 Vue.use(Router);
 
@@ -51,6 +52,10 @@ export default new Router({
     {
       path: '/franchises/add',
       component: FranchiseAddView
+    },
+    {
+      path: '/settings',
+      component: SettingsView
     }
   ]
 });

@@ -12,6 +12,9 @@
         <router-link :to="nav.to" exact active-class="active" v-text="nav.name"></router-link>
       </li>
     </ul>
+    <router-link to="/settings" class="settings-button" active-class="active">
+      <i class="icon icon-cog"></i>
+    </router-link>
     <version></version>
   </nav>
 </template>
