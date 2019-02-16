@@ -2,10 +2,26 @@
   <div class="pie-chart">
     <h3 v-if="legend" v-text="legend.title"></h3>
     <svg viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" v-if="pathData">
-      <path v-for="(path, index) in pathData" :key="index" :d="path" :fill="getFillColor(index)"></path>
+      <path
+        v-for="(path, index) in pathData"
+        :key="index"
+        :d="path"
+        :fill="getFillColor(index)"
+        @mouseenter="highlight(index, true)"
+        @mouseleave="highlight(index, false)"
+        class="slice"
+        :class="{'slice-highlighted': highlighted === index}"
+      ></path>
     </svg>
     <ul class="legend" v-if="legend">
-      <li v-for="(label, index) in labels" :key="index">
+      <li
+        v-for="(label, index) in labels"
+        :key="index"
+        @mouseenter="highlight(index, true)"
+        @mouseleave="highlight(index, false)"
+        class="legend-item"
+        :class="{'legend-highlighted': highlighted === index}"
+      >
         <span class="label-color" :style="`background-color: ${getFillColor(index)} ;`"></span>
         <span v-text="label"></span>
       </li>
@@ -16,14 +32,25 @@
 import Vue from "vue";
 import { chartColors, percentageToSVGPaths } from "./ChartsUtil";
 
+interface PieChartData {
+  highlighted: number;
+}
+
+const props = {
+  data: { type: Array, default: () => [] },
+  legend: { type: Object, default: () => null }
+};
+
 export default Vue.extend({
   name: "PieChart",
-  props: {
-    data: { type: Array, default: () => [] },
-    legend: { type: Object, default: () => null }
+  props,
+  data(): PieChartData {
+    return {
+      highlighted: -1
+    };
   },
   computed: {
-    pathData() {
+    pathData(): string[] | false {
       return (<number[]>this.data).length
         ? percentageToSVGPaths(<number[]>this.data)
         : false;
@@ -38,6 +65,9 @@ export default Vue.extend({
   methods: {
     getFillColor(index: number) {
       return chartColors[index];
+    },
+    highlight(index: number, set: boolean) {
+      this.highlighted = set ? index : -1;
     }
   }
 });
@@ -69,5 +99,24 @@ h3 {
   position: relative;
   top: 2px;
   border-radius: 1px;
+}
+
+.slice {
+  cursor: default;
+}
+.slice-highlighted {
+  fill: #b54eb5;
+}
+
+.legend-item {
+  cursor: default;
+}
+
+.legend-item.legend-highlighted .label-color {
+  background-color: #b54eb5 !important;
+}
+
+.legend-highlighted {
+  opacity: 0.8;
 }
 </style>
