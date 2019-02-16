@@ -5,7 +5,7 @@
       <path v-for="(path, index) in pathData" :key="index" :d="path" :fill="getFillColor(index)"></path>
     </svg>
     <ul class="legend" v-if="legend">
-      <li v-for="(label, index) in legend.labels" :key="index">
+      <li v-for="(label, index) in labels" :key="index">
         <span class="label-color" :style="`background-color: ${getFillColor(index)} ;`"></span>
         <span v-text="label"></span>
       </li>
@@ -27,6 +27,12 @@ export default Vue.extend({
       return (<number[]>this.data).length
         ? percentageToSVGPaths(<number[]>this.data)
         : false;
+    },
+    labels(): string[] {
+      return this.legend.labels.map(
+        (label: string, index: number) =>
+          `${label} (${Math.round(<number>this.data[index] * 100)}%)`
+      );
     }
   },
   methods: {

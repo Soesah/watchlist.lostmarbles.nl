@@ -84,7 +84,9 @@ export default Vue.extend({
         data.documentaries,
         data.games,
         data.franchises
-      ].map((total: number) => total / totalItems);
+      ]
+        .filter((total: number) => total)
+        .map((total: number) => total / totalItems);
     }
   },
   created() {
