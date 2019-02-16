@@ -1,31 +1,36 @@
 <template>
   <div class="pie-chart">
-    <h3 v-if="legend" v-text="legend.title"></h3>
-    <svg viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" v-if="pathData">
-      <path
-        v-for="(path, index) in pathData"
-        :key="index"
-        :d="path"
-        :fill="getFillColor(index)"
-        @mouseenter="highlight(index, true)"
-        @mouseleave="highlight(index, false)"
-        class="slice"
-        :class="{'slice-highlighted': highlighted === index}"
-      ></path>
-    </svg>
-    <ul class="legend" v-if="legend">
-      <li
-        v-for="(label, index) in labels"
-        :key="index"
-        @mouseenter="highlight(index, true)"
-        @mouseleave="highlight(index, false)"
-        class="legend-item"
-        :class="{'legend-highlighted': highlighted === index}"
-      >
-        <span class="label-color" :style="`background-color: ${getFillColor(index)} ;`"></span>
-        <span v-text="label"></span>
-      </li>
-    </ul>
+    <div class="chart">
+      <svg viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" v-if="pathData">
+        <path
+          v-for="(path, index) in pathData"
+          :key="index"
+          :d="path"
+          :fill="getFillColor(index)"
+          @mouseenter="highlight(index, true)"
+          @mouseleave="highlight(index, false)"
+          class="slice"
+          :class="{'slice-highlighted': highlighted === index}"
+        ></path>
+      </svg>
+    </div>
+    <div class="chart-info">
+      <h3 v-if="legend" v-text="legend.title"></h3>
+      <ul class="legend" v-if="legend">
+        <li
+          v-for="(label, index) in labels"
+          :key="index"
+          @mouseenter="highlight(index, true)"
+          @mouseleave="highlight(index, false)"
+          class="legend-item"
+          :class="{'legend-highlighted': highlighted === index}"
+        >
+          <span class="label-color" :style="`background-color: ${getFillColor(index)} ;`"></span>
+          <span v-text="label"></span>
+        </li>
+      </ul>
+      <div v-if="false" class="slice-info">Hello world</div>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -75,21 +80,33 @@ export default Vue.extend({
 <style scoped>
 .pie-chart {
   position: relative;
+  display: flex;
+}
+.chart {
   width: 200px;
+}
+.slice {
+  cursor: default;
+}
+.slice-highlighted {
+  fill: #b54eb5;
+}
+.slice-info {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+}
+.chart-info {
+  padding-left: 16px;
 }
 h3 {
   margin-bottom: 10px;
-  position: absolute;
-  left: 210px;
-  width: 200px;
 }
 .legend {
   padding: 0;
   list-style-type: none;
-  position: absolute;
-  top: 34px;
-  left: 210px;
-  width: 200px;
 }
 .label-color {
   display: inline-block;
@@ -100,23 +117,15 @@ h3 {
   top: 2px;
   border-radius: 1px;
 }
-
-.slice {
-  cursor: default;
-}
-.slice-highlighted {
-  fill: #b54eb5;
-}
-
 .legend-item {
   cursor: default;
+  font-weight: 500;
 }
 
 .legend-item.legend-highlighted .label-color {
   background-color: #b54eb5 !important;
 }
 
-.legend-highlighted {
-  opacity: 0.8;
-}
+/* .legend-highlighted {
+} */
 </style>
