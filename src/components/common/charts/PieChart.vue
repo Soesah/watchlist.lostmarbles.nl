@@ -57,7 +57,7 @@ h3 {
   padding: 0;
   list-style-type: none;
   position: absolute;
-  top: 30px;
+  top: 34px;
   left: 210px;
   width: 200px;
 }
@@ -68,5 +68,6 @@ h3 {
   margin-right: 8px;
   position: relative;
   top: 2px;
+  border-radius: 1px;
 }
 </style>

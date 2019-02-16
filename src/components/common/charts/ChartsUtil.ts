@@ -1,9 +1,12 @@
 export const chartColors: string[] = [
-  '#683D54',
-  '#505E7D',
-  '#1A7F82',
-  '#499763',
-  '#9FA241'
+  '#47ACB1',
+  '#ADD5D7',
+  '#F26522',
+  '#F9AA7B',
+  '#FFE8AF',
+  '#FFCD34',
+  '#A5A8AA',
+  '#676766'
 ];
 
 export const coordsForPercentage = (percentage: number): number[] => {
