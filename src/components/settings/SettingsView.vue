@@ -3,7 +3,7 @@
     <h2>Settings & Statistics</h2>
 
     <p>See incomplete items (movies with N/A for runttime, series without seasons, etc.). See a pie chart for item types, and a bar chart for watched items.</p>
-    <pie-chart :data="chartData" :legend="legend"></pie-chart>
+    <pie-chart :chartInfo="chartInfo"></pie-chart>
   </section>
 </template>
 <script lang="ts">
@@ -11,6 +11,7 @@ import Vue from "vue";
 import { WatchlistItems } from "@/services/WatchItemFactory";
 import { WatchlistType } from "@/core/models/BaseModel";
 import PieChart from "@/components/common/charts/PieChart.vue";
+import { ChartInfo, ChartData } from "@/components/common/charts/ChartsUtil";
 
 interface WatchlistStatistics {
   movies: number;
@@ -30,63 +31,34 @@ const l: string[] = [
 
 export default Vue.extend({
   name: "SettingsView",
-  data() {
-    return {
-      legend: {
-        title: "Watchlist Items",
-        labels: l.map(
-          (label: string) => `${label[0].toUpperCase()}${label.substring(1)}`
-        )
-      }
-    };
-  },
   computed: {
     items(): WatchlistItems[] {
       return this.$store.state.items;
     },
-    chartData(): number[] {
-      const data: WatchlistStatistics = this.items.reduce(
-        (acc, item: WatchlistItems) => {
-          switch (item.type) {
-            case WatchlistType.Movie:
-              acc.movies++;
-              break;
-            case WatchlistType.Series:
-              acc.series++;
-              break;
-            case WatchlistType.Documentary:
-              acc.documentaries++;
-              break;
-            case WatchlistType.Game:
-              acc.games++;
-              break;
-            case WatchlistType.Franchise:
-              acc.franchises++;
-              break;
-          }
-
-          return acc;
-        },
-        {
-          movies: 0,
-          series: 0,
-          documentaries: 0,
-          games: 0,
-          franchises: 0
-        }
-      );
-
+    chartInfo(): ChartInfo {
       const totalItems = this.items.length;
 
-      return [
-        data.movies,
-        data.series,
-        data.documentaries,
-        data.games,
-        data.franchises
-      ]
-        .filter((total: number) => total)
-        .map((total: number) => total / totalItems);
+      return {
+        title: "Watchlist Items",
+        data: [
+          WatchlistType.Movie,
+          WatchlistType.Series,
+          WatchlistType.Documentary,
+          WatchlistType.Game,
+          WatchlistType.Franchise
+        ].reduce(
+          (acc: ChartData[], type: WatchlistType) => [
+            ...acc,
+            {
+              name: WatchlistType[type],
+              value: this.items.filter(
+                (item: WatchlistItems) => item.type === type
+              ).length
+            }
+          ],
+          []
+        )
+      };
     }
   },
   created() {

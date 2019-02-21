@@ -1,7 +1,7 @@
 <template>
   <div class="pie-chart">
     <div class="chart">
-      <svg viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" v-if="pathData">
+      <svg viewBox="-1 -1 2 2" style="transform: rotate(-90deg)" v-if="pathData.length">
         <path
           v-for="(path, index) in pathData"
           :key="index"
@@ -15,17 +15,17 @@
       </svg>
     </div>
     <div class="chart-info">
-      <h3 v-if="legend" v-text="legend.title"></h3>
-      <ul class="legend" v-if="legend">
+      <h3 v-if="chartInfo" v-text="chartInfo.title"></h3>
+      <ul class="legend">
         <li
           v-for="(label, index) in labels"
           :key="index"
           @mouseenter="highlight(index, true)"
           @mouseleave="highlight(index, false)"
           class="legend-item"
-          :class="{'legend-highlighted': highlighted === index}"
+          :class="{'legend-item-highlighted': highlighted === index}"
         >
-          <span class="label-color" :style="`background-color: ${getFillColor(index)} ;`"></span>
+          <span class="legend-item-label" :style="`background-color: ${getFillColor(index)} ;`"></span>
           <span v-text="label"></span>
         </li>
       </ul>
@@ -35,36 +35,55 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-import { chartColors, percentageToSVGPaths } from "./ChartsUtil";
+import {
+  chartColors,
+  percentageToSVGSlice,
+  ChartData,
+  ChartInfo
+} from "./ChartsUtil";
 
-interface PieChartData {
+interface PieChartComponentData {
   highlighted: number;
 }
 
 const props = {
-  data: { type: Array, default: () => [] },
-  legend: { type: Object, default: () => null }
+  chartInfo: { type: Object, default: () => {} }
 };
 
 export default Vue.extend({
   name: "PieChart",
   props,
-  data(): PieChartData {
+  data(): PieChartComponentData {
     return {
       highlighted: -1
     };
   },
   computed: {
+    total(): number {
+      const info = <ChartInfo>this.chartInfo;
+
+      return info.data
+        ? info.data.reduce((acc: number, d: ChartData) => acc + d.value, 0)
+        : 0;
+    },
     pathData(): string[] | false {
-      return (<number[]>this.data).length
-        ? percentageToSVGPaths(<number[]>this.data)
-        : false;
+      const info = <ChartInfo>this.chartInfo;
+
+      return this.total && info.data
+        ? percentageToSVGSlice(
+            info.data.map((d: ChartData) => d.value / this.total)
+          )
+        : [];
     },
     labels(): string[] {
-      return this.legend.labels.map(
-        (label: string, index: number) =>
-          `${label} (${Math.round(<number>this.data[index] * 100)}%)`
-      );
+      const info = <ChartInfo>this.chartInfo;
+
+      return this.total && info.data
+        ? info.data.map(
+            (d: ChartData, index: number) =>
+              `${d.name} (${Math.round((d.value / this.total) * 100)}%)`
+          )
+        : [];
     }
   },
   methods: {
@@ -77,55 +96,3 @@ export default Vue.extend({
   }
 });
 </script>
-<style scoped>
-.pie-chart {
-  position: relative;
-  display: flex;
-}
-.chart {
-  width: 200px;
-}
-.slice {
-  cursor: default;
-}
-.slice-highlighted {
-  fill: #b54eb5;
-}
-.slice-info {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 8px;
-  border-radius: 4px;
-  color: white;
-  font-weight: 500;
-}
-.chart-info {
-  padding-left: 16px;
-}
-h3 {
-  margin-bottom: 10px;
-}
-.legend {
-  padding: 0;
-  list-style-type: none;
-}
-.label-color {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 8px;
-  position: relative;
-  top: 2px;
-  border-radius: 1px;
-}
-.legend-item {
-  cursor: default;
-  font-weight: 500;
-}
-
-.legend-item.legend-highlighted .label-color {
-  background-color: #b54eb5 !important;
-}
-
-/* .legend-highlighted {
-} */
-</style>

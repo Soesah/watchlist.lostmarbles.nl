@@ -16,12 +16,7 @@ export const coordsForPercentage = (percentage: number): number[] => {
   return [x, y];
 };
 
-interface PieChartData {
-  start: number;
-  data: string[];
-}
-
-export const percentageToSVGPaths = (percentages: number[]): string[] =>
+export const percentageToSVGSlice = (percentages: number[]): string[] =>
   percentages.reduce(
     (acc: PieChartData, percentage: number) => {
       const [startX, startY] = coordsForPercentage(acc.start);
