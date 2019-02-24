@@ -66,15 +66,6 @@ export default Vue.extend({
         ? info.data.reduce((acc: number, d: ChartData) => acc + d.value, 0)
         : 0;
     },
-    pathData(): string[] | false {
-      const info = <ChartInfo>this.chartInfo;
-
-      return this.total && info.data
-        ? percentageToSVGSlice(
-            info.data.map((d: ChartData) => d.value / this.total)
-          )
-        : [];
-    },
     labels(): string[] {
       const info = <ChartInfo>this.chartInfo;
 
@@ -82,6 +73,15 @@ export default Vue.extend({
         ? info.data.map(
             (d: ChartData, index: number) =>
               `${d.name} (${Math.round((d.value / this.total) * 100)}%)`
+          )
+        : [];
+    },
+    pathData(): string[] | false {
+      const info = <ChartInfo>this.chartInfo;
+
+      return this.total && info.data
+        ? percentageToSVGSlice(
+            info.data.map((d: ChartData) => d.value / this.total)
           )
         : [];
     }

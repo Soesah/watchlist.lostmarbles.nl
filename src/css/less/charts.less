@@ -1,3 +1,11 @@
+.chart {
+  width: 200px;
+
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
 .pie-chart {
   position: relative;
   display: flex;
@@ -16,16 +24,40 @@
     color: white;
     font-weight: 500;
   }
-  .chart-info {
-    padding-left: 16px;
+}
+
+.bar-chart {
+  position: relative;
+  display: flex;
+
+  .bar {
+    cursor: default;
+  }
+  .bar-highlighted {
+    fill: #b54eb5 !important;
+  }
+
+  .axis {
+    stroke: gray;
+    stroke-width: 0.02;
+  }
+
+  .grid-line {
+    stroke: lightgray;
+    stroke-width: 0.01;
+  }
+  .grid-legend {
+    fill: lightgray;
+    font-size: 0.008em;
+  }
+
+  .chart {
+    width: 400px;
   }
 }
-.chart {
-  width: 200px;
 
-  h3 {
-    margin-bottom: 10px;
-  }
+.chart-info {
+  padding-left: 16px;
 }
 
 .legend {
