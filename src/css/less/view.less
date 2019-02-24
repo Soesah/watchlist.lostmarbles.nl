@@ -1,6 +1,4 @@
 .view {
-
-
   .buttons {
     display: flex;
     width: 400px;
@@ -16,8 +14,12 @@
       padding: 0;
 
       li {
-        width: 40%;
         display: block;
+
+        .icon {
+          position: relative;
+          left: @size-mini;
+        }
       }
 
       .episode-nr {
@@ -30,10 +32,9 @@
   }
   .actors {
     ul {
-      .ul()
+      .ul();
     }
   }
-
 
   .seasons {
     list-style-type: none;
@@ -42,6 +43,10 @@
     .season-title {
       margin-top: @size-small;
       .font-default();
+
+      .icon {
+        margin: 0 @size-mini;
+      }
     }
     .episode-title {
       margin: 4px 0 4px;
@@ -62,9 +67,8 @@
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .view {
-
     .seasons {
       .episodes {
         li {
