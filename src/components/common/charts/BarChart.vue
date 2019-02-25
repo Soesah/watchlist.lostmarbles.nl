@@ -76,7 +76,7 @@ const props = {
   svgInternalWidth: { type: Number, default: 4 },
   svgInternalHeight: { type: Number, default: 2 },
   barWidthPercentage: { type: Number, default: 90 },
-  horizontalGrid: { type: Number, default: 5 }
+  horizontalGrid: { type: Number, default: 6 }
 };
 
 export default Vue.extend({
