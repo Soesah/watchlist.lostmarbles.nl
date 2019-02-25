@@ -46,8 +46,7 @@ export default Vue.extend({
           WatchlistType.Movie,
           WatchlistType.Series,
           WatchlistType.Documentary,
-          WatchlistType.Game,
-          WatchlistType.Franchise
+          WatchlistType.Game
         ].reduce(
           (acc: ChartData[], type: WatchlistType) => [
             ...acc,
@@ -71,8 +70,7 @@ export default Vue.extend({
           WatchlistType.Movie,
           WatchlistType.Series,
           WatchlistType.Documentary,
-          WatchlistType.Game,
-          WatchlistType.Franchise
+          WatchlistType.Game
         ].reduce(
           (acc: ChartData[], type: WatchlistType) => [
             ...acc,
