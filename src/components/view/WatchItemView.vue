@@ -122,18 +122,20 @@ export default Vue.extend({
     this.$store.commit("removeNav", "/edit/" + this.item.path);
   },
   methods: {
-    toggleSeasonWatched(season: Season) {
-      this.$store.dispatch("toggleSeasonWatched", {
+    async toggleSeasonWatched(season: Season) {
+      await this.$store.dispatch("toggleSeasonWatched", {
         item: this.item,
         season: season
       });
+      this.$store.dispatch("getItemByPath", this.$route.params.path);
     },
-    toggleEpisodeWatched(season: Season, episode: Episode) {
-      this.$store.dispatch("toggleEpisodeWatched", {
+    async toggleEpisodeWatched(season: Season, episode: Episode) {
+      await this.$store.dispatch("toggleEpisodeWatched", {
         item: this.item,
         season: season,
         episode: episode
       });
+      this.$store.dispatch("getItemByPath", this.$route.params.path);
     }
   },
   filters: {

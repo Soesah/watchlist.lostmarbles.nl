@@ -132,41 +132,45 @@ export default new Vuex.Store<WatchlistState>({
       return response.status;
     },
     async toggleSeasonWatched({ commit, dispatch }, { item, season }) {
-      const update = await watchlistService.toggleSeason(item, season);
-      if (update) {
-        commit('toggleWatched', update);
-        commit('setItem', update);
+      dispatch(
+        'info',
+        `Toggling ${item.title} Season ${season.nr} to ${
+          season.watched ? 'not watched' : 'watched'
+        }`
+      );
+      const response = await watchlistService.toggleSeason(item, season);
+      if (response.status) {
+        commit('toggleWatched', response.data);
+        commit('setItem', response.data);
+        dispatch('success', response.message);
       } else {
         dispatch('error', 'Failed to change item watched status');
       }
-      return dispatch(
-        'info',
-        `Setting ${item.title} Season ${season.nr} to ${
-          !season.watched ? 'watched' : 'not watched'
-        }`
-      );
+      return response.status;
     },
     async toggleEpisodeWatched(
       { commit, dispatch },
       { item, season, episode }
     ) {
-      const update = await watchlistService.toggleEpisode(
+      dispatch(
+        'info',
+        `Toggling ${item.title} Season ${season.nr} Episode ${episode.nr} to ${
+          episode.watched ? 'not watched' : 'watched'
+        }`
+      );
+      const response = await watchlistService.toggleEpisode(
         item,
         season,
         episode
       );
-      if (update) {
-        commit('toggleWatched', update);
-        commit('setItem', update);
+      if (response.status) {
+        commit('toggleWatched', response.data);
+        commit('setItem', response.data);
+        dispatch('success', response.message);
       } else {
         dispatch('error', 'Failed to change item watched status');
       }
-      return dispatch(
-        'info',
-        `Setting ${item.title} Season ${season.nr} Episode ${episode.nr} to ${
-          !episode.watched ? 'watched' : 'not watched'
-        }`
-      );
+      return response.status;
     },
     async getWatchList({ state, commit }) {
       let items;

@@ -114,7 +114,7 @@ export class WatchlistService extends BaseService {
     const status = response.status === STATUS_OK;
     return {
       status,
-      message: response.statusText,
+      message: status ? response.data.message : response.statusText,
       data: status ? WatchItemFactory.create(response.data.data) : item
     };
   }
@@ -134,7 +134,7 @@ export class WatchlistService extends BaseService {
     const status = response.status === STATUS_OK;
     return {
       status,
-      message: response.statusText,
+      message: status ? response.data.message : response.statusText,
       data: status ? WatchItemFactory.create(response.data.data) : item
     };
   }
