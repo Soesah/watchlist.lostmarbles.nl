@@ -75,9 +75,8 @@ export class Season {
   }
 
   get watched() {
-    return (
-      this.episodes.length > 0 &&
-      this.episodes.filter((item: Episode) => !item.watched).length === 0
-    );
+    return this.episodes.length > 0
+      ? this.episodes.filter((item: Episode) => !item.watched).length === 0
+      : true;
   }
 }

@@ -102,10 +102,9 @@ export class Series {
   }
 
   get watched(): boolean {
-    return (
-      this.seasons.length > 0 &&
-      this.seasons.filter((season: Season) => !season.watched).length === 0
-    );
+    return this.seasons.length > 0
+      ? this.seasons.filter((season: Season) => !season.watched).length === 0
+      : true;
   }
 
   get year(): number {
