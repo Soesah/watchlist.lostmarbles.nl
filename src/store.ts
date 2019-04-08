@@ -8,13 +8,14 @@ import messageService, {
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Franchise } from '@/models/FranchiseModel';
 import { WatchlistItems, FranchiseItems } from './services/WatchItemFactory';
+import { createWatchlistSpecification } from './specification/watchlist.specification';
 
 Vue.use(Vuex);
 
-interface Filter {
+export interface Filter {
   search: string;
-  itemState: string | null;
-  itemType: string | boolean;
+  itemStates: boolean[];
+  itemTypes: WatchlistType[];
 }
 
 interface WatchlistState {
@@ -33,8 +34,8 @@ export default new Vuex.Store<WatchlistState>({
     messages: [],
     filter: {
       search: '',
-      itemState: null,
-      itemType: true
+      itemStates: [],
+      itemTypes: []
     },
     navigation: [],
     // set up a Vue instance as an eventing proxy
@@ -76,6 +77,25 @@ export default new Vuex.Store<WatchlistState>({
     removeNav(state, to) {
       let index = state.navigation.findIndex((nav: any) => nav.to === to);
       state.navigation.splice(index, 1);
+    },
+    setFilterSearch(state, search: string) {
+      state.filter = { ...state.filter, search };
+    },
+
+    toggleItemType(state, itemType: WatchlistType) {
+      const itemTypes = state.filter.itemTypes.includes(itemType)
+        ? [...state.filter.itemTypes.filter(t => t !== itemType)]
+        : [...state.filter.itemTypes, itemType];
+      state.filter = { ...state.filter, itemTypes };
+    },
+    resetItemTypes(state) {
+      state.filter = { ...state.filter, itemTypes: [] };
+    },
+    setItemState(state, itemState: boolean) {
+      state.filter = { ...state.filter, itemStates: [itemState] };
+    },
+    resetItemStates(state) {
+      state.filter = { ...state.filter, itemStates: [] };
     }
   },
   actions: {
@@ -234,50 +254,42 @@ export default new Vuex.Store<WatchlistState>({
         );
       });
     },
-    franchises: state => (): Franchise[] => {
-      return state.items.filter(
-        (item: WatchlistItems): item is Franchise =>
-          item.type === WatchlistType.Franchise
-      );
+    franchises: (state): Franchise[] => {
+      return state.items
+        .filter(
+          (item: WatchlistItems): item is Franchise =>
+            item.type === WatchlistType.Franchise
+        )
+        .sort((a: Franchise, b: Franchise) => (a.name > b.name ? -1 : 1));
     },
     getItemFranchise: (_, getters) => (item: any): boolean => {
-      return getters
-        .franchises()
-        .find((franchise: Franchise) => franchise.items.includes(item.imdbID));
+      return getters.franchises.find((franchise: Franchise) =>
+        franchise.items.includes(item.imdbID)
+      );
     },
     franchiseItems: state => (items: string[]): FranchiseItems[] => {
       return items.map((imdbID: string) =>
         state.items.find(item => item.imdbID === imdbID)
       );
     },
-    filteredItems: (state, getters) => () => {
-      let filtered = state.items.filter((item: any) => {
-        let show = true;
-
-        // filter out franchised items by default
-        show = !getters.getItemFranchise(item);
-
-        // filter out franchises when searching;
-        // this prevents heaps of complexity if you were to extend the filter and search to franchiseItems above
-        if (state.filter.search) {
-          show =
-            item.title
-              .toLowerCase()
-              .indexOf(state.filter.search.toLowerCase()) !== -1 &&
-            item.type !== WatchlistType.Franchise;
-        }
-
-        if (show && state.filter.itemType !== true) {
-          show = (state.filter.itemType as string).indexOf(item.type) !== -1;
-        }
-
-        if (show && state.filter.itemState !== null) {
-          show = item.watched === state.filter.itemState;
-        }
-
-        return show;
-      });
-      return filtered;
+    filteredItems: (state, getters) => {
+      const spec = createWatchlistSpecification(
+        state.filter.search,
+        state.filter.itemTypes,
+        state.filter.itemStates,
+        getters.franchises
+      );
+      return state.items
+        .filter(spec)
+        .sort((a: WatchlistItems, b: WatchlistItems) =>
+          a.title > b.title ? 1 : -1
+        );
+    },
+    filteredItemCount: (_, getters) => {
+      return getters.filteredItems.reduce(
+        (acc: number, item: WatchlistItems) => (acc += item.count),
+        0
+      );
     }
   }
 });

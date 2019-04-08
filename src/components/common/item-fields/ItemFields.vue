@@ -170,7 +170,7 @@ export default Vue.extend({
   computed: {
     types() {
       return WatchItemFactory.getTypeList().filter(
-        item => item.type !== WatchlistType.Franchise
+        item => item.value !== WatchlistType.Franchise
       );
     }
   },

@@ -21,6 +21,7 @@
 <script lang="ts">
 import Vue from "vue";
 import { Franchise } from "@/models/FranchiseModel";
+import { mapGetters } from "vuex";
 
 export default Vue.extend({
   name: "FranchisesView",
@@ -36,11 +37,7 @@ export default Vue.extend({
     this.$store.commit("removeNav", "/franchises/add");
   },
   computed: {
-    franchises(): Franchise[] {
-      return this.$store.getters
-        .franchises()
-        .sort((a: Franchise, b: Franchise) => (a.name > b.name ? -1 : 1));
-    }
+    ...mapGetters(["franchises"])
   }
 });
 </script>

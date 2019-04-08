@@ -1,5 +1,4 @@
 .filters {
-
   .filter {
     position: relative;
   }
@@ -78,7 +77,7 @@
 
         &:hover,
         &.active {
-          color: @beige-dark;
+          color: rgba(0, 0, 0, 0.6);
         }
         &.active {
           .font-bold();
@@ -89,7 +88,7 @@
   }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .filters {
     label {
       display: block;
@@ -101,7 +100,6 @@
       li {
         a {
           padding: @size-smaller / 2 @size-small / 2;
-
         }
       }
     }

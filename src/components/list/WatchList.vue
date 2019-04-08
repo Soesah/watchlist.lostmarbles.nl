@@ -4,11 +4,16 @@
     <list-filter></list-filter>
     <p>
       Showing
-      <strong>{{count}}</strong> movies, series, games and documentaries.
+      <strong>{{filteredItemCount}}</strong> movies, series, games and documentaries.
     </p>
 
     <ul class="list">
-      <component :is="componentType(item)" v-for="item in items" :item="item" :key="item.imdbID"></component>
+      <component
+        :is="componentType(item)"
+        v-for="item in filteredItems"
+        :item="item"
+        :key="item.imdbID"
+      ></component>
     </ul>
   </section>
 </template>
@@ -20,23 +25,12 @@ import WatchListItem from "@/components/list/WatchListItem.vue";
 import WatchListFranchise from "@/components/list/WatchListFranchise.vue";
 import { WatchlistItems } from "@/services/WatchItemFactory";
 import { WatchlistType } from "@/core/models/BaseModel";
+import { mapGetters } from "vuex";
 
 export default Vue.extend({
   name: "WatchList",
   computed: {
-    items(): WatchlistItems[] {
-      return this.$store.getters
-        .filteredItems()
-        .sort((a: WatchlistItems, b: WatchlistItems) =>
-          a.title > b.title ? 1 : -1
-        );
-    },
-    count(): number {
-      return this.items.reduce(
-        (acc: number, item: WatchlistItems) => (acc += item.count),
-        0
-      );
-    }
+    ...mapGetters(["filteredItems", "filteredItemCount"])
   },
   created() {
     this.$store.dispatch("getWatchList");

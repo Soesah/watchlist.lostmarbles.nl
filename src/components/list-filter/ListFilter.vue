@@ -1,15 +1,15 @@
 <template>
-  <div class="filters">
+  <div class="filters" v-if="filterSettings">
     <div class="filter">
       <label>Filter by name</label>
       <div class="filter-row">
         <input
           type="text"
           placeholder="Filter"
-          v-model="filter.search"
+          v-model="filterSettings.search"
           @input="updateSearch($event)"
         >
-        <button class="clear" @click="clear" v-show="filter.search != ''">
+        <button class="clear" @click="clear" v-show="filterSettings.search != ''">
           <i class="icon icon-delete"></i>
         </button>
         <button
@@ -24,12 +24,19 @@
     <div class="filter" v-if="showMore">
       <label>Filter by type</label>
       <ul class="unselectable">
+        <li>
+          <a
+            href="#"
+            :class="{ active: filterSettings.itemTypes.length === 0 }"
+            @click.prevent="resetItemTypes();"
+          >All</a>
+        </li>
         <li v-for="type in types" :key="type.name">
           <a
-            href="javascript:void(0)"
+            href="#"
             v-text="type.name"
-            :class="{active: isActive(type)}"
-            @click="setItemType(type.type);"
+            :class="{ active: filterSettings.itemTypes.includes(type.value) }"
+            @click.prevent="toggleItemType(type.value);"
           ></a>
         </li>
       </ul>
@@ -37,12 +44,19 @@
     <div class="filter" v-if="showMore">
       <label>Watched</label>
       <ul class="unselectable">
+        <li>
+          <a
+            href="#"
+            :class="{ active: filterSettings.itemStates.length === 0 }"
+            @click.prevent="resetItemStates();"
+          >Both</a>
+        </li>
         <li v-for="state in states" :key="state.state">
           <a
-            href="javascript:void(0)"
+            href="#"
             v-text="state.name"
-            :class="{active: filter.itemState === state.state}"
-            @click="setItemState(state.state);"
+            :class="{ active: filterSettings.itemStates.includes(state.value) }"
+            @click.prevent="setItemState(state.value);"
           ></a>
         </li>
       </ul>
@@ -51,45 +65,58 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-import {
-  WatchItemFactory,
-  Type,
-  State,
-  FilterType
-} from "@/services/WatchItemFactory";
+import { WatchItemFactory, Type, State } from "@/services/WatchItemFactory";
+import { mapState } from "vuex";
+import { Filter } from "../../store";
+import { WatchlistType } from "../../core/models/BaseModel";
 
 export default Vue.extend({
   name: "ListFilter",
   data() {
     return {
-      filter: this.$store.state.filter,
       showMore: false,
-      type: ""
+      filterSettings: <Filter>{
+        search: "",
+        itemTypes: [],
+        itemStates: []
+      }
     };
   },
   computed: {
-    types(): FilterType[] {
-      return WatchItemFactory.getFilterTypes();
+    types(): Type[] {
+      return WatchItemFactory.getTypeList();
     },
     states(): State[] {
       return WatchItemFactory.getFilterStates();
+    },
+    ...mapState(["filter"])
+  },
+  watch: {
+    filter(newValue) {
+      this.filterSettings = Object.assign({}, newValue);
     }
+  },
+  created() {
+    this.clear();
   },
   methods: {
     updateSearch(evt: any) {
-      this.$emit("input", evt.target ? evt.target.value : null);
+      this.$store.commit("setFilterSearch", evt.target ? evt.target.value : "");
     },
     clear() {
-      this.filter.search = "";
+      this.$store.commit("setFilterSearch", "");
     },
-    isActive(type: Type) {
-      return <number>this.filter.itemType === type.type;
+    toggleItemType(type: WatchlistType) {
+      this.$store.commit("toggleItemType", type);
     },
-    setItemType(type: Type) {
-      this.filter.itemType = type;
+    resetItemTypes() {
+      this.$store.commit("resetItemTypes");
     },
     setItemState(state: State) {
-      this.filter.itemState = state;
+      this.$store.commit("setItemState", state);
+    },
+    resetItemStates() {
+      this.$store.commit("resetItemStates");
     }
   }
 });

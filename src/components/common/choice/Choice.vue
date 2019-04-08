@@ -96,12 +96,12 @@ export default Vue.extend({
     },
     chooseItem(index: number) {
       const item = this.items[index];
-      this.item = item ? item.type : null;
+      this.item = item ? item.value : null;
       this.update();
       this.close();
     },
     getName(item: Type): string {
-      const it = this.items.find((item: Type) => item.type === this.value);
+      const it = this.items.find((item: Type) => item.value === this.value);
       return it ? it.name : "";
     },
     focusClass(index: number) {

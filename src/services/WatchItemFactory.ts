@@ -26,18 +26,13 @@ interface BaseType {
 }
 
 export interface State {
-  state: boolean | null;
   name: string;
+  value: boolean;
 }
 
 export interface Type {
-  type: number;
   name: string;
-}
-
-export interface FilterType {
-  type: number[] | boolean;
-  name: string;
+  value: number;
 }
 
 export class WatchItemFactory {
@@ -147,33 +142,22 @@ export class WatchItemFactory {
   }
 
   static getFilterStates(): State[] {
-    return [
-      { state: null, name: 'All' },
-      { state: true, name: 'Yes' },
-      { state: false, name: 'No' }
-    ];
-  }
-
-  static getFilterTypes(): FilterType[] {
-    const types = this.getTypeList().map(
-      (item: Type): FilterType => ({ ...item, type: [item.type] })
-    );
-    return [<FilterType>{ type: ALL, name: 'All' }].concat(types);
+    return [{ value: true, name: 'Yes' }, { value: false, name: 'No' }];
   }
 
   static getTypeList(): Type[] {
     return [
-      { type: WatchlistType.Documentary, name: 'Documentary' },
-      { type: WatchlistType.Game, name: 'Game' },
-      { type: WatchlistType.Movie, name: 'Movie' },
-      { type: WatchlistType.Series, name: 'Series' },
-      { type: WatchlistType.Franchise, name: 'Franchise' }
+      { value: WatchlistType.Documentary, name: 'Documentary' },
+      { value: WatchlistType.Game, name: 'Game' },
+      { value: WatchlistType.Movie, name: 'Movie' },
+      { value: WatchlistType.Series, name: 'Series' },
+      { value: WatchlistType.Franchise, name: 'Franchise' }
     ];
   }
 
   static getTypeNameByType(type: number): string {
     const item = WatchItemFactory.getTypeList().find(
-      (item: Type) => item.type === type
+      (item: Type) => item.value === type
     );
     return item ? item.name : 'Unknown';
   }
