@@ -38,12 +38,15 @@ const matchItemState = (
 };
 
 const isFranchiseItem = (
-  franchises: Franchise[]
+  franchises: Franchise[],
+  searchValue: string
 ): Specification<WatchlistItems> => {
   return (input: WatchlistItems): boolean =>
-    franchises.find((franchise: Franchise) =>
-      franchise.items.includes(input.imdbID)
-    ) !== undefined;
+    searchValue
+      ? false // all franchise items when searching
+      : franchises.find((franchise: Franchise) =>
+          franchise.items.includes(input.imdbID)
+        ) !== undefined;
 };
 
 export const createWatchlistSpecification = (
@@ -53,7 +56,7 @@ export const createWatchlistSpecification = (
   franchises: Franchise[]
 ): Specification<WatchlistItems> => {
   return all<WatchlistItems>(
-    not(isFranchiseItem(franchises)),
+    not(isFranchiseItem(franchises, searchValue)),
     matchItemType(itemTypes),
     matchItemState(itemStates),
     some<WatchlistItems>(matchName(searchValue), matchActors(searchValue))
