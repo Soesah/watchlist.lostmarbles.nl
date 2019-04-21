@@ -49,6 +49,13 @@ const isFranchiseItem = (
         ) !== undefined;
 };
 
+const isFranchiseWhileSearching = (
+  searchValue: string
+): Specification<WatchlistItems> => {
+  return (input: WatchlistItems): boolean =>
+    searchValue ? input.type === WatchlistType.Franchise : false;
+};
+
 export const createWatchlistSpecification = (
   searchValue: string,
   itemTypes: WatchlistType[],
@@ -57,6 +64,7 @@ export const createWatchlistSpecification = (
 ): Specification<WatchlistItems> => {
   return all<WatchlistItems>(
     not(isFranchiseItem(franchises, searchValue)),
+    not(isFranchiseWhileSearching(searchValue)),
     matchItemType(itemTypes),
     matchItemState(itemStates),
     some<WatchlistItems>(matchName(searchValue), matchActors(searchValue))
