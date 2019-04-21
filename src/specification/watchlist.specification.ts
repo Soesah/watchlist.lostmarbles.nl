@@ -1,16 +1,31 @@
 import { Specification, some, all, not } from './specification';
 import {
   WatchlistItems,
-  WatchlistItemsPure
+  WatchlistItemsPure,
+  WatchlistItem
 } from '@/services/WatchItemFactory';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Franchise } from '@/models/FranchiseModel';
+import { Movie } from '@/models/MovieModel';
+import { Game } from '@/models/GameModel';
+import { Documentary } from '@/models/DocumentaryModel';
 
 const matchName = (searchValue: string): Specification<WatchlistItems> => {
   return (input: WatchlistItems): boolean =>
     searchValue
       ? input.title.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1
       : true;
+};
+
+const matchDirector = (searchValue: string): Specification<WatchlistItems> => {
+  return (input: WatchlistItems): boolean =>
+    input.type !== WatchlistType.Franchise &&
+    input.type !== WatchlistType.Game &&
+    input.type !== WatchlistType.Series
+      ? (input as Movie | Documentary).director
+          .toLowerCase()
+          .indexOf(searchValue.toLowerCase()) !== -1
+      : false;
 };
 
 const matchActors = (searchValue: string): Specification<WatchlistItems> => {
@@ -67,6 +82,10 @@ export const createWatchlistSpecification = (
     not(isFranchiseWhileSearching(searchValue)),
     matchItemType(itemTypes),
     matchItemState(itemStates),
-    some<WatchlistItems>(matchName(searchValue), matchActors(searchValue))
+    some<WatchlistItems>(
+      matchName(searchValue),
+      matchActors(searchValue),
+      matchDirector(searchValue)
+    )
   );
 };
