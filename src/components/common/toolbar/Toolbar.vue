@@ -21,13 +21,12 @@
 <script lang="ts">
 import Vue from "vue";
 import Version from "@/components/common/version/Version.vue";
+import { mapState } from "vuex";
 
 export default Vue.extend({
   name: "Toolbar",
   computed: {
-    navigation(): any[] {
-      return this.$store.state.navigation;
-    }
+    ...mapState(["navigation"])
   },
   components: {
     Version

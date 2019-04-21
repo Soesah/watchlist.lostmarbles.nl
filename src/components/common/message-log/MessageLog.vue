@@ -15,6 +15,7 @@ import messageService, {
   MessageType,
   Message
 } from "@/services/MessageService";
+import { mapState } from "vuex";
 
 export default Vue.extend({
   name: "MessageLog",
@@ -24,9 +25,7 @@ export default Vue.extend({
     }
   },
   computed: {
-    messages(): Message[] {
-      return this.$store.state.messages;
-    }
+    ...mapState(["messages"])
   },
   methods: {
     type(type: MessageType): string {

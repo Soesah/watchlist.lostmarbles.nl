@@ -1,15 +1,15 @@
 <template>
-  <div class="filters" v-if="filterSettings">
+  <div class="filters" v-if="filter">
     <div class="filter">
       <label>Filter by name</label>
       <div class="filter-row">
         <input
           type="text"
           placeholder="Filter"
-          v-model="filterSettings.search"
+          v-model="filter.search"
           @input="updateSearch($event)"
         >
-        <button class="clear" @click="clear" v-show="filterSettings.search != ''">
+        <button class="clear" @click="clear" v-show="filter.search != ''">
           <i class="icon icon-delete"></i>
         </button>
         <button
@@ -27,7 +27,7 @@
         <li>
           <a
             href="#"
-            :class="{ active: filterSettings.itemTypes.length === 0 }"
+            :class="{ active: filter.itemTypes.length === 0 }"
             @click.prevent="resetItemTypes();"
           >All</a>
         </li>
@@ -35,7 +35,7 @@
           <a
             href="#"
             v-text="type.name"
-            :class="{ active: filterSettings.itemTypes.includes(type.value) }"
+            :class="{ active: filter.itemTypes.includes(type.value) }"
             @click.prevent="toggleItemType(type.value);"
           ></a>
         </li>
@@ -47,7 +47,7 @@
         <li>
           <a
             href="#"
-            :class="{ active: filterSettings.itemStates.length === 0 }"
+            :class="{ active: filter.itemStates.length === 0 }"
             @click.prevent="resetItemStates();"
           >Both</a>
         </li>
@@ -55,7 +55,7 @@
           <a
             href="#"
             v-text="state.name"
-            :class="{ active: filterSettings.itemStates.includes(state.value) }"
+            :class="{ active: filter.itemStates.includes(state.value) }"
             @click.prevent="setItemState(state.value);"
           ></a>
         </li>
@@ -74,12 +74,7 @@ export default Vue.extend({
   name: "ListFilter",
   data() {
     return {
-      showMore: false,
-      filterSettings: <Filter>{
-        search: "",
-        itemTypes: [],
-        itemStates: []
-      }
+      showMore: false
     };
   },
   computed: {
@@ -90,14 +85,6 @@ export default Vue.extend({
       return WatchItemFactory.getFilterStates();
     },
     ...mapState(["filter"])
-  },
-  watch: {
-    filter(newValue) {
-      this.filterSettings = Object.assign({}, newValue);
-    }
-  },
-  created() {
-    this.clear();
   },
   methods: {
     updateSearch(evt: any) {
