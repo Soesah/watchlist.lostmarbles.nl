@@ -260,7 +260,7 @@ export default new Vuex.Store<WatchlistState>({
           (item: WatchlistItems): item is Franchise =>
             item.type === WatchlistType.Franchise
         )
-        .sort((a: Franchise, b: Franchise) => (a.name > b.name ? -1 : 1));
+        .sort((a: Franchise, b: Franchise) => (a.name > b.name ? 1 : -1));
     },
     getItemFranchise: (_, getters) => (item: any): boolean => {
       return getters.franchises.find((franchise: Franchise) =>
