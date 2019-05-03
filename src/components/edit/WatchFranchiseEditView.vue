@@ -57,7 +57,6 @@ export default Vue.extend({
   },
   methods: {
     edit() {
-      debugger;
       this.$store
         .dispatch("editItem", this.item)
         .then(items => this.$router.go(-1));
