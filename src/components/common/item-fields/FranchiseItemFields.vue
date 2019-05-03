@@ -33,7 +33,7 @@
           <i class="icon icon-plus"></i>
         </button>
         <ul class="suggestions" v-show="suggestions.length && !choice">
-          <li v-for="suggestion in suggestions" :key="suggestion.title">
+          <li v-for="(suggestion, index) in suggestions" :key="`${suggestion.title}-${index}`">
             <a href="#" @click="chooseItem($event, suggestion)">
               <i :class="'icon icon-' + getTypeName(suggestion)"></i>
               <span v-text="suggestion.title + '(' + suggestion.year + ')'"></span>
