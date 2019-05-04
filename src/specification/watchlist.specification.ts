@@ -1,13 +1,11 @@
 import { Specification, some, all, not } from './specification';
 import {
   WatchlistItems,
-  WatchlistItemsPure,
-  WatchlistItem
+  WatchlistItemsPure
 } from '@/services/WatchItemFactory';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Franchise } from '@/models/FranchiseModel';
 import { Movie } from '@/models/MovieModel';
-import { Game } from '@/models/GameModel';
 import { Documentary } from '@/models/DocumentaryModel';
 
 const matchName = (searchValue: string): Specification<WatchlistItems> => {

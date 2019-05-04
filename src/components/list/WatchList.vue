@@ -1,12 +1,11 @@
 <template>
   <section class="watch-list">
-    <p>A list of movies, series, documentaries and games I want to watch and play.</p>
-    <list-filter></list-filter>
     <p>
       Showing
       <strong>{{filteredItemCount}}</strong> movies, series, games and documentaries.
     </p>
-
+    <list-sorter></list-sorter>
+    <list-filter></list-filter>
     <ul class="list">
       <component
         :is="componentType(item)"
@@ -21,6 +20,7 @@
 import Vue from "vue";
 import { WatchItemFactory } from "@/services/WatchItemFactory";
 import ListFilter from "@/components/list-filter/ListFilter.vue";
+import ListSorter from "@/components/list-sorter/ListSorter.vue";
 import WatchListItem from "@/components/list/WatchListItem.vue";
 import WatchListFranchise from "@/components/list/WatchListFranchise.vue";
 import { WatchlistItems } from "@/services/WatchItemFactory";
@@ -45,7 +45,8 @@ export default Vue.extend({
   components: {
     WatchListItem,
     WatchListFranchise,
-    ListFilter
+    ListFilter,
+    ListSorter
   }
 });
 </script>

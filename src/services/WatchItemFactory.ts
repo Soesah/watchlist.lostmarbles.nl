@@ -35,6 +35,10 @@ export interface Type {
   value: number;
 }
 
+export interface Sort {
+  name: string;
+}
+
 export class WatchItemFactory {
   static create(item: WatchlistItem): WatchlistItems {
     let created: any;
@@ -153,6 +157,10 @@ export class WatchItemFactory {
       { value: WatchlistType.Series, name: 'Series' },
       { value: WatchlistType.Franchise, name: 'Franchise' }
     ];
+  }
+
+  static getSortOptions(): Sort[] {
+    return [{ name: 'Name' }, { name: 'Year' }, { name: 'Date Added' }];
   }
 
   static getTypeNameByType(type: number): string {

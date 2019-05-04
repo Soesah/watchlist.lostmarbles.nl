@@ -9,6 +9,12 @@ import { WatchlistType } from '@/core/models/BaseModel';
 import { Franchise } from '@/models/FranchiseModel';
 import { WatchlistItems, FranchiseItems } from './services/WatchItemFactory';
 import { createWatchlistSpecification } from './specification/watchlist.specification';
+import { createSorter } from './sorting/sorting';
+import {
+  sortByTitle,
+  sortByYear,
+  sortByDateAdded
+} from './sorting/watchlist.sorting';
 
 Vue.use(Vuex);
 
@@ -23,9 +29,23 @@ interface WatchlistState {
   items: WatchlistItems[];
   messages: Message[];
   filter: Filter;
+  sortOptions: string[];
   navigation: any[];
   event: Vue;
 }
+
+const getFranchiseWithYear = (getters: any) => (item: Franchise): Franchise => {
+  return <Franchise>{
+    ...item,
+    title: item.name,
+    count: item.items.length,
+    year: getters
+      .franchiseItems(item.items)
+      .reduce((year: number, item: FranchiseItems) => {
+        return item && item.year && item.year < year ? item.year : year;
+      }, new Date().getFullYear())
+  };
+};
 
 export default new Vuex.Store<WatchlistState>({
   state: {
@@ -37,6 +57,7 @@ export default new Vuex.Store<WatchlistState>({
       itemStates: [],
       itemTypes: []
     },
+    sortOptions: ['Name'],
     navigation: [],
     // set up a Vue instance as an eventing proxy
     event: new Vue()
@@ -96,6 +117,14 @@ export default new Vuex.Store<WatchlistState>({
     },
     resetItemStates(state) {
       state.filter = { ...state.filter, itemStates: [] };
+    },
+    toggleItemSorting(state, option: string) {
+      state.sortOptions = state.sortOptions.includes(option)
+        ? state.sortOptions.filter(item => item !== option)
+        : [option, ...state.sortOptions];
+    },
+    resetItemSorting(state) {
+      state.sortOptions = ['Name'];
     }
   },
   actions: {
@@ -254,13 +283,27 @@ export default new Vuex.Store<WatchlistState>({
         );
       });
     },
-    franchises: (state): Franchise[] => {
+    franchises: (state, getters): Franchise[] => {
+      const sorters = state.sortOptions.map((option: string) => {
+        switch (option) {
+          case 'Name':
+            return sortByTitle;
+          case 'Year':
+            return sortByYear;
+          case 'Date Added':
+            return sortByDateAdded;
+          default:
+            return sortByTitle; // needed for the switch
+        }
+      });
+      const sorter = createSorter<WatchlistItems>(...sorters);
       return state.items
         .filter(
           (item: WatchlistItems): item is Franchise =>
             item.type === WatchlistType.Franchise
         )
-        .sort((a: Franchise, b: Franchise) => (a.name > b.name ? 1 : -1));
+        .map(getFranchiseWithYear(getters))
+        .sort(sorter);
     },
     getItemFranchise: (_, getters) => (item: any): boolean => {
       return getters.franchises.find((franchise: Franchise) =>
@@ -279,11 +322,29 @@ export default new Vuex.Store<WatchlistState>({
         state.filter.itemStates,
         getters.franchises
       );
+      const sorters = state.sortOptions.map((option: string) => {
+        switch (option) {
+          case 'Name':
+            return sortByTitle;
+          case 'Year':
+            return sortByYear;
+          case 'Date Added':
+            return sortByDateAdded;
+          default:
+            return sortByTitle; // needed for the switch
+        }
+      });
+      const sorter = createSorter<WatchlistItems>(...sorters);
+
       return state.items
+        .map((item: WatchlistItems) => {
+          if (item.type === WatchlistType.Franchise) {
+            return getFranchiseWithYear(getters)(item as Franchise);
+          }
+          return item;
+        })
         .filter(spec)
-        .sort((a: WatchlistItems, b: WatchlistItems) =>
-          a.title > b.title ? 1 : -1
-        );
+        .sort(sorter);
     },
     filteredItemCount: (_, getters) => {
       return getters.filteredItems.reduce(
