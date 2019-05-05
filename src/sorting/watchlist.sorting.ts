@@ -9,6 +9,6 @@ export const sortByYear = (a: WatchlistItems, b: WatchlistItems): number =>
 export const sortByDateAdded = (a: WatchlistItems, b: WatchlistItems): number =>
   a.date_added === b.date_added
     ? 0
-    : (a.date_added ? a.date_added : '') > (b.date_added ? b.date_added : '')
+    : (a.date_added ? a.date_added : '') < (b.date_added ? b.date_added : '')
     ? 1
     : -1;
