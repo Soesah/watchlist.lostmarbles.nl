@@ -1,8 +1,7 @@
 package api
 
 import (
-	"golang.org/x/net/context"
-	"google.golang.org/appengine/datastore"
+	"cloud.google.com/go/datastore"
 )
 
 const (
@@ -29,51 +28,51 @@ const (
 )
 
 // WatchlistKey returns a key for Watchlist
-func WatchlistKey(ctx context.Context) *datastore.Key {
-	return datastore.NewKey(ctx, WatchlistKind, "lostmarbles", 0, nil)
+func WatchlistKey() *datastore.Key {
+	return datastore.NameKey(WatchlistKind, "lostmarbles", nil)
 }
 
 // ItemKey returns a key for ItemKey -> WatchlistKey
-func ItemKey(ctx context.Context) *datastore.Key {
-	return datastore.NewKey(ctx, WatchlistItemKind, "item", 0, WatchlistKey(ctx))
+func ItemKey() *datastore.Key {
+	return datastore.NameKey(WatchlistItemKind, "item", WatchlistKey())
 }
 
 // MovieKey returns a key for Movie -> ItemKey -> WatchlistKey
-func MovieKey(ctx context.Context, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, MovieKind, imdbID, 0, ItemKey(ctx))
+func MovieKey(imdbID string) *datastore.Key {
+	return datastore.NameKey(MovieKind, imdbID, ItemKey())
 }
 
 // SeriesKey returns a key for Series -> ItemKey -> WatchlistKey
-func SeriesKey(ctx context.Context, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, SeriesKind, imdbID, 0, ItemKey(ctx))
+func SeriesKey(imdbID string) *datastore.Key {
+	return datastore.NameKey(SeriesKind, imdbID, ItemKey())
 }
 
 // SeriesDataKey returns a key for Series -> ItemKey -> WatchlistKey
-func SeriesDataKey(ctx context.Context, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, SeriesKind, imdbID, 0, ItemKey(ctx))
+func SeriesDataKey(imdbID string) *datastore.Key {
+	return datastore.NameKey(SeriesKind, imdbID, ItemKey())
 }
 
 // SeasonKey returns a key for Season -> Series -> ItemKey -> WatchlistKey
-func SeasonKey(ctx context.Context, seasonNr int64, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, SeasonKind, "", seasonNr, SeriesDataKey(ctx, imdbID))
+func SeasonKey(seasonNr int64, imdbID string) *datastore.Key {
+	return datastore.IDKey(SeasonKind, seasonNr, SeriesDataKey(imdbID))
 }
 
 // EpisodeKey returns a key for Episode -> Series -> ItemKey -> WatchlistKey
-func EpisodeKey(ctx context.Context, episodeNr int64, seasonNr int64, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, EpisodeKind, "", episodeNr, SeasonKey(ctx, seasonNr, imdbID))
+func EpisodeKey(episodeNr int64, seasonNr int64, imdbID string) *datastore.Key {
+	return datastore.IDKey(EpisodeKind, episodeNr, SeasonKey(seasonNr, imdbID))
 }
 
 // DocumentaryKey returns a key for Documentary -> ItemKey -> WatchlistKey
-func DocumentaryKey(ctx context.Context, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, DocumentaryKind, imdbID, 0, ItemKey(ctx))
+func DocumentaryKey(imdbID string) *datastore.Key {
+	return datastore.NameKey(DocumentaryKind, imdbID, ItemKey())
 }
 
 // GameKey returns a key for Game -> ItemKey -> WatchlistKey
-func GameKey(ctx context.Context, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, GameKind, imdbID, 0, ItemKey(ctx))
+func GameKey(imdbID string) *datastore.Key {
+	return datastore.NameKey(GameKind, imdbID, ItemKey())
 }
 
 // FranchiseKey returns a key for Franchise -> ItemKey -> WatchlistKey
-func FranchiseKey(ctx context.Context, imdbID string) *datastore.Key {
-	return datastore.NewKey(ctx, FranchiseKind, imdbID, 0, ItemKey(ctx))
+func FranchiseKey(imdbID string) *datastore.Key {
+	return datastore.NameKey(FranchiseKind, imdbID, ItemKey())
 }

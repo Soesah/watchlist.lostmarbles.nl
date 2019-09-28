@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"time"
 
+	"cloud.google.com/go/datastore"
 	"github.com/Soesah/watchlist.lostmarbles.nl/api"
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/models"
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/util"
-	"google.golang.org/appengine"
-	"google.golang.org/appengine/datastore"
+	"google.golang.org/api/iterator"
 )
 
 const (
@@ -27,29 +27,26 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 	list := make([]interface{}, 0)
 	empty := make([]string, 0)
 
-	var movies []models.Movie
 	var seriesData []models.SeriesData
 	var seasonsData []models.SeasonData
 	var episodes []models.Episode
-	var documentaries []models.Documentary
-	var games []models.Game
-	var franchises []models.Franchise
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	options := datastore.TransactionOptions{
-		XG: true,
-	}
-
-	err := datastore.RunInTransaction(ctx, func(ct context.Context) error {
+	_, err := client.RunInTransaction(ctx, func(tx *datastore.Transaction) error {
 
 		// movies
 		q := datastore.NewQuery(api.MovieKind)
-		_, err := q.GetAll(ctx, &movies)
-		if err != nil {
-			return err
-		}
-		for _, movie := range movies {
+
+		it := client.Run(ctx, q)
+
+		for {
+			var movie models.Movie
+			_, err := it.Next(&movie)
+			if err == iterator.Done {
+				break
+			}
 			if len(movie.Actors) == 0 {
 				movie.Actors = empty
 			}
@@ -58,21 +55,44 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 
 		// series
 		q = datastore.NewQuery(api.SeriesKind)
-		_, err = q.GetAll(ctx, &seriesData)
-		if err != nil {
-			return err
+
+		it = client.Run(ctx, q)
+
+		for {
+			var data models.SeriesData
+			_, err := it.Next(&data)
+			if err == iterator.Done {
+				break
+			}
+			seriesData = append(seriesData, data)
 		}
 
+		// seasons
 		q = datastore.NewQuery(api.SeasonKind)
-		_, err = q.GetAll(ctx, &seasonsData)
-		if err != nil {
-			return err
+
+		it = client.Run(ctx, q)
+
+		for {
+			var data models.SeasonData
+			_, err := it.Next(&data)
+			if err == iterator.Done {
+				break
+			}
+			seasonsData = append(seasonsData, data)
 		}
 
-		q = datastore.NewQuery(api.EpisodeKind)
-		_, err = q.GetAll(ctx, &episodes)
-		if err != nil {
-			return err
+		// episodes
+		q = datastore.NewQuery(api.SeasonKind)
+
+		it = client.Run(ctx, q)
+
+		for {
+			var data models.Episode
+			_, err := it.Next(&data)
+			if err == iterator.Done {
+				break
+			}
+			episodes = append(episodes, data)
 		}
 
 		// add the episodes to the seasons
@@ -92,24 +112,30 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 
 		// documentaries
 		q = datastore.NewQuery(api.DocumentaryKind)
-		_, err = q.GetAll(ctx, &documentaries)
-		if err != nil {
-			return err
-		}
-		for _, documentary := range documentaries {
+		it = client.Run(ctx, q)
+
+		for {
+			var documentary models.Documentary
+			_, err := it.Next(&documentary)
+			if err == iterator.Done {
+				break
+			}
 			if len(documentary.Actors) == 0 {
 				documentary.Actors = empty
 			}
 			list = append(list, documentary)
 		}
 
-		// games
+		// documentaries
 		q = datastore.NewQuery(api.GameKind)
-		_, err = q.GetAll(ctx, &games)
-		if err != nil {
-			return err
-		}
-		for _, game := range games {
+		it = client.Run(ctx, q)
+
+		for {
+			var game models.Game
+			_, err := it.Next(&game)
+			if err == iterator.Done {
+				break
+			}
 			if len(game.Actors) == 0 {
 				game.Actors = empty
 			}
@@ -118,11 +144,14 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 
 		// franchises
 		q = datastore.NewQuery(api.FranchiseKind)
-		_, err = q.GetAll(ctx, &franchises)
-		if err != nil {
-			return err
-		}
-		for _, franchise := range franchises {
+		it = client.Run(ctx, q)
+
+		for {
+			var franchise models.Franchise
+			_, err := it.Next(&franchise)
+			if err == iterator.Done {
+				break
+			}
 			if len(franchise.Items) == 0 {
 				franchise.Items = empty
 			}
@@ -130,7 +159,7 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 		}
 
 		return nil
-	}, &options)
+	})
 
 	if err != nil {
 		return nil, err
@@ -145,12 +174,14 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 	var key *datastore.Key
 	var item interface{}
 	var watched string
-	ctx := appengine.NewContext(r)
+
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
 	if itemType == typeMOVIE {
 		var movie models.Movie
-		key = api.MovieKey(ctx, imdbID)
-		err := datastore.Get(ctx, key, &movie)
+		key = api.MovieKey(imdbID)
+		err := client.Get(ctx, key, &movie)
 		if err != nil {
 			return item, "", err
 		}
@@ -162,7 +193,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 			watched = "not watched"
 		}
 
-		_, err = datastore.Put(ctx, key, &movie)
+		_, err = client.Put(ctx, key, &movie)
 		if err != nil {
 			return item, "", err
 		}
@@ -170,8 +201,8 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 	}
 	if itemType == typeDOCUMENTARY {
 		var documentary models.Documentary
-		key = api.DocumentaryKey(ctx, imdbID)
-		err := datastore.Get(ctx, key, &documentary)
+		key = api.DocumentaryKey(imdbID)
+		err := client.Get(ctx, key, &documentary)
 		if err != nil {
 			return item, "", err
 		}
@@ -182,7 +213,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 		} else {
 			watched = "not watched"
 		}
-		_, err = datastore.Put(ctx, key, &documentary)
+		_, err = client.Put(ctx, key, &documentary)
 		if err != nil {
 			return item, "", err
 		}
@@ -190,8 +221,8 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 	}
 	if itemType == typeGAME {
 		var game models.Game
-		key = api.GameKey(ctx, imdbID)
-		err := datastore.Get(ctx, key, &game)
+		key = api.GameKey(imdbID)
+		err := client.Get(ctx, key, &game)
 		if err != nil {
 			return item, "", err
 		}
@@ -203,7 +234,7 @@ func ToggleItemWatched(itemType string, imdbID string, r *http.Request) (interfa
 			watched = "not played"
 		}
 
-		_, err = datastore.Put(ctx, key, &game)
+		_, err = client.Put(ctx, key, &game)
 		if err != nil {
 			return item, "", err
 		}
@@ -221,13 +252,26 @@ func ToggleSeriesWatched(imdbID string, set bool, r *http.Request) (models.Serie
 	if !set {
 		watched = "not watched"
 	}
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.SeriesKey(ctx, imdbID)
+	key := api.SeriesKey(imdbID)
+	var err error
 
 	q := datastore.NewQuery(api.EpisodeKind).Ancestor(key)
 
-	keys, err := q.GetAll(ctx, &episodes)
+	it := client.Run(ctx, q)
+	var keys []*datastore.Key
+
+	for {
+		var episode models.Episode
+		ekey, err := it.Next(&episode)
+		if err == iterator.Done {
+			break
+		}
+		keys = append(keys, ekey)
+		episodes = append(episodes, episode)
+	}
 
 	if err != nil {
 		return series, watched, err
@@ -240,7 +284,7 @@ func ToggleSeriesWatched(imdbID string, set bool, r *http.Request) (models.Serie
 		}
 	}
 
-	_, err = datastore.PutMulti(ctx, keys, episodes)
+	_, err = client.PutMulti(ctx, keys, episodes)
 
 	if err != nil {
 		return series, watched, err
@@ -264,13 +308,26 @@ func ToggleSeasonWatched(imdbID string, seasonNr int64, set bool, r *http.Reques
 		watched = "not watched"
 	}
 
-	ctx := appengine.NewContext(r)
+	var err error
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.SeasonKey(ctx, seasonNr, imdbID)
+	key := api.SeasonKey(seasonNr, imdbID)
 
 	q := datastore.NewQuery(api.EpisodeKind).Ancestor(key)
 
-	keys, err := q.GetAll(ctx, &episodes)
+	it := client.Run(ctx, q)
+	var keys []*datastore.Key
+
+	for {
+		var episode models.Episode
+		ekey, err := it.Next(&episode)
+		if err == iterator.Done {
+			break
+		}
+		keys = append(keys, ekey)
+		episodes = append(episodes, episode)
+	}
 
 	if err != nil {
 		return series, watched, err
@@ -283,7 +340,7 @@ func ToggleSeasonWatched(imdbID string, seasonNr int64, set bool, r *http.Reques
 		}
 	}
 
-	_, err = datastore.PutMulti(ctx, keys, episodes)
+	_, err = client.PutMulti(ctx, keys, episodes)
 
 	if err != nil {
 		return series, watched, err
@@ -304,11 +361,12 @@ func ToggleEpisodeWatched(imdbID string, seasonNr int64, episodeNr int64, r *htt
 	var episode models.Episode
 	watched := "watched"
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.EpisodeKey(ctx, episodeNr, seasonNr, imdbID)
+	key := api.EpisodeKey(episodeNr, seasonNr, imdbID)
 
-	err := datastore.Get(ctx, key, &episode)
+	err := client.Get(ctx, key, &episode)
 
 	if err != nil {
 		return series, watched, err
@@ -319,7 +377,7 @@ func ToggleEpisodeWatched(imdbID string, seasonNr int64, episodeNr int64, r *htt
 		episode.DateWatched = util.DateNow()
 	}
 
-	_, err = datastore.Put(ctx, key, &episode)
+	_, err = client.Put(ctx, key, &episode)
 
 	if err != nil {
 		return series, watched, err
@@ -338,12 +396,13 @@ func ToggleEpisodeWatched(imdbID string, seasonNr int64, episodeNr int64, r *htt
 func AddMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
 	var created models.Movie
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
 	movie.DateAdded = time.Now().Format(util.DateFormat)
 
-	key := api.MovieKey(ctx, movie.ImdbID)
-	_, err := datastore.Put(ctx, key, &movie)
+	key := api.MovieKey(movie.ImdbID)
+	_, err := client.Put(ctx, key, &movie)
 
 	if err != nil {
 		return created, err
@@ -362,13 +421,14 @@ func AddSeries(series models.WatchlistItem, r *http.Request) (models.Series, err
 	var episodeKeys []*datastore.Key
 	var episodes []models.Episode
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
 	series.DateAdded = time.Now().Format(util.DateFormat)
 
-	key := api.SeriesDataKey(ctx, series.ImdbID)
+	key := api.SeriesDataKey(series.ImdbID)
 	seriesData := series.SeriesData()
-	_, err := datastore.Put(ctx, key, &seriesData)
+	_, err := client.Put(ctx, key, &seriesData)
 
 	if err != nil {
 		return created, err
@@ -376,26 +436,26 @@ func AddSeries(series models.WatchlistItem, r *http.Request) (models.Series, err
 
 	// import seasons with series parent key
 	for _, season := range series.SeasonsData() {
-		key = api.SeasonKey(ctx, season.Nr, season.SeriesImdbID)
+		key = api.SeasonKey(season.Nr, season.SeriesImdbID)
 		seasonKeys = append(seasonKeys, key)
 		seasons = append(seasons, season)
 
 	}
 	// import episodes with season parent key and series parent key
 	for _, episode := range series.EpisodesData() {
-		key = api.EpisodeKey(ctx, episode.Nr, episode.SeasonNr, episode.SeriesImdbID)
+		key = api.EpisodeKey(episode.Nr, episode.SeasonNr, episode.SeriesImdbID)
 		episodeKeys = append(episodeKeys, key)
 		episodes = append(episodes, episode)
 
 	}
 
-	_, err = datastore.PutMulti(ctx, seasonKeys, seasons)
+	_, err = client.PutMulti(ctx, seasonKeys, seasons)
 
 	if err != nil {
 		return created, errors.New(err.Error() + " when importing seasons")
 	}
 
-	_, err = datastore.PutMulti(ctx, episodeKeys, episodes)
+	_, err = client.PutMulti(ctx, episodeKeys, episodes)
 
 	if err != nil {
 		return created, errors.New(err.Error() + " when importing episodes")
@@ -410,12 +470,13 @@ func AddSeries(series models.WatchlistItem, r *http.Request) (models.Series, err
 func AddDocumentary(documentary models.Documentary, r *http.Request) (models.Documentary, error) {
 	var created models.Documentary
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
 	documentary.DateAdded = time.Now().Format(util.DateFormat)
 
-	key := api.DocumentaryKey(ctx, documentary.ImdbID)
-	_, err := datastore.Put(ctx, key, &documentary)
+	key := api.DocumentaryKey(documentary.ImdbID)
+	_, err := client.Put(ctx, key, &documentary)
 
 	if err != nil {
 		return created, err
@@ -430,12 +491,13 @@ func AddDocumentary(documentary models.Documentary, r *http.Request) (models.Doc
 func AddGame(game models.Game, r *http.Request) (models.Game, error) {
 	var created models.Game
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
 	game.DateAdded = time.Now().Format(util.DateFormat)
 
-	key := api.GameKey(ctx, game.ImdbID)
-	_, err := datastore.Put(ctx, key, &game)
+	key := api.GameKey(game.ImdbID)
+	_, err := client.Put(ctx, key, &game)
 
 	if err != nil {
 		return created, err
@@ -450,12 +512,13 @@ func AddGame(game models.Game, r *http.Request) (models.Game, error) {
 func AddFranchise(franchise models.Franchise, r *http.Request) (models.Franchise, error) {
 	var created models.Franchise
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
 	franchise.DateAdded = time.Now().Format(util.DateFormat)
 
-	key := api.FranchiseKey(ctx, franchise.ImdbID)
-	_, err := datastore.Put(ctx, key, &franchise)
+	key := api.FranchiseKey(franchise.ImdbID)
+	_, err := client.Put(ctx, key, &franchise)
 
 	if err != nil {
 		return created, err
@@ -470,10 +533,11 @@ func AddFranchise(franchise models.Franchise, r *http.Request) (models.Franchise
 func GetMovie(imdbID string, r *http.Request) (models.Movie, error) {
 	var item models.Movie
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.MovieKey(ctx, imdbID)
-	err := datastore.Get(ctx, key, &item)
+	key := api.MovieKey(imdbID)
+	err := client.Get(ctx, key, &item)
 
 	if err != nil {
 		return item, err
@@ -489,24 +553,38 @@ func GetSeries(imdbID string, r *http.Request) (models.Series, error) {
 	var seasonsData []models.SeasonData
 	var episodes []models.Episode
 
-	ctx := appengine.NewContext(r)
-	key := api.SeriesDataKey(ctx, imdbID)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	err := datastore.Get(ctx, key, &seriesData)
+	key := api.SeriesDataKey(imdbID)
+
+	err := client.Get(ctx, key, &seriesData)
 	if err != nil {
 		return item, err
 	}
 
 	q := datastore.NewQuery(api.SeasonKind).Ancestor(key)
-	_, err = q.GetAll(ctx, &seasonsData)
-	if err != nil {
-		return item, err
+	it := client.Run(ctx, q)
+
+	for {
+		var season models.SeasonData
+		_, err := it.Next(&season)
+		if err == iterator.Done {
+			break
+		}
+		seasonsData = append(seasonsData, season)
 	}
 
 	q = datastore.NewQuery(api.EpisodeKind).Ancestor(key)
-	_, err = q.GetAll(ctx, &episodes)
-	if err != nil {
-		return item, err
+	it = client.Run(ctx, q)
+
+	for {
+		var episode models.Episode
+		_, err := it.Next(&episode)
+		if err == iterator.Done {
+			break
+		}
+		episodes = append(episodes, episode)
 	}
 
 	// add the episodes to the seasons
@@ -527,10 +605,11 @@ func GetSeries(imdbID string, r *http.Request) (models.Series, error) {
 func GetDocumentary(imdbID string, r *http.Request) (models.Documentary, error) {
 	var item models.Documentary
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.DocumentaryKey(ctx, imdbID)
-	err := datastore.Get(ctx, key, &item)
+	key := api.DocumentaryKey(imdbID)
+	err := client.Get(ctx, key, &item)
 
 	if err != nil {
 		return item, err
@@ -543,10 +622,11 @@ func GetDocumentary(imdbID string, r *http.Request) (models.Documentary, error) 
 func GetGame(imdbID string, r *http.Request) (models.Game, error) {
 	var item models.Game
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.GameKey(ctx, imdbID)
-	err := datastore.Get(ctx, key, &item)
+	key := api.GameKey(imdbID)
+	err := client.Get(ctx, key, &item)
 
 	if err != nil {
 		return item, err
@@ -559,10 +639,11 @@ func GetGame(imdbID string, r *http.Request) (models.Game, error) {
 func GetFranchise(imdbID string, r *http.Request) (models.Franchise, error) {
 	var item models.Franchise
 
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.FranchiseKey(ctx, imdbID)
-	err := datastore.Get(ctx, key, &item)
+	key := api.FranchiseKey(imdbID)
+	err := client.Get(ctx, key, &item)
 
 	if err != nil {
 		return item, err
@@ -573,10 +654,11 @@ func GetFranchise(imdbID string, r *http.Request) (models.Franchise, error) {
 
 // UpdateMovie updates a movie
 func UpdateMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.MovieKey(ctx, movie.ImdbID)
-	_, err := datastore.Put(ctx, key, &movie)
+	key := api.MovieKey(movie.ImdbID)
+	_, err := client.Put(ctx, key, &movie)
 
 	if err != nil {
 		return movie, err
@@ -597,10 +679,11 @@ func UpdateSeries(series models.WatchlistItem, r *http.Request) (models.Series, 
 
 // UpdateDocumentary updates a documentary
 func UpdateDocumentary(documentary models.Documentary, r *http.Request) (models.Documentary, error) {
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.DocumentaryKey(ctx, documentary.ImdbID)
-	_, err := datastore.Put(ctx, key, &documentary)
+	key := api.DocumentaryKey(documentary.ImdbID)
+	_, err := client.Put(ctx, key, &documentary)
 
 	if err != nil {
 		return documentary, err
@@ -611,10 +694,11 @@ func UpdateDocumentary(documentary models.Documentary, r *http.Request) (models.
 
 // UpdateGame updates a game
 func UpdateGame(game models.Game, r *http.Request) (models.Game, error) {
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.GameKey(ctx, game.ImdbID)
-	_, err := datastore.Put(ctx, key, &game)
+	key := api.GameKey(game.ImdbID)
+	_, err := client.Put(ctx, key, &game)
 
 	if err != nil {
 		return game, err
@@ -625,10 +709,11 @@ func UpdateGame(game models.Game, r *http.Request) (models.Game, error) {
 
 // UpdateFranchise updates a franchise
 func UpdateFranchise(franchise models.Franchise, r *http.Request) (models.Franchise, error) {
-	ctx := appengine.NewContext(r)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
 
-	key := api.FranchiseKey(ctx, franchise.ImdbID)
-	_, err := datastore.Put(ctx, key, &franchise)
+	key := api.FranchiseKey(franchise.ImdbID)
+	_, err := client.Put(ctx, key, &franchise)
 
 	if err != nil {
 		return franchise, err
@@ -640,10 +725,11 @@ func UpdateFranchise(franchise models.Franchise, r *http.Request) (models.Franch
 // DeleteMovie deletes a movie
 func DeleteMovie(imdbID string, r *http.Request) error {
 
-	ctx := appengine.NewContext(r)
-	key := api.MovieKey(ctx, imdbID)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
+	key := api.MovieKey(imdbID)
 
-	err := datastore.Delete(ctx, key)
+	err := client.Delete(ctx, key)
 
 	if err != nil {
 		return err
@@ -654,39 +740,58 @@ func DeleteMovie(imdbID string, r *http.Request) error {
 
 // DeleteSeries deletes a series
 func DeleteSeries(imdbID string, r *http.Request) error {
-	var seasonsData []models.SeasonData
-	var episodes []models.Episode
 
-	ctx := appengine.NewContext(r)
-	key := api.SeriesKey(ctx, imdbID)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
+	key := api.SeriesKey(imdbID)
 
-	err := datastore.Delete(ctx, key)
+	err := client.Delete(ctx, key)
 
 	if err != nil {
 		return err
 	}
 
 	q := datastore.NewQuery(api.SeasonKind).Ancestor(key)
-	keys, err := q.GetAll(ctx, &seasonsData)
+	it := client.Run(ctx, q)
+
+	var sKeys []*datastore.Key
+
+	for {
+		var season models.SeasonData
+		key, err := it.Next(&season)
+		if err == iterator.Done {
+			break
+		}
+		sKeys = append(sKeys, key)
+	}
 
 	if err != nil {
 		return err
 	}
 
-	err = datastore.DeleteMulti(ctx, keys)
+	err = client.DeleteMulti(ctx, sKeys)
 
 	if err != nil {
 		return err
 	}
+	var eKeys []*datastore.Key
 
 	q = datastore.NewQuery(api.EpisodeKind).Ancestor(key)
-	keys, err = q.GetAll(ctx, &episodes)
+	it = client.Run(ctx, q)
 
+	for {
+		var episode models.Episode
+		key, err := it.Next(&episode)
+		if err == iterator.Done {
+			break
+		}
+		eKeys = append(eKeys, key)
+	}
 	if err != nil {
 		return err
 	}
 
-	err = datastore.DeleteMulti(ctx, keys)
+	err = client.DeleteMulti(ctx, eKeys)
 
 	if err != nil {
 		return err
@@ -698,10 +803,11 @@ func DeleteSeries(imdbID string, r *http.Request) error {
 // DeleteDocumentary deletes a documentary
 func DeleteDocumentary(imdbID string, r *http.Request) error {
 
-	ctx := appengine.NewContext(r)
-	key := api.DocumentaryKey(ctx, imdbID)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
+	key := api.DocumentaryKey(imdbID)
 
-	err := datastore.Delete(ctx, key)
+	err := client.Delete(ctx, key)
 
 	if err != nil {
 		return err
@@ -713,10 +819,11 @@ func DeleteDocumentary(imdbID string, r *http.Request) error {
 // DeleteGame deletes a game
 func DeleteGame(imdbID string, r *http.Request) error {
 
-	ctx := appengine.NewContext(r)
-	key := api.GameKey(ctx, imdbID)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
+	key := api.GameKey(imdbID)
 
-	err := datastore.Delete(ctx, key)
+	err := client.Delete(ctx, key)
 
 	if err != nil {
 		return err
@@ -727,10 +834,11 @@ func DeleteGame(imdbID string, r *http.Request) error {
 // DeleteFranchise deletes a franchise
 func DeleteFranchise(imdbID string, r *http.Request) error {
 
-	ctx := appengine.NewContext(r)
-	key := api.FranchiseKey(ctx, imdbID)
+	ctx := context.Background()
+	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
+	key := api.FranchiseKey(imdbID)
 
-	err := datastore.Delete(ctx, key)
+	err := client.Delete(ctx, key)
 
 	if err != nil {
 		return err

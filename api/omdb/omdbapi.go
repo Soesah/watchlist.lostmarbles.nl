@@ -7,7 +7,6 @@ import (
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/models"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/config"
-	"google.golang.org/appengine"
 	"google.golang.org/appengine/urlfetch"
 )
 
@@ -26,7 +25,7 @@ func Search(search string, year string, r *http.Request) (models.Results, error)
 		url = getURL("s=" + search + "&y=" + year)
 	}
 
-	ctx := appengine.NewContext(r)
+	ctx := r.Context()
 
 	client := urlfetch.Client(ctx)
 	resp, err := client.Get(url)
@@ -53,7 +52,7 @@ func Get(imdbID string, r *http.Request) (models.ResultItem, error) {
 
 	url := getURL("i=" + imdbID + "&r=json")
 
-	ctx := appengine.NewContext(r)
+	ctx := r.Context()
 
 	client := urlfetch.Client(ctx)
 	resp, err := client.Get(url)
@@ -77,7 +76,7 @@ func Get(imdbID string, r *http.Request) (models.ResultItem, error) {
 func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
 	seasons := make([]models.Season, 0)
 
-	ctx := appengine.NewContext(r)
+	ctx := r.Context()
 	client := urlfetch.Client(ctx)
 
 	season, err := getSeason(client, imdbID, "1", r)

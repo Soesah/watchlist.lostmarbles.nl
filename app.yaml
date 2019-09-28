@@ -1,5 +1,4 @@
-runtime: go
-api_version: go1
+runtime: go112
 instance_class: F1
 
 default_expiration: '1d'
@@ -10,34 +9,9 @@ automatic_scaling:
 
 handlers:
   - url: /.*
-    script: _go_app
+    script: auto
     secure: always
     redirect_http_response_code: 301
-
-skip_files:
-  - ^(.*/)?.*\.DS_Store$
-  - node_modules/
-  - .vscode/
-  - old/
-  - bin/
-  - sketch/
-  - dev/ #used for development
-  - src/
-  - tests/
-  - public/
-  - index.html
-  - README.md
-  - babel.config.js
-  - jest.config.js
-  - postcss.config.js
-  - .eslintrc.js
-  - .gitignore
-  - settings.json
-  - tsconfig.json
-  - vue.config.js
-  - package.json
-  - yarn.lock
-  - yarn-error.log
 
 env_variables:
   ENVIRONMENT: 'master'
