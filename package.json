@@ -17,7 +17,7 @@
     "update-index": "cp dev/index.yaml ./index.yaml && gcloud datastore create-indexes index.yaml --project watchlist-lost-marbles -q"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "moment": "^2.23.0",
     "vue": "^2.5.21",
     "vue-router": "^3.0.1",
