@@ -1,20 +1,19 @@
-import _ from 'Lodash';
 import StringUtil from 'core/services/StringUtil';
 
 class Validation {
-  constructor (props) {
+  constructor(props) {
     this.props = props;
     this.validated = false;
   }
 
-  updateValidated (prop) {
+  updateValidated(prop) {
     if (this.validated) {
       return;
     }
     this.validated = prop ? false : true;
   }
 
-  isValid (model, prop) {
+  isValid(model, prop) {
     this.updateValidated(prop);
 
     // don't validate individual props
@@ -25,25 +24,23 @@ class Validation {
     if (prop && this.props[prop]) {
       return this.validateProp(model, prop);
     } else if (!prop) {
-      let valid = true;
-      _.each(this.props, (validation, prop) =>  {
+      return this.props.reduce((valid, prop) => {
         valid = valid && this.validateProp(model, prop);
-      })
-      return valid;
+      }, true);
     } else {
       return true;
     }
   }
 
-  validateProp (model, prop) {
+  validateProp(model, prop) {
     let value = model[prop],
-        valid = true;
+      valid = true;
 
     if (!value) {
       this[prop] = StringUtil.capitalize(prop) + ' is required';
       valid = false;
     } else if (this[prop]) {
-      delete this[prop]
+      delete this[prop];
     }
 
     return valid;
