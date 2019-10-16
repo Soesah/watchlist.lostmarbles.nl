@@ -7,7 +7,6 @@ import (
 
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/models"
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/config"
-	"google.golang.org/appengine/urlfetch"
 )
 
 func getURL(params string) string {
@@ -25,14 +24,13 @@ func Search(search string, year string, r *http.Request) (models.Results, error)
 		url = getURL("s=" + search + "&y=" + year)
 	}
 
-	ctx := r.Context()
-
-	client := urlfetch.Client(ctx)
-	resp, err := client.Get(url)
+	resp, err := http.Get(url)
 
 	if err != nil {
 		return results, err
 	}
+
+	defer resp.Body.Close()
 
 	decoder := json.NewDecoder(resp.Body)
 
@@ -52,14 +50,13 @@ func Get(imdbID string, r *http.Request) (models.ResultItem, error) {
 
 	url := getURL("i=" + imdbID + "&r=json")
 
-	ctx := r.Context()
-
-	client := urlfetch.Client(ctx)
-	resp, err := client.Get(url)
+	resp, err := http.Get(url)
 
 	if err != nil {
 		return res, err
 	}
+
+	defer resp.Body.Close()
 
 	decoder := json.NewDecoder(resp.Body)
 
@@ -76,10 +73,7 @@ func Get(imdbID string, r *http.Request) (models.ResultItem, error) {
 func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
 	seasons := make([]models.Season, 0)
 
-	ctx := r.Context()
-	client := urlfetch.Client(ctx)
-
-	season, err := getSeason(client, imdbID, "1", r)
+	season, err := getSeason(imdbID, "1", r)
 
 	if err != nil {
 		return seasons, err
@@ -90,7 +84,7 @@ func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
 	seasons = append(seasons, season.GetSeason(imdbID))
 
 	for i := 1; i < totalSeasons; i++ {
-		season, err = getSeason(client, imdbID, strconv.Itoa(i+1), r)
+		season, err = getSeason(imdbID, strconv.Itoa(i+1), r)
 
 		if err != nil {
 			return seasons, err
@@ -102,16 +96,18 @@ func GetSeasons(imdbID string, r *http.Request) ([]models.Season, error) {
 	return seasons, nil
 }
 
-func getSeason(client *http.Client, imdbID string, nr string, r *http.Request) (models.OMDBSeason, error) {
+func getSeason(imdbID string, nr string, r *http.Request) (models.OMDBSeason, error) {
 	var season models.OMDBSeason
 
 	url := getURL("i=" + imdbID + "&Season=" + nr + "&r=json")
 
-	resp, err := client.Get(url)
+	resp, err := http.Get(url)
 
 	if err != nil {
 		return season, err
 	}
+
+	defer resp.Body.Close()
 
 	decoder := json.NewDecoder(resp.Body)
 
