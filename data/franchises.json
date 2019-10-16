@@ -1,0 +1,471 @@
+[
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-0bc71262-1d13-4362-a8eb-d70bebfc46a6",
+    "name": "Kill Bill",
+    "items": ["tt0266697", "tt0378194"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-0e7d097e-f594-4075-9caa-d3a12d7a97bf",
+    "name": "Predator ",
+    "items": ["tt0093773", "tt0100403", "tt0370263", "tt0758730", "tt1424381"],
+    "date_added": "2017-12-05"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-0f7af4f2-a588-453c-a399-c93302ca7f8f",
+    "name": "Terminator",
+    "items": ["tt0088247", "tt0103064", "tt0181852", "tt0438488", "tt1340138"],
+    "date_added": "2019-08-23"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-12fb8dc3-836d-41df-a271-4c217f6b6c07",
+    "name": "Alice in Wonderland",
+    "items": ["tt1014759", "tt2567026"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-140ee92e-187e-4356-807e-65ee4fdb2c19",
+    "name": "Star Trek",
+    "items": [
+      "tt2660888",
+      "tt1408101",
+      "tt0796366",
+      "tt0092455",
+      "tt0112178",
+      "tt0106145",
+      "tt0117731",
+      "tt0111280",
+      "tt0120844",
+      "tt0253754",
+      "tt0244365",
+      "tt5171438"
+    ],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-2451475c-6be9-4922-91f4-fc7ea90bc97a",
+    "name": "Back to the Future",
+    "items": ["tt0088763", "tt0096874", "tt0099088"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-27044087-3674-4b70-958a-4beb7757915d",
+    "name": "Ghibli Movies",
+    "items": [
+      "tt0876563",
+      "tt0245429",
+      "tt0119698",
+      "tt0347149",
+      "tt0096283",
+      "tt0097814",
+      "tt1568921",
+      "tt3666024",
+      "tt0092067",
+      "tt0087544",
+      "tt0495596"
+    ],
+    "date_added": "2017-12-24"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-28a43782-c30b-4249-bee0-2b3edf2c5fd9",
+    "name": "Pirates of the Caribbean",
+    "items": ["tt0325980", "tt0383574", "tt0449088", "tt1298650", "tt1790809"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-39a66916-a30b-4abc-b40c-8d8591a97ff8",
+    "name": "X-Men",
+    "items": [
+      "tt0120903",
+      "tt0290334",
+      "tt0376994",
+      "tt0458525",
+      "tt1270798",
+      "tt1877832",
+      "tt3385516"
+    ],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-3b7c70a3-5b73-49e3-bebe-0b5b26b13366",
+    "name": "James Bond",
+    "items": ["tt0381061", "tt0830515", "tt1074638", "tt2379713"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-475a6c1f-056e-4903-8c1a-36eee811ef9c",
+    "name": "Iron Man",
+    "items": ["tt0371746", "tt1228705", "tt1300854"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-493d05b0-833e-4f27-ba06-a16c1c4412dc",
+    "name": "28 Days",
+    "items": ["tt0289043", "tt0463854"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-4d7d2be7-f533-4afb-8be0-0f1964ea2c40",
+    "name": "Despicable Me",
+    "items": ["tt1323594", "tt1690953", "tt3469046"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-53b01e54-a3da-43df-8675-42ea34deecda",
+    "name": "Jack Ryan",
+    "items": [
+      "tt0099810",
+      "tt0105112",
+      "tt0109444",
+      "tt0164184",
+      "tt1205537",
+      "tt5057054"
+    ],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-55f75d40-03d4-4069-8ec0-504c1f7b1702",
+    "name": "Harry Potter",
+    "items": [
+      "tt0295297",
+      "tt0241527",
+      "tt0304141",
+      "tt0330373",
+      "tt0373889",
+      "tt0417741",
+      "tt0926084",
+      "tt1201607"
+    ],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-564c6f6e-da46-4281-84fe-076ab813d70b",
+    "name": "Jurassic Park",
+    "items": ["tt0107290", "tt0119567", "tt0163025", "tt0369610", "tt4881806"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-5e9ff893-a8ab-40c3-81d3-f0a850ef7eba",
+    "name": "The Lord of the Rings",
+    "items": [
+      "tt0903624",
+      "tt1170358",
+      "tt2310332",
+      "tt0120737",
+      "tt0167261",
+      "tt0167260"
+    ],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-5f122314-52a3-49dc-b27a-b5857f2d8865",
+    "name": "Underworld",
+    "items": ["tt0320691", "tt0401855", "tt0834001", "tt1496025", "tt3717252"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-5f56c787-eb07-4fce-9c89-b5bb84e618fd",
+    "name": "Kung Fu Panda",
+    "items": ["tt0441773", "tt1302011", "tt2267968"],
+    "date_added": "2018-01-23"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-67e24877-386e-4176-89bc-33c9ba6b3f94",
+    "name": "Blade Runner",
+    "items": ["tt0083658", "tt1856101"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-6a93d142-b19a-4111-bb0c-9c8fca906489",
+    "name": "Toy Story",
+    "items": ["tt0114709", "tt0120363", "tt0435761"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-6b01477e-9b92-497d-9072-a96f8cfcc28d",
+    "name": "Warcraft",
+    "items": ["tt0803096", "tt0281361", "tt0259104", "tt0259103"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-6cc0df91-13eb-460d-a799-6d7e8fb61ddf",
+    "name": "Far Cry",
+    "items": ["tt5114332", "tt3742988", "tt2321297"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-7153a0c4-158c-48c1-8ce3-32a694e91449",
+    "name": "Jack Reacher",
+    "items": ["tt0790724", "tt3393786"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-7b4c203c-d4c1-4102-8ad3-842a57e471d8",
+    "name": "The Matrix",
+    "items": ["tt0133093", "tt0234215", "tt0242653"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-8e3ca411-530a-4240-a723-1ff48a27ea6e",
+    "name": "Planet of the Apes",
+    "items": [
+      "tt1318514",
+      "tt2103281",
+      "tt3450958",
+      "tt0063442",
+      "tt0065462",
+      "tt0067065",
+      "tt0068408",
+      "tt0069768",
+      "tt0133152"
+    ],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-90129917-dfe9-42a7-ae32-623e734f9716",
+    "name": "John Wick",
+    "items": ["tt2911666", "tt4425200"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-9d56f927-9bdc-48aa-8f06-c6d3d8215c75",
+    "name": "Bourne",
+    "items": ["tt0258463", "tt0372183", "tt0440963", "tt1194173", "tt4196776"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-9e6acfb3-b755-4633-a483-732f7d3b5173",
+    "name": "Dune",
+    "items": ["tt0142032", "tt0287839", "tt0087182"],
+    "date_added": "2019-03-09"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-9f6a16a9-3023-4dbc-a563-5e82bfbc82cd",
+    "name": "Fantastic Four",
+    "items": ["tt0120667", "tt0486576"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-9fc0777b-3353-464c-a4bf-787b3eb91c14",
+    "name": "Alien",
+    "items": [
+      "tt0078748",
+      "tt0090605",
+      "tt0118583",
+      "tt0103644",
+      "tt2316204",
+      "tt1446714"
+    ],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-a1f8281f-f50f-44f2-b369-e33514cc0b1c",
+    "name": "Mass Effect",
+    "items": ["tt1073668", "tt1540125", "tt1839558"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-a4345564-c00c-4d44-9e63-419052e33271",
+    "name": "Resident Evil",
+    "items": ["tt0120804", "tt0318627", "tt0432021", "tt1220634", "tt1855325"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-a54ce391-91a3-4946-bca8-48c2bd5c79de",
+    "name": "Cloverfield",
+    "items": ["tt1179933", "tt1060277", "tt2548396"],
+    "date_added": "2017-11-28"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-a809316d-317e-4190-afec-ca3fb68bc9ac",
+    "name": "Avengers",
+    "items": [
+      "tt0371746",
+      "tt0800080",
+      "tt1228705",
+      "tt0800369",
+      "tt0458339",
+      "tt0848228",
+      "tt1300854",
+      "tt1981115",
+      "tt1843866",
+      "tt2015381",
+      "tt2395427",
+      "tt0478970",
+      "tt3498820",
+      "tt1211837",
+      "tt3896198",
+      "tt2250912",
+      "tt3501632",
+      "tt1825683",
+      "tt5095030",
+      "tt4154664"
+    ],
+    "date_added": "2017-11-30"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-a8df5f9c-cd43-46d3-86f1-2039531f40c5",
+    "name": "Shrek",
+    "items": ["tt0126029", "tt0298148", "tt0413267"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-aac08efa-1ae1-4e92-baec-90aaa02ace40",
+    "name": "The Defenders",
+    "items": ["tt2357547", "tt3322310", "tt3322314", "tt3322312", "tt4230076"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-c2604dbf-fe2a-4f62-a651-d682964c36cc",
+    "name": "Guardians of the Galaxy",
+    "items": ["tt2015381", "tt3896198"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-c99777f9-9bce-4c72-83fa-1d0b49316db5",
+    "name": "How to Train Your Dragon",
+    "items": ["tt0892769", "tt1646971", "tt2386490"],
+    "date_added": "2017-11-26"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-cea0160e-4953-4dd1-864a-c0c401e5309e",
+    "name": "Mission: Impossible",
+    "items": ["tt0117060", "tt0120755", "tt0317919", "tt1229238", "tt2381249"],
+    "date_added": "2018-02-05"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-dfa212e8-fa6a-49bd-a1e6-99e09d7efd9c",
+    "name": "Assassin's Creed",
+    "items": [
+      "tt0932936",
+      "tt2739708",
+      "tt1201133",
+      "tt2175563",
+      "tt2094766",
+      "tt7025920",
+      "tt8545606"
+    ],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-e0ab14a2-2cc6-4801-a43f-9c119feb94e8",
+    "name": "Spider-Man",
+    "items": [
+      "tt0145487",
+      "tt0316654",
+      "tt0413300",
+      "tt0948470",
+      "tt1872181",
+      "tt2250912",
+      "tt4633694"
+    ],
+    "date_added": "2019-02-27"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-e92b2200-aba0-4a3a-81f8-41853b6408fe",
+    "name": "Grand Theft Auto",
+    "items": ["tt2103188", "tt0802999", "tt0277723"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-ec99927b-5764-4d48-8115-1df13bb59f11",
+    "name": "Indiana Jones",
+    "items": ["tt0097576", "tt0087469", "tt0367882"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-ed30447b-7c29-4334-b097-cc934c4ef8dc",
+    "name": "Transformers",
+    "items": ["tt0418279", "tt1055369", "tt1399103", "tt2109248", "tt3371366"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-ee24803a-75d1-42b6-9bb3-d8f86c3214d2",
+    "name": "Jane Austin",
+    "items": ["tt0112130", "tt0844794", "tt0114388", "tt0844330", "tt0116191"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-f1625cce-ac7f-457d-bc67-087dbe41cc3f",
+    "name": "Star Wars",
+    "items": [
+      "tt3748528",
+      "tt2930604",
+      "tt2488496",
+      "tt0458290",
+      "tt0076759",
+      "tt0080684",
+      "tt0086190",
+      "tt0120915",
+      "tt0121765",
+      "tt0121766",
+      "tt1185834",
+      "tt0361243",
+      "tt0153067",
+      "tt2527336",
+      "NON-IMDB-ID-MOVIE-89f607cb-c29e-4489-8a1d-e74f63f1b65c"
+    ],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-f667c90b-7ad1-4fe7-8e78-3ee1d1891f72",
+    "name": "Game of Thrones",
+    "items": ["tt0944947", "tt3391176"],
+    "date_added": "2017-11-25"
+  },
+  {
+    "type": 4,
+    "imdbID": "NON-IMDB-ID-FRANCHISE-fada4025-3817-4040-b161-8c7fbbac9f35",
+    "name": "Die Hard",
+    "items": ["tt0095016", "tt0337978", "tt0112864", "tt0099423", "tt1606378"],
+    "date_added": "2017-11-25"
+  }
+]
