@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"log"
 	"net/http"
 	"time"
 
@@ -15,6 +17,7 @@ import (
 func main() {
 
 	config.Init()
+	conf := config.Get()
 
 	r := chi.NewRouter()
 
@@ -69,12 +72,6 @@ func main() {
 			r.Get("/search/{search}/{year}", handlers.OMDBSearch)
 		})
 
-		r.Route("/system", func(r chi.Router) {
-			r.Post("/import", handlers.ImportData)
-			r.Get("/import/clear", handlers.RemoveData)
-			r.Get("/export", handlers.ExportData)
-		})
-
 	})
 
 	// static
@@ -93,6 +90,10 @@ func main() {
 
 	http.Handle("/", r)
 
-	//log.Fatal(http.ListenAndServe(":8080", r))
-	appengine.Main()
+	if conf.IsDev() {
+		log.Print(fmt.Sprintf("Dev server listening on port %d", 8182))
+		log.Fatal(http.ListenAndServe(":8182", r))
+	} else {
+		appengine.Main()
+	}
 }

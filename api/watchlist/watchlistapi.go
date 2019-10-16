@@ -27,142 +27,66 @@ func GetWatchList(r *http.Request) ([]interface{}, error) {
 	list := make([]interface{}, 0)
 	empty := make([]string, 0)
 
-	var seriesData []models.SeriesData
-	var seasonsData []models.SeasonData
-	var episodes []models.Episode
-
-	ctx := context.Background()
-	client, _ := datastore.NewClient(ctx, "watchlist-lost-marbles")
-
-	_, err := client.RunInTransaction(ctx, func(tx *datastore.Transaction) error {
-
-		// movies
-		q := datastore.NewQuery(api.MovieKind)
-
-		it := client.Run(ctx, q)
-
-		for {
-			var movie models.Movie
-			_, err := it.Next(&movie)
-			if err == iterator.Done {
-				break
-			}
-			if len(movie.Actors) == 0 {
-				movie.Actors = empty
-			}
-			list = append(list, movie)
-		}
-
-		// series
-		q = datastore.NewQuery(api.SeriesKind)
-
-		it = client.Run(ctx, q)
-
-		for {
-			var data models.SeriesData
-			_, err := it.Next(&data)
-			if err == iterator.Done {
-				break
-			}
-			seriesData = append(seriesData, data)
-		}
-
-		// seasons
-		q = datastore.NewQuery(api.SeasonKind)
-
-		it = client.Run(ctx, q)
-
-		for {
-			var data models.SeasonData
-			_, err := it.Next(&data)
-			if err == iterator.Done {
-				break
-			}
-			seasonsData = append(seasonsData, data)
-		}
-
-		// episodes
-		q = datastore.NewQuery(api.SeasonKind)
-
-		it = client.Run(ctx, q)
-
-		for {
-			var data models.Episode
-			_, err := it.Next(&data)
-			if err == iterator.Done {
-				break
-			}
-			episodes = append(episodes, data)
-		}
-
-		// add the episodes to the seasons
-		var seasons []models.Season
-		for _, seasonData := range seasonsData {
-			season := seasonData.GetSeason(episodes)
-			seasons = append(seasons, season)
-		}
-		// add the seasons to the series
-		for _, serialData := range seriesData {
-			serial := serialData.GetSeries(seasons)
-			if len(serial.Actors) == 0 {
-				serial.Actors = empty
-			}
-			list = append(list, serial)
-		}
-
-		// documentaries
-		q = datastore.NewQuery(api.DocumentaryKind)
-		it = client.Run(ctx, q)
-
-		for {
-			var documentary models.Documentary
-			_, err := it.Next(&documentary)
-			if err == iterator.Done {
-				break
-			}
-			if len(documentary.Actors) == 0 {
-				documentary.Actors = empty
-			}
-			list = append(list, documentary)
-		}
-
-		// documentaries
-		q = datastore.NewQuery(api.GameKind)
-		it = client.Run(ctx, q)
-
-		for {
-			var game models.Game
-			_, err := it.Next(&game)
-			if err == iterator.Done {
-				break
-			}
-			if len(game.Actors) == 0 {
-				game.Actors = empty
-			}
-			list = append(list, game)
-		}
-
-		// franchises
-		q = datastore.NewQuery(api.FranchiseKind)
-		it = client.Run(ctx, q)
-
-		for {
-			var franchise models.Franchise
-			_, err := it.Next(&franchise)
-			if err == iterator.Done {
-				break
-			}
-			if len(franchise.Items) == 0 {
-				franchise.Items = empty
-			}
-			list = append(list, franchise)
-		}
-
-		return nil
-	})
-
+	// movies
+	movies, err := LoadMovies(r)
 	if err != nil {
-		return nil, err
+		return list, err
+	}
+
+	for _, movie := range movies {
+		if len(movie.Actors) == 0 {
+			movie.Actors = empty
+		}
+		list = append(list, movie)
+	}
+
+	// series
+	series, err := LoadSeries(r)
+	if err != nil {
+		return list, err
+	}
+
+	for _, series := range series {
+		list = append(list, series)
+	}
+
+	// documentaries
+	documentaries, err := LoadDocumentaries(r)
+	if err != nil {
+		return list, err
+	}
+
+	for _, documentary := range documentaries {
+		if len(documentary.Actors) == 0 {
+			documentary.Actors = empty
+		}
+		list = append(list, documentary)
+	}
+
+	// games
+	games, err := LoadGames(r)
+	if err != nil {
+		return list, err
+	}
+
+	for _, game := range games {
+		if len(game.Actors) == 0 {
+			game.Actors = empty
+		}
+		list = append(list, game)
+	}
+
+	// franchises
+	franchises, err := LoadFranchises(r)
+	if err != nil {
+		return list, err
+	}
+
+	for _, franchise := range franchises {
+		if len(franchise.Items) == 0 {
+			franchise.Items = empty
+		}
+		list = append(list, franchise)
 	}
 
 	return list, nil
