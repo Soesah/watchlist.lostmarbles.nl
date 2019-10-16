@@ -17,4 +17,5 @@ env_variables:
   ENVIRONMENT: 'master'
   DIST_FOLDER: 'dist'
   OMDB_KEY: '3e5351f0'
+  CLOUD_STORAGE_BUCKET: 'watchlist-lost-marbles.appspot.com'
   GAE_DATASTORE_HOST: 'watchlist-lost-marbles.appspot.com'
