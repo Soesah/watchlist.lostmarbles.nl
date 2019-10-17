@@ -100,7 +100,7 @@ func GetFile(file string, r *http.Request) ([]byte, error) {
 		return nil, err
 	}
 
-	path := strings.Join([]string{"data/", file}, "")
+	path := strings.Join([]string{"data/", file, ".json"}, "")
 
 	bkt := client.Bucket(conf.BucketName)
 	reader, err := bkt.Object(path).NewReader(ctx)
