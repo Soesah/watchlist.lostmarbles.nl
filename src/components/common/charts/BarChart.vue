@@ -3,7 +3,7 @@
     <div class="chart">
       <svg :viewBox="viewBox" v-if="true">
         <g v-for="(line, index) in horizontalGridlines" :key="`${line}-grid`">
-          <line class="grid-line" x1="0" :y1="line" x2="4" :y2="line"></line>
+          <line class="grid-line" x1="0" :y1="line" x2="4" :y2="line" />
           <text class="grid-legend" :x="4 - 0.25" :y="line + 0.09">{{ getGridNumber(index)}}</text>
         </g>
         <rect
@@ -18,7 +18,7 @@
           :class="{'bar-highlighted': highlighted === index}"
           @mouseenter="highlight(index, true)"
           @mouseleave="highlight(index, false)"
-        ></rect>
+        />
         <g>
           <rect
             v-for="(data, index) in pathData.data"
@@ -31,10 +31,10 @@
             class="bar"
             @mouseenter="highlight(index, true)"
             @mouseleave="highlight(index, false)"
-          ></rect>
+          />
         </g>
-        <line class="axis" x1="0" y1="0" x2="0" y2="2"></line>
-        <line class="axis" x1="0" y1="2" x2="4" y2="2"></line>
+        <line class="axis" x1="0" y1="0" x2="0" y2="2" />
+        <line class="axis" x1="0" y1="2" x2="4" y2="2" />
       </svg>
     </div>
     <div class="chart-info">

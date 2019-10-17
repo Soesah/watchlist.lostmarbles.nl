@@ -9,12 +9,12 @@
         placeholder="Name"
         v-model="franchise.name"
         @input="update"
-      >
+      />
     </div>
     <div class="form-item form-item-name">
       <label>Search</label>
       <div class="form-input-group">
-        <input type="text" v-if="choice" name="name" @keydown.escape="clear" v-model="choice.title">
+        <input type="text" v-if="choice" name="name" @keydown.escape="clear" v-model="choice.title" />
         <input
           type="text"
           v-if="!choice"
@@ -23,7 +23,7 @@
           placeholder="Search"
           v-model="search"
           @input="searchItem"
-        >
+        />
         <button
           class="search-button action"
           type="button"

@@ -3,7 +3,7 @@
     <label v-text="label"></label>
     <ul class="list-input-items">
       <li v-for="(item, index) in items" :key="index">
-        <input type="text" :placeholder="placeholder" v-model="items[index]" @input="update">
+        <input type="text" :placeholder="placeholder" v-model="items[index]" @input="update" />
         <button
           class="option add-button"
           type="button"
@@ -59,7 +59,7 @@ export default Vue.extend({
   },
   methods: {
     getList(): string[] {
-      let list = <string[]>this.value;
+      let list = this.value as string[];
 
       if (!list.length) {
         list = [""];
