@@ -8,6 +8,19 @@ import (
 	"github.com/Soesah/watchlist.lostmarbles.nl/api/util"
 )
 
+const (
+	//TypeMovie is the internal type nr of a Movie
+	TypeMovie = 0
+	//TypeSeries is the internal type nr of a Series
+	TypeSeries = 1
+	//TypeDocumentary is the internal type nr of a Documentary
+	TypeDocumentary = 2
+	//TypeGame is the internal type nr of a Game
+	TypeGame = 3
+	//TypeFranchise is the internal type nr of a Franchise
+	TypeFranchise = 4
+)
+
 // OMDBSearch holds the search results from OMDB
 type OMDBSearch struct {
 	Search       []OMDBResult `json:"Search"`

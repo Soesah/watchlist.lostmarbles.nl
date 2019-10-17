@@ -11,36 +11,3 @@ type Series struct {
 	Actors    []string `json:"actors"`
 	DateAdded string   `json:"date_added"`
 }
-
-// SeriesData is an internal data model
-type SeriesData struct {
-	Type      int64
-	ImdbID    string
-	Title     string
-	Plot      string
-	Finished  bool
-	Actors    []string
-	DateAdded string
-}
-
-// GetSeries returns a Series with seasons
-func (seriesData SeriesData) GetSeries(seasons []Season) Series {
-	var seriesSeasons []Season
-
-	for _, season := range seasons {
-		if season.SeriesImdbID == seriesData.ImdbID {
-			seriesSeasons = append(seriesSeasons, season)
-		}
-	}
-
-	return Series{
-		Type:      seriesData.Type,
-		ImdbID:    seriesData.ImdbID,
-		Title:     seriesData.Title,
-		Plot:      seriesData.Plot,
-		Finished:  seriesData.Finished,
-		Seasons:   seriesSeasons,
-		Actors:    seriesData.Actors,
-		DateAdded: seriesData.DateAdded,
-	}
-}

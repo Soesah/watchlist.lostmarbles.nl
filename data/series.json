@@ -5,8 +5,16 @@
     "title": "Gentleman Jack",
     "plot": "In 1832 Halifax, West Yorkshire, charismatic landowner Anne Lister becomes determined to transform the fate of her faded ancestral home, Shibden Hall, by reopening the coal mines and finding a good wife.",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
-    "actors": ["Suranne Jones"],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Suranne Jones"
+    ],
     "date_added": "2019-03-23"
   },
   {
@@ -15,7 +23,13 @@
     "title": "The Mandelorian",
     "plot": "",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [],
     "date_added": "2019-04-17"
   },
@@ -25,7 +39,13 @@
     "title": "For All Mankind",
     "plot": "Russia lands on the moon first",
     "finished": false,
-    "seasons": [{ "year": 2020, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2020,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [],
     "date_added": "2019-06-04"
   },
@@ -35,7 +55,13 @@
     "title": "Shogun",
     "plot": "A English navigator becomes both a player and pawn in the complex political games in feudal Japan.",
     "finished": false,
-    "seasons": [{ "year": 1980, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 1980,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Richard Chamberlain",
       "Toshirô Mifune",
@@ -51,13 +77,38 @@
     "plot": "Four Vietnam vets, framed for a crime they didn't commit, help the innocent while on the run from the military.",
     "finished": false,
     "seasons": [
-      { "year": 1983, "nr": 1, "episodes": null },
-      { "year": 1983, "nr": 2, "episodes": null },
-      { "year": 1984, "nr": 3, "episodes": null },
-      { "year": 1985, "nr": 4, "episodes": null },
-      { "year": 1986, "nr": 5, "episodes": null }
+      {
+        "year": 1983,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1983,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 1984,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 1985,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 1986,
+        "nr": 5,
+        "episodes": null
+      }
     ],
-    "actors": ["George Peppard", "Dwight Schultz", "Mr. T", "Dirk Benedict"],
+    "actors": [
+      "George Peppard",
+      "Dwight Schultz",
+      "Mr. T",
+      "Dirk Benedict"
+    ],
     "date_added": ""
   },
   {
@@ -67,13 +118,41 @@
     "plot": "Set decades after Captain Kirk's five-year mission, a new generation of Starfleet officers set off in a new Enterprise on their own mission to go where no one has gone before.",
     "finished": false,
     "seasons": [
-      { "year": 1987, "nr": 1, "episodes": null },
-      { "year": 1988, "nr": 2, "episodes": null },
-      { "year": 1989, "nr": 3, "episodes": null },
-      { "year": 1990, "nr": 4, "episodes": null },
-      { "year": 1991, "nr": 5, "episodes": null },
-      { "year": 1992, "nr": 6, "episodes": null },
-      { "year": 1993, "nr": 7, "episodes": null }
+      {
+        "year": 1987,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1988,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 1989,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 1990,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 1991,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 1992,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 1993,
+        "nr": 7,
+        "episodes": null
+      }
     ],
     "actors": [
       "Patrick Stewart",
@@ -89,8 +168,19 @@
     "title": "Blackadder Goes Forth",
     "plot": "Stuck in the middle of World War I, Captain Edmund Blackadder does his best to escape the banality of the war.",
     "finished": false,
-    "seasons": [{ "year": 1989, "nr": 1, "episodes": null }],
-    "actors": ["Rowan Atkinson", "Tony Robinson", "Stephen Fry", "Hugh Laurie"],
+    "seasons": [
+      {
+        "year": 1989,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Rowan Atkinson",
+      "Tony Robinson",
+      "Stephen Fry",
+      "Hugh Laurie"
+    ],
     "date_added": ""
   },
   {
@@ -100,13 +190,41 @@
     "plot": "In the vicinity of the liberated planet of Bajor, the Federation space station Deep Space Nine guards the opening of a stable wormhole to the far side of the galaxy.",
     "finished": false,
     "seasons": [
-      { "year": 1993, "nr": 1, "episodes": null },
-      { "year": 1993, "nr": 2, "episodes": null },
-      { "year": 1994, "nr": 3, "episodes": null },
-      { "year": 1995, "nr": 4, "episodes": null },
-      { "year": 1996, "nr": 5, "episodes": null },
-      { "year": 1997, "nr": 6, "episodes": null },
-      { "year": 1998, "nr": 7, "episodes": null }
+      {
+        "year": 1993,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1993,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 1994,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 1995,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 1996,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 1997,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 1998,
+        "nr": 7,
+        "episodes": null
+      }
     ],
     "actors": [
       "Avery Brooks",
@@ -122,7 +240,13 @@
     "title": "Pride and Prejudice",
     "plot": "Jane Austen's classic novel about the prejudice that occurred between the 19th century classes and the pride which would keep lovers apart.",
     "finished": false,
-    "seasons": [{ "year": 1995, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 1995,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Jennifer Ehle",
       "Colin Firth",
@@ -138,13 +262,41 @@
     "plot": "Pulled to the far side of the galaxy, where the Federation is 75 years away at maximum warp speed, a Starfleet ship must cooperate with Maquis rebels to find a way home.",
     "finished": false,
     "seasons": [
-      { "year": 1995, "nr": 1, "episodes": null },
-      { "year": 1995, "nr": 2, "episodes": null },
-      { "year": 1996, "nr": 3, "episodes": null },
-      { "year": 1997, "nr": 4, "episodes": null },
-      { "year": 1998, "nr": 5, "episodes": null },
-      { "year": 1999, "nr": 6, "episodes": null },
-      { "year": 2000, "nr": 7, "episodes": null }
+      {
+        "year": 1995,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1995,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 1996,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 1997,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 1998,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 1999,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2000,
+        "nr": 7,
+        "episodes": null
+      }
     ],
     "actors": [
       "Kate Mulgrew",
@@ -161,13 +313,41 @@
     "plot": "A New Jersey mob boss, Tony Soprano, deals with personal and professional issues in his home and business life, which affects his mental state and leads him to seek professional psychiatric counseling.",
     "finished": false,
     "seasons": [
-      { "year": 1999, "nr": 1, "episodes": null },
-      { "year": 2000, "nr": 2, "episodes": null },
-      { "year": 2001, "nr": 3, "episodes": null },
-      { "year": 2002, "nr": 4, "episodes": null },
-      { "year": 2003, "nr": 5, "episodes": null },
-      { "year": 2006, "nr": 6, "episodes": null },
-      { "year": 2007, "nr": 7, "episodes": null }
+      {
+        "year": 1999,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2000,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2001,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2002,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2003,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2006,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2007,
+        "nr": 7,
+        "episodes": null
+      }
     ],
     "actors": [
       "James Gandolfini",
@@ -183,8 +363,19 @@
     "title": "Dune",
     "plot": "A three-part miniseries on politics, betrayal, lust, greed and the coming of a Messiah. Based on Frank Herbert's classic science fiction novel.",
     "finished": false,
-    "seasons": [{ "year": 2000, "nr": 1, "episodes": null }],
-    "actors": ["William Hurt", "Alec Newman", "Saskia Reeves", "P.H. Moriarty"],
+    "seasons": [
+      {
+        "year": 2000,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "William Hurt",
+      "Alec Newman",
+      "Saskia Reeves",
+      "P.H. Moriarty"
+    ],
     "date_added": ""
   },
   {
@@ -194,23 +385,88 @@
     "plot": "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another.",
     "finished": false,
     "seasons": [
-      { "year": 2016, "nr": 1, "episodes": null },
-      { "year": 1999, "nr": 2, "episodes": null },
-      { "year": 2001, "nr": 3, "episodes": null },
-      { "year": 2005, "nr": 4, "episodes": null },
-      { "year": 2006, "nr": 5, "episodes": null },
-      { "year": 2007, "nr": 6, "episodes": null },
-      { "year": 2008, "nr": 7, "episodes": null },
-      { "year": 2009, "nr": 8, "episodes": null },
-      { "year": 2010, "nr": 9, "episodes": null },
-      { "year": 2011, "nr": 10, "episodes": null },
-      { "year": 2012, "nr": 11, "episodes": null },
-      { "year": 2013, "nr": 12, "episodes": null },
-      { "year": 2014, "nr": 13, "episodes": null },
-      { "year": 2015, "nr": 14, "episodes": null },
-      { "year": 2016, "nr": 15, "episodes": null }
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1999,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2001,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2005,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2006,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2007,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2008,
+        "nr": 7,
+        "episodes": null
+      },
+      {
+        "year": 2009,
+        "nr": 8,
+        "episodes": null
+      },
+      {
+        "year": 2010,
+        "nr": 9,
+        "episodes": null
+      },
+      {
+        "year": 2011,
+        "nr": 10,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 11,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 12,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 13,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 14,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 15,
+        "episodes": null
+      }
     ],
-    "actors": ["Seth MacFarlane", "Alex Borstein", "Seth Green", "Mila Kunis"],
+    "actors": [
+      "Seth MacFarlane",
+      "Alex Borstein",
+      "Seth Green",
+      "Mila Kunis"
+    ],
     "date_added": ""
   },
   {
@@ -220,13 +476,41 @@
     "plot": "Inside the lives of staffers in the West Wing of the White House.",
     "finished": false,
     "seasons": [
-      { "year": 1999, "nr": 1, "episodes": null },
-      { "year": 2000, "nr": 2, "episodes": null },
-      { "year": 2001, "nr": 3, "episodes": null },
-      { "year": 2002, "nr": 4, "episodes": null },
-      { "year": 2003, "nr": 5, "episodes": null },
-      { "year": 2004, "nr": 6, "episodes": null },
-      { "year": 2005, "nr": 7, "episodes": null }
+      {
+        "year": 1999,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2000,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2001,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2002,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2003,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2004,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2005,
+        "nr": 7,
+        "episodes": null
+      }
     ],
     "actors": [
       "Allison Janney",
@@ -243,10 +527,26 @@
     "plot": "A century before Captain Kirk's five-year mission, Jonathan Archer captains the United Earth ship Enterprise during the early years of Starfleet, leading up to the Earth-Romulan War and the formation of the Federation.",
     "finished": false,
     "seasons": [
-      { "year": 2001, "nr": 1, "episodes": null },
-      { "year": 2002, "nr": 2, "episodes": null },
-      { "year": 2003, "nr": 3, "episodes": null },
-      { "year": 2004, "nr": 4, "episodes": null }
+      {
+        "year": 2001,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2002,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2003,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2004,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Scott Bakula",
@@ -263,11 +563,31 @@
     "plot": "Seven of the most formidable heroes form arguably the most powerful team ever.",
     "finished": false,
     "seasons": [
-      { "year": 2001, "nr": 1, "episodes": null },
-      { "year": 2003, "nr": 2, "episodes": null },
-      { "year": 2004, "nr": 3, "episodes": null },
-      { "year": 2005, "nr": 4, "episodes": null },
-      { "year": 2005, "nr": 5, "episodes": null }
+      {
+        "year": 2001,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2003,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2004,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2005,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2005,
+        "nr": 5,
+        "episodes": null
+      }
     ],
     "actors": [
       "Carl Lumbly",
@@ -284,10 +604,20 @@
     "plot": "A samurai sent through time fights to return home and save the world.",
     "finished": false,
     "seasons": [
-      { "year": 2001, "nr": 1, "episodes": null },
-      { "year": 2002, "nr": 2, "episodes": null }
+      {
+        "year": 2001,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2002,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["Phil LaMarr"],
+    "actors": [
+      "Phil LaMarr"
+    ],
     "date_added": ""
   },
   {
@@ -296,8 +626,19 @@
     "title": "Children of Dune",
     "plot": "The twins of Paul \"Muad'dib\" Atreides become embroiled in the political landscape of Arrakis (\"Dune\") and the rest of the universe.",
     "finished": false,
-    "seasons": [{ "year": 2003, "nr": 1, "episodes": null }],
-    "actors": ["Alec Newman", "Julie Cox", "Ian McNeice", "Steven Berkoff"],
+    "seasons": [
+      {
+        "year": 2003,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Alec Newman",
+      "Julie Cox",
+      "Ian McNeice",
+      "Steven Berkoff"
+    ],
     "date_added": ""
   },
   {
@@ -307,9 +648,21 @@
     "plot": "The story of an office that faces closure when the company decides to downsize its branches. A documentary film crew follow staff and the manager David Brent as they continue their daily lives.",
     "finished": false,
     "seasons": [
-      { "year": 2001, "nr": 1, "episodes": null },
-      { "year": 2002, "nr": 2, "episodes": null },
-      { "year": 2003, "nr": 3, "episodes": null }
+      {
+        "year": 2001,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2002,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2003,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Ricky Gervais",
@@ -326,12 +679,36 @@
     "plot": "Baltimore drug scene, seen through the eyes of drug dealers and law enforcement.",
     "finished": false,
     "seasons": [
-      { "year": 2002, "nr": 1, "episodes": null },
-      { "year": 2003, "nr": 2, "episodes": null },
-      { "year": 2004, "nr": 3, "episodes": null },
-      { "year": 2006, "nr": 4, "episodes": null },
-      { "year": 2008, "nr": 5, "episodes": null },
-      { "year": 2009, "nr": 6, "episodes": null }
+      {
+        "year": 2002,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2003,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2004,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2006,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2008,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2009,
+        "nr": 6,
+        "episodes": null
+      }
     ],
     "actors": [
       "Dominic West",
@@ -348,9 +725,21 @@
     "plot": "The events and battles of the Old Republic's last major war is recounted.",
     "finished": false,
     "seasons": [
-      { "year": 2003, "nr": 1, "episodes": null },
-      { "year": 2004, "nr": 2, "episodes": null },
-      { "year": 2005, "nr": 3, "episodes": null }
+      {
+        "year": 2003,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2004,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2005,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "André Sogliuzzo",
@@ -367,10 +756,26 @@
     "plot": "When an old enemy, the Cylons, resurface and obliterate the 12 colonies, the crew of the aged Galactica protect a small civilian fleet - the last of humanity - as they journey toward the fabled 13th colony, Earth.",
     "finished": false,
     "seasons": [
-      { "year": 2005, "nr": 1, "episodes": null },
-      { "year": 2005, "nr": 2, "episodes": null },
-      { "year": 2006, "nr": 3, "episodes": null },
-      { "year": 2008, "nr": 4, "episodes": null }
+      {
+        "year": 2005,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2005,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2006,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2008,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Edward James Olmos",
@@ -387,9 +792,21 @@
     "plot": "In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",
     "finished": false,
     "seasons": [
-      { "year": 2005, "nr": 1, "episodes": null },
-      { "year": 2006, "nr": 2, "episodes": null },
-      { "year": 2007, "nr": 3, "episodes": null }
+      {
+        "year": 2005,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2006,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2007,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Dee Bradley Baker",
@@ -406,13 +823,41 @@
     "plot": "The Grand Army of the Republic, led by Yoda, Mace Windu, Obi-Wan Kenobi, Anakin Skywalker and other Jedi Knights, fights the New Droid Army of the Separatists.",
     "finished": false,
     "seasons": [
-      { "year": 2008, "nr": 1, "episodes": null },
-      { "year": 2009, "nr": 2, "episodes": null },
-      { "year": 2010, "nr": 3, "episodes": null },
-      { "year": 2011, "nr": 4, "episodes": null },
-      { "year": 2012, "nr": 5, "episodes": null },
-      { "year": 2014, "nr": 6, "episodes": null },
-      { "year": 2014, "nr": 7, "episodes": null }
+      {
+        "year": 2008,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2009,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2010,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2011,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 7,
+        "episodes": null
+      }
     ],
     "actors": [
       "Tom Kane",
@@ -429,14 +874,46 @@
     "plot": "By day, mild-mannered Dexter is a blood-spatter analyst for the Miami police. But at night, he is a serial killer who only targets other murderers.",
     "finished": false,
     "seasons": [
-      { "year": 2006, "nr": 1, "episodes": null },
-      { "year": 2007, "nr": 2, "episodes": null },
-      { "year": 2008, "nr": 3, "episodes": null },
-      { "year": 2009, "nr": 4, "episodes": null },
-      { "year": 2010, "nr": 5, "episodes": null },
-      { "year": 2011, "nr": 6, "episodes": null },
-      { "year": 2012, "nr": 7, "episodes": null },
-      { "year": 2013, "nr": 8, "episodes": null }
+      {
+        "year": 2006,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2007,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2008,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2009,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2010,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2011,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 7,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 8,
+        "episodes": null
+      }
     ],
     "actors": [
       "Michael C. Hall",
@@ -453,10 +930,26 @@
     "plot": "Common people discover that they have super powers. Their lives intertwine as a devastating event must be prevented.",
     "finished": false,
     "seasons": [
-      { "year": 2006, "nr": 1, "episodes": null },
-      { "year": 2007, "nr": 2, "episodes": null },
-      { "year": 2008, "nr": 3, "episodes": null },
-      { "year": 2009, "nr": 4, "episodes": null }
+      {
+        "year": 2006,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2007,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2008,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2009,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Jack Coleman",
@@ -473,18 +966,63 @@
     "plot": "A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.",
     "finished": false,
     "seasons": [
-      { "year": 2006, "nr": 1, "episodes": null },
-      { "year": 2008, "nr": 2, "episodes": null },
-      { "year": 2009, "nr": 3, "episodes": null },
-      { "year": 2010, "nr": 4, "episodes": null },
-      { "year": 2011, "nr": 5, "episodes": null },
-      { "year": 2012, "nr": 6, "episodes": null },
-      { "year": 2013, "nr": 7, "episodes": null },
-      { "year": 2014, "nr": 8, "episodes": null },
-      { "year": 2015, "nr": 9, "episodes": null },
-      { "year": 2016, "nr": 10, "episodes": null }
+      {
+        "year": 2006,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2008,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2009,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2010,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2011,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 7,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 8,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 9,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 10,
+        "episodes": null
+      }
     ],
-    "actors": ["Johnny Galecki", "Jim Parsons", "Kaley Cuoco", "Simon Helberg"],
+    "actors": [
+      "Johnny Galecki",
+      "Jim Parsons",
+      "Kaley Cuoco",
+      "Simon Helberg"
+    ],
     "date_added": ""
   },
   {
@@ -494,14 +1032,46 @@
     "plot": "Nine noble families fight for control over the mythical lands of Westeros; A forgotten race returns after being dormant for thousands of years.",
     "finished": false,
     "seasons": [
-      { "year": 2011, "nr": 1, "episodes": null },
-      { "year": 2012, "nr": 2, "episodes": null },
-      { "year": 2013, "nr": 3, "episodes": null },
-      { "year": 2014, "nr": 4, "episodes": null },
-      { "year": 2015, "nr": 5, "episodes": null },
-      { "year": 2016, "nr": 6, "episodes": null },
-      { "year": 2017, "nr": 7, "episodes": null },
-      { "year": 2019, "nr": 8, "episodes": null }
+      {
+        "year": 2011,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 7,
+        "episodes": null
+      },
+      {
+        "year": 2019,
+        "nr": 8,
+        "episodes": null
+      }
     ],
     "actors": [
       "Peter Dinklage",
@@ -518,10 +1088,23 @@
     "plot": "A team of young superheroes led by Nightwing (formerly Batman's first Robin) form to combat evil and other perils.",
     "finished": false,
     "seasons": [
-      { "year": 2018, "nr": 1, "episodes": null },
-      { "year": 1, "nr": 2, "episodes": null }
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["Teagan Croft", "Brenton Thwaites", "Anna Diop", "Ryan Potter"],
+    "actors": [
+      "Teagan Croft",
+      "Brenton Thwaites",
+      "Anna Diop",
+      "Ryan Potter"
+    ],
     "date_added": "2019-02-14"
   },
   {
@@ -530,7 +1113,13 @@
     "title": "The Umbrella Academy",
     "plot": "A disbanded group of superheroes reunite after their adoptive father, who trained them to save the world, dies.",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Aidan Gallagher",
       "Justin H. Min",
@@ -545,7 +1134,13 @@
     "title": "The Night Manager",
     "plot": "The night manager of a Cairo hotel is recruited to infiltrate an arms dealer's inner circle.",
     "finished": false,
-    "seasons": [{ "year": 2016, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Hugh Laurie",
       "Tom Hiddleston",
@@ -561,14 +1156,46 @@
     "plot": "Sheriff Deputy Rick Grimes wakes up from a coma, to learn the world is in ruins, and must lead a group of survivors to stay alive.",
     "finished": false,
     "seasons": [
-      { "year": 2010, "nr": 1, "episodes": null },
-      { "year": 2011, "nr": 2, "episodes": null },
-      { "year": 2012, "nr": 3, "episodes": null },
-      { "year": 2013, "nr": 4, "episodes": null },
-      { "year": 2014, "nr": 5, "episodes": null },
-      { "year": 2015, "nr": 6, "episodes": null },
-      { "year": 2016, "nr": 7, "episodes": null },
-      { "year": 2017, "nr": 8, "episodes": null }
+      {
+        "year": 2010,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2011,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 6,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 7,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 8,
+        "episodes": null
+      }
     ],
     "actors": [
       "Andrew Lincoln",
@@ -585,12 +1212,36 @@
     "plot": "A chronicle of the lives of the British aristocratic Crawley family and their servants in the early 20th Century.",
     "finished": false,
     "seasons": [
-      { "year": 2011, "nr": 1, "episodes": null },
-      { "year": 2012, "nr": 2, "episodes": null },
-      { "year": 2013, "nr": 3, "episodes": null },
-      { "year": 2014, "nr": 4, "episodes": null },
-      { "year": 2015, "nr": 5, "episodes": null },
-      { "year": 2016, "nr": 6, "episodes": null }
+      {
+        "year": 2011,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 6,
+        "episodes": null
+      }
     ],
     "actors": [
       "Hugh Bonneville",
@@ -607,10 +1258,26 @@
     "plot": "Avatar Korra fights to keep Republic City safe from the evil forces of both the physical and spiritual worlds.",
     "finished": false,
     "seasons": [
-      { "year": 2012, "nr": 1, "episodes": null },
-      { "year": 2013, "nr": 2, "episodes": null },
-      { "year": 2014, "nr": 3, "episodes": null },
-      { "year": 2014, "nr": 4, "episodes": null }
+      {
+        "year": 2012,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Janet Varney",
@@ -627,12 +1294,33 @@
     "plot": "A glimpse into an alternate history of North America. What life after WWII may have been like if the Nazis had won the war.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2016, "nr": 2, "episodes": null },
-      { "year": 2018, "nr": 3, "episodes": null },
-      { "year": 1, "nr": 4, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 1,
+        "nr": 4,
+        "episodes": null
+      }
     ],
-    "actors": ["Alexa Davalos", "Rupert Evans", "Luke Kleintank", "DJ Qualls"],
+    "actors": [
+      "Alexa Davalos",
+      "Rupert Evans",
+      "Luke Kleintank",
+      "DJ Qualls"
+    ],
     "date_added": "2019-02-20"
   },
   {
@@ -642,12 +1330,36 @@
     "plot": "A bipolar CIA operative becomes convinced a prisoner of war has been turned by al-Qaeda and is planning to carry out a terrorist attack on American soil.",
     "finished": false,
     "seasons": [
-      { "year": 2011, "nr": 1, "episodes": null },
-      { "year": 2012, "nr": 2, "episodes": null },
-      { "year": 2013, "nr": 3, "episodes": null },
-      { "year": 2014, "nr": 4, "episodes": null },
-      { "year": 2015, "nr": 5, "episodes": null },
-      { "year": 2017, "nr": 6, "episodes": null }
+      {
+        "year": 2011,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2012,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 6,
+        "episodes": null
+      }
     ],
     "actors": [
       "Claire Danes",
@@ -664,11 +1376,31 @@
     "plot": "A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.",
     "finished": false,
     "seasons": [
-      { "year": 2013, "nr": 1, "episodes": null },
-      { "year": 2014, "nr": 2, "episodes": null },
-      { "year": 2015, "nr": 3, "episodes": null },
-      { "year": 2016, "nr": 4, "episodes": null },
-      { "year": 2017, "nr": 5, "episodes": null }
+      {
+        "year": 2013,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 5,
+        "episodes": null
+      }
     ],
     "actors": [
       "Kevin Spacey",
@@ -685,9 +1417,21 @@
     "plot": "Twin siblings Dipper and Mabel Pines spend the summer at their uncle's tourist trap in the enigmatic town of Gravity Falls.",
     "finished": false,
     "seasons": [
-      { "year": 2012, "nr": 1, "episodes": null },
-      { "year": 2014, "nr": 2, "episodes": null },
-      { "year": 2015, "nr": 3, "episodes": null }
+      {
+        "year": 2012,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Jason Ritter",
@@ -704,9 +1448,21 @@
     "plot": "A newsroom undergoes some changes in its workings and morals as a new team is brought in, bringing unexpected results for its existing news anchor.",
     "finished": false,
     "seasons": [
-      { "year": 2012, "nr": 1, "episodes": null },
-      { "year": 2013, "nr": 2, "episodes": null },
-      { "year": 2014, "nr": 3, "episodes": null }
+      {
+        "year": 2012,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Jeff Daniels",
@@ -723,11 +1479,31 @@
     "plot": "An anthology series exploring a twisted, high-tech world where humanity's greatest innovations and darkest instincts collide.",
     "finished": false,
     "seasons": [
-      { "year": 2011, "nr": 1, "episodes": null },
-      { "year": 2013, "nr": 2, "episodes": null },
-      { "year": 2016, "nr": 3, "episodes": null },
-      { "year": 2017, "nr": 4, "episodes": null },
-      { "year": 2018, "nr": 5, "episodes": null }
+      {
+        "year": 2011,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 5,
+        "episodes": null
+      }
     ],
     "actors": [
       "Daniel Lapaine",
@@ -744,12 +1520,36 @@
     "plot": "Two Soviet intelligence agents pose as a married couple to spy on the American government.",
     "finished": false,
     "seasons": [
-      { "year": 2013, "nr": 1, "episodes": null },
-      { "year": 2014, "nr": 2, "episodes": null },
-      { "year": 2015, "nr": 3, "episodes": null },
-      { "year": 2016, "nr": 4, "episodes": null },
-      { "year": 2017, "nr": 5, "episodes": null },
-      { "year": 0, "nr": 6, "episodes": null }
+      {
+        "year": 2013,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 0,
+        "nr": 6,
+        "episodes": null
+      }
     ],
     "actors": [
       "Keri Russell",
@@ -766,12 +1566,36 @@
     "plot": "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.",
     "finished": false,
     "seasons": [
-      { "year": 2012, "nr": 1, "episodes": null },
-      { "year": 2013, "nr": 2, "episodes": null },
-      { "year": 2014, "nr": 3, "episodes": null },
-      { "year": 2015, "nr": 4, "episodes": null },
-      { "year": 2016, "nr": 5, "episodes": null },
-      { "year": 2017, "nr": 6, "episodes": null }
+      {
+        "year": 2012,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2013,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 6,
+        "episodes": null
+      }
     ],
     "actors": [
       "Stephen Amell",
@@ -787,7 +1611,13 @@
     "title": "Altered Carbon",
     "plot": "Set in a future where consciousness is digitized and stored, a prisoner returns to life in a new body and must solve a mind-bending murder to win his freedom.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Martha Higareda",
       "Antonio Marziale",
@@ -803,12 +1633,36 @@
     "plot": "The world of the Vikings is brought to life through the journey of Ragnar Lothbrok, the first Viking to emerge from Norse legend and onto the pages of history - a man on the edge of myth.",
     "finished": false,
     "seasons": [
-      { "year": 2013, "nr": 1, "episodes": null },
-      { "year": 2014, "nr": 2, "episodes": null },
-      { "year": 2015, "nr": 3, "episodes": null },
-      { "year": 2016, "nr": 4, "episodes": null },
-      { "year": 2017, "nr": 5, "episodes": null },
-      { "year": 2018, "nr": 6, "episodes": null }
+      {
+        "year": 2013,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 5,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 6,
+        "episodes": null
+      }
     ],
     "actors": [
       "Gustaf Skarsgård",
@@ -824,7 +1678,13 @@
     "title": "Beware the Batman",
     "plot": "Batman, a crime-fighting vigilante of Gotham City, goes up against the underworld.",
     "finished": false,
-    "seasons": [{ "year": 2013, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2013,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Anthony Ruivivar",
       "Sumalee Montano",
@@ -840,9 +1700,21 @@
     "plot": "An anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.",
     "finished": false,
     "seasons": [
-      { "year": 2014, "nr": 1, "episodes": null },
-      { "year": 2015, "nr": 2, "episodes": null },
-      { "year": 2019, "nr": 3, "episodes": null }
+      {
+        "year": 2014,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2019,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Matthew McConaughey",
@@ -859,9 +1731,21 @@
     "plot": "A former superhero decides to reboot her life by becoming a private investigator.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null },
-      { "year": 2019, "nr": 3, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2019,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Krysten Ritter",
@@ -878,11 +1762,31 @@
     "plot": "A gangster family epic set in 1919 Birmingham, England; centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",
     "finished": false,
     "seasons": [
-      { "year": 2014, "nr": 1, "episodes": null },
-      { "year": 2014, "nr": 2, "episodes": null },
-      { "year": 2016, "nr": 3, "episodes": null },
-      { "year": 2017, "nr": 4, "episodes": null },
-      { "year": 0, "nr": 5, "episodes": null }
+      {
+        "year": 2014,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 0,
+        "nr": 5,
+        "episodes": null
+      }
     ],
     "actors": [
       "Cillian Murphy",
@@ -899,10 +1803,26 @@
     "plot": "The further adventures of the Marvel Universe's mightiest general membership superhero team.",
     "finished": false,
     "seasons": [
-      { "year": 2013, "nr": 1, "episodes": null },
-      { "year": 2014, "nr": 2, "episodes": null },
-      { "year": 2016, "nr": 3, "episodes": null },
-      { "year": 2017, "nr": 4, "episodes": null }
+      {
+        "year": 2013,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2014,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Roger Craig Smith",
@@ -918,7 +1838,13 @@
     "title": "Sharp Objects",
     "plot": "A reporter confronts the psychological demons from her past when she returns to her hometown to cover a violent murder.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Amy Adams",
       "Patricia Clarkson",
@@ -934,9 +1860,21 @@
     "plot": "Three years after the disappearance of 2% of the global population, a group of people from New York struggle to continue their lives, while they cope with the tragedy of the unexplained nature of the event.",
     "finished": false,
     "seasons": [
-      { "year": 2014, "nr": 1, "episodes": null },
-      { "year": 2015, "nr": 2, "episodes": null },
-      { "year": 2016, "nr": 3, "episodes": null }
+      {
+        "year": 2014,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Justin Theroux",
@@ -953,10 +1891,26 @@
     "plot": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug dealers who plagued the country through the years.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2016, "nr": 2, "episodes": null },
-      { "year": 2017, "nr": 3, "episodes": null },
-      { "year": 0, "nr": 4, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 0,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Wagner Moura",
@@ -973,9 +1927,21 @@
     "plot": "An animated series that follows the exploits of a super scientist and his not so bright grandson.",
     "finished": false,
     "seasons": [
-      { "year": 2013, "nr": 1, "episodes": null },
-      { "year": 2015, "nr": 2, "episodes": null },
-      { "year": 2017, "nr": 3, "episodes": null }
+      {
+        "year": 2013,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Justin Roiland",
@@ -992,10 +1958,26 @@
     "plot": "A brave and clever ragtag starship crew stands up against the evil Empire as it tightens its grip on the galaxy and hunts down the last of the Jedi Knights.",
     "finished": false,
     "seasons": [
-      { "year": 2014, "nr": 1, "episodes": null },
-      { "year": 2015, "nr": 2, "episodes": null },
-      { "year": 2016, "nr": 3, "episodes": null },
-      { "year": 2017, "nr": 4, "episodes": null }
+      {
+        "year": 2014,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Taylor Gray",
@@ -1011,7 +1993,13 @@
     "title": "Tut",
     "plot": "A miniseries concentrating on the youngest Pharaoh to rule Ancient Egypt.",
     "finished": false,
-    "seasons": [{ "year": 2015, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Ben Kingsley",
       "Avan Jogia",
@@ -1027,9 +2015,21 @@
     "plot": "Almost two years after a virus wiped out most of the human race, Phil Miller only wishes for some company, but soon gets more than he bargained for when that company shows up in the form of other survivors.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2015, "nr": 2, "episodes": null },
-      { "year": 2016, "nr": 3, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Will Forte",
@@ -1046,11 +2046,28 @@
     "plot": "A police detective in the asteroid belt, the first officer of an interplanetary ice freighter and an earth-bound United Nations executive slowly discover a vast conspiracy that threatens the Earth's rebellious colony on the asteroid belt.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2017, "nr": 2, "episodes": null },
-      { "year": 2018, "nr": 3, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 3,
+        "episodes": null
+      }
     ],
-    "actors": ["Steven Strait", "Cas Anvar", "Dominique Tipper", "Wes Chatham"],
+    "actors": [
+      "Steven Strait",
+      "Cas Anvar",
+      "Dominique Tipper",
+      "Wes Chatham"
+    ],
     "date_added": "2018-07-08"
   },
   {
@@ -1060,8 +2077,16 @@
     "plot": "A young man is bestowed with incredible martial arts skills and a mystical force known as the Iron Fist.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Finn Jones",
@@ -1078,9 +2103,21 @@
     "plot": "Matt Murdock, with his other senses superhumanly enhanced, fights crime as a blind lawyer by day, and vigilante by night.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2016, "nr": 2, "episodes": null },
-      { "year": 0, "nr": 3, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 0,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Charlie Cox",
@@ -1097,10 +2134,23 @@
     "plot": "Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.",
     "finished": false,
     "seasons": [
-      { "year": 2016, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null }
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["Mike Colter", "Simone Missick", "Theo Rossi", "Alfre Woodard"],
+    "actors": [
+      "Mike Colter",
+      "Simone Missick",
+      "Theo Rossi",
+      "Alfre Woodard"
+    ],
     "date_added": ""
   },
   {
@@ -1110,9 +2160,21 @@
     "plot": "Catherine Cawood is the sergeant on duty when flustered and nervous accountant Kevin Weatherill comes into her West Yorkshire station to report a crime.",
     "finished": false,
     "seasons": [
-      { "year": 2014, "nr": 1, "episodes": null },
-      { "year": 2016, "nr": 2, "episodes": null },
-      { "year": 2017, "nr": 3, "episodes": null }
+      {
+        "year": 2014,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Sarah Lancashire",
@@ -1129,11 +2191,31 @@
     "plot": "A Taiwanese family makes their way in America during the 1990s.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2015, "nr": 2, "episodes": null },
-      { "year": 2016, "nr": 3, "episodes": null },
-      { "year": 2017, "nr": 4, "episodes": null },
-      { "year": 2018, "nr": 5, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2015,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 4,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 5,
+        "episodes": null
+      }
     ],
     "actors": [
       "Randall Park",
@@ -1150,10 +2232,26 @@
     "plot": "Ross Poldark returns home after American Revolutionary War and rebuilds his life with a new business venture, making new enemies and finding a new love where he least expects it.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2016, "nr": 2, "episodes": null },
-      { "year": 2017, "nr": 3, "episodes": null },
-      { "year": 2018, "nr": 4, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Aidan Turner",
@@ -1169,8 +2267,19 @@
     "title": "The Young Pope",
     "plot": "The beginning of the pontificate of Lenny Belardo, alias Pius XIII, the first American Pope in history.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
-    "actors": ["Jude Law", "Diane Keaton", "Silvio Orlando", "Javier Cámara"],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Jude Law",
+      "Diane Keaton",
+      "Silvio Orlando",
+      "Javier Cámara"
+    ],
     "date_added": "2017-11-25"
   },
   {
@@ -1179,7 +2288,13 @@
     "title": "Marseille",
     "plot": "A tale of power, corruption and redemption set against the rich backdrop of the French port city of Marseille.",
     "finished": false,
-    "seasons": [{ "year": 2016, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Gérard Depardieu",
       "Benoît Magimel",
@@ -1195,10 +2310,26 @@
     "plot": "Follows Elliot, a young programmer working as a cyber-security engineer by day, and a vigilante hacker by night.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2016, "nr": 2, "episodes": null },
-      { "year": 2017, "nr": 3, "episodes": null },
-      { "year": 0, "nr": 4, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 3,
+        "episodes": null
+      },
+      {
+        "year": 0,
+        "nr": 4,
+        "episodes": null
+      }
     ],
     "actors": [
       "Rami Malek",
@@ -1215,9 +2346,21 @@
     "plot": "The year is 872, and many of the separate kingdoms of what we now know as England have fallen to the invading Danes, leaving the great kingdom of Wessex standing alone and defiant under the...",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2017, "nr": 2, "episodes": null },
-      { "year": 2018, "nr": 3, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Alexander Dreymon",
@@ -1233,8 +2376,19 @@
     "title": "The Defenders",
     "plot": "Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to fight crime in New York City.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
-    "actors": ["Finn Jones", "Mike Colter", "Charlie Cox", "Jessica Henwick"],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Finn Jones",
+      "Mike Colter",
+      "Charlie Cox",
+      "Jessica Henwick"
+    ],
     "date_added": ""
   },
   {
@@ -1244,22 +2398,47 @@
     "plot": "American boy Rob gets Irish girl Sharon pregnant while they hook up for a week while on a business trip to London.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2016, "nr": 2, "episodes": null },
-      { "year": 2017, "nr": 3, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2016,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 3,
+        "episodes": null
+      }
     ],
-    "actors": ["Sharon Horgan", "Rob Delaney", "Mark Bonnar", "Daniel Lapaine"],
+    "actors": [
+      "Sharon Horgan",
+      "Rob Delaney",
+      "Mark Bonnar",
+      "Daniel Lapaine"
+    ],
     "date_added": ""
   },
   {
     "type": 1,
     "imdbID": "tt4508902",
     "title": "One Punch Man",
-    "plot": "The story of Saitama, a hero who is a hero just for fun & can defeat his enemies with a single punch.",
+    "plot": "The story of Saitama, a hero who is a hero just for fun \u0026 can defeat his enemies with a single punch.",
     "finished": false,
     "seasons": [
-      { "year": 2015, "nr": 1, "episodes": null },
-      { "year": 2019, "nr": 2, "episodes": null }
+      {
+        "year": 2015,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2019,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Makoto Furukawa",
@@ -1275,8 +2454,19 @@
     "title": "Knightfall",
     "plot": "A look at the final days of the Knights Templar during the 14th century.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
-    "actors": ["Simon Merrells", "Nasser Memarzia", "Tom Cullen", "Jim Carter"],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Simon Merrells",
+      "Nasser Memarzia",
+      "Tom Cullen",
+      "Jim Carter"
+    ],
     "date_added": "2019-02-16"
   },
   {
@@ -1286,8 +2476,16 @@
     "plot": "When a young boy disappears, his mother, a police chief, and his friends, must confront terrifying forces in order to get him back.",
     "finished": false,
     "seasons": [
-      { "year": 2016, "nr": 1, "episodes": null },
-      { "year": 2017, "nr": 2, "episodes": null }
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Winona Ryder",
@@ -1304,11 +2502,28 @@
     "plot": "Follows Declan Harp, a half-Irish/half Cree Native-Canadian outlaw who is campaigning to breach the Hudson's Bay Company's monopoly on the fur trade in Canada.",
     "finished": false,
     "seasons": [
-      { "year": 2016, "nr": 1, "episodes": null },
-      { "year": 1, "nr": 2, "episodes": null },
-      { "year": 2018, "nr": 3, "episodes": null }
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 3,
+        "episodes": null
+      }
     ],
-    "actors": ["Jason Momoa", "Landon Liboiron", "Zoe Boyle", "Greg Bryk"],
+    "actors": [
+      "Jason Momoa",
+      "Landon Liboiron",
+      "Zoe Boyle",
+      "Greg Bryk"
+    ],
     "date_added": "2019-09-16"
   },
   {
@@ -1318,8 +2533,16 @@
     "plot": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
     "finished": false,
     "seasons": [
-      { "year": 2016, "nr": 1, "episodes": null },
-      { "year": 2017, "nr": 2, "episodes": null }
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Claire Foy",
@@ -1336,10 +2559,23 @@
     "plot": "A woman struggles to define what it means to be good.",
     "finished": false,
     "seasons": [
-      { "year": 2016, "nr": 1, "episodes": null },
-      { "year": 2017, "nr": 2, "episodes": null }
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2017,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["Kristen Bell", "Jameela Jamil", "Manny Jacinto", "Ted Danson"],
+    "actors": [
+      "Kristen Bell",
+      "Jameela Jamil",
+      "Manny Jacinto",
+      "Ted Danson"
+    ],
     "date_added": "2018-08-12"
   },
   {
@@ -1349,8 +2585,16 @@
     "plot": "Josh Futturman, a janitor by day and a gamer by night, is recruited by mysterious visitors to travel through time to prevent the extinction of humanity.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2019, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2019,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Eliza Coupe",
@@ -1367,10 +2611,23 @@
     "plot": "A con man on the run from a vicious gangster takes cover by assuming the identity of his prison cellmate, Pete, reuniting with his estranged family, that threatens to drag him into a world ...",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["Giovanni Ribisi", "Marin Ireland", "Shane McRae", "Libe Barer"],
+    "actors": [
+      "Giovanni Ribisi",
+      "Marin Ireland",
+      "Shane McRae",
+      "Libe Barer"
+    ],
     "date_added": "2018-10-02"
   },
   {
@@ -1379,8 +2636,19 @@
     "title": "Tom Clancy's Jack Ryan",
     "plot": "Tom Clancy's Jack Ryan follows an up-and-coming CIA analyst thrust into a dangerous field assignment for the first time. The series follows Ryan as he uncovers a pattern in terrorist communication that launches him into the center of a dangerous gambit with a new breed of terrorism that threatens destruction on a global scale.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
-    "actors": ["Ali Suliman", "John Krasinski", "Wendell Pierce", "Karim Zein"],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Ali Suliman",
+      "John Krasinski",
+      "Wendell Pierce",
+      "Karim Zein"
+    ],
     "date_added": "2017-11-27"
   },
   {
@@ -1390,10 +2658,23 @@
     "plot": "David Haller is a troubled young man diagnosed as schizophrenic, but after a strange encounter, he discovers special powers that will change his life forever.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 0, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 0,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["Dan Stevens", "Rachel Keller", "Aubrey Plaza", "Bill Irwin"],
+    "actors": [
+      "Dan Stevens",
+      "Rachel Keller",
+      "Aubrey Plaza",
+      "Bill Irwin"
+    ],
     "date_added": ""
   },
   {
@@ -1403,8 +2684,16 @@
     "plot": "The early life of Queen Victoria, from her ascension to the throne at the tender age of 18 to her courtship and marriage to Prince Albert.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Jenna Coleman",
@@ -1421,8 +2710,16 @@
     "plot": "Ten years before Kirk, Spock and the Enterprise, the USS Discovery discovers new worlds and lifeforms as one Starfleet officer learns to understand all things alien.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2019, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2019,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Jason Isaacs",
@@ -1438,7 +2735,13 @@
     "title": "Designated Survivor",
     "plot": "A low-level Cabinet member becomes President of the United States after a catastrophic attack kills everyone above him in the Presidential line of succession.",
     "finished": false,
-    "seasons": [{ "year": 2016, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2016,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Kiefer Sutherland",
       "Natascha McElhone",
@@ -1453,7 +2756,13 @@
     "title": "Barry",
     "plot": "A hit man from the Midwest moves to Los Angeles and gets caught up in the city's theatre arts scene.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Bill Hader",
       "Stephen Root",
@@ -1468,8 +2777,18 @@
     "title": "Disenchantment",
     "plot": "The medieval misadventures of a hard-drinking princess, her feisty elf, and her personal demon.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
-    "actors": ["Abbi Jacobson", "Nat Faxon", "Eric André"],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Abbi Jacobson",
+      "Nat Faxon",
+      "Eric André"
+    ],
     "date_added": "2018-08-25"
   },
   {
@@ -1479,8 +2798,16 @@
     "plot": "In a world where superheroes have been real for decades, an accountant with no superpowers comes to realize his city is owned by a super villain. As he struggles to uncover this conspiracy, he falls in league with a strange blue superhero.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Peter Serafinowicz",
@@ -1496,7 +2823,13 @@
     "title": "Maniac",
     "plot": "An institutionalized man dreams of a new life in a fantasy world.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Aaralyn Anderson",
       "Geoffrey Cantor",
@@ -1513,8 +2846,16 @@
     "plot": "Follows the crew of the not-so-functional exploratory ship in the Earth's interstellar fleet, 400 years in the future.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      }
     ],
     "actors": [
       "Seth MacFarlane",
@@ -1530,7 +2871,13 @@
     "title": "Dear White People",
     "plot": "At a predominantly white Ivy League college, a diverse group of students navigate various forms of racial and other types of discrimination.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Tessa Thompson",
       "Marque Richardson",
@@ -1545,8 +2892,19 @@
     "title": "GLOW",
     "plot": "A look at the personal and professional lives of a group of women who perform for a wrestling organization in Los Angeles.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
-    "actors": ["Sydelle Noel", "Marc Maron", "Alison Brie", "Betty Gilpin"],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Sydelle Noel",
+      "Marc Maron",
+      "Alison Brie",
+      "Betty Gilpin"
+    ],
     "date_added": "2018-08-23"
   },
   {
@@ -1556,9 +2914,21 @@
     "plot": "Set in a dystopian future, a woman is forced to live as a concubine under a fundamentalist theocratic dictatorship.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null },
-      { "year": 1, "nr": 3, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      },
+      {
+        "year": 1,
+        "nr": 3,
+        "episodes": null
+      }
     ],
     "actors": [
       "Elisabeth Moss",
@@ -1574,7 +2944,13 @@
     "title": "Justice League Unlimited",
     "plot": "A continuation of the Justice League animated series finds the original members of the team joined in their battle against crime and evil by dozens of other heroes from the DC comics universe.",
     "finished": false,
-    "seasons": [{ "year": 2006, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2006,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Kevin Conroy",
       "Susan Eisenberg",
@@ -1589,7 +2965,13 @@
     "title": "Impulse",
     "plot": "A young woman discovers she has the extraordinary power of teleportation.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Maddie Hasson",
       "Sarah Desjardins",
@@ -1604,8 +2986,19 @@
     "title": "Final Space",
     "plot": "An astronaut named Gary and his planet-destroying sidekick called Mooncake embark on serialized journeys through space in order to unlock the mystery of where the universe actually ends and if it actually does exist.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
-    "actors": ["Fred Armisen", "Tom Kenny", "Olan Rogers", "Tika Sumpter"],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Fred Armisen",
+      "Tom Kenny",
+      "Olan Rogers",
+      "Tika Sumpter"
+    ],
     "date_added": "2019-03-11"
   },
   {
@@ -1614,8 +3007,19 @@
     "title": "Money Heist",
     "plot": "Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
-    "actors": ["Úrsula Corberó", "Itziar Ituño", "Álvaro Morte", "Paco Tous"],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Úrsula Corberó",
+      "Itziar Ituño",
+      "Álvaro Morte",
+      "Paco Tous"
+    ],
     "date_added": "2018-07-11"
   },
   {
@@ -1624,7 +3028,13 @@
     "title": "The Looming Tower",
     "plot": "Tracing the rising threat of Osama bin Laden and Al-Qaeda, it takes a controversial look at how the rivalry between the CIA and FBI inadvertently might have set the stage for the tragedy of 9/11 and the war in Iraq.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Sullivan Jones",
       "Kelly P. Williams",
@@ -1640,10 +3050,20 @@
     "plot": "Inspired by the classic video game series, Castlevania is a dark medieval fantasy following the last surviving member of the disgraced Belmont clan, trying to save Eastern Europe from extinction at the hand of Vlad Dracula Tepe himself.",
     "finished": false,
     "seasons": [
-      { "year": 2017, "nr": 1, "episodes": null },
-      { "year": 2018, "nr": 2, "episodes": null }
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 2018,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["N/A"],
+    "actors": [
+      "N/A"
+    ],
     "date_added": ""
   },
   {
@@ -1652,7 +3072,13 @@
     "title": "Patrick Melrose",
     "plot": "Based on the Patrick Melrose Novels by Edward St. Aubyn.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Benedict Cumberbatch",
       "Jennifer Jason Leigh",
@@ -1667,7 +3093,13 @@
     "title": "The Rain",
     "plot": "After a brutal virus wipes out most of the population, two young siblings embark on a perilous search for safety.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Alba August",
       "Lucas Lynggaard Tønnesen",
@@ -1682,7 +3114,13 @@
     "title": "Hanna",
     "plot": "A high-concept thriller and coming-of-age drama, Hanna follows the journey of an extraordinary young girl raised in the forest, as she evades the relentless pursuit of an off-book CIA agent and tries to unearth the truth behind who she is.",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Esme Creed-Miles",
       "Mireille Enos",
@@ -1697,7 +3135,13 @@
     "title": "Kantaro: The Sweet Tooth Salaryman",
     "plot": "A stoic book salesman leads a double life as he plays hooky from work to write his sweets blog. In his journey to attain a glimpse of sweets heaven Kantaro samples various Japanese and Western sweets.",
     "finished": false,
-    "seasons": [{ "year": 2017, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2017,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Matsuya Onoe",
       "Ren Ishikawa",
@@ -1713,10 +3157,23 @@
     "plot": "A security operative hunts for an assassin. Based on the Villanelle novellas by Luke Jennings.",
     "finished": false,
     "seasons": [
-      { "year": 2018, "nr": 1, "episodes": null },
-      { "year": 1, "nr": 2, "episodes": null }
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      },
+      {
+        "year": 1,
+        "nr": 2,
+        "episodes": null
+      }
     ],
-    "actors": ["Sandra Oh", "Jodie Comer", "Fiona Shaw", "Kim Bodnia"],
+    "actors": [
+      "Sandra Oh",
+      "Jodie Comer",
+      "Fiona Shaw",
+      "Kim Bodnia"
+    ],
     "date_added": "2019-04-30"
   },
   {
@@ -1725,7 +3182,13 @@
     "title": "Chernobyl",
     "plot": "In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Jared Harris",
       "Stellan Skarsgård",
@@ -1740,7 +3203,13 @@
     "title": "Bodyguard",
     "plot": "A contemporary thriller featuring the Royalty and Specialist Protection Branch of London's Metropolitan Police Service.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Richard Madden",
       "Sophie Rundle",
@@ -1755,7 +3224,13 @@
     "title": "Russian Doll",
     "plot": "A young woman in New York tries to escape from a party that's being thrown in her honor.",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "George Aloi",
       "Elizabeth Ashley",
@@ -1770,8 +3245,19 @@
     "title": "Chilling Adventures of Sabrina",
     "plot": "As her 16th birthday nears, Sabrina must choose between the witch world of her family and the human world of her friends. Based on the Archie comic.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
-    "actors": ["Kiernan Shipka", "Ross Lynch", "Lucy Davis", "Chance Perdomo"],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Kiernan Shipka",
+      "Ross Lynch",
+      "Lucy Davis",
+      "Chance Perdomo"
+    ],
     "date_added": "2018-11-09"
   },
   {
@@ -1780,8 +3266,19 @@
     "title": "Origin",
     "plot": "A group of strangers struggle for survival aboard a spaceship heading to a distant planet.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
-    "actors": ["Natalia Tena", "Tom Felton", "Sen Mitsuji", "Nora Arnezeder"],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Natalia Tena",
+      "Tom Felton",
+      "Sen Mitsuji",
+      "Nora Arnezeder"
+    ],
     "date_added": "2018-11-18"
   },
   {
@@ -1790,7 +3287,13 @@
     "title": "Gen: Lock",
     "plot": "N/A",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Dakota Fanning",
       "Blaine Gibson",
@@ -1805,8 +3308,19 @@
     "title": "After Life",
     "plot": "After Tony's wife dies unexpectedly, his nice-guy persona is altered into an impulsive, devil-may-care attitude taking his old world by storm.",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
-    "actors": ["Ricky Gervais", "Tom Basden", "Tony Way", "Diane Morgan"],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
+    "actors": [
+      "Ricky Gervais",
+      "Tom Basden",
+      "Tony Way",
+      "Diane Morgan"
+    ],
     "date_added": "2019-07-06"
   },
   {
@@ -1815,7 +3329,13 @@
     "title": "The Dragon Prince",
     "plot": "Two human princes forge an unlikely bond with the elfin assassin sent to kill them, embarking on an epic quest to bring peace to their warring lands.",
     "finished": false,
-    "seasons": [{ "year": 2018, "nr": 1, "episodes": null }],
+    "seasons": [
+      {
+        "year": 2018,
+        "nr": 1,
+        "episodes": null
+      }
+    ],
     "actors": [
       "Jack De Sena",
       "Paula Burrows",
@@ -1827,11 +3347,120 @@
   {
     "type": 1,
     "imdbID": "tt9561862",
-    "title": "Love, Death & Robots",
+    "title": "Love, Death \u0026 Robots",
     "plot": "A collection of animated short stories that span various genres including science fiction, fantasy, horror and comedy.",
     "finished": false,
-    "seasons": [{ "year": 2019, "nr": 1, "episodes": null }],
-    "actors": ["Scott Whyte", "Nolan North", "Matthew Yang King"],
+    "seasons": [
+      {
+        "year": 2019,
+        "nr": 1,
+        "episodes": [
+          {
+            "imdbID": "tt9781722",
+            "nr": 1,
+            "title": "Sonnie's Edge",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788490",
+            "nr": 4,
+            "title": "Suits",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788492",
+            "nr": 5,
+            "title": "Sucker of Souls",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788496",
+            "nr": 7,
+            "title": "Beyond the Aquila Rift",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788500",
+            "nr": 9,
+            "title": "The Dump",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788502",
+            "nr": 10,
+            "title": "Shape-Shifters",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788504",
+            "nr": 11,
+            "title": "Helping Hand",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788506",
+            "nr": 12,
+            "title": "Fish Night",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788508",
+            "nr": 13,
+            "title": "Lucky 13",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788510",
+            "nr": 14,
+            "title": "Zima Blue",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788512",
+            "nr": 15,
+            "title": "Blind Spot",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788514",
+            "nr": 16,
+            "title": "Ice Age",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788516",
+            "nr": 17,
+            "title": "Alternate Histories",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          },
+          {
+            "imdbID": "tt9788518",
+            "nr": 18,
+            "title": "Secret War",
+            "watched": true,
+            "date__watched": "2019-10-17"
+          }
+        ]
+      }
+    ],
+    "actors": [
+      "Scott Whyte",
+      "Nolan North",
+      "Matthew Yang King"
+    ],
     "date_added": "2019-05-02"
   }
 ]

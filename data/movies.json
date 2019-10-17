@@ -5,7 +5,11 @@
     "title": "IO",
     "year": 2019,
     "score": 0,
-    "actors": ["Margaret Qualley", "Danny Huston", "Anthony Mackie"],
+    "actors": [
+      "Margaret Qualley",
+      "Danny Huston",
+      "Anthony Mackie"
+    ],
     "length": "96 min",
     "plot": "As a young scientist searches for a way to save a dying Earth, she finds a connection with a man who's racing to catch the last shuttle off the planet.\n",
     "director": "Jonathan Helpert",
@@ -99,7 +103,12 @@
     "title": "12 Angry Men",
     "year": 1957,
     "score": 0,
-    "actors": ["Martin Balsam", "John Fiedler", "Lee J. Cobb", "E.G. Marshall"],
+    "actors": [
+      "Martin Balsam",
+      "John Fiedler",
+      "Lee J. Cobb",
+      "E.G. Marshall"
+    ],
     "length": "96 min",
     "plot": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
     "director": "Sidney Lumet",
@@ -189,7 +198,12 @@
     "title": "The Andromeda Strain",
     "year": 1971,
     "score": 0,
-    "actors": ["Arthur Hill", "David Wayne", "James Olson", "Kate Reid"],
+    "actors": [
+      "Arthur Hill",
+      "David Wayne",
+      "James Olson",
+      "Kate Reid"
+    ],
     "length": "131 min",
     "plot": "A group of scientists investigate a deadly new alien virus before it can spread.",
     "director": "Robert Wise",
@@ -222,7 +236,12 @@
     "title": "Conquest of the Planet of the Apes",
     "year": 1972,
     "score": 0,
-    "actors": ["Roddy McDowall", "Don Murray", "Natalie Trundy", "Hari Rhodes"],
+    "actors": [
+      "Roddy McDowall",
+      "Don Murray",
+      "Natalie Trundy",
+      "Hari Rhodes"
+    ],
     "length": "88 min",
     "plot": "In a futuristic world that has embraced ape slavery, Caesar, the son of the late simians Cornelius and Zira, surfaces after almost twenty years of hiding out from the authorities, and prepares for a slave revolt against humanity.",
     "director": "J. Lee Thompson",
@@ -236,7 +255,12 @@
     "title": "The Chinese Connection / Fist of Fury",
     "year": 1972,
     "score": 0,
-    "actors": ["Bruce Lee", "Nora Miao", "James Tien", "Maria Yi"],
+    "actors": [
+      "Bruce Lee",
+      "Nora Miao",
+      "James Tien",
+      "Maria Yi"
+    ],
     "length": "107 min",
     "plot": "A young man seeks vengence for the death of his teacher.",
     "director": "Wei Lo",
@@ -250,7 +274,12 @@
     "title": "The Way of the Dragon",
     "year": 1972,
     "score": 0,
-    "actors": ["Bruce Lee", "Nora Miao", "Chuck Norris", "Ping Ou Wei"],
+    "actors": [
+      "Bruce Lee",
+      "Nora Miao",
+      "Chuck Norris",
+      "Ping Ou Wei"
+    ],
     "length": "90 min",
     "plot": "A man visits his relatives at their restaurant in Italy and has to help them defend against brutal gangsters harassing them.",
     "director": "Bruce Lee",
@@ -283,7 +312,12 @@
     "title": "Enter the Dragon",
     "year": 1973,
     "score": 0,
-    "actors": ["Bruce Lee", "John Saxon", "Jim Kelly", "Ahna Capri"],
+    "actors": [
+      "Bruce Lee",
+      "John Saxon",
+      "Jim Kelly",
+      "Ahna Capri"
+    ],
     "length": "102 min",
     "plot": "A martial artist agrees to spy on a reclusive crime lord using his invitation to a tournament there as cover.",
     "director": "Robert Clouse",
@@ -297,7 +331,12 @@
     "title": "Papillon",
     "year": 1973,
     "score": 0,
-    "actors": ["Steve McQueen", "Dustin Hoffman", "Victor Jory", "Don Gordon"],
+    "actors": [
+      "Steve McQueen",
+      "Dustin Hoffman",
+      "Victor Jory",
+      "Don Gordon"
+    ],
     "length": "151 min",
     "plot": "A man befriends a fellow criminal as the two of them begin serving their sentence on a dreadful prison island, which inspires the man to plot his escape.",
     "director": "Franklin J. Schaffner",
@@ -311,7 +350,12 @@
     "title": "Monty Python and the Holy Grail",
     "year": 1975,
     "score": 0,
-    "actors": ["Graham Chapman", "John Cleese", "Eric Idle", "Terry Gilliam"],
+    "actors": [
+      "Graham Chapman",
+      "John Cleese",
+      "Eric Idle",
+      "Terry Gilliam"
+    ],
     "length": "91 min",
     "plot": "King Arthur and his knights embark on a low-budget search for the Grail, encountering many, very silly obstacles.",
     "director": "Terry Gilliam, Terry Jones",
@@ -401,7 +445,12 @@
     "title": "Taxi Driver",
     "year": 1976,
     "score": 0,
-    "actors": ["Diahnne Abbott", "Frank Adu", "Victor Argo", "Gino Ardito"],
+    "actors": [
+      "Diahnne Abbott",
+      "Frank Adu",
+      "Victor Argo",
+      "Gino Ardito"
+    ],
     "length": "113 min",
     "plot": "A mentally unstable Vietnam War veteran works as a night-time taxi driver in New York City where the perceived decadence and sleaze feeds his urge for violent action, attempting to save a preadolescent prostitute in the process.",
     "director": "Martin Scorsese",
@@ -529,7 +578,12 @@
     "title": "Monthy Python's Life of Brian",
     "year": 1979,
     "score": 0,
-    "actors": ["Graham Chapman", "John Cleese", "Terry Gilliam", "Eric Idle"],
+    "actors": [
+      "Graham Chapman",
+      "John Cleese",
+      "Terry Gilliam",
+      "Eric Idle"
+    ],
     "length": "94 min",
     "plot": "Brian is born on the original Christmas, in the stable next door. He spends his life being mistaken for a messiah.",
     "director": "Terry Jones",
@@ -562,7 +616,12 @@
     "title": "The Blues Brothers",
     "year": 1980,
     "score": 0,
-    "actors": ["John Belushi", "Dan Aykroyd", "James Brown", "Cab Calloway"],
+    "actors": [
+      "John Belushi",
+      "Dan Aykroyd",
+      "James Brown",
+      "Cab Calloway"
+    ],
     "length": "133 min",
     "plot": "Jake Blues, just out from prison, puts together his old band to save the Catholic home where he and brother Elwood were raised.",
     "director": "John Landis",
@@ -653,7 +712,12 @@
     "title": "Absence of Malice",
     "year": 1981,
     "score": 0,
-    "actors": ["Paul Newman", "Sally Field", "Bob Balaban", "Melinda Dillon"],
+    "actors": [
+      "Paul Newman",
+      "Sally Field",
+      "Bob Balaban",
+      "Melinda Dillon"
+    ],
     "length": "116 min",
     "plot": "When a prosecutor leaks a false story that a liquor warehouse owner is involved in the murder of an union head, the man's life begins to unravel.",
     "director": "Sydney Pollack",
@@ -667,7 +731,12 @@
     "title": "48 Hrs.",
     "year": 1982,
     "score": 0,
-    "actors": ["Nick Nolte", "Eddie Murphy", "Annette O'Toole", "Frank McRae"],
+    "actors": [
+      "Nick Nolte",
+      "Eddie Murphy",
+      "Annette O'Toole",
+      "Frank McRae"
+    ],
     "length": "96 min",
     "plot": "A hard-nosed cop reluctantly teams up with a wise-cracking criminal temporarily paroled to him, in order to track down a killer.",
     "director": "Walter Hill",
@@ -738,7 +807,12 @@
     "title": "The Year of Living Dangerously",
     "year": 1982,
     "score": 0,
-    "actors": ["Linda Hunt", "Mel Gibson", "Bembol Roco", "Domingo Landicho"],
+    "actors": [
+      "Linda Hunt",
+      "Mel Gibson",
+      "Bembol Roco",
+      "Domingo Landicho"
+    ],
     "length": "115 min",
     "plot": "A young Australian reporter tries to navigate the political turmoil of Indonesia during the rule of President Sukarno with the help of a diminutive photographer.",
     "director": "Peter Weir",
@@ -828,7 +902,12 @@
     "title": "The Karate Kid",
     "year": 1984,
     "score": 0,
-    "actors": ["Ralph Macchio", "Pat Morita", "Elisabeth Shue", "Martin Kove"],
+    "actors": [
+      "Ralph Macchio",
+      "Pat Morita",
+      "Elisabeth Shue",
+      "Martin Kove"
+    ],
     "length": "126 min",
     "plot": "A martial arts master agrees to teach karate to a bullied teenager.",
     "director": "John G. Avildsen",
@@ -956,7 +1035,12 @@
     "title": "Ferris Bueller's Day Off",
     "year": 1986,
     "score": 0,
-    "actors": ["Matthew Broderick", "Alan Ruck", "Mia Sara", "Jeffrey Jones"],
+    "actors": [
+      "Matthew Broderick",
+      "Alan Ruck",
+      "Mia Sara",
+      "Jeffrey Jones"
+    ],
     "length": "103 min",
     "plot": "A high school wise guy is determined to have a day off from school, despite what the principal thinks of that.",
     "director": "John Hughes",
@@ -1046,7 +1130,12 @@
     "title": "Top Gun",
     "year": 1986,
     "score": 0,
-    "actors": ["Tom Cruise", "Kelly McGillis", "Val Kilmer", "Anthony Edwards"],
+    "actors": [
+      "Tom Cruise",
+      "Kelly McGillis",
+      "Val Kilmer",
+      "Anthony Edwards"
+    ],
     "length": "110 min",
     "plot": "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.",
     "director": "Tony Scott",
@@ -1079,7 +1168,12 @@
     "title": "The Last Emperor",
     "year": 1987,
     "score": 0,
-    "actors": ["John Lone", "Joan Chen", "Peter O'Toole", "Ruocheng Ying"],
+    "actors": [
+      "John Lone",
+      "Joan Chen",
+      "Peter O'Toole",
+      "Ruocheng Ying"
+    ],
     "length": "163 min",
     "plot": "The story of the final Emperor of China.",
     "director": "Bernardo Bertolucci",
@@ -1093,7 +1187,12 @@
     "title": "Moonstruck",
     "year": 1987,
     "score": 0,
-    "actors": ["Cher", "Nicolas Cage", "Vincent Gardenia", "Olympia Dukakis"],
+    "actors": [
+      "Cher",
+      "Nicolas Cage",
+      "Vincent Gardenia",
+      "Olympia Dukakis"
+    ],
     "length": "102 min",
     "plot": "Loretta Castorini, a book keeper from Brooklyn, New York, finds herself in a difficult situation when she falls for the brother of the man she has agreed to marry.",
     "director": "Norman Jewison",
@@ -1126,7 +1225,12 @@
     "title": "Raising Arizona",
     "year": 1987,
     "score": 0,
-    "actors": ["Nicolas Cage", "Holly Hunter", "Trey Wilson", "John Goodman"],
+    "actors": [
+      "Nicolas Cage",
+      "Holly Hunter",
+      "Trey Wilson",
+      "John Goodman"
+    ],
     "length": "94 min",
     "plot": "When a childless couple of an ex-con and an ex-cop decide to help themselves to one of another family's quintuplets, their lives become more complicated than they anticipated.",
     "director": "Joel Coen, Ethan Coen",
@@ -1159,7 +1263,12 @@
     "title": "Spaceballs",
     "year": 1987,
     "score": 0,
-    "actors": ["Mel Brooks", "John Candy", "Rick Moranis", "Bill Pullman"],
+    "actors": [
+      "Mel Brooks",
+      "John Candy",
+      "Rick Moranis",
+      "Bill Pullman"
+    ],
     "length": "96 min",
     "plot": "Planet Spaceballs' President Skroob sends Lord Dark Helmet to steal planet Druidia's abundant supply of air to replenish their own, and only Lone Starr can stop them.",
     "director": "Mel Brooks",
@@ -1173,7 +1282,12 @@
     "title": "Akira",
     "year": 1988,
     "score": 0,
-    "actors": ["Mitsuo Iwata", "Nozomu Sasaki", "Mami Koyama", "Tesshô Genda"],
+    "actors": [
+      "Mitsuo Iwata",
+      "Nozomu Sasaki",
+      "Mami Koyama",
+      "Tesshô Genda"
+    ],
     "length": "124 min",
     "plot": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.",
     "director": "Katsuhiro Ôtomo",
@@ -1187,7 +1301,12 @@
     "title": "Beetlejuice",
     "year": 1988,
     "score": 0,
-    "actors": ["Alec Baldwin", "Geena Davis", "Annie McEnroe", "Maurice Page"],
+    "actors": [
+      "Alec Baldwin",
+      "Geena Davis",
+      "Annie McEnroe",
+      "Maurice Page"
+    ],
     "length": "92 min",
     "plot": "A couple of recently deceased ghosts contract the services of a \"bio-exorcist\" in order to remove the obnoxious new owners of their house.",
     "director": "Tim Burton",
@@ -1201,7 +1320,12 @@
     "title": "Big",
     "year": 1988,
     "score": 0,
-    "actors": ["Tom Hanks", "Elizabeth Perkins", "Robert Loggia", "John Heard"],
+    "actors": [
+      "Tom Hanks",
+      "Elizabeth Perkins",
+      "Robert Loggia",
+      "John Heard"
+    ],
     "length": "104 min",
     "plot": "After wishing to be made big, a teenage boy wakes the next morning to find himself mysteriously in the body of an adult.",
     "director": "Penny Marshall",
@@ -1215,7 +1339,12 @@
     "title": "Cocktail",
     "year": 1988,
     "score": 0,
-    "actors": ["Tom Cruise", "Bryan Brown", "Elisabeth Shue", "Lisa Banes"],
+    "actors": [
+      "Tom Cruise",
+      "Bryan Brown",
+      "Elisabeth Shue",
+      "Lisa Banes"
+    ],
     "length": "104 min",
     "plot": "A talented New York City bartender takes a job at a bar in Jamaica and falls in love.",
     "director": "Roger Donaldson",
@@ -1362,7 +1491,12 @@
     "title": "Willow",
     "year": 1988,
     "score": 0,
-    "actors": ["Val Kilmer", "Joanne Whalley", "Warwick Davis", "Jean Marsh"],
+    "actors": [
+      "Val Kilmer",
+      "Joanne Whalley",
+      "Warwick Davis",
+      "Jean Marsh"
+    ],
     "length": "126 min",
     "plot": "A reluctant dwarf must play a critical role in protecting a special baby from an evil queen.",
     "director": "Ron Howard",
@@ -1490,7 +1624,12 @@
     "title": "Field of Dreams",
     "year": 1989,
     "score": 0,
-    "actors": ["Kevin Costner", "Amy Madigan", "Gaby Hoffmann", "Ray Liotta"],
+    "actors": [
+      "Kevin Costner",
+      "Amy Madigan",
+      "Gaby Hoffmann",
+      "Ray Liotta"
+    ],
     "length": "107 min",
     "plot": "An Iowa corn farmer, hearing voices, interprets them as a command to build a baseball diamond in his fields; he does, and the 1919 Chicago White Sox come.",
     "director": "Phil Alden Robinson",
@@ -1542,7 +1681,12 @@
     "title": "Next of Kin",
     "year": 1989,
     "score": 0,
-    "actors": ["Patrick Swayze", "Liam Neeson", "Adam Baldwin", "Helen Hunt"],
+    "actors": [
+      "Patrick Swayze",
+      "Liam Neeson",
+      "Adam Baldwin",
+      "Helen Hunt"
+    ],
     "length": "108 min",
     "plot": "Truman, a Chicago cop, sets out to find the killer of his brother. Meanwhile, another of his brothers, Briar (a hillbilly) decides to find the killer himself.",
     "director": "John Irvin",
@@ -1575,7 +1719,12 @@
     "title": "When Harry Met Sally...",
     "year": 1989,
     "score": 0,
-    "actors": ["Billy Crystal", "Meg Ryan", "Carrie Fisher", "Bruno Kirby"],
+    "actors": [
+      "Billy Crystal",
+      "Meg Ryan",
+      "Carrie Fisher",
+      "Bruno Kirby"
+    ],
     "length": "96 min",
     "plot": "Harry and Sally have known each other for years, and are very good friends, but they fear sex would ruin the friendship.",
     "director": "Rob Reiner",
@@ -1589,7 +1738,12 @@
     "title": "Another 48 Hrs.",
     "year": 1990,
     "score": 0,
-    "actors": ["Eddie Murphy", "Nick Nolte", "Brion James", "Kevin Tighe"],
+    "actors": [
+      "Eddie Murphy",
+      "Nick Nolte",
+      "Brion James",
+      "Kevin Tighe"
+    ],
     "length": "93 min",
     "plot": "Jack Cates once again enlists the aid of ex-con Reggie Hammond--this time, to take down The Iceman, a ruthless drug lord operating in the San Francisco bay area.",
     "director": "Walter Hill",
@@ -1660,7 +1814,12 @@
     "title": "Days of Thunder",
     "year": 1990,
     "score": 0,
-    "actors": ["Tom Cruise", "Nicole Kidman", "Robert Duvall", "Randy Quaid"],
+    "actors": [
+      "Tom Cruise",
+      "Nicole Kidman",
+      "Robert Duvall",
+      "Randy Quaid"
+    ],
     "length": "107 min",
     "plot": "A young hot-shot stock car driver gets his chance to compete at the top level.",
     "director": "Tony Scott",
@@ -1750,7 +1909,12 @@
     "title": "Home Alone",
     "year": 1990,
     "score": 0,
-    "actors": ["Macaulay Culkin", "Joe Pesci", "Daniel Stern", "John Heard"],
+    "actors": [
+      "Macaulay Culkin",
+      "Joe Pesci",
+      "Daniel Stern",
+      "John Heard"
+    ],
     "length": "103 min",
     "plot": "An eight-year-old trouble-maker must protect his home from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.",
     "director": "Chris Columbus",
@@ -1764,7 +1928,12 @@
     "title": "The Hunt for Red October",
     "year": 1990,
     "score": 0,
-    "actors": ["Sean Connery", "Alec Baldwin", "Scott Glenn", "Sam Neill"],
+    "actors": [
+      "Sean Connery",
+      "Alec Baldwin",
+      "Scott Glenn",
+      "Sam Neill"
+    ],
     "length": "135 min",
     "plot": "In November 1984, the Soviet Union's best submarine captain in their newest sub violates orders and heads for the USA. Is he trying to defect or to start a war?",
     "director": "John McTiernan",
@@ -1778,7 +1947,12 @@
     "title": "Ju Dou",
     "year": 1990,
     "score": 0,
-    "actors": ["Ma Chong", "Zhijun Cong", "Wu Fa", "Li Gong"],
+    "actors": [
+      "Ma Chong",
+      "Zhijun Cong",
+      "Wu Fa",
+      "Li Gong"
+    ],
     "length": "95 min",
     "plot": "A woman married to the brutal and infertile owner of a dye mill in rural China conceives a boy with her husband's nephew but is forced to raise her son as her husband's heir without ...",
     "director": "Yimou Zhang, Fengliang Yang",
@@ -1868,7 +2042,12 @@
     "title": "Tremors",
     "year": 1990,
     "score": 0,
-    "actors": ["Kevin Bacon", "Fred Ward", "Finn Carter", "Michael Gross"],
+    "actors": [
+      "Kevin Bacon",
+      "Fred Ward",
+      "Finn Carter",
+      "Michael Gross"
+    ],
     "length": "96 min",
     "plot": "Natives of a small isolated town defend themselves against strange underground creatures which are killing them one by one.",
     "director": "Ron Underwood",
@@ -1901,7 +2080,12 @@
     "title": "Raise the Red Lantern",
     "year": 1991,
     "score": 0,
-    "actors": ["Li Gong", "Saifei He", "Cuifen Cao", "Jingwu Ma"],
+    "actors": [
+      "Li Gong",
+      "Saifei He",
+      "Cuifen Cao",
+      "Jingwu Ma"
+    ],
     "length": "125 min",
     "plot": "A young woman becomes the fourth wife of a wealthy lord, and must learn to live with the strict rules and tensions within the household.",
     "director": "Yimou Zhang",
@@ -1953,7 +2137,12 @@
     "title": "JFK",
     "year": 1991,
     "score": 0,
-    "actors": ["Sally Kirkland", "Anthony Ramirez", "Ray LePere", "Steve Reed"],
+    "actors": [
+      "Sally Kirkland",
+      "Anthony Ramirez",
+      "Ray LePere",
+      "Steve Reed"
+    ],
     "length": "189 min",
     "plot": "New Orleans District Attorney Jim Garrison discovers there's more to the Kennedy assassination than the official story.",
     "director": "Oliver Stone",
@@ -2005,7 +2194,12 @@
     "title": "Point Break",
     "year": 1991,
     "score": 0,
-    "actors": ["Patrick Swayze", "Keanu Reeves", "Gary Busey", "Lori Petty"],
+    "actors": [
+      "Patrick Swayze",
+      "Keanu Reeves",
+      "Gary Busey",
+      "Lori Petty"
+    ],
     "length": "122 min",
     "plot": "An FBI agent goes undercover to catch a gang of surfers who may be bank robbers.",
     "director": "Kathryn Bigelow",
@@ -2073,7 +2267,7 @@
   {
     "type": 0,
     "imdbID": "tt0103074",
-    "title": "Thelma & Louise",
+    "title": "Thelma \u0026 Louise",
     "year": 1991,
     "score": 0,
     "actors": [
@@ -2114,9 +2308,14 @@
     "title": "The Bodyguard",
     "year": 1992,
     "score": 0,
-    "actors": ["Kevin Costner", "Whitney Houston", "Gary Kemp", "Bill Cobbs"],
+    "actors": [
+      "Kevin Costner",
+      "Whitney Houston",
+      "Gary Kemp",
+      "Bill Cobbs"
+    ],
     "length": "129 min",
-    "plot": "A former Secret Service agent takes on the job of bodyguard to an R&B singer, whose lifestyle is most unlike a President's.",
+    "plot": "A former Secret Service agent takes on the job of bodyguard to an R\u0026B singer, whose lifestyle is most unlike a President's.",
     "director": "Mick Jackson",
     "watched": false,
     "date_watched": "",
@@ -2128,7 +2327,12 @@
     "title": "Far and Away",
     "year": 1992,
     "score": 0,
-    "actors": ["Tom Cruise", "Nicole Kidman", "Thomas Gibson", "Robert Prosky"],
+    "actors": [
+      "Tom Cruise",
+      "Nicole Kidman",
+      "Thomas Gibson",
+      "Robert Prosky"
+    ],
     "length": "140 min",
     "plot": "A young man leaves Ireland with his landlord's daughter after some trouble with her father, and they dream of owning land at the big give-away in Oklahoma ca. 1893. When they get to the new...",
     "director": "Ron Howard",
@@ -2142,7 +2346,12 @@
     "title": "A Few Good Men",
     "year": 1992,
     "score": 0,
-    "actors": ["Tom Cruise", "Jack Nicholson", "Demi Moore", "Kevin Bacon"],
+    "actors": [
+      "Tom Cruise",
+      "Jack Nicholson",
+      "Demi Moore",
+      "Kevin Bacon"
+    ],
     "length": "138 min",
     "plot": "Neo military lawyer Kaffee defends Marines accused of murder; they contend they were acting under orders.",
     "director": "Rob Reiner",
@@ -2213,7 +2422,12 @@
     "title": "Patriot Games",
     "year": 1992,
     "score": 0,
-    "actors": ["Harrison Ford", "Anne Archer", "Patrick Bergin", "Sean Bean"],
+    "actors": [
+      "Harrison Ford",
+      "Anne Archer",
+      "Patrick Bergin",
+      "Sean Bean"
+    ],
     "length": "117 min",
     "plot": "When CIA Analyst Jack Ryan interferes with an IRA assassination, a renegade faction targets him and his family for revenge.",
     "director": "Phillip Noyce",
@@ -2227,7 +2441,12 @@
     "title": "The Story of Qiu Ju",
     "year": 1992,
     "score": 0,
-    "actors": ["Li Gong", "Peiqi Liu", "Liuchun Yang", "Kesheng Lei"],
+    "actors": [
+      "Li Gong",
+      "Peiqi Liu",
+      "Liuchun Yang",
+      "Kesheng Lei"
+    ],
     "length": "100 min",
     "plot": "A pregnant peasant woman seeks redress from the Chinese bureaucracy after the village chief kicks her husband in the groin in this comedy of justice. As she is frustrated by each level of ...",
     "director": "Yimou Zhang",
@@ -2241,7 +2460,12 @@
     "title": "Reservoir Dogs",
     "year": 1992,
     "score": 0,
-    "actors": ["Harvey Keitel", "Tim Roth", "Michael Madsen", "Chris Penn"],
+    "actors": [
+      "Harvey Keitel",
+      "Tim Roth",
+      "Michael Madsen",
+      "Chris Penn"
+    ],
     "length": "99 min",
     "plot": "After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
     "director": "Quentin Tarantino",
@@ -2350,7 +2574,12 @@
     "title": "The Joy Luck Club",
     "year": 1993,
     "score": 0,
-    "actors": ["Kieu Chinh", "Tsai Chin", "France Nuyen", "Lisa Lu"],
+    "actors": [
+      "Kieu Chinh",
+      "Tsai Chin",
+      "France Nuyen",
+      "Lisa Lu"
+    ],
     "length": "139 min",
     "plot": "The life histories of four Asian women and their daughters reflect and guide each other.",
     "director": "Wayne Wang",
@@ -2440,7 +2669,12 @@
     "title": "Sleepless in Seattle",
     "year": 1993,
     "score": 0,
-    "actors": ["Tom Hanks", "Ross Malinger", "Rita Wilson", "Victor Garber"],
+    "actors": [
+      "Tom Hanks",
+      "Ross Malinger",
+      "Rita Wilson",
+      "Victor Garber"
+    ],
     "length": "105 min",
     "plot": "A recently widowed man's son calls a radio talk-show in an attempt to find his father a partner.",
     "director": "Nora Ephron",
@@ -2473,7 +2707,12 @@
     "title": "Ace Ventura: Pet Detective",
     "year": 1994,
     "score": 0,
-    "actors": ["Jim Carrey", "Courteney Cox", "Sean Young", "Tone Loc"],
+    "actors": [
+      "Jim Carrey",
+      "Courteney Cox",
+      "Sean Young",
+      "Tone Loc"
+    ],
     "length": "86 min",
     "plot": "A goofy detective specializing in animals goes in search of a missing dolphin mascot of a football team.",
     "director": "Tom Shadyac",
@@ -2487,7 +2726,12 @@
     "title": "Blown Away",
     "year": 1994,
     "score": 0,
-    "actors": ["Jeff Bridges", "Tommy Lee Jones", "Suzy Amis", "Lloyd Bridges"],
+    "actors": [
+      "Jeff Bridges",
+      "Tommy Lee Jones",
+      "Suzy Amis",
+      "Lloyd Bridges"
+    ],
     "length": "121 min",
     "plot": "An Irish bomber escapes from prison and targets a member of the Boston bomb squad.",
     "director": "Stephen Hopkins",
@@ -2536,10 +2780,15 @@
   {
     "type": 0,
     "imdbID": "tt0109686",
-    "title": "Dumb & Dumber",
+    "title": "Dumb \u0026 Dumber",
     "year": 1994,
     "score": 0,
-    "actors": ["Jim Carrey", "Jeff Daniels", "Lauren Holly", "Mike Starr"],
+    "actors": [
+      "Jim Carrey",
+      "Jeff Daniels",
+      "Lauren Holly",
+      "Mike Starr"
+    ],
     "length": "107 min",
     "plot": "The cross-country adventures of two good-hearted but incredibly stupid friends.",
     "director": "Peter Farrelly, Bobby Farrelly",
@@ -2572,7 +2821,12 @@
     "title": "Four Weddings and a Funeral",
     "year": 1994,
     "score": 0,
-    "actors": ["Hugh Grant", "James Fleet", "Simon Callow", "John Hannah"],
+    "actors": [
+      "Hugh Grant",
+      "James Fleet",
+      "Simon Callow",
+      "John Hannah"
+    ],
     "length": "117 min",
     "plot": "Over the course of five social occasions, a committed bachelor must consider the notion that he may have discovered love.",
     "director": "Mike Newell",
@@ -2607,7 +2861,12 @@
     "title": "Legends of the Fall",
     "year": 1994,
     "score": 0,
-    "actors": ["Brad Pitt", "Anthony Hopkins", "Aidan Quinn", "Julia Ormond"],
+    "actors": [
+      "Brad Pitt",
+      "Anthony Hopkins",
+      "Aidan Quinn",
+      "Julia Ormond"
+    ],
     "length": "133 min",
     "plot": "In the 1900s, three brothers and their father living in the remote wilderness of Montana are affected by betrayal, history, love, nature, and war.",
     "director": "Edward Zwick",
@@ -2621,7 +2880,12 @@
     "title": "Léon: The Professional",
     "year": 1994,
     "score": 0,
-    "actors": ["Jean Reno", "Gary Oldman", "Natalie Portman", "Danny Aiello"],
+    "actors": [
+      "Jean Reno",
+      "Gary Oldman",
+      "Natalie Portman",
+      "Danny Aiello"
+    ],
     "length": "110 min",
     "plot": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. Léon and Mathilda form an unusual relationship, as she becomes his protégée and learns the assassin's trade.",
     "director": "Luc Besson",
@@ -2635,7 +2899,12 @@
     "title": "The Mask",
     "year": 1994,
     "score": 0,
-    "actors": ["Jim Carrey", "Peter Riegert", "Peter Greene", "Amy Yasbeck"],
+    "actors": [
+      "Jim Carrey",
+      "Peter Riegert",
+      "Peter Greene",
+      "Amy Yasbeck"
+    ],
     "length": "101 min",
     "plot": "Bank clerk Stanley Ipkiss is transformed into a manic superhero when he wears a mysterious mask.",
     "director": "Chuck Russell",
@@ -2649,7 +2918,12 @@
     "title": "Maverick",
     "year": 1994,
     "score": 0,
-    "actors": ["Mel Gibson", "Jodie Foster", "James Garner", "Graham Greene"],
+    "actors": [
+      "Mel Gibson",
+      "Jodie Foster",
+      "James Garner",
+      "Graham Greene"
+    ],
     "length": "127 min",
     "plot": "Bret Maverick, needing money for a poker tournament, faces various comic mishaps and challenges, including a charming woman thief.",
     "director": "Richard Donner",
@@ -2682,7 +2956,12 @@
     "title": "Pulp Fiction",
     "year": 1994,
     "score": 0,
-    "actors": ["Tim Roth", "Amanda Plummer", "Laura Lovelace", "John Travolta"],
+    "actors": [
+      "Tim Roth",
+      "Amanda Plummer",
+      "Laura Lovelace",
+      "John Travolta"
+    ],
     "length": "154 min",
     "plot": "The lives of two mob hit men, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
     "director": "Quentin Tarantino",
@@ -2696,7 +2975,12 @@
     "title": "The Shawshank Redemption",
     "year": 1994,
     "score": 0,
-    "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler"],
+    "actors": [
+      "Tim Robbins",
+      "Morgan Freeman",
+      "Bob Gunton",
+      "William Sadler"
+    ],
     "length": "142 min",
     "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
     "director": "Frank Darabont",
@@ -2710,7 +2994,12 @@
     "title": "Speed",
     "year": 1994,
     "score": 0,
-    "actors": ["Keanu Reeves", "Dennis Hopper", "Sandra Bullock", "Joe Morton"],
+    "actors": [
+      "Keanu Reeves",
+      "Dennis Hopper",
+      "Sandra Bullock",
+      "Joe Morton"
+    ],
     "length": "116 min",
     "plot": "A young police officer must prevent a bomb exploding aboard a city bus by keeping its speed above 50 mph.",
     "director": "Jan de Bont",
@@ -2762,7 +3051,12 @@
     "title": "Apollo 13",
     "year": 1995,
     "score": 0,
-    "actors": ["Tom Hanks", "Bill Paxton", "Kevin Bacon", "Gary Sinise"],
+    "actors": [
+      "Tom Hanks",
+      "Bill Paxton",
+      "Kevin Bacon",
+      "Gary Sinise"
+    ],
     "length": "140 min",
     "plot": "NASA must devise a strategy to return Apollo 13 to Earth safely after the spacecraft undergoes massive internal damage putting the lives of the three astronauts on board in jeopardy.",
     "director": "Ron Howard",
@@ -2776,7 +3070,12 @@
     "title": "Before Sunrise",
     "year": 1995,
     "score": 0,
-    "actors": ["Ethan Hawke", "Julie Delpy", "Andrea Eckert", "Hanno Pöschl"],
+    "actors": [
+      "Ethan Hawke",
+      "Julie Delpy",
+      "Andrea Eckert",
+      "Hanno Pöschl"
+    ],
     "length": "101 min",
     "plot": "A young man and woman meet on a train in Europe, and wind up spending one evening together in Vienna. Unfortunately, both know that this will probably be their only night together.",
     "director": "Richard Linklater",
@@ -2790,7 +3089,12 @@
     "title": "Braveheart",
     "year": 1995,
     "score": 0,
-    "actors": ["James Robinson", "Sean Lawlor", "Sandy Nelson", "James Cosmo"],
+    "actors": [
+      "James Robinson",
+      "Sean Lawlor",
+      "Sandy Nelson",
+      "James Cosmo"
+    ],
     "length": "178 min",
     "plot": "When his secret bride is executed for assaulting an English soldier who tried to rape her, William Wallace begins a revolt against King Edward I of England.",
     "director": "Mel Gibson",
@@ -2880,7 +3184,12 @@
     "title": "First Knight",
     "year": 1995,
     "score": 0,
-    "actors": ["Sean Connery", "Richard Gere", "Julia Ormond", "Ben Cross"],
+    "actors": [
+      "Sean Connery",
+      "Richard Gere",
+      "Julia Ormond",
+      "Ben Cross"
+    ],
     "length": "134 min",
     "plot": "Lancelot falls in love with Guinevere, who is due to be married to King Arthur. Meanwhile, a violent warlord tries to seize power from Arthur and his Knights of the Round Table.",
     "director": "Jerry Zucker",
@@ -2894,7 +3203,12 @@
     "title": "Heat",
     "year": 1995,
     "score": 0,
-    "actors": ["Al Pacino", "Robert De Niro", "Val Kilmer", "Jon Voight"],
+    "actors": [
+      "Al Pacino",
+      "Robert De Niro",
+      "Val Kilmer",
+      "Jon Voight"
+    ],
     "length": "170 min",
     "plot": "A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist, while both sides attempt to find balance between their personal and professional lives.",
     "director": "Michael Mann",
@@ -3003,7 +3317,12 @@
     "title": "Rob Roy",
     "year": 1995,
     "score": 0,
-    "actors": ["Liam Neeson", "Jessica Lange", "John Hurt", "Tim Roth"],
+    "actors": [
+      "Liam Neeson",
+      "Jessica Lange",
+      "John Hurt",
+      "Tim Roth"
+    ],
     "length": "139 min",
     "plot": "In 1713 Scotland, Rob Roy MacGregor is wronged by a nobleman and his nephew, becomes an outlaw in search of revenge while fleeing the Redcoats, and faces charges of being a Jacobite.",
     "director": "Michael Caton-Jones",
@@ -3074,7 +3393,12 @@
     "title": "Toy Story",
     "year": 1995,
     "score": 0,
-    "actors": ["Tom Hanks", "Tim Allen", "Don Rickles", "Jim Varney"],
+    "actors": [
+      "Tom Hanks",
+      "Tim Allen",
+      "Don Rickles",
+      "Jim Varney"
+    ],
     "length": "81 min",
     "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.",
     "director": "John Lasseter",
@@ -3088,7 +3412,12 @@
     "title": "Twelve Monkeys",
     "year": 1995,
     "score": 0,
-    "actors": ["Joseph Melito", "Bruce Willis", "Jon Seda", "Michael Chance"],
+    "actors": [
+      "Joseph Melito",
+      "Bruce Willis",
+      "Jon Seda",
+      "Michael Chance"
+    ],
     "length": "129 min",
     "plot": "In a future world devastated by disease, a convict is sent back in time to gather information about the man-made virus that wiped out most of the human population on the planet.",
     "director": "Terry Gilliam",
@@ -3140,7 +3469,12 @@
     "title": "Waterworld",
     "year": 1995,
     "score": 0,
-    "actors": ["Kevin Costner", "Chaim Jeraffi", "Rick Aviles", "R.D. Call"],
+    "actors": [
+      "Kevin Costner",
+      "Chaim Jeraffi",
+      "Rick Aviles",
+      "R.D. Call"
+    ],
     "length": "135 min",
     "plot": "In a future where the polar ice-caps have melted and Earth is almost entirely submerged, a mutated mariner fights starvation and outlaw \"smokers,\" and reluctantly helps a woman and a young girl try to find dry land.",
     "director": "Kevin Reynolds",
@@ -3154,7 +3488,12 @@
     "title": "Bottle Rocket",
     "year": 1996,
     "score": 0,
-    "actors": ["Luke Wilson", "Owen Wilson", "Ned Dowd", "Shea Fowler"],
+    "actors": [
+      "Luke Wilson",
+      "Owen Wilson",
+      "Ned Dowd",
+      "Shea Fowler"
+    ],
     "length": "91 min",
     "plot": "Three friends plan to pull off a simple robbery and go on the run.",
     "director": "Wes Anderson",
@@ -3168,7 +3507,12 @@
     "title": "The Cable Guy",
     "year": 1996,
     "score": 0,
-    "actors": ["Jim Carrey", "Matthew Broderick", "Leslie Mann", "Jack Black"],
+    "actors": [
+      "Jim Carrey",
+      "Matthew Broderick",
+      "Leslie Mann",
+      "Jack Black"
+    ],
     "length": "96 min",
     "plot": "A lonely and disturbed cable guy raised on television just wants a new friend, but his target, a designer, rejects him, with bad consequences.",
     "director": "Ben Stiller",
@@ -3258,7 +3602,12 @@
     "title": "Independence Day",
     "year": 1996,
     "score": 0,
-    "actors": ["Will Smith", "Bill Pullman", "Jeff Goldblum", "Mary McDonnell"],
+    "actors": [
+      "Will Smith",
+      "Bill Pullman",
+      "Jeff Goldblum",
+      "Mary McDonnell"
+    ],
     "length": "145 min",
     "plot": "The aliens are coming and their goal is to invade and destroy Earth. Fighting superior technology, mankind's best weapon is the will to survive.",
     "director": "Roland Emmerich",
@@ -3329,7 +3678,12 @@
     "title": "Mission: Impossible",
     "year": 1996,
     "score": 0,
-    "actors": ["Tom Cruise", "Jon Voight", "Emmanuelle Béart", "Henry Czerny"],
+    "actors": [
+      "Tom Cruise",
+      "Jon Voight",
+      "Emmanuelle Béart",
+      "Henry Czerny"
+    ],
     "length": "110 min",
     "plot": "An American agent, under false suspicion of disloyalty, must discover and expose the real spy without the help of his organization.",
     "director": "Brian De Palma",
@@ -3362,7 +3716,12 @@
     "title": "Ransom",
     "year": 1996,
     "score": 0,
-    "actors": ["Mel Gibson", "Rene Russo", "Brawley Nolte", "Gary Sinise"],
+    "actors": [
+      "Mel Gibson",
+      "Rene Russo",
+      "Brawley Nolte",
+      "Gary Sinise"
+    ],
     "length": "121 min",
     "plot": "When a multimillionaire man's son is kidnapped, he cooperates with the police at first but then turns the tables on the kidnappers when he uses the ransom money as a reward for the capture of the kidnappers.",
     "director": "Ron Howard",
@@ -3414,7 +3773,12 @@
     "title": "Twister",
     "year": 1996,
     "score": 0,
-    "actors": ["Helen Hunt", "Bill Paxton", "Cary Elwes", "Jami Gertz"],
+    "actors": [
+      "Helen Hunt",
+      "Bill Paxton",
+      "Cary Elwes",
+      "Jami Gertz"
+    ],
     "length": "113 min",
     "plot": "Bill and Jo Harding, advanced storm chasers on the brink of divorce, must join together to create an advanced weather alert system by putting themselves in the cross-hairs of extremely violent tornadoes.",
     "director": "Jan de Bont",
@@ -3447,7 +3811,12 @@
     "title": "Anaconda",
     "year": 1997,
     "score": 0,
-    "actors": ["Jennifer Lopez", "Ice Cube", "Jon Voight", "Eric Stoltz"],
+    "actors": [
+      "Jennifer Lopez",
+      "Ice Cube",
+      "Jon Voight",
+      "Eric Stoltz"
+    ],
     "length": "89 min",
     "plot": "A \"National Geographic\" film crew is taken hostage by an insane hunter, who takes them along on his quest to capture the world's largest - and deadliest - snake.",
     "director": "Luis Llosa",
@@ -3461,7 +3830,12 @@
     "title": "Austin Powers: International Man of Mystery",
     "year": 1997,
     "score": 0,
-    "actors": ["Mike Myers", "Elizabeth Hurley", "Michael York", "Mimi Rogers"],
+    "actors": [
+      "Mike Myers",
+      "Elizabeth Hurley",
+      "Michael York",
+      "Mimi Rogers"
+    ],
     "length": "89 min",
     "plot": "A 1960s hipster secret agent is brought out of cryofreeze to oppose his greatest enemy in the 1990s, where his social attitudes are glaringly out of place.",
     "director": "Jay Roach",
@@ -3532,7 +3906,12 @@
     "title": "Contact",
     "year": 1997,
     "score": 0,
-    "actors": ["Jena Malone", "David Morse", "Jodie Foster", "Geoffrey Blake"],
+    "actors": [
+      "Jena Malone",
+      "David Morse",
+      "Jodie Foster",
+      "Geoffrey Blake"
+    ],
     "length": "150 min",
     "plot": "Dr. Ellie Arroway, after years of searching, finds conclusive radio proof of intelligent aliens, who send plans for a mysterious machine.",
     "director": "Robert Zemeckis",
@@ -3546,7 +3925,12 @@
     "title": "The Devil's Advocate",
     "year": 1997,
     "score": 0,
-    "actors": ["Keanu Reeves", "Al Pacino", "Charlize Theron", "Jeffrey Jones"],
+    "actors": [
+      "Keanu Reeves",
+      "Al Pacino",
+      "Charlize Theron",
+      "Jeffrey Jones"
+    ],
     "length": "144 min",
     "plot": "An exceptionally adept Florida lawyer is offered a job to work in New York City for a high-end law firm with a high-end boss - the biggest opportunity of his career to date.",
     "director": "Taylor Hackford",
@@ -3560,7 +3944,12 @@
     "title": "The Devil's Own",
     "year": 1997,
     "score": 0,
-    "actors": ["Harrison Ford", "Brad Pitt", "Margaret Colin", "Rubén Blades"],
+    "actors": [
+      "Harrison Ford",
+      "Brad Pitt",
+      "Margaret Colin",
+      "Rubén Blades"
+    ],
     "length": "111 min",
     "plot": "A police officer uncovers the real identity of his house-guest, an I.R.A. terrorist in hiding.",
     "director": "Alan J. Pakula",
@@ -3593,7 +3982,12 @@
     "title": "The Fifth Element",
     "year": 1997,
     "score": 0,
-    "actors": ["Bruce Willis", "Gary Oldman", "Ian Holm", "Milla Jovovich"],
+    "actors": [
+      "Bruce Willis",
+      "Gary Oldman",
+      "Ian Holm",
+      "Milla Jovovich"
+    ],
     "length": "126 min",
     "plot": "In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr Zorg at bay.",
     "director": "Luc Besson",
@@ -3607,7 +4001,12 @@
     "title": "Gattaca",
     "year": 1997,
     "score": 0,
-    "actors": ["Ethan Hawke", "Uma Thurman", "Gore Vidal", "Xander Berkeley"],
+    "actors": [
+      "Ethan Hawke",
+      "Uma Thurman",
+      "Gore Vidal",
+      "Xander Berkeley"
+    ],
     "length": "106 min",
     "plot": "A genetically inferior man assumes the identity of a superior one in order to pursue his lifelong dream of space travel.",
     "director": "Andrew Niccol",
@@ -3716,7 +4115,12 @@
     "title": "Meet Joe Black",
     "year": 1998,
     "score": 0,
-    "actors": ["Brad Pitt", "Anthony Hopkins", "Claire Forlani", "Jake Weber"],
+    "actors": [
+      "Brad Pitt",
+      "Anthony Hopkins",
+      "Claire Forlani",
+      "Jake Weber"
+    ],
     "length": "178 min",
     "plot": "Death, who takes the form of a young man, asks a media mogul to act as a guide to teach him about life on Earth and in the process he falls in love with his guide's daughter.",
     "director": "Martin Brest",
@@ -3806,7 +4210,12 @@
     "title": "The Rainmaker",
     "year": 1997,
     "score": 0,
-    "actors": ["Matt Damon", "Danny DeVito", "Claire Danes", "Jon Voight"],
+    "actors": [
+      "Matt Damon",
+      "Danny DeVito",
+      "Claire Danes",
+      "Jon Voight"
+    ],
     "length": "135 min",
     "plot": "An underdog lawyer takes on a fraudulent Insurance company.",
     "director": "Francis Ford Coppola",
@@ -3820,7 +4229,12 @@
     "title": "Seven Years in Tibet",
     "year": 1997,
     "score": 0,
-    "actors": ["Brad Pitt", "David Thewlis", "BD Wong", "Mako"],
+    "actors": [
+      "Brad Pitt",
+      "David Thewlis",
+      "BD Wong",
+      "Mako"
+    ],
     "length": "136 min",
     "plot": "True story of Heinrich Harrer, an Austrian mountain climber who became friends with the Dalai Lama at the time of China's takeover of Tibet.",
     "director": "Jean-Jacques Annaud",
@@ -3834,7 +4248,12 @@
     "title": "Three Kings",
     "year": 1999,
     "score": 0,
-    "actors": ["George Clooney", "Mark Wahlberg", "Ice Cube", "Spike Jonze"],
+    "actors": [
+      "George Clooney",
+      "Mark Wahlberg",
+      "Ice Cube",
+      "Spike Jonze"
+    ],
     "length": "114 min",
     "plot": "In the aftermath of the Persian Gulf War, 4 soldiers set out to steal gold that was stolen from Kuwait, but they discover people who desperately need their help.",
     "director": "David O. Russell",
@@ -3867,7 +4286,12 @@
     "title": "Toy Story 2",
     "year": 1999,
     "score": 0,
-    "actors": ["Tom Hanks", "Tim Allen", "Joan Cusack", "Kelsey Grammer"],
+    "actors": [
+      "Tom Hanks",
+      "Tim Allen",
+      "Joan Cusack",
+      "Kelsey Grammer"
+    ],
     "length": "92 min",
     "plot": "When Woody is stolen by a toy collector, Buzz and his friends vow to rescue him, but Woody finds the idea of immortality in a museum tempting.",
     "director": "John Lasseter, Ash Brannon, Lee Unkrich",
@@ -3919,7 +4343,12 @@
     "title": "Antz",
     "year": 1998,
     "score": 0,
-    "actors": ["Woody Allen", "Dan Aykroyd", "Anne Bancroft", "Jane Curtin"],
+    "actors": [
+      "Woody Allen",
+      "Dan Aykroyd",
+      "Anne Bancroft",
+      "Jane Curtin"
+    ],
     "length": "83 min",
     "plot": "A rather neurotic ant tries to break from his totalitarian society while trying to win the affection of the princess he loves.",
     "director": "Eric Darnell, Tim Johnson",
@@ -3952,7 +4381,12 @@
     "title": "Beloved",
     "year": 1998,
     "score": 0,
-    "actors": ["Yada Beener", "Emil Pinnock", "Calen Johnson", "Oprah Winfrey"],
+    "actors": [
+      "Yada Beener",
+      "Emil Pinnock",
+      "Calen Johnson",
+      "Oprah Winfrey"
+    ],
     "length": "172 min",
     "plot": "Based on the book by Toni Morrison, in which a slave is visited by the spirit of her deceased daughter.",
     "director": "Jonathan Demme",
@@ -3985,7 +4419,12 @@
     "title": "Chicken Run",
     "year": 2000,
     "score": 0,
-    "actors": ["Phil Daniels", "Lynn Ferguson", "Mel Gibson", "Tony Haygarth"],
+    "actors": [
+      "Phil Daniels",
+      "Lynn Ferguson",
+      "Mel Gibson",
+      "Tony Haygarth"
+    ],
     "length": "84 min",
     "plot": "When a cockerel apparently flies into a chicken farm, the chickens see him as an opportunity to escape their evil owners.",
     "director": "Peter Lord, Nick Park",
@@ -3999,7 +4438,12 @@
     "title": "Deep Impact",
     "year": 1998,
     "score": 0,
-    "actors": ["Robert Duvall", "Téa Leoni", "Elijah Wood", "Vanessa Redgrave"],
+    "actors": [
+      "Robert Duvall",
+      "Téa Leoni",
+      "Elijah Wood",
+      "Vanessa Redgrave"
+    ],
     "length": "120 min",
     "plot": "Unless a comet can be destroyed before colliding with Earth, only those allowed into shelters will survive. Which people will survive?",
     "director": "Mimi Leder",
@@ -4089,7 +4533,12 @@
     "title": "The Lord of the Rings: The Fellowship of the Ring",
     "year": 2001,
     "score": 0,
-    "actors": ["Alan Howard", "Noel Appleby", "Sean Astin", "Sala Baker"],
+    "actors": [
+      "Alan Howard",
+      "Noel Appleby",
+      "Sean Astin",
+      "Sala Baker"
+    ],
     "length": "178 min",
     "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.",
     "director": "Peter Jackson",
@@ -4122,7 +4571,12 @@
     "title": "Mission: Impossible II",
     "year": 2000,
     "score": 0,
-    "actors": ["Tom Cruise", "Dougray Scott", "Thandie Newton", "Ving Rhames"],
+    "actors": [
+      "Tom Cruise",
+      "Dougray Scott",
+      "Thandie Newton",
+      "Ving Rhames"
+    ],
     "length": "123 min",
     "plot": "A secret agent is sent to Sydney, to find and destroy a genetically modified disease called \"Chimera\".",
     "director": "John Woo",
@@ -4155,7 +4609,12 @@
     "title": "Resident Evil",
     "year": 2002,
     "score": 0,
-    "actors": ["Ryan McCluskey", "Oscar Pearce", "Indra Ové", "Anna Bolt"],
+    "actors": [
+      "Ryan McCluskey",
+      "Oscar Pearce",
+      "Indra Ové",
+      "Anna Bolt"
+    ],
     "length": "100 min",
     "plot": "A special military unit fights a powerful, out-of-control supercomputer and hundreds of scientists who have mutated into flesh-eating creatures after a laboratory accident.",
     "director": "Paul W.S. Anderson",
@@ -4169,7 +4628,12 @@
     "title": "Rush Hour",
     "year": 1998,
     "score": 0,
-    "actors": ["Ken Leung", "Jackie Chan", "Tom Wilkinson", "Tzi Ma"],
+    "actors": [
+      "Ken Leung",
+      "Jackie Chan",
+      "Tom Wilkinson",
+      "Tzi Ma"
+    ],
     "length": "98 min",
     "plot": "A loyal and dedicated Hong Kong inspector teams up with a reckless and loudmouthed LAPD detective to rescue the Chinese Consul's kidnapped daughter, while trying to arrest a dangerous crime lord along the way.",
     "director": "Brett Ratner",
@@ -4183,7 +4647,12 @@
     "title": "Saving Private Ryan",
     "year": 1998,
     "score": 0,
-    "actors": ["Tom Hanks", "Tom Sizemore", "Edward Burns", "Barry Pepper"],
+    "actors": [
+      "Tom Hanks",
+      "Tom Sizemore",
+      "Edward Burns",
+      "Barry Pepper"
+    ],
     "length": "169 min",
     "plot": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
     "director": "Steven Spielberg",
@@ -4216,7 +4685,12 @@
     "title": "The Thin Red Line",
     "year": 1998,
     "score": 0,
-    "actors": ["Nick Nolte", "Jim Caviezel", "Sean Penn", "Elias Koteas"],
+    "actors": [
+      "Nick Nolte",
+      "Jim Caviezel",
+      "Sean Penn",
+      "Elias Koteas"
+    ],
     "length": "170 min",
     "plot": "Terrence Malick's adaptation of James Jones' autobiographical 1962 novel, focusing on the conflict at Guadalcanal during the second World War.",
     "director": "Terrence Malick",
@@ -4249,7 +4723,12 @@
     "title": "Wag the Dog",
     "year": 1997,
     "score": 0,
-    "actors": ["Dustin Hoffman", "Robert De Niro", "Anne Heche", "Denis Leary"],
+    "actors": [
+      "Dustin Hoffman",
+      "Robert De Niro",
+      "Anne Heche",
+      "Denis Leary"
+    ],
     "length": "97 min",
     "plot": "Shortly before an election, a spin-doctor and a Hollywood producer join efforts to fabricate a war in order to cover up a presidential sex scandal.",
     "director": "Barry Levinson",
@@ -4282,7 +4761,12 @@
     "title": "Titan A.E.",
     "year": 2000,
     "score": 0,
-    "actors": ["Matt Damon", "Bill Pullman", "John Leguizamo", "Nathan Lane"],
+    "actors": [
+      "Matt Damon",
+      "Bill Pullman",
+      "John Leguizamo",
+      "Nathan Lane"
+    ],
     "length": "94 min",
     "plot": "A young man learns that he has to find a hidden Earth ship before an enemy alien species does in order to secure the survival of humanity.",
     "director": "Don Bluth, Gary Goldman, Art Vitello",
@@ -4296,7 +4780,12 @@
     "title": "Star Wars: Episode I - The Phantom Menace",
     "year": 1999,
     "score": 0,
-    "actors": ["Liam Neeson", "Ewan McGregor", "Natalie Portman", "Jake Lloyd"],
+    "actors": [
+      "Liam Neeson",
+      "Ewan McGregor",
+      "Natalie Portman",
+      "Jake Lloyd"
+    ],
     "length": "136 min",
     "plot": "Two Jedi Knights escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to reclaim their old glory.",
     "director": "George Lucas",
@@ -4386,7 +4875,12 @@
     "title": "The Cider House Rules",
     "year": 1999,
     "score": 0,
-    "actors": ["Tobey Maguire", "Charlize Theron", "Delroy Lindo", "Paul Rudd"],
+    "actors": [
+      "Tobey Maguire",
+      "Charlize Theron",
+      "Delroy Lindo",
+      "Paul Rudd"
+    ],
     "length": "126 min",
     "plot": "A compassionate young man, raised in an orphanage and trained to be a doctor there, decides to leave to see the world.",
     "director": "Lasse Hallström",
@@ -4400,7 +4894,12 @@
     "title": "Notting Hill",
     "year": 1999,
     "score": 0,
-    "actors": ["Julia Roberts", "Hugh Grant", "Richard McCabe", "Rhys Ifans"],
+    "actors": [
+      "Julia Roberts",
+      "Hugh Grant",
+      "Richard McCabe",
+      "Rhys Ifans"
+    ],
     "length": "124 min",
     "plot": "The life of a simple bookshop owner changes when he meets the most famous film star in the world.",
     "director": "Roger Michell",
@@ -4452,7 +4951,12 @@
     "title": "Shrek",
     "year": 2001,
     "score": 0,
-    "actors": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "John Lithgow"],
+    "actors": [
+      "Mike Myers",
+      "Eddie Murphy",
+      "Cameron Diaz",
+      "John Lithgow"
+    ],
     "length": "90 min",
     "plot": "After his swamp is filled with magical creatures, Shrek agrees to rescue Princess Fiona for a villainous lord in order to get his land back.",
     "director": "Andrew Adamson, Vicky Jenson",
@@ -4485,7 +4989,12 @@
     "title": "There's Something About Mary",
     "year": 1998,
     "score": 0,
-    "actors": ["Cameron Diaz", "Matt Dillon", "Ben Stiller", "Lee Evans"],
+    "actors": [
+      "Cameron Diaz",
+      "Matt Dillon",
+      "Ben Stiller",
+      "Lee Evans"
+    ],
     "length": "119 min",
     "plot": "A man gets a chance to meet up with his dream girl from high school, even though his date with her back then was a complete disaster.",
     "director": "Bobby Farrelly, Peter Farrelly",
@@ -4575,7 +5084,12 @@
     "title": "The Talented Mr. Ripley",
     "year": 1999,
     "score": 0,
-    "actors": ["Matt Damon", "Gwyneth Paltrow", "Jude Law", "Cate Blanchett"],
+    "actors": [
+      "Matt Damon",
+      "Gwyneth Paltrow",
+      "Jude Law",
+      "Cate Blanchett"
+    ],
     "length": "139 min",
     "plot": "In late 1950s New York, Tom Ripley, a young underachiever, is sent to Italy to retrieve Dickie Greenleaf, a rich and spoiled millionaire playboy. But when the errand fails, Ripley takes extreme measures.",
     "director": "Anthony Minghella",
@@ -4589,7 +5103,12 @@
     "title": "Fight Club",
     "year": 1999,
     "score": 0,
-    "actors": ["Edward Norton", "Brad Pitt", "Meat Loaf", "Zach Grenier"],
+    "actors": [
+      "Edward Norton",
+      "Brad Pitt",
+      "Meat Loaf",
+      "Zach Grenier"
+    ],
     "length": "139 min",
     "plot": "An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soap maker, forming an underground fight club that evolves into something much, much more.",
     "director": "David Fincher",
@@ -4698,7 +5217,12 @@
     "title": "The Messenger: The Story of Joan of Arc",
     "year": 1999,
     "score": 0,
-    "actors": ["Rab Affleck", "Stéphane Algoud", "Edwin Apps", "David Bailie"],
+    "actors": [
+      "Rab Affleck",
+      "Stéphane Algoud",
+      "Edwin Apps",
+      "David Bailie"
+    ],
     "length": "148 min",
     "plot": "A young girl receives a vision that drives her to rid France of its oppressors.",
     "director": "Luc Besson",
@@ -4788,7 +5312,12 @@
     "title": "Cast Away",
     "year": 2000,
     "score": 0,
-    "actors": ["Tom Hanks", "Paul Sanchez", "Lari White", "Leonid Citer"],
+    "actors": [
+      "Tom Hanks",
+      "Paul Sanchez",
+      "Lari White",
+      "Leonid Citer"
+    ],
     "length": "143 min",
     "plot": "A FedEx executive must transform himself physically and emotionally to survive a crash landing on a deserted island.",
     "director": "Robert Zemeckis",
@@ -4897,7 +5426,12 @@
     "title": "Hellboy",
     "year": 2004,
     "score": 0,
-    "actors": ["Ron Perlman", "John Hurt", "Selma Blair", "Rupert Evans"],
+    "actors": [
+      "Ron Perlman",
+      "John Hurt",
+      "Selma Blair",
+      "Rupert Evans"
+    ],
     "length": "122 min",
     "plot": "A demon, raised from infancy after being conjured by and rescued from the Nazis, grows up to become a defender against the forces of darkness.",
     "director": "Guillermo del Toro",
@@ -4911,7 +5445,12 @@
     "title": "The Lord of the Rings: The Return of the King",
     "year": 2003,
     "score": 0,
-    "actors": ["Noel Appleby", "Ali Astin", "Sean Astin", "David Aston"],
+    "actors": [
+      "Noel Appleby",
+      "Ali Astin",
+      "Sean Astin",
+      "David Aston"
+    ],
     "length": "201 min",
     "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
     "director": "Peter Jackson",
@@ -4925,7 +5464,12 @@
     "title": "The Lord of the Rings: The Two Towers",
     "year": 2002,
     "score": 0,
-    "actors": ["Bruce Allpress", "Sean Astin", "John Bach", "Sala Baker"],
+    "actors": [
+      "Bruce Allpress",
+      "Sean Astin",
+      "John Bach",
+      "Sala Baker"
+    ],
     "length": "179 min",
     "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
     "director": "Peter Jackson",
@@ -4958,7 +5502,12 @@
     "title": "Dancer in the Dark",
     "year": 2000,
     "score": 0,
-    "actors": ["Björk", "Catherine Deneuve", "David Morse", "Peter Stormare"],
+    "actors": [
+      "Björk",
+      "Catherine Deneuve",
+      "David Morse",
+      "Peter Stormare"
+    ],
     "length": "140 min",
     "plot": "An east European girl goes to America with her young son, expecting it to be like a Hollywood film.",
     "director": "Lars von Trier",
@@ -4972,7 +5521,12 @@
     "title": "American Beauty",
     "year": 1999,
     "score": 0,
-    "actors": ["Kevin Spacey", "Annette Bening", "Thora Birch", "Wes Bentley"],
+    "actors": [
+      "Kevin Spacey",
+      "Annette Bening",
+      "Thora Birch",
+      "Wes Bentley"
+    ],
     "length": "122 min",
     "plot": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
     "director": "Sam Mendes",
@@ -5024,7 +5578,12 @@
     "title": "Magnolia",
     "year": 1999,
     "score": 0,
-    "actors": ["Pat Healy", "Genevieve Zweig", "Mark Flannagan", "Neil Flynn"],
+    "actors": [
+      "Pat Healy",
+      "Genevieve Zweig",
+      "Mark Flannagan",
+      "Neil Flynn"
+    ],
     "length": "188 min",
     "plot": "An epic mosaic of interrelated characters in search of love, forgiveness, and meaning in the San Fernando Valley.",
     "director": "Paul Thomas Anderson",
@@ -5057,7 +5616,12 @@
     "title": "Minority Report",
     "year": 2002,
     "score": 0,
-    "actors": ["Tom Cruise", "Max von Sydow", "Steve Harris", "Neal McDonough"],
+    "actors": [
+      "Tom Cruise",
+      "Max von Sydow",
+      "Steve Harris",
+      "Neal McDonough"
+    ],
     "length": "145 min",
     "plot": "In a future where a special police unit is able to arrest murderers before they commit their crimes, an officer from that unit is himself accused of a future murder.",
     "director": "Steven Spielberg",
@@ -5109,7 +5673,12 @@
     "title": "Bicentennial Man",
     "year": 1999,
     "score": 0,
-    "actors": ["Robin Williams", "Embeth Davidtz", "Sam Neill", "Oliver Platt"],
+    "actors": [
+      "Robin Williams",
+      "Embeth Davidtz",
+      "Sam Neill",
+      "Oliver Platt"
+    ],
     "length": "132 min",
     "plot": "An android endeavors to become human as he gradually acquires emotions.",
     "director": "Chris Columbus",
@@ -5180,7 +5749,12 @@
     "title": "Crouching Tiger, Hidden Dragon",
     "year": 2000,
     "score": 0,
-    "actors": ["Yun-Fat Chow", "Michelle Yeoh", "Ziyi Zhang", "Chen Chang"],
+    "actors": [
+      "Yun-Fat Chow",
+      "Michelle Yeoh",
+      "Ziyi Zhang",
+      "Chen Chang"
+    ],
     "length": "120 min",
     "plot": "Two warriors in pursuit of a stolen sword and a notorious fugitive are led to an impetuous, physically skilled, adolescent nobleman's daughter, who is at a crossroads in her life.",
     "director": "Ang Lee",
@@ -5232,7 +5806,12 @@
     "title": "Monsters, Inc.",
     "year": 2001,
     "score": 0,
-    "actors": ["John Goodman", "Billy Crystal", "Mary Gibbs", "Steve Buscemi"],
+    "actors": [
+      "John Goodman",
+      "Billy Crystal",
+      "Mary Gibbs",
+      "Steve Buscemi"
+    ],
     "length": "92 min",
     "plot": "In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, 2 monsters realize things may not be what they think.",
     "director": "Pete Docter, David Silverman, Lee Unkrich",
@@ -5436,7 +6015,12 @@
     "title": "The Family Man",
     "year": 2000,
     "score": 0,
-    "actors": ["Nicolas Cage", "Téa Leoni", "Don Cheadle", "Jeremy Piven"],
+    "actors": [
+      "Nicolas Cage",
+      "Téa Leoni",
+      "Don Cheadle",
+      "Jeremy Piven"
+    ],
     "length": "125 min",
     "plot": "A fast-lane investment broker, offered the opportunity to see how the other half lives, wakes up to find that his sports car and girlfriend have become a mini-van and wife.",
     "director": "Brett Ratner",
@@ -5545,7 +6129,12 @@
     "title": "Swordfish",
     "year": 2001,
     "score": 0,
-    "actors": ["John Travolta", "Hugh Jackman", "Halle Berry", "Don Cheadle"],
+    "actors": [
+      "John Travolta",
+      "Hugh Jackman",
+      "Halle Berry",
+      "Don Cheadle"
+    ],
     "length": "99 min",
     "plot": "A covert counter-terrorist unit called Black Cell led by Gabriel Shear wants the money to help finance their war against international terrorism, but it's all locked away. Gabriel brings in convicted hacker Stanley Jobson to help him.",
     "director": "Dominic Sena",
@@ -5559,7 +6148,12 @@
     "title": "Spirited Away",
     "year": 2001,
     "score": 0,
-    "actors": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki", "Takashi Naitô"],
+    "actors": [
+      "Rumi Hiiragi",
+      "Miyu Irino",
+      "Mari Natsuki",
+      "Takashi Naitô"
+    ],
     "length": "125 min",
     "plot": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
     "director": "Hayao Miyazaki",
@@ -5573,7 +6167,12 @@
     "title": "The Count of Monte Cristo",
     "year": 2002,
     "score": 0,
-    "actors": ["Jim Caviezel", "Guy Pearce", "Richard Harris", "James Frain"],
+    "actors": [
+      "Jim Caviezel",
+      "Guy Pearce",
+      "Richard Harris",
+      "James Frain"
+    ],
     "length": "131 min",
     "plot": "A young man, falsely imprisoned by his jealous \"friend,\" escapes and uses a hidden treasure to exact his revenge.",
     "director": "Kevin Reynolds",
@@ -5625,7 +6224,12 @@
     "title": "Billy Elliot",
     "year": 2000,
     "score": 0,
-    "actors": ["Jamie Bell", "Jean Heywood", "Jamie Draven", "Gary Lewis"],
+    "actors": [
+      "Jamie Bell",
+      "Jean Heywood",
+      "Jamie Draven",
+      "Gary Lewis"
+    ],
     "length": "110 min",
     "plot": "A talented young boy becomes torn between his unexpected love of dance and the disintegration of his family.",
     "director": "Stephen Daldry",
@@ -5639,7 +6243,12 @@
     "title": "The Discovery of Heaven",
     "year": 2001,
     "score": 0,
-    "actors": ["Maureen Lipman", "Will Bowden", "Jeroen Krabbé", "Stephen Fry"],
+    "actors": [
+      "Maureen Lipman",
+      "Will Bowden",
+      "Jeroen Krabbé",
+      "Stephen Fry"
+    ],
     "length": "150 min",
     "plot": "God is disappointed with the human race and wants his stone tablets back. An angel is given the assignment and, with Gabriëls help, tries to manipulate several humans on earth to get his ...",
     "director": "Jeroen Krabbé",
@@ -5691,7 +6300,12 @@
     "title": "The Pianist",
     "year": 2002,
     "score": 0,
-    "actors": ["Adrien Brody", "Emilia Fox", "Michal Zebrowski", "Ed Stoppard"],
+    "actors": [
+      "Adrien Brody",
+      "Emilia Fox",
+      "Michal Zebrowski",
+      "Ed Stoppard"
+    ],
     "length": "150 min",
     "plot": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
     "director": "Roman Polanski",
@@ -5781,7 +6395,12 @@
     "title": "The Bourne Identity",
     "year": 2002,
     "score": 0,
-    "actors": ["Matt Damon", "Franka Potente", "Chris Cooper", "Clive Owen"],
+    "actors": [
+      "Matt Damon",
+      "Franka Potente",
+      "Chris Cooper",
+      "Clive Owen"
+    ],
     "length": "119 min",
     "plot": "A man is picked up by a fishing boat, bullet-riddled and suffering from amnesia, before racing to elude assassins and regain his memory.",
     "director": "Doug Liman",
@@ -5814,7 +6433,12 @@
     "title": "Black Hawk Down",
     "year": 2001,
     "score": 0,
-    "actors": ["Josh Hartnett", "Ewan McGregor", "Tom Sizemore", "Eric Bana"],
+    "actors": [
+      "Josh Hartnett",
+      "Ewan McGregor",
+      "Tom Sizemore",
+      "Eric Bana"
+    ],
     "length": "144 min",
     "plot": "160 elite U.S. soldiers drop into Somalia to capture two top lieutenants of a renegade warlord and find themselves in a desperate battle with a large force of heavily-armed Somalis.",
     "director": "Ridley Scott",
@@ -5866,7 +6490,12 @@
     "title": "Kill Bill: Vol. 1",
     "year": 2003,
     "score": 0,
-    "actors": ["Uma Thurman", "Lucy Liu", "Vivica A. Fox", "Daryl Hannah"],
+    "actors": [
+      "Uma Thurman",
+      "Lucy Liu",
+      "Vivica A. Fox",
+      "Daryl Hannah"
+    ],
     "length": "111 min",
     "plot": "The Bride wakens from a four-year coma. The child she carried in her womb is gone. Now she must wreak vengeance on the team of assassins who betrayed her - a team she was once part of.",
     "director": "Quentin Tarantino",
@@ -5880,7 +6509,12 @@
     "title": "Rush Hour 2",
     "year": 2001,
     "score": 0,
-    "actors": ["Jackie Chan", "Chris Tucker", "John Lone", "Ziyi Zhang"],
+    "actors": [
+      "Jackie Chan",
+      "Chris Tucker",
+      "John Lone",
+      "Ziyi Zhang"
+    ],
     "length": "90 min",
     "plot": "Carter and Lee head to Hong Kong for vacation, but become embroiled in a counterfeit money scam.",
     "director": "Brett Ratner",
@@ -5894,7 +6528,12 @@
     "title": "Adaptation.",
     "year": 2002,
     "score": 0,
-    "actors": ["Nicolas Cage", "Tilda Swinton", "Meryl Streep", "Chris Cooper"],
+    "actors": [
+      "Nicolas Cage",
+      "Tilda Swinton",
+      "Meryl Streep",
+      "Chris Cooper"
+    ],
     "length": "114 min",
     "plot": "A lovelorn screenwriter becomes desperate as he tries and fails to adapt 'The Orchid Thief' by Susan Orlean for the screen.",
     "director": "Spike Jonze",
@@ -5908,7 +6547,12 @@
     "title": "Ice Age",
     "year": 2002,
     "score": 0,
-    "actors": ["Ray Romano", "John Leguizamo", "Denis Leary", "Goran Visnjic"],
+    "actors": [
+      "Ray Romano",
+      "John Leguizamo",
+      "Denis Leary",
+      "Goran Visnjic"
+    ],
     "length": "81 min",
     "plot": "Set during the Ice Age, a sabertooth tiger, a sloth, and a wooly mammoth find a lost human infant, and they try to return him to his tribe.",
     "director": "Chris Wedge, Carlos Saldanha",
@@ -5941,7 +6585,12 @@
     "title": "Punch-Drunk Love",
     "year": 2002,
     "score": 0,
-    "actors": ["Adam Sandler", "Jason Andrews", "Don McManus", "Emily Watson"],
+    "actors": [
+      "Adam Sandler",
+      "Jason Andrews",
+      "Don McManus",
+      "Emily Watson"
+    ],
     "length": "95 min",
     "plot": "A psychologically troubled novelty supplier is nudged towards a romance with an English woman, all the while being extorted by a phone-sex line run by a crooked mattress salesman, and purchasing stunning amounts of pudding.",
     "director": "Paul Thomas Anderson",
@@ -6031,7 +6680,12 @@
     "title": "Shaolin Soccer",
     "year": 2001,
     "score": 0,
-    "actors": ["Stephen Chow", "Man-Tat Ng", "Wei Zhao", "Yin Tse"],
+    "actors": [
+      "Stephen Chow",
+      "Man-Tat Ng",
+      "Wei Zhao",
+      "Yin Tse"
+    ],
     "length": "87 min",
     "plot": "A young Shaolin follower reunites with his discouraged brothers to form a soccer team using their martial art skills to their advantage.",
     "director": "Stephen Chow",
@@ -6083,7 +6737,12 @@
     "title": "Hulk",
     "year": 2003,
     "score": 0,
-    "actors": ["Eric Bana", "Jennifer Connelly", "Sam Elliott", "Josh Lucas"],
+    "actors": [
+      "Eric Bana",
+      "Jennifer Connelly",
+      "Sam Elliott",
+      "Josh Lucas"
+    ],
     "length": "138 min",
     "plot": "Bruce Banner, a genetics researcher with a tragic past, suffers an accident that causes him to transform into a raging green monster when he gets angry.",
     "director": "Ang Lee",
@@ -6154,7 +6813,12 @@
     "title": "The Transporter",
     "year": 2002,
     "score": 0,
-    "actors": ["Jason Statham", "Qi Shu", "Matt Schulze", "François Berléand"],
+    "actors": [
+      "Jason Statham",
+      "Qi Shu",
+      "Matt Schulze",
+      "François Berléand"
+    ],
     "length": "92 min",
     "plot": "Frank is hired to \"transport\" packages for unknown clients and has made a very good living doing so. But when asked to move a package that begins moving, complications arise.",
     "director": "Louis Leterrier, Corey Yuen",
@@ -6206,7 +6870,12 @@
     "title": "Shrek 2",
     "year": 2004,
     "score": 0,
-    "actors": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "Julie Andrews"],
+    "actors": [
+      "Mike Myers",
+      "Eddie Murphy",
+      "Cameron Diaz",
+      "Julie Andrews"
+    ],
     "length": "93 min",
     "plot": "Princess Fiona's parents invite her and Shrek to dinner to celebrate her marriage. If only they knew the newlyweds were both ogres.",
     "director": "Andrew Adamson, Kelly Asbury, Conrad Vernon",
@@ -6239,7 +6908,12 @@
     "title": "Hero",
     "year": 2002,
     "score": 0,
-    "actors": ["Jet Li", "Tony Leung Chiu-Wai", "Maggie Cheung", "Ziyi Zhang"],
+    "actors": [
+      "Jet Li",
+      "Tony Leung Chiu-Wai",
+      "Maggie Cheung",
+      "Ziyi Zhang"
+    ],
     "length": "99 min",
     "plot": "A defense officer, Nameless, was summoned by the King of Qin regarding his success of terminating three warriors.",
     "director": "Yimou Zhang",
@@ -6253,7 +6927,12 @@
     "title": "Old School",
     "year": 2003,
     "score": 0,
-    "actors": ["Luke Wilson", "Will Ferrell", "Vince Vaughn", "Jeremy Piven"],
+    "actors": [
+      "Luke Wilson",
+      "Will Ferrell",
+      "Vince Vaughn",
+      "Jeremy Piven"
+    ],
     "length": "88 min",
     "plot": "Three friends attempt to recapture their glory days by opening up a fraternity near their alma mater.",
     "director": "Todd Phillips",
@@ -6362,7 +7041,12 @@
     "title": "Love Actually",
     "year": 2003,
     "score": 0,
-    "actors": ["Bill Nighy", "Gregor Fisher", "Rory MacGregor", "Colin Firth"],
+    "actors": [
+      "Bill Nighy",
+      "Gregor Fisher",
+      "Rory MacGregor",
+      "Colin Firth"
+    ],
     "length": "135 min",
     "plot": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
     "director": "Richard Curtis",
@@ -6528,7 +7212,12 @@
     "title": "The Day After Tomorrow",
     "year": 2004,
     "score": 0,
-    "actors": ["Dennis Quaid", "Jake Gyllenhaal", "Emmy Rossum", "Dash Mihok"],
+    "actors": [
+      "Dennis Quaid",
+      "Jake Gyllenhaal",
+      "Emmy Rossum",
+      "Dash Mihok"
+    ],
     "length": "124 min",
     "plot": "Jack Hall, paleoclimatologist, must make a daring trek across America to reach his son, trapped in the cross-hairs of a sudden international storm which plunges the planet into a new Ice Age.",
     "director": "Roland Emmerich",
@@ -6542,7 +7231,11 @@
     "title": "Kingdom of Heaven",
     "year": 2005,
     "score": 0,
-    "actors": ["Orlando Bloom", "Eva Green", "Liam Neeson"],
+    "actors": [
+      "Orlando Bloom",
+      "Eva Green",
+      "Liam Neeson"
+    ],
     "length": "144 min",
     "plot": "Balian of Ibelin travels to Jerusalem during the crusades of the 12th century, and there he finds himself as the defender of the city and its people.",
     "director": "Ridley Scott",
@@ -6575,7 +7268,12 @@
     "title": "Honey",
     "year": 2003,
     "score": 0,
-    "actors": ["Jessica Alba", "Mekhi Phifer", "Romeo Miller", "Joy Bryant"],
+    "actors": [
+      "Jessica Alba",
+      "Mekhi Phifer",
+      "Romeo Miller",
+      "Joy Bryant"
+    ],
     "length": "94 min",
     "plot": "Honey is a sexy, tough music video choreographer who shakes up her life after her mentor gives her an ultimatum: sleep with him or be blacklisted within their industry.",
     "director": "Bille Woodruff",
@@ -6608,7 +7306,12 @@
     "title": "Matchstick Men",
     "year": 2003,
     "score": 0,
-    "actors": ["Nicolas Cage", "Sam Rockwell", "Alison Lohman", "Bruce Altman"],
+    "actors": [
+      "Nicolas Cage",
+      "Sam Rockwell",
+      "Alison Lohman",
+      "Bruce Altman"
+    ],
     "length": "116 min",
     "plot": "A phobic con artist and his protégé are on the verge of pulling off a lucrative swindle when the former's teenage daughter arrives unexpectedly.",
     "director": "Ridley Scott",
@@ -6698,7 +7401,12 @@
     "title": "School of Rock",
     "year": 2003,
     "score": 0,
-    "actors": ["Jack Black", "Adam Pascal", "Lucas Papaelias", "Chris Stack"],
+    "actors": [
+      "Jack Black",
+      "Adam Pascal",
+      "Lucas Papaelias",
+      "Chris Stack"
+    ],
     "length": "108 min",
     "plot": "After being kicked out of a rock band, Dewey Finn becomes a substitute teacher of a strict elementary private school, only to try and turn it into a rock band.",
     "director": "Richard Linklater",
@@ -6712,7 +7420,12 @@
     "title": "Troy",
     "year": 2004,
     "score": 0,
-    "actors": ["Julian Glover", "Brian Cox", "Nathan Jones", "Adoni Maropis"],
+    "actors": [
+      "Julian Glover",
+      "Brian Cox",
+      "Nathan Jones",
+      "Adoni Maropis"
+    ],
     "length": "163 min",
     "plot": "An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved.",
     "director": "Wolfgang Petersen",
@@ -6802,7 +7515,12 @@
     "title": "Live Free or Die Hard",
     "year": 2007,
     "score": 0,
-    "actors": ["Bruce Willis", "Timothy Olyphant", "Justin Long", "Maggie Q"],
+    "actors": [
+      "Bruce Willis",
+      "Timothy Olyphant",
+      "Justin Long",
+      "Maggie Q"
+    ],
     "length": "128 min",
     "plot": "John McClane and a young hacker join forces to take down master cyber-terrorist Thomas Gabriel in Washington D.C.",
     "director": "Len Wiseman",
@@ -6854,7 +7572,12 @@
     "title": "Lemony Snicket: A Series of Unfortunate Events",
     "year": 2004,
     "score": 0,
-    "actors": ["Jim Carrey", "Liam Aiken", "Emily Browning", "Kara Hoffman"],
+    "actors": [
+      "Jim Carrey",
+      "Liam Aiken",
+      "Emily Browning",
+      "Kara Hoffman"
+    ],
     "length": "108 min",
     "plot": "When a massive fire kills their parents, three children are delivered to the custody of cousin and stage actor Count Olaf, who is secretly plotting to steal their parents' vast fortune.",
     "director": "Brad Silberling",
@@ -6963,7 +7686,12 @@
     "title": "Ghost in the Shell 2: Innocence",
     "year": 2004,
     "score": 0,
-    "actors": ["Akio Ôtsuka", "Atsuko Tanaka", "Kôichi Yamadera", "Tamio Ôki"],
+    "actors": [
+      "Akio Ôtsuka",
+      "Atsuko Tanaka",
+      "Kôichi Yamadera",
+      "Tamio Ôki"
+    ],
     "length": "100 min",
     "plot": "In the year 2032, Batô, a cyborg detective for the anti-terrorist unit Public Security Section 9, investigates the case of a female robot--one created solely for sexual pleasure--who slaughtered her owner.",
     "director": "Mamoru Oshii",
@@ -7031,10 +7759,15 @@
   {
     "type": 0,
     "imdbID": "tt0356910",
-    "title": "Mr. & Mrs. Smith",
+    "title": "Mr. \u0026 Mrs. Smith",
     "year": 2005,
     "score": 0,
-    "actors": ["Brad Pitt", "Angelina Jolie", "Vince Vaughn", "Adam Brody"],
+    "actors": [
+      "Brad Pitt",
+      "Angelina Jolie",
+      "Vince Vaughn",
+      "Adam Brody"
+    ],
     "length": "120 min",
     "plot": "A bored married couple is surprised to learn that they are both assassins hired by competing agencies to kill each other.",
     "director": "Doug Liman",
@@ -7086,7 +7819,12 @@
     "title": "The Secret Life of Walter Mitty",
     "year": 2013,
     "score": 0,
-    "actors": ["Ben Stiller", "Kristen Wiig", "Jon Daly", "Kathryn Hahn"],
+    "actors": [
+      "Ben Stiller",
+      "Kristen Wiig",
+      "Jon Daly",
+      "Kathryn Hahn"
+    ],
     "length": "114 min",
     "plot": "When his job along with that of his co-worker are threatened, Walter takes action in the real world embarking on a global journey that turns into an adventure more extraordinary than anything he could have ever imagined.",
     "director": "Ben Stiller",
@@ -7157,7 +7895,12 @@
     "title": "Inglourious Basterds",
     "year": 2009,
     "score": 0,
-    "actors": ["Brad Pitt", "Mélanie Laurent", "Christoph Waltz", "Eli Roth"],
+    "actors": [
+      "Brad Pitt",
+      "Mélanie Laurent",
+      "Christoph Waltz",
+      "Eli Roth"
+    ],
     "length": "153 min",
     "plot": "In Nazi-occupied France during World War II, a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers coincides with a theatre owner's vengeful plans for the same.",
     "director": "Quentin Tarantino, Eli Roth",
@@ -7244,10 +7987,15 @@
   {
     "type": 0,
     "imdbID": "tt0366551",
-    "title": "Harold & Kumar Go to White Castle",
+    "title": "Harold \u0026 Kumar Go to White Castle",
     "year": 2004,
     "score": 0,
-    "actors": ["John Cho", "Ethan Embry", "Rob Tinkler", "Fred Willard"],
+    "actors": [
+      "John Cho",
+      "Ethan Embry",
+      "Rob Tinkler",
+      "Fred Willard"
+    ],
     "length": "88 min",
     "plot": "An Asian-American office worker and his Indian stoner friend embark on a quest to satisfy their desire for White Castle burgers.",
     "director": "Danny Leiner",
@@ -7375,7 +8123,12 @@
     "title": "Fun with Dick and Jane",
     "year": 2005,
     "score": 0,
-    "actors": ["Jim Carrey", "Téa Leoni", "Alec Baldwin", "Richard Jenkins"],
+    "actors": [
+      "Jim Carrey",
+      "Téa Leoni",
+      "Alec Baldwin",
+      "Richard Jenkins"
+    ],
     "length": "90 min",
     "plot": "When an affluent couple lose all their money following a series of blunders, they turn to a life of crime to make ends meet.",
     "director": "Dean Parisot",
@@ -7408,7 +8161,12 @@
     "title": "AVP: Alien vs. Predator",
     "year": 2004,
     "score": 0,
-    "actors": ["Sanaa Lathan", "Raoul Bova", "Lance Henriksen", "Ewen Bremner"],
+    "actors": [
+      "Sanaa Lathan",
+      "Raoul Bova",
+      "Lance Henriksen",
+      "Ewen Bremner"
+    ],
     "length": "101 min",
     "plot": "During an archaeological expedition on Bouvetøya Island in Antarctica, a team of archaeologists and other scientists find themselves caught up in a battle between the two legends. Soon, the team realize that only one species can win.",
     "director": "Paul W.S. Anderson",
@@ -7441,7 +8199,12 @@
     "title": "The Hitchhiker's Guide to the Galaxy",
     "year": 2005,
     "score": 0,
-    "actors": ["Bill Bailey", "Anna Chancellor", "Warwick Davis", "Yasiin Bey"],
+    "actors": [
+      "Bill Bailey",
+      "Anna Chancellor",
+      "Warwick Davis",
+      "Yasiin Bey"
+    ],
     "length": "109 min",
     "plot": "Mere seconds before the Earth is to be demolished by an alien construction crew, journeyman Arthur Dent is swept off the planet by his friend Ford Prefect, a researcher penning a new edition of \"The Hitchhiker's Guide to the Galaxy.\"",
     "director": "Garth Jennings",
@@ -7474,7 +8237,12 @@
     "title": "The Bourne Supremacy",
     "year": 2004,
     "score": 0,
-    "actors": ["Matt Damon", "Franka Potente", "Brian Cox", "Julia Stiles"],
+    "actors": [
+      "Matt Damon",
+      "Franka Potente",
+      "Brian Cox",
+      "Julia Stiles"
+    ],
     "length": "108 min",
     "plot": "When Jason Bourne is framed for a CIA operation gone awry, he is forced to resume his former life as a trained assassin to survive.",
     "director": "Paul Greengrass",
@@ -7507,7 +8275,12 @@
     "title": "Kung Fu Hustle",
     "year": 2004,
     "score": 0,
-    "actors": ["Stephen Chow", "Xiaogang Feng", "Wah Yuen", "Zhi Hua Dong"],
+    "actors": [
+      "Stephen Chow",
+      "Xiaogang Feng",
+      "Wah Yuen",
+      "Zhi Hua Dong"
+    ],
     "length": "99 min",
     "plot": "In Shanghai, China in the 1940s, a wannabe gangster aspires to join the notorious \"Axe Gang\" while residents of a housing complex exhibit extraordinary powers in defending their turf.",
     "director": "Stephen Chow",
@@ -7540,7 +8313,12 @@
     "title": "Napoleon Dynamite",
     "year": 2004,
     "score": 0,
-    "actors": ["Jon Heder", "Jon Gries", "Aaron Ruell", "Efren Ramirez"],
+    "actors": [
+      "Jon Heder",
+      "Jon Gries",
+      "Aaron Ruell",
+      "Efren Ramirez"
+    ],
     "length": "96 min",
     "plot": "A listless and alienated teenager decides to help his new friend win the class presidency in their small western high school, while he must deal with his bizarre family life back home.",
     "director": "Jared Hess",
@@ -7649,7 +8427,12 @@
     "title": "Casino Royale",
     "year": 2006,
     "score": 0,
-    "actors": ["Daniel Craig", "Eva Green", "Mads Mikkelsen", "Judi Dench"],
+    "actors": [
+      "Daniel Craig",
+      "Eva Green",
+      "Mads Mikkelsen",
+      "Judi Dench"
+    ],
     "length": "144 min",
     "plot": "Armed with a licence to kill, Secret Agent James Bond sets out on his first mission as 007 and must defeat a weapons dealer in a high stakes game of poker at Casino Royale, but things are not what they seem.",
     "director": "Martin Campbell",
@@ -7663,7 +8446,12 @@
     "title": "Ratatouille",
     "year": 2007,
     "score": 0,
-    "actors": ["Patton Oswalt", "Ian Holm", "Lou Romano", "Brian Dennehy"],
+    "actors": [
+      "Patton Oswalt",
+      "Ian Holm",
+      "Lou Romano",
+      "Brian Dennehy"
+    ],
     "length": "111 min",
     "plot": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
     "director": "Brad Bird, Jan Pinkava",
@@ -7829,7 +8617,12 @@
     "title": "Memoirs of a Geisha",
     "year": 2005,
     "score": 0,
-    "actors": ["Suzuka Ohgo", "Togo Igawa", "Mako", "Samantha Futerman"],
+    "actors": [
+      "Suzuka Ohgo",
+      "Togo Igawa",
+      "Mako",
+      "Samantha Futerman"
+    ],
     "length": "145 min",
     "plot": "Nitta Sayuri reveals how she transcended her fishing-village roots and became one of Japan's most celebrated geisha.",
     "director": "Rob Marshall",
@@ -7843,7 +8636,12 @@
     "title": "Tangled",
     "year": 2010,
     "score": 0,
-    "actors": ["Mandy Moore", "Zachary Levi", "Donna Murphy", "Ron Perlman"],
+    "actors": [
+      "Mandy Moore",
+      "Zachary Levi",
+      "Donna Murphy",
+      "Ron Perlman"
+    ],
     "length": "100 min",
     "plot": "The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.",
     "director": "Nathan Greno, Byron Howard",
@@ -7857,7 +8655,12 @@
     "title": "A History of Violence",
     "year": 2005,
     "score": 0,
-    "actors": ["Viggo Mortensen", "Maria Bello", "Ed Harris", "William Hurt"],
+    "actors": [
+      "Viggo Mortensen",
+      "Maria Bello",
+      "Ed Harris",
+      "William Hurt"
+    ],
     "length": "96 min",
     "plot": "A mild-mannered man becomes a local hero through an act of violence, which sets off repercussions that will shake his family to its very core.",
     "director": "David Cronenberg",
@@ -7947,7 +8750,12 @@
     "title": "Sin City",
     "year": 2005,
     "score": 0,
-    "actors": ["Jessica Alba", "Devon Aoki", "Alexis Bledel", "Powers Boothe"],
+    "actors": [
+      "Jessica Alba",
+      "Devon Aoki",
+      "Alexis Bledel",
+      "Powers Boothe"
+    ],
     "length": "124 min",
     "plot": "A film that explores the dark and miserable town, Basin City, and tells the story of three different people, all caught up in violent corruption.",
     "director": "Frank Miller, Robert Rodriguez, Quentin Tarantino",
@@ -8129,7 +8937,7 @@
   {
     "type": 0,
     "imdbID": "tt0409847",
-    "title": "Cowboys & Aliens",
+    "title": "Cowboys \u0026 Aliens",
     "year": 2011,
     "score": 0,
     "actors": [
@@ -8151,7 +8959,12 @@
     "title": "Hellboy II: The Golden Army",
     "year": 2008,
     "score": 0,
-    "actors": ["Ron Perlman", "Selma Blair", "Doug Jones", "John Alexander"],
+    "actors": [
+      "Ron Perlman",
+      "Selma Blair",
+      "Doug Jones",
+      "John Alexander"
+    ],
     "length": "120 min",
     "plot": "The mythical world starts a rebellion against humanity in order to rule the Earth, so Hellboy and his team must save the world from the rebellious creatures.",
     "director": "Guillermo del Toro",
@@ -8241,7 +9054,12 @@
     "title": "Mongol: The Rise of Genghis Khan",
     "year": 2007,
     "score": 0,
-    "actors": ["Tadanobu Asano", "Honglei Sun", "Khulan Chuluun", "Aliya"],
+    "actors": [
+      "Tadanobu Asano",
+      "Honglei Sun",
+      "Khulan Chuluun",
+      "Aliya"
+    ],
     "length": "126 min",
     "plot": "The story recounts the early life of Genghis Khan who was a slave before going on to conquer half the world including Russia in 1206.",
     "director": "Sergei Bodrov",
@@ -8255,7 +9073,12 @@
     "title": "300",
     "year": 2006,
     "score": 0,
-    "actors": ["Gerard Butler", "Lena Headey", "Dominic West", "David Wenham"],
+    "actors": [
+      "Gerard Butler",
+      "Lena Headey",
+      "Dominic West",
+      "David Wenham"
+    ],
     "length": "117 min",
     "plot": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
     "director": "Zack Snyder",
@@ -8288,7 +9111,12 @@
     "title": "Transformers",
     "year": 2007,
     "score": 0,
-    "actors": ["Shia LaBeouf", "Megan Fox", "Josh Duhamel", "Tyrese Gibson"],
+    "actors": [
+      "Shia LaBeouf",
+      "Megan Fox",
+      "Josh Duhamel",
+      "Tyrese Gibson"
+    ],
     "length": "144 min",
     "plot": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.",
     "director": "Michael Bay",
@@ -8321,7 +9149,12 @@
     "title": "Hot Fuzz",
     "year": 2007,
     "score": 0,
-    "actors": ["Simon Pegg", "Martin Freeman", "Bill Nighy", "Robert Popper"],
+    "actors": [
+      "Simon Pegg",
+      "Martin Freeman",
+      "Bill Nighy",
+      "Robert Popper"
+    ],
     "length": "121 min",
     "plot": "A skilled London police officer is transferred to a small town that's harbouring a dark secret.",
     "director": "Edgar Wright",
@@ -8430,7 +9263,12 @@
     "title": "Miami Vice",
     "year": 2006,
     "score": 0,
-    "actors": ["Colin Farrell", "Jamie Foxx", "Li Gong", "Naomie Harris"],
+    "actors": [
+      "Colin Farrell",
+      "Jamie Foxx",
+      "Li Gong",
+      "Naomie Harris"
+    ],
     "length": "134 min",
     "plot": "Based on the 1980s TV action/drama, this update focuses on vice detectives Crockett and Tubbs as their respective personal and professional lives become dangerously intertwined.",
     "director": "Michael Mann",
@@ -8463,7 +9301,12 @@
     "title": "Resident Evil: Extinction",
     "year": 2007,
     "score": 0,
-    "actors": ["Milla Jovovich", "Oded Fehr", "Ali Larter", "Iain Glen"],
+    "actors": [
+      "Milla Jovovich",
+      "Oded Fehr",
+      "Ali Larter",
+      "Iain Glen"
+    ],
     "length": "94 min",
     "plot": "Survivors of the Raccoon City catastrophe travel across the Nevada desert, hoping to make it to Alaska. Alice joins the caravan and their fight against the evil Umbrella Corp.",
     "director": "Russell Mulcahy",
@@ -8534,7 +9377,12 @@
     "title": "V for Vendetta",
     "year": 2005,
     "score": 0,
-    "actors": ["Natalie Portman", "Hugo Weaving", "Stephen Rea", "Stephen Fry"],
+    "actors": [
+      "Natalie Portman",
+      "Hugo Weaving",
+      "Stephen Rea",
+      "Stephen Fry"
+    ],
     "length": "132 min",
     "plot": "In a future British tyranny, a shadowy freedom fighter, known only by the alias of \"V\", plots to overthrow it with the help of a young woman.",
     "director": "James McTeigue",
@@ -8567,7 +9415,12 @@
     "title": "Toy Story 3",
     "year": 2010,
     "score": 0,
-    "actors": ["Tom Hanks", "Tim Allen", "Joan Cusack", "Ned Beatty"],
+    "actors": [
+      "Tom Hanks",
+      "Tim Allen",
+      "Joan Cusack",
+      "Ned Beatty"
+    ],
     "length": "103 min",
     "plot": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home.",
     "director": "Lee Unkrich",
@@ -8638,7 +9491,12 @@
     "title": "The Bourne Ultimatum",
     "year": 2007,
     "score": 0,
-    "actors": ["Matt Damon", "Julia Stiles", "David Strathairn", "Scott Glenn"],
+    "actors": [
+      "Matt Damon",
+      "Julia Stiles",
+      "David Strathairn",
+      "Scott Glenn"
+    ],
     "length": "115 min",
     "plot": "Jason Bourne dodges a ruthless CIA official and his agents from a new assassination program while searching for the origins of his life as a trained killer.",
     "director": "Paul Greengrass",
@@ -8652,7 +9510,12 @@
     "title": "Kung Fu Panda",
     "year": 2008,
     "score": 0,
-    "actors": ["Jack Black", "Dustin Hoffman", "Angelina Jolie", "Ian McShane"],
+    "actors": [
+      "Jack Black",
+      "Dustin Hoffman",
+      "Angelina Jolie",
+      "Ian McShane"
+    ],
     "length": "92 min",
     "plot": "The Dragon Warrior has to clash against the savage Tai Lung as China's fate hangs in the balance: However, the Dragon Warrior mantle is supposedly mistaken to be bestowed upon an obese panda who is a tyro in martial arts.",
     "director": "Mark Osborne, John Stevenson",
@@ -8704,7 +9567,12 @@
     "title": "Blades of Glory",
     "year": 2007,
     "score": 0,
-    "actors": ["Will Ferrell", "Jon Heder", "Will Arnett", "Amy Poehler"],
+    "actors": [
+      "Will Ferrell",
+      "Jon Heder",
+      "Will Arnett",
+      "Amy Poehler"
+    ],
     "length": "93 min",
     "plot": "In 2002, two rival Olympic ice skaters were stripped of their gold medals and permanently banned from men's single competition. Presently, however, they've found a loophole that will allow them to qualify as a pairs team.",
     "director": "Josh Gordon, Will Speck",
@@ -8737,7 +9605,12 @@
     "title": "Scott Pilgrim vs. the World",
     "year": 2010,
     "score": 0,
-    "actors": ["Michael Cera", "Alison Pill", "Mark Webber", "Johnny Simmons"],
+    "actors": [
+      "Michael Cera",
+      "Alison Pill",
+      "Mark Webber",
+      "Johnny Simmons"
+    ],
     "length": "112 min",
     "plot": "Scott Pilgrim must defeat his new girlfriend's seven evil exes in order to win her heart.",
     "director": "Edgar Wright",
@@ -8789,7 +9662,12 @@
     "title": "Hancock",
     "year": 2008,
     "score": 0,
-    "actors": ["Will Smith", "Charlize Theron", "Jason Bateman", "Jae Head"],
+    "actors": [
+      "Will Smith",
+      "Charlize Theron",
+      "Jason Bateman",
+      "Jae Head"
+    ],
     "length": "92 min",
     "plot": "Hancock is a superhero whose ill considered behavior regularly causes damage in the millions. He changes when one person he saves helps him improve his public image.",
     "director": "Peter Berg",
@@ -8803,7 +9681,12 @@
     "title": "Little Miss Sunshine",
     "year": 2006,
     "score": 0,
-    "actors": ["Abigail Breslin", "Greg Kinnear", "Paul Dano", "Alan Arkin"],
+    "actors": [
+      "Abigail Breslin",
+      "Greg Kinnear",
+      "Paul Dano",
+      "Alan Arkin"
+    ],
     "length": "101 min",
     "plot": "A family determined to get their young daughter into the finals of a beauty pageant take a cross-country trip in their VW bus.",
     "director": "Jonathan Dayton, Valerie Faris",
@@ -8836,7 +9719,12 @@
     "title": "Babel",
     "year": 2006,
     "score": 0,
-    "actors": ["Brad Pitt", "Cate Blanchett", "Mohamed Akhzam", "Peter Wight"],
+    "actors": [
+      "Brad Pitt",
+      "Cate Blanchett",
+      "Mohamed Akhzam",
+      "Peter Wight"
+    ],
     "length": "143 min",
     "plot": "Tragedy strikes a married couple on vacation in the Moroccan desert, touching off an interlocking story involving four different families.",
     "director": "Alejandro G. Iñárritu",
@@ -8869,7 +9757,12 @@
     "title": "Wonder Woman",
     "year": 2017,
     "score": 0,
-    "actors": ["Gal Gadot", "Chris Pine", "Robin Wright", "Connie Nielsen"],
+    "actors": [
+      "Gal Gadot",
+      "Chris Pine",
+      "Robin Wright",
+      "Connie Nielsen"
+    ],
     "length": "N/A",
     "plot": "An Amazon princess leaves her island home to explore the world and, in doing so, becomes one of the world's greatest heroes.",
     "director": "Patty Jenkins",
@@ -8902,7 +9795,12 @@
     "title": "Life of Pi",
     "year": 2012,
     "score": 0,
-    "actors": ["Suraj Sharma", "Irrfan Khan", "Ayush Tandon", "Gautam Belur"],
+    "actors": [
+      "Suraj Sharma",
+      "Irrfan Khan",
+      "Ayush Tandon",
+      "Gautam Belur"
+    ],
     "length": "127 min",
     "plot": "A young man who survives a disaster at sea is hurtled into an epic journey of adventure and discovery. While cast away, he forms an unexpected connection with another survivor: a fearsome Bengal tiger.",
     "director": "Ang Lee",
@@ -8916,7 +9814,12 @@
     "title": "The Pursuit of Happyness",
     "year": 2006,
     "score": 0,
-    "actors": ["Will Smith", "Jaden Smith", "Thandie Newton", "Brian Howe"],
+    "actors": [
+      "Will Smith",
+      "Jaden Smith",
+      "Thandie Newton",
+      "Brian Howe"
+    ],
     "length": "117 min",
     "plot": "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional endeavor.",
     "director": "Gabriele Muccino",
@@ -8927,10 +9830,15 @@
   {
     "type": 0,
     "imdbID": "tt0455538",
-    "title": "How to Lose Friends & Alienate People",
+    "title": "How to Lose Friends \u0026 Alienate People",
     "year": 2008,
     "score": 0,
-    "actors": ["Kelan Pannell", "Janette Scott", "Danny Huston", "Simon Pegg"],
+    "actors": [
+      "Kelan Pannell",
+      "Janette Scott",
+      "Danny Huston",
+      "Simon Pegg"
+    ],
     "length": "110 min",
     "plot": "A British writer struggles to fit in at a high-profile magazine in New York City.",
     "director": "Robert B. Weide",
@@ -8982,7 +9890,12 @@
     "title": "X-Men Origins: Wolverine",
     "year": 2009,
     "score": 0,
-    "actors": ["Hugh Jackman", "Liev Schreiber", "Danny Huston", "Will.i.am"],
+    "actors": [
+      "Hugh Jackman",
+      "Liev Schreiber",
+      "Danny Huston",
+      "Will.i.am"
+    ],
     "length": "107 min",
     "plot": "A look at Wolverine's early life, in particular his time with the government squad Team X and the impact it will have on his later years.",
     "director": "Gavin Hood",
@@ -9034,7 +9947,12 @@
     "title": "Outlander",
     "year": 2008,
     "score": 0,
-    "actors": ["Jim Caviezel", "Sophia Myles", "Jack Huston", "John Hurt"],
+    "actors": [
+      "Jim Caviezel",
+      "Sophia Myles",
+      "Jack Huston",
+      "John Hurt"
+    ],
     "length": "115 min",
     "plot": "During the reign of the Vikings, Kainan, a man from a far-off world, crash lands on Earth, bringing with him an alien predator known as the Moorwen. Though both man and monster are seeking revenge for violence committed against them, Kainan leads the alliance to kill the Moorwen by fusing his advanced technology with the Viking's Iron Age weaponry.",
     "director": "Howard McCain",
@@ -9105,7 +10023,12 @@
     "title": "Half Nelson",
     "year": 2006,
     "score": 0,
-    "actors": ["Ryan Gosling", "Jeff Lima", "Shareeka Epps", "Nathan Corbett"],
+    "actors": [
+      "Ryan Gosling",
+      "Jeff Lima",
+      "Shareeka Epps",
+      "Nathan Corbett"
+    ],
     "length": "106 min",
     "plot": "An inner-city junior high school teacher with a drug habit forms an unlikely friendship with one of his students after she discovers his secret.",
     "director": "Ryan Fleck",
@@ -9328,7 +10251,12 @@
     "title": "Knocked Up",
     "year": 2007,
     "score": 0,
-    "actors": ["Seth Rogen", "Katherine Heigl", "Paul Rudd", "Leslie Mann"],
+    "actors": [
+      "Seth Rogen",
+      "Katherine Heigl",
+      "Paul Rudd",
+      "Leslie Mann"
+    ],
     "length": "129 min",
     "plot": "For fun-loving party animal Ben Stone, the last thing he ever expected was for his one-night stand to show up on his doorstep eight weeks later to tell him she's pregnant with his child.",
     "director": "Judd Apatow",
@@ -9513,7 +10441,10 @@
     "title": "An Inconvenient Truth",
     "year": 2006,
     "score": 0,
-    "actors": ["Al Gore", "Billy West"],
+    "actors": [
+      "Al Gore",
+      "Billy West"
+    ],
     "length": "96 min",
     "plot": "Filmmaker Davis Guggenheim follows Al Gore on the lecture circuit, as the former presidential candidate campaigns to raise public awareness of the dangers of global warming and calls for immediate action to curb its destructive effects on the environment.",
     "director": "Davis Guggenheim",
@@ -9622,7 +10553,12 @@
     "title": "Man of Steel",
     "year": 2013,
     "score": 0,
-    "actors": ["Henry Cavill", "Amy Adams", "Michael Shannon", "Diane Lane"],
+    "actors": [
+      "Henry Cavill",
+      "Amy Adams",
+      "Michael Shannon",
+      "Diane Lane"
+    ],
     "length": "143 min",
     "plot": "Clark Kent, one of the last of an extinguished race disguised as an unremarkable human, is forced to reveal his identity when Earth is invaded by an army of survivors who threaten to bring the planet to the brink of destruction.",
     "director": "Zack Snyder",
@@ -9712,7 +10648,12 @@
     "title": "Star Trek",
     "year": 2009,
     "score": 0,
-    "actors": ["Chris Pine", "Zachary Quinto", "Leonard Nimoy", "Eric Bana"],
+    "actors": [
+      "Chris Pine",
+      "Zachary Quinto",
+      "Leonard Nimoy",
+      "Eric Bana"
+    ],
     "length": "127 min",
     "plot": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.",
     "director": "J.J. Abrams",
@@ -9726,7 +10667,12 @@
     "title": "The Incredible Hulk",
     "year": 2008,
     "score": 0,
-    "actors": ["Edward Norton", "Liv Tyler", "Tim Roth", "William Hurt"],
+    "actors": [
+      "Edward Norton",
+      "Liv Tyler",
+      "Tim Roth",
+      "William Hurt"
+    ],
     "length": "112 min",
     "plot": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he emerges whenever he loses his temper. However, Banner then must fight a soldier who unleashes himself as a threat stronger than he.",
     "director": "Louis Leterrier",
@@ -9759,7 +10705,12 @@
     "title": "Warcraft: The Beginning",
     "year": 2016,
     "score": 0,
-    "actors": ["Travis Fimmel", "Paula Patton", "Ben Foster", "Dominic Cooper"],
+    "actors": [
+      "Travis Fimmel",
+      "Paula Patton",
+      "Ben Foster",
+      "Dominic Cooper"
+    ],
     "length": "123 min",
     "plot": "As an Orc horde invades the planet Azeroth using a magic portal, a few human heroes and dissenting Orcs must attempt to stop the true evil behind this war.",
     "director": "Duncan Jones",
@@ -9789,7 +10740,7 @@
   {
     "type": 0,
     "imdbID": "tt0808151",
-    "title": "Angels & Demons",
+    "title": "Angels \u0026 Demons",
     "year": 2009,
     "score": 0,
     "actors": [
@@ -9830,7 +10781,12 @@
     "title": "The Love Guru",
     "year": 2008,
     "score": 0,
-    "actors": ["Jessica Simpson", "Kanye West", "Mike Myers", "Deepak Chopra"],
+    "actors": [
+      "Jessica Simpson",
+      "Kanye West",
+      "Mike Myers",
+      "Deepak Chopra"
+    ],
     "length": "87 min",
     "plot": "Pitka, an American raised outside of his country by gurus, returns to the States in order to break into the self-help business. His first challenge is to settle the romantic troubles and subsequent professional skid of a star hockey player whose wife left him for a rival athlete.",
     "director": "Marco Schnabel",
@@ -9841,7 +10797,7 @@
   {
     "type": 0,
     "imdbID": "tt0814255",
-    "title": "Percy Jackson & the Olympians: The Lightning Thief",
+    "title": "Percy Jackson \u0026 the Olympians: The Lightning Thief",
     "year": 2010,
     "score": 0,
     "actors": [
@@ -10055,7 +11011,12 @@
     "title": "Epic",
     "year": 2013,
     "score": 0,
-    "actors": ["Blake Anderson", "Aziz Ansari", "Allison Bills", "Jim Conroy"],
+    "actors": [
+      "Blake Anderson",
+      "Aziz Ansari",
+      "Allison Bills",
+      "Jim Conroy"
+    ],
     "length": "102 min",
     "plot": "A teenager finds herself transported to a deep forest setting where a battle between the forces of good and the forces of evil is taking place. She bands together with a rag-tag group of characters in order to save their world -- and ours.",
     "director": "Chris Wedge",
@@ -10088,7 +11049,12 @@
     "title": "Sunshine Cleaning",
     "year": 2008,
     "score": 0,
-    "actors": ["Amy Adams", "Emily Blunt", "Alan Arkin", "Jason Spevack"],
+    "actors": [
+      "Amy Adams",
+      "Emily Blunt",
+      "Alan Arkin",
+      "Jason Spevack"
+    ],
     "length": "91 min",
     "plot": "In order to raise the tuition to send her young son to private school, a mom starts an unusual business -- a biohazard removal/crime scene clean-up service -- with her unreliable sister.",
     "director": "Christine Jeffs",
@@ -10178,7 +11144,12 @@
     "title": "Lions for Lambs",
     "year": 2007,
     "score": 0,
-    "actors": ["Robert Redford", "Meryl Streep", "Tom Cruise", "Michael Peña"],
+    "actors": [
+      "Robert Redford",
+      "Meryl Streep",
+      "Tom Cruise",
+      "Michael Peña"
+    ],
     "length": "92 min",
     "plot": "Injuries sustained by two Army rangers behind enemy lines in Afghanistan set off a sequence of events involving a congressman, a journalist and a professor.",
     "director": "Robert Redford",
@@ -10211,7 +11182,12 @@
     "title": "Monsters vs. Aliens",
     "year": 2009,
     "score": 0,
-    "actors": ["Reese Witherspoon", "Seth Rogen", "Hugh Laurie", "Will Arnett"],
+    "actors": [
+      "Reese Witherspoon",
+      "Seth Rogen",
+      "Hugh Laurie",
+      "Will Arnett"
+    ],
     "length": "94 min",
     "plot": "A woman transformed into a giant after she is struck by a meteorite on her wedding day becomes part of a team of monsters sent in by the U.S. government to defeat an alien mastermind trying to take over Earth.",
     "director": "Rob Letterman, Conrad Vernon",
@@ -10263,7 +11239,12 @@
     "title": "WALL·E",
     "year": 2008,
     "score": 0,
-    "actors": ["Ben Burtt", "Elissa Knight", "Jeff Garlin", "Fred Willard"],
+    "actors": [
+      "Ben Burtt",
+      "Elissa Knight",
+      "Jeff Garlin",
+      "Fred Willard"
+    ],
     "length": "98 min",
     "plot": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.",
     "director": "Andrew Stanton",
@@ -10334,7 +11315,12 @@
     "title": "Precious",
     "year": 2009,
     "score": 0,
-    "actors": ["Gabourey Sidibe", "Mo'Nique", "Paula Patton", "Mariah Carey"],
+    "actors": [
+      "Gabourey Sidibe",
+      "Mo'Nique",
+      "Paula Patton",
+      "Mariah Carey"
+    ],
     "length": "110 min",
     "plot": "In New York City's Harlem circa 1987, an overweight, abused, illiterate teen who is pregnant with her second child is invited to enroll in an alternative school in hopes that her life can head in a new direction.",
     "director": "Lee Daniels",
@@ -10348,7 +11334,12 @@
     "title": "Taken",
     "year": 2008,
     "score": 0,
-    "actors": ["Liam Neeson", "Maggie Grace", "Leland Orser", "Jon Gries"],
+    "actors": [
+      "Liam Neeson",
+      "Maggie Grace",
+      "Leland Orser",
+      "Jon Gries"
+    ],
     "length": "93 min",
     "plot": "A retired CIA agent travels across Europe and relies on his old skills to save his estranged daughter, who has been kidnapped while on a trip to Paris.",
     "director": "Pierre Morel",
@@ -10362,7 +11353,12 @@
     "title": "The Last Airbender",
     "year": 2010,
     "score": 0,
-    "actors": ["Noah Ringer", "Dev Patel", "Nicola Peltz", "Jackson Rathbone"],
+    "actors": [
+      "Noah Ringer",
+      "Dev Patel",
+      "Nicola Peltz",
+      "Jackson Rathbone"
+    ],
     "length": "103 min",
     "plot": "Follows the adventures of Aang, a young successor to a long line of Avatars, who must master all four elements and stop the Fire Nation from enslaving the Water Tribes and the Earth Kingdom.",
     "director": "M. Night Shyamalan",
@@ -10376,7 +11372,12 @@
     "title": "CJ7",
     "year": 2008,
     "score": 0,
-    "actors": ["Stephen Chow", "Jiao Xu", "Lei Huang", "Yuqi Zhang"],
+    "actors": [
+      "Stephen Chow",
+      "Jiao Xu",
+      "Lei Huang",
+      "Yuqi Zhang"
+    ],
     "length": "86 min",
     "plot": "A poor Chinese laborer learns important lessons after his son gets a strange new toy.",
     "director": "Stephen Chow",
@@ -10428,7 +11429,12 @@
     "title": "Green Zone",
     "year": 2010,
     "score": 0,
-    "actors": ["Igal Naor", "Said Faraj", "Faycal Attougui", "Aymen Hamdouchi"],
+    "actors": [
+      "Igal Naor",
+      "Said Faraj",
+      "Faycal Attougui",
+      "Aymen Hamdouchi"
+    ],
     "length": "115 min",
     "plot": "Discovering covert and faulty intelligence causes a U.S. Army officer to go rogue as he hunts for Weapons of Mass Destruction in an unstable region.",
     "director": "Paul Greengrass",
@@ -10442,7 +11448,12 @@
     "title": "The Amazing Spider-Man",
     "year": 2012,
     "score": 0,
-    "actors": ["Andrew Garfield", "Emma Stone", "Rhys Ifans", "Denis Leary"],
+    "actors": [
+      "Andrew Garfield",
+      "Emma Stone",
+      "Rhys Ifans",
+      "Denis Leary"
+    ],
     "length": "136 min",
     "plot": "After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to solve the mystery of his parent's mysterious death.",
     "director": "Marc Webb",
@@ -10513,7 +11524,12 @@
     "title": "Justice League",
     "year": 2017,
     "score": 0,
-    "actors": ["Gal Gadot", "Jason Momoa", "Robin Wright", "Amy Adams"],
+    "actors": [
+      "Gal Gadot",
+      "Jason Momoa",
+      "Robin Wright",
+      "Amy Adams"
+    ],
     "length": "121 min",
     "plot": "Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy.",
     "director": "Zack Snyder",
@@ -10584,7 +11600,12 @@
     "title": "Valkyrie",
     "year": 2008,
     "score": 0,
-    "actors": ["Tom Cruise", "Kenneth Branagh", "Bill Nighy", "Tom Wilkinson"],
+    "actors": [
+      "Tom Cruise",
+      "Kenneth Branagh",
+      "Bill Nighy",
+      "Tom Wilkinson"
+    ],
     "length": "121 min",
     "plot": "A dramatization of the 20 July assassination and political coup plot by desperate renegade German Army officers against Hitler during World War II.",
     "director": "Bryan Singer",
@@ -10636,7 +11657,12 @@
     "title": "The Green Hornet",
     "year": 2011,
     "score": 0,
-    "actors": ["Seth Rogen", "Jay Chou", "Cameron Diaz", "Tom Wilkinson"],
+    "actors": [
+      "Seth Rogen",
+      "Jay Chou",
+      "Cameron Diaz",
+      "Tom Wilkinson"
+    ],
     "length": "119 min",
     "plot": "Following the death of his father, Britt Reid, heir to his father's large company, teams up with his late dad's assistant Kato to become a masked crime fighting team.",
     "director": "Michel Gondry",
@@ -10650,7 +11676,12 @@
     "title": "Hanna",
     "year": 2011,
     "score": 0,
-    "actors": ["Saoirse Ronan", "Eric Bana", "Vicky Krieps", "Cate Blanchett"],
+    "actors": [
+      "Saoirse Ronan",
+      "Eric Bana",
+      "Vicky Krieps",
+      "Cate Blanchett"
+    ],
     "length": "111 min",
     "plot": "A sixteen-year-old girl who was raised by her father to be the perfect assassin is dispatched on a mission across Europe, tracked by a ruthless intelligence agent and her operatives.",
     "director": "Joe Wright",
@@ -10683,7 +11714,12 @@
     "title": "Megamind",
     "year": 2010,
     "score": 0,
-    "actors": ["Will Ferrell", "Brad Pitt", "Tina Fey", "Jonah Hill"],
+    "actors": [
+      "Will Ferrell",
+      "Brad Pitt",
+      "Tina Fey",
+      "Jonah Hill"
+    ],
     "length": "95 min",
     "plot": "The supervillain Megamind finally defeats his nemesis, the superhero Metro Man. But without a hero, he loses all purpose and must find new meaning to his life.",
     "director": "Tom McGrath",
@@ -10754,7 +11790,12 @@
     "title": "Redbelt",
     "year": 2008,
     "score": 0,
-    "actors": ["Max Martini", "Matt Cable", "Chiwetel Ejiofor", "Alice Braga"],
+    "actors": [
+      "Max Martini",
+      "Matt Cable",
+      "Chiwetel Ejiofor",
+      "Alice Braga"
+    ],
     "length": "99 min",
     "plot": "A fateful event leads to a job in the film business for top mixed-martial arts instructor Mike Terry. Though he refuses to participate in prize bouts, circumstances conspire to force him to consider entering such a competition.",
     "director": "David Mamet",
@@ -10787,7 +11828,12 @@
     "title": "Selma",
     "year": 2014,
     "score": 0,
-    "actors": ["David Oyelowo", "Carmen Ejogo", "Jim France", "Trinity Simone"],
+    "actors": [
+      "David Oyelowo",
+      "Carmen Ejogo",
+      "Jim France",
+      "Trinity Simone"
+    ],
     "length": "128 min",
     "plot": "A chronicle of Martin Luther King's campaign to secure equal voting rights via an epic march from Selma to Montgomery, Alabama in 1965.",
     "director": "Ava DuVernay",
@@ -10858,7 +11904,12 @@
     "title": "Argo",
     "year": 2012,
     "score": 0,
-    "actors": ["Ben Affleck", "Bryan Cranston", "Alan Arkin", "John Goodman"],
+    "actors": [
+      "Ben Affleck",
+      "Bryan Cranston",
+      "Alan Arkin",
+      "John Goodman"
+    ],
     "length": "120 min",
     "plot": "Acting under the cover of a Hollywood producer scouting a location for a science fiction film, a CIA agent launches a dangerous operation to rescue six Americans in Tehran during the U.S. hostage crisis in Iran in 1980.",
     "director": "Ben Affleck",
@@ -10929,7 +11980,12 @@
     "title": "Defiance",
     "year": 2008,
     "score": 0,
-    "actors": ["Daniel Craig", "Liev Schreiber", "Jamie Bell", "Alexa Davalos"],
+    "actors": [
+      "Daniel Craig",
+      "Liev Schreiber",
+      "Jamie Bell",
+      "Alexa Davalos"
+    ],
     "length": "137 min",
     "plot": "Jewish brothers in Nazi-occupied Eastern Europe escape into the Belarussian forests, where they join Russian resistance fighters and endeavor to build a village in order to protect themselves and about 1,000 Jewish non-combatants.",
     "director": "Edward Zwick",
@@ -10943,7 +11999,12 @@
     "title": "Iron Sky",
     "year": 2012,
     "score": 0,
-    "actors": ["Julia Dietze", "Christopher Kirby", "Götz Otto", "Udo Kier"],
+    "actors": [
+      "Julia Dietze",
+      "Christopher Kirby",
+      "Götz Otto",
+      "Udo Kier"
+    ],
     "length": "93 min",
     "plot": "The Nazis set up a secret base on the dark side of the moon in 1945 where they hide out and plan to return to power in 2018.",
     "director": "Timo Vuorensola",
@@ -10957,7 +12018,12 @@
     "title": "The Eagle",
     "year": 2011,
     "score": 0,
-    "actors": ["Channing Tatum", "István Göz", "Bence Gerö", "Denis O'Hare"],
+    "actors": [
+      "Channing Tatum",
+      "István Göz",
+      "Bence Gerö",
+      "Denis O'Hare"
+    ],
     "length": "114 min",
     "plot": "In Roman-ruled Britain, a young Roman soldier endeavors to honor his father's memory by finding his lost legion's golden emblem.",
     "director": "Kevin Macdonald",
@@ -11028,7 +12094,12 @@
     "title": "Year One",
     "year": 2009,
     "score": 0,
-    "actors": ["Jack Black", "Michael Cera", "Oliver Platt", "David Cross"],
+    "actors": [
+      "Jack Black",
+      "Michael Cera",
+      "Oliver Platt",
+      "David Cross"
+    ],
     "length": "97 min",
     "plot": "After being banished from their tribe, two hunter-gatherers encounter Biblical characters and eventually wind up in the city of Sodom.",
     "director": "Harold Ramis",
@@ -11061,7 +12132,12 @@
     "title": "Transformers: Revenge of the Fallen",
     "year": 2009,
     "score": 0,
-    "actors": ["Shia LaBeouf", "Megan Fox", "Josh Duhamel", "Tyrese Gibson"],
+    "actors": [
+      "Shia LaBeouf",
+      "Megan Fox",
+      "Josh Duhamel",
+      "Tyrese Gibson"
+    ],
     "length": "150 min",
     "plot": "Sam Witwicky leaves the Autobots behind for a normal life. But when his mind is filled with cryptic symbols, the Decepticons target him and he is dragged back into the Transformers' war.",
     "director": "Michael Bay",
@@ -11132,7 +12208,12 @@
     "title": "A Christmas Carol",
     "year": 2009,
     "score": 0,
-    "actors": ["Jim Carrey", "Steve Valentine", "Daryl Sabara", "Sage Ryan"],
+    "actors": [
+      "Jim Carrey",
+      "Steve Valentine",
+      "Daryl Sabara",
+      "Sage Ryan"
+    ],
     "length": "96 min",
     "plot": "An animated retelling of Charles Dickens' classic novel about a Victorian-era miser taken on a journey of self-redemption, courtesy of several mysterious Christmas apparitions.",
     "director": "Robert Zemeckis",
@@ -11146,7 +12227,12 @@
     "title": "Skyfall",
     "year": 2012,
     "score": 0,
-    "actors": ["Daniel Craig", "Judi Dench", "Javier Bardem", "Ralph Fiennes"],
+    "actors": [
+      "Daniel Craig",
+      "Judi Dench",
+      "Javier Bardem",
+      "Ralph Fiennes"
+    ],
     "length": "143 min",
     "plot": "Bond's loyalty to M is tested when her past comes back to haunt her. When MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.",
     "director": "Sam Mendes",
@@ -11179,7 +12265,12 @@
     "title": "Paul",
     "year": 2011,
     "score": 0,
-    "actors": ["Mia Stallard", "Simon Pegg", "Nick Frost", "Jeremy Owen"],
+    "actors": [
+      "Mia Stallard",
+      "Simon Pegg",
+      "Nick Frost",
+      "Jeremy Owen"
+    ],
     "length": "104 min",
     "plot": "Two British comic-book geeks traveling across the U.S. encounter an alien outside Area 51.",
     "director": "Greg Mottola",
@@ -11380,10 +12471,15 @@
   {
     "type": 0,
     "imdbID": "tt1135503",
-    "title": "Julie & Julia",
+    "title": "Julie \u0026 Julia",
     "year": 2009,
     "score": 0,
-    "actors": ["Meryl Streep", "Amy Adams", "Stanley Tucci", "Chris Messina"],
+    "actors": [
+      "Meryl Streep",
+      "Amy Adams",
+      "Stanley Tucci",
+      "Chris Messina"
+    ],
     "length": "118 min",
     "plot": "Julia Child's story of her start in the cooking profession is intertwined with blogger Julie Powell's 2002 challenge to cook all the recipes in Child's first book.",
     "director": "Nora Ephron",
@@ -11397,7 +12493,12 @@
     "title": "A Tale of Love and Darkness",
     "year": 2015,
     "score": 0,
-    "actors": ["Natalie Portman", "Shira Haas", "Tomer Kapon", "Makram Khoury"],
+    "actors": [
+      "Natalie Portman",
+      "Shira Haas",
+      "Tomer Kapon",
+      "Makram Khoury"
+    ],
     "length": "95 min",
     "plot": "The story of Amos Oz's youth, set against the backdrop of the end of the British Mandate for Palestine and the early years of the State of Israel. The film details the young man's relationship with his mother and his beginnings as a writer, while looking at what happens when the stories we tell become the stories we live.",
     "director": "Natalie Portman",
@@ -11449,7 +12550,12 @@
     "title": "All Good Things",
     "year": 2010,
     "score": 0,
-    "actors": ["Ryan Gosling", "Kirsten Dunst", "Frank Langella", "Lily Rabe"],
+    "actors": [
+      "Ryan Gosling",
+      "Kirsten Dunst",
+      "Frank Langella",
+      "Lily Rabe"
+    ],
     "length": "101 min",
     "plot": "Mr. David Marks was suspected but never tried for killing his wife Katie who disappeared in 1982, but the truth is eventually revealed.",
     "director": "Andrew Jarecki",
@@ -11501,7 +12607,12 @@
     "title": "Black Death",
     "year": 2010,
     "score": 0,
-    "actors": ["Sean Bean", "Eddie Redmayne", "John Lynch", "Tim McInnerny"],
+    "actors": [
+      "Sean Bean",
+      "Eddie Redmayne",
+      "John Lynch",
+      "Tim McInnerny"
+    ],
     "length": "102 min",
     "plot": "Set during the time of the first outbreak of bubonic plague in England, a young monk is given the task of learning the truth about reports of people being brought back to life in a small village.",
     "director": "Christopher Smith",
@@ -11572,7 +12683,12 @@
     "title": "Rango",
     "year": 2011,
     "score": 0,
-    "actors": ["Johnny Depp", "Isla Fisher", "Abigail Breslin", "Ned Beatty"],
+    "actors": [
+      "Johnny Depp",
+      "Isla Fisher",
+      "Abigail Breslin",
+      "Ned Beatty"
+    ],
     "length": "107 min",
     "plot": "Rango is an ordinary chameleon who accidentally winds up in the town of Dirt, a lawless outpost in the Wild West in desperate need of a new sheriff.",
     "director": "Gore Verbinski",
@@ -11605,7 +12721,12 @@
     "title": "The Bourne Legacy",
     "year": 2012,
     "score": 0,
-    "actors": ["Jeremy Renner", "Scott Glenn", "Stacy Keach", "Edward Norton"],
+    "actors": [
+      "Jeremy Renner",
+      "Scott Glenn",
+      "Stacy Keach",
+      "Edward Norton"
+    ],
     "length": "135 min",
     "plot": "An expansion of the universe from Robert Ludlum's novels, centered on a new hero whose stakes have been triggered by the events of the previous three films.",
     "director": "Tony Gilroy",
@@ -11619,7 +12740,12 @@
     "title": "Law Abiding Citizen",
     "year": 2009,
     "score": 0,
-    "actors": ["Jamie Foxx", "Gerard Butler", "Colm Meaney", "Bruce McGill"],
+    "actors": [
+      "Jamie Foxx",
+      "Gerard Butler",
+      "Colm Meaney",
+      "Bruce McGill"
+    ],
     "length": "109 min",
     "plot": "A frustrated man decides to take justice into his own hands after a plea bargain sets one of his family's killers free. He targets not only the killer but also the district attorney and others involved in the deal.",
     "director": "F. Gary Gray",
@@ -11652,7 +12778,12 @@
     "title": "Gran Torino",
     "year": 2008,
     "score": 0,
-    "actors": ["Clint Eastwood", "Christopher Carley", "Bee Vang", "Ahney Her"],
+    "actors": [
+      "Clint Eastwood",
+      "Christopher Carley",
+      "Bee Vang",
+      "Ahney Her"
+    ],
     "length": "116 min",
     "plot": "Disgruntled Korean War veteran Walt Kowalski sets out to reform his neighbor, a Hmong teenager who tried to steal Kowalski's prized possession: a 1972 Gran Torino.",
     "director": "Clint Eastwood",
@@ -11856,7 +12987,12 @@
     "title": "Resident Evil: Afterlife",
     "year": 2010,
     "score": 0,
-    "actors": ["Milla Jovovich", "Ali Larter", "Kim Coates", "Shawn Roberts"],
+    "actors": [
+      "Milla Jovovich",
+      "Ali Larter",
+      "Kim Coates",
+      "Shawn Roberts"
+    ],
     "length": "97 min",
     "plot": "While still out to destroy the evil Umbrella Corporation, Alice joins a group of survivors living in a prison surrounded by the infected who also want to relocate to the mysterious but supposedly unharmed safe haven known only as Arcadia.",
     "director": "Paul W.S. Anderson",
@@ -11889,7 +13025,12 @@
     "title": "Mission: Impossible - Ghost Protocol",
     "year": 2011,
     "score": 0,
-    "actors": ["Tom Cruise", "Paula Patton", "Simon Pegg", "Jeremy Renner"],
+    "actors": [
+      "Tom Cruise",
+      "Paula Patton",
+      "Simon Pegg",
+      "Jeremy Renner"
+    ],
     "length": "132 min",
     "plot": "The IMF is shut down when it's implicated in the bombing of the Kremlin, causing Ethan Hunt and his new team to go rogue to clear their organization's name.",
     "director": "Brad Bird",
@@ -11922,7 +13063,12 @@
     "title": "Ironclad",
     "year": 2011,
     "score": 0,
-    "actors": ["James Purefoy", "Brian Cox", "Kate Mara", "Derek Jacobi"],
+    "actors": [
+      "James Purefoy",
+      "Brian Cox",
+      "Kate Mara",
+      "Derek Jacobi"
+    ],
     "length": "121 min",
     "plot": "In thirteenth century England, a Knights Templar and few of the Barons men, fight to defend Rochester Castle against the tyrannical King John.",
     "director": "Jonathan English",
@@ -11955,7 +13101,12 @@
     "title": "Aloha",
     "year": 2015,
     "score": 0,
-    "actors": ["Bradley Cooper", "Emma Stone", "Rachel McAdams", "Bill Murray"],
+    "actors": [
+      "Bradley Cooper",
+      "Emma Stone",
+      "Rachel McAdams",
+      "Bill Murray"
+    ],
     "length": "105 min",
     "plot": "A celebrated military contractor returns to the site of his greatest career triumphs and reconnects with a long-ago love while unexpectedly falling for the hard-charging Air Force watch-dog assigned to him.",
     "director": "Cameron Crowe",
@@ -12023,10 +13174,15 @@
   {
     "type": 0,
     "imdbID": "tt1255919",
-    "title": "Holmes & Watson",
+    "title": "Holmes \u0026 Watson",
     "year": 2018,
     "score": 0,
-    "actors": ["Will Ferrell", "John C. Reilly", "Rebecca Hall", "Rob Brydon"],
+    "actors": [
+      "Will Ferrell",
+      "John C. Reilly",
+      "Rebecca Hall",
+      "Rob Brydon"
+    ],
     "length": "90 min",
     "plot": "A humorous take on Sir Arthur Conan Doyle's classic mysteries featuring Sherlock Holmes and Doctor Watson.",
     "director": "Etan Cohen",
@@ -12116,7 +13272,12 @@
     "title": "Easy A",
     "year": 2010,
     "score": 0,
-    "actors": ["Emma Stone", "Penn Badgley", "Amanda Bynes", "Dan Byrd"],
+    "actors": [
+      "Emma Stone",
+      "Penn Badgley",
+      "Amanda Bynes",
+      "Dan Byrd"
+    ],
     "length": "92 min",
     "plot": "A clean-cut high school student relies on the school's rumor mill to advance her social and financial standing.",
     "director": "Will Gluck",
@@ -12149,7 +13310,12 @@
     "title": "Ghostbusters",
     "year": 2016,
     "score": 0,
-    "actors": ["Zach Woods", "Kristen Wiig", "Ed Begley Jr.", "Charles Dance"],
+    "actors": [
+      "Zach Woods",
+      "Kristen Wiig",
+      "Ed Begley Jr.",
+      "Charles Dance"
+    ],
     "length": "116 min",
     "plot": "Following a ghost invasion of Manhattan, paranormal enthusiasts Erin Gilbert and Abby Yates, nuclear engineer Jillian Holtzmann, and subway worker Patty Tolan band together to stop the otherworldly threat.",
     "director": "Paul Feig",
@@ -12163,7 +13329,12 @@
     "title": "Teenage Mutant Ninja Turtles",
     "year": 2014,
     "score": 0,
-    "actors": ["Megan Fox", "Will Arnett", "William Fichtner", "Alan Ritchson"],
+    "actors": [
+      "Megan Fox",
+      "Will Arnett",
+      "William Fichtner",
+      "Alan Ritchson"
+    ],
     "length": "101 min",
     "plot": "When a kingpin threatens New York City, a group of mutated turtle warriors must emerge from the shadows to protect their home.",
     "director": "Jonathan Liebesman",
@@ -12177,7 +13348,12 @@
     "title": "Pirates of the Caribbean: On Stranger Tides",
     "year": 2011,
     "score": 0,
-    "actors": ["Johnny Depp", "Penélope Cruz", "Geoffrey Rush", "Ian McShane"],
+    "actors": [
+      "Johnny Depp",
+      "Penélope Cruz",
+      "Geoffrey Rush",
+      "Ian McShane"
+    ],
     "length": "136 min",
     "plot": "Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth, only to discover that Blackbeard and his daughter are after it too.",
     "director": "Rob Marshall",
@@ -12210,7 +13386,12 @@
     "title": "Kung Fu Panda 2",
     "year": 2011,
     "score": 0,
-    "actors": ["Jack Black", "Angelina Jolie", "Dustin Hoffman", "Gary Oldman"],
+    "actors": [
+      "Jack Black",
+      "Angelina Jolie",
+      "Dustin Hoffman",
+      "Gary Oldman"
+    ],
     "length": "90 min",
     "plot": "Po and his friends fight to stop a peacock villain from conquering China with a deadly new weapon, but first the Dragon Warrior must come to terms with his past.",
     "director": "Jennifer Yuh Nelson",
@@ -12281,7 +13462,12 @@
     "title": "Despicable Me",
     "year": 2010,
     "score": 0,
-    "actors": ["Steve Carell", "Jason Segel", "Russell Brand", "Julie Andrews"],
+    "actors": [
+      "Steve Carell",
+      "Jason Segel",
+      "Russell Brand",
+      "Julie Andrews"
+    ],
     "length": "95 min",
     "plot": "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better.",
     "director": "Pierre Coffin, Chris Renaud",
@@ -12349,7 +13535,7 @@
   {
     "type": 0,
     "imdbID": "tt1340123",
-    "title": "Samson & Delilah",
+    "title": "Samson \u0026 Delilah",
     "year": 2009,
     "score": 0,
     "actors": [
@@ -12409,7 +13595,12 @@
     "title": "Dredd",
     "year": 2012,
     "score": 0,
-    "actors": ["Karl Urban", "Rachel Wood", "Andile Mngadi", "Porteus Xandau"],
+    "actors": [
+      "Karl Urban",
+      "Rachel Wood",
+      "Andile Mngadi",
+      "Porteus Xandau"
+    ],
     "length": "95 min",
     "plot": "In a violent, futuristic city where the police have the authority to act as judge, jury and executioner, a cop teams with a trainee to take down a gang that deals the reality-altering drug, SLO-MO.",
     "director": "Pete Travis",
@@ -12499,7 +13690,12 @@
     "title": "Cloud Atlas",
     "year": 2012,
     "score": 0,
-    "actors": ["Tom Hanks", "Halle Berry", "Jim Broadbent", "Hugo Weaving"],
+    "actors": [
+      "Tom Hanks",
+      "Halle Berry",
+      "Jim Broadbent",
+      "Hugo Weaving"
+    ],
     "length": "172 min",
     "plot": "An exploration of how the actions of individual lives impact one another in the past, present and future, as one soul is shaped from a killer into a hero, and an act of kindness ripples across centuries to inspire a revolution.",
     "director": "Tom Tykwer, Lana Wachowski, Lilly Wachowski",
@@ -12513,7 +13709,12 @@
     "title": "Pride and Prejudice and Zombies",
     "year": 2016,
     "score": 0,
-    "actors": ["Lily James", "Sam Riley", "Bella Heathcote", "Ellie Bamber"],
+    "actors": [
+      "Lily James",
+      "Sam Riley",
+      "Bella Heathcote",
+      "Ellie Bamber"
+    ],
     "length": "108 min",
     "plot": "Five sisters in 19th century England must cope with the pressures to marry while protecting themselves from a growing population of zombies.",
     "director": "Burr Steers",
@@ -12546,7 +13747,12 @@
     "title": "The Other Guys",
     "year": 2010,
     "score": 0,
-    "actors": ["Will Ferrell", "Derek Jeter", "Mark Wahlberg", "Eva Mendes"],
+    "actors": [
+      "Will Ferrell",
+      "Derek Jeter",
+      "Mark Wahlberg",
+      "Eva Mendes"
+    ],
     "length": "107 min",
     "plot": "Two mismatched New York City detectives seize an opportunity to step up like the city's top cops whom they idolize -- only things don't quite go as planned.",
     "director": "Adam McKay",
@@ -12598,7 +13804,12 @@
     "title": "Downsizing",
     "year": 2017,
     "score": 0,
-    "actors": ["Matt Damon", "Christoph Waltz", "Hong Chau", "Kristen Wiig"],
+    "actors": [
+      "Matt Damon",
+      "Christoph Waltz",
+      "Hong Chau",
+      "Kristen Wiig"
+    ],
     "length": "135 min",
     "plot": "A social satire in which a man realizes he would have a better life if he were to shrink himself to five inches tall, allowing him to live in wealth and splendor.",
     "director": "Alexander Payne",
@@ -12707,7 +13918,12 @@
     "title": "True Grit",
     "year": 2010,
     "score": 0,
-    "actors": ["Jeff Bridges", "Hailee Steinfeld", "Matt Damon", "Josh Brolin"],
+    "actors": [
+      "Jeff Bridges",
+      "Hailee Steinfeld",
+      "Matt Damon",
+      "Josh Brolin"
+    ],
     "length": "110 min",
     "plot": "A tough U.S. Marshal helps a stubborn teenager track down her father's murderer.",
     "director": "Ethan Coen, Joel Coen",
@@ -12721,7 +13937,12 @@
     "title": "Star Trek Into Darkness",
     "year": 2013,
     "score": 0,
-    "actors": ["Chris Pine", "Zachary Quinto", "Zoe Saldana", "Karl Urban"],
+    "actors": [
+      "Chris Pine",
+      "Zachary Quinto",
+      "Zoe Saldana",
+      "Karl Urban"
+    ],
     "length": "132 min",
     "plot": "After the crew of the Enterprise find an unstoppable force of terror from within their own organization, Captain Kirk leads a manhunt to a war-zone world to capture a one-man weapon of mass destruction.",
     "director": "J.J. Abrams",
@@ -12735,7 +13956,12 @@
     "title": "The Flowers of War",
     "year": 2011,
     "score": 0,
-    "actors": ["Christian Bale", "Ni Ni", "Xinyi Zhang", "Tianyuan Huang"],
+    "actors": [
+      "Christian Bale",
+      "Ni Ni",
+      "Xinyi Zhang",
+      "Tianyuan Huang"
+    ],
     "length": "146 min",
     "plot": "A Westerner finds refuge with a group of women in a church during Japan's rape of Nanking in 1937. Posing as a priest, he attempts to lead the women to safety.",
     "director": "Yimou Zhang",
@@ -12787,7 +14013,12 @@
     "title": "Predators",
     "year": 2010,
     "score": 0,
-    "actors": ["Adrien Brody", "Topher Grace", "Alice Braga", "Walton Goggins"],
+    "actors": [
+      "Adrien Brody",
+      "Topher Grace",
+      "Alice Braga",
+      "Walton Goggins"
+    ],
     "length": "107 min",
     "plot": "A group of elite warriors parachute into an unfamiliar jungle and are hunted by members of a merciless alien race.",
     "director": "Nimród Antal",
@@ -12798,7 +14029,7 @@
   {
     "type": 0,
     "imdbID": "tt1428538",
-    "title": "Hansel & Gretel: Witch Hunters",
+    "title": "Hansel \u0026 Gretel: Witch Hunters",
     "year": 2013,
     "score": 0,
     "actors": [
@@ -12808,7 +14039,7 @@
       "Pihla Viitala"
     ],
     "length": "88 min",
-    "plot": "Hansel & Gretel are bounty hunters who track and kill witches all over the world. As the fabled Blood Moon approaches, the siblings encounter a new form of evil that might hold a secret to their past.",
+    "plot": "Hansel \u0026 Gretel are bounty hunters who track and kill witches all over the world. As the fabled Blood Moon approaches, the siblings encounter a new form of evil that might hold a secret to their past.",
     "director": "Tommy Wirkola",
     "watched": true,
     "date_watched": "",
@@ -12839,7 +14070,12 @@
     "title": "Deadpool",
     "year": 2016,
     "score": 0,
-    "actors": ["Ryan Reynolds", "Karan Soni", "Ed Skrein", "Michael Benyaer"],
+    "actors": [
+      "Ryan Reynolds",
+      "Karan Soni",
+      "Ed Skrein",
+      "Michael Benyaer"
+    ],
     "length": "108 min",
     "plot": "A fast-talking mercenary with a morbid sense of humor is subjected to a rogue experiment that leaves him with accelerated healing powers and a quest for revenge.",
     "director": "Tim Miller",
@@ -12986,7 +14222,12 @@
     "title": "Aquaman",
     "year": 2018,
     "score": 0,
-    "actors": ["Jason Momoa", "Amber Heard", "Patrick Wilson", "Willem Dafoe"],
+    "actors": [
+      "Jason Momoa",
+      "Amber Heard",
+      "Patrick Wilson",
+      "Willem Dafoe"
+    ],
     "length": "N/A",
     "plot": "Arthur Curry learns that he is the heir to the underwater kingdom of Atlantis, and must step forward to lead his people and to be a hero to the world.",
     "director": "James Wan",
@@ -13019,7 +14260,12 @@
     "title": "The Lego Movie",
     "year": 2014,
     "score": 0,
-    "actors": ["Will Arnett", "Elizabeth Banks", "Craig Berry", "Alison Brie"],
+    "actors": [
+      "Will Arnett",
+      "Elizabeth Banks",
+      "Craig Berry",
+      "Alison Brie"
+    ],
     "length": "100 min",
     "plot": "An ordinary Lego construction worker, thought to be the prophesied 'Special', is recruited to join a quest to stop an evil tyrant from gluing the Lego universe into eternal stasis.",
     "director": "Phil Lord, Christopher Miller",
@@ -13033,7 +14279,12 @@
     "title": "Underworld: Awakening",
     "year": 2012,
     "score": 0,
-    "actors": ["Kate Beckinsale", "Stephen Rea", "Michael Ealy", "Theo James"],
+    "actors": [
+      "Kate Beckinsale",
+      "Stephen Rea",
+      "Michael Ealy",
+      "Theo James"
+    ],
     "length": "88 min",
     "plot": "When human forces discover the existence of the Vampire and Lycan clans, a war to eradicate both species commences. The vampire warrior Selene leads the battle against humankind.",
     "director": "Måns Mårlind, Björn Stein",
@@ -13104,7 +14355,12 @@
     "title": "Elysium",
     "year": 2013,
     "score": 0,
-    "actors": ["Matt Damon", "Jodie Foster", "Sharlto Copley", "Alice Braga"],
+    "actors": [
+      "Matt Damon",
+      "Jodie Foster",
+      "Sharlto Copley",
+      "Alice Braga"
+    ],
     "length": "109 min",
     "plot": "In the year 2154, the very wealthy live on a man-made space station while the rest of the population resides on a ruined Earth. A man takes on a mission that could bring equality to the polarized worlds.",
     "director": "Neill Blomkamp",
@@ -13232,7 +14488,12 @@
     "title": "Crazy, Stupid, Love.",
     "year": 2011,
     "score": 0,
-    "actors": ["Steve Carell", "Ryan Gosling", "Julianne Moore", "Emma Stone"],
+    "actors": [
+      "Steve Carell",
+      "Ryan Gosling",
+      "Julianne Moore",
+      "Emma Stone"
+    ],
     "length": "118 min",
     "plot": "A middle-aged husband's life changes dramatically when his wife asks him for a divorce. He seeks to rediscover his manhood with the help of a newfound friend, Jacob, learning to pick up girls at bars.",
     "director": "Glenn Ficarra, John Requa",
@@ -13265,7 +14526,12 @@
     "title": "The Skeleton Twins",
     "year": 2014,
     "score": 0,
-    "actors": ["Bill Hader", "Kristen Wiig", "Luke Wilson", "Ty Burrell"],
+    "actors": [
+      "Bill Hader",
+      "Kristen Wiig",
+      "Luke Wilson",
+      "Ty Burrell"
+    ],
     "length": "93 min",
     "plot": "Having both coincidentally cheated death on the same day, estranged twins reunite with the possibility of mending their relationship.",
     "director": "Craig Johnson",
@@ -13374,7 +14640,12 @@
     "title": "Comic-Con Episode IV: A Fan's Hope",
     "year": 2011,
     "score": 0,
-    "actors": ["Kevin Smith", "Seth Rogen", "Kenneth Branagh", "Thomas Jane"],
+    "actors": [
+      "Kevin Smith",
+      "Seth Rogen",
+      "Kenneth Branagh",
+      "Thomas Jane"
+    ],
     "length": "88 min",
     "plot": "A behind-the-scenes look at the fans who gather by the thousands each year in San Diego, California to attend Comic-Con, the world's largest comic book convention.",
     "director": "Morgan Spurlock",
@@ -13483,7 +14754,12 @@
     "title": "Jupiter Ascending",
     "year": 2015,
     "score": 0,
-    "actors": ["Mila Kunis", "Channing Tatum", "Sean Bean", "Eddie Redmayne"],
+    "actors": [
+      "Mila Kunis",
+      "Channing Tatum",
+      "Sean Bean",
+      "Eddie Redmayne"
+    ],
     "length": "127 min",
     "plot": "A young woman discovers her destiny as an heiress of intergalactic nobility and must fight to protect the inhabitants of Earth from an ancient and destructive industry.",
     "director": "Lana Wachowski, Lilly Wachowski",
@@ -13516,7 +14792,12 @@
     "title": "Free Birds",
     "year": 2013,
     "score": 0,
-    "actors": ["Owen Wilson", "Woody Harrelson", "Amy Poehler", "George Takei"],
+    "actors": [
+      "Owen Wilson",
+      "Woody Harrelson",
+      "Amy Poehler",
+      "George Takei"
+    ],
     "length": "91 min",
     "plot": "2 Turkeys from opposite sides of the tracks must put aside their differences and team up to travel back in time to change the course of history - and get Turkeys off the Thanksgiving menu for good.",
     "director": "Jimmy Hayward",
@@ -13549,7 +14830,12 @@
     "title": "Hector and the Search for Happiness",
     "year": 2014,
     "score": 0,
-    "actors": ["Simon Pegg", "Rosamund Pike", "Tracy Ann Oberman", "Jean Reno"],
+    "actors": [
+      "Simon Pegg",
+      "Rosamund Pike",
+      "Tracy Ann Oberman",
+      "Jean Reno"
+    ],
     "length": "114 min",
     "plot": "A psychiatrist searches the globe to find the secret of happiness.",
     "director": "Peter Chelsom",
@@ -13582,7 +14868,12 @@
     "title": "Edge of Tomorrow",
     "year": 2014,
     "score": 0,
-    "actors": ["Tom Cruise", "Emily Blunt", "Brendan Gleeson", "Bill Paxton"],
+    "actors": [
+      "Tom Cruise",
+      "Emily Blunt",
+      "Brendan Gleeson",
+      "Bill Paxton"
+    ],
     "length": "113 min",
     "plot": "A soldier fighting aliens gets to relive the same day over and over again, the day restarting every time he dies.",
     "director": "Doug Liman",
@@ -13634,7 +14925,12 @@
     "title": "Ted",
     "year": 2012,
     "score": 0,
-    "actors": ["Mark Wahlberg", "Mila Kunis", "Seth MacFarlane", "Joel McHale"],
+    "actors": [
+      "Mark Wahlberg",
+      "Mila Kunis",
+      "Seth MacFarlane",
+      "Joel McHale"
+    ],
     "length": "106 min",
     "plot": "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear or his girlfriend, Lori.",
     "director": "Seth MacFarlane",
@@ -13838,7 +15134,12 @@
     "title": "Mirror Mirror",
     "year": 2012,
     "score": 0,
-    "actors": ["Julia Roberts", "Lily Collins", "Armie Hammer", "Nathan Lane"],
+    "actors": [
+      "Julia Roberts",
+      "Lily Collins",
+      "Armie Hammer",
+      "Nathan Lane"
+    ],
     "length": "106 min",
     "plot": "An evil queen steals control of a kingdom and an exiled princess enlists the help of seven resourceful rebels to win back her birthright.",
     "director": "Tarsem Singh",
@@ -13871,7 +15172,12 @@
     "title": "The Intouchables",
     "year": 2011,
     "score": 0,
-    "actors": ["François Cluzet", "Omar Sy", "Anne Le Ny", "Audrey Fleurot"],
+    "actors": [
+      "François Cluzet",
+      "Omar Sy",
+      "Anne Le Ny",
+      "Audrey Fleurot"
+    ],
     "length": "112 min",
     "plot": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
     "director": "Olivier Nakache, Eric Toledano",
@@ -13961,7 +15267,12 @@
     "title": "Snowpiercer",
     "year": 2013,
     "score": 0,
-    "actors": ["Chris Evans", "Kang-ho Song", "Ed Harris", "John Hurt"],
+    "actors": [
+      "Chris Evans",
+      "Kang-ho Song",
+      "Ed Harris",
+      "John Hurt"
+    ],
     "length": "126 min",
     "plot": "Set in a future where a failed climate-change experiment kills all life on the planet except for a lucky few who boarded the Snowpiercer, a train that travels around the globe, where a class system emerges.",
     "director": "Joon-ho Bong",
@@ -14013,7 +15324,12 @@
     "title": "Bohemian Rhapsody",
     "year": 2018,
     "score": 0,
-    "actors": ["Rami Malek", "Lucy Boynton", "Gwilym Lee", "Ben Hardy"],
+    "actors": [
+      "Rami Malek",
+      "Lucy Boynton",
+      "Gwilym Lee",
+      "Ben Hardy"
+    ],
     "length": "134 min",
     "plot": "The story of the legendary rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985).",
     "director": "Bryan Singer",
@@ -14181,7 +15497,12 @@
     "title": "No Escape",
     "year": 2015,
     "score": 0,
-    "actors": ["Owen Wilson", "Lake Bell", "Sterling Jerins", "Claire Geare"],
+    "actors": [
+      "Owen Wilson",
+      "Lake Bell",
+      "Sterling Jerins",
+      "Claire Geare"
+    ],
     "length": "103 min",
     "plot": "In their new overseas home, an American family soon finds themselves caught in the middle of a coup, and they frantically look for a safe escape from an environment where foreigners are being immediately executed.",
     "director": "John Erick Dowdle",
@@ -14290,7 +15611,12 @@
     "title": "After Earth",
     "year": 2013,
     "score": 0,
-    "actors": ["Jaden Smith", "Will Smith", "Sophie Okonedo", "Zoë Kravitz"],
+    "actors": [
+      "Jaden Smith",
+      "Will Smith",
+      "Sophie Okonedo",
+      "Zoë Kravitz"
+    ],
     "length": "100 min",
     "plot": "A crash landing leaves Kitai Raige and his father Cypher stranded on Earth, a millennium after events forced humanity's escape. With Cypher injured, Kitai must embark on a perilous journey to signal for help.",
     "director": "M. Night Shyamalan",
@@ -14304,7 +15630,12 @@
     "title": "The Place Beyond the Pines",
     "year": 2012,
     "score": 0,
-    "actors": ["Ryan Gosling", "Craig Van Hook", "Eva Mendes", "Olga Merediz"],
+    "actors": [
+      "Ryan Gosling",
+      "Craig Van Hook",
+      "Eva Mendes",
+      "Olga Merediz"
+    ],
     "length": "140 min",
     "plot": "A motorcycle stunt rider turns to robbing banks as a way to provide for his lover and their newborn child, a decision that puts him on a collision course with an ambitious rookie cop navigating a department ruled by a corrupt detective.",
     "director": "Derek Cianfrance",
@@ -14337,7 +15668,12 @@
     "title": "Chappie",
     "year": 2015,
     "score": 0,
-    "actors": ["Sharlto Copley", "Dev Patel", "Ninja", "Yo-Landi Visser"],
+    "actors": [
+      "Sharlto Copley",
+      "Dev Patel",
+      "Ninja",
+      "Yo-Landi Visser"
+    ],
     "length": "120 min",
     "plot": "In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.",
     "director": "Neill Blomkamp",
@@ -14389,7 +15725,12 @@
     "title": "Hunter Killer",
     "year": 2018,
     "score": 0,
-    "actors": ["Gerard Butler", "Gary Oldman", "Common", "Caroline Goodall"],
+    "actors": [
+      "Gerard Butler",
+      "Gary Oldman",
+      "Common",
+      "Caroline Goodall"
+    ],
     "length": "N/A",
     "plot": "An untested American submarine captain teams with U.S. Navy Seals to rescue the Russian president, who has been kidnapped by a rogue general.",
     "director": "Donovan Marsh",
@@ -14460,7 +15801,12 @@
     "title": "Blade Runner 2049",
     "year": 2017,
     "score": 0,
-    "actors": ["Ryan Gosling", "Dave Bautista", "Robin Wright", "Mark Arnold"],
+    "actors": [
+      "Ryan Gosling",
+      "Dave Bautista",
+      "Robin Wright",
+      "Mark Arnold"
+    ],
     "length": "164 min",
     "plot": "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
     "director": "Denis Villeneuve",
@@ -14481,7 +15827,7 @@
       "Kim Dickens"
     ],
     "length": "N/A",
-    "plot": "A pair of police officers come out of retirement to catch the infamous outlaws Bonnie & Clyde.",
+    "plot": "A pair of police officers come out of retirement to catch the infamous outlaws Bonnie \u0026 Clyde.",
     "director": "John Lee Hancock",
     "watched": false,
     "date_watched": "",
@@ -14493,7 +15839,12 @@
     "title": "The Amazing Spider-Man 2",
     "year": 2014,
     "score": 0,
-    "actors": ["Andrew Garfield", "Emma Stone", "Jamie Foxx", "Dane DeHaan"],
+    "actors": [
+      "Andrew Garfield",
+      "Emma Stone",
+      "Jamie Foxx",
+      "Dane DeHaan"
+    ],
     "length": "142 min",
     "plot": "When New York is put under siege by Oscorp, it is up to Spider-Man to save the city he swore to protect as well as his loved ones.",
     "director": "Marc Webb",
@@ -14846,7 +16197,7 @@
   {
     "type": 0,
     "imdbID": "tt1990314",
-    "title": "Robot & Frank",
+    "title": "Robot \u0026 Frank",
     "year": 2012,
     "score": 0,
     "actors": [
@@ -14887,7 +16238,12 @@
     "title": "Guardians of the Galaxy",
     "year": 2014,
     "score": 0,
-    "actors": ["Chris Pratt", "Zoe Saldana", "Dave Bautista", "Vin Diesel"],
+    "actors": [
+      "Chris Pratt",
+      "Zoe Saldana",
+      "Dave Bautista",
+      "Vin Diesel"
+    ],
     "length": "121 min",
     "plot": "A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.",
     "director": "James Gunn",
@@ -14901,7 +16257,9 @@
     "title": "All Is Lost",
     "year": 2013,
     "score": 0,
-    "actors": ["Robert Redford"],
+    "actors": [
+      "Robert Redford"
+    ],
     "length": "106 min",
     "plot": "After a collision with a shipping container at sea, a resourceful sailor finds himself, despite all efforts to the contrary, staring his mortality in the face.",
     "director": "J.C. Chandor",
@@ -14934,7 +16292,12 @@
     "title": "The Great Wall",
     "year": 2016,
     "score": 0,
-    "actors": ["Matt Damon", "Pedro Pascal", "Willem Dafoe", "Tian Jing"],
+    "actors": [
+      "Matt Damon",
+      "Pedro Pascal",
+      "Willem Dafoe",
+      "Tian Jing"
+    ],
     "length": "103 min",
     "plot": "European mercenaries searching for black powder become embroiled in the defense of the Great Wall of China against a horde of monstrous creatures.",
     "director": "Yimou Zhang",
@@ -14986,7 +16349,12 @@
     "title": "The Assassins",
     "year": 2012,
     "score": 0,
-    "actors": ["Yun-Fat Chow", "Yifei Liu", "Hiroshi Tamaki", "Alec Su"],
+    "actors": [
+      "Yun-Fat Chow",
+      "Yifei Liu",
+      "Hiroshi Tamaki",
+      "Alec Su"
+    ],
     "length": "107 min",
     "plot": "Set in the Three Kingdoms period of Chinese history, the story focuses on Cao Cao in his old age, exploring the areas of military tactics, love, and the relationship between father and son.",
     "director": "Linshan Zhao",
@@ -15038,7 +16406,12 @@
     "title": "Inside Out",
     "year": 2015,
     "score": 0,
-    "actors": ["Amy Poehler", "Phyllis Smith", "Richard Kind", "Bill Hader"],
+    "actors": [
+      "Amy Poehler",
+      "Phyllis Smith",
+      "Richard Kind",
+      "Bill Hader"
+    ],
     "length": "95 min",
     "plot": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house, and school.",
     "director": "Pete Docter, Ronnie Del Carmen",
@@ -15052,7 +16425,12 @@
     "title": "Dawn of the Planet of the Apes",
     "year": 2014,
     "score": 0,
-    "actors": ["Andy Serkis", "Jason Clarke", "Gary Oldman", "Keri Russell"],
+    "actors": [
+      "Andy Serkis",
+      "Jason Clarke",
+      "Gary Oldman",
+      "Keri Russell"
+    ],
     "length": "130 min",
     "plot": "A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors of the devastating virus unleashed a decade earlier.",
     "director": "Matt Reeves",
@@ -15237,7 +16615,12 @@
     "title": "The Accountant",
     "year": 2016,
     "score": 0,
-    "actors": ["Ben Affleck", "Anna Kendrick", "J.K. Simmons", "Jon Bernthal"],
+    "actors": [
+      "Ben Affleck",
+      "Anna Kendrick",
+      "J.K. Simmons",
+      "Jon Bernthal"
+    ],
     "length": "128 min",
     "plot": "As a math savant uncooks the books for a new client, the Treasury Department closes in on his activities, and the body count starts to rise.",
     "director": "Gavin O'Connor",
@@ -15251,7 +16634,12 @@
     "title": "Tracks",
     "year": 2013,
     "score": 0,
-    "actors": ["Lily Pearl", "Mia Wasikowska", "Philip Dodd", "Fiona Press"],
+    "actors": [
+      "Lily Pearl",
+      "Mia Wasikowska",
+      "Philip Dodd",
+      "Fiona Press"
+    ],
     "length": "112 min",
     "plot": "A young woman goes on a 1,700-mile trek across the deserts of West Australia with four camels and her faithful dog.",
     "director": "John Curran",
@@ -15265,7 +16653,12 @@
     "title": "The Monuments Men",
     "year": 2014,
     "score": 0,
-    "actors": ["George Clooney", "Matt Damon", "Bill Murray", "Cate Blanchett"],
+    "actors": [
+      "George Clooney",
+      "Matt Damon",
+      "Bill Murray",
+      "Cate Blanchett"
+    ],
     "length": "118 min",
     "plot": "An unlikely World War II platoon is tasked to rescue art masterpieces from Nazi thieves and return them to their owners.",
     "director": "George Clooney",
@@ -15279,7 +16672,12 @@
     "title": "American Sniper",
     "year": 2014,
     "score": 0,
-    "actors": ["Bradley Cooper", "Kyle Gallner", "Cole Konis", "Ben Reed"],
+    "actors": [
+      "Bradley Cooper",
+      "Kyle Gallner",
+      "Cole Konis",
+      "Ben Reed"
+    ],
     "length": "133 min",
     "plot": "Navy S.E.A.L. sniper Chris Kyle's pinpoint accuracy saves countless lives on the battlefield and turns him into a legend. Back home to his wife and kids after four tours of duty, however, Chris finds that it is the war he can't leave behind.",
     "director": "Clint Eastwood",
@@ -15331,7 +16729,12 @@
     "title": "Transcendence",
     "year": 2014,
     "score": 0,
-    "actors": ["Johnny Depp", "Rebecca Hall", "Paul Bettany", "Cillian Murphy"],
+    "actors": [
+      "Johnny Depp",
+      "Rebecca Hall",
+      "Paul Bettany",
+      "Cillian Murphy"
+    ],
     "length": "119 min",
     "plot": "A scientist's drive for artificial intelligence, takes on dangerous implications when his consciousness is uploaded into one such program.",
     "director": "Wally Pfister",
@@ -15345,7 +16748,12 @@
     "title": "Home",
     "year": 2015,
     "score": 0,
-    "actors": ["Jim Parsons", "Rihanna", "Steve Martin", "Jennifer Lopez"],
+    "actors": [
+      "Jim Parsons",
+      "Rihanna",
+      "Steve Martin",
+      "Jennifer Lopez"
+    ],
     "length": "94 min",
     "plot": "An alien on the run from his own people makes friends with a girl. He tries to help her on her quest, but can be an interference.",
     "director": "Tim Johnson",
@@ -15397,7 +16805,12 @@
     "title": "Valerian and the City of a Thousand Planets",
     "year": 2017,
     "score": 0,
-    "actors": ["Cara Delevingne", "Dane DeHaan", "Ethan Hawke", "John Goodman"],
+    "actors": [
+      "Cara Delevingne",
+      "Dane DeHaan",
+      "Ethan Hawke",
+      "John Goodman"
+    ],
     "length": "129 min",
     "plot": "A dark force threatens Alpha, a vast metropolis and home to species from a thousand planets. Special operatives Valerian and Laureline must race to identify the marauding menace and safeguard not just Alpha, but the future of the universe.",
     "director": "Luc Besson",
@@ -15430,7 +16843,12 @@
     "title": "Big Hero 6",
     "year": 2014,
     "score": 0,
-    "actors": ["Scott Adsit", "Ryan Potter", "Daniel Henney", "T.J. Miller"],
+    "actors": [
+      "Scott Adsit",
+      "Ryan Potter",
+      "Daniel Henney",
+      "T.J. Miller"
+    ],
     "length": "102 min",
     "plot": "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
     "director": "Don Hall, Chris Williams",
@@ -15729,7 +17147,12 @@
     "title": "Mary Queen of Scots",
     "year": 2018,
     "score": 0,
-    "actors": ["Margot Robbie", "Gemma Chan", "Saoirse Ronan", "David Tennant"],
+    "actors": [
+      "Margot Robbie",
+      "Gemma Chan",
+      "Saoirse Ronan",
+      "David Tennant"
+    ],
     "length": "N/A",
     "plot": "Mary Stuart's attempt to overthrow her cousin Elizabeth I, Queen of England, finds her condemned to years of imprisonment before facing execution.",
     "director": "Josie Rourke",
@@ -15743,7 +17166,12 @@
     "title": "Like Father, Like Son",
     "year": 2013,
     "score": 0,
-    "actors": ["Masaharu Fukuyama", "Machiko Ono", "Yôko Maki", "Lily Franky"],
+    "actors": [
+      "Masaharu Fukuyama",
+      "Machiko Ono",
+      "Yôko Maki",
+      "Lily Franky"
+    ],
     "length": "121 min",
     "plot": "Ryota is a successful workaholic businessman. When he learns that his biological son was switched with another boy after birth, he faces the difficult decision to choose his true son or the boy he and his wife have raised as their own.",
     "director": "Hirokazu Koreeda",
@@ -15814,7 +17242,12 @@
     "title": "PK",
     "year": 2014,
     "score": 0,
-    "actors": ["Aamir Khan", "Anushka Sharma", "Sanjay Dutt", "Boman Irani"],
+    "actors": [
+      "Aamir Khan",
+      "Anushka Sharma",
+      "Sanjay Dutt",
+      "Boman Irani"
+    ],
     "length": "153 min",
     "plot": "A stranger in the city asks questions no one has asked before. His childlike curiosity will take him on a journey of love, laughter, and letting go.",
     "director": "Rajkumar Hirani",
@@ -15828,7 +17261,12 @@
     "title": "Jobs",
     "year": 2013,
     "score": 0,
-    "actors": ["Ashton Kutcher", "Dermot Mulroney", "Josh Gad", "Lukas Haas"],
+    "actors": [
+      "Ashton Kutcher",
+      "Dermot Mulroney",
+      "Josh Gad",
+      "Lukas Haas"
+    ],
     "length": "128 min",
     "plot": "The story of Steve Jobs' ascension from college dropout into one of the most revered creative entrepreneurs of the 20th century.",
     "director": "Joshua Michael Stern",
@@ -15842,7 +17280,12 @@
     "title": "The Act of Killing",
     "year": 2012,
     "score": 0,
-    "actors": ["Anwar Congo", "Herman Koto", "Syamsul Arifin", "Ibrahim Sinik"],
+    "actors": [
+      "Anwar Congo",
+      "Herman Koto",
+      "Syamsul Arifin",
+      "Ibrahim Sinik"
+    ],
     "length": "115 min",
     "plot": "A documentary which challenges former Indonesian death-squad leaders to reenact their mass-killings in whichever cinematic genres they wish, including classic Hollywood crime scenarios and lavish musical numbers.",
     "director": "Joshua Oppenheimer, Anonymous, Christine Cynn",
@@ -15913,7 +17356,12 @@
     "title": "Mission: Impossible - Rogue Nation",
     "year": 2015,
     "score": 0,
-    "actors": ["Tom Cruise", "Jeremy Renner", "Simon Pegg", "Rebecca Ferguson"],
+    "actors": [
+      "Tom Cruise",
+      "Jeremy Renner",
+      "Simon Pegg",
+      "Rebecca Ferguson"
+    ],
     "length": "131 min",
     "plot": "Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization as highly skilled as they are, committed to destroying the IMF.",
     "director": "Christopher McQuarrie",
@@ -16060,7 +17508,12 @@
     "title": "Star Wars: The Force Awakens",
     "year": 2015,
     "score": 0,
-    "actors": ["Harrison Ford", "Mark Hamill", "Carrie Fisher", "Adam Driver"],
+    "actors": [
+      "Harrison Ford",
+      "Mark Hamill",
+      "Carrie Fisher",
+      "Adam Driver"
+    ],
     "length": "136 min",
     "plot": "Three decades after the defeat of the Galactic Empire, a new threat arises. The First Order attempts to rule the galaxy and only a ragtag group of heroes can stop them, along with the help of the Resistance.",
     "director": "J.J. Abrams",
@@ -16074,7 +17527,12 @@
     "title": "Star Wars: The Last Jedi",
     "year": 2017,
     "score": 0,
-    "actors": ["Daisy Ridley", "Tom Hardy", "Billie Lourd", "Andy Serkis"],
+    "actors": [
+      "Daisy Ridley",
+      "Tom Hardy",
+      "Billie Lourd",
+      "Andy Serkis"
+    ],
     "length": "150 min",
     "plot": "Having taken her first steps into the larger Jedi world, Rey joins Luke Skywalker on an adventure with Leia, Finn and Poe that unlocks mysteries of the Force and secrets of the past.",
     "director": "Rian Johnson",
@@ -16126,7 +17584,12 @@
     "title": "Pacific Rim: Uprising",
     "year": 2018,
     "score": 0,
-    "actors": ["John Boyega", "Scott Eastwood", "Cailee Spaeny", "Burn Gorman"],
+    "actors": [
+      "John Boyega",
+      "Scott Eastwood",
+      "Cailee Spaeny",
+      "Burn Gorman"
+    ],
     "length": "111 min",
     "plot": "Jake Pentecost, son of Stacker Pentecost, reunites with Mako Mori to lead a new generation of Jaeger pilots, including rival Lambert and 15-year-old hacker Amara, against a new Kaiju threat.",
     "director": "Steven S. DeKnight",
@@ -16216,7 +17679,12 @@
     "title": "Star Trek Beyond",
     "year": 2016,
     "score": 0,
-    "actors": ["Chris Pine", "Zachary Quinto", "Karl Urban", "Zoe Saldana"],
+    "actors": [
+      "Chris Pine",
+      "Zachary Quinto",
+      "Karl Urban",
+      "Zoe Saldana"
+    ],
     "length": "122 min",
     "plot": "The USS Enterprise crew explores the furthest reaches of uncharted space, where they encounter a new ruthless enemy who puts them and everything the Federation stands for to the test.",
     "director": "Justin Lin",
@@ -16249,7 +17717,12 @@
     "title": "Locke",
     "year": 2013,
     "score": 0,
-    "actors": ["Tom Hardy", "Olivia Colman", "Ruth Wilson", "Andrew Scott"],
+    "actors": [
+      "Tom Hardy",
+      "Olivia Colman",
+      "Ruth Wilson",
+      "Andrew Scott"
+    ],
     "length": "85 min",
     "plot": "Ivan Locke, a dedicated family man and successful construction manager, receives a phone call on the eve of the biggest challenge of his career that sets in motion a series of events that threaten his carefully cultivated existence.",
     "director": "Steven Knight",
@@ -16263,7 +17736,12 @@
     "title": "The Secret Life of Pets",
     "year": 2016,
     "score": 0,
-    "actors": ["Louis C.K.", "Eric Stonestreet", "Kevin Hart", "Jenny Slate"],
+    "actors": [
+      "Louis C.K.",
+      "Eric Stonestreet",
+      "Kevin Hart",
+      "Jenny Slate"
+    ],
     "length": "87 min",
     "plot": "The quiet life of a terrier named Max is upended when his owner takes in Duke, a stray whom Max instantly dislikes.",
     "director": "Chris Renaud, Yarrow Cheney",
@@ -16277,7 +17755,12 @@
     "title": "Fury",
     "year": 2014,
     "score": 0,
-    "actors": ["Brad Pitt", "Shia LaBeouf", "Logan Lerman", "Michael Peña"],
+    "actors": [
+      "Brad Pitt",
+      "Shia LaBeouf",
+      "Logan Lerman",
+      "Michael Peña"
+    ],
     "length": "134 min",
     "plot": "A grizzled tank commander makes tough decisions as he and his crew fight their way across Germany in April, 1945.",
     "director": "David Ayer",
@@ -16326,7 +17809,7 @@
   {
     "type": 0,
     "imdbID": "tt2752200",
-    "title": "Jeune & Jolie",
+    "title": "Jeune \u0026 Jolie",
     "year": 2013,
     "score": 0,
     "actors": [
@@ -16367,7 +17850,12 @@
     "title": "Kingsman: The Secret Service",
     "year": 2014,
     "score": 0,
-    "actors": ["Adrian Quinton", "Colin Firth", "Mark Strong", "Jonno Davies"],
+    "actors": [
+      "Adrian Quinton",
+      "Colin Firth",
+      "Mark Strong",
+      "Jonno Davies"
+    ],
     "length": "129 min",
     "plot": "A spy organization recruits an unrefined, but promising street kid into the agency's ultra-competitive training program, just as a global threat emerges from a twisted tech genius.",
     "director": "Matthew Vaughn",
@@ -16378,7 +17866,7 @@
   {
     "type": 0,
     "imdbID": "tt2837574",
-    "title": "The Old Man & the Gun",
+    "title": "The Old Man \u0026 the Gun",
     "year": 2018,
     "score": 0,
     "actors": [
@@ -16495,7 +17983,12 @@
     "title": "Ad Astra",
     "year": 2019,
     "score": 0,
-    "actors": ["Brad Pitt", "Liv Tyler", "Tommy Lee Jones", "Ruth Negga"],
+    "actors": [
+      "Brad Pitt",
+      "Liv Tyler",
+      "Tommy Lee Jones",
+      "Ruth Negga"
+    ],
     "length": "122 min",
     "plot": "Astronaut Roy McBride undertakes a mission across an unforgiving solar system to uncover the truth about his missing father and his doomed expedition that now, 30 years later, threatens the universe.",
     "director": "James Gray",
@@ -16547,7 +18040,12 @@
     "title": "Batman v Superman: Dawn of Justice",
     "year": 2016,
     "score": 0,
-    "actors": ["Ben Affleck", "Henry Cavill", "Amy Adams", "Jesse Eisenberg"],
+    "actors": [
+      "Ben Affleck",
+      "Henry Cavill",
+      "Amy Adams",
+      "Jesse Eisenberg"
+    ],
     "length": "151 min",
     "plot": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
     "director": "Zack Snyder",
@@ -16561,7 +18059,12 @@
     "title": "The Theory of Everything",
     "year": 2014,
     "score": 0,
-    "actors": ["Eddie Redmayne", "Felicity Jones", "Tom Prior", "Sophie Perry"],
+    "actors": [
+      "Eddie Redmayne",
+      "Felicity Jones",
+      "Tom Prior",
+      "Sophie Perry"
+    ],
     "length": "123 min",
     "plot": "A look at the relationship between the famous physicist Stephen Hawking and his wife.",
     "director": "James Marsh",
@@ -16575,7 +18078,12 @@
     "title": "The LEGO Ninjago Movie",
     "year": 2017,
     "score": 0,
-    "actors": ["Jackie Chan", "Dave Franco", "Fred Armisen", "Kumail Nanjiani"],
+    "actors": [
+      "Jackie Chan",
+      "Dave Franco",
+      "Fred Armisen",
+      "Kumail Nanjiani"
+    ],
     "length": "101 min",
     "plot": "Shunned by everyone for being the son of an evil warlord, a teenager seeks to defeat him with the help of his fellow ninjas.",
     "director": "Charlie Bean, Paul Fisher, Bob Logan",
@@ -16608,7 +18116,12 @@
     "title": "The Jungle Book",
     "year": 2016,
     "score": 0,
-    "actors": ["Neel Sethi", "Bill Murray", "Ben Kingsley", "Idris Elba"],
+    "actors": [
+      "Neel Sethi",
+      "Bill Murray",
+      "Ben Kingsley",
+      "Idris Elba"
+    ],
     "length": "106 min",
     "plot": "After a threat from the tiger Shere Khan forces him to flee the jungle, a man-cub named Mowgli embarks on a journey of self discovery with the help of panther, Bagheera, and free spirited bear, Baloo.",
     "director": "Jon Favreau",
@@ -16638,7 +18151,7 @@
   {
     "type": 0,
     "imdbID": "tt3068194",
-    "title": "Love & Friendship",
+    "title": "Love \u0026 Friendship",
     "year": 2016,
     "score": 0,
     "actors": [
@@ -16660,7 +18173,12 @@
     "title": "Spy",
     "year": 2015,
     "score": 0,
-    "actors": ["Jude Law", "Raad Rawi", "Melissa McCarthy", "Jessica Chaffin"],
+    "actors": [
+      "Jude Law",
+      "Raad Rawi",
+      "Melissa McCarthy",
+      "Jessica Chaffin"
+    ],
     "length": "119 min",
     "plot": "A desk-bound CIA analyst volunteers to go undercover to infiltrate the world of a deadly arms dealer, and prevent diabolical global disaster.",
     "director": "Paul Feig",
@@ -16674,7 +18192,12 @@
     "title": "Crazy Rich Asians",
     "year": 2018,
     "score": 0,
-    "actors": ["Constance Wu", "Michelle Yeoh", "Henry Golding", "Gemma Chan"],
+    "actors": [
+      "Constance Wu",
+      "Michelle Yeoh",
+      "Henry Golding",
+      "Gemma Chan"
+    ],
     "length": "N/A",
     "plot": "This contemporary romantic comedy, based on a global bestseller, follows native New Yorker Rachel Chu to Singapore to meet her boyfriend's family.",
     "director": "Jon M. Chu",
@@ -16707,7 +18230,12 @@
     "title": "Trainwreck",
     "year": 2015,
     "score": 0,
-    "actors": ["Colin Quinn", "Devin Fabry", "Carla Oudin", "Amy Schumer"],
+    "actors": [
+      "Colin Quinn",
+      "Devin Fabry",
+      "Carla Oudin",
+      "Amy Schumer"
+    ],
     "length": "125 min",
     "plot": "Having thought that monogamy was never possible, a commitment-phobic career woman may have to face her fears when she meets a good guy.",
     "director": "Judd Apatow",
@@ -16892,7 +18420,12 @@
     "title": "The Mercy",
     "year": 2018,
     "score": 0,
-    "actors": ["Rachel Weisz", "Colin Firth", "David Thewlis", "Anna Madeley"],
+    "actors": [
+      "Rachel Weisz",
+      "Colin Firth",
+      "David Thewlis",
+      "Anna Madeley"
+    ],
     "length": "112 min",
     "plot": "The incredible story of amateur sailor Donald Crowhurst and his solo attempt to circumnavigate the globe. The struggles he confronted on the journey while his family awaited his return is one of the most enduring mysteries of recent times.",
     "director": "James Marsh",
@@ -16982,7 +18515,12 @@
     "title": "Jack Reacher: Never Go Back",
     "year": 2016,
     "score": 0,
-    "actors": ["Tom Cruise", "Cobie Smulders", "Aldis Hodge", "Danika Yarosh"],
+    "actors": [
+      "Tom Cruise",
+      "Cobie Smulders",
+      "Aldis Hodge",
+      "Danika Yarosh"
+    ],
     "length": "118 min",
     "plot": "Jack Reacher must uncover the truth behind a major government conspiracy in order to clear his name. On the run as a fugitive from the law, Reacher uncovers a potential secret from his past that could change his life forever.",
     "director": "Edward Zwick",
@@ -17034,7 +18572,12 @@
     "title": "War for the Planet of the Apes",
     "year": 2017,
     "score": 0,
-    "actors": ["Andy Serkis", "Woody Harrelson", "Steve Zahn", "Karin Konoval"],
+    "actors": [
+      "Andy Serkis",
+      "Woody Harrelson",
+      "Steve Zahn",
+      "Karin Konoval"
+    ],
     "length": "140 min",
     "plot": "After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind.",
     "director": "Matt Reeves",
@@ -17086,7 +18629,12 @@
     "title": "Despicable Me 3",
     "year": 2017,
     "score": 0,
-    "actors": ["Jenny Slate", "Kristen Wiig", "Steve Carell", "Steve Coogan"],
+    "actors": [
+      "Jenny Slate",
+      "Kristen Wiig",
+      "Steve Carell",
+      "Steve Coogan"
+    ],
     "length": "N/A",
     "plot": "Balthazar Bratt, a child star from the 1980's, hatches a scheme for world domination.",
     "director": "Kyle Balda, Pierre Coffin, Eric Guillon",
@@ -17195,7 +18743,12 @@
     "title": "Last Days in the Desert",
     "year": 2015,
     "score": 0,
-    "actors": ["Ewan McGregor", "Ciarán Hinds", "Ayelet Zurer", "Tye Sheridan"],
+    "actors": [
+      "Ewan McGregor",
+      "Ciarán Hinds",
+      "Ayelet Zurer",
+      "Tye Sheridan"
+    ],
     "length": "98 min",
     "plot": "An imagined chapter from Jesus' forty days of fasting and praying in the desert. On his way out of the wilderness, Jesus struggles with the Devil over the fate of a family in crisis.",
     "director": "Rodrigo García",
@@ -17209,7 +18762,12 @@
     "title": "The Lego Movie 2: The Second Part",
     "year": 2019,
     "score": 0,
-    "actors": ["Margot Robbie", "Jonah Hill", "Alison Brie", "Chris Pratt"],
+    "actors": [
+      "Margot Robbie",
+      "Jonah Hill",
+      "Alison Brie",
+      "Chris Pratt"
+    ],
     "length": "N/A",
     "plot": "It's been five years since everything was awesome and the citizens are facing a huge new threat: LEGO DUPLO® invaders from outer space, wrecking everything faster than they can rebuild.",
     "director": "Mike Mitchell, Trisha Gum(co-director)",
@@ -17223,7 +18781,12 @@
     "title": "The Look of Silence",
     "year": 2014,
     "score": 0,
-    "actors": ["Adi Rukun", "M.Y. Basrun", "Amir Hasan", "Inong"],
+    "actors": [
+      "Adi Rukun",
+      "M.Y. Basrun",
+      "Amir Hasan",
+      "Inong"
+    ],
     "length": "103 min",
     "plot": "A family that survives the genocide in Indonesia confronts the men who killed one of their brothers.",
     "director": "Joshua Oppenheimer",
@@ -17351,7 +18914,12 @@
     "title": "Underworld: Blood Wars",
     "year": 2016,
     "score": 0,
-    "actors": ["Kate Beckinsale", "Theo James", "Lara Pulver", "Charles Dance"],
+    "actors": [
+      "Kate Beckinsale",
+      "Theo James",
+      "Lara Pulver",
+      "Charles Dance"
+    ],
     "length": "91 min",
     "plot": "Vampire death dealer, Selene (Kate Beckinsale) fights to end the eternal war between the Lycan clan and the Vampire faction that betrayed her.",
     "director": "Anna Foerster",
@@ -17365,7 +18933,12 @@
     "title": "Power Rangers",
     "year": 2017,
     "score": 0,
-    "actors": ["Dacre Montgomery", "Naomi Scott", "RJ Cyler", "Ludi Lin"],
+    "actors": [
+      "Dacre Montgomery",
+      "Naomi Scott",
+      "RJ Cyler",
+      "Ludi Lin"
+    ],
     "length": "124 min",
     "plot": "A group of high-school students, who are infused with unique superpowers, harness their abilities in order to save the world.",
     "director": "Dean Israelite",
@@ -17436,7 +19009,12 @@
     "title": "Rogue One: A Star Wars Story",
     "year": 2016,
     "score": 0,
-    "actors": ["Felicity Jones", "Diego Luna", "Alan Tudyk", "Donnie Yen"],
+    "actors": [
+      "Felicity Jones",
+      "Diego Luna",
+      "Alan Tudyk",
+      "Donnie Yen"
+    ],
     "length": "133 min",
     "plot": "The Rebel Alliance makes a risky move to steal the plans for the Death Star, setting up the epic saga to follow.",
     "director": "Gareth Edwards",
@@ -17526,7 +19104,12 @@
     "title": "La La Land",
     "year": 2016,
     "score": 0,
-    "actors": ["Ryan Gosling", "Emma Stone", "Amiée Conn", "Terry Walters"],
+    "actors": [
+      "Ryan Gosling",
+      "Emma Stone",
+      "Amiée Conn",
+      "Terry Walters"
+    ],
     "length": "128 min",
     "plot": "A jazz pianist falls for an aspiring actress in Los Angeles.",
     "director": "Damien Chazelle",
@@ -17540,7 +19123,12 @@
     "title": "Son of Saul",
     "year": 2015,
     "score": 0,
-    "actors": ["Géza Röhrig", "Levente Molnár", "Urs Rechn", "Todd Charmont"],
+    "actors": [
+      "Géza Röhrig",
+      "Levente Molnár",
+      "Urs Rechn",
+      "Todd Charmont"
+    ],
     "length": "107 min",
     "plot": "In the horror of 1944 Auschwitz, a prisoner forced to burn the corpses of his own people finds moral survival upon trying to salvage from the flames the body of a boy he takes for his son.",
     "director": "László Nemes",
@@ -17611,7 +19199,12 @@
     "title": "The Boss Baby",
     "year": 2017,
     "score": 0,
-    "actors": ["Alec Baldwin", "Steve Buscemi", "Jimmy Kimmel", "Lisa Kudrow"],
+    "actors": [
+      "Alec Baldwin",
+      "Steve Buscemi",
+      "Jimmy Kimmel",
+      "Lisa Kudrow"
+    ],
     "length": "97 min",
     "plot": "A suit-wearing, briefcase-carrying baby pairs up with his 7-year old brother to stop the dastardly plot of the CEO of Puppy Co.",
     "director": "Tom McGrath",
@@ -17625,7 +19218,12 @@
     "title": "Baby Driver",
     "year": 2017,
     "score": 0,
-    "actors": ["Ansel Elgort", "Jon Bernthal", "Jon Hamm", "Eiza González"],
+    "actors": [
+      "Ansel Elgort",
+      "Jon Bernthal",
+      "Jon Hamm",
+      "Eiza González"
+    ],
     "length": "113 min",
     "plot": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail.",
     "director": "Edgar Wright",
@@ -17677,7 +19275,12 @@
     "title": "Guardians of the Galaxy Vol. 2",
     "year": 2017,
     "score": 0,
-    "actors": ["Chris Pratt", "Zoe Saldana", "Dave Bautista", "Vin Diesel"],
+    "actors": [
+      "Chris Pratt",
+      "Zoe Saldana",
+      "Dave Bautista",
+      "Vin Diesel"
+    ],
     "length": "136 min",
     "plot": "Set to the backdrop of Awesome Mixtape #2, 'Guardians of the Galaxy Vol. 2' continues the team's adventures as they unravel the mystery of Peter Quill's true parentage.",
     "director": "James Gunn",
@@ -17710,7 +19313,12 @@
     "title": "The Handmaiden",
     "year": 2016,
     "score": 0,
-    "actors": ["Min-hee Kim", "Tae-ri Kim", "Jung-woo Ha", "Jin-woong Jo"],
+    "actors": [
+      "Min-hee Kim",
+      "Tae-ri Kim",
+      "Jung-woo Ha",
+      "Jin-woong Jo"
+    ],
     "length": "144 min",
     "plot": "A woman is hired as a handmaiden to a Japanese heiress, but secretly she is involved in a plot to defraud her.",
     "director": "Chan-wook Park",
@@ -17914,7 +19522,12 @@
     "title": "Lady Macbeth",
     "year": 2016,
     "score": 0,
-    "actors": ["Florence Pugh", "Cosmo Jarvis", "Paul Hilton", "Naomi Ackie"],
+    "actors": [
+      "Florence Pugh",
+      "Cosmo Jarvis",
+      "Paul Hilton",
+      "Naomi Ackie"
+    ],
     "length": "89 min",
     "plot": "In 19th-century rural England, a young bride who has been sold into marriage discovers an unstoppable desire within herself as she enters into an affair with a worker on her estate.",
     "director": "William Oldroyd",
@@ -17966,7 +19579,12 @@
     "title": "Robin Hood",
     "year": 2018,
     "score": 0,
-    "actors": ["Taron Egerton", "Jamie Foxx", "Ben Mendelsohn", "Eve Hewson"],
+    "actors": [
+      "Taron Egerton",
+      "Jamie Foxx",
+      "Ben Mendelsohn",
+      "Eve Hewson"
+    ],
     "length": "116 min",
     "plot": "A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.",
     "director": "Otto Bathurst",
@@ -18056,7 +19674,12 @@
     "title": "2036 Origin Unknown",
     "year": 2018,
     "score": 0,
-    "actors": ["Katee Sackhoff", "Julie Cox", "Steven Cree", "Ray Fearon"],
+    "actors": [
+      "Katee Sackhoff",
+      "Julie Cox",
+      "Steven Cree",
+      "Ray Fearon"
+    ],
     "length": "94 min",
     "plot": "After a failed mission to Mars, A.I./ARTI is now used for the 2036 mission with a few human supervisors. A monolith of unknown origin is found there. It will have a big effect on Earth.",
     "director": "Hasraf Dulull",
@@ -18203,7 +19826,12 @@
     "title": "Loving",
     "year": 2016,
     "score": 0,
-    "actors": ["Ruth Negga", "Joel Edgerton", "Will Dalton", "Dean Mumford"],
+    "actors": [
+      "Ruth Negga",
+      "Joel Edgerton",
+      "Will Dalton",
+      "Dean Mumford"
+    ],
     "length": "123 min",
     "plot": "The story of Richard and Mildred Loving, an interracial couple, whose challenge of their anti-miscegenation arrest for their marriage in Virginia led to a legal battle that would end at the US Supreme Court.",
     "director": "Jeff Nichols",
@@ -18236,7 +19864,12 @@
     "title": "Hunt for the Wilderpeople",
     "year": 2016,
     "score": 0,
-    "actors": ["Sam Neill", "Julian Dennison", "Rima Te Wiata", "Rachel House"],
+    "actors": [
+      "Sam Neill",
+      "Julian Dennison",
+      "Rima Te Wiata",
+      "Rachel House"
+    ],
     "length": "101 min",
     "plot": "A national manhunt is ordered for a rebellious kid and his foster uncle who go missing in the wild New Zealand bush.",
     "director": "Taika Waititi",
@@ -18288,7 +19921,12 @@
     "title": "The Meg",
     "year": 2018,
     "score": 0,
-    "actors": ["Ruby Rose", "Jason Statham", "Rainn Wilson", "Robert Taylor"],
+    "actors": [
+      "Ruby Rose",
+      "Jason Statham",
+      "Rainn Wilson",
+      "Robert Taylor"
+    ],
     "length": "N/A",
     "plot": "After escaping an attack by what he claims was a 70-foot shark, Jonas Taylor must confront his fears to save those trapped in a sunken submersible.",
     "director": "Jon Turteltaub",
@@ -18340,7 +19978,12 @@
     "title": "Sultan",
     "year": 2016,
     "score": 0,
-    "actors": ["Salman Khan", "Anushka Sharma", "Marko Zaror", "Randeep Hooda"],
+    "actors": [
+      "Salman Khan",
+      "Anushka Sharma",
+      "Marko Zaror",
+      "Randeep Hooda"
+    ],
     "length": "170 min",
     "plot": "Sultan is a classic underdog tale about a wrestler's journey, looking for a comeback by defeating all odds. Will he emerge victorious?",
     "director": "Ali Abbas Zafar",
@@ -18392,7 +20035,10 @@
     "title": "First They Killed My Father: A Daughter of Cambodia Remembers",
     "year": 2017,
     "score": 0,
-    "actors": ["Phoeung Kompheak", "Sveng Socheata"],
+    "actors": [
+      "Phoeung Kompheak",
+      "Sveng Socheata"
+    ],
     "length": "N/A",
     "plot": "Cambodian author and human rights activist Loung Ung recounts the horrors she suffered under the rule of the deadly Khmer Rouge.",
     "director": "Angelina Jolie",
@@ -18577,7 +20223,12 @@
     "title": "The Favourite",
     "year": 2018,
     "score": 0,
-    "actors": ["Olivia Colman", "Rachel Weisz", "Emma Delves", "Faye Daveney"],
+    "actors": [
+      "Olivia Colman",
+      "Rachel Weisz",
+      "Emma Delves",
+      "Faye Daveney"
+    ],
     "length": "119 min",
     "plot": "In early 18th century England, a frail Queen Anne (Colman) occupies the throne and her close friend Lady Sarah (Weisz) governs the country in her stead. When a new servant Abigail (Stone) arrives, her charm endears her to Sarah.",
     "director": "Yorgos Lanthimos",
@@ -18648,7 +20299,11 @@
     "title": "Birdman",
     "year": 2014,
     "score": 0,
-    "actors": ["Michael Keaton", "Zach Galifianakis", "Edward Norton"],
+    "actors": [
+      "Michael Keaton",
+      "Zach Galifianakis",
+      "Edward Norton"
+    ],
     "length": "13 min",
     "plot": "A portrait of Robert, a troubled but poetic soul struggling with his purgatorial existence in a hackney scrapyard.",
     "director": "Guy Bolongaro",
@@ -18682,7 +20337,12 @@
     "title": "Paterson",
     "year": 2016,
     "score": 0,
-    "actors": ["Adam Driver", "Golshifteh Farahani", "Nellie", "Rizwan Manji"],
+    "actors": [
+      "Adam Driver",
+      "Golshifteh Farahani",
+      "Nellie",
+      "Rizwan Manji"
+    ],
     "length": "118 min",
     "plot": "A quiet observation of the triumphs and defeats of daily life, along with the poetry evident in its smallest details.",
     "director": "Jim Jarmusch",
@@ -18753,7 +20413,12 @@
     "title": "Close",
     "year": 2019,
     "score": 0,
-    "actors": ["Noomi Rapace", "Indira Varma", "Sophie Nélisse", "Eoin Macken"],
+    "actors": [
+      "Noomi Rapace",
+      "Indira Varma",
+      "Sophie Nélisse",
+      "Eoin Macken"
+    ],
     "length": "94 min",
     "plot": "A bodyguard and counter-terrorism expert Sam takes a job protecting Zoe a rich young heiress. Neither party is keen on the arrangement until a violent kidnap forces them to go on the run.",
     "director": "Vicky Jewson",
@@ -18767,7 +20432,12 @@
     "title": "Wind River",
     "year": 2017,
     "score": 0,
-    "actors": ["Kelsey Asbille", "Jeremy Renner", "Julia Jones", "Teo Briones"],
+    "actors": [
+      "Kelsey Asbille",
+      "Jeremy Renner",
+      "Julia Jones",
+      "Teo Briones"
+    ],
     "length": "107 min",
     "plot": "A veteran tracker with the Fish and Wildlife Service helps to investigate the murder of a young Native American woman, and uses the case as a means of seeking redemption for an earlier act of irresponsibility which ended in tragedy.",
     "director": "Taylor Sheridan",
@@ -18898,7 +20568,12 @@
     "title": "Bright",
     "year": 2017,
     "score": 0,
-    "actors": ["Will Smith", "Noomi Rapace", "Lucy Fry", "Joel Edgerton"],
+    "actors": [
+      "Will Smith",
+      "Noomi Rapace",
+      "Lucy Fry",
+      "Joel Edgerton"
+    ],
     "length": "117 min",
     "plot": "Set in a world where mystical creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for.",
     "director": "David Ayer",
@@ -18912,7 +20587,12 @@
     "title": "What the Health",
     "year": 2017,
     "score": 0,
-    "actors": ["Kip Andersen", "Larry Baldwin", "Neal Barnard", "Tia Blanco"],
+    "actors": [
+      "Kip Andersen",
+      "Larry Baldwin",
+      "Neal Barnard",
+      "Tia Blanco"
+    ],
     "length": "97 min",
     "plot": "An intrepid filmmaker on a journey of discovery as he uncovers possibly the largest health secret of our time and the collusion between industry, government, pharmaceutical and health organizations keeping this information from us.",
     "director": "Kip Andersen, Keegan Kuhn",
@@ -19098,7 +20778,12 @@
     "title": "Ophelia",
     "year": 2018,
     "score": 0,
-    "actors": ["Daisy Ridley", "Naomi Watts", "Tom Felton", "Clive Owen"],
+    "actors": [
+      "Daisy Ridley",
+      "Naomi Watts",
+      "Tom Felton",
+      "Clive Owen"
+    ],
     "length": "114 min",
     "plot": "A re-imagining of Hamlet, told from Ophelia's perspective.",
     "director": "Claire McCarthy",
@@ -19204,10 +20889,15 @@
   {
     "type": 0,
     "imdbID": "tt5816682",
-    "title": "Victoria & Abdul",
+    "title": "Victoria \u0026 Abdul",
     "year": 2017,
     "score": 0,
-    "actors": ["Judi Dench", "Ali Fazal", "Tim Pigott-Smith", "Eddie Izzard"],
+    "actors": [
+      "Judi Dench",
+      "Ali Fazal",
+      "Tim Pigott-Smith",
+      "Eddie Izzard"
+    ],
     "length": "111 min",
     "plot": "Queen Victoria strikes up an unlikely friendship with a young Indian clerk named Abdul Karim.",
     "director": "Stephen Frears",
@@ -19259,7 +20949,12 @@
     "title": "The Professor and the Madman",
     "year": 2019,
     "score": 0,
-    "actors": ["Natalie Dormer", "Mel Gibson", "Sean Penn", "Jennifer Ehle"],
+    "actors": [
+      "Natalie Dormer",
+      "Mel Gibson",
+      "Sean Penn",
+      "Jennifer Ehle"
+    ],
     "length": "124 min",
     "plot": "Professor James Murray begins work compiling words for the first edition of the Oxford English Dictionary in the mid 19th century, and receives over 10,000 entries from a patient at Broadmoor Criminal Lunatic Asylum, Dr. William Minor.",
     "director": "Farhad Safinia",
@@ -19273,7 +20968,12 @@
     "title": "Vox Lux",
     "year": 2018,
     "score": 0,
-    "actors": ["Natalie Portman", "Jude Law", "Stacy Martin", "Jennifer Ehle"],
+    "actors": [
+      "Natalie Portman",
+      "Jude Law",
+      "Stacy Martin",
+      "Jennifer Ehle"
+    ],
     "length": "114 min",
     "plot": "An unusual set of circumstances brings unexpected success to a pop star.",
     "director": "Brady Corbet",
@@ -19325,7 +21025,12 @@
     "title": "Aladdin",
     "year": 2019,
     "score": 0,
-    "actors": ["Will Smith", "Mena Massoud", "Naomi Scott", "Marwan Kenzari"],
+    "actors": [
+      "Will Smith",
+      "Mena Massoud",
+      "Naomi Scott",
+      "Marwan Kenzari"
+    ],
     "length": "128 min",
     "plot": "A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.",
     "director": "Guy Ritchie",
@@ -19377,7 +21082,12 @@
     "title": "Vice",
     "year": 2018,
     "score": 0,
-    "actors": ["Christian Bale", "Amy Adams", "Steve Carell", "Sam Rockwell"],
+    "actors": [
+      "Christian Bale",
+      "Amy Adams",
+      "Steve Carell",
+      "Sam Rockwell"
+    ],
     "length": "132 min",
     "plot": "The story of Dick Cheney, an unassuming bureaucratic Washington insider, who quietly wielded immense power as Vice President to George W. Bush, reshaping the country and the globe in ways that we still feel today.",
     "director": "Adam McKay",
@@ -19391,7 +21101,12 @@
     "title": "Don't Worry, He Won't Get Far on Foot",
     "year": 2018,
     "score": 0,
-    "actors": ["Joaquin Phoenix", "Jonah Hill", "Rooney Mara", "Jack Black"],
+    "actors": [
+      "Joaquin Phoenix",
+      "Jonah Hill",
+      "Rooney Mara",
+      "Jack Black"
+    ],
     "length": "114 min",
     "plot": "On the rocky path to sobriety after a life-changing accident, John Callahan discovers the healing power of art, willing his injured hands into drawing hilarious, often controversial cartoons, which bring him a new lease on life.",
     "director": "Gus Van Sant",
@@ -19405,7 +21120,12 @@
     "title": "I Am Mother",
     "year": 2019,
     "score": 0,
-    "actors": ["Luke Hawker", "Rose Byrne", "Maddie Lenton", "Summer Lenton"],
+    "actors": [
+      "Luke Hawker",
+      "Rose Byrne",
+      "Maddie Lenton",
+      "Summer Lenton"
+    ],
     "length": "113 min",
     "plot": "A teenage girl is raised underground by a kindly robot \"Mother\" -- designed to repopulate the earth following the extinction of mankind. But their unique bond is threatened when an inexplicable stranger arrives with alarming news.",
     "director": "Grant Sputore",
@@ -19419,7 +21139,12 @@
     "title": "The Post",
     "year": 2017,
     "score": 0,
-    "actors": ["Meryl Streep", "Tom Hanks", "Sarah Paulson", "Bob Odenkirk"],
+    "actors": [
+      "Meryl Streep",
+      "Tom Hanks",
+      "Sarah Paulson",
+      "Bob Odenkirk"
+    ],
     "length": "116 min",
     "plot": "A cover-up that spanned four U.S. Presidents pushed the country's first female newspaper publisher and a hard-driving editor to join an unprecedented battle between the press and the government.",
     "director": "Steven Spielberg",
@@ -19471,7 +21196,12 @@
     "title": "An Inconvenient Sequel: Truth to Power",
     "year": 2017,
     "score": 0,
-    "actors": ["Al Gore", "George W. Bush", "John Kerry", "Marco Krapels"],
+    "actors": [
+      "Al Gore",
+      "George W. Bush",
+      "John Kerry",
+      "Marco Krapels"
+    ],
     "length": "98 min",
     "plot": "A decade after An Inconvenient Truth (2006) brought climate change into the heart of popular culture comes the follow-up that shows just how close we are to a real energy revolution.",
     "director": "Bonni Cohen, Jon Shenk",
@@ -19485,7 +21215,11 @@
     "title": "Funan",
     "year": 2018,
     "score": 0,
-    "actors": ["Bérénice Bejo", "Louis Garrel", "Céline Ronté"],
+    "actors": [
+      "Bérénice Bejo",
+      "Louis Garrel",
+      "Céline Ronté"
+    ],
     "length": "84 min",
     "plot": "The survival and the struggle of a young mother during the Khmer Rouge revolution, to find her 4-year-old son, torn from his family by the regime.",
     "director": "Denis Do",
@@ -19613,7 +21347,12 @@
     "title": "Verna",
     "year": 2017,
     "score": 0,
-    "actors": ["Mahira Khan", "Haroon Shahid", "Zarrar Khan", "Rasheed Naz"],
+    "actors": [
+      "Mahira Khan",
+      "Haroon Shahid",
+      "Zarrar Khan",
+      "Rasheed Naz"
+    ],
     "length": "158 min",
     "plot": "A married couple's life falls apart as they face extraordinary circumstances.",
     "director": "Shoaib Mansoor",
@@ -19627,7 +21366,12 @@
     "title": "The 15:17 to Paris",
     "year": 2018,
     "score": 0,
-    "actors": ["Jenna Fischer", "Judy Greer", "Thomas Lennon", "Jaleel White"],
+    "actors": [
+      "Jenna Fischer",
+      "Judy Greer",
+      "Thomas Lennon",
+      "Jaleel White"
+    ],
     "length": "94 min",
     "plot": "American soldiers discover a terrorist plot on a Paris-bound train.",
     "director": "Clint Eastwood",
@@ -19736,7 +21480,12 @@
     "title": "Mirai",
     "year": 2018,
     "score": 0,
-    "actors": ["Rebecca Hall", "John Cho", "Daniel Dae Kim", "Crispin Freeman"],
+    "actors": [
+      "Rebecca Hall",
+      "John Cho",
+      "Daniel Dae Kim",
+      "Crispin Freeman"
+    ],
     "length": "98 min",
     "plot": "A young boy encounters a magical garden which enables him to travel through time and meet his relatives from different eras, with guidance by his younger sister from the future.",
     "director": "Mamoru Hosoda",
@@ -19750,7 +21499,12 @@
     "title": "Midway",
     "year": 2019,
     "score": 0,
-    "actors": ["Woody Harrelson", "Patrick Wilson", "Luke Evans", "Ed Skrein"],
+    "actors": [
+      "Woody Harrelson",
+      "Patrick Wilson",
+      "Luke Evans",
+      "Ed Skrein"
+    ],
     "length": "N/A",
     "plot": "The story of the Battle of Midway, told by the leaders and the sailors who fought it.",
     "director": "Roland Emmerich",
@@ -19764,7 +21518,12 @@
     "title": "Sweet Country",
     "year": 2017,
     "score": 0,
-    "actors": ["Bryan Brown", "Matt Day", "Tremayne Doolan", "Trevon Doolan"],
+    "actors": [
+      "Bryan Brown",
+      "Matt Day",
+      "Tremayne Doolan",
+      "Trevon Doolan"
+    ],
     "length": "113 min",
     "plot": "Australian western set on the Northern Territory frontier in the 1920s, where justice itself is put on trial when an aged Aboriginal farmhand shoots a white man in self defense and goes on the run as posse gathers to hunt him down.",
     "director": "Warwick Thornton",
@@ -19797,7 +21556,12 @@
     "title": "If Beale Street Could Talk",
     "year": 2018,
     "score": 0,
-    "actors": ["KiKi Layne", "Stephan James", "Regina King", "Colman Domingo"],
+    "actors": [
+      "KiKi Layne",
+      "Stephan James",
+      "Regina King",
+      "Colman Domingo"
+    ],
     "length": "119 min",
     "plot": "A woman in Harlem embraces her pregnancy while she and her family struggle to prove her fiancé innocent of a crime.",
     "director": "Barry Jenkins",
@@ -19830,7 +21594,12 @@
     "title": "Like Father",
     "year": 2018,
     "score": 0,
-    "actors": ["Kristen Bell", "Seth Rogen", "Kelsey Grammer", "Zach Appelman"],
+    "actors": [
+      "Kristen Bell",
+      "Seth Rogen",
+      "Kelsey Grammer",
+      "Zach Appelman"
+    ],
     "length": "N/A",
     "plot": "A workaholic woman who is left at the altar takes her honeymoon trip anyway with her overachieving father who left her mother because he believed his family was holding back his career.",
     "director": "Lauren Miller",
@@ -19841,10 +21610,15 @@
   {
     "type": 0,
     "imdbID": "tt7214762",
-    "title": "Jim & Andy: The Great Beyond - Featuring a Very Special, Contractually Obligated Mention of Tony Clifton",
+    "title": "Jim \u0026 Andy: The Great Beyond - Featuring a Very Special, Contractually Obligated Mention of Tony Clifton",
     "year": 2017,
     "score": 0,
-    "actors": ["Peter Bonerz", "Jim Carrey", "Randall Carver", "Danny DeVito"],
+    "actors": [
+      "Peter Bonerz",
+      "Jim Carrey",
+      "Randall Carver",
+      "Danny DeVito"
+    ],
     "length": "94 min",
     "plot": "A behind-the-scenes look at how Jim Carrey adopted the persona of idiosyncratic comedian Andy Kaufman on the set of Man on the Moon (1999).",
     "director": "Chris Smith",
@@ -19877,7 +21651,12 @@
     "title": "Batman Ninja",
     "year": 2018,
     "score": 0,
-    "actors": ["Kôichi Yamadera", "Wataru Takagi", "Rie Kugimiya", "Ai Kakuma"],
+    "actors": [
+      "Kôichi Yamadera",
+      "Wataru Takagi",
+      "Rie Kugimiya",
+      "Ai Kakuma"
+    ],
     "length": "85 min",
     "plot": "Batman, along with a number of his allies and adversaries, finds himself transplanted from modern Gotham City to feudal Japan.",
     "director": "Junpei Mizusaki",
@@ -19910,7 +21689,12 @@
     "title": "The Wandering Earth",
     "year": 2019,
     "score": 0,
-    "actors": ["Jing Wu", "Chuxiao Qu", "Guangjie Li", "Man-Tat Ng"],
+    "actors": [
+      "Jing Wu",
+      "Chuxiao Qu",
+      "Guangjie Li",
+      "Man-Tat Ng"
+    ],
     "length": "125 min",
     "plot": "As the sun is dying out, people all around the world build giant planet thrusters to move Earth out of its orbit and sail Earth to a new star system. Yet the 2500-year journey comes with unexpected dangers, and in order to save humanity, a group of young people in this age of a wandering Earth fight hard for the survival of humankind.",
     "director": "Frant Gwo",
@@ -19962,7 +21746,12 @@
     "title": "Hereditary",
     "year": 2018,
     "score": 0,
-    "actors": ["Alex Wolff", "Gabriel Byrne", "Toni Collette", "Milly Shapiro"],
+    "actors": [
+      "Alex Wolff",
+      "Gabriel Byrne",
+      "Toni Collette",
+      "Milly Shapiro"
+    ],
     "length": "127 min",
     "plot": "After the family matriarch passes away, a grieving family is haunted by tragic and disturbing occurrences, and begin to unravel dark secrets.",
     "director": "Ari Aster",
@@ -19976,7 +21765,9 @@
     "title": "Anna's War",
     "year": 2018,
     "score": 0,
-    "actors": ["Marta Kozlova"],
+    "actors": [
+      "Marta Kozlova"
+    ],
     "length": "74 min",
     "plot": "The entire family of a 6-year-old Anna dies in the mass coordinated execution of Jews. The mother covers up Anna with her own body, and the girl miraculously survives. For the next few ...",
     "director": "Aleksey Fedorchenko",
@@ -19990,7 +21781,9 @@
     "title": "They Shall Not Grow Old",
     "year": 2018,
     "score": 0,
-    "actors": ["N/A"],
+    "actors": [
+      "N/A"
+    ],
     "length": "99 min",
     "plot": "A documentary about World War I with never-before-seen footage to commemorate the centennial of the end of the war.",
     "director": "Peter Jackson",
@@ -20061,7 +21854,12 @@
     "title": "Shoplifters",
     "year": 2018,
     "score": 0,
-    "actors": ["Lily Franky", "Sakura Andô", "Mayu Matsuoka", "Jyo Kairi"],
+    "actors": [
+      "Lily Franky",
+      "Sakura Andô",
+      "Mayu Matsuoka",
+      "Jyo Kairi"
+    ],
     "length": "121 min",
     "plot": "A family of small-time crooks take in a child they find outside in the cold.",
     "director": "Hirokazu Koreeda",
@@ -20075,7 +21873,12 @@
     "title": "Long Day's Journey Into Night",
     "year": 2018,
     "score": 0,
-    "actors": ["Sylvia Chang", "Yongzhong Chen", "Jue Huang", "Hong-Chi Lee"],
+    "actors": [
+      "Sylvia Chang",
+      "Yongzhong Chen",
+      "Jue Huang",
+      "Hong-Chi Lee"
+    ],
     "length": "110 min",
     "plot": "A man went back to Guizhou, found the tracks of a mysterious woman. He recalls the summer he spent with her twenty years ago.",
     "director": "Gan Bi",
@@ -20089,7 +21892,12 @@
     "title": "The Farewell",
     "year": 2019,
     "score": 0,
-    "actors": ["Awkwafina", "Tzi Ma", "Diana Lin", "Gil Perez-Abraham"],
+    "actors": [
+      "Awkwafina",
+      "Tzi Ma",
+      "Diana Lin",
+      "Gil Perez-Abraham"
+    ],
     "length": "100 min",
     "plot": "A Chinese family discovers their grandmother has only a short while left to live and decide to keep her in the dark, scheduling a wedding to gather before she dies.",
     "director": "Lulu Wang",
@@ -20122,7 +21930,12 @@
     "title": "The Dead Don't Die",
     "year": 2019,
     "score": 0,
-    "actors": ["Bill Murray", "Adam Driver", "Tom Waits", "Chloë Sevigny"],
+    "actors": [
+      "Bill Murray",
+      "Adam Driver",
+      "Tom Waits",
+      "Chloë Sevigny"
+    ],
     "length": "104 min",
     "plot": "The peaceful town of Centerville finds itself battling a zombie horde as the dead start rising from their graves.",
     "director": "Jim Jarmusch",
@@ -20155,12 +21968,36 @@
     "title": "So Long, My Son",
     "year": 2019,
     "score": 0,
-    "actors": ["Liya Ai", "Jiang Du", "Zhao-Yan Guo-Zhang", "Jingjing Li"],
+    "actors": [
+      "Liya Ai",
+      "Jiang Du",
+      "Zhao-Yan Guo-Zhang",
+      "Jingjing Li"
+    ],
     "length": "180 min",
     "plot": "Two married couples adjust to the vast social and economic changes taking place in China from the 1980s to the present.",
     "director": "Xiaoshuai Wang",
     "watched": false,
     "date_watched": "",
     "date_added": "2019-07-31"
+  },
+  {
+    "type": 0,
+    "imdbID": "tt1979320",
+    "title": "Rush",
+    "year": 2013,
+    "score": 0,
+    "actors": [
+      "Chris Hemsworth",
+      "Daniel Brühl",
+      "Olivia Wilde",
+      "Alexandra Maria Lara"
+    ],
+    "length": "123 min",
+    "plot": "The merciless 1970s rivalry between Formula One rivals James Hunt and Niki Lauda.",
+    "director": "Ron Howard",
+    "watched": false,
+    "date_watched": "",
+    "date_added": "2019-10-17"
   }
 ]

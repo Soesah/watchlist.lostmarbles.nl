@@ -53,7 +53,7 @@ func ToggleSeriesWatched(w http.ResponseWriter, r *http.Request) {
 		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	message := "Toggled Series to " + watched
+	message := "Toggled series to " + watched
 
 	httpext.SuccessDataAPI(w, message, series)
 
@@ -73,7 +73,7 @@ func ToggleSeasonWatched(w http.ResponseWriter, r *http.Request) {
 		httpext.AbortAPI(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
-	message := "Toggled Series to " + watched
+	message := "Toggled season to " + watched
 
 	httpext.SuccessDataAPI(w, message, series)
 }
@@ -94,7 +94,7 @@ func ToggleEpisodeWatched(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	message := "Toggled Series to " + watched
+	message := "Toggled episode to " + watched
 
 	httpext.SuccessDataAPI(w, message, series)
 }
@@ -123,7 +123,7 @@ func AddMovie(w http.ResponseWriter, r *http.Request) {
 // AddSeries is used to add a series
 func AddSeries(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
-	var data models.WatchlistItem
+	var data models.Series
 	err := decoder.Decode(&data)
 
 	if err != nil {
@@ -293,7 +293,7 @@ func UpdateMovie(w http.ResponseWriter, r *http.Request) {
 // UpdateSeries is used to updated a series
 func UpdateSeries(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
-	var data models.WatchlistItem
+	var data models.Series
 	err := decoder.Decode(&data)
 
 	if err != nil {
