@@ -1,6 +1,4 @@
 .vscode/
-css/*.css
 node_modules
-build
-dist/
-quokka/
+data
+dist
