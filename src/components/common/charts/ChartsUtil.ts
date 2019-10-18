@@ -1,5 +1,3 @@
-import { max } from 'moment';
-
 interface PieChartData {
   start: number;
   data: string[];

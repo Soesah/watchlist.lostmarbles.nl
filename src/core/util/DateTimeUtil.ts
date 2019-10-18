@@ -1,11 +1,11 @@
-import moment from 'moment';
+import { format } from 'date-fns';
 
 export class DateTimeUtil {
   static now(): string {
-    return moment().format('YYYY-MM-DD');
+    return format(new Date(), 'YYYY-MM-DD');
   }
 
   static year(): number {
-    return moment().year();
+    return new Date().getFullYear();
   }
 }
