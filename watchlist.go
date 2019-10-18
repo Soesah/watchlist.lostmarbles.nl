@@ -11,7 +11,6 @@ import (
 	"github.com/Soesah/watchlist.lostmarbles.nl/server/middlewares"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"google.golang.org/appengine"
 )
 
 func main() {
@@ -94,6 +93,6 @@ func main() {
 		log.Print(fmt.Sprintf("Dev server listening on port %d", 8182))
 		log.Fatal(http.ListenAndServe(":8182", r))
 	} else {
-		appengine.Main()
+		log.Fatal(http.ListenAndServe(":8080", r))
 	}
 }
