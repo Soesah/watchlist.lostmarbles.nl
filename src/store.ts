@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 import watchlistService from '@/services/WatchlistService';
 import messageService, {
   MessageType,
-  Message
+  Message,
 } from '@/services/MessageService';
 import { WatchlistType } from '@/core/models/BaseModel';
 import { Franchise } from '@/models/FranchiseModel';
@@ -13,7 +13,7 @@ import { createSorter } from './sorting/sorting';
 import {
   sortByTitle,
   sortByYear,
-  sortByDateAdded
+  sortByDateAdded,
 } from './sorting/watchlist.sorting';
 
 Vue.use(Vuex);
@@ -37,13 +37,18 @@ interface WatchlistState {
 const getFranchiseWithYear = (getters: any) => (item: Franchise): Franchise => {
   return <Franchise>{
     ...item,
+    name: item.name,
     title: item.name,
     count: item.items.length,
     year: getters
       .franchiseItems(item.items)
       .reduce((year: number, item: FranchiseItems) => {
         return item && item.year && item.year < year ? item.year : year;
-      }, new Date().getFullYear())
+      }, new Date().getFullYear()),
+    path: item.name
+      .replace(/\W+/g, '-')
+      .replace('--', '')
+      .toLowerCase(),
   };
 };
 
@@ -55,12 +60,12 @@ export default new Vuex.Store<WatchlistState>({
     filter: {
       search: '',
       itemStates: [],
-      itemTypes: []
+      itemTypes: [],
     },
     sortOptions: ['Name'],
     navigation: [],
     // set up a Vue instance as an eventing proxy
-    event: new Vue()
+    event: new Vue(),
   },
   mutations: {
     setItems(state, items) {
@@ -105,7 +110,7 @@ export default new Vuex.Store<WatchlistState>({
 
     toggleItemType(state, itemType: WatchlistType) {
       const itemTypes = state.filter.itemTypes.includes(itemType)
-        ? [...state.filter.itemTypes.filter(t => t !== itemType)]
+        ? [...state.filter.itemTypes.filter((t) => t !== itemType)]
         : [...state.filter.itemTypes, itemType];
       state.filter = { ...state.filter, itemTypes };
     },
@@ -120,12 +125,12 @@ export default new Vuex.Store<WatchlistState>({
     },
     toggleItemSorting(state, option: string) {
       state.sortOptions = state.sortOptions.includes(option)
-        ? state.sortOptions.filter(item => item !== option)
+        ? state.sortOptions.filter((item) => item !== option)
         : [option, ...state.sortOptions];
     },
     resetItemSorting(state) {
       state.sortOptions = ['Name'];
-    }
+    },
   },
   actions: {
     async addItem({ commit, dispatch }, item: WatchlistItems) {
@@ -169,7 +174,9 @@ export default new Vuex.Store<WatchlistState>({
       const watched = item.type === WatchlistType.Game ? 'played' : 'watched';
       dispatch(
         'info',
-        `Toggling ${item.title} to ${item.watched ? 'not ' + watched : watched}`
+        `Toggling ${item.title} to ${
+          item.watched ? 'not ' + watched : watched
+        }`,
       );
       const response = await watchlistService.toggle(item);
       if (response.status) {
@@ -185,7 +192,7 @@ export default new Vuex.Store<WatchlistState>({
         'info',
         `Toggling ${item.title} Season ${season.nr} to ${
           season.watched ? 'not watched' : 'watched'
-        }`
+        }`,
       );
       const response = await watchlistService.toggleSeason(item, season);
       if (response.status) {
@@ -199,18 +206,18 @@ export default new Vuex.Store<WatchlistState>({
     },
     async toggleEpisodeWatched(
       { commit, dispatch },
-      { item, season, episode }
+      { item, season, episode },
     ) {
       dispatch(
         'info',
         `Toggling ${item.title} Season ${season.nr} Episode ${episode.nr} to ${
           episode.watched ? 'not watched' : 'watched'
-        }`
+        }`,
       );
       const response = await watchlistService.toggleEpisode(
         item,
         season,
-        episode
+        episode,
       );
       if (response.status) {
         commit('toggleWatched', response.data);
@@ -240,25 +247,25 @@ export default new Vuex.Store<WatchlistState>({
     info({ dispatch }, text: string) {
       return dispatch('message', {
         type: MessageType.Info,
-        text
+        text,
       });
     },
     success({ dispatch }, text: string) {
       return dispatch('message', {
         type: MessageType.Success,
-        text
+        text,
       });
     },
     warning({ dispatch }, text: string) {
       return dispatch('message', {
         type: MessageType.Warning,
-        text
+        text,
       });
     },
     error({ dispatch }, text: string) {
       return dispatch('message', {
         type: MessageType.Error,
-        text
+        text,
       });
     },
     message({ commit }, message: Message) {
@@ -271,10 +278,10 @@ export default new Vuex.Store<WatchlistState>({
       const messages = messageService.removeMessage(id);
       commit('updateMessages', messages);
       return messages;
-    }
+    },
   },
   getters: {
-    searchItems: state => (search: string, items: any) => {
+    searchItems: (state) => (search: string, items: any) => {
       return state.items.filter((item: any) => {
         return (
           item.title.toLowerCase().indexOf(search.toLowerCase()) !== -1 &&
@@ -300,19 +307,19 @@ export default new Vuex.Store<WatchlistState>({
       return state.items
         .filter(
           (item: WatchlistItems): item is Franchise =>
-            item.type === WatchlistType.Franchise
+            item.type === WatchlistType.Franchise,
         )
         .map(getFranchiseWithYear(getters))
         .sort(sorter);
     },
     getItemFranchise: (_, getters) => (item: any): boolean => {
       return getters.franchises.find((franchise: Franchise) =>
-        franchise.items.includes(item.imdbID)
+        franchise.items.includes(item.imdbID),
       );
     },
-    franchiseItems: state => (items: string[]): FranchiseItems[] => {
+    franchiseItems: (state) => (items: string[]): FranchiseItems[] => {
       return items.map((imdbID: string) =>
-        state.items.find(item => item.imdbID === imdbID)
+        state.items.find((item) => item.imdbID === imdbID),
       );
     },
     filteredItems: (state, getters) => {
@@ -320,7 +327,7 @@ export default new Vuex.Store<WatchlistState>({
         state.filter.search,
         state.filter.itemTypes,
         state.filter.itemStates,
-        getters.franchises
+        getters.franchises,
       );
       const sorters = state.sortOptions.map((option: string) => {
         switch (option) {
@@ -346,11 +353,11 @@ export default new Vuex.Store<WatchlistState>({
         .filter(spec)
         .sort(sorter);
     },
-    filteredItemCount: (_, getters) => {
+    filteredItemCount: (state, getters) => {
       return getters.filteredItems.reduce(
-        (acc: number, item: WatchlistItems) => (acc += item.count),
-        0
+        (acc: number, item: WatchlistItems) => acc + item.count,
+        0,
       );
-    }
-  }
+    },
+  },
 });
