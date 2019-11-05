@@ -24,8 +24,8 @@ export default Vue.extend({
       return this.$store.getters.getItemFranchise(this.item);
     },
     items: function() {
-      return this.franchise
-        ? this.$store.getters.franchiseItems(this.franchise.items)
+      return (this as any).franchise
+        ? this.$store.getters.franchiseItems((this as any).franchise.items)
         : [];
     }
   },

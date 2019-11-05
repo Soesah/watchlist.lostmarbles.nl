@@ -27,7 +27,8 @@ export default Vue.extend({
     },
     watched: function() {
       return (
-        this.items.filter((item: WatchlistItems) => !item.watched).length === 0
+        (this as any).items.filter((item: WatchlistItems) => !item.watched)
+          .length === 0
       );
     }
   },

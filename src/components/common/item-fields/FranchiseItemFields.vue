@@ -60,9 +60,9 @@
   </section>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
-import { Franchise } from "@/models/FranchiseModel";
+import Vue from 'vue';
+import { WatchItemFactory, WatchlistItems } from '@/services/WatchItemFactory';
+import { Franchise } from '@/models/FranchiseModel';
 
 interface FranchiseItemFieldsData {
   franchise: Franchise;
@@ -72,24 +72,24 @@ interface FranchiseItemFieldsData {
 }
 
 export default Vue.extend({
-  name: "FranchiseItemFields",
+  name: 'FranchiseItemFields',
   props: {
     value: {
-      type: Object
-    }
+      type: Object,
+    },
   },
   data(): FranchiseItemFieldsData {
     return {
       franchise: <Franchise>WatchItemFactory.create(this.value),
-      search: "",
+      search: '',
       suggestions: [],
-      choice: null
+      choice: null,
     };
   },
   computed: {
-    items: function() {
-      return this.$store.getters.franchiseItems(this.franchise.items);
-    }
+    items() {
+      return this.$store.getters.franchiseItems((this as any).franchise.items);
+    },
   },
   watch: {
     value: {
@@ -97,20 +97,20 @@ export default Vue.extend({
       handler() {
         this.franchise = <Franchise>WatchItemFactory.create(this.value);
       },
-      deep: true
-    }
+      deep: true,
+    },
   },
   methods: {
     // update parent component item
     update() {
-      this.$emit("input", this.franchise);
+      this.$emit('input', this.franchise);
     },
     searchItem() {
       // don't find without a name
       if (this.search) {
         this.suggestions = this.$store.getters.searchItems(
           this.search,
-          this.franchise.items
+          this.franchise.items,
         );
       } else {
         this.suggestions = [];
@@ -122,15 +122,15 @@ export default Vue.extend({
     },
     chooseItem(evt: Event, item: any) {
       this.choice = item;
-      this.search = "";
+      this.search = '';
       evt.preventDefault();
     },
     chooseAll(evt: Event) {
-      this.suggestions.forEach(suggestion => {
+      this.suggestions.forEach((suggestion) => {
         this.franchise.addItem(suggestion);
       });
       this.update();
-      this.search = "";
+      this.search = '';
       this.searchItem();
       evt.preventDefault();
     },
@@ -148,7 +148,7 @@ export default Vue.extend({
     },
     getTypeName(item: any) {
       return WatchItemFactory.getTypeName(item);
-    }
-  }
+    },
+  },
 });
 </script>

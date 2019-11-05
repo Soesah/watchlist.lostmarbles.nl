@@ -55,7 +55,6 @@ export class Franchise {
     return -1;
   }
 
-  // todo.... provide all items so that the true items can be walked.
   get watched(): boolean {
     return false;
   }

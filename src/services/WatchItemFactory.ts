@@ -91,9 +91,9 @@ export class WatchItemFactory {
     }
   }
 
-  static change(item: any, type: number): Promise<{}> {
+  static change(item: any, type: number): Promise<any> {
     let newItem = <any>WatchItemFactory.new(type, false),
-      promise = new Promise(resolve => {
+      promise = new Promise((resolve) => {
         if (item) {
           let imdbID = item.imdbID,
             title = item.title,
@@ -155,7 +155,7 @@ export class WatchItemFactory {
       { value: WatchlistType.Game, name: 'Game' },
       { value: WatchlistType.Movie, name: 'Movie' },
       { value: WatchlistType.Series, name: 'Series' },
-      { value: WatchlistType.Franchise, name: 'Franchise' }
+      { value: WatchlistType.Franchise, name: 'Franchise' },
     ];
   }
 
@@ -165,7 +165,7 @@ export class WatchItemFactory {
 
   static getTypeNameByType(type: number): string {
     const item = WatchItemFactory.getTypeList().find(
-      (item: Type) => item.value === type
+      (item: Type) => item.value === type,
     );
     return item ? item.name : 'Unknown';
   }
