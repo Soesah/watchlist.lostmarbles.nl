@@ -5,7 +5,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 import {
   WatchItemFactory,
   WatchlistItem,
-  WatchlistItems
+  WatchlistItems,
 } from '@/services/WatchItemFactory';
 
 const STATUS_OK = 200;
@@ -33,13 +33,13 @@ export class WatchlistService extends BaseService {
       } else {
         this.$http
           .get(`${this.path}/list`)
-          .then(response => {
+          .then((response) => {
             this.items = response.data.map((item: WatchlistItem) =>
-              WatchItemFactory.create(item)
+              WatchItemFactory.create(item),
             );
             resolve(this.items);
           })
-          .catch(error => reject(error));
+          .catch((error) => reject(error));
       }
     });
   }
@@ -51,7 +51,7 @@ export class WatchlistService extends BaseService {
     return {
       status,
       message: status ? response.data.message : response.statusText,
-      data: status ? WatchItemFactory.create(response.data.data) : item
+      data: status ? WatchItemFactory.create(response.data.data) : item,
     };
   }
 
@@ -59,26 +59,26 @@ export class WatchlistService extends BaseService {
     const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.put(
       `${this.path}/${type}/${item.imdbID}`,
-      item
+      item,
     );
     const status = response.status === STATUS_OK;
     return {
       status,
       message: status ? response.data.message : response.statusText,
-      data: status ? WatchItemFactory.create(response.data.data) : item
+      data: status ? WatchItemFactory.create(response.data.data) : item,
     };
   }
 
   async remove(item: WatchlistItems): Promise<WatchlistResponse> {
     const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.delete(
-      `${this.path}/${type}/${item.imdbID}`
+      `${this.path}/${type}/${item.imdbID}`,
     );
     const status = response.status === STATUS_OK;
     return {
       status,
       message: status ? response.data.message : response.statusText,
-      data: item
+      data: item,
     };
   }
 
@@ -92,50 +92,49 @@ export class WatchlistService extends BaseService {
     const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.put(
       `${this.path}/${type}/${watched}/${item.imdbID}`,
-      item
+      item,
     );
     const status = response.status === STATUS_OK;
+    item.toggleWatched();
     return {
       status,
       message: status ? response.data.message : response.statusText,
-      data: status ? WatchItemFactory.create(response.data.data) : item
+      data: item,
     };
   }
 
   async toggleSeason(
     item: WatchlistItems,
-    season: Season
+    season: Season,
   ): Promise<WatchlistResponse> {
     const watched = season.watched ? 'not-watched' : 'watched';
     const response = await this.$http.put(
       `${this.path}/series/${watched}/${item.imdbID}/season/${season.nr}`,
-      null
+      null,
     );
     const status = response.status === STATUS_OK;
     return {
       status,
       message: status ? response.data.message : response.statusText,
-      data: status ? WatchItemFactory.create(response.data.data) : item
+      data: status ? WatchItemFactory.create(response.data.data) : item,
     };
   }
 
   async toggleEpisode(
     item: WatchlistItems,
     season: Season,
-    episode: Episode
+    episode: Episode,
   ): Promise<WatchlistResponse> {
     const watched = episode.watched ? 'not-watched' : 'watched';
     const response = await this.$http.put(
-      `${this.path}/series/${watched}/${item.imdbID}/season/${
-        season.nr
-      }/episode/${episode.nr}`,
-      null
+      `${this.path}/series/${watched}/${item.imdbID}/season/${season.nr}/episode/${episode.nr}`,
+      null,
     );
     const status = response.status === STATUS_OK;
     return {
       status,
       message: status ? response.data.message : response.statusText,
-      data: status ? WatchItemFactory.create(response.data.data) : item
+      data: status ? WatchItemFactory.create(response.data.data) : item,
     };
   }
 }

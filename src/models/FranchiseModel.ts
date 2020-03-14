@@ -59,6 +59,10 @@ export class Franchise {
     return false;
   }
 
+  toggleWatched(): void {
+    return;
+  }
+
   public clone() {
     return new Franchise(this);
   }
