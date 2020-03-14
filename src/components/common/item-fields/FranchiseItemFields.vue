@@ -48,7 +48,7 @@
     <div class="form-item" v-show="items.length">
       <label>Items</label>
       <ul class="franchise-items list">
-        <li v-for="item in items" :key="item.title">
+        <li v-for="item in items" :key="item.imdbId">
           <p>
             <i :class="'icon icon-' + getTypeName(item)"></i>
             <span v-text="item.title"></span>

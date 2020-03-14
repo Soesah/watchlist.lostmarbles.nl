@@ -34,16 +34,18 @@ export class Season {
       nr: nr,
       title: title,
       watched: false,
-      date_watched: null
+      date_watched: null,
     });
   }
 
   insertEpisode(nr: number, episode: Episode) {
     const index = this.episodes.findIndex(
-      (episode: Episode) => episode.nr === nr
+      (episode: Episode) => episode.nr === nr,
     );
-    if (index === -1) {
-      this.episodes.push(episode);
+    if (episode.nr === 1) {
+      this.episodes = [episode, ...this.episodes];
+    } else if (index === -1) {
+      this.episodes = [...this.episodes, episode];
     } else {
       this.episodes.splice(index + 1, 0, episode);
     }
@@ -67,7 +69,7 @@ export class Season {
   }
 
   toggleWatched() {
-    this.episodes.forEach(episode => this.toggleEpisodeWatched(episode));
+    this.episodes.forEach((episode) => this.toggleEpisodeWatched(episode));
   }
 
   toggleEpisodeWatched(episode: Episode) {

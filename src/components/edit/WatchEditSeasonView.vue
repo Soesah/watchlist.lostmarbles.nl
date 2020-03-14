@@ -30,12 +30,12 @@
         placeholder="1"
         class="year"
         v-model.number="season.nr"
-      >
+      />
     </div>
 
     <div class="form-item form-item-required">
       <label>Year</label>
-      <input type="number" required placeholder="2017" class="year" v-model.number="season.year">
+      <input type="number" required placeholder="2017" class="year" v-model.number="season.year" />
     </div>
 
     <h3>Episodes</h3>
@@ -58,8 +58,8 @@
               <span v-text="episode.nr"></span>
             </label>
             <div class="form-input-group">
-              <input type="number" required class="year" v-model.number="episode.nr">
-              <input type="text" required v-model="episode.title">
+              <input type="number" required class="year" v-model.number="episode.nr" />
+              <input type="text" required v-model="episode.title" />
               <button
                 class="add-button option"
                 type="button"
@@ -85,12 +85,12 @@
   </form>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import omdbService from "@/services/OMDBService";
-import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
-import { Season, SeasonType } from "@/models/SeasonModel";
-import { Episode } from "@/models/EpisodeModel";
-import { Series, SeriesType } from "@/models/SeriesModel";
+import Vue from 'vue';
+import omdbService from '@/services/OMDBService';
+import { WatchItemFactory, WatchlistItems } from '@/services/WatchItemFactory';
+import { Season, SeasonType } from '@/models/SeasonModel';
+import { Episode } from '@/models/EpisodeModel';
+import { Series, SeriesType } from '@/models/SeriesModel';
 
 interface WatchEditSeasonViewData {
   item: Series;
@@ -99,12 +99,12 @@ interface WatchEditSeasonViewData {
 }
 
 export default Vue.extend({
-  name: "WatchEditSeasonView",
+  name: 'WatchEditSeasonView',
   data(): WatchEditSeasonViewData {
     return {
       item: new Series(<SeriesType>{}),
       season: new Season(<SeasonType>{}),
-      updating: false
+      updating: false,
     };
   },
   computed: {
@@ -113,60 +113,60 @@ export default Vue.extend({
       let item = <any>WatchItemFactory.new();
       if (this.$store.state.item.title) {
         item = this.$store.state.item.clone();
-        let season = item.getSeason(this.$route.params.nr);
+        let season = item.getSeason(parseInt(this.$route.params.nr, 10));
         // set this item as the data item, to allow mutation
         // todo causes compile issues "side-effects"
-        // this.item = item;
-        // this.season = season ? season : {};
+        this.item = item;
+        this.season = season ? season : {};
       }
       return item;
-    }
+    },
   },
   created() {
     this.$store
-      .dispatch("getItemByPath", this.$route.params.path)
-      .then(item => {
-        this.$store.commit("addNav", {
+      .dispatch('getItemByPath', this.$route.params.path)
+      .then((item) => {
+        this.$store.commit('addNav', {
           name: item.title,
-          to: "/view/" + item.path
+          to: '/view/' + item.path,
         });
         this.item = item;
-        this.$store.commit("addNav", {
-          name: "Edit " + item.title + " Season " + this.$route.params.nr,
-          to: "/edit/" + item.path + "/season/" + this.$route.params.nr
+        this.$store.commit('addNav', {
+          name: 'Edit ' + item.title + ' Season ' + this.$route.params.nr,
+          to: '/edit/' + item.path + '/season/' + this.$route.params.nr,
         });
       });
   },
   destroyed() {
-    this.$store.commit("removeNav", "/view/" + this.item.path);
+    this.$store.commit('removeNav', '/view/' + this.item.path);
     this.$store.commit(
-      "removeNav",
-      "/edit/" + this.item.path + "/season/" + this.$route.params.nr
+      'removeNav',
+      '/edit/' + this.item.path + '/season/' + this.$route.params.nr,
     );
   },
   methods: {
     edit(evt: Event) {
       this.$store
-        .dispatch("editItem", this.item)
-        .then(items => this.$router.go(-1));
+        .dispatch('editItem', this.item)
+        .then((items) => this.$router.go(-1));
       evt.preventDefault();
     },
     remove(evt: Event) {
-      this.$store.state.event.$emit("openModal", {
-        modal: "confirm-delete-modal",
-        name: this.item.title + " Season " + this.$route.params.nr,
-        confirm: this.onConfirmDelete
+      this.$store.state.event.$emit('openModal', {
+        modal: 'confirm-delete-modal',
+        name: this.item.title + ' Season ' + this.$route.params.nr,
+        confirm: this.onConfirmDelete,
       });
 
       evt.preventDefault();
     },
     onConfirmDelete(evt: Event) {
       this.$store
-        .dispatch("removeSeason", {
+        .dispatch('removeSeason', {
           item: this.$store.state.item,
-          season: this.$store.state.item.getSeason(this.$route.params.nr)
+          season: this.$store.state.item.getSeason(this.$route.params.nr),
         })
-        .then(items => {
+        .then((items) => {
           this.$destroy();
           this.$router.go(-1);
         });
@@ -181,14 +181,14 @@ export default Vue.extend({
     addEpisode(episode: Episode) {
       let nr = episode ? episode.nr + 1 : 1,
         newEpisode = this.season.createEpisode(
-          "NON-IMDB-EPISODE-ID-" +
+          'NON-IMDB-EPISODE-ID-' +
             this.item.imdbID +
-            "-" +
+            '-' +
             this.season.nr +
-            "-" +
+            '-' +
             nr,
           nr,
-          ""
+          '',
         );
 
       this.season.insertEpisode(nr - 1, newEpisode);
@@ -199,10 +199,10 @@ export default Vue.extend({
     updateSeasons(series: Series) {
       this.updating = true;
       this.$store.dispatch(
-        "info",
-        `Updating seasons from OMDB '${this.item.title}'`
+        'info',
+        `Updating seasons from OMDB '${this.item.title}'`,
       );
-      omdbService.updateSeasons(series).then(response => {
+      omdbService.updateSeasons(series).then((response) => {
         this.updating = false;
         let nr = parseInt(this.$route.params.nr);
         this.season = <Season>this.item.getSeason(nr);
@@ -214,7 +214,7 @@ export default Vue.extend({
     },
     getTypeName(item: WatchlistItems): string {
       return WatchItemFactory.getTypeName(item).toLowerCase();
-    }
-  }
+    },
+  },
 });
 </script>
