@@ -10,6 +10,7 @@ import WatchEditSeasonView from '@/components/edit/WatchEditSeasonView.vue';
 import FranchisesView from '@/components/franchises/FranchisesView.vue';
 import FranchiseAddView from '@/components/franchises/FranchiseAddView.vue';
 import SettingsView from '@/components/settings/SettingsView.vue';
+import IncompletesView from '@/components/settings/IncompletesView.vue';
 
 Vue.use(Router);
 
@@ -19,43 +20,47 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: WatchList
+      component: WatchList,
     },
     {
       path: '/add/',
-      component: WatchAddView
+      component: WatchAddView,
     },
     {
       path: '/view/franchise/:path',
-      component: WatchFranchiseView
+      component: WatchFranchiseView,
     },
     {
       path: '/view/:path',
-      component: WatchItemView
+      component: WatchItemView,
     },
     {
       path: '/edit/franchise/:path',
-      component: WatchFranchiseEditView
+      component: WatchFranchiseEditView,
     },
     {
       path: '/edit/:path',
-      component: WatchEditView
+      component: WatchEditView,
     },
     {
       path: '/edit/:path/season/:nr',
-      component: WatchEditSeasonView
+      component: WatchEditSeasonView,
     },
     {
       path: '/franchises',
-      component: FranchisesView
+      component: FranchisesView,
     },
     {
       path: '/franchises/add',
-      component: FranchiseAddView
+      component: FranchiseAddView,
     },
     {
       path: '/settings',
-      component: SettingsView
-    }
-  ]
+      component: SettingsView,
+    },
+    {
+      path: '/settings/incomplete',
+      component: IncompletesView,
+    },
+  ],
 });
