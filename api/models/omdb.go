@@ -32,7 +32,8 @@ func (res OMDBSearch) Results() Results {
 	count, _ := strconv.Atoi(res.TotalResults)
 	results := make([]Result, 0)
 	for _, item := range res.Search {
-		year, _ := strconv.Atoi(item.Year)
+		yearString := string(item.Year[:4])
+		year, _ := strconv.Atoi(yearString)
 		results = append(results, Result{
 			Title:  item.Title,
 			Year:   int64(year),
@@ -107,6 +108,9 @@ func (item OMDBObject) GetResultItem() ResultItem {
 func getInternalType(t string) int64 {
 	if t == "movie" {
 		return TypeMovie
+	}
+	if t == "game" {
+		return TypeGame
 	}
 	if t == "series" {
 		return TypeSeries
