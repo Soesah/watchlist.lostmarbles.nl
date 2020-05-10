@@ -58,7 +58,7 @@ export class WatchlistService extends BaseService {
   async store(item: WatchlistItems): Promise<WatchlistResponse> {
     const type = WatchItemFactory.getTypeName(item).toLowerCase();
     const response = await this.$http.put(
-      `${this.path}/${type}/${item.imdbID}`,
+      `${this.path}/${type}/${item.previousImdbID || item.imdbID}`,
       item,
     );
     const status = response.status === STATUS_OK;
@@ -127,7 +127,9 @@ export class WatchlistService extends BaseService {
   ): Promise<WatchlistResponse> {
     const watched = episode.watched ? 'not-watched' : 'watched';
     const response = await this.$http.put(
-      `${this.path}/series/${watched}/${item.imdbID}/season/${season.nr}/episode/${episode.nr}`,
+      `${this.path}/series/${watched}/${item.imdbID}/season/${
+        season.nr
+      }/episode/${episode.nr}`,
       null,
     );
     const status = response.status === STATUS_OK;

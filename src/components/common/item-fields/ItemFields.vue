@@ -238,9 +238,10 @@ export default Vue.extend({
       omdbService.get(imdbID).then(
         (data: ResultItem) => {
           this.searching = false;
-          WatchItemFactory.change(null, data.type).then((item: any) => {
+          WatchItemFactory.change(this.item, data.type).then((item: any) => {
             let year = data.year;
 
+            item.previousImdbID = item.imdbID;
             item.imdbID = data.imdbID;
             item.title = data.title;
             item.date_added = date_added;

@@ -92,6 +92,13 @@ export class WatchItemFactory {
   }
 
   static change(item: any, type: number): Promise<any> {
+    // do not change if no need to change
+    if (item && item.type === type) {
+      return new Promise((resolve) => {
+        resolve(item);
+      });
+    }
+
     let newItem = <any>WatchItemFactory.new(type, false),
       promise = new Promise((resolve) => {
         if (item) {
@@ -105,7 +112,7 @@ export class WatchItemFactory {
             watched = item.watched,
             date_added = item.date_added;
 
-          if (newItem.hasOwnProperty('imdbID')) {
+          if (newItem.hasOwnProperty('imdbID') && !item.imdbID) {
             newItem.imdbID = imdbID;
           }
 

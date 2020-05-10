@@ -3,6 +3,7 @@ import { BaseModel, WatchlistType } from '@/core/models/BaseModel';
 export interface DocumentaryType {
   type: number;
   imdbID: string;
+  previousImdbID?: string;
   title: string;
   year: number;
   score: number;
@@ -16,6 +17,7 @@ export interface DocumentaryType {
 export class Documentary extends BaseModel {
   public type: number;
   public imdbID: string;
+  public previousImdbID?: string;
   public title: string;
   public year: number;
   public score: number;
@@ -34,7 +36,7 @@ export class Documentary extends BaseModel {
     actors = [],
     watched = false,
     date_watched = null,
-    date_added = null
+    date_added = null,
   }: DocumentaryType) {
     super({ title, year, watched, date_watched });
     this.type = WatchlistType.Documentary;

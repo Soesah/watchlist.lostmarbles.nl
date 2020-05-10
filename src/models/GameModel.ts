@@ -4,6 +4,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 export interface GameType {
   type: number;
   imdbID: string;
+  previousImdbID?: string;
   title: string;
   year: number;
   score: number;
@@ -19,6 +20,7 @@ export interface GameType {
 export class Game {
   public type: number;
   public imdbID: string;
+  public previousImdbID?: string;
   public title: string;
   public year: number;
   public score: number;
@@ -41,7 +43,7 @@ export class Game {
     genre,
     played = false,
     date_played,
-    date_added
+    date_added,
   }: GameType) {
     this.type = WatchlistType.Game;
     this.imdbID = imdbID;

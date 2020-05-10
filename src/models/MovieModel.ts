@@ -3,6 +3,7 @@ import { BaseModel, WatchlistType } from '@/core/models/BaseModel';
 export interface MovieType {
   type: number;
   imdbID: string;
+  previousImdbID?: string;
   title: string;
   year: number;
   score: number;
@@ -18,6 +19,7 @@ export interface MovieType {
 export class Movie extends BaseModel {
   public type: number;
   public imdbID: string;
+  public previousImdbID?: string;
   public title: string;
   public year: number;
   public score: number;
@@ -40,7 +42,7 @@ export class Movie extends BaseModel {
     director,
     watched = false,
     date_watched,
-    date_added
+    date_added,
   }: MovieType) {
     super({ title, year, watched, date_watched });
 

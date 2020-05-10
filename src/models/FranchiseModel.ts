@@ -3,6 +3,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 export interface FranchiseType {
   type: number;
   imdbID: string;
+  previousImdbID?: string;
   name: string;
   items: string[];
   date_added: string;
@@ -11,6 +12,7 @@ export interface FranchiseType {
 export class Franchise {
   public type: number;
   public imdbID: string;
+  public previousImdbID?: string;
   public name: string;
   public items: string[];
   public date_added: string;
