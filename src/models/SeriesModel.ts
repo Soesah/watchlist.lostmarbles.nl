@@ -6,6 +6,7 @@ import { WatchlistType } from '@/core/models/BaseModel';
 export interface SeriesType {
   type: number;
   imdbID: string;
+  previousImdbID?: string;
   title: string;
   plot: string;
   finished: boolean;
@@ -17,6 +18,7 @@ export interface SeriesType {
 export class Series {
   public type: number;
   public imdbID: string;
+  public previousImdbID?: string;
   public title: string;
   public plot: string;
   public finished: boolean;
@@ -31,7 +33,7 @@ export class Series {
     plot,
     actors = [],
     finished = false,
-    date_added = null
+    date_added = null,
   }: SeriesType) {
     this.type = WatchlistType.Series;
     this.imdbID = imdbID;
@@ -69,7 +71,7 @@ export class Series {
   }
 
   toggleWatched() {
-    this.seasons.forEach(season => this.toggleSeasonWatched(season));
+    this.seasons.forEach((season) => this.toggleSeasonWatched(season));
   }
 
   toggleSeasonWatched(season: Season) {
@@ -84,10 +86,15 @@ export class Series {
     const season = new Season({
       year: year ? year : DateTimeUtil.year(),
       nr: this.seasons.length + 1,
-      episodes: []
+      episodes: [],
     });
     this.seasons.push(season);
     return season;
+  }
+
+  updateSeason(season: Season) {
+    let index = this.seasons.findIndex((s: Season) => s.nr === season.nr);
+    this.seasons.splice(index, 1, season);
   }
 
   removeSeason(season: Season) {

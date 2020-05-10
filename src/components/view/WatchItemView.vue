@@ -50,7 +50,7 @@
     <div v-if="item.seasons && item.seasons.length">
       <h4 v-show="item.seasons.length > 1">Seasons</h4>
       <ul class="seasons">
-        <li v-for="season in item.seasons" :key="season.nr">
+        <li v-for="(season, index) in item.seasons" :key="`${season.nr}-${season.year}-${index}`">
           <h5 class="season-title">
             <span v-show="item.seasons.length > 1">
               Season
@@ -77,15 +77,15 @@
   </section>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
-import ItemFranchiseView from "@/components/franchises/ItemFranchiseView.vue";
-import { Season } from "@/models/SeasonModel";
-import { Episode } from "@/models/EpisodeModel";
-import { WatchlistType } from "@/core/models/BaseModel";
+import Vue from 'vue';
+import { WatchItemFactory, WatchlistItems } from '@/services/WatchItemFactory';
+import ItemFranchiseView from '@/components/franchises/ItemFranchiseView.vue';
+import { Season } from '@/models/SeasonModel';
+import { Episode } from '@/models/EpisodeModel';
+import { WatchlistType } from '@/core/models/BaseModel';
 
 export default Vue.extend({
-  name: "WatchItemView",
+  name: 'WatchItemView',
   computed: {
     item(): WatchlistItems {
       return this.$store.state.item;
@@ -95,59 +95,59 @@ export default Vue.extend({
     },
     isGame(): boolean {
       return this.item.type === WatchlistType.Game;
-    }
+    },
   },
   beforeRouteUpdate: function(to, from, next) {
-    this.$store.commit("removeNav", "/edit/" + from.params.path);
-    this.$store.dispatch("getItemByPath", to.params.path).then(item => {
-      this.$store.commit("addNav", {
-        name: "Edit " + item.title,
-        to: "/edit/" + item.path
+    this.$store.commit('removeNav', '/edit/' + from.params.path);
+    this.$store.dispatch('getItemByPath', to.params.path).then((item) => {
+      this.$store.commit('addNav', {
+        name: 'Edit ' + item.title,
+        to: '/edit/' + item.path,
       });
     });
     next();
   },
   created() {
     this.$store
-      .dispatch("getItemByPath", this.$route.params.path)
-      .then(item => {
-        this.$store.commit("addNav", {
-          name: "Edit " + item.title,
-          to: "/edit/" + item.path
+      .dispatch('getItemByPath', this.$route.params.path)
+      .then((item) => {
+        this.$store.commit('addNav', {
+          name: 'Edit ' + item.title,
+          to: '/edit/' + item.path,
         });
       });
   },
   destroyed() {
-    this.$store.commit("removeNav", "/edit/" + this.item.path);
+    this.$store.commit('removeNav', '/edit/' + this.item.path);
   },
   methods: {
     async toggleSeasonWatched(season: Season) {
-      await this.$store.dispatch("toggleSeasonWatched", {
-        item: this.item,
-        season: season
-      });
-      this.$store.dispatch("getItemByPath", this.$route.params.path);
-    },
-    async toggleEpisodeWatched(season: Season, episode: Episode) {
-      await this.$store.dispatch("toggleEpisodeWatched", {
+      await this.$store.dispatch('toggleSeasonWatched', {
         item: this.item,
         season: season,
-        episode: episode
       });
-      this.$store.dispatch("getItemByPath", this.$route.params.path);
-    }
+      this.$store.dispatch('getItemByPath', this.$route.params.path);
+    },
+    async toggleEpisodeWatched(season: Season, episode: Episode) {
+      await this.$store.dispatch('toggleEpisodeWatched', {
+        item: this.item,
+        season: season,
+        episode: episode,
+      });
+      this.$store.dispatch('getItemByPath', this.$route.params.path);
+    },
   },
   filters: {
     watchedDate(val: string): string {
       const d = new Date(val);
-      const day = `${d.getDate()}`.padStart(2, "0");
-      const month = `${d.getMonth() + 1}`.padStart(2, "0");
+      const day = `${d.getDate()}`.padStart(2, '0');
+      const month = `${d.getMonth() + 1}`.padStart(2, '0');
 
       return `${day}-${month}-${d.getFullYear()}`;
-    }
+    },
   },
   components: {
-    ItemFranchiseView
-  }
+    ItemFranchiseView,
+  },
 });
 </script>

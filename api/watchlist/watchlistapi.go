@@ -618,7 +618,11 @@ func UpdateMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
 func UpdateSeries(series models.Series, r *http.Request) (models.Series, error) {
 
 	// remove current data
-	DeleteSeries(series.ImdbID, r)
+	err := DeleteSeries(series.ImdbID, r)
+
+	if err != nil {
+		return series, err
+	}
 
 	// re-add updated data
 	return AddSeries(series, r)

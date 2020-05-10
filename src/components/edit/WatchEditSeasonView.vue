@@ -146,6 +146,7 @@ export default Vue.extend({
   },
   methods: {
     edit(evt: Event) {
+      this.item.updateSeason(this.season);
       this.$store
         .dispatch('editItem', this.item)
         .then((items) => this.$router.go(-1));
