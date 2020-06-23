@@ -593,7 +593,8 @@ func UpdateMovie(movie models.Movie, r *http.Request) (models.Movie, error) {
 
 	found := false
 	for _, item := range movies {
-		if item.ImdbID == movie.ImdbID {
+		if item.ImdbID == movie.ImdbID || item.ImdbID == movie.PreviousImdbID {
+			movie.PreviousImdbID = ""
 			updated = append(updated, movie)
 			found = true
 		} else {

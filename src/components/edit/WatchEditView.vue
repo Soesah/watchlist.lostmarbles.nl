@@ -16,15 +16,15 @@
   </form>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import { WatchItemFactory, WatchlistItems } from "@/services/WatchItemFactory";
-import ItemFields from "@/components/common/item-fields/ItemFields.vue";
+import Vue from 'vue';
+import { WatchItemFactory, WatchlistItems } from '@/services/WatchItemFactory';
+import ItemFields from '@/components/common/item-fields/ItemFields.vue';
 
 export default Vue.extend({
-  name: "WatchEditView",
+  name: 'WatchEditView',
   data() {
     return {
-      item: WatchItemFactory.new()
+      item: WatchItemFactory.new(),
     };
   },
   computed: {
@@ -37,38 +37,39 @@ export default Vue.extend({
         this.item = item;
       }
       return item;
-    }
+    },
   },
   created() {
     this.$store
-      .dispatch("getItemByPath", this.$route.params.path)
-      .then(item => {
-        this.$store.commit("addNav", {
-          name: "Edit " + item.title,
-          to: "/edit/" + item.path
+      .dispatch('getItemByPath', this.$route.params.path)
+      .then((item) => {
+        this.$store.commit('addNav', {
+          name: 'Edit ' + item.title,
+          to: '/edit/' + item.path,
         });
       });
   },
   destroyed() {
-    this.$store.commit("removeNav", "/edit/" + this.item.path);
+    this.$store.commit('removeNav', '/edit/' + this.item.path);
   },
   methods: {
     async edit() {
-      await this.$store.dispatch("editItem", this.item);
+      await this.$store.dispatch('editItem', this.item);
+      await this.$store.dispatch('getWatchList');
 
       this.$router.go(-1);
     },
     remove() {
-      this.$store.state.event.$emit("openModal", {
-        modal: "confirm-delete-modal",
+      this.$store.state.event.$emit('openModal', {
+        modal: 'confirm-delete-modal',
         name: this.item.title,
-        confirm: this.onConfirmDelete
+        confirm: this.onConfirmDelete,
       });
     },
     onConfirmDelete() {
-      this.$store.dispatch("removeItem", this.item).then(items => {
+      this.$store.dispatch('removeItem', this.item).then((items) => {
         this.$destroy();
-        this.$router.push("/");
+        this.$router.push('/');
       });
     },
     back() {
@@ -76,10 +77,10 @@ export default Vue.extend({
     },
     getTypeName(item: WatchlistItems): string {
       return WatchItemFactory.getTypeName(item).toLowerCase();
-    }
+    },
   },
   components: {
-    ItemFields
-  }
+    ItemFields,
+  },
 });
 </script>
